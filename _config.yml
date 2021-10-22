@@ -18,25 +18,25 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Brightcove **** Documentation
+title: Brightcove Interactivity Documentation
 email: training@brightcove.com
 description: >- # this means to ignore newlines until "baseurl:"
-  ****
+  Brightcove Interactivity allows you to add many kinds of interactivity to players, including CTAs, chapters, click-to-buy, branching, and polls.
 # baseurl: "" # the subpath of your site, e.g. /blog
-site_url: "https://****.support.brightcove.com"
-site_domain: "****.support.brightcove.com"
+site_url: "https://interactions.support.brightcove.com"
+site_domain: "interactions.support.brightcove.com"
 
 # Build settings
 # theme: minima
 
 # local server (for "jekyll serve") will be localhost:{PORT number below}
-port: 2222
+port: 5151
 
 # everything below may be different per site
-product: ****
+product: Video Cloud
 color: rgb(51, 51, 51)
 product_color: rgb(186, 206, 19)
-product_icon: "****.svg"
+product_icon: "interactions.svg"
 search_id: "017969773216783359937:3dokhftl9vz"
 feedbackify_id: "15077"
 bing_custom_config_id: "b602408f-fef7-4452-ac74-4e12852bdd46"

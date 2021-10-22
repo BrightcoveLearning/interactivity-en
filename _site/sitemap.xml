@@ -1,109 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="/assets/css/site/sitemap.css"?>
-<?xml-stylesheet type="text/xsl" href="/assets/css/site/sitemap.xsl"?>
+<?xml-stylesheet href="https://support.brightcove.com/site-assets/css/site/sitemap.css"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
-    <url>
-        <loc>https://studio.support.brightcove.com/404.html</loc>
-        <lastmod>2020-02-03</lastmod>
+      <url>
+        <loc>https://interactions.support.brightcove.com/</loc>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
-    </url>
+      </url>
+      
     
-    <url>
-        <loc>https://studio.support.brightcove.com/assets/js/feedback.js</loc>
-        <lastmod>2020-02-03</lastmod>
+      <url>
+        <loc>https://interactions.support.brightcove.com/getting-started/</loc>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
-    </url>
+      </url>
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/getting-started/video-cloud-ssai-overview.html</loc>
+          
+            <lastmod>2021-10-22</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
     
-    <url>
-        <loc>https://studio.support.brightcove.com/references/glossary.html</loc>
-        <lastmod>2020-02-03</lastmod>
+      <url>
+        <loc>https://interactions.support.brightcove.com/support/</loc>
+        <lastmod>2021-10-22</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/icons.html</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/getting-started/</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/references/</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/index_for_launch.html</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/references/known-issues.html</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/assets/css/local.css</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/references/product-updates.html</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/assets/js/search.js</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/sitemap.xml</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://studio.support.brightcove.com/feed.xml</loc>
-        <lastmod>2020-02-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-
+      </url>
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/support/known-issues.html</loc>
+          
+            <lastmod>2021-10-22</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
+          
+            <lastmod>2021-10-22</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/support/contact-sales.html</loc>
+          
+            <lastmod>2021-10-22</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
+          
+            <lastmod>2021-10-22</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/support/reset-support-portal-password.html</loc>
+          
+            <lastmod>2021-10-22</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
     
 
 </urlset>
