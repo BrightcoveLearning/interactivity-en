@@ -4,17 +4,33 @@
 - section: 
   name: 'Getting Started'
   url: '/getting-started/'
-  icon: '<img class="bcls-icon" src="/assets/images/feather/play.svg">'
   docs:
-    - name: 'Overview'
-      url: '/getting-started/video-cloud-ssai-overview.html'
+    - name: 'Interactions Overview'
+      url: '/getting-started/interactions-overview.html'
+- section:
+  name: 'References'
+  url: /references/index.html
+  docs:
+    - name: Release Notes
+      url: /references/product-updates.html
+    - name: 'Known Issues'
+      url: '/support/known-issues.html'
+    - name: Embed API
+      url: /references/embed/index.html
+    - name: Annotation API
+      url: /references/annotation/index.html
+    - name: Extension API
+      url: /references/extension/index.html
+    - name: Playlist API
+      url: /references/playlist/index.html
+    - name: Responsive API
+      url: /references/responsive/index.html
+    - name: Addon API
+      url: /references/addon/index.html
 - section: 
   name: 'Support'
   url: '/support/'
-  icon: '<i data-feather="help-circle"></i>'
   docs:
-    - name: 'Known Issues'
-      url: '/support/known-issues.html'
     - name: 'Viewing the Brightcove System Status Page'
       url: '/support/viewing-brightcove-system-status-page.html'
     - name: 'Contact Sales'

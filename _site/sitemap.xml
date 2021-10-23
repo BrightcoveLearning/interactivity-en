@@ -6,7 +6,7 @@
     
       <url>
         <loc>https://interactions.support.brightcove.com/</loc>
-        <lastmod>2021-10-22</lastmod>
+        <lastmod>2021-10-23</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -14,16 +14,104 @@
     
       <url>
         <loc>https://interactions.support.brightcove.com/getting-started/</loc>
-        <lastmod>2021-10-22</lastmod>
+        <lastmod>2021-10-23</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactions.support.brightcove.com/getting-started/video-cloud-ssai-overview.html</loc>
+            <loc>https://interactions.support.brightcove.com/getting-started/interactions-overview.html</loc>
           
-            <lastmod>2021-10-22</lastmod>
+            <lastmod>2021-10-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://interactions.support.brightcove.com/references/index.html</loc>
+        <lastmod>2021-10-23</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/references/product-updates.html</loc>
+          
+            <lastmod>2021-10-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/support/known-issues.html</loc>
+          
+            <lastmod>2021-10-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/references/embed/index.html</loc>
+          
+            <lastmod>2021-10-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/references/annotation/index.html</loc>
+          
+            <lastmod>2021-10-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/references/extension/index.html</loc>
+          
+            <lastmod>2021-10-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/references/playlist/index.html</loc>
+          
+            <lastmod>2021-10-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/references/responsive/index.html</loc>
+          
+            <lastmod>2021-10-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/references/addon/index.html</loc>
+          
+            <lastmod>2021-10-23</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -32,26 +120,16 @@
     
       <url>
         <loc>https://interactions.support.brightcove.com/support/</loc>
-        <lastmod>2021-10-22</lastmod>
+        <lastmod>2021-10-23</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactions.support.brightcove.com/support/known-issues.html</loc>
-          
-            <lastmod>2021-10-22</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
             <loc>https://interactions.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
           
-            <lastmod>2021-10-22</lastmod>
+            <lastmod>2021-10-23</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -61,7 +139,7 @@
           
             <loc>https://interactions.support.brightcove.com/support/contact-sales.html</loc>
           
-            <lastmod>2021-10-22</lastmod>
+            <lastmod>2021-10-23</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -71,7 +149,7 @@
           
             <loc>https://interactions.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
           
-            <lastmod>2021-10-22</lastmod>
+            <lastmod>2021-10-23</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -81,7 +159,7 @@
           
             <loc>https://interactions.support.brightcove.com/support/reset-support-portal-password.html</loc>
           
-            <lastmod>2021-10-22</lastmod>
+            <lastmod>2021-10-23</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>

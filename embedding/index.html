@@ -1,0 +1,37 @@
+---
+title: Embedding Interactive Players
+parent: Home
+description: This section contains reference information
+---
+<h1>{{ page.title }}</h1>
+<article class="landing-page-wrapper">
+  <summary>{{ page.description }}</summary>
+  <section class="landing-page-header" id="landing_page_header">
+  </section>
+  <br>
+  <section class="landing-page-body-wrapper" id="landing_page_wrapper">
+    {% for item in site.data.navigation %}
+      {% if item.name == page.title %}
+      <section class="landing-page-section">
+        <h6 class="landing-page-item-header">{{ item.title }} Topics</h6>
+        <ul class="landing-page-item list-none">
+          {% for entry in item.docs %}
+            {% if entry.docs %}
+            <li>
+              <a href="{{ entry.url }}">{{ entry.name }}</a>
+              <ul>
+                {% for subdoc in entry.docs %}
+                <li><a href="{{ subdoc.url }}">{{ subdoc.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% else %}
+            <li><a href="{{ entry.url }}">{{ entry.name }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    {% endfor %}
+  </section>
+</article>
