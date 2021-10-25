@@ -3,7 +3,7 @@
   url: '/'
 - section: 
   name: 'Getting Started'
-  url: '/getting-started/'
+  url: '/getting-started/index.html'
   docs:
     - name: 'Interactions Overview'
       url: '/getting-started/interactions-overview.html'
