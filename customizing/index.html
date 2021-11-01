@@ -4,32 +4,27 @@ parent: Home
 description: This section contains information on customizing interactivity.
 ---
 <h1>{{ page.title }}</h1>
-<article class="landing-page-wrapper">
+<article class="bcls-article">
+
   <summary>{{ page.description }}</summary>
-  <section class="landing-page-header" id="landing_page_header">
-  </section>
-  <br>
-  <section class="landing-page-body-wrapper" id="landing_page_wrapper">
+  <section class="bcls-section" id="page_wrapper">
     {% for item in site.data.navigation %}
       {% if item.name == page.title %}
-      <section class="landing-page-section">
-        <h6 class="landing-page-item-header">{{ item.title }} Topics</h6>
-        <ul class="landing-page-item list-none">
-          {% for entry in item.docs %}
+      <section style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;">
+        {% for entry in item.docs %}
+        <div style="padding: 1em;">
             {% if entry.docs %}
-            <li>
-              <a href="{{ entry.url }}">{{ entry.name }}</a>
-              <ul>
-                {% for subdoc in entry.docs %}
-                <li><a href="{{ subdoc.url }}">{{ subdoc.name }}</a></li>
-                {% endfor %}
-              </ul>
-            </li>
+                <h3><a href="{{ entry.url }}">{{ entry.name }}</a></h3>
+                <ul class="landing-page-item">
+                  {% for subdoc in entry.docs %}
+                  <li style="margin-left: -1.5em;"><a href="{{ subdoc.url }}">{{ subdoc.name }}</a></li>
+                  {% endfor %}
+                </ul>
             {% else %}
-            <li><a href="{{ entry.url }}">{{ entry.name }}</a></li>
+            <p><a href="{{ entry.url }}">{{ entry.name }}</a></p>
             {% endif %}
+          </div>
           {% endfor %}
-        </ul>
       </section>
       {% endif %}
     {% endfor %}
