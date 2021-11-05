@@ -1,0 +1,43 @@
+---
+title: Quiz - Conditional Gating
+description: Don't let a viewer continue until they pass a question.
+parent: Annotations
+---
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p class="intercom-align-left">Recently we got a question. "On the quizzes, can it be set so that if the learner fails a quiz they cannot move forward in a video?"</p>
+    <p class="intercom-align-left">Yes - that is supported out of the box.</p>
+    <p class="intercom-align-left">When you are configuring a Quiz,&nbsp;</p>
+    <ol>
+      <li>
+        <p class="no-margin">Click "
+          <b>Edit</b>" on the annotation
+        </p>
+      </li>
+      <li>
+        <p class="no-margin">Set "
+          <b>Gate:Y</b>"
+        </p>
+      </li>
+      <li>
+        <p class="no-margin">Under Options / Review Screen,
+          <b>uncheck "Allow viewer to see correct answer(s)"</b>
+        </p>
+      </li>
+      <li>
+        <p class="no-margin">Under Options / Pass/Fail Actions, click "
+          <b>On Fail</b>" &nbsp;and then set "
+          <b>Jump to Video Time"</b>to
+          <b>0 seconds,</b> and finally, check
+          <b> "Reset questions"</b>
+        </p>
+      </li>
+    </ol>
+    <p class="intercom-align-left">A viewer will not be able to proceed in the video until they have correctly answered the question.&nbsp;</p>
+    <p class="intercom-align-left">View an example
+      <a href="/demos/gated-quiz-demo.html" rel="nofollow noopener noreferrer" target="_blank">Here</a>.
+    </p>
+  </section>
+</article>
