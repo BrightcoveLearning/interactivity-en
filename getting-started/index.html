@@ -7,26 +7,20 @@ description: This section contains information on getting started with interacti
 <article class="bcls-article">
 
   <summary>{{ page.description }}</summary>
-  <section class="bcls-section" id="page_wrapper">
-    {% for item in site.data.navigation %}
-      {% if item.name == page.title %}
-      <section style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;">
-        {% for entry in item.docs %}
-        <div style="padding: 1em;">
-            {% if entry.docs %}
-                <h3><a href="{{ entry.url }}">{{ entry.name }}</a></h3>
-                <ul class="landing-page-item">
-                  {% for subdoc in entry.docs %}
-                  <li style="margin-left: -1.5em;"><a href="{{ subdoc.url }}">{{ subdoc.name }}</a></li>
-                  {% endfor %}
-                </ul>
-            {% else %}
-            <p><a href="{{ entry.url }}">{{ entry.name }}</a></p>
+  <section>
+    <h3 id="Topics_in_this_section">Topics in {{ page.title }}</h3>
+    <ul class="bcls-topic-list">
+      {% for item in site.data.navigation %}
+        {% if item.name == page.parent %}
+          {% for entry in item.docs %}
+            {% if entry.name == page.title %}
+              {% for doc in entry.docs %}
+              <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
+              {% endfor %}
             {% endif %}
-          </div>
           {% endfor %}
-      </section>
-      {% endif %}
-    {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </ul>
   </section>
 </article>
