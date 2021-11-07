@@ -1,0 +1,174 @@
+---
+title: Slide Sync Reference Guide
+description: Step by step instructions for creating a Slide Sync Experience.
+parent: Experiences
+---
+
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p class="intercom-align-left">This article details step by step instructions to create a Slide Sync Experience<br></p>
+    <h2 id="slide-sync-quick-start-guide" class="intercom-align-left" data-post-processed="true">Slide Sync Quick Start Guide</h2>
+    <h3 id="creating-new-experience" class="intercom-align-left" data-post-processed="true">Creating New Experience</h3>
+    <ol>
+      <li>
+        <p class="no-margin">Click <strong>Experience</strong> Tab in Portal</p>
+      </li>
+      <li>
+        <p class="no-margin">Click <strong>New Experience</strong></p>
+      </li>
+      <li>
+        <p class="no-margin">Enter Title of Experience</p>
+      </li>
+      <li>
+        <p class="no-margin">Select Layout Type (slidesync is auto-selected)</p>
+      </li>
+      <li>
+        <p class="no-margin">Select Template Type (playlist under video or playlist fullscreen)</p>
+      </li>
+      <li>
+        <p class="no-margin">Choose Video Source (3 options)<br>- Add Embed Code<br>- Click upload video and select video<br><em>note: Video must be an MP4<br>- </em>Choose Existing Project</p>
+      </li>
+      <li>
+        <p class="no-margin">Experience will load with video</p>
+      </li>
+      <li>
+        <p class="no-margin">Add PDF slides to video by dragging into drop zone or clicking anywhere in drop zone<br>- Slides must be in PDF format<br>- First slide will appear and sync to 0 seconds</p>
+      </li>
+    </ol>
+    <h3 id="syncing-slides" class="intercom-align-left" data-post-processed="true">Syncing Slides</h3>
+    <ol>
+      <li>
+        <p class="no-margin">Play video, skipping to each section that requires a slide and click the <strong>Sync</strong> button on the slide toolbar</p>
+      </li>
+      <li>
+        <p class="no-margin">Adjust time if necessary with the time adjuster next to the sync button</p>
+      </li>
+      <li>
+        <p class="no-margin">If chapter is present at same time as slide add chapter after syncing slide<br>- Click <strong>Chapter</strong> icon (bookmark) and edit chapter title and click done</p>
+      </li>
+      <li>
+        <p class="no-margin">If you would like to change the size ratio of the video and the slides, add a zoom event using an <strong>On-Time Event</strong> annotation created by clicking the timer icon</p>
+      </li>
+    </ol>
+    <div class="intercom-container intercom-align-center"><img src="/assets/images/experiences/slide-sync-on-time-event.png"></div>
+    <ul>
+      <li>
+        <p class="no-margin">Fill in <strong>Addon Type</strong> field with “slider”</p>
+      </li>
+      <li>
+        <p class="no-margin">Fill in <strong>Command</strong> field with “change”</p>
+      </li>
+      <li>
+        <p class="no-margin">Under <strong>Command Data</strong>, click <strong>Add New</strong></p>
+      </li>
+      <li>
+        <p class="no-margin">Fill in key value pair with “newValue” and the value you would like the slider to be i.e. “42.5” (see conversion scale below for acceptable values)<br><em>Note: HapYak numbers correspond to percentage of the page the video will take up</em></p>
+      </li>
+    </ul>
+    <div class="intercom-container intercom-align-center"><img src="/assets/images/experiences/slide-sync-adjust-value.png"></div>
+    <ul>
+      <li>
+        <p class="no-margin">Click <strong>Done</strong></p>
+      </li>
+      <li>
+        <p class="no-margin">Repeat steps until all slides are synced for the video</p>
+      </li>
+    </ul>
+    <h3 id="adding-chapter-menu" class="intercom-align-left" data-post-processed="true">Adding Chapter Menu</h3>
+    <p class="intercom-align-left">Click the <strong>Chapter Menu</strong> icon to automatically insert a chapter menu at 0 seconds</p>
+    <h3 id="adding-other-annotations" class="intercom-align-left" data-post-processed="true">Adding Other Annotations</h3>
+    <p class="intercom-align-left">Continue to add annotations as you would with any other interactive video project.</p>
+    <h3 id="adding-more-videos-and-slides" class="intercom-align-left" data-post-processed="true">Adding More Videos and Slides</h3>
+    <ol>
+      <li>
+        <p class="no-margin">To add another video, click on the <strong>Add Video</strong> button in the playlist beneath the video and slide area.</p>
+      </li>
+      <li>
+        <p class="no-margin">Enter a title for the video.</p>
+      </li>
+      <li>
+        <p class="no-margin">Select video.<br>- Upload New Video (mp4) <em>or<br>- </em>Choose Existing Project</p>
+      </li>
+      <li>
+        <p class="no-margin">Repeat steps until experience is complete</p>
+      </li>
+    </ol>
+    <h2 id="configuring-settings-including-adding-custom-header-and-footer" class="intercom-align-left" data-post-processed="true">Configuring Settings Including Adding Custom Header and Footer</h2>
+    <p class="intercom-align-left">Click the <strong>Configure</strong> button at the top right of the experience</p>
+    <p class="intercom-align-left">Adjust Settings</p>
+    <ul>
+      <li>
+        <p class="no-margin">Auto Progress will play the next video in the playlist after the previous video finishes.</p>
+      </li>
+      <li>
+        <p class="no-margin">Auto Play will automatically play the video on landing page load.</p>
+      </li>
+      <li>
+        <p class="no-margin">Default Slider Value sets the initial zoom level of the experience on the landing page.</p>
+      </li>
+      <li>
+        <p class="no-margin">Social Sharing buttons toggle which buttons will be shown on the landing page.<em><br>Note: This also has a configurable message that will show up as default text in the share dialogs.</em></p>
+      </li>
+    </ul>
+    <h3 id="adding-custom-header-and-footer" class="intercom-align-left" data-post-processed="true">Adding Custom Header and Footer</h3>
+    <ul>
+      <li>
+        <p class="no-margin">Also in the configuration settings are the custom header and footer HTML fields that allow for custom branding to be applied.</p>
+      </li>
+    </ul>
+    <p class="intercom-align-left">Sample header tag:&nbsp;</p>
+    <pre><code>&lt;img src="//hapyak_demos.s3.amazonaws.com/demos/hapyak/default-slidesync-header.png" width="100%"/&gt;</code></pre>
+    <ul>
+      <li>
+        <p class="no-margin">Replace the img src with the image for the experience.</p>
+      </li>
+    </ul>
+    <p class="intercom-align-left">Sample footer tag:</p>
+    <pre><code>&lt;div style="width: 100%; padding-left: 30px; padding-right: 30px;"&gt;&lt;div style="min-height: 70px; position: relative; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#3e4459; text-align: left;"&gt;&lt;a href="http://corp.hapyak.com/privacy" target="_blank" style="text-decoration:none;"&gt; Privacy Policy.&lt;/a&gt;&lt;br&gt;Copyright ©2016 HapYak Interactive Video. All rights reserved. Designated trademarks and brands are the property of their respective owners.&lt;/div&gt;&lt;/div&gt;</code></pre>
+    <h3 id="setting-up-registration-redirectaccess-gate-optional" class="intercom-align-left" data-post-processed="true">Setting up Registration Redirect/Access Gate (optional)</h3>
+    <ol>
+      <li>
+        <p class="no-margin">Add an Access Gate</p>
+      </li>
+      <li>
+        <p class="no-margin">Add the redirect url for the registration form</p>
+      </li>
+      <li>
+        <p class="no-margin">Ensure your registration form or other validation form redirects the user back to the experience after completing registration/login<br><em>Note: We recommend using the referrer url</em></p>
+      </li>
+    </ol>
+    <h3 id="generating-links-to-the-slide-sync-experience-optionalextra" class="intercom-align-left" data-post-processed="true">Generating Links to the Slide Sync Experience (optional/extra)</h3>
+    <p class="intercom-align-left"><em><br>Note: Does not come with standard Slide Sync, inquire for availability</em><br><br>Click on the <strong>Link</strong> Button<br>Permalink to the experience is at the top<br>Create a custom link with attributes by filling out these custom fields:</p>
+    <ul>
+      <li>
+        <p class="no-margin">Video to start on (<em>required</em>)</p>
+      </li>
+      <li>
+        <p class="no-margin">Time in video to seek to (<em>optional</em>)</p>
+      </li>
+      <li>
+        <p class="no-margin">Downloadable/Viewable asset URL (<em>optional</em>)</p>
+      </li>
+      <li>
+        <p class="no-margin">Modal Title (<em>optional</em>)</p>
+      </li>
+      <li>
+        <p class="no-margin">Linked Text (<em>optional</em>)</p>
+      </li>
+      <li>
+        <p class="no-margin">Button Text (defaults to “View”) (<em>required</em>)</p>
+      </li>
+      <li>
+        <p class="no-margin">Modal Text (non-linked) (<em>optional</em>)</p>
+      </li>
+    </ul>
+    <p class="intercom-align-left">Click <strong>Generate</strong> to create link with custom parameters.</p>
+    <h2 id="review" class="intercom-align-left" data-post-processed="true">Review</h2>
+    <p class="intercom-align-left"><strong>View</strong> Landing page and review experience.</p>
+    <p class="intercom-align-left">You can view the landing page at anytime by clicking the View button in the top right corner</p>
+    <h2 id="congratulations-youve-just-created-a-slide-sync-experience" class="intercom-align-left" data-post-processed="true">Congratulations! You’ve just created a Slide Sync Experience!</h2>
+    <p class="intercom-align-left"><br><em>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</em></p>
+  </section>
+</article>
