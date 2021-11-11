@@ -1,0 +1,37 @@
+---
+title: Simple text transitions
+description: Add a little CSS to enhance your project.
+parent: Style
+---
+
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p class="intercom-align-left">A few lines of css can give your project a new look and feel. &nbsp;Let's see how changing the color of text can have a big effect.</p>
+    <h2 id="how-to" class="intercom-align-left" data-post-processed="true">How To:</h2>
+    <p class="intercom-align-left">1. Add this style sheet to your current project:<br>//hapyak_demos.s3.amazonaws.com/css/customer/sample_on_hover_text_change.css</p>
+    <p class="intercom-align-left">Or add this css to your current sheet:</p>
+<pre><code>.popcorn-pop.hapyak-theme-black.bright-red.active {
+  color: #C60C46;
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+.popcorn-pop.hapyak-theme-black.bright-red.active:hover {
+  background: rgba(255, 255, 255, 0);
+  color: #f40656;
+}</code></pre>
+    <p class="intercom-align-left">2. &nbsp;Create a new text annotation</p>
+    <p class="intercom-align-left">3. &nbsp;Click, <b>Edit</b></p>
+    <p class="intercom-align-left">4. &nbsp;Click, <b>More</b></p>
+    <p class="intercom-align-left">5. &nbsp;Click, <b>Add Class</b></p>
+    <p class="intercom-align-left">6. &nbsp;Within the text box add a color, ex: <code>bright-red</code>&nbsp;</p>
+    <p class="intercom-align-left">7. &nbsp;Click, <b>Submit</b></p>
+    <p class="intercom-align-left"><i>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</i></p>
+  </section>
+</article>

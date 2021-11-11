@@ -1,0 +1,17 @@
+.popcorn-image:not(.hapyak-editing-image) img {
+  opacity: 0;
+  /*-webkit-transition: opacity 0s ease-out;*/
+  /*-moz-transition: opacity 0s ease-out;*/
+  /*-ms-transition: opacity 0s ease-out;*/
+  /*-o-transition: opacity 0s ease-out;*/
+  /*transition: opacity 0s ease-out;*/
+}
+
+.popcorn-image:not(.hapyak-editing-image).popcorn-image:hover img {
+  /*-webkit-transition: opacity 0.5s ease-in;*/
+  /*-moz-transition: opacity 0.5s ease-in;*/
+  /*-ms-transition: opacity 0.5s ease-in;*/
+  /*-o-transition: opacity 0.5s ease-in;*/
+  /*transition: opacity 0.5s ease-in;*/
+  opacity: 1;
+}

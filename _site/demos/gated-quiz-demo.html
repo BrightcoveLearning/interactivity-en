@@ -1,0 +1,207 @@
+<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"><!--<![endif]--><head>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/generated/portal.css?v=1" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+<script type="text/javascript" charset="utf-8" async="" importance="high" data-requirecontext="hapyak" data-requiremodule="jquery.noconflict" src="//d2qrdklrsxowl2.cloudfront.net/js/vendor/jquery/jquery.noconflict.js?v=20211026184257"></script><script type="text/javascript" charset="utf-8" async="" importance="high" data-requirecontext="hapyak" data-requiremodule="jquery" src="//d2qrdklrsxowl2.cloudfront.net/js/generated/editor.built.js?v=20211026184257"></script><script type="text/javascript" charset="utf-8" async="" importance="high" data-requirecontext="hapyak" data-requiremodule="datatables" src="//d2qrdklrsxowl2.cloudfront.net/js/../node_modules/@bower_components/datatables/media/js/jquery.dataTables.js?v=20211026184257"></script><script type="text/javascript" charset="utf-8" async="" importance="high" data-requirecontext="hapyak" data-requiremodule="app.portalExperience" src="//d2qrdklrsxowl2.cloudfront.net/js/generated/portalExperience.built.js?v=20211026184257"></script><script type="text/javascript" charset="utf-8" async="" importance="high" data-requirecontext="hapyak" data-requiremodule="configuration" src="https://d2qrdklrsxowl2.cloudfront.net/api/configuration.js?t=1&amp;v=20211026184257"></script><script type="text/javascript" charset="utf-8" async="" importance="high" data-requirecontext="hapyak" data-requiremodule="hapyak.list" src="//d2qrdklrsxowl2.cloudfront.net/js/player/hapyak.list.js?v=20211026184257"></script><script type="text/javascript" charset="utf-8" async="" importance="high" data-requirecontext="hapyak" data-requiremodule="hapyak.player.timer" src="//d2qrdklrsxowl2.cloudfront.net/js/player/hapyak.player.timer.js?v=20211026184257"></script><style type="text/css"></style></head>
+
+<body class="hapyak-app-experience-viewer ember-application" data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
+  <script src="/js/hapyak.js?v=1" type="text/javascript"></script>
+
+  <script>
+      (function () {
+          'use strict';
+
+          var customExperienceCss;
+
+          if (typeof hapyak.app['experienceViewer'] !== 'function') {
+              return;
+          }
+
+          var redirect = true;
+
+          // this handles a strange scenario where facebook oauth redirects back to us
+          // with a strange hash ref, that messes up routing.
+          if (window.location.hash === '#_=_') {
+              window.location.href = window.location.href.substr(0, window.location.href.indexOf('#'));
+          } else {
+              redirect = false;
+          }
+
+          if (redirect) {
+              return;
+          }
+
+          if (hapyak.supportsPushState() && window.location.hash) {
+              history.pushState(null, null, window.location.hash.substring(1));
+          }
+
+          var options = {
+              code: {}
+          };
+
+          options.readKey = '80049382c5be49ef9147';
+
+          options.lti_context = null;
+
+          
+
+          options.experience_data_graph = {"addon": [{"addon_type": {"created": 1463424220000, "default_configuration": {}, "id": 3, "modified": 1463425117944, "name": "playlist"}, "configuration": {}, "created": 1510945083797, "id": 2943, "layout": 1439, "modified": 1510945083802, "name": "playlist"}, {"addon_type": 3, "configuration": {}, "created": 1510945083792, "id": 2942, "layout": 1439, "modified": 1510945083799, "name": "playlist"}], "api_key": "80049382c5be49ef9147", "code": "77c1408ee2034fdb8ba284588294b449", "experience": {"configuration": {}, "created": 1510945080441, "group": 361, "id": 1417, "is_live": false, "landing_page_code": "77c1408ee2034fdb8ba284588294b449", "layout": {"configuration": {}, "created": 1510945080272, "group": 361, "id": 1439, "layout_type": {"created": 1470077809000, "default_configuration": {"description": "", "icon": "subscriptions", "name": "Playlist Landing Page", "templates": [{"description": "Playlist Under Video", "icon": "subscriptions", "id": "video_only", "name": "Playlist under video"}]}, "id": 2, "modified": 1510078964044, "name": "video only"}, "modified": 1510945080281, "name": "Gated Quiz Demo_layout", "template": "video_only"}, "modified": 1510945080450, "playlist": {"created": 1510945080207, "group": 361, "id": 1439, "modified": 1510945080207, "name": "Gated Quiz Demo_playlist"}, "title": "Gated Quiz Demo"}, "experience_branding": {"header": "%3Cdiv%20id%3D%22default-experience-branding-header%22%3E%3Ca%20target%3D%22_blank%22%20class%3D%22default-experience-branding-header-logo%22%20href%3D%22http%3A//corp.hapyak.com%22%3E%3C/a%3E%3C/div%3E", "transitionImageUrl": "//hapyak_demos.s3.amazonaws.com/img/Config%20Images/Black-Screen-Final.jpg"}, "experience_provisioning": {"branding": true, "cookieComplianceBanner": false, "enabled": true, "layoutTypes": {"branching": true, "lesson": true, "live": true, "single video landing page": true, "slidesync": true, "video only": true}, "nativeControls": true}, "playlist_to_project": [{"created": 1510945080338, "display_order": 1, "id": 2600, "modified": 1510945080352, "playlist": 1439, "project": {"created": 1510944615402, "dom_id": "hapyak-player-117773-5305", "embed_style": "standard", "embed_type": "brightcove-v2", "experience_count": 1, "group": 361, "height": 405, "id": 156783, "input": "http://players.brightcove.net/2335723960001/default_default/index.html?videoId=5263628644001", "is_auto_created": false, "is_published": false, "is_template": false, "mode": "embed", "modified": 1510944976358, "old_doc_mode": false, "properties": {"cue_points": true, "enable_alt_controls": true, "hapyak_responsive": false, "is_default_dimensions": false, "keepAnnotationAspectRatio": true, "native_controls": false, "old_document_mode": false, "player_parameters": {"accountId": "2335723960001", "bcEmbed": "default", "bcPlayer": "default"}, "player_type": "brightcove-v2", "reset_variables": true, "secure": false}, "secure": false, "template_project_ids": [32352], "title": "Gated Quiz Demo", "track": {"annotation_modified": 1510944976270, "copied_from": 400444, "copied_from_fullname": "Accounts Admin", "copied_from_title": "Personalization Demo", "copied_from_user": 57380, "copied_from_username": "hapyak", "created": 1510944615402, "enabled": true, "group": 361, "id": 443536, "lang": "en", "modified": 1510944628193, "num_annotations": 7, "num_dislikes": 0, "num_likes": 0, "privacy": "public", "ratings_avg": 0, "title": "Gated Quiz Demo", "total_visits": 0, "video": 1047626, "weekly_visits": 0}, "video": {"aspect_ratio": "widescreen", "created": 1493141316063, "duration": 15.48, "group": 361, "id": 1047626, "modified": 1493141745835, "num_public_tracks": 0, "num_tracks": 0, "properties": {}, "ratings_avg": 0, "source": "brightcove-v2", "source_id": "5263628644001", "source_rank": 0, "source_visits": 0, "total_visits": 0, "weekly_visits": 0}, "width": 720}}], "scorm_version": null, "total_number_of_quiz_questions": 0, "transition_image_url": "//hapyak_demos.s3.amazonaws.com/img/Config%20Images/Black-Screen-Final.jpg", "viewerMode": 1};
+
+          options.registration_data = {};
+
+          options.frep_params = {};
+
+          options.url_params = {};
+
+          
+
+          hapyak.app.experienceViewer(options);
+
+          
+      }());
+  </script>
+
+
+
+
+
+<script type="text/javascript" async="" src="https://platform.twitter.com/widgets.js"></script>
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.a53eecb4584348a2ad32ec2ae21f6eae.html?origin=http%3A%2F%2Fwww.hapyak.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="79a0ca0b986845cd888a2452faf71354" style="position: absolute; width:0; height:0; border:0; border:none" src="http://d2qrdklrsxowl2.cloudfront.net/static/js/pages/distinct-id/index.html"></iframe><div class="hiddendiv common"></div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe><div id="ember530" class="ember-view">
+<script id="metamorph-0-start" type="text/x-placeholder"></script>
+  <script id="metamorph-1-start" type="text/x-placeholder"></script>
+      <div id="ember577" class="ember-view"><div id="landing-page-container" style="background: #f6f6f6 url(//d2qrdklrsxowl2.cloudfront.net/img/experience-background.png); background-size: cover;" data-bindattr-1="1" class="" data-bindattr-2="2">
+  <div id="experience-preloader-holder" class="inactive" data-bindattr-3="3">
+      <div id="experience-preloader" class="materialize">
+          <div id="ember596" class="ember-view hapyak-component-preloader-component"><div class="preloader-wrapper big active">
+  <div class="spinner-layer spinner-blue">
+      <div class="circle-clipper left">
+          <div class="circle"></div>
+      </div><div class="gap-patch">
+          <div class="circle"></div>
+      </div><div class="circle-clipper right">
+          <div class="circle"></div>
+      </div>
+  </div>
+
+  <div class="spinner-layer spinner-red">
+      <div class="circle-clipper left">
+          <div class="circle"></div>
+      </div><div class="gap-patch">
+          <div class="circle"></div>
+      </div><div class="circle-clipper right">
+          <div class="circle"></div>
+      </div>
+  </div>
+
+  <div class="spinner-layer spinner-yellow">
+      <div class="circle-clipper left">
+          <div class="circle"></div>
+      </div><div class="gap-patch">
+          <div class="circle"></div>
+      </div><div class="circle-clipper right">
+          <div class="circle"></div>
+      </div>
+  </div>
+
+  <div class="spinner-layer spinner-green">
+      <div class="circle-clipper left">
+          <div class="circle"></div>
+      </div><div class="gap-patch">
+          <div class="circle"></div>
+      </div><div class="circle-clipper right">
+          <div class="circle"></div>
+      </div>
+  </div>
+</div></div>
+      </div>
+  </div>
+
+  <script id="metamorph-2-start" type="text/x-placeholder"></script><script id="metamorph-2-end" type="text/x-placeholder"></script>
+
+  <script id="metamorph-3-start" type="text/x-placeholder"></script>
+      <div id="branding-header-container">
+          <script id="metamorph-4-start" type="text/x-placeholder"></script><div id="default-experience-branding-header"><a target="_blank" class="default-experience-branding-header-logo" href="http://corp.hapyak.com"></a></div><script id="metamorph-4-end" type="text/x-placeholder"></script>
+      </div>
+  <script id="metamorph-3-end" type="text/x-placeholder"></script>
+  
+  <div id="social-media-buttons-container">
+      <script id="metamorph-5-start" type="text/x-placeholder"></script><script id="metamorph-5-end" type="text/x-placeholder"></script>
+  </div>
+
+  <script id="metamorph-6-start" type="text/x-placeholder"></script><script id="metamorph-6-end" type="text/x-placeholder"></script>
+
+  <div id="hapyak-page">
+  <div class="experience-layout landing-page-sizing-container">
+      <div class="row">
+          <div id="current-project-title">
+              <script id="metamorph-7-start" type="text/x-placeholder"></script>Gated Quiz Demo<script id="metamorph-7-end" type="text/x-placeholder"></script>
+          </div>
+      </div>
+
+      <div id="experience-video-sizing-container" style="height: 450px;">
+          <div id="hapyak-editor-iframe" class="active" style="height: 450px; width: 800px;"><iframe id="hapyak-embed-1" name="hapyak-embed" class="hapyak-embed" marginwidth="0" marginheight="0" frameborder="no" scrolling="no" allowfullscreen="" webkitallowfullscreen="" src="//www.hapyak.com/?embed=true&amp;edit=false&amp;startInEditMode=false&amp;project=156783&amp;key=80049382c5be49ef9147&amp;source=brightcove-v2&amp;player_parameters=%7B%22accountId%22%3A%222335723960001%22%2C%22bcEmbed%22%3A%22default%22%2C%22bcPlayer%22%3A%22default%22%2C%22isLive%22%3Afalse%7D&amp;controls=false&amp;native_controls=true&amp;external=false&amp;reset_variables=true&amp;experience_data=%7B%22generateExperienceViewId%22%3Atrue%2C%22experience%22%3A%7B%22id%22%3A1417%2C%22title%22%3A%22Gated%20Quiz%20Demo%22%7D%2C%22playlist%22%3A%7B%22id%22%3A1439%2C%22name%22%3A%22Gated%20Quiz%20Demo_playlist%22%7D%2C%22layout%22%3A%7B%22id%22%3A1439%2C%22name%22%3A%22Gated%20Quiz%20Demo_layout%22%2C%22type_id%22%3A2%2C%22type_name%22%3A%22video%20only%22%7D%2C%22scormVersion%22%3Anull%2C%22urlParams%22%3A%7B%7D%7D&amp;instance_id=1" width="100%" height="450" style="visibility: visible; position: static; height: 450px;"></iframe></div>
+          <div id="transition-screen" style="display: none;">
+              <img id="transition-image" src="//hapyak_demos.s3.amazonaws.com/img/Config%20Images/Black-Screen-Final.jpg" data-bindattr-4="4">
+          </div>
+      </div>
+
+      <div id="hapyak-experience-playlist-container" class="row hidePlaylist" data-bindattr-5="5">
+          <div id="hy-playlist-container" class="ember-view hy-playlist-viewer"><div id="hy-playlist">
+  <div id="prev-page" data-ember-action="6">
+      <img src="//d2qrdklrsxowl2.cloudfront.net/img/slidesync-left-arrow-inactive.svg" data-bindattr-7="7" alt="Previous Page Arrow">
+  </div>
+
+  <div id="hy-playlist-item-container">
+      <div id="hy-playlist-sized-container">
+          <div id="hy-playlist-limit-container" style="width: 20px;">
+              <div id="hy-playlist-items-outer">
+                  <div id="hy-playlist-items" style="transform: translateX(0px);">
+                      <script id="metamorph-8-start" type="text/x-placeholder"></script><script id="metamorph-23-start" type="text/x-placeholder"></script><div id="ember693" class="ember-view playlist-item viewer-playlist-item currently-playing" style="background-image: url(/static/img/thumbnail-placeholder.png)"><div class="video-info" data-ember-action="17">
+  <script id="metamorph-26-start" type="text/x-placeholder"></script>
+      <div class="currentlyPlaying">
+          Now Playing
+          <i class="fa fa-play"></i>
+      </div>
+  <script id="metamorph-26-end" type="text/x-placeholder"></script>
+
+  <script id="metamorph-27-start" type="text/x-placeholder"></script><script id="metamorph-27-end" type="text/x-placeholder"></script>
+</div>
+</div><script id="metamorph-23-end" type="text/x-placeholder"></script><script id="metamorph-8-end" type="text/x-placeholder"></script>
+                  </div>
+              </div>
+          </div>
+          <div id="page-select-container" class="page-nav-container" data-bindattr-8="8">
+              <script id="metamorph-9-start" type="text/x-placeholder"></script><script id="metamorph-25-start" type="text/x-placeholder"></script>
+                  <div class="page active" data-bindattr-18="18" data-ember-action="19"></div>
+              <script id="metamorph-25-end" type="text/x-placeholder"></script><script id="metamorph-9-end" type="text/x-placeholder"></script>
+          </div>
+      </div>
+  </div>
+
+  <div id="next-page" data-ember-action="9">
+      <img src="//d2qrdklrsxowl2.cloudfront.net/img/slidesync-right-arrow-inactive.svg" data-bindattr-10="10" alt="Next Page Arrow">
+  </div>
+</div>
+</div>
+      </div>
+  </div>
+</div>
+
+
+  <script id="metamorph-10-start" type="text/x-placeholder"></script>
+      <div id="branding-footer-container">
+          <script id="metamorph-11-start" type="text/x-placeholder"></script><script id="metamorph-11-end" type="text/x-placeholder"></script>
+      </div>
+  <script id="metamorph-10-end" type="text/x-placeholder"></script>
+</div>
+</div>
+  <script id="metamorph-1-end" type="text/x-placeholder"></script>
+<script id="metamorph-0-end" type="text/x-placeholder"></script>
+
+<script id="metamorph-12-start" type="text/x-placeholder"></script><script id="metamorph-12-end" type="text/x-placeholder"></script>
+</div></body></html>

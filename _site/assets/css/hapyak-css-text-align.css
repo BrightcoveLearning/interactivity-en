@@ -1,0 +1,16 @@
+.hapyak-annotation-container .popcorn-pop.hapyak-theme-black, .hapyak-annotation-container .popcorn-pop.hapyak-theme-white {
+    text-align: left;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
