@@ -95,6 +95,11 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/integrations/brightcove-sync.html",
+      "oldURL": "/brightcove-sync"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/annotations/bulk-annotation-edit.html",
       "oldURL": "/bulk-annotation-edit"
   },
@@ -132,6 +137,11 @@
   {
       "newURL": "https://interactions.support.brightcove.com/projects/creating-a-new-hapyak-project.html",
       "oldURL": "/creating-a-new-hapyak-project"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/integrations/custom-css-via-hapyak-plugin-for-brightcove.html",
+      "oldURL": "/custom-css-via-hapyak-plugin-for-brightcove"
   },
 
   {
@@ -230,37 +240,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/getting-started/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/annotations/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://interactions.support.brightcove.com/references/extension/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/customize/",
       "oldURL": "/index"
   },
 
@@ -275,27 +255,12 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://interactions.support.brightcove.com/references/addon/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://interactions.support.brightcove.com/references/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/analytics/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/custom-annotations/",
       "oldURL": "/index"
   },
 
@@ -310,12 +275,57 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/integrations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/annotations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/getting-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/mobile/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/integrations/",
+      "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/analytics/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/customize/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -335,12 +345,12 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/support/known-issues.html",
+      "newURL": "https://interactions.support.brightcove.com/references/known-issues.html",
       "oldURL": "/known-issues"
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/references/known-issues.html",
+      "newURL": "https://interactions.support.brightcove.com/support/known-issues.html",
       "oldURL": "/known-issues"
   },
 
@@ -357,6 +367,11 @@
   {
       "newURL": "https://interactions.support.brightcove.com/integrations/lti-integrating-with-your-lms.html",
       "oldURL": "/lti-integrating-with-your-lms"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/integrations/lti-lessons-creating-a-branching-video.html",
+      "oldURL": "/lti-lessons-creating-a-branching-video"
   },
 
   {
@@ -497,6 +512,11 @@
   {
       "newURL": "https://interactions.support.brightcove.com/support/viewing-brightcove-system-status-page.html",
       "oldURL": "/viewing-brightcove-system-status-page"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/integrations/wistia-integration-browse-media.html",
+      "oldURL": "/wistia-integration-browse-media"
   },
 
   {

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="How to send HapYak Interaction and Engagement events into Google Analytics.">
+  <meta name="description" content="Creating a Branching or Choose Your Own Adventure Video in a Lesson created via the HapYak LTI Integration.">
   
-  <title>Google Analytics</title>
+  <title>LTI Lessons - Creating a Branching Video</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,9 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/analytics/">Analytics</a></li>
+      <li class="breadcrumb-item"><a href="/integrations/">Integrations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Google Analytics</li>
+      <li class="breadcrumb-item active" aria-current="page">LTI Lessons - Creating a Branching Video</li>
     </ol>
   </nav>
 </header>
@@ -250,35 +250,48 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Google Analytics</h1>
+<h1>LTI Lessons - Creating a Branching Video</h1>
 <article class="bcls-article">
-  <summary>How to send HapYak Interaction and Engagement events into Google Analytics.</summary>
+  <summary>Creating a Branching or Choose Your Own Adventure Video in a Lesson created via the HapYak LTI Integration.</summary>
   <section class="bcls-section">
-    <p class="intercom-align-left">HapYak has a Google Analytics add-on that will send interaction and engagement events directly from HapYak into Google Analytics. Details on the module are
-      <a href="https://docs.google.com/document/d/1QobjonB3CWFR8Lf8EG42WenWAPQlbqj0ZfZgtDRJn3g/edit" rel="nofollow noopener noreferrer" target="_blank">here</a>.
+    <h2 id="branching-video-overview" class="intercom-align-left" data-post-processed="true">Branching Video Overview</h2>
+    <p class="intercom-align-left">Branching or Choose-Your-Own-Adventure is a popular type of interactive video. In a nutshell, it brings a viewer to different parts of a video, or new video entirely, based on how they interact with it.</p>
+    <p class="intercom-align-left">You can read more on the basics of Branching
+      <a href="/projects/branching-choose-your-own-adventure-video.html" data-is-internal-link="true">here</a>.
     </p>
-    <p class="intercom-align-left">This is a great way to send this rich new stream of viewer intelligence into a system you already use to track the effectiveness of your marketing and digital initiatives.</p>
-    <div class="intercom-container intercom-align-left">
-      <img src="/assets/images/analytics/google-analytics.png">
-    </div>
-    <ul>
+    <p class="intercom-align-left">If you created a Lesson via HapYak's LTI integration you can do branching in two ways.</p>
+    <h2 id="in-video-branching" class="intercom-align-left" data-post-processed="true">In-Video Branching</h2>
+    <p class="intercom-align-left">You do
+      <b>In-Video branching</b> just as you would in a single project in the HapYak portal. Detail
+      <a href="/projects/branching-choose-your-own-adventure-video.html" data-is-internal-link="true">here</a>.
+    </p>
+    <h2 id="video-to-video-branching" class="intercom-align-left" data-post-processed="true">Video to Video Branching</h2>
+    <p class="intercom-align-left">You can branch from video to video by following this technique.</p>
+    <ol>
       <li>
-        <p class="no-margin">Go to the
-          <a href="http://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> page on your HapYak portal. If you don't see the Google Analytics card (see below) email
-          <a href="mailto:support@hapyak.com?Subject=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module&amp;Body=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module" rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get access to it.
+        <p class="no-margin">Create a lesson.</p>
+      </li>
+      <li>
+        <p class="no-margin">Create a second lesson (the next video where you'd like the viewer to branch to)</p>
+      </li>
+      <li>
+        <p class="no-margin">View the second lesson as a student. Copy the URL of that lesson.</p>
+      </li>
+      <li>
+        <p class="no-margin">Go back to the first lesson. Add an annotation (text, hotspot or image) that the viewer would click to branch to the next video. In
+          <a href="/annotations/link-options.html" data-is-internal-link="true">Link (ON CLICK EVENT)</a> / Load external URL:, paste the URL to the second lesson. Click Submit. Click Done.
         </p>
       </li>
       <li>
-        <p class="no-margin">Add your Google ID (UA-...). Switch to
-          <b>Enabled</b>.
-        </p>
+        <p class="no-margin">Test by viewing this first lesson as a student. Clicking on the annotation should load the second lesson.</p>
       </li>
-      <li>
-        <p class="no-margin">You're done. Here is a
-          <a href="https://docs.google.com/document/d/1j9uJg-QWrIXLeRuSkNVlk14PLKvLvtNfdUsUKlcDMpc/edit" rel="nofollow noopener noreferrer" target="_blank">full list of events that are sent to GA</a>.
-        </p>
-      </li>
-    </ul>
+    </ol>
+    <p class="intercom-align-left">
+      <i>Note: You can use this same technique in a Quiz annotation by adding the second lesson URL to the</i>
+      <a href="/annotations/quiz-annotation.html" data-is-internal-link="true">Pass/Fail actions</a>
+      <i> field.</i>
+    </p>
+    <p class="intercom-align-left"></p>
   </section>
 </article>
 

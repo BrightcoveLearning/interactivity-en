@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="How to send HapYak Interaction and Engagement events into Google Analytics.">
+  <meta name="description" content="Sync the titles and thumbnail images from your Brightcove account to your HapYak account.">
   
-  <title>Google Analytics</title>
+  <title>Brightcove Sync</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,9 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/analytics/">Analytics</a></li>
+      <li class="breadcrumb-item"><a href="/integrations/">Integrations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Google Analytics</li>
+      <li class="breadcrumb-item active" aria-current="page">Brightcove Sync</li>
     </ol>
   </nav>
 </header>
@@ -250,35 +250,58 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Google Analytics</h1>
+<h1>Brightcove Sync</h1>
 <article class="bcls-article">
-  <summary>How to send HapYak Interaction and Engagement events into Google Analytics.</summary>
+  <summary>Sync the titles and thumbnail images from your Brightcove account to your HapYak account.</summary>
   <section class="bcls-section">
-    <p class="intercom-align-left">HapYak has a Google Analytics add-on that will send interaction and engagement events directly from HapYak into Google Analytics. Details on the module are
-      <a href="https://docs.google.com/document/d/1QobjonB3CWFR8Lf8EG42WenWAPQlbqj0ZfZgtDRJn3g/edit" rel="nofollow noopener noreferrer" target="_blank">here</a>.
+    <h3 id="title-and-thumbnail-sync" class="intercom-align-left" data-post-processed="true">Title and Thumbnail Sync</h3>
+    <p class="intercom-align-left">If you upload large numbers of videos to HapYak using the Brightcove plugin, you may be interested in enabling Brightcove Sync on your account.
+      <br>
+      <br>By default, HapYak Projects autocreated through the Brightcove plugin will have the same title as the Brightcove video title
+      <i>when the project was autocreated</i>and will have no thumbnail image. However, users are able to ensure that the HapYak project title and thumbnail are updated to match either the title or thumbnail image of the video in Brightcove.
     </p>
-    <p class="intercom-align-left">This is a great way to send this rich new stream of viewer intelligence into a system you already use to track the effectiveness of your marketing and digital initiatives.</p>
-    <div class="intercom-container intercom-align-left">
-      <img src="/assets/images/analytics/google-analytics.png">
-    </div>
-    <ul>
+    <p class="intercom-align-left">Syncing your Brightcove and HapYak accounts will add thumbnail images to any Brightcove videos present in your HapYak account that don't already have them. It's a huge time saver, especially when creating playlists in HapYak Experiences.</p>
+    <h3 id="how-to-enable-title-and-thumbnail-sync" class="intercom-align-left" data-post-processed="true">How to Enable Title and Thumbnail Sync</h3>
+    <ol>
       <li>
         <p class="no-margin">Go to the
-          <a href="http://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> page on your HapYak portal. If you don't see the Google Analytics card (see below) email
-          <a href="mailto:support@hapyak.com?Subject=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module&amp;Body=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module" rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get access to it.
+          <a href="https://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> tab on the HapYak Nav Bar. On the Brightcove card, switch on
+          <b>Enable</b>.
         </p>
       </li>
       <li>
-        <p class="no-margin">Add your Google ID (UA-...). Switch to
-          <b>Enabled</b>.
+        <p class="no-margin">In Brightcove, navigate to
+          <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings" rel="nofollow noopener noreferrer" target="_blank">Admin / API Authentication</a>. Click "Register New Application". Fill out details according to
+          <a href="https://support.brightcove.com/managing-api-authentication-credentials" rel="nofollow noopener noreferrer" target="_blank">this Brightcove KB article</a>. Ensure that
+          <b>Video Read</b> is checked under "Exposed Brightcove APIs". Click
+          <b>Save</b>.
         </p>
       </li>
       <li>
-        <p class="no-margin">You're done. Here is a
-          <a href="https://docs.google.com/document/d/1j9uJg-QWrIXLeRuSkNVlk14PLKvLvtNfdUsUKlcDMpc/edit" rel="nofollow noopener noreferrer" target="_blank">full list of events that are sent to GA</a>.
+        <p class="no-margin">In the HapYak
+          <a href="https://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> tab, enter your Brightcove API credentials (Client Id, Client Secret, Account Id). &nbsp;Click
+          <b>Save</b>.
+          <i>(</i>
+          <b>
+            <i>Note:</i>
+          </b>
+          <i> The sync button will not appear until you have entered all three credentials. If your credentials are incorrect, sync will fail.)</i>
         </p>
       </li>
-    </ul>
+      <li>
+        <p class="no-margin">Click
+          <b>Sync Now</b> to start the sync process. When the sync is complete, you will be notified of the number of projects updated in your account. It should only take a few minutes.
+        </p>
+      </li>
+    </ol>
+    <div class="intercom-container intercom-align-center">
+      <img src="/assets/images/integrations/sync-finished.png">
+    </div>
+    <p class="intercom-align-left">Repeat step 4 every time you'd like to update the Project titles and Thumbnails.
+      <br>
+      <br>Here is a video tutorial on
+      <a href="https://bcove.video/2rVpDrC" rel="nofollow noopener noreferrer" target="_blank">how to turn on Title Sync</a>.
+    </p>
   </section>
 </article>
 

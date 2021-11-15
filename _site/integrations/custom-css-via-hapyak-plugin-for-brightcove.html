@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="How to send HapYak Interaction and Engagement events into Google Analytics.">
+  <meta name="description" content="How to configure custom fields to allow for custom css on a per video level via the HapYak Plugin for Brightcove.">
   
-  <title>Google Analytics</title>
+  <title>Custom CSS via HapYak Plugin for Brightcove</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,9 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/analytics/">Analytics</a></li>
+      <li class="breadcrumb-item"><a href="/integrations/">Integrations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Google Analytics</li>
+      <li class="breadcrumb-item active" aria-current="page">Custom CSS via HapYak Plugin for Brightcove</li>
     </ol>
   </nav>
 </header>
@@ -250,35 +250,38 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Google Analytics</h1>
+<h1>Custom CSS via HapYak Plugin for Brightcove</h1>
 <article class="bcls-article">
-  <summary>How to send HapYak Interaction and Engagement events into Google Analytics.</summary>
+  <summary>How to configure custom fields to allow for custom css on a per video level via the HapYak Plugin for Brightcove.</summary>
   <section class="bcls-section">
-    <p class="intercom-align-left">HapYak has a Google Analytics add-on that will send interaction and engagement events directly from HapYak into Google Analytics. Details on the module are
-      <a href="https://docs.google.com/document/d/1QobjonB3CWFR8Lf8EG42WenWAPQlbqj0ZfZgtDRJn3g/edit" rel="nofollow noopener noreferrer" target="_blank">here</a>.
+    <ol>
+      <li>
+        <p class="no-margin">In Brightcove Studio, configure a Player with the HapYak Plugin.
+          <a href="/getting-started/hapyak-plugin-for-brightcove.html" data-is-internal-link="true">Instructions here</a>
+        </p>
+      </li>
+    </ol>
+    <p class="no-margin">2. In Brightcove Studio, create a new custom metadata field with an Internal name of "custom_css" (syntax important!) and a display name of anything you would like. We recommend ‘HapYak Custom CSS’</p>
+    
+    <p class="no-margin">3. Instructions
+      <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html" rel="nofollow noopener noreferrer" target="_blank">here</a>.
     </p>
-    <p class="intercom-align-left">This is a great way to send this rich new stream of viewer intelligence into a system you already use to track the effectiveness of your marketing and digital initiatives.</p>
-    <div class="intercom-container intercom-align-left">
-      <img src="/assets/images/analytics/google-analytics.png">
-    </div>
+    <p class="no-margin">4. In Brightcove Studio:&nbsp;</p>
     <ul>
       <li>
-        <p class="no-margin">Go to the
-          <a href="http://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> page on your HapYak portal. If you don't see the Google Analytics card (see below) email
-          <a href="mailto:support@hapyak.com?Subject=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module&amp;Body=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module" rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get access to it.
-        </p>
+        <p class="no-margin">Go to "Media"</p>
       </li>
       <li>
-        <p class="no-margin">Add your Google ID (UA-...). Switch to
-          <b>Enabled</b>.
-        </p>
+        <p class="no-margin">Select the Video associated with the hapyak project with project level CSS</p>
       </li>
       <li>
-        <p class="no-margin">You're done. Here is a
-          <a href="https://docs.google.com/document/d/1j9uJg-QWrIXLeRuSkNVlk14PLKvLvtNfdUsUKlcDMpc/edit" rel="nofollow noopener noreferrer" target="_blank">full list of events that are sent to GA</a>.
-        </p>
+        <p class="no-margin">Add the link to the project level CSS into the "Custom CSS" field. Please remember to remove the protocols</p>
       </li>
     </ul>
+    <p class="no-margin">5. In Brightcove Studio, on the same video, click "Publish" and select the Player that you configured with the HapYak plugin from the drop-down list.</p>
+    
+    <p class="no-margin">6. Click to preview the video, your video should now have the custom css for that hapyak project (note: caching may cause a delay in any changes to CSS)</p>
+    
   </section>
 </article>
 

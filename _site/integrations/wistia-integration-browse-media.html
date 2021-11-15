@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="How to send HapYak Interaction and Engagement events into Google Analytics.">
+  <meta name="description" content="See your entire Wistia video library in HapYak. Automatically create projects without copying and pasting embed codes or URLs.">
   
-  <title>Google Analytics</title>
+  <title>Wistia Integration - Browse Media</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,9 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/analytics/">Analytics</a></li>
+      <li class="breadcrumb-item"><a href="/integrations/">Integrations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Google Analytics</li>
+      <li class="breadcrumb-item active" aria-current="page">Wistia Integration - Browse Media</li>
     </ol>
   </nav>
 </header>
@@ -250,35 +250,62 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Google Analytics</h1>
+<h1>Wistia Integration - Browse Media</h1>
 <article class="bcls-article">
-  <summary>How to send HapYak Interaction and Engagement events into Google Analytics.</summary>
+  <summary>See your entire Wistia video library in HapYak. Automatically create projects without copying and pasting embed codes or URLs.</summary>
   <section class="bcls-section">
-    <p class="intercom-align-left">HapYak has a Google Analytics add-on that will send interaction and engagement events directly from HapYak into Google Analytics. Details on the module are
-      <a href="https://docs.google.com/document/d/1QobjonB3CWFR8Lf8EG42WenWAPQlbqj0ZfZgtDRJn3g/edit" rel="nofollow noopener noreferrer" target="_blank">here</a>.
+    <p class="intercom-align-left">You can create an interactive video project in HapYak with any Wistia video by simply copying the URL of the Wistia video and using that as the
+      video source of the project.
     </p>
-    <p class="intercom-align-left">This is a great way to send this rich new stream of viewer intelligence into a system you already use to track the effectiveness of your marketing and digital initiatives.</p>
+    <p class="intercom-align-left">But, if you are going to make dozens or hundreds of Wistia videos interactive, the
+      <b>Browse Media</b> integration will save you a lot of time. You will not have to copy and paste from Wistia each time to create a project. Rather your entire Wistia library will appear within HapYak and you can create a project for any of them with one click.
+    </p>
     <div class="intercom-container intercom-align-left">
-      <img src="/assets/images/analytics/google-analytics.png">
+      <img src="/assets/images/integrations/HapYak-Wistia-Integration-Browse-Media.gif">
     </div>
-    <ul>
+    <h2 id="setup" class="intercom-align-left" data-post-processed="true">Setup</h2>
+    <ol>
       <li>
-        <p class="no-margin">Go to the
-          <a href="http://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> page on your HapYak portal. If you don't see the Google Analytics card (see below) email
-          <a href="mailto:support@hapyak.com?Subject=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module&amp;Body=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module" rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get access to it.
+        <p class="no-margin">Email
+          <a href="mailto:support@hapyak.com?subject=Please%20add%20the%20Wistia%20Browse%20Media%20integration%20to%20my%20account.&amp;body=Please%20add%20the%20Wistia%20Browse%20Media%20integration%20to%20my%20account.%0AMy%20group%20name%20is%20_______________." rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> and request it be added to your account.
         </p>
       </li>
       <li>
-        <p class="no-margin">Add your Google ID (UA-...). Switch to
-          <b>Enabled</b>.
+        <p class="no-margin">In the HapYak
+          <b>Admin Panel</b>, go to
+          <a href="http://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a>. On the Wistia card, turn on the
+          <b>Enabled</b> switch.
         </p>
       </li>
       <li>
-        <p class="no-margin">You're done. Here is a
-          <a href="https://docs.google.com/document/d/1j9uJg-QWrIXLeRuSkNVlk14PLKvLvtNfdUsUKlcDMpc/edit" rel="nofollow noopener noreferrer" target="_blank">full list of events that are sent to GA</a>.
+        <p class="no-margin">In Wistia, go to
+          <a href="https://hapyak.wistia.com/account/api" rel="nofollow noopener noreferrer" target="_blank">API Access</a>. Click "new token". Check "Read all data". Click "Create Token."
         </p>
       </li>
-    </ul>
+      <li>
+        <p class="no-margin">Copy that token and paste it into the card in HapYak integrations. Click
+          <b>Save</b>.
+        </p>
+      </li>
+    </ol>
+    <h2 id="use" class="intercom-align-left" data-post-processed="true">Use</h2>
+    <ol>
+      <li>
+        <p class="no-margin">In the
+          <a href="http://www.hapyak.com/portal/projects" rel="nofollow noopener noreferrer" target="_blank">home screen</a> click
+          <b>New Project</b>. Select the video under the
+          <b>Browse Media</b> tab.&nbsp;
+        </p>
+      </li>
+      <li>
+        <p class="no-margin">It will automatically name the Project the same as the Wistia video. &nbsp;If you'd like to change that you can.</p>
+      </li>
+      <li>
+        <p class="no-margin">Click
+          <b>Submit</b>. You're done!
+        </p>
+      </li>
+    </ol>
   </section>
 </article>
 
