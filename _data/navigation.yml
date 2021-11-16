@@ -18,6 +18,18 @@
     - name: 'Terminology'
       url: '/getting-started/terminology.html'
 - section: 
+  name: 'Best Practices'
+  url: '/best-practices/index.html'
+  docs:
+    - name: 'Becoming an Interactive Video Expert'
+      url: '/best-practices/becoming-an-interactive-video-expert.html'
+    - name: 'Edit Videos in QuickTime'
+      url: '/best-practices/edit-videos-in-quicktime.html'
+    - name: 'How to Increase Click Through Rate (CTR)'
+      url: '/best-practices/how-to-increase-click-through-rate-ctr.html'
+    - name: 'Interactive Video Script Template'
+      url: '/best-practices/interactive-video-script-template.html'
+- section: 
   name: 'Annotations'
   url: '/annotations/index.html'
   docs:
