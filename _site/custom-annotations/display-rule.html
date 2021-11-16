@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="How to add a display rule to your video.">
   
-  <title></title>
+  <title>Display Rule</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,7 +39,7 @@
 
 <header>
   <div class="div-header">
-    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/SVG/brightcove-black-on-white.svg" alt="Brightcove"></a>
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/brightcove-black-on-white.svg" alt="Brightcove"></a>
 <!-- GTranslate: https://gtranslate.io/ -->
 <select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
 
@@ -58,9 +58,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
+      <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
       
       
-      <li class="breadcrumb-item active" aria-current="page"></li>
+      
+      <li class="breadcrumb-item"><a href="/custom-annotations/">Custom Annotations</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Display Rule</li>
     </ol>
   </nav>
 </header>
@@ -154,7 +158,58 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/getting-started/interactions-overview.html">Interactions Overview</a></li>
+                    <li><a href="/getting-started/hapyak-plugin-for-brightcove.html">HapYak Plugin for Brightcove</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/interactive-video-types.html">HapYak Interactive Video Types</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/introduction-to-the-hapyak-portal.html">Introduction to the HapYak Portal</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/manage-users-group-members.html">Manage Users (Group Members)</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/templates.html">Templates</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/terminology.html">Terminology</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/annotations/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Annotations</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/annotations/annotation-options.html">Annotation Options</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/annotations-list.html">The Annotation List</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/auto-load-url.html">Auto-Load URL</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/automatically-pause-the-video-or-jump-to-a-time-in-the-video-aka-skip-to-time.html">Automatically Pause Video or Jump to a Time</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/bulk-annotation-edit.html">Bulk Annotation Edit</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/chapter-menu-and-chapters.html">Chapter Menu and Chapters</a></li>
                   
                 
               </ul>
@@ -173,27 +228,27 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/references/embed/index.html">Embed API</a></li>
+                    <li><a href="/references/embed/embed.html">Embed API</a></li>
                   
                 
                   
-                    <li><a href="/references/annotation/index.html">Annotation API</a></li>
+                    <li><a href="/references/annotation/annotation.html">Annotation API</a></li>
                   
                 
                   
-                    <li><a href="/references/extension/index.html">Extension API</a></li>
+                    <li><a href="/references/extension/extension.html">Extension API</a></li>
                   
                 
                   
-                    <li><a href="/references/playlist/index.html">Playlist API</a></li>
+                    <li><a href="/references/playlist/playlist.html">Playlist API</a></li>
                   
                 
                   
-                    <li><a href="/references/responsive/index.html">Responsive API</a></li>
+                    <li><a href="/references/responsive/responsive.html">Responsive API</a></li>
                   
                 
                   
-                    <li><a href="/references/addon/index.html">Addon API</a></li>
+                    <li><a href="/references/addon/addon.html">Addon API</a></li>
                   
                 
               </ul>
@@ -246,12 +301,33 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1></h1>
+<h1>Display Rule</h1>
 <article class="bcls-article">
-  <summary></summary>
+  <summary>How to add a display rule to your video.</summary>
   <section class="bcls-section">
-    <h2 id=""></h2>
-    <p></p>
+    <p class="intercom-align-left"><i>Friendly Warning: welcome to developer territory.&nbsp;</i></p>
+    <p class="intercom-align-left"><i>You will have a lot of fun if you are comfortable with HTML, Javascript and CSS, or have a friend / colleague that is. If not, you may have a bad time.&nbsp;</i></p>
+    <p class="intercom-align-left"><i>If you are a real do-it-yourselfer and want to learn yourself, we highly recommend first taking Codeacademy's free </i><a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank"><i>HTML/CSS</i></a><i> and </i><a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank"><i>JavaScript</i></a><i> courses. </i><br><br>The <b>Display Rule</b> allows you to make an annotation appear only under certain conditions. Common conditions include:</p>
+    <ul>
+      <li>
+        <p class="no-margin">Display when a viewer clicks on a different annotation.</p>
+      </li>
+      <li>
+        <p class="no-margin">Display when the viewer gets a question right or wrong.</p>
+      </li>
+      <li>
+        <p class="no-margin">Display based on a parameter passed in from an external API.</p>
+      </li>
+    </ul>
+    <h3 id="examples" class="intercom-align-left" data-post-processed="true">Examples</h3>
+    <p class="intercom-align-left">Here's a basic example. Clicking on one annotation will make another appear.</p>
+    <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/ac7b47a05a639b26b56e6944cdce2f94" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-1.png"></a></div>
+    <p class="intercom-align-left">Here's a more sophisticated example.</p>
+    <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/8b8418334f111ecb6b41e07b9aca6880" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-2.png"></a></div>
+    <h3 id="how-to-do-it" class="intercom-align-left" data-post-processed="true">How to do it</h3>
+    <p class="intercom-align-left">The first (or "target") annotation can be a text, image or hotspot annotation.<br>Set the <b>Link</b> / <b>Evaluate</b> expression field to something like: <code>displayTextBox=true</code>.<br><br>The second (or "destination") annotation can be any type - text, image, hotspot, iframe, even a quiz.<br>On this, set the <b>Display Rule</b> field to something like: <code>displayTextBox==true</code>.<br></p>
+    <h3 id="optional-configuration" class="intercom-align-left" data-post-processed="true">Optional Configuration</h3>
+    <p class="intercom-align-left">The more sophisticated example has the following configuration:<br><br><b>Target Annotation</b><br><b>Link</b> / <b>Evaluate</b> expression: <code>player.pause(), displayTextBox=true, displayQuestionBox=false</code><br><b>Display Rule</b>: <code>displayQuestionBox==true || displayQuestionBox==undefined</code><br><br><b>Destination Annotation<br></b><b>Link</b> / <b>Evaluate</b> expression: <code>player.play(), displayTextBox=false, displayQuestionBox=true</code><br><b>Display Rule</b>: <code>displayTextBox==true</code><br><b>Start time and Duration </b>for both the target and destination annotations are identical.</p>
   </section>
 </article>
 <!-- complete bootstrap layout -->
@@ -269,7 +345,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 05 Nov 2021
+  Page last updated on 15 Nov 2021
 </div>
 
 

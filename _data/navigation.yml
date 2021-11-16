@@ -5,8 +5,34 @@
   name: 'Getting Started'
   url: '/getting-started/index.html'
   docs:
-    - name: 'Interactions Overview'
-      url: '/getting-started/interactions-overview.html'
+    - name: 'HapYak Plugin for Brightcove'
+      url: '/getting-started/hapyak-plugin-for-brightcove.html'
+    - name: 'HapYak Interactive Video Types'
+      url: '/getting-started/interactive-video-types.html'
+    - name: 'Introduction to the HapYak Portal'
+      url: '/getting-started/introduction-to-the-hapyak-portal.html'
+    - name: 'Manage Users (Group Members)'
+      url: '/getting-started/manage-users-group-members.html'
+    - name: 'Templates'
+      url: '/getting-started/templates.html'
+    - name: 'Terminology'
+      url: '/getting-started/terminology.html'
+- section: 
+  name: 'Annotations'
+  url: '/annotations/index.html'
+  docs:
+    - name: 'Annotation Options'
+      url: '/annotations/annotation-options.html'
+    - name: 'The Annotation List'
+      url: '/annotations/annotations-list.html'
+    - name: 'Auto-Load URL'
+      url: '/annotations/auto-load-url.html'
+    - name: 'Automatically Pause Video or Jump to a Time'
+      url: '/annotations/automatically-pause-the-video-or-jump-to-a-time-in-the-video-aka-skip-to-time.html'
+    - name: 'Bulk Annotation Edit'
+      url: '/annotations/bulk-annotation-edit.html'
+    - name: 'Chapter Menu and Chapters'
+      url: '/annotations/chapter-menu-and-chapters.html'
 - section:
   name: 'References'
   url: /references/index.html
@@ -16,17 +42,17 @@
     - name: 'Known Issues'
       url: '/support/known-issues.html'
     - name: Embed API
-      url: /references/embed/index.html
+      url: /references/embed/embed.html
     - name: Annotation API
-      url: /references/annotation/index.html
+      url: /references/annotation/annotation.html
     - name: Extension API
-      url: /references/extension/index.html
+      url: /references/extension/extension.html
     - name: Playlist API
-      url: /references/playlist/index.html
+      url: /references/playlist/playlist.html
     - name: Responsive API
-      url: /references/responsive/index.html
+      url: /references/responsive/responsive.html
     - name: Addon API
-      url: /references/addon/index.html
+      url: /references/addon/addon.html
 - section: 
   name: 'Support'
   url: '/support/'

@@ -1,5 +1,10 @@
 [
   {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/360-interactive-video.html",
+      "oldURL": "/360-interactive-video"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/404.html",
       "oldURL": "/404"
   },
@@ -7,6 +12,21 @@
   {
       "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/add-a-mailchimp-form-to-a-video.html",
+      "oldURL": "/add-a-mailchimp-form-to-a-video"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/add-a-typeform-to-a-video.html",
+      "oldURL": "/add-a-typeform-to-a-video"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/add-an-olark-widget-to-a-video.html",
+      "oldURL": "/add-an-olark-widget-to-a-video"
   },
 
   {
@@ -55,6 +75,11 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/developers/apis.html",
+      "oldURL": "/apis"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/annotations/auto-load-url.html",
       "oldURL": "/auto-load-url"
   },
@@ -67,6 +92,11 @@
   {
       "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/autoplay.html",
       "oldURL": "/autoplay"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/best-practices/becoming-an-interactive-video-expert.html",
+      "oldURL": "/becoming-an-interactive-video-expert"
   },
 
   {
@@ -95,8 +125,18 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/players/brightcove-browser-compatibility.html",
+      "oldURL": "/brightcove-browser-compatibility"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/integrations/brightcove-sync.html",
       "oldURL": "/brightcove-sync"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/troubleshooting/brightcove-videos-are-experiencing-unexpected-behavior-in-ie11-or-other-flash-based-browsers.html",
+      "oldURL": "/brightcove-videos-are-experiencing-unexpected-behavior-in-ie11-or-other-flash-based-browsers"
   },
 
   {
@@ -145,8 +185,18 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/custom-form-annotation.html",
+      "oldURL": "/custom-form-annotation"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/annotations/custom-transitions-with-animate-css-beta.html",
       "oldURL": "/custom-transitions-with-animate-css-beta"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/custom-widget-library.html",
+      "oldURL": "/custom-widget-library"
   },
 
   {
@@ -160,8 +210,23 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/troubleshooting/detecting-browser-version-and-operating-system-version.html",
+      "oldURL": "/detecting-browser-version-and-operating-system-version"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/custom-annotations/display-rule.html",
       "oldURL": "/display-rule"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/best-practices/edit-videos-in-quicktime.html",
+      "oldURL": "/edit-videos-in-quicktime"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/integrations/eloqua-add-on.html",
+      "oldURL": "/eloqua-add-on"
   },
 
   {
@@ -200,8 +265,18 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/assets/images/players/how-can-i-get-my-private-youtube-videos-to-work.html",
+      "oldURL": "/how-can-i-get-my-private-youtube-videos-to-work"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/projects/how-do-i-upload-videos.html",
       "oldURL": "/how-do-i-upload-videos"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/best-practices/how-to-increase-click-through-rate-ctr.html",
+      "oldURL": "/how-to-increase-click-through-rate-ctr"
   },
 
   {
@@ -265,12 +340,22 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/players/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/projects/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://interactions.support.brightcove.com/style/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/troubleshooting/",
       "oldURL": "/index"
   },
 
@@ -315,12 +400,22 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/best-practices/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/analytics/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://interactions.support.brightcove.com/customize/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/developers/",
       "oldURL": "/index"
   },
 
@@ -332,6 +427,11 @@
   {
       "newURL": "https://interactions.support.brightcove.com/index_for_launch.html",
       "oldURL": "/index_for_launch"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/best-practices/interactive-video-script-template.html",
+      "oldURL": "/interactive-video-script-template"
   },
 
   {
@@ -360,6 +460,11 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/integrations/lms-integrations.html",
+      "oldURL": "/lms-integrations"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/customize/localization-change-the-language-translate-the-language.html",
       "oldURL": "/localization-change-the-language-translate-the-language"
   },
@@ -380,6 +485,16 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/mobile/mobile-iphone-ipad-android-support.html",
+      "oldURL": "/mobile-iphone-ipad-android-support"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/mobile/mobile-support-for-wistia.html",
+      "oldURL": "/mobile-support-for-wistia"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/support/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
@@ -387,6 +502,16 @@
   {
       "newURL": "https://interactions.support.brightcove.com/support/opening-case-with-brightcove-support.html",
       "oldURL": "/opening-case-with-brightcove-support"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/players/optimal-export-settings.html",
+      "oldURL": "/optimal-export-settings"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/poll-widget.html",
+      "oldURL": "/poll-widget"
   },
 
   {
@@ -430,8 +555,23 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/integrations/salesforce-add-on.html",
+      "oldURL": "/salesforce-add-on"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/troubleshooting/save-project-save-annotation.html",
+      "oldURL": "/save-project-save-annotation"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/search.html",
       "oldURL": "/search"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/developers/security-and-privacy.html",
+      "oldURL": "/security-and-privacy"
   },
 
   {
@@ -470,6 +610,11 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/troubleshooting/taking-a-console-screenshot-or-screen-recording.html",
+      "oldURL": "/taking-a-console-screenshot-or-screen-recording"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/getting-started/templates.html",
       "oldURL": "/templates"
   },
@@ -495,6 +640,11 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/user-sentiment-widget.html",
+      "oldURL": "/user-sentiment-widget"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/styling/using-hapyak-s-built-in-css-classes.html",
       "oldURL": "/using-hapyak-s-built-in-css-classes"
   },
@@ -515,6 +665,16 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/assets/images/players/vimeo-firefox-ensuring-audio-and-annotation-sync.html",
+      "oldURL": "/vimeo-firefox-ensuring-audio-and-annotation-sync"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/troubleshooting/what-web-browsers-devices-does-hapyak-support.html",
+      "oldURL": "/what-web-browsers-devices-does-hapyak-support"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/integrations/wistia-integration-browse-media.html",
       "oldURL": "/wistia-integration-browse-media"
   },
@@ -522,6 +682,11 @@
   {
       "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/wordpress-plugin.html",
       "oldURL": "/wordpress-plugin"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/assets/images/players/youtube-playback-on-other-websites-has-been-disabled-by-the-video-owner.html",
+      "oldURL": "/youtube-playback-on-other-websites-has-been-disabled-by-the-video-owner"
   },
 ]
 

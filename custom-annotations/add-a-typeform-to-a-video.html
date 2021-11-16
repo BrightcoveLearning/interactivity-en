@@ -1,0 +1,89 @@
+---
+title: Add a Typeform to a Video
+description: How to add a Typeform to a Video.
+parent:
+---
+
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p class="intercom-align-left"><a href="http://www.typeform.com/" rel="nofollow noopener noreferrer" target="_blank">Typeform</a> is a free online survey and form builder. You can now add these forms directly on top of a video using HapYak. Here's how:<br></p>
+    <ol>
+      <li>
+        <p class="no-margin">In HapYak, add an iframe annotation to your video where you want the form to appear.</p>
+      </li>
+      <li>
+        <p class="no-margin">Click the <b>HTML</b> tab. Replace the default HTML with the HTML TEMPLATE below.</p>
+      </li>
+      <li>
+        <p class="no-margin">﻿Copy the <i>Full Page Embed Code</i> for the form from TypeForm.</p>
+      </li>
+      <li>
+        <p class="no-margin">Paste your TypeForm embed code where it says &lt;!-- ***Paste your Typeform embed code here*** --&gt;</p>
+      </li>
+      <li>
+        <p class="no-margin">Click <b>Submit</b>.</p>
+      </li>
+      <li>
+        <p class="no-margin">Click <b>Done</b>.</p>
+      </li>
+    </ol>
+    <h3 id="tips" class="intercom-align-left" data-post-processed="true">Tips</h3>
+    <p class="intercom-align-left">By default the form will be shown for 3 seconds. You have the following options to increase the users ability to engage with it.</p>
+    <ol>
+      <li>
+        <p class="no-margin">Increase the <b>Duration</b></p>
+      </li>
+    </ol>
+    <p class="intercom-align-left">2. Set <b>Pause: Y</b></p>
+    <p class="intercom-align-left">3 &nbsp;Set <b>Gate: Y</b> (<i>Note: Set either Pause or Gate, not both</i>)</p>
+    <h3 id="html-template" class="intercom-align-left" data-post-processed="true">HTML TEMPLATE</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+       &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;TypeForm Widget for HapYak&lt;/title&gt;
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://hapyak_demos.s3.amazonaws.com/css/hy_widget_typeform.css&quot;&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;div class=&quot;hy_widget&quot;&gt;
+      &lt;div class=&quot;hy_widget_typeformTop&quot;&gt;Click here when done. &lt;button onclick=&quot;resumeVideo()&quot;&gt;Resume Video&lt;/button&gt;&lt;/div&gt;
+      &lt;!-- [BEGIN Typeform embed code] --&gt;
+                    &lt;!-- ***Paste your Typeform embed code here*** --&gt;
+      
+      
+                      &lt;!-- [END  Typeform embed code] --&gt;
+      &lt;/div&gt;
+      &lt;/body&gt;
+      &lt;script src=&quot;//code.jquery.com/jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;//d2qrdklrsxowl2.cloudfront.net/js/hapyak-iframe.js&quot;&gt;&lt;/script&gt;
+      &lt;script&gt;
+      $(document).ready(function() {
+      //this can be manually changed to your desired height
+      $(&quot;.typeform-widget&quot;).height(&quot;450px&quot;);
+      hapyak.context.addEventListener(&apos;iframeshow&apos;, function () {
+      //dynamically ensure the iframe will fit the typeform
+      hapyak.context.height = document.body.querySelector(&apos;.hy_widget&apos;).offsetHeight;
+      //ensure the widget is visible - probably not needed
+      $(&quot;.hy_widget&quot;).show();
+      //this is needed if the iframe isn&apos;t configured to pause or gate
+      $(&quot;.hy_widget&quot;).hover(function() {
+      hapyak.context.player.pause()
+      });
+      });
+      })
+      function resumeVideo() {
+      //remove the pause-on-hover
+      $(&quot;.hy_widget&quot;).unbind(&apos;mouseenter mouseleave&apos;)
+      //hide the form
+      $(&quot;.hy_widget&quot;).hide();
+      //resume the video
+      hapyak.context.releaseGate();
+      hapyak.context.player.play();
+      }
+      &lt;/script&gt;
+      &lt;/html&gt;</code></pre>
+    <p class="intercom-align-left"><i>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</i></p>
+  </section>
+</article>
