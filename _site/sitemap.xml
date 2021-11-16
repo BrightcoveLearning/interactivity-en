@@ -287,6 +287,114 @@
       
     
       <url>
+        <loc>https://interactions.support.brightcove.com/custom-annotations/index.html</loc>
+        <lastmod>2021-11-16</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/360-interactive-video.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/add-a-mailchimp-form-to-a-video.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/add-a-typeform-to-a-video.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/add-an-olark-widget-to-a-video.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/custom-form-annotation.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/custom-widget-library.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/display-rule.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/poll-widget.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/sign-in-annotation-aka-lead-wall-turnstile-gate.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/custom-annotations/user-sentiment-widget.html</loc>
+          
+            <lastmod>2021-11-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
         <loc>https://interactions.support.brightcove.com/analytics/index.html</loc>
         <lastmod>2021-11-16</lastmod>
         <changefreq>daily</changefreq>
