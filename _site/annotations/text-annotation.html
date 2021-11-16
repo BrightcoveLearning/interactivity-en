@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Send HapYak viewer-level and project-level interaction and engagement data to Brightcove Audience.">
+  <meta name="description" content="Text Annotations add text overlays to your video.">
   
-  <title>Brightcove Audience - HapYak Integration Module</title>
+  <title>Text Annotation</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,9 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/analytics/">Analytics</a></li>
+      <li class="breadcrumb-item"><a href="/annotations/">Annotations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Brightcove Audience - HapYak Integration Module</li>
+      <li class="breadcrumb-item active" aria-current="page">Text Annotation</li>
     </ol>
   </nav>
 </header>
@@ -212,6 +212,77 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                     <li><a href="/annotations/chapter-menu-and-chapters.html">Chapter Menu and Chapters</a></li>
                   
                 
+                  
+                    <li><a href="/annotations/closed-captions.html">Closed Captions</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/custom-transitions-with-animate-css-beta.html">Custom Transitions with Animate.css (Beta)</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/how-to-loop-back-in-the-video.html">How to loop back in the video?</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/image-annotation.html">Image Annotation</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/link-options.html">Link Options</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/quiz-annotation.html">Quiz Annotation</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/quiz-conditional-gating.html">Quiz - Conditional Gating</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/quiz-pass-fail-threshold.html">Quiz Pass / Fail Threshold</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/text-annotation.html">Text Annotation</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Analytics</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/analytics/analytics-and-reports-overview.html">Analytics and Reports Overview</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/brightcove-campaign-hapyak-integration-module.html">Brightcove Campaign - HapYak Integration Module</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/google-analytics.html">Google Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/hapyak-reports.html">HapYak Reports</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/tracking-known-viewers-with-mailchimp.html">Tracking Known Viewers with MailChimp</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/tracking-known-viewers.html">Tracking Known Viewers</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/video-analytics-and-metric-apis.html">Video Analytics and Metric APIs</a></li>
+                  
+                
               </ul>
             
           
@@ -301,18 +372,44 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Brightcove Audience - HapYak Integration Module</h1>
+<h1>Text Annotation</h1>
 <article class="bcls-article">
-  <summary>Send HapYak viewer-level and project-level interaction and engagement data to Brightcove Audience.</summary>
+  <summary>Text Annotations add text overlays to your video.</summary>
   <section class="bcls-section">
-    <p class="intercom-align-left">The Brightcove Audience Integration Module captures core user interactions and records them as custom actions in Brightcove Audience. The recorded interaction data will enable you to generate reports for
-      <b>Click Through Rate</b>,
-      <b>Navigation Rate,</b> and
-      <b>Response Rate</b>.
+    <p class="intercom-align-left">On the Editor toolbar, click the white box reading "write pop comment here", then type out your text. &nbsp;Hit enter for a new line (shift + return on some keyboards).
+      <br>
     </p>
-    <p class="intercom-align-left">Details
-      <a href="https://docs.google.com/document/d/19DRIve9sY5F41SByXyPrJ1HX733I5N4CDZLv9RUb-Ng/edit#" rel="nofollow noopener noreferrer" target="_blank">here</a>.
-    </p>
+    <div class="intercom-container intercom-align-left">
+      <img src="/assets/images/annotations/Text_Annotation.png">
+    </div>
+    <p class="intercom-align-left">By default, the text is center aligned and the size of the box around it adjusts responsively as you type.&nbsp;</p>
+    <p class="intercom-align-left">You can left or right align the text as well.</p>
+    <ul>
+      <li>
+        <p class="no-margin">Copy the URL to
+          <a href="/assets/css/hapyak-css-text-align.css" rel="nofollow noopener noreferrer" target="_blank">this CSS file</a>.
+        </p>
+      </li>
+      <li>
+        <p class="no-margin">Click
+          <strong>Configure</strong> in the project.
+        </p>
+      </li>
+      <li>
+        <p class="no-margin">Paste the URL into the
+          <strong>Custom CSS URL</strong> field.
+        </p>
+      </li>
+      <li>
+        <p class="no-margin">This will set the default alignment to left. &nbsp;To set a specific annotation to right or center alignment, on the annotation, click
+          <strong>Edit</strong>,
+          <strong>More</strong>,
+          <strong>Add Class.</strong> Then type
+          <code>text-right</code> or
+          <code>text-center</code>&nbsp;
+        </p>
+      </li>
+    </ul>
   </section>
 </article>
 
@@ -331,7 +428,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 10 Nov 2021
+  Page last updated on 16 Nov 2021
 </div>
 
 
