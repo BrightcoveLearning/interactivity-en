@@ -138,7 +138,23 @@
     - name: 'Salesforce Add-on'
       url: '/integrations/salesforce-add-on.html'
     - name: 'Wistia Integration - Browse Media'
-      url: '/integrations/wistia-integration-browse-media.html'    
+      url: '/integrations/wistia-integration-browse-media.html'
+- section: 
+  name: 'Mobile'
+  url: '/mobile/index.html'
+  docs:
+    - name: 'Mobile (iPhone, iPad, Android) Support'
+      url: '/mobile/mobile-iphone-ipad-android-support.html'
+    - name: 'Mobile Support for Wistia'
+      url: '/mobile/mobile-support-for-wistia.html'
+- section: 
+  name: 'Players'
+  url: '/players/index.html'
+  docs:
+    - name: 'Brightcove Browser Compatibility'
+      url: '/players/brightcove-browser-compatibility.html'
+    - name: 'Optimal Export Settings'
+      url: '/players/optimal-export-settings.html'
 - section: 
   name: 'Analytics'
   url: '/analytics/index.html'
