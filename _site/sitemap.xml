@@ -443,6 +443,82 @@
       
     
       <url>
+        <loc>https://interactions.support.brightcove.com/demos/index.html</loc>
+        <lastmod>2021-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/demos/gated-quiz-demo.html</loc>
+          
+            <lastmod>2021-11-17</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://interactions.support.brightcove.com/experiences/index.html</loc>
+        <lastmod>2021-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/experiences/branching-brightcove.html</loc>
+          
+            <lastmod>2021-11-17</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/experiences/branching-experience.html</loc>
+          
+            <lastmod>2021-11-17</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/experiences/embedding-a-slidesync-experience-on-a-webpage.html</loc>
+          
+            <lastmod>2021-11-17</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/experiences/experiences-overview.html</loc>
+          
+            <lastmod>2021-11-17</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/experiences/slide-sync-reference-guide.html</loc>
+          
+            <lastmod>2021-11-17</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
         <loc>https://interactions.support.brightcove.com/analytics/index.html</loc>
         <lastmod>2021-11-17</lastmod>
         <changefreq>daily</changefreq>
@@ -512,6 +588,34 @@
         <url>
           
             <loc>https://interactions.support.brightcove.com/analytics/video-analytics-and-metric-apis.html</loc>
+          
+            <lastmod>2021-11-17</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://interactions.support.brightcove.com/developers/index.html</loc>
+        <lastmod>2021-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/developers/apis.html</loc>
+          
+            <lastmod>2021-11-17</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/developers/security-and-privacy.html</loc>
           
             <lastmod>2021-11-17</lastmod>
             <changefreq>daily</changefreq>

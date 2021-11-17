@@ -395,6 +395,11 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/demos/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/best-practices/",
       "oldURL": "/index"
   },

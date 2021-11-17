@@ -100,6 +100,26 @@
     - name: 'Settings Panel'
       url: '/customize/settings-panel.html'
 - section: 
+  name: 'Demos'
+  url: '/demos/index.html'
+  docs:
+    - name: 'Gated Quiz Demo'
+      url: '/demos/gated-quiz-demo.html'
+- section: 
+  name: 'Experiences'
+  url: '/experiences/index.html'
+  docs:
+    - name: 'Branching - Brightcove'
+      url: '/experiences/branching-brightcove.html'
+    - name: 'Branching Experience'
+      url: '/experiences/branching-experience.html'
+    - name: 'Embedding a SlideSync Experience on a Webpage'
+      url: '/experiences/embedding-a-slidesync-experience-on-a-webpage.html'
+    - name: 'Experiences Overview'
+      url: '/experiences/experiences-overview.html'
+    - name: 'Slide Sync Reference Guide'
+      url: '/experiences/slide-sync-reference-guide.html'
+- section: 
   name: 'Analytics'
   url: '/analytics/index.html'
   docs:
@@ -117,6 +137,14 @@
       url: '/analytics/tracking-known-viewers.html'
     - name: 'Video Analytics and Metric APIs'
       url: '/analytics/video-analytics-and-metric-apis.html'
+- section: 
+  name: 'Developers'
+  url: '/developers/index.html'
+  docs:
+    - name: 'APIs'
+      url: '/developers/apis.html'
+    - name: 'Security and Privacy'
+      url: '/developers/security-and-privacy.html'
 - section:
   name: 'References'
   url: /references/index.html
