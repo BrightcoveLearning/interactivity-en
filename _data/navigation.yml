@@ -176,6 +176,48 @@
     - name: 'I upload my videos directly into my LMS or CMS and don''t know the video file URL'
       url: '/projects/i-upload-my-videos-directly-into-my-lms-or-cms-and-don-t-know-the-video-file-url-how-can-i-access-it.html'
 - section: 
+  name: 'Sharing & Embedding'
+  url: '/sharing-and-embedding/index.html'
+  docs:
+    - name: 'Accessibility'
+      url: '/sharing-and-embedding/accessibility.html'
+    - name: 'Adding a HapYak Interactive Video to Adobe Captivate'
+      url: '/sharing-and-embedding/adding-a-hapyak-interactive-video-to-adobe-captivate.html'
+    - name: 'Adding a HapYak video to a Squarespace web site'
+      url: '/sharing-and-embedding/adding-a-hapyak-video-to-a-squarespace-web-site.html'
+    - name: 'Adding a HapYak video to a Wix web site.'
+      url: '/sharing-and-embedding/adding-a-hapyak-video-to-a-wix-web-site.html'
+    - name: 'Adding a HapYak video to Articulate Storyline'
+      url: '/sharing-and-embedding/adding-a-hapyak-video-to-articulate-storyline.html'
+    - name: 'Adding a HapYak Video to Blackboard'
+      url: '/sharing-and-embedding/adding-a-hapyak-video-to-blackboard.html'
+    - name: 'Autoplay'
+      url: '/sharing-and-embedding/autoplay.html'
+    - name: 'Can I download or export my HapYak project?'
+      url: '/sharing-and-embedding/can-i-download-or-export-my-hapyak-project.html'
+    - name: 'Embedding Responsively or Fluidly'
+      url: '/sharing-and-embedding/embedding-responsively-or-fluidly.html'
+    - name: 'Publishing to an LMS'
+      url: '/sharing-and-embedding/publishing-to-an-lms.html'
+    - name: 'Sharing and Embedding'
+      url: '/sharing-and-embedding/sharing-and-embedding.html'
+    - name: 'Sharing on Social Channels'
+      url: '/sharing-and-embedding/sharing-on-social-channels-facebook-twitter-linkedin.html'
+- section: 
+  name: 'Style'
+  url: '/style/index.html'
+  docs:
+    - name: 'Adjusting images to appear only on hover'
+      url: '/style/adjusting-images-to-appear-only-on-hover.html'
+    - name: 'Project Level CSS'
+      url: '/style/project-level-css.html'
+    - name: 'Simple text transitions'
+      url: '/style/simple-text-transitions.html'
+    - name: 'Styling Annotations'
+      url: '/style/styling-annotations.html'
+    - name: 'Using HapYak''s Built In CSS Classes'
+      url: '/style/using-hapyak-s-built-in-css-classes.html'
+- section: 
   name: 'Analytics'
   url: '/analytics/index.html'
   docs:
@@ -205,31 +247,45 @@
   name: 'References'
   url: /references/index.html
   docs:
-    - name: Release Notes
-      url: /references/product-updates.html
-    - name: 'Known Issues'
-      url: '/support/known-issues.html'
-    - name: Embed API
-      url: /references/embed/embed.html
-    - name: Annotation API
-      url: /references/annotation/annotation.html
-    - name: Extension API
-      url: /references/extension/extension.html
-    - name: Playlist API
-      url: /references/playlist/playlist.html
-    - name: Responsive API
-      url: /references/responsive/responsive.html
     - name: Addon API
       url: /references/addon/addon.html
+    - name: Annotation API
+      url: /references/annotation/annotation.html
+    - name: Embed API
+      url: /references/embed/embed.html
+    - name: Extension API
+      url: /references/extension/extension.html
+    - name: 'Known Issues'
+      url: '/support/known-issues.html'
+    - name: Playlist API
+      url: /references/playlist/playlist.html
+    - name: Release Notes
+      url: /references/product-updates.html
+    - name: Responsive API
+      url: /references/responsive/responsive.html
+- section: 
+  name: 'Troubleshooting'
+  url: '/troubleshooting/index.html'
+  docs:
+    - name: 'Brightcove Videos Are Experiencing Unexpected Behavior in IE11'
+      url: '/troubleshooting/brightcove-videos-are-experiencing-unexpected-behavior-in-ie11-or-other-flash-based-browsers.html'
+    - name: 'Detecting Browser Version and Operating System Version'
+      url: '/troubleshooting/detecting-browser-version-and-operating-system-version.html'
+    - name: 'Save Project / Save Annotation'
+      url: '/troubleshooting/save-project-save-annotation.html'
+    - name: 'Taking a Console Screenshot or Screen Recording'
+      url: '/troubleshooting/taking-a-console-screenshot-or-screen-recording.html'
+    - name: 'What web browsers does HapYak support?'
+      url: '/troubleshooting/what-web-browsers-devices-does-hapyak-support.html'
 - section: 
   name: 'Support'
   url: '/support/'
   docs:
     - name: 'Viewing the Brightcove System Status Page'
       url: '/support/viewing-brightcove-system-status-page.html'
-    - name: 'Contact Sales'
-      url: '/support/contact-sales.html'
     - name: 'Opening a Support Case'
       url: '/support/opening-case-with-brightcove-support.html'
     - name: 'Reset Your Support Portal Password'
       url: '/support/reset-support-portal-password.html'
+    - name: 'Contact Sales'
+      url: '/support/contact-sales.html'
