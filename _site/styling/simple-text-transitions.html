@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="What is available and how to apply.">
+  <meta name="description" content="Add a little CSS to enhance your project.">
   
-  <title>Using HapYak's Built In CSS Classes</title>
+  <title>Simple text transitions</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,9 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/style/">Styling</a></li>
+      <li class="breadcrumb-item"><a href="/styling/">Style</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Using HapYak's Built In CSS Classes</li>
+      <li class="breadcrumb-item active" aria-current="page">Simple text transitions</li>
     </ol>
   </nav>
 </header>
@@ -546,27 +546,27 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
-              <h5 class="submenu-header"><a href="/style/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Style</a></h5>
+              <h5 class="submenu-header"><a href="/styling/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Styling</a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/style/adjusting-images-to-appear-only-on-hover.html">Adjusting images to appear only on hover</a></li>
+                    <li><a href="/styling/adjusting-images-to-appear-only-on-hover.html">Adjusting images to appear only on hover</a></li>
                   
                 
                   
-                    <li><a href="/style/project-level-css.html">Project Level CSS</a></li>
+                    <li><a href="/styling/project-level-css.html">Project Level CSS</a></li>
                   
                 
                   
-                    <li><a href="/style/simple-text-transitions.html">Simple text transitions</a></li>
+                    <li><a href="/styling/simple-text-transitions.html">Simple text transitions</a></li>
                   
                 
                   
-                    <li><a href="/style/styling-annotations.html">Styling Annotations</a></li>
+                    <li><a href="/styling/styling-annotations.html">Styling Annotations</a></li>
                   
                 
                   
-                    <li><a href="/style/using-hapyak-s-built-in-css-classes.html">Using HapYak's Built In CSS Classes</a></li>
+                    <li><a href="/styling/using-hapyak-s-built-in-css-classes.html">Using HapYak's Built In CSS Classes</a></li>
                   
                 
               </ul>
@@ -735,32 +735,35 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Using HapYak's Built In CSS Classes</h1>
+<h1>Simple text transitions</h1>
 <article class="bcls-article">
-  <summary>What is available and how to apply.</summary>
+  <summary>Add a little CSS to enhance your project.</summary>
   <section class="bcls-section">
-    <p class="intercom-align-left">In your editor, you have access to some CSS classes that are built in to the HapYak Platform. The intention of these classes is to help solve issues commonly faced while authoring content. This Article will cover how to apply classes, followed by a breakdown of each class, what it does, and which annotations it is compatible with.</p>
-    <p class="intercom-align-left">In addition to the classes described below, there are a number of others available to you that add simple animated transitions to your annotations. To read an article about the animation CSS classes, <a href="/annotations/custom-transitions-with-animate-css-beta.html" data-is-internal-link="true">click here</a>. <br><br>HOW TO APPLY CLASSES:&nbsp;</p>
-    <p class="intercom-align-left">To Apply a custom class to an annotation, click into the <code>edit</code> &nbsp;tab, and then into <code>add-class</code> . Once you do this, you will see this screen: <br></p>
-    <div class="intercom-container intercom-align-left"><img src="/assets/images/styling/apply-custom-class.png"></div>
-    <p class="intercom-align-left">Add class names to the field exactly as they appear in the list below. Multiple classes can be applied to a single annotation, but must be separated by a space, and should not be preceded by a period. <br></p>
-    <h2 id="class-names" class="intercom-align-left" data-post-processed="true">Class Names:</h2>
-    <h2 id="1--hapyak-annotation-full-frame" class="intercom-align-left" data-post-processed="true">1 . hapyak-annotation-full-frame</h2>
-    <p class="intercom-align-left"><em>Description: </em><br>This class will modify the selected annotation to snap to fit the entire frame of your video.&nbsp;</p>
-    <p class="intercom-align-left"><em>Compatible Annotations types</em>: <br>&nbsp; &nbsp; Transparent Overlay<br>&nbsp; &nbsp; Image Overlay<br>&nbsp; &nbsp; Chapter Menu<br>&nbsp; &nbsp; Quiz</p>
-    <h2 id="2-hapyak-annotation-bring-to-top" class="intercom-align-left" data-post-processed="true">2. hapyak-annotation-bring-to-top</h2>
-    <p class="intercom-align-left"><em>Description: <br></em>This class will make the selected annotation appear at the "Top" layer on top of your interactive experience. This is useful if you want to make sure an element always appears to be "in front" or "on top" of another element. ie</p>
-    <p class="intercom-align-left"><br><em>Compatible Annotations types</em>: <br>&nbsp; &nbsp; Text Overlay<br>&nbsp; &nbsp; Transparent Overlay<br>&nbsp; &nbsp; Image Overlay<br>&nbsp; &nbsp; Quiz<br>&nbsp; &nbsp; User Sentiment Widget<br>&nbsp; &nbsp; Custom Form Widget<br>&nbsp; &nbsp; Drawing Tool<br></p>
-    <h2 id="3-hapyak-annotation-send-to-back" class="intercom-align-left" data-post-processed="true">3. hapyak-annotation-send-to-back</h2>
-    <p class="intercom-align-left"><em>Description: </em>This class is the anti-venom to bring-to-top. It will send your annotation to the back-most layer of your interactive experience. This is useful if you want to make sure a particular element always appears to be "behind" another element.&nbsp;</p>
-    <p class="intercom-align-left"><em>Compatible Annotations types</em>: <br>&nbsp; &nbsp; Text Overlay<br>&nbsp; &nbsp; Transparent Overlay<br>&nbsp; &nbsp; Image Overlay<br>&nbsp; &nbsp; Quiz<br>&nbsp; &nbsp; User Sentiment Widget<br>&nbsp; &nbsp; User Sign-in Widget<br>&nbsp; &nbsp; Poll Widget<br>&nbsp; &nbsp; Custom Form Widget<br>&nbsp; &nbsp; Drawing Tool</p>
-    <p class="intercom-align-left"><em>Note: </em>The Chapter Menu annotation will Always appear as the top most layer of any video UNLESS other annotations have the "hapyak-annotation-bring-to-top" class applied.&nbsp;</p>
-    <h2 id="4-hapyak-annotation-shine" class="intercom-align-left" data-post-processed="true">4. hapyak-annotation-shine</h2>
-    <p class="intercom-align-left"><em>Description: </em>This Class will add a shimmer-effect to the selected annotation. The Shimmer will sweep across the frame of the annotation on mouse-hover.&nbsp;</p>
-    <p class="intercom-align-left"><em>Compatible Annotations types</em>: <br>&nbsp; &nbsp; Transparent Overlay<br>&nbsp; &nbsp; User Sentiment Widget<br>&nbsp; &nbsp;&nbsp;</p>
-    <p class="intercom-align-left"><em>Note: </em>Shine will not work as expected with a transparent overlay in full-frame mode.&nbsp;</p>
-    
-    <p class="intercom-align-left"><em><br>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.&nbsp;</em></p>
+    <p class="intercom-align-left">A few lines of css can give your project a new look and feel. &nbsp;Let's see how changing the color of text can have a big effect.</p>
+    <h2 id="how-to" class="intercom-align-left" data-post-processed="true">How To:</h2>
+    <p class="intercom-align-left">1. Add this style sheet to your current project:<br>//hapyak_demos.s3.amazonaws.com/css/customer/sample_on_hover_text_change.css</p>
+    <p class="intercom-align-left">Or add this css to your current sheet:</p>
+<pre><code>.popcorn-pop.hapyak-theme-black.bright-red.active {
+  color: #C60C46;
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+.popcorn-pop.hapyak-theme-black.bright-red.active:hover {
+  background: rgba(255, 255, 255, 0);
+  color: #f40656;
+}</code></pre>
+    <p class="intercom-align-left">2. &nbsp;Create a new text annotation</p>
+    <p class="intercom-align-left">3. &nbsp;Click, <b>Edit</b></p>
+    <p class="intercom-align-left">4. &nbsp;Click, <b>More</b></p>
+    <p class="intercom-align-left">5. &nbsp;Click, <b>Add Class</b></p>
+    <p class="intercom-align-left">6. &nbsp;Within the text box add a color, ex: <code>bright-red</code>&nbsp;</p>
+    <p class="intercom-align-left">7. &nbsp;Click, <b>Submit</b></p>
+    <p class="intercom-align-left"><i>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</i></p>
   </section>
 </article>
 <!-- complete bootstrap layout -->
@@ -778,7 +781,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 10 Nov 2021
+  Page last updated on 15 Nov 2021
 </div>
 
 

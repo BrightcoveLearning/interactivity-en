@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="With a little CSS, you can make overlay images appear only when the viewer hovers over the video.">
+  <meta name="description" content="How to Change CSS On A Single Project.">
   
-  <title>Adjusting images to appear only on hover</title>
+  <title>Project Level CSS</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -58,9 +58,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
+      <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
       
       
-      <li class="breadcrumb-item active" aria-current="page">Adjusting images to appear only on hover</li>
+      
+      <li class="breadcrumb-item"><a href="/styling/">Style</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Project Level CSS</li>
     </ol>
   </nav>
 </header>
@@ -542,27 +546,27 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
-              <h5 class="submenu-header"><a href="/style/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Style</a></h5>
+              <h5 class="submenu-header"><a href="/styling/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Styling</a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/style/adjusting-images-to-appear-only-on-hover.html">Adjusting images to appear only on hover</a></li>
+                    <li><a href="/styling/adjusting-images-to-appear-only-on-hover.html">Adjusting images to appear only on hover</a></li>
                   
                 
                   
-                    <li><a href="/style/project-level-css.html">Project Level CSS</a></li>
+                    <li><a href="/styling/project-level-css.html">Project Level CSS</a></li>
                   
                 
                   
-                    <li><a href="/style/simple-text-transitions.html">Simple text transitions</a></li>
+                    <li><a href="/styling/simple-text-transitions.html">Simple text transitions</a></li>
                   
                 
                   
-                    <li><a href="/style/styling-annotations.html">Styling Annotations</a></li>
+                    <li><a href="/styling/styling-annotations.html">Styling Annotations</a></li>
                   
                 
                   
-                    <li><a href="/style/using-hapyak-s-built-in-css-classes.html">Using HapYak's Built In CSS Classes</a></li>
+                    <li><a href="/styling/using-hapyak-s-built-in-css-classes.html">Using HapYak's Built In CSS Classes</a></li>
                   
                 
               </ul>
@@ -731,31 +735,16 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Adjusting images to appear only on hover</h1>
+<h1>Project Level CSS</h1>
 <article class="bcls-article">
-  <summary>With a little CSS, you can make overlay images appear only when the viewer hovers over the video.</summary>
+  <summary>How to Change CSS On A Single Project.</summary>
   <section class="bcls-section">
-    <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/566d1ade900f165f5763f5239a16719a" rel="nofollow noopener noreferrer"><img src="/assets/images/style/images-on-hover-sample.png"></a></div>
-    <p class="intercom-align-left">Showing a graphic only on hover can easily be accomplished through a css class. Let’s learn how.</p>
-    <p class="intercom-align-left">1. Add this style sheet to your current project</p>
-    <pre><code>//interactivity.support.brightcove.com/assets/css/style/on_hover_img.css</code></pre>
-    <p class="intercom-align-left">Or add this css to your current sheet:</p>
-<pre><code>.popcorn-image:not(.hapyak-editing-image) img {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.popcorn-image:not(.hapyak-editing-image).popcorn-image:hover img {
-  opacity: 1;
-}</code></pre>
-    <p class="intercom-align-left">2. Images will now fade in on mouse hover</p>
-    <p class="intercom-align-left">Make it yours:</p>
-    <p class="intercom-align-left">To change how fast images fades in, simply change 0.5s to any number you wish.</p>
-    <p class="intercom-align-left"><i>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</i></p>
+    <p class="intercom-align-left">To apply the Custom CSS to one Project:</p>
+    <p class="intercom-align-left">1. Upload the CSS file to your server. Copy the link to it.</p>
+    <p class="intercom-align-left">2. Go to the project you are working on.</p>
+    <p class="intercom-align-left">3. Click <strong>Settings</strong> in the top right corner of the screen﻿</p>
+    <p class="intercom-align-left">4. In the text box labeled, <strong>Custom Annotation CSS URL</strong> add your css url (ensure the protocol, http: or https: is removed from the url).</p>
+    <p class="intercom-align-left">5. Click <strong>Submit</strong></p>
   </section>
 </article>
 <!-- complete bootstrap layout -->

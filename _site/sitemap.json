@@ -55,7 +55,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/style/adjusting-images-to-appear-only-on-hover.html",
+      "newURL": "https://interactions.support.brightcove.com/styling/adjusting-images-to-appear-only-on-hover.html",
       "oldURL": "/adjusting-images-to-appear-only-on-hover"
   },
 
@@ -300,52 +300,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/integrations/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/references/playlist/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/references/extension/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/references/embed/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/references/annotation/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/references/addon/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/references/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/players/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/projects/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/style/",
+      "newURL": "https://interactions.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -355,7 +310,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/references/responsive/",
+      "newURL": "https://interactions.support.brightcove.com/integrations/",
       "oldURL": "/index"
   },
 
@@ -370,12 +325,12 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/getting-started/",
+      "newURL": "https://interactions.support.brightcove.com/references/responsive/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/support/",
+      "newURL": "https://interactions.support.brightcove.com/getting-started/",
       "oldURL": "/index"
   },
 
@@ -385,12 +340,37 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/styling/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/",
       "oldURL": "/index"
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/projects/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/players/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/custom-annotations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/references/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/references/addon/",
       "oldURL": "/index"
   },
 
@@ -405,7 +385,17 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/references/annotation/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/analytics/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/references/embed/",
       "oldURL": "/index"
   },
 
@@ -420,7 +410,17 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/references/extension/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/references/playlist/",
       "oldURL": "/index"
   },
 
@@ -515,7 +515,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/style/project-level-css.html",
+      "newURL": "https://interactions.support.brightcove.com/styling/project-level-css.html",
       "oldURL": "/project-level-css"
   },
 
@@ -585,7 +585,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/style/simple-text-transitions.html",
+      "newURL": "https://interactions.support.brightcove.com/styling/simple-text-transitions.html",
       "oldURL": "/simple-text-transitions"
   },
 
@@ -595,7 +595,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/style/styling-annotations.html",
+      "newURL": "https://interactions.support.brightcove.com/styling/styling-annotations.html",
       "oldURL": "/styling-annotations"
   },
 
@@ -635,7 +635,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/style/using-hapyak-s-built-in-css-classes.html",
+      "newURL": "https://interactions.support.brightcove.com/styling/using-hapyak-s-built-in-css-classes.html",
       "oldURL": "/using-hapyak-s-built-in-css-classes"
   },
 
