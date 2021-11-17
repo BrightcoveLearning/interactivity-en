@@ -739,29 +739,29 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>How to add a display rule to your video.</summary>
   <section class="bcls-section">
-    <p class="intercom-align-left"><i>Friendly Warning: welcome to developer territory.&nbsp;</i></p>
-    <p class="intercom-align-left"><i>You will have a lot of fun if you are comfortable with HTML, Javascript and CSS, or have a friend / colleague that is. If not, you may have a bad time.&nbsp;</i></p>
-    <p class="intercom-align-left"><i>If you are a real do-it-yourselfer and want to learn yourself, we highly recommend first taking Codeacademy's free </i><a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank"><i>HTML/CSS</i></a><i> and </i><a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank"><i>JavaScript</i></a><i> courses. </i><br><br>The <b>Display Rule</b> allows you to make an annotation appear only under certain conditions. Common conditions include:</p>
+    <p><i>Friendly Warning: welcome to developer territory.&nbsp;</i></p>
+    <p><i>You will have a lot of fun if you are comfortable with HTML, Javascript and CSS, or have a friend / colleague that is. If not, you may have a bad time.&nbsp;</i></p>
+    <p><i>If you are a real do-it-yourselfer and want to learn yourself, we highly recommend first taking Codeacademy's free </i><a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank"><i>HTML/CSS</i></a><i> and </i><a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank"><i>JavaScript</i></a><i> courses. </i><br><br>The <b>Display Rule</b> allows you to make an annotation appear only under certain conditions. Common conditions include:</p>
     <ul>
       <li>
-        <p class="no-margin">Display when a viewer clicks on a different annotation.</p>
+        <p>Display when a viewer clicks on a different annotation.</p>
       </li>
       <li>
-        <p class="no-margin">Display when the viewer gets a question right or wrong.</p>
+        <p>Display when the viewer gets a question right or wrong.</p>
       </li>
       <li>
-        <p class="no-margin">Display based on a parameter passed in from an external API.</p>
+        <p>Display based on a parameter passed in from an external API.</p>
       </li>
     </ul>
-    <h3 id="examples" class="intercom-align-left" data-post-processed="true">Examples</h3>
-    <p class="intercom-align-left">Here's a basic example. Clicking on one annotation will make another appear.</p>
+    <h3 id="examples">Examples</h3>
+    <p>Here's a basic example. Clicking on one annotation will make another appear.</p>
     <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/ac7b47a05a639b26b56e6944cdce2f94" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-1.png"></a></div>
-    <p class="intercom-align-left">Here's a more sophisticated example.</p>
+    <p>Here's a more sophisticated example.</p>
     <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/8b8418334f111ecb6b41e07b9aca6880" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-2.png"></a></div>
-    <h3 id="how-to-do-it" class="intercom-align-left" data-post-processed="true">How to do it</h3>
-    <p class="intercom-align-left">The first (or "target") annotation can be a text, image or hotspot annotation.<br>Set the <b>Link</b> / <b>Evaluate</b> expression field to something like: <code>displayTextBox=true</code>.<br><br>The second (or "destination") annotation can be any type - text, image, hotspot, iframe, even a quiz.<br>On this, set the <b>Display Rule</b> field to something like: <code>displayTextBox==true</code>.<br></p>
-    <h3 id="optional-configuration" class="intercom-align-left" data-post-processed="true">Optional Configuration</h3>
-    <p class="intercom-align-left">The more sophisticated example has the following configuration:<br><br><b>Target Annotation</b><br><b>Link</b> / <b>Evaluate</b> expression: <code>player.pause(), displayTextBox=true, displayQuestionBox=false</code><br><b>Display Rule</b>: <code>displayQuestionBox==true || displayQuestionBox==undefined</code><br><br><b>Destination Annotation<br></b><b>Link</b> / <b>Evaluate</b> expression: <code>player.play(), displayTextBox=false, displayQuestionBox=true</code><br><b>Display Rule</b>: <code>displayTextBox==true</code><br><b>Start time and Duration </b>for both the target and destination annotations are identical.</p>
+    <h3 id="how-to-do-it">How to do it</h3>
+    <p>The first (or "target") annotation can be a text, image or hotspot annotation.<br>Set the <b>Link</b> / <b>Evaluate</b> expression field to something like: <code>displayTextBox=true</code>.<br><br>The second (or "destination") annotation can be any type - text, image, hotspot, iframe, even a quiz.<br>On this, set the <b>Display Rule</b> field to something like: <code>displayTextBox==true</code>.<br></p>
+    <h3 id="optional-configuration">Optional Configuration</h3>
+    <p>The more sophisticated example has the following configuration:<br><br><b>Target Annotation</b><br><b>Link</b> / <b>Evaluate</b> expression: <code>player.pause(), displayTextBox=true, displayQuestionBox=false</code><br><b>Display Rule</b>: <code>displayQuestionBox==true || displayQuestionBox==undefined</code><br><br><b>Destination Annotation<br></b><b>Link</b> / <b>Evaluate</b> expression: <code>player.play(), displayTextBox=false, displayQuestionBox=true</code><br><b>Display Rule</b>: <code>displayTextBox==true</code><br><b>Start time and Duration </b>for both the target and destination annotations are identical.</p>
   </section>
 </article>
 <!-- complete bootstrap layout -->

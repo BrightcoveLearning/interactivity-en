@@ -739,9 +739,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>This article will show you how to embed a SlideSync Experience onto your own webpage.</summary>
   <section class="bcls-section">
-    <h2 id="adding-an-embedded-slidesync-experience-to-your-webpage-is-as-simple-as-1-2-3" class="intercom-align-left" data-post-processed="true">Adding an embedded SlideSync Experience to your webpage is as simple as 1, 2, 3.</h2>
-    <h3 id="step-1---add-css-to-the-parent-your-webpage-container" class="intercom-align-left" data-post-processed="true">Step 1 - Add CSS to the PARENT (your webpage) container:</h3>
-    <p class="intercom-align-left">In order to make SlideSync display properly on your webpage, you must add a few lines of Custom CSS. Add the following CSS code to the style sheet of the webpage that you are embedding on:</p>
+    <h2 id="adding-an-embedded-slidesync-experience-to-your-webpage-is-as-simple-as-1-2-3">Adding an embedded SlideSync Experience to your webpage is as simple as 1, 2, 3.</h2>
+    <h3 id="step-1---add-css-to-the-parent-your-webpage-container">Step 1 - Add CSS to the PARENT (your webpage) container:</h3>
+    <p>In order to make SlideSync display properly on your webpage, you must add a few lines of Custom CSS. Add the following CSS code to the style sheet of the webpage that you are embedding on:</p>
 <pre><code>body {
   overflow: hidden;       
 }   
@@ -760,30 +760,30 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   width: 100%;          
   height: 100%;
    }</code></pre>
-    <p class="intercom-align-left"><em>Note: if your webpage's CSS already has a body element, add, the line reading </em><b><em>overflow: hidden;</em></b><em> to your existing body element.&nbsp;</em></p>
-    <h3 id="step-2---add-the-embed-code-container-to-the-webpage" class="intercom-align-left" data-post-processed="true">Step 2 - &nbsp;Add the Embed Code Container to the webpage:</h3>
-    <p class="intercom-align-left">Next, we're going to add this snippet of HTML to the page we want to embed the SlideSync Experience on:</p>
+    <p><em>Note: if your webpage's CSS already has a body element, add, the line reading </em><b><em>overflow: hidden;</em></b><em> to your existing body element.&nbsp;</em></p>
+    <h3 id="step-2---add-the-embed-code-container-to-the-webpage">Step 2 - &nbsp;Add the Embed Code Container to the webpage:</h3>
+    <p>Next, we're going to add this snippet of HTML to the page we want to embed the SlideSync Experience on:</p>
 <pre><code>&lt;div id=&quot;experienceIframeContainer&quot;&gt;
   &lt;iframe class=&quot;experienceIframe&quot; src=&quot;[ADD SLIDE SYNC LANDING PAGE URL HERE]&quot; allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;</code></pre>
-    <h3 id="step-3---configuring-the-iframe-to-display-your-slidesync-experience" class="intercom-align-left" data-post-processed="true">Step 3 - Configuring the iFrame to display your SlideSync Experience:</h3>
-    <p class="intercom-align-left">Lastly, swap out the text in the iFrame <code>src</code> &nbsp;with your protocoless SlideSync URL Landing Page&nbsp;</p>
-    <p class="intercom-align-left"><b>Example:<br><br></b>Let's say our SlideSync landing page is hosted on HapYak here:&nbsp;</p>
-    <p class="intercom-align-left"><a href="https://www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634" rel="nofollow noopener noreferrer" target="_blank">https://www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634</a><br></p>
-    <p class="intercom-align-left">We want to change the embed code from this:</p>
+    <h3 id="step-3---configuring-the-iframe-to-display-your-slidesync-experience">Step 3 - Configuring the iFrame to display your SlideSync Experience:</h3>
+    <p>Lastly, swap out the text in the iFrame <code>src</code> &nbsp;with your protocoless SlideSync URL Landing Page&nbsp;</p>
+    <p><b>Example:<br><br></b>Let's say our SlideSync landing page is hosted on HapYak here:&nbsp;</p>
+    <p><a href="https://www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634" rel="nofollow noopener noreferrer" target="_blank">https://www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634</a><br></p>
+    <p>We want to change the embed code from this:</p>
 <pre><code>&lt;div id=&quot;experienceIframeContainer&quot;&gt;
   &lt;iframe class=&quot;experienceIframe&quot; src=&quot;[ADD SLIDE SYNC LANDING PAGE URL HERE]&quot; allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;</code></pre>
-    <p class="intercom-align-left">to this:</p>
+    <p>to this:</p>
     <pre><code>&lt;div id=&quot;experienceIframeContainer&quot;&gt;
       &lt;iframe class=&quot;experienceIframe&quot; src=&quot;//www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634&quot; allowfullscreen&gt;
       &lt;/iframe&gt;
   &lt;/div&gt;</code></pre>
-    <p class="intercom-align-left"><em>Note: The URL is Protocoless, so no </em><code>http: or https: </code><em>&nbsp;just begin with the double slashes,</em><b><em> </em></b><code>//</code></p>
-    <p class="intercom-align-left"></p>
-    <p class="intercom-align-left">Full Code Example here:</p>
+    <p><em>Note: The URL is Protocoless, so no </em><code>http: or https: </code><em>&nbsp;just begin with the double slashes,</em><b><em> </em></b><code>//</code></p>
+    <p></p>
+    <p>Full Code Example here:</p>
     <pre><code>&lt;!doctype html&gt;
       &lt;html lang=&quot;en&quot;&gt;
       &lt;head&gt;
@@ -815,7 +815,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         &lt;/div&gt;
       &lt;/body&gt;
       &lt;/html&gt;</code></pre>
-    <p class="intercom-align-left"><em>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</em></p>
+    <p><em>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</em></p>
   </section>
 </article>
 <!-- complete bootstrap layout -->
