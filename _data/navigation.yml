@@ -64,7 +64,7 @@
     - name: 'Text Annotation'
       url: '/annotations/text-annotation.html'
 - section: 
-  name: ' Custom Annotations'
+  name: 'Custom Annotations'
   url: '/custom-annotations/index.html'
   docs:
     - name: '360 Interactive Video'
