@@ -88,6 +88,18 @@
     - name: 'User Sentiment Widget'
       url: '/custom-annotations/user-sentiment-widget.html'
 - section: 
+  name: 'Customizations'
+  url: '/customize/index.html'
+  docs:
+    - name: 'Changing the Video Source of a Project'
+      url: '/customize/changing-the-video-source-of-a-project.html'
+    - name: 'Customizing the HapYak Player'
+      url: '/customize/customizing-the-hapyak-player.html'
+    - name: 'Localization (Change the Language / Translate the Language)'
+      url: '/customize/localization-change-the-language-translate-the-language.html'
+    - name: 'Settings Panel'
+      url: '/customize/settings-panel.html'
+- section: 
   name: 'Analytics'
   url: '/analytics/index.html'
   docs:
