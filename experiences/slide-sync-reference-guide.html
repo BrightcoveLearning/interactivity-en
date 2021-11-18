@@ -3,38 +3,31 @@ title: Slide Sync Reference Guide
 description: Step by step instructions for creating a Slide Sync Experience.
 parent: Experiences
 ---
-
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>This article details step by step instructions to create a Slide Sync Experience<br></p>
     <h2 id="slide-sync-quick-start-guide">Slide Sync Quick Start Guide</h2>
     <h3 id="creating-new-experience">Creating New Experience</h3>
-    <ol>
-      <li>
-        <p>Click <strong>Experience</strong> Tab in Portal</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Experience</strong> Tab in Portal. </li>
+      <li>Click <strong>New Experience</strong>. </li>
+      <li>Enter Title of Experience. </li>
+      <li>Select Layout Type (slidesync is auto-selected). </li>
+      <li>Select Template Type (playlist under video or playlist fullscreen). </li>
+      <li>Choose Video Source (3 options).
+        <ul>
+          <li>Add Embed Code</li>
+          <li>Click upload video and select video - video must be an MP4</li>
+          <li>Choose Existing Project</li>
+        </ul>
       </li>
-      <li>
-        <p>Click <strong>New Experience</strong></p>
-      </li>
-      <li>
-        <p>Enter Title of Experience</p>
-      </li>
-      <li>
-        <p>Select Layout Type (slidesync is auto-selected)</p>
-      </li>
-      <li>
-        <p>Select Template Type (playlist under video or playlist fullscreen)</p>
-      </li>
-      <li>
-        <p>Choose Video Source (3 options)<br>- Add Embed Code<br>- Click upload video and select video<br><em>note: Video must be an MP4<br>- </em>Choose Existing Project</p>
-      </li>
-      <li>
-        <p>Experience will load with video</p>
-      </li>
-      <li>
-        <p>Add PDF slides to video by dragging into drop zone or clicking anywhere in drop zone<br>- Slides must be in PDF format<br>- First slide will appear and sync to 0 seconds</p>
+      <li>Experience will load with video. </li>
+      <li>Add PDF slides to video by dragging into drop zone or clicking anywhere in drop zone.
+        <ul>
+          <li>Slides must be in PDF format</li>
+          <li>First slide will appear and sync to 0 seconds</li>
+        </ul>
       </li>
     </ol>
     <h3 id="syncing-slides">Syncing Slides</h3>
@@ -46,28 +39,23 @@ parent: Experiences
         <p>Adjust time if necessary with the time adjuster next to the sync button</p>
       </li>
       <li>
-        <p>If chapter is present at same time as slide add chapter after syncing slide<br>- Click <strong>Chapter</strong> icon (bookmark) and edit chapter title and click done</p>
+        <p>If chapter is present at same time as slide add chapter after syncing slide<br>
+          - Click <strong>Chapter</strong> icon (bookmark) and edit chapter title and click done</p>
       </li>
       <li>
         <p>If you would like to change the size ratio of the video and the slides, add a zoom event using an <strong>On-Time Event</strong> annotation created by clicking the timer icon</p>
       </li>
     </ol>
-    <div class="intercom-container intercom-align-center"><img src="/assets/images/experiences/slide-sync-on-time-event.png"></div>
+    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-on-time-event.png"></figure>
     <ul>
-      <li>
-        <p>Fill in <strong>Addon Type</strong> field with “slider”</p>
-      </li>
-      <li>
-        <p>Fill in <strong>Command</strong> field with “change”</p>
-      </li>
-      <li>
-        <p>Under <strong>Command Data</strong>, click <strong>Add New</strong></p>
-      </li>
-      <li>
-        <p>Fill in key value pair with “newValue” and the value you would like the slider to be i.e. “42.5” (see conversion scale below for acceptable values)<br><em>Note: HapYak numbers correspond to percentage of the page the video will take up</em></p>
+      <li>Fill in <strong>Addon Type</strong> field with "slider" </li>
+      <li>Fill in <strong>Command</strong> field with "change" </li>
+      <li>Under <strong>Command Data</strong>, click <strong>Add New</strong> </li>
+      <li>Fill in key value pair with "newValue" and the value you would like the slider to be i.e. "42.5" (see conversion scale below for acceptable values)
+        <aside class="bcls-aside bcls-aside--information">Note: HapYak numbers correspond to percentage of the page the video will take up</aside>
       </li>
     </ul>
-    <div class="intercom-container intercom-align-center"><img src="/assets/images/experiences/slide-sync-adjust-value.png"></div>
+    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-adjust-value.png"></figure>
     <ul>
       <li>
         <p>Click <strong>Done</strong></p>
@@ -81,42 +69,30 @@ parent: Experiences
     <h3 id="adding-other-annotations">Adding Other Annotations</h3>
     <p>Continue to add annotations as you would with any other interactive video project.</p>
     <h3 id="adding-more-videos-and-slides">Adding More Videos and Slides</h3>
-    <ol>
-      <li>
-        <p>To add another video, click on the <strong>Add Video</strong> button in the playlist beneath the video and slide area.</p>
-      </li>
-      <li>
-        <p>Enter a title for the video.</p>
-      </li>
-      <li>
-        <p>Select video.<br>- Upload New Video (mp4) <em>or<br>- </em>Choose Existing Project</p>
-      </li>
-      <li>
-        <p>Repeat steps until experience is complete</p>
-      </li>
+    <ol class="bcls-tasklist-restart">
+      <li>To add another video, click on the <strong>Add Video</strong> button in the playlist beneath the video and slide area. </li>
+      <li>Enter a title for the video. </li>
+      <li>Select video.<br>
+        - Upload New Video (mp4) <em>or<br>
+        - </em>Choose Existing Project </li>
+      <li>Repeat steps until experience is complete. </li>
     </ol>
+  </section>
+  <section class="bcls-section">
     <h2 id="configuring-settings-including-adding-custom-header-and-footer">Configuring Settings Including Adding Custom Header and Footer</h2>
     <p>Click the <strong>Configure</strong> button at the top right of the experience</p>
     <p>Adjust Settings</p>
     <ul>
-      <li>
-        <p>Auto Progress will play the next video in the playlist after the previous video finishes.</p>
-      </li>
-      <li>
-        <p>Auto Play will automatically play the video on landing page load.</p>
-      </li>
-      <li>
-        <p>Default Slider Value sets the initial zoom level of the experience on the landing page.</p>
-      </li>
-      <li>
-        <p>Social Sharing buttons toggle which buttons will be shown on the landing page.<em><br>Note: This also has a configurable message that will show up as default text in the share dialogs.</em></p>
+      <li>Auto Progress will play the next video in the playlist after the previous video finishes. </li>
+      <li>Auto Play will automatically play the video on landing page load. </li>
+      <li>Default Slider Value sets the initial zoom level of the experience on the landing page. </li>
+      <li>Social Sharing buttons toggle which buttons will be shown on the landing page.
+        <aside class="bcls-aside bcls-aside--information">Note: This also has a configurable message that will show up as default text in the share dialogs.</aside>
       </li>
     </ul>
     <h3 id="adding-custom-header-and-footer">Adding Custom Header and Footer</h3>
     <ul>
-      <li>
-        <p>Also in the configuration settings are the custom header and footer HTML fields that allow for custom branding to be applied.</p>
-      </li>
+      <li>Also in the configuration settings are the custom header and footer HTML fields that allow for custom branding to be applied. </li>
     </ul>
     <p>Sample header tag:&nbsp;</p>
     <pre><code>&lt;img src="//hapyak_demos.s3.amazonaws.com/demos/hapyak/default-slidesync-header.png" width="100%"/&gt;</code></pre>
@@ -128,47 +104,35 @@ parent: Experiences
     <p>Sample footer tag:</p>
     <pre><code>&lt;div style="width: 100%; padding-left: 30px; padding-right: 30px;"&gt;&lt;div style="min-height: 70px; position: relative; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#3e4459; text-align: left;"&gt;&lt;a href="http://corp.hapyak.com/privacy" target="_blank" style="text-decoration:none;"&gt; Privacy Policy.&lt;/a&gt;&lt;br&gt;Copyright ©2016 HapYak Interactive Video. All rights reserved. Designated trademarks and brands are the property of their respective owners.&lt;/div&gt;&lt;/div&gt;</code></pre>
     <h3 id="setting-up-registration-redirectaccess-gate-optional">Setting up Registration Redirect/Access Gate (optional)</h3>
-    <ol>
-      <li>
-        <p>Add an Access Gate</p>
-      </li>
-      <li>
-        <p>Add the redirect url for the registration form</p>
-      </li>
-      <li>
-        <p>Ensure your registration form or other validation form redirects the user back to the experience after completing registration/login<br><em>Note: We recommend using the referrer url</em></p>
-      </li>
+    <ol class="bcls-tasklist-restart">
+      <li>Add an Access Gate </li>
+      <li>Add the redirect url for the registration form </li>
+      <li>Ensure your registration form or other validation form redirects the user back to the experience after completing registration/login<br>
+        <em>Note: We recommend using the referrer url</em> </li>
     </ol>
     <h3 id="generating-links-to-the-slide-sync-experience-optionalextra">Generating Links to the Slide Sync Experience (optional/extra)</h3>
-    <p><em><br>Note: Does not come with standard Slide Sync, inquire for availability</em><br><br>Click on the <strong>Link</strong> Button<br>Permalink to the experience is at the top<br>Create a custom link with attributes by filling out these custom fields:</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Does not come with standard Slide Sync, inquire for availability</aside>
+    <p>Click on the <strong>Link</strong> Button<br>
+      Permalink to the experience is at the top<br>
+      Create a custom link with attributes by filling out these custom fields:</p>
     <ul>
-      <li>
-        <p>Video to start on (<em>required</em>)</p>
-      </li>
-      <li>
-        <p>Time in video to seek to (<em>optional</em>)</p>
-      </li>
-      <li>
-        <p>Downloadable/Viewable asset URL (<em>optional</em>)</p>
-      </li>
-      <li>
-        <p>Modal Title (<em>optional</em>)</p>
-      </li>
-      <li>
-        <p>Linked Text (<em>optional</em>)</p>
-      </li>
-      <li>
-        <p>Button Text (defaults to “View”) (<em>required</em>)</p>
-      </li>
-      <li>
-        <p>Modal Text (non-linked) (<em>optional</em>)</p>
-      </li>
+      <li> Video to start on (<em>required</em>) </li>
+      <li>Time in video to seek to (<em>optional</em>) </li>
+      <li>Downloadable/Viewable asset URL (<em>optional</em>) </li>
+      <li>Modal Title (<em>optional</em>) </li>
+      <li>Linked Text (<em>optional</em>) </li>
+      <li>Button Text (defaults to “View”) (<em>required</em>) </li>
+      <li>Modal Text (non-linked) (<em>optional</em>) </li>
     </ul>
     <p>Click <strong>Generate</strong> to create link with custom parameters.</p>
+  </section>
+  <section class="bcls-section">
     <h2 id="review">Review</h2>
     <p><strong>View</strong> Landing page and review experience.</p>
     <p>You can view the landing page at anytime by clicking the View button in the top right corner</p>
+  </section>
+  <section class="bcls-section">
     <h2 id="congratulations-youve-just-created-a-slide-sync-experience">Congratulations! You’ve just created a Slide Sync Experience!</h2>
-    <p><br><em>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</em></p>
+    <aside class="bcls-aside bcls-aside--information">Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
   </section>
 </article>
