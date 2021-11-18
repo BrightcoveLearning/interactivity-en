@@ -3,32 +3,69 @@ title: Using HapYak's Built In CSS Classes
 description: What is available and how to apply.
 parent: Styling
 ---
-
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>In your editor, you have access to some CSS classes that are built in to the HapYak Platform. The intention of these classes is to help solve issues commonly faced while authoring content. This Article will cover how to apply classes, followed by a breakdown of each class, what it does, and which annotations it is compatible with.</p>
-    <p>In addition to the classes described below, there are a number of others available to you that add simple animated transitions to your annotations. To read an article about the animation CSS classes, <a href="/annotations/custom-transitions-with-animate-css-beta.html" data-is-internal-link="true">click here</a>. <br><br>HOW TO APPLY CLASSES:&nbsp;</p>
-    <p>To Apply a custom class to an annotation, click into the <code>edit</code> &nbsp;tab, and then into <code>add-class</code> . Once you do this, you will see this screen: <br></p>
-    <div class="intercom-container intercom-align-left"><img src="/assets/images/styling/apply-custom-class.png"></div>
-    <p>Add class names to the field exactly as they appear in the list below. Multiple classes can be applied to a single annotation, but must be separated by a space, and should not be preceded by a period. <br></p>
-    <h2 id="class-names">Class Names:</h2>
-    <h2 id="1--hapyak-annotation-full-frame">1 . hapyak-annotation-full-frame</h2>
-    <p><em>Description: </em><br>This class will modify the selected annotation to snap to fit the entire frame of your video.&nbsp;</p>
-    <p><em>Compatible Annotations types</em>: <br>&nbsp; &nbsp; Transparent Overlay<br>&nbsp; &nbsp; Image Overlay<br>&nbsp; &nbsp; Chapter Menu<br>&nbsp; &nbsp; Quiz</p>
-    <h2 id="2-hapyak-annotation-bring-to-top">2. hapyak-annotation-bring-to-top</h2>
-    <p><em>Description: <br></em>This class will make the selected annotation appear at the "Top" layer on top of your interactive experience. This is useful if you want to make sure an element always appears to be "in front" or "on top" of another element. ie</p>
-    <p><br><em>Compatible Annotations types</em>: <br>&nbsp; &nbsp; Text Overlay<br>&nbsp; &nbsp; Transparent Overlay<br>&nbsp; &nbsp; Image Overlay<br>&nbsp; &nbsp; Quiz<br>&nbsp; &nbsp; User Sentiment Widget<br>&nbsp; &nbsp; Custom Form Widget<br>&nbsp; &nbsp; Drawing Tool<br></p>
-    <h2 id="3-hapyak-annotation-send-to-back">3. hapyak-annotation-send-to-back</h2>
-    <p><em>Description: </em>This class is the anti-venom to bring-to-top. It will send your annotation to the back-most layer of your interactive experience. This is useful if you want to make sure a particular element always appears to be "behind" another element.&nbsp;</p>
-    <p><em>Compatible Annotations types</em>: <br>&nbsp; &nbsp; Text Overlay<br>&nbsp; &nbsp; Transparent Overlay<br>&nbsp; &nbsp; Image Overlay<br>&nbsp; &nbsp; Quiz<br>&nbsp; &nbsp; User Sentiment Widget<br>&nbsp; &nbsp; User Sign-in Widget<br>&nbsp; &nbsp; Poll Widget<br>&nbsp; &nbsp; Custom Form Widget<br>&nbsp; &nbsp; Drawing Tool</p>
-    <p><em>Note: </em>The Chapter Menu annotation will Always appear as the top most layer of any video UNLESS other annotations have the "hapyak-annotation-bring-to-top" class applied.&nbsp;</p>
-    <h2 id="4-hapyak-annotation-shine">4. hapyak-annotation-shine</h2>
-    <p><em>Description: </em>This Class will add a shimmer-effect to the selected annotation. The Shimmer will sweep across the frame of the annotation on mouse-hover.&nbsp;</p>
-    <p><em>Compatible Annotations types</em>: <br>&nbsp; &nbsp; Transparent Overlay<br>&nbsp; &nbsp; User Sentiment Widget<br>&nbsp; &nbsp;&nbsp;</p>
-    <p><em>Note: </em>Shine will not work as expected with a transparent overlay in full-frame mode.&nbsp;</p>
-    
-    <p><em><br>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.&nbsp;</em></p>
+    <p>In addition to the classes described below, there are a number of others available to you that add simple animated transitions to your annotations. To read an article about the animation CSS classes, <a href="/annotations/custom-transitions-with-animate-css-beta.html" data-is-internal-link="true">click here</a>.</p>
+    <h2 id="apply-class">How to Apply Classes</h2>
+    <p>To Apply a custom class to an annotation, click into the <code>edit</code> tab, and then into <code>add-class</code> . Once you do this, you will see this screen: <br>
+    </p>
+    <figure class="bcls-figure"><img src="/assets/images/styling/apply-custom-class.png"></figure>
+    <p>Add class names to the field exactly as they appear in the list below. Multiple classes can be applied to a single annotation, but must be separated by a space, and should not be preceded by a period.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="1--hapyak-annotation-full-frame">hapyak-annotation-full-frame</h2>
+    <p>This class will modify the selected annotation to snap to fit the entire frame of your video.</p>
+    <p>Compatible Annotations types:</p>
+    <ul>
+      <li>Transparent Overlay</li>
+      <li>Image Overlay</li>
+      <li>Chapter Menu</li>
+      <li>Quiz</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="2-hapyak-annotation-bring-to-top">hapyak-annotation-bring-to-top</h2>
+    <p>This class will make the selected annotation appear at the "Top" layer on top of your interactive experience. This is useful if you want to make sure an element always appears to be "in front" or "on top" of another element. ie</p>
+    <p>Compatible Annotations types:</p>
+    <ul>
+      <li>Text Overlay</li>
+      <li>Transparent Overlay</li>
+      <li>Image Overlay</li>
+      <li>Quiz</li>
+      <li>User Sentiment Widget</li>
+      <li>Custom Form Widget</li>
+      <li>Drawing Tool</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="3-hapyak-annotation-send-to-back">hapyak-annotation-send-to-back</h2>
+    <p>This class is the anti-venom to bring-to-top. It will send your annotation to the back-most layer of your interactive experience. This is useful if you want to make sure a particular element always appears to be "behind" another element.</p>
+    <p>Compatible Annotations types:</p>
+    <ul>
+      <li>Text Overlay</li>
+      <li>Transparent Overlay</li>
+      <li>Image Overlay</li>
+      <li>Quiz</li>
+      <li>User Sentiment Widget</li>
+      <li>User Sign-in Widget</li>
+      <li>Poll Widget</li>
+      <li>Custom Form Widget</li>
+      <li>Drawing Tool</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note:The Chapter Menu annotation will Always appear as the top most layer of any video UNLESS other annotations have the "hapyak-annotation-bring-to-top" class applied.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="4-hapyak-annotation-shine">hapyak-annotation-shine</h2>
+    <p>This Class will add a shimmer-effect to the selected annotation. The Shimmer will sweep across the frame of the annotation on mouse-hover.&nbsp;</p>
+    <p>Compatible Annotations types:</p>
+    <ul>
+      <li>Transparent Overlay</li>
+      <li>User Sentiment Widget</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: Shine will not work as expected with a transparent overlay in full-frame mode.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
   </section>
 </article>
