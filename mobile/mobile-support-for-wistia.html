@@ -3,24 +3,24 @@ title: Mobile Support for Wistia
 description: Ensuring your Wistia interactive videos work on Mobile devices like iPhone and Android.
 parent: Mobile Devices
 ---
-
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>To ensure that your Wistia interactive videos play inline on iOS and Android Devices, you must use the use the Native Player Embed code in HapYak. To do so follow these steps:</p>
-    <ol>
-      <li>
-        <p>&nbsp;Click the <b>Share</b> Button</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the <b>Share</b> Button.
+        <figure class="bcls-figure"><img src="/assets/images/mobile/share-button.png"></figure>
+      </li>
+      <li>Make sure you select the Wistia Player Share Type.
+        <figure class="bcls-figure"><img src="/assets/images/mobile/share-type.png"></figure>
+      </li>
+      <li>To ensure that the video plays inline in Full screen, add this to your video embed code: <code>fullscreenOnRotateToLandscape="false"</code> &nbsp;right after the <code>playsinline="true"</code> inside the opening <code>&lt;iFrame&gt;</code> Tag:
+        <figure class="bcls-figure"><img src="/assets/images/mobile/embed-code.png"></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: The <code>fullscreenOnRotateToLandscape="false"</code> attribute is still in beta in Wistia and is subject to change)</aside>
       </li>
     </ol>
-    <div class="intercom-container intercom-align-center"><img src="/assets/images/mobile/share-button.png"></div>
-    <p>&nbsp; 2. Make sure you select the Wistia Player Share Type.<br></p>
-    <div class="intercom-container intercom-align-left"><img src="/assets/images/mobile/share-type.png"></div>
-    <p>3. To ensure that the video plays inline in Full screen, add this to your video embed code: <code>fullscreenOnRotateToLandscape="false"</code> &nbsp;right after the <code>playsinline="true"</code> inside the opening <code>&lt;iFrame&gt;</code> Tag:</p>
-    <div class="intercom-container intercom-align-left"><img src="/assets/images/mobile/embed-code.png"></div>
-    <p><b><i>(Note the </i></b><code>fullscreenOnRotateToLandscape="false"</code> <b><i>attribute is still in beta in Wistia and is subject to change)</i></b></p>
-    <p class="intercom-align-center">To consult with HapYak for Mobile Best Practices around Wistia Sourced Videos, click the button Below:<br></p>
-    <div class="intercom-container intercom-align-center"><a class="intercom-h2b-button" target="_blank" href="mailto:support@hapyak.com?Subject=Wistia%20Mobile%20Best%20Practices&amp;Body=Hi%2C%0A%0AI%20would%20like%20a%20consultation%20on%20Wistia%20Mobile%20Best%20Practices." rel="nofollow noopener noreferrer">Consult With HapYak For Wistia Mobile Best Practices</a></div>
-  </section>
+    <p>To consult with HapYak for Mobile Best Practices around Wistia Sourced Videos, click the button Below:<br>
+    </p>
+    <a class="intercom-h2b-button" target="_blank" href="mailto:support@hapyak.com?Subject=Wistia%20Mobile%20Best%20Practices&amp;Body=Hi%2C%0A%0AI%20would%20like%20a%20consultation%20on%20Wistia%20Mobile%20Best%20Practices." rel="nofollow noopener noreferrer">Consult With HapYak For Wistia Mobile Best Practices</a> </section>
 </article>
