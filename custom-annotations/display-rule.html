@@ -3,24 +3,18 @@ title: Display Rule
 description: How to add a display rule to your video.
 parent: Custom Annotations
 ---
-
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p><i>Friendly Warning: welcome to developer territory.&nbsp;</i></p>
     <p><i>You will have a lot of fun if you are comfortable with HTML, Javascript and CSS, or have a friend / colleague that is. If not, you may have a bad time.&nbsp;</i></p>
-    <p><i>If you are a real do-it-yourselfer and want to learn yourself, we highly recommend first taking Codeacademy's free </i><a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank"><i>HTML/CSS</i></a><i> and </i><a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank"><i>JavaScript</i></a><i> courses. </i><br><br>The <b>Display Rule</b> allows you to make an annotation appear only under certain conditions. Common conditions include:</p>
+    <p><i>If you are a real do-it-yourselfer and want to learn yourself, we highly recommend first taking Codeacademy's free </i><a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank"><i>HTML/CSS</i></a><i> and </i><a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank"><i>JavaScript</i></a><i> courses. </i></p>
+    <p>The <b>Display Rule</b> allows you to make an annotation appear only under certain conditions. Common conditions include:</p>
     <ul>
-      <li>
-        <p>Display when a viewer clicks on a different annotation.</p>
-      </li>
-      <li>
-        <p>Display when the viewer gets a question right or wrong.</p>
-      </li>
-      <li>
-        <p>Display based on a parameter passed in from an external API.</p>
-      </li>
+      <li>Display when a viewer clicks on a different annotation. </li>
+      <li>Display when the viewer gets a question right or wrong. </li>
+      <li>Display based on a parameter passed in from an external API. </li>
     </ul>
     <h3 id="examples">Examples</h3>
     <p>Here's a basic example. Clicking on one annotation will make another appear.</p>
@@ -28,8 +22,18 @@ parent: Custom Annotations
     <p>Here's a more sophisticated example.</p>
     <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/8b8418334f111ecb6b41e07b9aca6880" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-2.png"></a></div>
     <h3 id="how-to-do-it">How to do it</h3>
-    <p>The first (or "target") annotation can be a text, image or hotspot annotation.<br>Set the <b>Link</b> / <b>Evaluate</b> expression field to something like: <code>displayTextBox=true</code>.<br><br>The second (or "destination") annotation can be any type - text, image, hotspot, iframe, even a quiz.<br>On this, set the <b>Display Rule</b> field to something like: <code>displayTextBox==true</code>.<br></p>
+    <p>The first (or "target") annotation can be a text, image or hotspot annotation.<br>
+      Set the <b>Link</b> / <b>Evaluate</b> expression field to something like: <code>displayTextBox=true</code>.</p>
+    <p>The second (or "destination") annotation can be any type - text, image, hotspot, iframe, even a quiz. On this, set the <b>Display Rule</b> field to something like: <code>displayTextBox==true</code>.</p>
     <h3 id="optional-configuration">Optional Configuration</h3>
-    <p>The more sophisticated example has the following configuration:<br><br><b>Target Annotation</b><br><b>Link</b> / <b>Evaluate</b> expression: <code>player.pause(), displayTextBox=true, displayQuestionBox=false</code><br><b>Display Rule</b>: <code>displayQuestionBox==true || displayQuestionBox==undefined</code><br><br><b>Destination Annotation<br></b><b>Link</b> / <b>Evaluate</b> expression: <code>player.play(), displayTextBox=false, displayQuestionBox=true</code><br><b>Display Rule</b>: <code>displayTextBox==true</code><br><b>Start time and Duration </b>for both the target and destination annotations are identical.</p>
+    <p>The more sophisticated example has the following configuration:</p>
+    <p><b>Target Annotation</b><br>
+      <b>Link</b> / <b>Evaluate</b> expression: <code>player.pause(), displayTextBox=true, displayQuestionBox=false</code><br>
+      <b>Display Rule</b>: <code>displayQuestionBox==true || displayQuestionBox==undefined</code><br>
+      <br>
+      <b>Destination Annotation<br>
+      </b><b>Link</b> / <b>Evaluate</b> expression: <code>player.play(), displayTextBox=false, displayQuestionBox=true</code><br>
+      <b>Display Rule</b>: <code>displayTextBox==true</code><br>
+      <b>Start time and Duration </b>for both the target and destination annotations are identical.</p>
   </section>
 </article>
