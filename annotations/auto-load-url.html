@@ -7,32 +7,17 @@ parent: Annotations
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>Automatically loading a URL without a user-initiated action is generally discouraged UX - and technically prohibited by browsers in many cases.
-      <br>
-      <br>HapYak annotations don't have the capability to load a URL without a user action. However, If you're technically inclined, you can do this yourself with our
-      <a href="/references/index.html" rel="nofollow noopener noreferrer" target="_blank">API</a>. You would create a javascript listener for the video-complete event, then perform the desired action.
-      <br>
-      <br>If you decide to take that approach HapYak can provide some code examples to help.
-      <br>
-      <br>﻿Here's a working example:
-      <br>
-      <a href="http://jsbin.com/wilaq/1/edit" rel="nofollow noopener noreferrer" target="_blank">http://jsbin.com/wilaq/1/edit</a>
-      <br>At the end of the video it auto navigates to hapyak.com
-      <br>
-      <br>Here are the important lines of code:
-      <br>
-      <br>
-      <code>onTrackingEvent: function(data) {</code>
-      <br>
-      <code>&nbsp; &nbsp;if (data.event==="Player Action" &amp;&amp; data.properties.Action.indexOf("End")===0) {</code>
-      <br>
-      <code>&nbsp; &nbsp; &nbsp; window.location.href = "http://corp.hapyak.com"}} &nbsp;</code>
-      <br>
-      <br>
-      <i>Note: this even works on an iPhone (even when the video is playing in the native QuickTime app).</i>
-    </p>
-    <p>
-      <i>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</i>
-    </p>
+    <p>Automatically loading a URL without a user-initiated action is generally discouraged UX - and technically prohibited by browsers in many cases.</p>
+    <p>HapYak annotations don't have the capability to load a URL without a user action. However, If you're technically inclined, you can do this yourself with our <a href="/references/index.html" rel="nofollow noopener noreferrer" target="_blank">API</a>. You would create a javascript listener for the video-complete event, then perform the desired action. If you decide to take that approach HapYak can provide some code examples to help.</p>
+    <p>Here's a working example:</p>
+    <br>
+    <a href="http://jsbin.com/wilaq/1/edit" rel="nofollow noopener noreferrer" target="_blank">http://jsbin.com/wilaq/1/edit</a>
+    <p>At the end of the video it auto navigates to hapyak.com.  Here are the important lines of code:</p>
+    <br>
+    <code>onTrackingEvent: function(data) {</code> <br>
+    <code>&nbsp; &nbsp;if (data.event==="Player Action" &amp;&amp; data.properties.Action.indexOf("End")===0) {</code> <br>
+    <code>&nbsp; &nbsp; &nbsp; window.location.href = "http://corp.hapyak.com"}} &nbsp;</code> <br>
+    <aside class="bcls-aside bcls-aside--information">Note: This even works on an iPhone (even when the video is playing in the native QuickTime app).</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
   </section>
 </article>
