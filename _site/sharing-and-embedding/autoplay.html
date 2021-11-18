@@ -739,36 +739,24 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>Autoplay is discouraged or blocked by most browsers, but if you want to anyway, instructions are here.</summary>
   <section class="bcls-section">
-    <aside class="bcls-aside bcls-aside--warning language-editable"><em>***Note***
-        <br>Due to Autoplay Policy changes applied to many major browsers during 2018, HapYak cannot certify autoplay functionality across all environments. Please review your browser's Autoplay Policy for more information.
-      </em></aside>
-      
-    <p>
-      <br>To set a HapYak project to autoplay when the page loads simply add the query parameter
-      <b>hapyak_autoplay=true</b> to the URL where the video is embedded.
-      <br>
-      <br>Example:
-      <br>
-      <br>
-      <a href="http://www.hapyak.com/portal/viewer/2011ab957f0bd60d827e2adf4b0ce9b2" rel="nofollow noopener noreferrer" target="_blank">http://www.hapyak.com/portal/viewer/2011ab957f0bd60d827e2adf4b0ce9b2</a> will not autoplay.
-      <br>
-      <br>
-      <a href="http://www.hapyak.com/portal/viewer/2011ab957f0bd60d827e2adf4b0ce9b2?hapyak_autoplay=true" rel="nofollow noopener noreferrer" target="_blank">http://www.hapyak.com/portal/viewer/2011ab957f0bd60d827e2adf4b0ce9b2?hapyak_autoplay=true</a> will autoplay.
-    </p>
-    <p>Or you can manually add
-      <b>&amp;amp;hapyak_autoplay=true</b> to the embed code.
-    </p>
+    <aside class="bcls-aside bcls-aside--warning language-editable">Note: Due to Autoplay Policy changes applied to many major browsers during 2018, HapYak cannot certify autoplay functionality across all environments. Please review your browser's Autoplay Policy for more information.</aside>
+    <p>To set a HapYak project to autoplay when the page loads simply add the query parameter <b>hapyak_autoplay=true</b> to the URL where the video is embedded.</p>
     <p>Example:</p>
-    <p>This will not autoplay,</p>
+    <br>
+    <a href="http://www.hapyak.com/portal/viewer/2011ab957f0bd60d827e2adf4b0ce9b2" rel="nofollow noopener noreferrer" target="_blank">http://www.hapyak.com/portal/viewer/2011ab957f0bd60d827e2adf4b0ce9b2</a> will not autoplay. <br>
+    <br>
+    <a href="http://www.hapyak.com/portal/viewer/2011ab957f0bd60d827e2adf4b0ce9b2?hapyak_autoplay=true" rel="nofollow noopener noreferrer" target="_blank">http://www.hapyak.com/portal/viewer/2011ab957f0bd60d827e2adf4b0ce9b2?hapyak_autoplay=true</a> will autoplay.
+    <p>Or you can manually add <b>&amp;amp;hapyak_autoplay=true</b> to the embed code.</p>
+    <p>Example:</p>
+    <p>This will not autoplay:</p>
     <pre>
       <code>&lt;iframe id="hapyak-player-9621-3576" marginwidth="0" marginheight="0" frameborder="no" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="//www.hapyak.com/embed?key=9d2be3d5dfde4a849490&amp;amp;project=11372" width="960" height="599" class="hapyak-embed"&gt;&lt;/iframe&gt;</code>
     </pre>
-    <p>This will,</p>
+    <p>This will:</p>
     <pre>
       <code>&lt;iframe id="hapyak-player-9621-3576" marginwidth="0" marginheight="0" frameborder="no" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="//www.hapyak.com/embed?key=9d2be3d5dfde4a849490&amp;amp;project=11372&amp;amp;hapyak_autoplay=true" width="960" height="599" class="hapyak-embed"&gt;&lt;/iframe&gt;</code>
     </pre>
     <aside class="bcls-aside bcls-aside--information language-editable"><em>Please Note: this is a Proof of Concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</em></aside>
-      
   </section>
 </article>
 
