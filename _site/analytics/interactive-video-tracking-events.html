@@ -794,55 +794,55 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>These properties are present on Annotation View, Annotation End and Annotation Action events.</p>
     <h3>Identifiers</h3>
     <ul>
-      <li>Annotation ID - HapYak internal ID for the annotation</li>
+      <li><strong>Annotation ID</strong> - HapYak internal ID for the annotation</li>
     </ul>
     <h3>Timing information</h3>
     <ul>
-      <li>Annotation Start Time - The timestamp when the annotation is shown or activated</li>
-      <li>Annotation Duration - The length of time the annotation is active</li>
-      <li>Elapsed - The length of time the annotation was viewed for. Since some annotations can pause the video, this property accounts for the total time it was on-screen.</li>
-      <li>Remaining - How much time left until the end of the video</li>
-      <li>Paused - Boolean for whether video is paused or not, when the event is logged</li>
-      <li>Play Time Accrued - The total amount of time spent playing the video, when the event is logged</li>
-      <li>Video Offset - The current time in the video, when the event is logged</li>
-      <li>Video Percent Complete - The total percentage of video watched, when the event is logged.   This is the position of the playhead expressed as a percentage of total video duration.</li>
+      <li><strong>Annotation Start Time</strong> - The timestamp when the annotation is shown or activated</li>
+      <li><strong>Annotation Duration</strong> - The length of time the annotation is active</li>
+      <li><strong>Elapsed</strong> - The length of time the annotation was viewed for. Since some annotations can pause the video, this property accounts for the total time it was on-screen.</li>
+      <li><strong>Remaining</strong> - How much time left until the end of the video</li>
+      <li><strong>Paused</strong> - Boolean for whether video is paused or not, when the event is logged</li>
+      <li><strong>Play Time Accrued</strong> - The total amount of time spent playing the video, when the event is logged</li>
+      <li><strong>Video Offset</strong> - The current time in the video, when the event is logged</li>
+      <li><strong>Video Percent Complete</strong> - The total percentage of video watched, when the event is logged.   This is the position of the playhead expressed as a percentage of total video duration.</li>
     </ul>
     <h3>Interaction information</h3>
     <ul>
-      <li>Action - Present for “Player Action” and "Annotation Action" event types. Refer to the specific annotation type to see a list of possible values.</li>
+      <li><strong>Action</strong> - Present for “Player Action” and "Annotation Action" event types. Refer to the specific annotation type to see a list of possible values.</li>
     </ul>
   </section>
   <section class="bcls-section">
     <h2 id="annotation-specific-event">Annotation Specific Event Properties </h2>
     <h3>Linked annotation types: Pop, Image, HotLink</h3>
     <ul>
-      <li>Action - "Click" or "External Click"</li>
-      <li>Target - The URL of the link</li>
-      <li>Target Annotation - The target annotation ID if used for in-video navigation</li>
-      <li>Target Time - The target timestamp if used for in-video navigation</li>
-      <li>Target Track - The track ID if the click caused another track to load</li>
-      <li>Target Expression - The optional javascript expression evaluated</li>
-      <li>Text - If present, the text displayed in the annotation</li>
+      <li><strong>Action</strong> - "Click" or "External Click"</li>
+      <li><strong>Target</strong> - The URL of the link</li>
+      <li><strong>Target Annotation</strong> - The target annotation ID if used for in-video navigation</li>
+      <li><strong>Target Time</strong> - The target timestamp if used for in-video navigation</li>
+      <li><strong>Target Track</strong> - The track ID if the click caused another track to load</li>
+      <li><strong>Target Expression</strong> - The optional javascript expression evaluated</li>
+      <li><strong>Text</strong> - If present, the text displayed in the annotation</li>
     </ul>
     <h3>Quiz annotation</h3>
     <ul>
-      <li>Action - "Answer", "Submit", "Prev", "Next", "Skipped"</li>
-      <li>Answer - For "Answer": The text of the answer provided by the viewer</li>
-      <li>Question - For "Answer": The text of the question answered by the viewer</li>
-      <li>Num Questions - For "Submit" - the total number of questions in the quiz annotation.   This is useful for a quiz with multiple questions in it.</li>
-      <li>Num Answered - For "Submit" - the total number of answers provided by the viewer. This is useful for a quiz with multiple questions in it.</li>
-      <li>Num Correct - For "Submit" - the total number of correct answers provided by the viewer. This is useful for a quiz with multiple questions in it.</li>
-      <li>Correct - For "Answer" - true or false</li>
-      <li>Pass - For "Submit" - true or false</li>
-      <li>Target/Target Time/Target Track/Target Expression - For "Submit" - present if an automatic pass/fail follow-up action is configured for the quiz.</li>
+      <li><strong>Action</strong> - "Answer", "Submit", "Prev", "Next", "Skipped"</li>
+      <li><strong>Answer</strong> - For "Answer": The text of the answer provided by the viewer</li>
+      <li><strong>Question</strong> - For "Answer": The text of the question answered by the viewer</li>
+      <li><strong>Num Questions</strong> - For "Submit" - the total number of questions in the quiz annotation.   This is useful for a quiz with multiple questions in it.</li>
+      <li><strong>Num Answered</strong> - For "Submit" - the total number of answers provided by the viewer. This is useful for a quiz with multiple questions in it.</li>
+      <li><strong>Num Correct</strong> - For "Submit" - the total number of correct answers provided by the viewer. This is useful for a quiz with multiple questions in it.</li>
+      <li><strong>Correct</strong> - For "Answer" - true or false</li>
+      <li><strong>Pass</strong> - For "Submit" - true or false</li>
+      <li><strong>Target/Target Time/Target Track/Target Expression</strong> - For "Submit" - present if an automatic pass/fail follow-up action is configured for the quiz.</li>
     </ul>
     <h3>Table of Contents annotation</h3>
     <ul>
-      <li>Action - "Click", "Prev", "Next", "Expand", "Collapse"</li>
-      <li>Type - “contents”</li>
-      <li>Target - Annotation ID of the clicked Chapter</li>
-      <li>Target Time - Time offset of the clicked Chapter</li>
-      <li>Text - Text (name) of the target chapter</li>
+      <li><strong>Action</strong> - "Click", "Prev", "Next", "Expand", "Collapse"</li>
+      <li><strong>Type</strong> - “contents”</li>
+      <li><strong>Target</strong> - Annotation ID of the clicked Chapter</li>
+      <li><strong>Target Time</strong> - Time offset of the clicked Chapter</li>
+      <li><strong>Text</strong> - Text (name) of the target chapter</li>
     </ul>
   </section>
   <section class="bcls-section">
@@ -850,20 +850,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>These properties are present on all Player Action events.</p>
     <h3>Timing information</h3>
     <ul>
-      <li>Play Time Accrued - The total amount of time spent playing the video</li>
-      <li>Video Offset - The current time in the video when the event is logged</li>
-      <li>Video Percent Complete - The total percentage of video watched, when the event is logged.   This is the position of the playhead expressed as a percentage of total video duration.</li>
+      <li><strong>Play Time Accrued</strong> - The total amount of time spent playing the video</li>
+      <li><strong>Video Offset</strong> - The current time in the video when the event is logged</li>
+      <li><strong>Video Percent Complete</strong> - The total percentage of video watched, when the event is logged.   This is the position of the playhead expressed as a percentage of total video duration.</li>
     </ul>
     <h3>Player interaction information</h3>
     <ul>
-      <li>Action - values listed below
+      <li><strong>Action</strong> - values listed below
         <ul>
-          <li>Load - This means that the HapYak-enabled video loaded on the page</li>
-          <li>Play, Pause, Seek, Volume, Fullscreen - Standard video player functionality</li>
-          <li>Progress - This fires every 5 seconds.</li>
-          <li>End - Complete - This fires once when the video reaches the end if the view time is equal to the video duration</li>
-          <li>End - Over - This fires once when the video reaches the end if the view time is greater than the video duration. Typically this means the viewer re-watched certain segments of the video.</li>
-          <li>End - Under - This fires once when the video reaches the end if the view time is less than the video duration. Typically this means that the viewer skipped over a section of the video.</li>
+          <li><strong>Load</strong> - This means that the HapYak-enabled video loaded on the page</li>
+          <li><strong>Play, Pause, Seek, Volume, Fullscreen</strong> - Standard video player functionality</li>
+          <li><strong>Progress</strong> - This fires every 5 seconds.</li>
+          <li><strong>End - Complete</strong> - This fires once when the video reaches the end if the view time is equal to the video duration</li>
+          <li><strong>End - Over</strong> - This fires once when the video reaches the end if the view time is greater than the video duration. Typically this means the viewer re-watched certain segments of the video.</li>
+          <li><strong>End - Under</strong> - This fires once when the video reaches the end if the view time is less than the video duration. Typically this means that the viewer skipped over a section of the video.</li>
         </ul>
       </li>
     </ul>
