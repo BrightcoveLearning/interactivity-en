@@ -8,6 +8,107 @@ parent: Analytics
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>The Brightcove Campaign Integration Module captures core user interactions and records them as custom actions in Brightcove Campaign. The recorded interaction data will enable you to generate reports for <b>Click Through Rate</b>, <b>Navigation Rate,</b> and <b>Response Rate</b>. </p>
-    <p>Details <a href="https://docs.google.com/document/d/19DRIve9sY5F41SByXyPrJ1HX733I5N4CDZLv9RUb-Ng/edit#" rel="nofollow noopener noreferrer" target="_blank">here</a>. </p>
+    <p>More details about Brightcove Campaign can be found <a href="https://studio.support.brightcove.com/campaign/index.html">here</a>.</strong></p>
+    More details about HapYak Analytics Events can be found <a href="https://docs.google.com/document/d/1hD0ysKgdTKOF2b9-u7UEaJmCb7lojzdK6-dEt19lETY/edit?usp=sharing">here</a>. </section>
+  <section class="bcls-section">
+    <h2 id="prereq">Prerequisites</h2>
+    <ul>
+      <li>A Brightcove account with the Campaign module configured </li>
+      <li>A HapYak Enterprise license</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setup">Setup</h2>
+    <p>In Video Cloud Studio, configure a player with the Campaign module and the HapYak Plugin as per the instructions. Set the <code>customTracking</code> setting of the HapYak plugin to</p>
+    <pre><code>https://dmhl2y7t4r72w.cloudfront.net/brightcove/bcovTrackingHandler.js"</code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="data">What data is collected?</h2>
+    <p>HapYak passes the following interactions to Brightcove Campaign for tracking:</p>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>Link</td>
+          <td>Recorded every time a link in the video is clicked</td>
+        </tr>
+        <tr>
+          <td>Navigation</td>
+          <td>Recorded every time a Chapter, or Jump-to-time link in the video is clicked</td>
+        </tr>
+        <tr>
+          <td>Chapters</td>
+          <td>Recorded every time a Chapter marker is viewed (no interaction required)</td>
+        </tr>
+        <tr>
+          <td>Answer</td>
+          <td>Recorded every time a question answer is submitted</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Technical Implementation</h3>
+    <p>Brightcove Audience allows tracking of custom properties for Metrics (numbers) named: metric1, metric2 and metric3 as well as custom properties for Events(strings) named: event1, event2 and event3.</p>
+    <p>HapYak data is recorded in the custom properties as per the table below.</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Property</th>
+          <th>What HapYak Sends</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>metric1</td>
+          <td>Total number of Links clicked during the play session</td>
+        </tr>
+        <tr>
+          <td>metric2</td>
+          <td>Total number of Chapters clicked during the play session </td>
+        </tr>
+        <tr>
+          <td>metric3</td>
+          <td>Total number of Questions answered during the play session </td>
+        </tr>
+        <tr>
+          <td>event2</td>
+          <td>The names of the Chapters clicked (or viewed) during the play session, as comma separated values </td>
+        </tr>
+        <tr>
+          <td>event3</td>
+          <td>The text of the Questions answered during the play session, as comma separated values </td>
+        </tr>
+      </tbody>
+    </table>
+    <aside class="bcls-aside bcls-aside--information">Note: Only 250 characters are permitted for each String property. </aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="reports">How to create reports</h2>
+    <h3>Where does the data show up in Brightcove Audience?</h3>
+    <p>Data can be accessed in Video Cloud Studio by opening the Campaign module and then by selecting <strong>Export Campign Data</strong> in the left navigation.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/campaign-nav.png" /></figure>
+    <p>Choose to export the data in CSV or Excel format. You will then be able to generate interaction reports by analyzing the data locally in a spreadsheet.</p>
+    <h3>What reports can I create with the data?</h3>
+    <p>You will be able to create reports that calculate what percentage of play session performed the desired action: clicking a link, navigating within the video, or submitting a response to an in-video question. The three core interaction reports are:</p>
+    <ul>
+      <li>Click Through Rate</li>
+      <li>Navigation Rate</li>
+      <li>Response Rate</li>
+    </ul>
+    <h3>Interaction rate formulae</h3>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td width="240">Click Through Rate</td>
+          <td width="330">Link / Play * 100</td>
+        </tr>
+        <tr>
+          <td>Navigation Rate</td>
+          <td>Navigation / Play * 100</td>
+        </tr>
+        <tr>
+          <td>Response Rate</td>
+          <td>Answer / Play * 100</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 </article>
