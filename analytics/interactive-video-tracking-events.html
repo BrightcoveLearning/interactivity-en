@@ -8,120 +8,153 @@ parent: Analytics
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>At HapYak, we track how your viewers are interacting with your video in detail. More than just play and pause, we track a whole set of specific events associated with your video that give you deep-level insights into viewer choices, behavior and engagement. </p>
-
-<p>There are three event types:</p>
+    <p>There are three event<sup>1</sup> types:</p>
     <ol>
-          <li><strong>Player Action</strong> details how a viewer played, paused, and progressed through the video.</li>
-          <li><strong>Annotation View</strong> and <strong>Annotation Ended</strong> details which annotations were seen by the viewer and for how long.</li>
-          <li><strong>Annotation Action</strong> details how the user interacted with the annotation.</li>
-          </ol>
-      <p>Each event has a set of properties associated with it. For example, the event of a click on an annotation call-to-action could have the following properties:</p>
-      <ul>
-          <li>The viewer’s <strong>UserID</strong> was “kyle_morton”</li>
-          <li>The annotation’s <strong>duration</strong> was 8.35 seconds</li>
-          <li>5 seconds <strong>elapsed</strong> before the viewer clicked the link</li>
-          <li>The annotation’s link <strong>target</strong> was <code>http://www.rei.com/product/763713</code></li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="prereq">Prerequisites</h2>
+      <li><strong>Player Action</strong> details how a viewer played, paused, and progressed through the video.</li>
+      <li><strong>Annotation View</strong> and <strong>Annotation Ended</strong> details which annotations were seen by the viewer and for how long.</li>
+      <li><strong>Annotation Action</strong> details how the user interacted with the annotation.</li>
+    </ol>
+    <p>Each event has a set of properties associated with it. For example, the event of a click on an annotation call-to-action could have the following properties:</p>
     <ul>
-      <li>A Brightcove account with the Campaign module configured </li>
-      <li>A HapYak Enterprise license</li>
+      <li>The viewer’s <strong>UserID</strong><sup>2</sup> was “kyle_morton”</li>
+      <li>The annotation’s <strong>duration</strong> was 8.35 seconds</li>
+      <li>5 seconds <strong>elapsed</strong> before the viewer clicked the link</li>
+      <li>The annotation’s link <strong>target</strong> was <code>http://www.rei.com/product/763713</code></li>
     </ul>
+    <p>---------------</p>
+    <p><sup>1</sup> Attribute name is &quot;event&quot;</p>
+    <p><sup>2</sup> Available when the viewer user is logged into the Portal</p>
   </section>
   <section class="bcls-section">
-    <h2 id="setup">Setup</h2>
-    <p>In Video Cloud Studio, configure a player with the Campaign module and the HapYak Plugin as per the instructions. Set the <code>customTracking</code> setting of the HapYak plugin to</p>
-    <pre><code>https://dmhl2y7t4r72w.cloudfront.net/brightcove/bcovTrackingHandler.js"</code></pre>
-  </section>
-  <section class="bcls-section">
-    <h2 id="data">What data is collected?</h2>
-    <p>HapYak passes the following interactions to Brightcove Campaign for tracking:</p>
-    <table class="bcls-table">
-      <tbody class="bcls-table__body">
-        <tr>
-          <td>Link</td>
-          <td>Recorded every time a link in the video is clicked</td>
-        </tr>
-        <tr>
-          <td>Navigation</td>
-          <td>Recorded every time a Chapter, or Jump-to-time link in the video is clicked</td>
-        </tr>
-        <tr>
-          <td>Chapters</td>
-          <td>Recorded every time a Chapter marker is viewed (no interaction required)</td>
-        </tr>
-        <tr>
-          <td>Answer</td>
-          <td>Recorded every time a question answer is submitted</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>Technical Implementation</h3>
-    <p>Brightcove Audience allows tracking of custom properties for Metrics (numbers) named: metric1, metric2 and metric3 as well as custom properties for Events(strings) named: event1, event2 and event3.</p>
-    <p>HapYak data is recorded in the custom properties as per the table below.</p>
-    <table class="bcls-table">
-      <thead class="bcls-table__head">
-        <tr>
-          <th>Property</th>
-          <th>What HapYak Sends</th>
-        </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-        <tr>
-          <td>metric1</td>
-          <td>Total number of Links clicked during the play session</td>
-        </tr>
-        <tr>
-          <td>metric2</td>
-          <td>Total number of Chapters clicked during the play session </td>
-        </tr>
-        <tr>
-          <td>metric3</td>
-          <td>Total number of Questions answered during the play session </td>
-        </tr>
-        <tr>
-          <td>event2</td>
-          <td>The names of the Chapters clicked (or viewed) during the play session, as comma separated values </td>
-        </tr>
-        <tr>
-          <td>event3</td>
-          <td>The text of the Questions answered during the play session, as comma separated values </td>
-        </tr>
-      </tbody>
-    </table>
-    <aside class="bcls-aside bcls-aside--information">Note: Only 250 characters are permitted for each String property. </aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="reports">How to create reports</h2>
-    <h3>Where does the data show up in Brightcove Audience?</h3>
-    <p>Data can be accessed in Video Cloud Studio by opening the Campaign module and then by selecting <strong>Export Campign Data</strong> in the left navigation.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/campaign-nav.png" /></figure>
-    <p>Choose to export the data in CSV or Excel format. You will then be able to generate interaction reports by analyzing the data locally in a spreadsheet.</p>
-    <h3>What reports can I create with the data?</h3>
-    <p>You will be able to create reports that calculate what percentage of play session performed the desired action: clicking a link, navigating within the video, or submitting a response to an in-video question. The three core interaction reports are:</p>
+    <h2 id="common-event">Common event properties</h2>
+    <p>These properties are present on all events.</p>
+    <h3>Identifiers</h3>
     <ul>
-      <li>Click Through Rate</li>
-      <li>Navigation Rate</li>
-      <li>Response Rate</li>
+      <li><strong>Project ID</strong> - Present if the track was loaded from a project</li>
+      <li><strong>Video ID</strong> - HapYak internal video ID</li>
+      <li><strong>Video Source</strong> - Origin source of video asset (e.g. HTML5, provider)</li>
+      <li><strong>Video Source ID</strong> - The original video URL or provider ID for the asset</li>
+      <li><strong>Track ID</strong> - HapYak internal ID for group of annotations being shown</li>
+      <li><strong>Host</strong> - The page the video is being served from</li>
     </ul>
-    <h3>Interaction rate formulae</h3>
-    <table class="bcls-table">
-      <tbody class="bcls-table__body">
-        <tr>
-          <td width="240">Click Through Rate</td>
-          <td width="330">Link / Play * 100</td>
-        </tr>
-        <tr>
-          <td>Navigation Rate</td>
-          <td>Navigation / Play * 100</td>
-        </tr>
-        <tr>
-          <td>Response Rate</td>
-          <td>Answer / Play * 100</td>
-        </tr>
-      </tbody>
-    </table>
+    <h3>Object information</h3>
+    <ul>
+      <li><strong>Video Duration</strong> - The duration of the video (in seconds)</li>
+      <li><strong>Project Title</strong> - If known, title of the project</li>
+      <li><strong>Video Title</strong> - If known, title of the video</li>
+      <li><strong>Num Annotations</strong> - The total number of annotations on the video</li>
+      <li><strong>Tags</strong> - Author-provided tags associated with the Track or Project objects</li>
+    </ul>
+    <h3>Optional information</h3>
+    <p>You can pass in optional properties to track like UserIDs and other custom user details that will help you make sense of the data later on. When present, these data will become properties of every event.</p>
+    <ul>
+      <li><strong>Partner User ID</strong> - hashed userID from an external system</li>
+      <li><strong>Partner Username</strong> - human-readable username to be displayed in reports</li>
+      <li><strong>Partner / *custom</strong> - arbitrary name=value pairs can be passed for custom tracking</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="annotation-event-generic">Annotation Event Generic Properties</h2>
+    <p>These properties are present on Annotation View, Annotation End and Annotation Action events.</p>
+    <h3>Identifiers</h3>
+    <ul>
+      <li>Annotation ID - HapYak internal ID for the annotation</li>
+    </ul>
+    <h3>Timing information</h3>
+    <ul>
+      <li>Annotation Start Time - The timestamp when the annotation is shown or activated</li>
+      <li>Annotation Duration - The length of time the annotation is active</li>
+      <li>Elapsed - The length of time the annotation was viewed for. Since some annotations can pause the video, this property accounts for the total time it was on-screen.</li>
+      <li>Remaining - How much time left until the end of the video</li>
+      <li>Paused - Boolean for whether video is paused or not, when the event is logged</li>
+      <li>Play Time Accrued - The total amount of time spent playing the video, when the event is logged</li>
+      <li>Video Offset - The current time in the video, when the event is logged</li>
+      <li>Video Percent Complete - The total percentage of video watched, when the event is logged.   This is the position of the playhead expressed as a percentage of total video duration.</li>
+    </ul>
+    <h3>Interaction information</h3>
+    <ul>
+      <li>Action - Present for “Player Action” and "Annotation Action" event types. Refer to the specific annotation type to see a list of possible values.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="annotation-specific-event">Annotation Specific Event Properties </h2>
+    <h3>Linked annotation types: Pop, Image, HotLink</h3>
+    <ul>
+      <li>Action - "Click" or "External Click"</li>
+      <li>Target - The URL of the link</li>
+      <li>Target Annotation - The target annotation ID if used for in-video navigation</li>
+      <li>Target Time - The target timestamp if used for in-video navigation</li>
+      <li>Target Track - The track ID if the click caused another track to load</li>
+      <li>Target Expression - The optional javascript expression evaluated</li>
+      <li>Text - If present, the text displayed in the annotation</li>
+    </ul>
+    <h3>Quiz annotation</h3>
+    <ul>
+      <li>Action - "Answer", "Submit", "Prev", "Next", "Skipped"</li>
+      <li>Answer - For "Answer": The text of the answer provided by the viewer</li>
+      <li>Question - For "Answer": The text of the question answered by the viewer</li>
+      <li>Num Questions - For "Submit" - the total number of questions in the quiz annotation.   This is useful for a quiz with multiple questions in it.</li>
+      <li>Num Answered - For "Submit" - the total number of answers provided by the viewer. This is useful for a quiz with multiple questions in it.</li>
+      <li>Num Correct - For "Submit" - the total number of correct answers provided by the viewer. This is useful for a quiz with multiple questions in it.</li>
+      <li>Correct - For "Answer" - true or false</li>
+      <li>Pass - For "Submit" - true or false</li>
+      <li>Target/Target Time/Target Track/Target Expression - For "Submit" - present if an automatic pass/fail follow-up action is configured for the quiz.</li>
+    </ul>
+    <h3>Table of Contents annotation</h3>
+    <ul>
+      <li>Action - "Click", "Prev", "Next", "Expand", "Collapse"</li>
+      <li>Type - “contents”</li>
+      <li>Target - Annotation ID of the clicked Chapter</li>
+      <li>Target Time - Time offset of the clicked Chapter</li>
+      <li>Text - Text (name) of the target chapter</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="player-event-generic">Player Event Generic Properties </h2>
+    <p>These properties are present on all Player Action events.</p>
+    <h3>Timing information</h3>
+    <ul>
+      <li>Play Time Accrued - The total amount of time spent playing the video</li>
+      <li>Video Offset - The current time in the video when the event is logged</li>
+      <li>Video Percent Complete - The total percentage of video watched, when the event is logged.   This is the position of the playhead expressed as a percentage of total video duration.</li>
+    </ul>
+    <h3>Player interaction information</h3>
+    <ul>
+      <li>Action - values listed below
+        <ul>
+          <li>Load - This means that the HapYak-enabled video loaded on the page</li>
+          <li>Play, Pause, Seek, Volume, Fullscreen - Standard video player functionality</li>
+          <li>Progress - This fires every 5 seconds.</li>
+          <li>End - Complete - This fires once when the video reaches the end if the view time is equal to the video duration</li>
+          <li>End - Over - This fires once when the video reaches the end if the view time is greater than the video duration. Typically this means the viewer re-watched certain segments of the video.</li>
+          <li>End - Under - This fires once when the video reaches the end if the view time is less than the video duration. Typically this means that the viewer skipped over a section of the video.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="standard-properties">Standard Properties for all Events</h2>
+    <p>This is general information about the viewer and environment, similar to most web analytics systems.   These values are not available to client-side analytics.</p>
+    <ul>
+      <li><code>browser</code></li>
+      <li><code>ip</code></li>
+      <li><code>os</code></li>
+      <li><code>referrer</code></li>
+      <li><code>referring_domain</code></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="analytics-api">Analytics API</h2>
+    <p>All events and properties are exposed as a JSON object made available via the "onTrackingEvent" callback function on the HapYak Viewer Object.</p>
+    <pre>
+        <code>
+hapyak.viewer({
+    onTrackingEvent: function(data) {
+        console.log('HapYak / ' + data.event, data.properties);
+    }
+});
+</code>
+</pre>
+    <p>Documentation on the HapYak Viewer Object can be found here: <a href="http://www.hapyak.com/docs/#AdvancedOptions12">http://www.hapyak.com/docs/#AdvancedOptions12</a>.</p>
   </section>
 </article>
