@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Connect your Brightcove account with HapYak. Auto-create and auto-publish projects.">
+  <meta name="description" content="In this topic you will learn how to connect your Brightcove account with HapYak and how to auto-create and auto-publish projects.">
   
   <title>HapYak Plugin for Brightcove</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -593,6 +593,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
+                    <li><a href="/analytics/interactive-video-tracking-events.html">Interactive Video Tracking Events</a></li>
+                  
+                
+                  
                     <li><a href="/analytics/tracking-known-viewers-with-mailchimp.html">Tracking Known Viewers with MailChimp</a></li>
                   
                 
@@ -737,11 +741,187 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>HapYak Plugin for Brightcove</h1>
 <article class="bcls-article">
-  <summary>Connect your Brightcove account with HapYak. Auto-create and auto-publish projects.</summary>
+  <summary>In this topic you will learn how to connect your Brightcove account with HapYak and how to auto-create and auto-publish projects.</summary>
   <section class="bcls-section">
-    <h2 id="Instructions">Instructions</h2>
-    <figure><a target="_blank" href="/assets/images/getting-started/Brightcove-Plugin-2.jpg" rel="nofollow noopener noreferrer"><img src="/assets/images/getting-started/Brightcove-Plugin-2.jpg"></a></figure>
-    <p>For details on how to configure the HapYak Plugin for Brightcove please follow this link: <a href="https://docs.google.com/document/d/1Mrq3SJAvMoi1b5fMyIrIqz8KIxuOQpkljEhLtpKaoUg/edit?usp=sharing" rel="nofollow noopener noreferrer" target="_blank">HapYak Plugin for Brightcove</a>.</p>
+    <p>The HapYak Plugin for the Brightcove Player connects your Brightcove Account to your HapYak Account. Using this plugin has the following benefits:</p>
+    <ul>
+      <li>Automatic creation of a HapYak Project for each Brightcove Video viewed in the configured Player</li>
+      <li>Programmatic access to Brightcove Video Metadata from the HapYak Extension APIs</li>
+      <li>Dynamic loading of HapYak Templates</li>
+      <li>Sync HapYak project titles with Brightcove media titles</li>
+    </ul>
+    <p>This plugin is recommended for all Brightcove customers using the HTML5 Player. When interactions are added to a HapYak Project, created via the Plugin, they will automatically appear on the corresponding video. This removes the need to copy and publish embed code within the HapYak Studio. </p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure">Configuring a Brightcove Player with the plugin</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Log in to your  Video Cloud Studio account.</li>
+      <li>Open the Players module.</li>
+      <li>Click "New Player" and name the player "HapYakPlayer".</li>
+      <li>Click <strong>Save</strong>.
+        <aside class="bcls-aside bcls-aside--information">Note: You can also add the HapYak Plugin to an existing player. Compatibility with the Brightcove Campaign module has been verified. If you are adding the HapYak plugin to a player with other plugins, please contact <a href="support@brightcove.com">support@brightcove.com</a> to verify compatibility.</aside>
+      </li>
+      <li>In the Players list click “HapYakPlayer”.</li>
+      <li>Scroll down to the "Plugins" section and click “Edit”.</li>
+      <li>Click "JavaScript" and add the plugin url:
+        <pre><code> https://d2qrdklrsxowl2.cloudfront.net/js/partners/brightcoveV2/hapyak-plugin.js</code></pre>
+      </li>
+      <li>For "Name, Options (JSON)" enter:
+        <ul>
+          <li>Plugin Name: hapyak (note: all lower case)</li>
+          <li>plugin options:
+            <pre><code>
+{
+"apiKey":"your-hapyak-read-api-key"
+}
+</code></pre>
+            <aside class="bcls-aside bcls-aside--information">Note: You can find your HapYak Read Api Key <a href="http://www.hapyak.com/portal/settings/integrations">here</a>.</aside>
+          </li>
+          <li>If you wish to configure a ‘read-only’ player, which will display annotations on existing Hapyak projects but will NOT publish any new projects, add the following parameters to the plugin options, underneath your api key:
+            <pre><code>
+“readOnly”: true
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Save</strong> then <strong>Publish</strong>.</li>
+    </ol>
+    <p>Your HapYakPlayer is now ready to use.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="workflow">Workflow</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>In Video Cloud Studio,  publish the video using the HapYakPlayer. <strong>Click the link</strong> to play the published video for a few seconds. This will auto-create the project in HapYak.</li>
+      <li>In the <a href="http://www.hapyak.com/portal/">HapYak Portal</a> you will see the title of your Brightcove Video in the Project List.  You’ll notice that each HapYak project automatically created by the plugin includes the tag "live".</li>
+      <li>Click on the project and author the annotations.</li>
+      <li>Publish your video via  Video Cloud Studio. </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="works">How it works</h2>
+    <h3>Automatic Creation of Projects in the HapYak portal</h3>
+    <p>When a video is loaded in a properly configured player the following things happen:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>The Brightcove Video Id, Title, Tags and Custom Fields are sent to HapYak.</li>
+      <li>HapYak attempts to look up the Video ID within your HapYak Group.</li>
+      <li><strong>If no matching record is found</strong>, then HapYak creates a Project with the data sent by Brightcove.</li>
+      <li>HapYak will also set properties on the Project to indicate that it was "auto created", the "is_published" value will be set to TRUE and a tag with the value "live" will be added.</li>
+    </ol>
+    <h3>Display of the proper HapYak Project on the Brightcove Video</h3>
+    <p>When a video is loaded in a properly configured player the following things happen:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>The Brightcove Video Id, Title, Tags and Custom Fields are sent to HapYak.</li>
+      <li>HapYak attempts to look up the Video Id within your HapYak Group.</li>
+      <li><strong>If a matching record is found</strong>, then HapYak filters to the record that has the "is_published" value set to TRUE. The Project with both the matching VideoId and the "is_published" value set to TRUE will be displayed.</li>
+      <li><strong>If more than one matching record is found</strong>, then HapYak filters to the most recently modified record that has the "is_published" value set to TRUE. The most recently modified Project with both the matching VideoId and the "is_published" value set to TRUE will be displayed.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: The "is_published" value can be manually changed as needed by using the CONFIGURE dialog pictured above.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="notes">Important notes</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>There will be an initial delay between the time when the HapYak project is auto created and the time that annotations appear via the plugin. The delay can be upwards of a couple hours.</li>
+      <li>Do not manually create Brightcove projects in the HapYak portal. The plugin will do this automatically.</li>
+      <li>Do not manually modify the video source of a HapYak project that was automatically created. </li>
+      <li>Do not use the EMBED code generated from the HapYak tools when using the plugin. Instead publish your videos per the normal Brightcove workflow.</li>
+      <li>Workflow-generated projects can be deleted through the HapYak UI. Please note that subsequent loads of the corresponding video through the Brightcove Player will not auto-generate a separate project in the portal.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="advanced">Advanced</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>You can tag a HapYak Template and add the same tag to multiple Brightcove videos. This is a quick and easy way to add identical annotations to dozens or hundreds of Brightcove videos. For example, if your video is tagged "click-to-buy-cta" then a matching HapYak Template also tagged "click-to-buy-cta" will be added to that video.</li>
+      <li>A custom javascript method can be provided to capture tracking events as they occur. To do so simply add the location of your javascript file in the plugin options for "hapyak"
+        <pre><code>
+{
+  "apiKey": …,
+  "customTracking": "https://dmhl2y7t4r72w.cloudfront.net/brightcove/bcovTrackingHandler.js"
+}
+</code></pre>
+      </li>
+      <li>HapYak loads its own copy of JQuery by default.   If you embed the Brightcove player with the HapYak plugin enabled, HapYak will override an existing copy of JQuery already on the page when it loads.   To prevent this behavior and preserve an existing copy of JQuery, you must pass the “preserveJQuery” option in plugin options when setting up the plugin.   For example, specifying <code>
+        <pre>
+{
+  "apiKey": …,
+  "preserveJQuery": true
+}
+</pre>
+        </code>
+        <p>will prevent HapYak from loading its own JQuery as long as there is already one on the page.</p>
+        <table class="bcls-table">
+            <caption class="bcls-caption--table">Summary of HapYak jQuery Loading Behavior</caption>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td></td>
+              <td>preserveJQuery: true</td>
+              <td>preserveJQuery: false</td>
+            </tr>
+            <tr>
+              <td>jQuery present on page</td>
+              <td>Do not load jQuery</td>
+              <td>Load jQuery</td>
+            </tr>
+            <tr>
+              <td>jQuery absent from page</td>
+              <td>Load jQuery</td>
+              <td>Load jQuery</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>HapYak emits a custom event on the Brightcove player instance that notifies when the HapYak viewer instance is ready. This event is `hyViewerLoaded` which can be listened for using the following code:
+        <pre><code>
+bcPlayerInstance.on(‘hyViewerLoaded’, function () {
+   console.log(player.hapyakViewer);
+});
+</code></pre>
+        <p>As seen above, you can access the HapYak viewer instance off of the player instance as a property called `hapyakViewer`.</p>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="plugins">Working with other plugins</h2>
+    <p>If you have other plugins applied to your Brightcove players, they should not conflict with the HapYak plugin. If you do have a question around this email support@hapyak.com with the name of a link to the JavaScript of the plugin.</p>
+    <h3>IMA3</h3>
+    <p>If you use Brightcove’s IMA3 Plugin, add this URL to the Brightcove Player Plugins’ CSS field.
+    <pre><code>
+//hapyak-partners.s3.amazonaws.com/brightcove/ima3.css
+</code></pre>
+    <p>This will ensure the IMA3 plugin layer does not cover up the HapYak interaction later.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="mobile">Mobile support</h2>
+    <p>Some Mobile devices will strip interactive elements when videos are opened in device-native players (like the quicktime player on iOS devices). HapYak has created a solution that overrides the default behavior of video on iOS and Android devices. By “Mocking Fullscreen” your videos can play in full screen and retain HapYak interactive features.</p>
+    <p>Below are a few steps that help you get set up.</p>
+    <h3>Getting Setup</h3>
+    <p>If you have not already done so, use steps at the top of this document to setup the HapYak plugin on a Brightcove Player of your choice.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Under the "Players" tab located in the dropdown in the top left of the Brightcove Video Cloud studio, click the associated HapYak player that you have configured using the steps above.</li>
+      <li>Navigate to the “Plugins” tab found on the left hand navigation bar.</li>
+      <li>Click into the “hapyak” plugin.</li>
+      <li>In the Options(JSON) add the options shown below in the “JSON options” section*. If you have correctly configured the plugin, your apiKey will already be included.
+        <ul>
+          <li><strong>loadFullScreenMobile: true.</strong> This property will override the default fullscreen behavior on iOS devices</li>
+          <li><strong>position: middle.</strong> This will ensure that the video appears in the middle of the devices display in portrait mode (mimics default behavior of all mobile devices)</li>
+        </ul>
+      </li>
+      <li>Click “Publish and Embed” in the top-right, then “Publish Changes”.</li>
+      <li>Return to “Media” in your Brightcove account, and select the video you’d like to publish. Click “publish and embed”, then select the correct hapyak configured player from the dropdown.</li>
+      <li><strong>CRITICAL STEP</strong>: Additionally, in the embed code, you MUST add ‘playsinline’ inside the <code>&lt;video-js&gt;</code> tag. Please reference the example below to ensure this attribute has been added correctly.</li>
+    </ol>
+    <h3>Configuration</h3>
+    <p><strong>JSON options:</strong></p>
+    <p>The following configuration will allow videos to be show in fullscreen with annotations present:</p>
+    <pre><code>
+{
+  “loadFullScreenMobile”: true,
+  "position": "middle",
+  “apiKey”: “your-api-key-here”
+}
+</code></pre>
+    <p>Sample Embed Code for optimal mobile configuration</p>
+    <pre>&lt;video-js<br>   playsinline<br>   data-account="2335723960001"<br>   data-player="beYnaVQrm"<br>   data-embed="default"<br>   controls=""<br>   data-video-id="6129560246001"<br>   data-playlist-id=""<br>   data-application-id=""<br>   width="960"<br>   height="540"&gt;<br>&lt;/video-js&gt;<br>&lt;script src="https://players.brightcove.net/2335723960001/beYnaVQrm_default/index.min.js"&gt;&lt;/script&gt;
+    </pre>
   </section>
 </article>
 
