@@ -759,7 +759,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Open the <strong>Players</strong> module.</li>
       <li>Click <strong>+Add Player</strong> and name the player <strong>HapYakPlayer</strong>.</li>
       <li>Click <strong>Save</strong>.
-        <aside class="bcls-aside bcls-aside--information">Note: You can also add the HapYak Plugin to an existing player. Compatibility with the Brightcove Campaign module has been verified. If you are adding the HapYak plugin to a player with other plugins, please contact <a href="support@brightcove.com">support@brightcove.com</a> to verify compatibility.</aside>
+        <aside class="bcls-aside bcls-aside--information">Note: You can also add the HapYak Plugin to an existing player. Compatibility with the Brightcove Campaign module has been verified. If you are adding the HapYak plugin to a player with other plugins, please contact <a href="mailto:support@brightcove.com">support@brightcove.com</a> to verify compatibility.</aside>
       </li>
       <li>In the Players list, click the <strong>HapYakPlayer</strong> to open the player properties.</li>
       <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
@@ -790,14 +790,16 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="workflow">Workflow</h2>
     <ol class="bcls-tasklist-restart">
       <li>In Video Cloud Studio,  publish the video using the HapYakPlayer. <strong>Click the link</strong> to play the published video for a few seconds. This will auto-create the project in HapYak.</li>
-      <li>In the <a href="http://www.hapyak.com/portal/">HapYak Portal</a> you will see the title of your Brightcove Video in the Project List.  You’ll notice that each HapYak project automatically created by the plugin includes the tag "live".</li>
+      <li>In the <a href="http://www.hapyak.com/portal/">HapYak Portal</a> you will see the title of your Brightcove Video in the Project List.  You’ll notice that each HapYak project automatically created by the plugin includes the tag <strong>live</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/bc-player-workflow.png"> </figure>
+      </li>
       <li>Click on the project and author the annotations.</li>
-      <li>Publish your video via  Video Cloud Studio. </li>
+      <li>Publish your video using  Video Cloud Studio. </li>
     </ol>
   </section>
   <section class="bcls-section">
     <h2 id="works">How it works</h2>
-    <h3>Automatic Creation of Projects in the HapYak portal</h3>
+    <h3>Automatic creation of projects in the HapYak portal</h3>
     <p>When a video is loaded in a properly configured player the following things happen:</p>
     <ol class="bcls-tasklist-restart">
       <li>The Brightcove Video Id, Title, Tags and Custom Fields are sent to HapYak.</li>
@@ -805,11 +807,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><strong>If no matching record is found</strong>, then HapYak creates a Project with the data sent by Brightcove.</li>
       <li>HapYak will also set properties on the Project to indicate that it was "auto created", the "is_published" value will be set to TRUE and a tag with the value "live" will be added.</li>
     </ol>
-    <h3>Display of the proper HapYak Project on the Brightcove Video</h3>
-    <p>When a video is loaded in a properly configured player the following things happen:</p>
+    <figure class="bcls-figure"> <img src="/assets/images/getting-started/bc-player-configure-dialog.png"> </figure>
+    <h3>Display of the proper HapYak project on the Brightcove video</h3>
+    <p>When a video is loaded in a properly configured player, the following things happen:</p>
     <ol class="bcls-tasklist-restart">
-      <li>The Brightcove Video Id, Title, Tags and Custom Fields are sent to HapYak.</li>
-      <li>HapYak attempts to look up the Video Id within your HapYak Group.</li>
+      <li>The Brightcove video ID, title, tags and custom fields are sent to HapYak.</li>
+      <li>HapYak attempts to look up the video ID within your HapYak Group.</li>
       <li><strong>If a matching record is found</strong>, then HapYak filters to the record that has the "is_published" value set to TRUE. The Project with both the matching VideoId and the "is_published" value set to TRUE will be displayed.</li>
       <li><strong>If more than one matching record is found</strong>, then HapYak filters to the most recently modified record that has the "is_published" value set to TRUE. The most recently modified Project with both the matching VideoId and the "is_published" value set to TRUE will be displayed.</li>
     </ol>
@@ -837,7 +840,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 }
 </code></pre>
       </li>
-      <li>HapYak loads its own copy of JQuery by default.   If you embed the Brightcove player with the HapYak plugin enabled, HapYak will override an existing copy of JQuery already on the page when it loads.   To prevent this behavior and preserve an existing copy of JQuery, you must pass the “preserveJQuery” option in plugin options when setting up the plugin.   For example, specifying <code>
+      <li>HapYak loads its own copy of JQuery by default.   If you embed the Brightcove Player with the HapYak plugin enabled, HapYak will override an existing copy of JQuery already on the page when it loads.   To prevent this behavior and preserve an existing copy of JQuery, you must pass the “preserveJQuery” option in plugin options when setting up the plugin.   For example, specifying <code>
         <pre>
 {
   "apiKey": …,
@@ -869,19 +872,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           </tbody>
         </table>
       </li>
-      <li>HapYak emits a custom event on the Brightcove player instance that notifies when the HapYak viewer instance is ready. This event is `hyViewerLoaded` which can be listened for using the following code:
+      <li>HapYak emits a custom event on the Brightcove Player instance that notifies when the HapYak viewer instance is ready. This event is <code>hyViewerLoaded</code> which can be listened for using the following code:
         <pre><code>
 bcPlayerInstance.on(‘hyViewerLoaded’, function () {
    console.log(player.hapyakViewer);
 });
 </code></pre>
-        <p>As seen above, you can access the HapYak viewer instance off of the player instance as a property called `hapyakViewer`.</p>
+        <p>As seen above, you can access the HapYak viewer instance off of the player instance as a property called <code>hapyakViewer</code>.</p>
       </li>
     </ol>
   </section>
   <section class="bcls-section">
     <h2 id="plugins">Working with other plugins</h2>
-    <p>If you have other plugins applied to your Brightcove players, they should not conflict with the HapYak plugin. If you do have a question around this email support@hapyak.com with the name of a link to the JavaScript of the plugin.</p>
+    <p>If you have other plugins applied to your Brightcove players, they should not conflict with the HapYak plugin. If you do have a question around this email <a href="mailto:support@brightcove.com">support@brightcove.com</a> with the name of a link to the JavaScript of the plugin.</p>
     <h3>IMA3</h3>
     <p>If you use Brightcove’s IMA3 Plugin, add this URL to the Brightcove Player Plugins’ CSS field.
     <pre><code>
@@ -891,23 +894,26 @@ bcPlayerInstance.on(‘hyViewerLoaded’, function () {
   </section>
   <section class="bcls-section">
     <h2 id="mobile">Mobile support</h2>
-    <p>Some Mobile devices will strip interactive elements when videos are opened in device-native players (like the quicktime player on iOS devices). HapYak has created a solution that overrides the default behavior of video on iOS and Android devices. By “Mocking Fullscreen” your videos can play in full screen and retain HapYak interactive features.</p>
+    <p>Some mobile devices will strip interactive elements when videos are opened in device-native players (like the Quicktime player on iOS devices). HapYak has created a solution that overrides the default behavior of video on iOS and Android devices. By &quot;Mocking Fullscreen&quot;, your videos can play in full screen and retain HapYak interactive features.</p>
     <p>Below are a few steps that help you get set up.</p>
     <h3>Getting Setup</h3>
     <p>If you have not already done so, use steps at the top of this document to setup the HapYak plugin on a Brightcove Player of your choice.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Under the "Players" tab located in the dropdown in the top left of the Brightcove Video Cloud studio, click the associated HapYak player that you have configured using the steps above.</li>
-      <li>Navigate to the “Plugins” tab found on the left hand navigation bar.</li>
-      <li>Click into the “hapyak” plugin.</li>
-      <li>In the Options(JSON) add the options shown below in the “JSON options” section*. If you have correctly configured the plugin, your apiKey will already be included.
+      <li>Open the Players module in Video Cloud Studio.</li>
+      <li>In the Players list, click the HapYak playerthat you have configured using the steps above.</li>
+      <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
+      <li>Click on the <strong>hapyak</strong> plugin.</li>
+      <li>In the <strong>Options(JSON)</strong>, add the options shown below in the “JSON options” section*. If you have correctly configured the plugin, your apiKey will already be included.
         <ul>
           <li><strong>loadFullScreenMobile: true.</strong> This property will override the default fullscreen behavior on iOS devices</li>
           <li><strong>position: middle.</strong> This will ensure that the video appears in the middle of the devices display in portrait mode (mimics default behavior of all mobile devices)</li>
         </ul>
       </li>
-      <li>Click “Publish and Embed” in the top-right, then “Publish Changes”.</li>
-      <li>Return to “Media” in your Brightcove account, and select the video you’d like to publish. Click “publish and embed”, then select the correct hapyak configured player from the dropdown.</li>
-      <li><strong>CRITICAL STEP</strong>: Additionally, in the embed code, you MUST add ‘playsinline’ inside the <code>&lt;video-js&gt;</code> tag. Please reference the example below to ensure this attribute has been added correctly.</li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Click <strong>Publish &amp; Embed</strong> &gt; <strong>Publish Changes</strong>.</li>
+      <li>Open the <strong>Media</strong> module in your Brightcove account and select the video you’d like to publish.</li>
+      <li>Click <strong>Publish and embed</strong> &gt; <strong>Publish to web</strong>, then select the correct hapyak configured player from the dropdown list of players.</li>
+      <li><strong>CRITICAL STEP</strong>: Additionally, in the embed code, you MUST add <code>playsinline</code> inside the <code>&lt;video-js&gt;</code> tag. Please reference the example below to ensure this attribute has been added correctly.</li>
     </ol>
     <h3>Configuration</h3>
     <p><strong>JSON options:</strong></p>
@@ -919,7 +925,7 @@ bcPlayerInstance.on(‘hyViewerLoaded’, function () {
   “apiKey”: “your-api-key-here”
 }
 </code></pre>
-    <p>Sample Embed Code for optimal mobile configuration</p>
+    <p>Sample embed code for optimal mobile configuration:</p>
     <pre>&lt;video-js<br>   playsinline<br>   data-account="2335723960001"<br>   data-player="beYnaVQrm"<br>   data-embed="default"<br>   controls=""<br>   data-video-id="6129560246001"<br>   data-playlist-id=""<br>   data-application-id=""<br>   width="960"<br>   height="540"&gt;<br>&lt;/video-js&gt;<br>&lt;script src="https://players.brightcove.net/2335723960001/beYnaVQrm_default/index.min.js"&gt;&lt;/script&gt;
     </pre>
   </section>
