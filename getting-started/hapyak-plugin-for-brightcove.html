@@ -104,14 +104,13 @@ parent: Getting Started
 }
 </code></pre>
       </li>
-      <li>HapYak loads its own copy of JQuery by default.   If you embed the Brightcove Player with the HapYak plugin enabled, HapYak will override an existing copy of JQuery already on the page when it loads.   To prevent this behavior and preserve an existing copy of JQuery, you must pass the “preserveJQuery” option in plugin options when setting up the plugin.   For example, specifying <code>
-        <pre>
+      <li>HapYak loads its own copy of JQuery by default.   If you embed the Brightcove Player with the HapYak plugin enabled, HapYak will override an existing copy of JQuery already on the page when it loads.   To prevent this behavior and preserve an existing copy of JQuery, you must pass the “preserveJQuery” option in plugin options when setting up the plugin.   For example, specifying
+        <pre><code>
 {
   "apiKey": …,
   "preserveJQuery": true
 }
-</pre>
-        </code>
+</code></pre>
         <p>will prevent HapYak from loading its own JQuery as long as there is already one on the page.</p>
         <table class="bcls-table">
           <caption class="bcls-caption--table">
