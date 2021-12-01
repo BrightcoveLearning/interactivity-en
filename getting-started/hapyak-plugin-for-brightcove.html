@@ -28,31 +28,27 @@ parent: Getting Started
       <li>In the Players list, click the <strong>HapYakPlayer</strong> to open the player properties.</li>
       <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
       <li>Click <strong>Add a Plugin</strong> &gt; <strong>Custom Plugin</strong>.</li>
-      <li></li>
-      <li>Click "JavaScript" and add the plugin url:
+      <li>For the <strong>Plugin Name</strong> use <strong>hapyak</strong>.</li>
+      <li>For the JavaScript URL, use:
         <pre><code> https://d2qrdklrsxowl2.cloudfront.net/js/partners/brightcoveV2/hapyak-plugin.js</code></pre>
       </li>
-      <li>For "Name, Options (JSON)" enter:
-        <ul>
-          <li>Plugin Name: hapyak (note: all lower case)</li>
-          <li>plugin options:
-            <pre><code>
+      <li>For the plugin options, you will need the value of your HapYak Read API Key, you can get the value <a href="http://www.hapyak.com/portal/settings/integrations">here</a>. When you have the key, for the <strong>Options(JSON)</strong> enter:
+        <pre><code>
 {
 "apiKey":"your-hapyak-read-api-key"
 }
 </code></pre>
-            <aside class="bcls-aside bcls-aside--information">Note: You can find your HapYak Read Api Key <a href="http://www.hapyak.com/portal/settings/integrations">here</a>.</aside>
-          </li>
-          <li>If you wish to configure a ‘read-only’ player, which will display annotations on existing Hapyak projects but will NOT publish any new projects, add the following parameters to the plugin options, underneath your api key:
-            <pre><code>
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/bc-player-plugin-settings.png"> </figure>
+      </li>
+      <li>If you wish to configure a &quot;read-only&quot; player which will display annotations on existing Hapyak projects but will NOT publish any new projects, add the following parameters to the plugin options, below the <code>apiKey</code>:
+        <pre><code>
 “readOnly”: true
 </code></pre>
-          </li>
-        </ul>
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/bc-player-plugin-settings-readonly.png"> </figure>
       </li>
-      <li>Click <strong>Save</strong> then <strong>Publish</strong>.</li>
+      <li>Click <strong>Save</strong> and then <strong>Publish &amp; Embed &gt; </strong><strong>Publish Changes</strong> to save the changes to the player.</li>
     </ol>
-    <p>Your HapYakPlayer is now ready to use.</p>
+    <p>The HapYakPlayer is now ready to use.</p>
   </section>
   <section class="bcls-section">
     <h2 id="workflow">Workflow</h2>
@@ -115,7 +111,9 @@ parent: Getting Started
         </code>
         <p>will prevent HapYak from loading its own JQuery as long as there is already one on the page.</p>
         <table class="bcls-table">
-            <caption class="bcls-caption--table">Summary of HapYak jQuery Loading Behavior</caption>
+          <caption class="bcls-caption--table">
+          Summary of HapYak jQuery Loading Behavior
+          </caption>
           <tbody class="bcls-table__body">
             <tr>
               <td></td>
