@@ -41,4 +41,63 @@ parent: Sharing and Embedding
       <li>Grades / Scores are recorded directly into the LMS Gradebook</li>
     </ul>
   </section>
+  <section class="bcls-section">
+    <h2 id="prerequisites">Prerequisites</h2>
+    <ul>
+      <li>You must have a Learning Management System that supports the LTI 1.1.1 Specification (<a href="https://www.imsglobal.org/specs/ltiv1p1p1/implementation-guide">https://www.imsglobal.org/specs/ltiv1p1p1/implementation-guide</a>)</li>
+      <li>You must have a valid HapYak Enterprise or HapYak Platform license</li>
+      <li>You must have the HapYak LTI Module enabled on your HapYak account</li>
+      <li>Web Browsers utilizing the solution must be HTML5 compatible</li>
+      <li>All connections to the solution must utilize HTTPS protocol
+        <ul>
+          <li>If you are using video resources hosted by a 3rd party (such as YouTube), you must ensure they are accessible over an HTTPS connection</li>
+        </ul>
+      </li>
+      <li>Firewalls in place on the networks from which the solution is accessed must whitelist: "*.hapyak.com"</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setup">Setup</h2>
+    <ul>
+      <li>Contact your HapYak Account Representative to enable the LTI Integration Module on your account</li>
+      <li>Your HapYak Account Representative will provide you with technical information that you must record and provide to your LMS administrator.
+        <ul>
+          <li>lti_consumer_key</li>
+          <li>lti_consumer_secret</li>
+          <li>lti_url</li>
+        </ul>
+      </li>
+      <li>Your LMS Administrator will use the information that is provided to configure HapYak as an LTI Provider inside of your LMS.
+        <ul>
+          <li>NOTE: Each Learning Management Systems is unique and may provide a different method for configuring an LTI Provider. Please consult your LMS documentation and support for instructions.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="tech-specs">Technical Specifications</h2>
+    <h3>Object Model</h3>
+    <ul>
+      <li>LTI Master Group (corresponding to the HapYak issued LTI credentials)
+        <ul>
+          <li>LTI Context Group (corresponding to the LMS issued context_id)
+            <ul>
+              <li>HapYak Editor (corresponding to the LMS reports user, if role = instructor)</li>
+              <li>HapYak Experience (corresponding to the LMS issued resource_id)
+                <ul>
+                  <li>HapYak Layout of type "Lesson"
+                    <ul>
+                      <li>Scoring Module (specified by Experience configuration)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+      <h3>Authoring/Instructor Flow Diagram</h3>
+      
+  </section>
 </article>
