@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="How to automatically create leads, contacts and qualify leads with interactive video data.">
+  <meta name="description" content="In this topic you will learn how to automatically create leads, contacts and qualify leads with interactive video data.">
   
   <title>Eloqua Add-on</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -593,6 +593,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
+                    <li><a href="/analytics/interactive-video-tracking-events.html">Interactive Video Tracking Events</a></li>
+                  
+                
+                  
                     <li><a href="/analytics/tracking-known-viewers-with-mailchimp.html">Tracking Known Viewers with MailChimp</a></li>
                   
                 
@@ -737,17 +741,29 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>Eloqua Add-on</h1>
 <article class="bcls-article">
-  <summary>How to automatically create leads, contacts and qualify leads with interactive video data.</summary>
+  <summary>In this topic you will learn how to automatically create leads, contacts and qualify leads with interactive video data.</summary>
   <section class="bcls-section">
-    <p>This module provides a javascript integration that will track interactive video <i>click</i> events utilizing Eloqua Asynchronous Visitor Tracking Scripts.</p>
-    <p>Once the setup process is complete all videos in your HapYak group will be tracked using the integration.</p>
+    <p>This module provides a JavaScript integration that will track interactive video <i>click</i> events utilizing Eloqua Asynchronous Visitor Tracking Scripts. Once the setup process is complete all videos in your HapYak group will be tracked using the integration.</p>
     <h3 id="requirements">Requirements</h3>
     <ul>
-      <li>You must be a current Oracle Eloqua customer. </li>
-      <li>You must be an <i>Enterprise</i> HapYak customer and have the Eloqua Add-on added to your account. Contact <a href="mailto:support@hapyak.com?Subject=Please%20add%20the%20Eloqua%20Add-on%20to%20my%20account&amp;Body=Please%20add%20the%20Eloqua%20Add-on%20to%20my%20account." rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get that added. </li>
+      <li>You must be a current Oracle Eloqua customer</li>
+      <li>You must be an <i>Enterprise</i> HapYak customer and have the Eloqua Add-on added to your account; contact <a href="mailto:support@hapyak.com?Subject=Please%20add%20the%20Eloqua%20Add-on%20to%20my%20account&amp;Body=Please%20add%20the%20Eloqua%20Add-on%20to%20my%20account." rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get that added</li>
     </ul>
-    <h3 id="adding-the-module">Adding the Module</h3>
-    <p>Directions are <a href="https://docs.google.com/document/d/1R5a6CPAnYbHx-KFhpGfN7e4c18O1i78KhNMymM9gOOE/edit" rel="nofollow noopener noreferrer" target="_blank">here</a>.</p>
+    <h3 id="adding-the-module">&nbsp;</h3>
+  </section>
+  <section class="bcls-section">
+    <h2 id="one-time">One-time setup</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Obtain your base Eloqua tracking script and provide it to your HapYak Account Manager. It should look something like below (your code should have a numerical value in place of ‘xxxxxxxxx’).
+        <pre><code>
+&lt;script type="text/javascript"&gt;<br>    var _elqQ = _elqQ || [];<br>    _elqQ.push(['elqSetSiteId', 'xxxxxxxxx']);<br>    _elqQ.push(['elqTrackPageView']);<br>    <br>    (function () {<br>        function async_load() {<br>            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;<br>            s.src = '//img.en25.com/i/elqCfg.min.js';<br>            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);<br>        }<br>        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);<br>        else if (window.attachEvent) window.attachEvent('onload', async_load);<br>    })();<br>&lt;/script&gt;
+              </code></pre>
+      </li>
+      <li>Your HapYak Account Manager will configure your account and provide a test page. The implementation utilizes the <code>_elq.trackEvent(URL)</code> method to post data to Eloqua. HapYak parameters are appended to the end of the URL for the page where the video is served.
+        <p>For Example, if the video is embedded on the page <code>http://www.domain.com/mypage</code>, and someone clicks on a call-to-action at 53 seconds into the video, it will be recorded as <code>_elq.trackEvent("http://www.domain.com/mypage?hy_src=hapyak&hy_action=click&hy_time=53")</code></p>
+      </li>
+      <li>You will need to verify the data flow from the test page to your Eloqua account. Once the data is verified you will have the opportunity to make requests for customizations to the data format. After any customizations are made and final approval is received from you, the implementation will be considered certified and ready for production use.</li>
+    </ol>
   </section>
 </article>
 
