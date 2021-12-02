@@ -833,8 +833,110 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </ul>
       </li>
     </ul>
-      <h3>Authoring/Instructor Flow Diagram</h3>
-      
+    <h3>Authoring/Instructor flow diagram</h3>
+    <figure class="bcls-figure"> <img src="/assets/images/integrations/author-flow-diagram-500.png"> </figure>
+    <p><a href="/assets/images/integrations/author-flow-diagram-full-size.png" target="new">Full resolution version here</a></p>
+    <h3>Student/Learner flow diagram</h3>
+    <h3>How grading works</h3>
+    <p>The LTI standard allows for recording a score between 0 and 1 to the LMS Gradebook for a given assignment. HapYak implements scoring algorithms that analyses viewing metrics, interaction data, and answered questions in order to derive the score value.</p>
+    <p>Our standard algorithm can be configured to score based on either the amount of the video that has been viewed, or the answers to in-video questions.</p>
+    <ul>
+      <li>If the "view-time" algorithm is used the learner will be given a score of 1 if they watch 90% of the video.</li>
+      <li>If the "questions" algorithm is used the learner will be given an additive score of 1/number of questions for each question answered correctly.</li>
+    </ul>
+    <p>The score is calculated at the completion of the video when the learner presses the "Submit Score" button. Once a score has been submitted to the LMS Gradebook it cannot be resubmitted.</p>
+    <h4>What this means…</h4>
+    <ul>
+      <li>No scores will be recorded in the LMS Gradebook unless the learner presses the submit button at the end of the video.</li>
+      <li>A learner must complete any scoring requirements in one viewing. For example:
+        <ul>
+          <li>If a video contains 4 questions the learner is not allowed to answer 2 questions, leave, then come back later to answer the final 2 questions and submit their score. They must answer all 4 questions and submit their score in the same viewing.</li>
+          <li>If a score is awarded by watching 90% of the video, a learner must watch 90% of the video and submit their score during the same viewing.</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>LMS assignment and interactive video lesson relationship</h3>
+    <p>As per the LTI specification the LMS will pass HapYak a context_id and a resource_id upon accessing an Assignment. Together the context_id and the resource_id are used by HapYak to lookup the HapYak Group and Interactive Video lesson being requested.</p>
+    <p>The context_id is used by HapYak to segregate data and access privileges internally. HapYak associates one Group for each context_id. The resource_id is used by HapYak to associate an Interactive Video Lesson within that Group.</p>
+    <h4>What this means…</h4>
+    <ul>
+      <li>It is assumed that the context_id encodes the course, session, section and/or other necessary details to define a unique Group.</li>
+      <li>Since an Interactive Video Lesson is associated with a single resource_link_id, and each LMS Assignment has a unique resource_link_id, it cannot be used in more than one Assignment.</li>
+    </ul>
+    <h3>Only scores are recorded in the LMS Gradebook</h3>
+    <p>The LTI specification allows only for assignment scores to be recorded in the LMS Gradebook. This means that the LMS will only be able to access the score achieved for the assignment as a whole, not the score for each individual question that may have been asked in the video.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Please contact your HapYak Account Representative to discuss options for more in-depth reports that HapYak may be able to directly expose, separately from the LTI Module.</aside>
+    <h4>What this means…</h4>
+    <ul>
+      <li>The text of the questions and answers submitted by a student will not be present in the LMS gradebook. Instead the Assignment and the achieved Score will be.</li>
+    </ul>
+    <h3>End-to-End system certifications</h3>
+    <p>While all LMSs which support the LTI 1.1.1 standard are expected to be fully compliant, the HapYak team has fully tested and certified the following major Learning Management Systems.</p>
+    <ul>
+      <li>Moodle v.X</li>
+      <li>Canvas by Instructure (canvas.instructure.com)</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: If you require end-to-end system certification for your LMS please contact your HapYak Account Representative. Additional fees apply.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="user-experience">User experience narratives</h2>
+    <p>The workflow for any learning management system is slightly different. The narratives below are here to conceptually describe the user experience and how it impacts the underlying system.</p>
+    <h3>ROLE: Instructor</h3>
+    <ul>
+      <li>The instructor will
+        <ul>
+          <li>Log in to the LMS</li>
+          <li>Create a new assignment in their course</li>
+          <li>Click the "LTI" button and select HapYak as the Provider
+            <ul>
+              <li>The HapYak authoring tools will load within the LMS</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>The instructor will
+        <ul>
+          <li>Use the HapYak authoring tools to provide, or upload a video and add interactive elements and annotations</li>
+          <li>Preview the experience as a student would see it</li>
+        </ul>
+      </li>
+      <li>All changes are auto-saved, so there is no need to press "Save". Once the instructor is satisfied with the experience they can close out of the tool</li>
+      <li>The instructor will
+        <ul>
+          <li>Publish the course and make the assignment available to students as per their standard LMS workflow.</li>
+        </ul>
+      </li>
+      <li>After students access the Assignment the Instructor can then review scores in the LMS gradebook</li>
+    </ul>
+    <h3>ROLE: Student</h3>
+    <ul>
+      <li> The student will
+        <ul>
+          <li> Log in to the LMS</li>
+          <li> Access the Assignment containing an Interactive Video Lesson</li>
+          <li> Watch the video and answers in-video questions</li>
+          <li> Click a ‘Submit Score’ button that clearly indicates that they are turning in their assignment for credit.
+            <ul>
+              <li> At this point their numeric grade is calculated based on the implemented algorithm and sent to the LMS Gradebook </li>
+            </ul>
+          </li>
+          <li>A student can NOT re-submit their assignment for credit </li>
+          <li>The student can review their score in the LMS gradebook </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="lms-support">Learning Management Systems known to support LTI</h2>
+    <ul>
+      <li>Sakai</li>
+      <li>Blackboard</li>
+      <li>Moodle</li>
+      <li>Coursera</li>
+      <li>Canvas</li>
+      <li>Desire2Learn</li>
+      <li>Topyx (pending Outcomes API implementation)</li>
+    </ul>
   </section>
 </article>
 
