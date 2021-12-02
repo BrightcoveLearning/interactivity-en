@@ -1,0 +1,47 @@
+---
+title: Mapping of HapYak Events to Google Analytics Events
+description: This topic outlines how HapYak events are mapped to Google Analytics events.
+parent: Analytics
+---
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p>For information on the HapYak Tracking Events, see <a href="interactive-video-tracking-events.html">HapYak Interactive Video Tracking Events</a>.</p>
+
+<h3>G/A Custom Vars</h3>
+<p>We're setting the following custom vars at the page-scope to be associated with all events.</p>
+
+Slot 1 = Video Source (youtube url, or other video source url)
+Slot 2 = UserId 
+Slot 3 = UserName
+
+G/A Event for QUIZ
+
+We're capturing the "Answer" event.
+
+Category = "HapYak - [Project Title]"
+Action = "Quiz - Correct | Incorrect"
+Label = "[Question Text]"
+
+G/A Event for LINK
+
+We're defining LINK as anything that trigger another webpage to be loaded. This may be a user click, or it may be an automatic page load triggered by a Quiz answer.
+
+Category = "HapYak - [Project Title]"
+Action = "Link"
+Label = "[url]"
+
+
+G/A Event for NAVIGATION
+
+We're defining NAVIGATION as anything that trigger a seek in the video (excluding a user click on the timeline). This may be a user click, or it may be an automatic seek triggered by a Quiz answer.
+
+
+Category = "HapYak - [Project Title]"
+Action = "Navigation"
+Label = "[seek time] | Chapter: [chapter id]"
+
+
+  </section>
+</article>
