@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="How to send HapYak Interaction and Engagement events into Google Analytics.">
+  <meta name="description" content="In this topic you will learn how to send HapYak interaction and engagement events into Google Analytics.">
   
   <title>Google Analytics</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -745,16 +745,127 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>Google Analytics</h1>
 <article class="bcls-article">
-  <summary>How to send HapYak Interaction and Engagement events into Google Analytics.</summary>
+  <summary>In this topic you will learn how to send HapYak interaction and engagement events into Google Analytics.</summary>
   <section class="bcls-section">
-    <p>HapYak has a Google Analytics add-on that will send interaction and engagement events directly from HapYak into Google Analytics. Details on the module are <a href="https://docs.google.com/document/d/1QobjonB3CWFR8Lf8EG42WenWAPQlbqj0ZfZgtDRJn3g/edit" rel="nofollow noopener noreferrer" target="_blank">here</a>. </p>
-    <p>This is a great way to send this rich new stream of viewer intelligence into a system you already use to track the effectiveness of your marketing and digital initiatives.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/analytics/google-analytics.png"></figure>
+    <p>The Google Analytics Integration Module captures core user interactions and records them as Behavioral Events in Google Analytics. The recorded interaction data will enable you to generate reports in Google Analytics for Click Through Rate, Navigation Rate, and Response Rate. This is a great way to send this rich new stream of viewer intelligence into a system you already use to track the effectiveness of your marketing and digital initiatives.</p>
+    <p>For more information about Google Analytics event tracking, see the <a href="https://support.google.com/analytics/answer/1033068?hl=en#zippy=,in-this-article">Google documentation</a>. For more information about HapYak analytics events, see <a href="interactive-video-tracking-events.html">HapYak Interactive Video Tracking Events</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="prereq">Prerequisites</h2>
     <ul>
-      <li>Go to the <a href="http://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> page on your HapYak portal. If you don't see the Google Analytics card (see below) email <a href="mailto:support@hapyak.com?Subject=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module&amp;Body=Please%20provision%20my%20HapYak%20group%20with%20the%20Google%20Analytics%20Module" rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get access to it. </li>
-      <li>Add your Google ID (UA-...). Switch to <b>Enabled</b>. </li>
-      <li>You're done. For a full list of events that are sent to Google Analytics, see <a href="hapyak-events-google-analytics-events.html">Mapping of HapYak Events to Google Analytics Events</a>.</li>
+      <li>You need a Google Analytics account</li>
+      <li>You need a HapYak commercial license</li>
     </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setup">Setup</h2>
+    <ul>
+      <li>Log in to your Google Analytics Account and write down your <strong>Account Id</strong></li>
+      <li>Log in to HapYak and go to the <strong>Admin</strong> > <strong>Integrations</strong> screen (<a href="http://www.hapyak.com/portal/settings/integrations">http://www.hapyak.com/portal/settings/integrations</a>) </li>
+      <li>On the Google Analytics card, enable Google Analytics and enter in your Google Analytics Account Id and click Connect
+        <figure class="bcls-figure"> <img src="/assets/images/analytics/google-analytics.png"></figure>
+      </li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: For a full list of events that are sent to Google Analytics, see <a href="hapyak-events-google-analytics-events.html">Mapping of HapYak Events to Google Analytics Events</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="data-collected">What data is collected?</h2>
+    <p>HapYak passes the following interactions to Google Analytics for tracking:</p>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>Play</td>
+          <td>Recorded once when the video first plays</td>
+        </tr>
+        <tr>
+          <td>Link</td>
+          <td>Recorded every time a link in the video is clicked</td>
+        </tr>
+        <tr>
+          <td>Navigation</td>
+          <td>Recorded every time a Chapter, or Jump-to-time link in the video is clicked</td>
+        </tr>
+        <tr>
+          <td>Quiz</td>
+          <td>Recorded every time a quiz answer is submitted</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Technical Implementation</h3>
+    <p>Google Event Tracking allows tracking of four attributes for an event, shown in the table below.</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Attribute</th>
+          <th>What HapYak Send</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>Category</td>
+          <td>Project Title and ID e.g. "My Interactive Video Intro (001234)"</td>
+        </tr>
+        <tr>
+          <td>Action</td>
+          <td>Play | Link | Navigation | Quiz <br/>
+            <br/>
+            Link-Info | Navigation-Info | Quiz-Info </td>
+        </tr>
+        <tr>
+          <td>Label</td>
+          <td>For Action=Link-Info the Label will be set to the URL of the link <br/>
+            <br/>
+            For Action=Navigation-Info the Label will be set to the title of the Chapter <br/>
+            <br/>
+            For Action=Quiz-Info the Label will be set to the Question text and include a Correct or Incorrect indicator. For example, "What is 2+4 (Correct)"</td>
+        </tr>
+        <tr>
+          <td>Value</td>
+          <td>Not used</td>
+        </tr>
+      </tbody>
+    </table>
+    <aside class="bcls-aside bcls-aside--information">Note: Only 150 characters are permitted for each attribute.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create">How to create reports</h2>
+    <h3>Where does the data show up in Google Analytics?</h3>
+    <p>Events can be accessed inside of the Google Analytics tools from the left-side menu BEHAVIOR  &gt; EVENTS.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/analytics/ga-left-nav.png"></figure>
+    <h3>What reports can I create with the data?</h3>
+    <p>You will be able to create reports that calculate what percentage of play session performed the desired action: clicking a link, navigating within the video, or submitting a response to an in-video form. </p>
+    <p>The three core interaction reports are:</p>
+    <ul>
+      <li> Click Through Rate</li>
+      <li>Navigation Rate</li>
+      <li>Response Rate</li>
+    </ul>
+    <p>To calculate interaction rates session-based numbers must be used. In Google Analytics these will be labeled as <em>Unique Events</em>. Google defines <strong>Unique Events</strong> as "<em>A count of the number of times an event with the category/action/label value was seen at least once within a session.</em>" </p>
+    <figure class="bcls-figure"> <img src="/assets/images/analytics/ga-header.png"></figure>
+    <h3>Step by step instructions</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>In Google Analytics, access go to the Behavior &gt; Events &gt; Top Events screen</li>
+      <li>Ensure "Event Category" is selected as the Primary Dimension for the data table
+        <figure class="bcls-figure"> <img src="/assets/images/analytics/ga-sbs-primary-dimension.png"></figure>
+      </li>
+      <li>Use the data table search box and enter the name of the HapYak Project Name</li>
+      <li>Click the row in the data table matching the Project Name
+        <ul>
+          <li>A new data table will load showing the actions for the given video</li>
+        </ul>
+      </li>
+      <li>Find the row with the Action "Play" and note the number in the Unique Events column (UE-Play).
+        <ul>
+          <li>This is the denominator for rate calculations.</li>
+        </ul>
+      </li>
+      <li>Find the row with the Action corresponding to the metric you wish to measure (Link, Navigation,Quiz) and note the number in the Unique Events column (UE-Link, UE-Navigation, UE-Quiz).
+        <ul>
+          <li>This is the numerator for rate calculations.</li>
+        </ul>
+      </li>
+      <li>Perform the proper calculation for the report you wish to generate.</li>
+    </ol>
   </section>
 </article>
 
