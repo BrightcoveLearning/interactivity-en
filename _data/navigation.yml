@@ -259,6 +259,8 @@
       url: /references/embed/embed.html
     - name: Extension API
       url: /references/extension/extension.html
+    - name: HapYak CDN Configuration
+      url: /references/hapyak-cdn-config.html
     - name: 'Known Issues'
       url: '/support/known-issues.html'
     - name: Playlist API

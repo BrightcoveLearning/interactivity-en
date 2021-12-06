@@ -13,7 +13,7 @@ layout: staging
   <section class="bcls-section">
     <h2 id="implementation">Implementation</h2>
     <p>The CDN configuration is separated into two sections, assets and api. The assets prefix is prepended to all relative references for CSS, Javascript, and images. The api prefix is prepended to specific high volume API GET requests. This separation allows partners to treat asset caching differently from API caching.</p>
-    <p>Example</p>
+    <h3>Example</h3>
     <pre><code>
 hapyak.viewer({<br>    plugins: {<br>        cdn: {<br>            assets: {<br>                prefix: 'http://cdn.hapyak.com',<br>            },<br>            api: {<br>                prefix: 'http://cdn.hapyak.com',<br>                enabled: true<br>            }<br>        }<br>    }<br>});<br><br>
 </code></pre>
@@ -26,18 +26,18 @@ hapyak.viewer({<br>    plugins: {<br>        cdn: {<br>      �
     <h3>Assets</h3>
     <p>Forward all asset requests to: <code>cdn.hapyak.com</code></p>
     <ul>
-      <li>Query parameters support: HapYak uses query parameters on asset urls to cache bust when new releases are deployed. For example, v=566 is appended to all CSS URL's. When we deploy a new release, v=567 will be appended to those URLs. The expectation is that this will result in a cache miss in the CDN, and the request will be forwarded to HapYak.</li>
-      <li>Cache-Control: Cache-Control headers are used to specify expiration directives. For example, Cache-Control: max-age=600. The hapyak.js script, which loads all other scripts is set to cache for 10 minutes, the other scripts are set to cache for 30 days. When HapYak deploys a new revision, a new hapyak.js loader is deployed with a new version number embedded. 10 minutes later, the user gets the new version, and all additional asset requests will include a new v=# parameter, resulting in updated assets.</li>
-      <li>Last-Modified / ETag / If-Modified-Since: The HapYak CDN will include Last-Modified, and ETag headers in the response. Requests to the HapYak CDN should include Last-Modified, and ideally If-Match request headers to avoid transferring assets unnecessarily.</li>
+      <li><strong>Query parameters support</strong>: HapYak uses query parameters on asset urls to cache bust when new releases are deployed. For example, v=566 is appended to all CSS URL's. When we deploy a new release, v=567 will be appended to those URLs. The expectation is that this will result in a cache miss in the CDN, and the request will be forwarded to HapYak.</li>
+      <li><strong>Cache-Control</strong>: Cache-Control headers are used to specify expiration directives. For example, Cache-Control: max-age=600. The hapyak.js script, which loads all other scripts is set to cache for 10 minutes, the other scripts are set to cache for 30 days. When HapYak deploys a new revision, a new hapyak.js loader is deployed with a new version number embedded. 10 minutes later, the user gets the new version, and all additional asset requests will include a new v=# parameter, resulting in updated assets.</li>
+      <li><strong>Last-Modified / ETag / If-Modified-Since</strong>: The HapYak CDN will include Last-Modified, and ETag headers in the response. Requests to the HapYak CDN should include Last-Modified, and ideally If-Match request headers to avoid transferring assets unnecessarily.</li>
     </ul>
     <h3>API</h3>
     <p>Forward all API requests to: <code>api.hapyak.com</code></p>
     <ul>
-      <li>Query parameters support: API CDN requests are required to support caching with query parameters. The HapYak API endpoints utilize a number of query parameters.</li>
-      <li>Cache-Control: The default max-age directive returned from HapYak is 60 seconds. Cache-Control: max-age=60.</li>
-      <li>Last-Modified / If-Modified-Since: It is critical for scalability to support these headers in the CDN. HapYak will return the Last-Modified date for the track. After 60 seconds, a new request to the HapYak API with If-Modified-Since should be triggered. HapYak very quickly compares dates, and will respond with an HTTP 304 if nothing has changed. The 304 response will also include Cache-Control, letting the CDN know it can cache that response for another 60 seconds.</li>
-      <li>Content-Encoding: HapYak API responses may be encoded using Gzip. If Accept-Encoding: gzip is included in the HTTP request, HapYak will return a GZip response with Content-Encoding: gzip. The CDN should either have the ability to cache both versions, gzip and not gzip, depending on if the end users browser passed Accept-Encoding, or should not pass Accept-Encoding along to HapYak.</li>
-      <li>SSL: Please forward requests to HapYak from your CDN without SSL, even if the original request was SSL enabled.</li>
+      <li><strong>Query parameters support</strong>: API CDN requests are required to support caching with query parameters. The HapYak API endpoints utilize a number of query parameters.</li>
+      <li><strong>Cache-Control</strong>: The default max-age directive returned from HapYak is 60 seconds. Cache-Control: max-age=60.</li>
+      <li><strong>Last-Modified / If-Modified-Since</strong>: It is critical for scalability to support these headers in the CDN. HapYak will return the Last-Modified date for the track. After 60 seconds, a new request to the HapYak API with If-Modified-Since should be triggered. HapYak very quickly compares dates, and will respond with an HTTP 304 if nothing has changed. The 304 response will also include Cache-Control, letting the CDN know it can cache that response for another 60 seconds.</li>
+      <li><strong>Content-Encoding</strong>: HapYak API responses may be encoded using Gzip. If Accept-Encoding: gzip is included in the HTTP request, HapYak will return a GZip response with Content-Encoding: gzip. The CDN should either have the ability to cache both versions, gzip and not gzip, depending on if the end users browser passed Accept-Encoding, or should not pass Accept-Encoding along to HapYak.</li>
+      <li><strong>SSL</strong>: Please forward requests to HapYak from your CDN without SSL, even if the original request was SSL enabled.</li>
     </ul>
     <h3>Notes</h3>
     <p>Most existing CDN's support these features. The CDN capability was designed using Amazon Cloudfront as a reference.</p>
