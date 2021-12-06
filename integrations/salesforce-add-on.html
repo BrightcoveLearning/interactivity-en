@@ -1,19 +1,117 @@
 ---
 title: Salesforce Add-on
-description: How to automatically create leads, contacts and qualify leads with interactive video data.
+description: This topic provides details for how to setup, configure and use the Salesforce Module for HapYak.
 parent: Integrations
+layout: staging
 ---
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>The Salesforce Module enables the HapYak Analytics engine to pass data directly to your Salesforce instance. The module will automatically create Leads, Contacts and Campaign objects, or connect to existing objects. For advanced users, the module can be configured to work with Salesforce Custom Objects.</p>
+    <h3>Reference documents</h3>
+    <ul>
+      <li><a href="/analytics/interactive-video-tracking-events.html">HapYak Interactive Video Tracking Events</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setup">Setup</h2>
     <h3 id="requirements">Requirements</h3>
     <ul>
-      <li>You must be an <i>Enterprise</i> Salesforce customer with access to "Integration with Web Service API". </li>
-      <li>You must be an <i>Enterprise</i> HapYak customer and have the Salesforce Add-on added to your account. Contact <a href="mailto:support@hapyak.com?Subject=Please%20add%20the%20Salesforce%20Add-on%20to%20my%20account&amp;Body=Please%20add%20the%20Salesforce%20Add-on%20to%20my%20account." rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get that added. </li>
+      <li>You must be an <i>Enterprise</i> Salesforce customer with access to "Integration with Web Service API"</li>
+      <li>You must be an <i>Enterprise</i> HapYak customer and have the Salesforce Add-on added to your account; contact <a href="mailto:support@hapyak.com?Subject=Please%20add%20the%20Salesforce%20Add-on%20to%20my%20account&amp;Body=Please%20add%20the%20Salesforce%20Add-on%20to%20my%20account." rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> to get that added</li>
     </ul>
-    <h3 id="adding-the-module">Adding the Module</h3>
-    <p>Directions are <a href="https://docs.google.com/document/d/16j8HHIS0PVt86OJKuWV0E2pYTwRa6dHHVLaTz9gNtUI/edit#" rel="nofollow noopener noreferrer" target="_blank">here</a>.</p>
+    <h3>Salesforce setup</h3>
+    <p>Create a "HapYak API" user record in Salesforce to provide secure access for the module.</p>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td width="163">User License</td>
+          <td width="460">Salesforce</td>
+        </tr>
+        <tr>
+          <td>Profile</td>
+          <td>Marketing Profile</td>
+        </tr>
+        <tr>
+          <td>Marketing User</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <td>Permissions</td>
+          <td><p>If you need finer grained security, you can create a custom permission set. The required permissions will depend on your specific configuration and may include read/write permission for the following objects: </p>
+            <ul>
+              <li>Campaign, Lead, Contact, and/or Custom Objects </li>
+            </ul></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>HapYak setup</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Contact HapYak Support to provision the Salesforce module on your account and to configure data mappings if you are using Custom Objects. <a href="mailto: support@hapyak.com">support@hapyak.com</a></li>
+      <li>Once the module is provisioned, log in to your HapYak account and go to the  account settings page to enter your Salesforce credentials. <a href="http://hapyak.com/portal/account">http://hapyak.com/portal/account</a></li>
+      <li>Click "Salesforce: Connect" on the account settings and enter the Salesforce username, password, and security token for the HapYak API Salesforce user that you created.
+        <aside class="bcls-aside bcls-aside--information">Note: If you don't know the value of the Salesforce security token, it can be emailed to you by selecting 
+          "My Settings" and then "Personal" "Reset My Security Token" in the Salesforce UI.</aside>
+      </li>
+    </ol>
+    <h3>Embedding page setup</h3>
+    <p>A page into which you embed the Salesforce-connected project is responsible for defining a JSON Object with the end-user information to be tracked in Salesforce.</p>
+    <p>The information in the JSON Object will be used to create the necessary user (Lead/Contact/Custom) record to which the video activity events will be associated.</p>
+    <p>The JSON Object must contain the following properties:</p>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>Id</td>
+          <td>The Salesforce ID of the user viewing the video  (Lead/Contact/Custom), if known. NULL is not known. </td>
+        </tr>
+        <tr>
+          <td>FirstName</td>
+          <td>The given name of the viewing user</td>
+        </tr>
+        <tr>
+          <td>LastName</td>
+          <td>The surname of the viewing user</td>
+        </tr>
+        <tr>
+          <td>Company</td>
+          <td>The company's name of the viewing user. REQUIRED if no Id is not given. </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>The email address of the viewing user. If no existing record is found with the provided email address, a new Salesforce record of the given Type will be created.REQUIRED if no Id is not given. </td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>"Lead", "Contact" or "Custom" </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>It is highly recommended that you place the JSON Object in a standard page include file, just as the page header, to ensure that it is available on every page that might have a video embedded in it. </p>
+    <p>Example JSON Object:</p>
+    <pre><code>
+&lt;script&gt;
+window.hapyakSalesforceUser = { 
+'Id': '340093493', 
+'Email': 'kmorton@hapyak.com', 
+'Type': 'Lead'  
+};
+&lt;/script&gt;
+
+      </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="proj-config">HapYak Project configuration</h2>
+    <p>Any project can be configured to be part of a specific Salesforce Campaign. To do so follow the instructions below.</p>
+<ol class="bcls-tasklist-restart">
+    <li>From the Project page, select "Configure", and then the "Salesforce" tab.</li>
+<li>Click "Enable" on the Salesforce tab.</li>
+<li>A list of existing Salesforce Campaigns will be dynamically populated. Select the existing Campaign to use or, if desired, select "New Campaign".</li>
+<ul>
+  <li>"New Campaign" will automatically create a campaign named for the Project</li>
+</ul>
+<li>Click "Save".</li>
+<li>After changing the configuration you will need to generate new Embed code.</li>
+</ol>   
   </section>
 </article>
