@@ -1,5 +1,5 @@
 ---
-title: Google Analytics
+title: Google Analytics Integration Module
 description: In this topic you will learn how to send HapYak interaction and engagement events into Google Analytics.
 parent: Analytics
 ---
@@ -126,8 +126,8 @@ parent: Analytics
       </li>
       <li>Perform the proper calculation for the report you wish to generate.</li>
     </ol>
-      <h3>Interaction rate formulae</h3>
-      <table class="bcls-table">
+    <h3>Interaction rate formulae</h3>
+    <table class="bcls-table">
       <tbody class="bcls-table__body">
         <tr>
           <td>Click Through Rate</td>
@@ -143,5 +143,21 @@ parent: Analytics
         </tr>
       </tbody>
     </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="detailed-data">What detailed data is available?</h2>
+    <p>In addition to the interactions, additional details about exactly what was clicked is included as part of the "-Info" events.</p>
+    <h3>Link / URLs</h3>
+    <p>Events with the Action Link-Info will also have Label set to the clicked URL</p>
+    <h3>Navigation / Chapters</h3>
+    <p>Events with the Action Navigation-Info will also have Label set to the clicked Chapter</p>
+    <h3>Response / Questions</h3>
+    <p>Events with the Action Quiz-Info will also have Label set to the answered Question as well as an indicator for whether or not the answer was Correct or Incorrect.</p>
+    <p>For example, "What is 2+4 (Correct)"</p>
+    <figure class="bcls-figure"> <img src="/assets/images/analytics/ga-example.png"></figure>
+    <h3>User tracking</h3>
+    <p>If you utilize HapYak user-level tracking that information will carry through to Google Analytics as "Custom Variables" associated with the recorded Events.</p>
+    <p>HapYak records the "User ID" in custom variable slot 4 and "Username" in slot 5, if those values are present.</p>
+    <p>This information can be included in reports and data exports from Google Analytics. For more information please consult the <a href="https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingCustomVariables">Google documentation</a>.</p>
   </section>
 </article>

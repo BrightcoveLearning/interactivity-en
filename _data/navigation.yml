@@ -225,7 +225,7 @@
       url: '/analytics/analytics-and-reports-overview.html'
     - name: 'Brightcove Campaign - HapYak Integration Module'
       url: '/analytics/brightcove-campaign-hapyak-integration-module.html'
-    - name: 'Google Analytics'
+    - name: 'Google Analytics Integration Module'
       url: '/analytics/google-analytics.html'
     - name: 'HapYak Reports'
       url: '/analytics/hapyak-reports.html'
