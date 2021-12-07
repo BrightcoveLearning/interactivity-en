@@ -1,6 +1,6 @@
 ---
 title: Google Analytics Integration Module
-description: In this topic you will learn how to send HapYak interaction and engagement events into Google Analytics.
+description: In this topic you will learn how to send Brightcove Interactivity interaction and engagement events into Google Analytics.
 parent: Analytics
 ---
 <h1>{{ page.title }}</h1>
@@ -8,29 +8,29 @@ parent: Analytics
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>The Google Analytics Integration Module captures core user interactions and records them as Behavioral Events in Google Analytics. The recorded interaction data will enable you to generate reports in Google Analytics for Click Through Rate, Navigation Rate, and Response Rate. This is a great way to send this rich new stream of viewer intelligence into a system you already use to track the effectiveness of your marketing and digital initiatives.</p>
-    <p>For more information about Google Analytics event tracking, see the <a href="https://support.google.com/analytics/answer/1033068?hl=en#zippy=,in-this-article">Google documentation</a>. For more information about HapYak analytics events, see <a href="interactive-video-tracking-events.html">HapYak Interactive Video Tracking Events</a>.</p>
+    <p>For more information about Google Analytics event tracking, see the <a href="https://support.google.com/analytics/answer/1033068?hl=en#zippy=,in-this-article">Google documentation</a>. For more information about Brightcove Interactivity analytics events, see <a href="interactive-video-tracking-events.html">Brightcove Interactivity Video Tracking Events</a>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="prereq">Prerequisites</h2>
     <ul>
       <li>You need a Google Analytics account</li>
-      <li>You need a HapYak commercial license</li>
+      <li>You need a Brightcove Interactivity commercial license</li>
     </ul>
   </section>
   <section class="bcls-section">
     <h2 id="setup">Setup</h2>
     <ul>
       <li>Log in to your Google Analytics Account and write down your <strong>Account Id</strong></li>
-      <li>Log in to HapYak and go to the <strong>Admin</strong> > <strong>Integrations</strong> screen (<a href="http://www.hapyak.com/portal/settings/integrations">http://www.hapyak.com/portal/settings/integrations</a>) </li>
+      <li>Log in to Brightcove Interactivity and go to the <strong>Admin</strong> > <strong>Integrations</strong> screen (<a href="http://www.hapyak.com/portal/settings/integrations">http://www.hapyak.com/portal/settings/integrations</a>) </li>
       <li>On the Google Analytics card, enable Google Analytics and enter in your Google Analytics Account Id and click Connect
         <figure class="bcls-figure"> <img src="/assets/images/analytics/google-analytics.png"></figure>
       </li>
     </ul>
-    <aside class="bcls-aside bcls-aside--information">Note: For a full list of events that are sent to Google Analytics, see <a href="hapyak-events-google-analytics-events.html">Mapping of HapYak Events to Google Analytics Events</a>.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: For a full list of events that are sent to Google Analytics, see <a href="hapyak-events-google-analytics-events.html">Mapping of Brightcove Interactivity Events to Google Analytics Events</a>.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="data-collected">What data is collected?</h2>
-    <p>HapYak passes the following interactions to Google Analytics for tracking:</p>
+    <p>Brightcove Interactivity passes the following interactions to Google Analytics for tracking:</p>
     <table class="bcls-table">
       <tbody class="bcls-table__body">
         <tr>
@@ -57,7 +57,7 @@ parent: Analytics
       <thead class="bcls-table__head">
         <tr>
           <th>Attribute</th>
-          <th>What HapYak Send</th>
+          <th>What Brightcove Interactivity Send</th>
         </tr>
       </thead>
       <tbody class="bcls-table__body">
@@ -109,7 +109,7 @@ parent: Analytics
       <li>Ensure "Event Category" is selected as the Primary Dimension for the data table
         <figure class="bcls-figure"> <img src="/assets/images/analytics/ga-sbs-primary-dimension.png"></figure>
       </li>
-      <li>Use the data table search box and enter the name of the HapYak Project Name</li>
+      <li>Use the data table search box and enter the name of the Brightcove Interactivity Project Name</li>
       <li>Click the row in the data table matching the Project Name
         <ul>
           <li>A new data table will load showing the actions for the given video</li>
@@ -157,8 +157,8 @@ parent: Analytics
     <p>For example, "What is 2+4 (Correct)"</p>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/ga-example.png"></figure>
     <h3>User tracking</h3>
-    <p>If you utilize HapYak user-level tracking that information will carry through to Google Analytics as "Custom Variables" associated with the recorded Events.</p>
-    <p>HapYak records the "User ID" in custom variable slot 4 and "Username" in slot 5, if those values are present.</p>
+    <p>If you utilize Brightcove Interactivity user-level tracking that information will carry through to Google Analytics as "Custom Variables" associated with the recorded Events.</p>
+    <p>Brightcove Interactivity records the "User ID" in custom variable slot 4 and "Username" in slot 5, if those values are present.</p>
     <p>This information can be included in reports and data exports from Google Analytics. For more information please consult the <a href="https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingCustomVariables">Google documentation</a>.</p>
   </section>
 </article>

@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="en-US">
 
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This topic outlines how HapYak events are mapped to Google Analytics events.">
+  <meta name="description" content="This topic outlines how Brightcove Interactivity events are mapped to Google Analytics events.">
   
-  <title>Mapping of HapYak Events to Google Analytics Events</title>
+  <title>Mapping of Brightcove Interactivity Events to Google Analytics Events</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -64,7 +64,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/analytics/">Analytics</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Mapping of HapYak Events to Google Analytics Events</li>
+      <li class="breadcrumb-item active" aria-current="page">Mapping of Brightcove Interactivity Events to Google Analytics Events</li>
     </ol>
   </nav>
 </header>
@@ -581,7 +581,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/analytics/brightcove-campaign-hapyak-integration-module.html">Brightcove Campaign - HapYak Integration Module</a></li>
+                    <li><a href="/analytics/brightcove-campaign-hapyak-integration-module.html">Brightcove Campaign - Brightcove Interactivity Integration Module</a></li>
                   
                 
                   
@@ -589,7 +589,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/analytics/hapyak-reports.html">HapYak Reports</a></li>
+                    <li><a href="/analytics/hapyak-reports.html">Brightcove Interactivity Reports</a></li>
                   
                 
                   
@@ -597,7 +597,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/analytics/hapyak-events-google-analytics-events.html">Mapping HapYak Events to Google Analytics</a></li>
+                    <li><a href="/analytics/hapyak-events-google-analytics-events.html">Mapping Brightcove Interactivity Events to Google Analytics</a></li>
                   
                 
                   
@@ -747,11 +747,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Mapping of HapYak Events to Google Analytics Events</h1>
+<h1>Mapping of Brightcove Interactivity Events to Google Analytics Events</h1>
 <article class="bcls-article">
-  <summary>This topic outlines how HapYak events are mapped to Google Analytics events.</summary>
+  <summary>This topic outlines how Brightcove Interactivity events are mapped to Google Analytics events.</summary>
   <section class="bcls-section">
-    <p>For information on the HapYak Tracking Events, see <a href="interactive-video-tracking-events.html">HapYak Interactive Video Tracking Events</a>.</p>
+    <p>For information on the Brightcove Interactivity Tracking Events, see <a href="interactive-video-tracking-events.html">Brightcove Interactivity Video Tracking Events</a>.</p>
     <h3>G/A Custom Vars</h3>
     <p>We're setting the following custom vars at the page-scope to be associated with all events.</p>
     <p>Slot 1 = Video Source (youtube url, or other video source url) </p>
@@ -759,18 +759,18 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p> Slot 3 = UserName </p>
     <h3>G/A Event for QUIZ</h3>
     <p>We're capturing the <strong>Answer</strong> event.</p>
-    <p>Category = "HapYak - [Project Title]" </p>
+    <p>Category = "Brightcove Interactivity - [Project Title]" </p>
     <p> Action = "Quiz - Correct | Incorrect"</p>
     <p> Label = "[Question Text]"</p>
     <p>
     <h3>G/A Event for LINK</h3>
     <p>We're defining LINK as anything that trigger sanother webpage to be loaded. This may be a user click, or it may be an automatic page load triggered by a Quiz answer.</p>
-    <p>Category = "HapYak - [Project Title]"</p>
+    <p>Category = "Brightcove Interactivity - [Project Title]"</p>
     <p> Action = "Link"</p>
     <p> Label = "[url]"</p>
     <h3>G/A Event for NAVIGATION</h3>
     <p>We're defining NAVIGATION as anything that triggers a seek in the video (excluding a user click on the timeline). This may be a user click, or it may be an automatic seek triggered by a Quiz answer.</p>
-    <p>Category = "HapYak - [Project Title]" </p>
+    <p>Category = "Brightcove Interactivity - [Project Title]" </p>
     <p> Action = "Navigation"</p>
     <p> Label = "[seek time] | Chapter: [chapter id]"</p>
     </p>

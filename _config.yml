@@ -33,7 +33,7 @@ site_domain: "interactions.support.brightcove.com"
 port: 5151
 
 # everything below may be different per site
-product: HapYak
+product: Brightcove Interactivity
 color: rgb(51, 51, 51)
 product_color: rgb(186, 206, 19)
 product_icon: "brightcove-black-on-white.svg"

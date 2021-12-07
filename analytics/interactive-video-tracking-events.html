@@ -1,5 +1,5 @@
 ---
-title: HapYak Interactive Video Tracking Events
+title: Brightcove Interactivity Video Tracking Events
 description: In this topic you will learn about the video tracking events.
 parent: Analytics
 ---
@@ -7,7 +7,7 @@ parent: Analytics
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>At HapYak, we track how your viewers are interacting with your video in detail. More than just play and pause, we track a whole set of specific events associated with your video that give you deep-level insights into viewer choices, behavior and engagement. </p>
+    <p>Brightcove Interactivity tracks how your viewers are interacting with your video in detail. More than just play and pause, we track a whole set of specific events associated with your video that give you deep-level insights into viewer choices, behavior and engagement. </p>
     <p>There are three event<sup>1</sup> types:</p>
     <ol>
       <li><strong>Player Action</strong> details how a viewer played, paused, and progressed through the video.</li>
@@ -31,10 +31,10 @@ parent: Analytics
     <h3>Identifiers</h3>
     <ul>
       <li><strong>Project ID</strong> - Present if the track was loaded from a project</li>
-      <li><strong>Video ID</strong> - HapYak internal video ID</li>
+      <li><strong>Video ID</strong> - Brightcove Interactivity internal video ID</li>
       <li><strong>Video Source</strong> - Origin source of video asset (e.g. HTML5, provider)</li>
       <li><strong>Video Source ID</strong> - The original video URL or provider ID for the asset</li>
-      <li><strong>Track ID</strong> - HapYak internal ID for group of annotations being shown</li>
+      <li><strong>Track ID</strong> - Brightcove Interactivity internal ID for group of annotations being shown</li>
       <li><strong>Host</strong> - The page the video is being served from</li>
     </ul>
     <h3>Object information</h3>
@@ -58,7 +58,7 @@ parent: Analytics
     <p>These properties are present on Annotation View, Annotation End and Annotation Action events.</p>
     <h3>Identifiers</h3>
     <ul>
-      <li><strong>Annotation ID</strong> - HapYak internal ID for the annotation</li>
+      <li><strong>Annotation ID</strong> - Brightcove Interactivity internal ID for the annotation</li>
     </ul>
     <h3>Timing information</h3>
     <ul>
@@ -122,7 +122,7 @@ parent: Analytics
     <ul>
       <li><strong>Action</strong> - values listed below
         <ul>
-          <li><strong>Load</strong> - This means that the HapYak-enabled video loaded on the page</li>
+          <li><strong>Load</strong> - This means that the Brightcove Interactivity-enabled video loaded on the page</li>
           <li><strong>Play, Pause, Seek, Volume, Fullscreen</strong> - Standard video player functionality</li>
           <li><strong>Progress</strong> - This fires every 5 seconds.</li>
           <li><strong>End - Complete</strong> - This fires once when the video reaches the end if the view time is equal to the video duration</li>
@@ -145,16 +145,16 @@ parent: Analytics
   </section>
   <section class="bcls-section">
     <h2 id="analytics-api">Analytics API</h2>
-    <p>All events and properties are exposed as a JSON object made available via the "onTrackingEvent" callback function on the HapYak Viewer Object.</p>
+    <p>All events and properties are exposed as a JSON object made available via the "onTrackingEvent" callback function on the Brightcove Interactivity Viewer Object.</p>
     <pre>
         <code>
 hapyak.viewer({
     onTrackingEvent: function(data) {
-        console.log('HapYak / ' + data.event, data.properties);
+        console.log('Brightcove Interactivity / ' + data.event, data.properties);
     }
 });
 </code>
 </pre>
-    <p>Documentation on the HapYak Viewer Object can be found here: <a href="http://www.hapyak.com/docs/#AdvancedOptions12">http://www.hapyak.com/docs/#AdvancedOptions12</a>.</p>
+    <p>Documentation on the Brightcove Interactivity Viewer Object can be found here: <a href="http://www.hapyak.com/docs/#AdvancedOptions12">http://www.hapyak.com/docs/#AdvancedOptions12</a>.</p>
   </section>
 </article>
