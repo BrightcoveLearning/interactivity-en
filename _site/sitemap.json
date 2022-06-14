@@ -370,6 +370,11 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/examples/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/customize/",
       "oldURL": "/index"
   },
