@@ -251,6 +251,8 @@
   name: 'References'
   url: /references/index.html
   docs:
+    - name: Accessing Reporting Endpoints
+      url: /references/accessing-reporting-endpoints.html
     - name: Addon API
       url: /references/addon/addon.html
     - name: Annotation API
