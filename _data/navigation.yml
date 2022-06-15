@@ -5,6 +5,8 @@
   name: 'Getting Started'
   url: '/getting-started/index.html'
   docs:
+    - name: '8 Most Common Annotations'
+      url: '/getting-started/8-most-common-annotations.html'
     - name: 'HapYak Plugin for Brightcove'
       url: '/getting-started/hapyak-plugin-for-brightcove.html'
     - name: 'HapYak Interactive Video Types'
