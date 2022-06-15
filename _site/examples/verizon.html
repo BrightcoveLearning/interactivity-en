@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This topic contains a gallery of interactive examples.">
+  <meta name="description" content="">
   
-  <title>Interactive Gallery</title>
+  <title>Accessibility</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,7 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Interactive Gallery</li>
+      <li class="breadcrumb-item"><a href="/examples/">Examples</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Accessibility</li>
     </ol>
   </nav>
 </header>
@@ -761,94 +763,61 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<!-- don't remove any script or stylesheet links! --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css" />
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous" />
-<link href="https://support.brightcove.com/site-assets/css/site/landing-page.css" rel="stylesheet" />
-<!-- wrapper for landing page -->
-<article class="landing-page-wrapper"> 
-  <!-- wrapper for all landing-page-header blocks --><!-- the first td should contain an image or video, the second, text -->
-  
-  <h1>Interactive Gallery</h1>
-  <summary>This topic contains a gallery of interactive examples.</summary>
-  <section class="tabs"><!-- tabs; href values should be #tab1, #tab2, etc. -->
-    <ul class="tab-links">
-      <li class="active"><a href="#tab1">Show All<br />
-        </a></li>
-      <li><a href="#tab2">Accessbility</a></li>
-      <li><a href="#tab3">Add to Cart</a></li>
-      <li><a href="#tab4">Branching</a></li>
-      <li><a href="#tab5">Call to Action</a></li>
-      <li><a href="#tab6">Chapters</a></li>
-      <li><a href="#tab7">Form</a></li>
-      <li><a href="#tab8">Links</a></li>
-      <li><a href="#tab9">Personalization</a></li>
-      <li><a href="#tab10">Quiz</a></li>
-    </ul>
-    <section class="tab-content">
-      <section id="tab1" class="tab active">
-        <h2>Show All</h2>
-        <section class="landing-page-section">
-          <p><a href="accessibility.html">accessibility</a></p>
-          <p><a href="under-armour.html">under-armour</a></p>
-          <p><a href="verizon.html">verizon</a></p>
-          <p><a href="west-ham-united.html">west-ham-united</a></p>
-        </section>
-      </section>
-      <section id="tab2" class="tab">
-        <h2>Accessibility</h2>
-        <section class="landing-page-section">
-          </section>
-      </section>
-      <section id="tab3" class="tab">
-        <h2>Add to Cart</h2>
-        <section class="landing-page-section">
-          <div data-experience="62a8e11d5e321b00265dcd9c" data-playlist-id="1735640690580212053"></div>
-          <script src="https://players.brightcove.net/5270290591001/experience_62a8e11d5e321b00265dcd9c/live.js"></script> </section>
-      </section>
-      <section id="tab4" class="tab">
-        <h2>Branching</h2>
-        <section class="landing-page-section">
-          <div data-experience="62a8e11d5e321b00265dcd9c" data-playlist-id="1735643240428654517"></div>
-          <script src="https://players.brightcove.net/5270290591001/experience_62a8e11d5e321b00265dcd9c/live.js"></script> </section>
-      </section>
-      <section id="tab5" class="tab">
-        <h2>Call to Action</h2>
-        <section class="landing-page-section">
-          </section>
-      </section>
-      <section id="tab6" class="tab">
-        <h2>Chapters</h2>
-        <section class="landing-page-section">
-          </section>
-      </section>
-      <section id="tab7" class="tab">
-        <h2>Form</h2>
-        <section class="landing-page-section">
-          </section>
-      </section>
-      <section id="tab8" class="tab">
-        <h2>Links</h2>
-        <section class="landing-page-section">
-          </section>
-      </section>
-      <section id="tab9" class="tab">
-        <h2>Personalization</h2>
-        <section class="landing-page-section">
-          </section>
-      </section>
-      <section id="tab10" class="tab">
-        <h2>Quiz</h2>
-        <section class="landing-page-section">
-          </section>
-      </section>
-    </section>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<h1>Accessibility</h1>
+<article class="bcls-article">
+  <summary></summary>
+<section class="bcls-section">
+    <div class="row">
+      <div class="column left">
+        <div style="position: relative; display: block; max-width: 960px;"><div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/5270290591001/BJJHVakOe_default/index.html?videoId=5574831416001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div></div>
+        </div>
+      <div class="column right"> <img src="/assets/images/examples/verizon-logo.jpeg">
+          <p><br/>
+        <strong>Categories:</strong> Training &amp; Education, Communications</p>
+          <p><strong>Featured Annotations:</strong></p>
+        <p><span class="button-blue-text-bordered"> <i data-feather="bookmark"></i> CHAPTERS</span></p>
+        <p><span class="button-blue-text-bordered"> <i data-feather="thumbs-up"></i> CALL TO ACTION</span></p>
+        <p><span class="button-blue-text-bordered"> <i data-feather="link"></i>LINKS</span></p>
+        <p><span class="button-blue-text-bordered"> <i data-feather="hexagon"></i>CUSTOM</span></p>
+      </div>
+    </div>
   </section>
 </article>
-<script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -856,7 +825,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 14 Jun 2022
+  Page last updated on 15 Jun 2022
 </div>
 
 
