@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This topic contains a gallery of interactive examples.">
+  <meta name="description" content="">
   
-  <title>Interactive Gallery</title>
+  <title>Rentokil Initial</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,7 +62,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Interactive Gallery</li>
+      <li class="breadcrumb-item"><a href="/examples/">Examples</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Rentokil Initial</li>
     </ol>
   </nav>
 </header>
@@ -766,46 +768,58 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <style>
-body { padding: 1rem; }
-
-.card {
-  background-color: lightblue;
-  color: white;
-  padding: 1rem;
+* {
+  box-sizing: border-box;
 }
 
-.cards {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
-<article> 
-  <h1>Interactive Gallery</h1>
-  <summary>This topic contains a gallery of interactive examples.</summary>
-    <section class="bcls-section">
-<div class="cards">
-  <div class="card"><a href="accessibility.html"><figure class="bcls-figure"> <img src="/assets/images/examples/accessibility-image.jpg"> </figure>
-  Accessibility</a></div>
-  <div class="card"><a href="aig.html"><figure class="bcls-figure"> <img src="/assets/images/examples/aig-thumbnail.png"> </figure>AIG</a></div>
-  <div class="card"><a href="tableau.html"><figure class="bcls-figure"> <img src="/assets/images/examples/tableau-thumbnail.png"> </figure>Tableau</a></div>
-  <div class="card"><a href="under-armour.html"><figure class="bcls-figure"> <img src="/assets/images/examples/underarmour-thumbnail.png"> </figure>Under Armour</a></div>
-  <div class="card"><a href="verizon.html"><figure class="bcls-figure"> <img src="/assets/images/examples/verizon-thumbnail.png"> </figure>Verizon</a></div>
-  <div class="card"><a href="west-ham-united.html"><figure class="bcls-figure"> <img src="/assets/images/examples/westhamunited-thumbnail.png"> </figure>West Ham United</a></div>
-  <div class="card"><a href="konica-minolta.html"><figure class="bcls-figure"> <img src="/assets/images/examples/konica-thumbnail.png"> </figure>Konica Minolta</a></div>
-  <div class="card"><a href="mit.html"><figure class="bcls-figure"> <img src="/assets/images/examples/mit-thumbnail.png"> </figure>MIT</a></div>
-  <div class="card"><a href="xero.html"><figure class="bcls-figure"> <img src="/assets/images/examples/xero-thumbnail.png"> </figure>Xero</a></div>
-  <div class="card"><a href="room4media.html"><figure class="bcls-figure"> <img src="/assets/images/examples/room4-thumbnail.png"> </figure>Room4 Media</a></div>
-  <div class="card"><a href="rentokil.html"><figure class="bcls-figure"> <img src="/assets/images/examples/rentokill-thumbnail.png"> </figure>Rentokil Initial</a></div>
-  <div class="card">TWELVE</div>
-</div>
-      </section>
+<h1>Rentokil Initial</h1>
+<article class="bcls-article">
+  <summary></summary>
+<section class="bcls-section">
+    <div class="row">
+      <div class="column left">
+        <div style="position: relative; display: block; max-width: 960px;"><div style="padding-top: 56.25%;"><iframe src="https://players.brightcove.net/2335723960001/SJ6UDjfI_default/index.html?videoId=5051950416001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div></div>
+        </div>
+      <div class="column right"> <img src="/assets/images/examples/rentokil.jpeg">
+          <p><br/>
+        <strong>Categories:</strong> Training & Education</p>
+          <p><strong>Featured Annotations:</strong></p>
+        <p><span class="button-blue-text-bordered"> <i data-feather="link"></i> LINKS</span></p>
+        <p><span class="button-blue-text-bordered"> <i data-feather="git-branch"></i> BRANCHING</span></p>
+      </div>
+    </div>
+  </section>
 </article>
+
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -813,7 +827,7 @@ body { padding: 1rem; }
 
 <hr>
 <div class="last-updated">
-  Page last updated on 15 Jun 2022
+  Page last updated on 16 Jun 2022
 </div>
 
 
