@@ -213,6 +213,8 @@
       url: '/styling/adjusting-images-to-appear-only-on-hover.html'
     - name: 'Project Level CSS'
       url: '/styling/project-level-css.html'
+    - name: 'Project Level CSS Via the HapYak Plugin'
+      url: '/styling/project-level-css-hapyak-plugin.html.html'
     - name: 'Simple text transitions'
       url: '/styling/simple-text-transitions.html'
     - name: 'Styling Annotations'
