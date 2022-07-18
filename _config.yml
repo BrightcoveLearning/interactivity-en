@@ -23,8 +23,8 @@ email: training@brightcove.com
 description: >- # this means to ignore newlines until "baseurl:"
   Brightcove Interactivity allows you to add many kinds of interactivity to players, including CTAs, chapters, click-to-buy, branching, and polls.
 # baseurl: "" # the subpath of your site, e.g. /blog
-site_url: "https://interactions.support.brightcove.com"
-site_domain: "interactions.support.brightcove.com"
+site_url: "https://interactivity.support.brightcove.com"
+site_domain: "interactivity.support.brightcove.com"
 
 # Build settings
 # theme: minima
