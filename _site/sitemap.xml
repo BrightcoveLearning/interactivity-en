@@ -995,7 +995,17 @@
       
         <url>
           
-            <loc>https://interactions.support.brightcove.com/players/brightcove-browser-compatibility.html</loc>
+            <loc>https://interactions.support.brightcove.com/general/brightcove-browser-compatibility.html</loc>
+          
+            <lastmod>2022-07-18</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/general/interactivity-faq.html</loc>
           
             <lastmod>2022-07-18</lastmod>
             <changefreq>daily</changefreq>
@@ -1015,7 +1025,7 @@
       
         <url>
           
-            <loc>https://interactions.support.brightcove.com/players/optimal-export-settings.html</loc>
+            <loc>https://interactions.support.brightcove.com/general/optimal-export-settings.html</loc>
           
             <lastmod>2022-07-18</lastmod>
             <changefreq>daily</changefreq>

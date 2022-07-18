@@ -232,11 +232,13 @@
   url: '/general/index.html'
   docs:
     - name: 'Brightcove Browser Compatibility'
-      url: '/players/brightcove-browser-compatibility.html'
+      url: '/general/brightcove-browser-compatibility.html'
+    - name: 'Brightcove Interactivity FAQ'
+      url: '/general/interactivity-faq.html'
     - name: 'Mobile Device Support'
       url: '/general/mobile-iphone-ipad-android-support.html'
     - name: 'Optimal Export Settings'
-      url: '/players/optimal-export-settings.html'
+      url: '/general/optimal-export-settings.html'
 - section: 
   name: 'Developers'
   url: '/developers/index.html'
