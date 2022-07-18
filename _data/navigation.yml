@@ -161,12 +161,6 @@
       url: '/projects/deleting-projects.html'
     - name: 'Hosting Videos with HapYak'
       url: '/projects/hosting-videos-with-hapyak.html'
-    - name: 'How do I upload videos?'
-      url: '/projects/how-do-i-upload-videos.html'
-    - name: 'I don''t have a video host'
-      url: '/projects/i-don-t-have-a-video-host-i-only-have-a-video-file-mp4-mov-etc-can-i-still-use-hapyak.html'
-    - name: 'I upload my videos directly into my LMS or CMS and don''t know the video file URL'
-      url: '/projects/i-upload-my-videos-directly-into-my-lms-or-cms-and-don-t-know-the-video-file-url-how-can-i-access-it.html'
 - section: 
   name: 'Sharing & Embedding'
   url: '/sharing-and-embedding/index.html'

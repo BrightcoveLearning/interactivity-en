@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactions.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -305,11 +305,6 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/projects/how-do-i-upload-videos.html",
-      "oldURL": "/how-do-i-upload-videos"
-  },
-
-  {
       "newURL": "https://interactions.support.brightcove.com/best-practices/how-to-increase-click-through-rate-ctr.html",
       "oldURL": "/how-to-increase-click-through-rate-ctr"
   },
@@ -322,16 +317,6 @@
   {
       "newURL": "https://interactions.support.brightcove.com/examples/hp.html",
       "oldURL": "/hp"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/projects/i-don-t-have-a-video-host-i-only-have-a-video-file-mp4-mov-etc-can-i-still-use-hapyak.html",
-      "oldURL": "/i-don-t-have-a-video-host-i-only-have-a-video-file-mp4-mov-etc-can-i-still-use-hapyak"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/projects/i-upload-my-videos-directly-into-my-lms-or-cms-and-don-t-know-the-video-file-url-how-can-i-access-it.html",
-      "oldURL": "/i-upload-my-videos-directly-into-my-lms-or-cms-and-don-t-know-the-video-file-url-how-can-i-access-it"
   },
 
   {
@@ -487,6 +472,11 @@
   {
       "newURL": "https://interactions.support.brightcove.com/getting-started/interactive-video-types.html",
       "oldURL": "/interactive-video-types"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/general/interactivity-faq.html",
+      "oldURL": "/interactivity-faq"
   },
 
   {
