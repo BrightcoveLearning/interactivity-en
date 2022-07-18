@@ -1055,6 +1055,24 @@
       
     
       <url>
+        <loc>https://interactions.support.brightcove.com/general/index.html</loc>
+        <lastmod>2022-07-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/general/mobile-iphone-ipad-android-support.html</loc>
+          
+            <lastmod>2022-07-18</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
         <loc>https://interactions.support.brightcove.com/developers/index.html</loc>
         <lastmod>2022-07-18</lastmod>
         <changefreq>daily</changefreq>

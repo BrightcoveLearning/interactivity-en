@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Ensuring your Wistia interactive videos work on Mobile devices like iPhone and Android.">
+  <meta name="description" content="">
   
-  <title>Mobile Support for Wistia</title>
+  <title>Mobile (iPhone, iPad, Android) Support description: Does HapYak work on mobile?</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -63,9 +63,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/mobile/">Mobile Devices</a></li>
+      <li class="breadcrumb-item"><a href="/general/">Mobile Devices</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Mobile Support for Wistia</li>
+      <li class="breadcrumb-item active" aria-current="page">Mobile (iPhone, iPad, Android) Support description: Does HapYak work on mobile?</li>
     </ol>
   </nav>
 </header>
@@ -641,6 +641,17 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
+              <h5 class="submenu-header"><a href="/general/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;General Information</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/mobile-iphone-ipad-android-support.html">Mobile Device Support</a></li>
+                  
+                
+              </ul>
+            
+          
+            
               <h5 class="submenu-header"><a href="/developers/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Developers</a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
@@ -776,26 +787,37 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Mobile Support for Wistia</h1>
+<h1>Mobile (iPhone, iPad, Android) Support description: Does HapYak work on mobile?</h1>
 <article class="bcls-article">
-  <summary>Ensuring your Wistia interactive videos work on Mobile devices like iPhone and Android.</summary>
+  <summary></summary>
   <section class="bcls-section">
-    <p>To ensure that your Wistia interactive videos play inline on iOS and Android Devices, you must use the use the Native Player Embed code in HapYak. To do so follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click the <b>Share</b> Button.
-        <figure class="bcls-figure"><img src="/assets/images/mobile/share-button.png"></figure>
-      </li>
-      <li>Make sure you select the Wistia Player Share Type.
-        <figure class="bcls-figure"><img src="/assets/images/mobile/share-type.png"></figure>
-      </li>
-      <li>To ensure that the video plays inline in Full screen, add this to your video embed code: <code>fullscreenOnRotateToLandscape="false"</code> &nbsp;right after the <code>playsinline="true"</code> inside the opening <code>&lt;iFrame&gt;</code> Tag:
-        <figure class="bcls-figure"><img src="/assets/images/mobile/embed-code.png"></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: The <code>fullscreenOnRotateToLandscape="false"</code> attribute is still in beta in Wistia and is subject to change)</aside>
-      </li>
-    </ol>
-    <p>To consult with HapYak for Mobile Best Practices around Wistia Sourced Videos, click the button Below:<br>
+    <h1 class="t__h1"></h1>
+    <p>Yes! HapYak annotations are fully responsive for any size screen and work on all mobile devices. Note of course that mobile phones in particular are a small form factor so you'll want to ensure that annotations are authored with that in mind.</p>
+    <h3 id="ipad">iPad</h3>
+    <p>iPad is supported out-of-the-box.</p>
+    <h3 id="iphone">iPhone</h3>
+    <p>Apple supports interactive video for iOS 10 and higher.</p>
+    <p>You'll want to ensue that the embed code from your video player (Brightcove, YouTube, Wistia, Kaltura, Video.js etc...) will include the <b><i>"playsinline"</i> tag</b> to interactive playback.</p>
+    <p>With some players you can simply check a box in your account settings, while with others you may need to add the tag to your embed code by typing it in. Here are the details...</p>
+    <ul>
+      <li>Brightcove: Manually add <i>"playsinline"<b> </b></i>to the embed code. </li>
+      <li>YouTube: Manually add "<i>playsinline</i>" to the embed code. Details <a href="https://developers.google.com/youtube/player_parameters" rel="nofollow noopener noreferrer" target="_blank">here</a>. </li>
+      <li>Wistia: Manually add "<i>playsinline</i>" to the embed code. </li>
+      <li>Kaltura: Manually add "playsinline" to the embed code. </li>
+      <li>Video.js: Manually add "<i>playsinline"<b> </b></i>to the embed code. </li>
+      <li>Vimeo: No support. To request this feature from Vimeo, click <a rel="nofollow noopener noreferrer" target="_blank">here</a>. </li>
+      <li>HapYak (Video uploaded directly): No work needed. We add the "playsinline" tag automatically to your embed code. </li>
+    </ul>
+    <p>If you are unable to add this tag to your video player simply email their support team this article and cc <a href="mailto:support@hapyak.com" rel="nofollow noopener noreferrer" target="_blank">support@hapyak.com</a> and we can assist.</p>
+    <p><b>Android</b></p>
+    <p>Android has a large constellation of device / os versions / carrier combinations so like most apps and SaaS apps it is not officially supported. But the good news is the vast majority of these environments simply works out of the box as most support inline playback of video.<br>
     </p>
-    <a class="intercom-h2b-button" target="_blank" href="mailto:support@hapyak.com?Subject=Wistia%20Mobile%20Best%20Practices&amp;Body=Hi%2C%0A%0AI%20would%20like%20a%20consultation%20on%20Wistia%20Mobile%20Best%20Practices." rel="nofollow noopener noreferrer">Consult With HapYak For Wistia Mobile Best Practices</a> </section>
+  </section>
+  <section class="bcls-section">
+    <h2 id="playback-ux-options-on-mobile">Playback UX Options on Mobile</h2>
+    <h3 id="inline-v-full-screen">Inline v. Full Screen</h3>
+    <p><b>Inline</b> means the interactive video will play back in the exact place on the web page it is embedded. <b>Full Screen</b> means that when a viewer taps play, the interactive video will take over the screen during play back.</p>
+  </section>
 </article>
 
 <!-- complete bootstrap layout -->
@@ -813,7 +835,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 18 Nov 2021
+  Page last updated on 09 May 2022
 </div>
 
 

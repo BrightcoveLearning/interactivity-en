@@ -244,6 +244,12 @@
     - name: 'Video Analytics and Metric APIs'
       url: '/analytics/video-analytics-and-metric-apis.html'
 - section: 
+  name: 'General Information'
+  url: '/general/index.html'
+  docs:
+    - name: 'Mobile Device Support'
+      url: '/general/mobile-iphone-ipad-android-support.html'
+- section: 
   name: 'Developers'
   url: '/developers/index.html'
   docs:
