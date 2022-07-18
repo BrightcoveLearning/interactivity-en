@@ -148,14 +148,6 @@
     - name: 'Mobile Support for Wistia'
       url: '/mobile/mobile-support-for-wistia.html'
 - section: 
-  name: 'Players'
-  url: '/players/index.html'
-  docs:
-    - name: 'Brightcove Browser Compatibility'
-      url: '/players/brightcove-browser-compatibility.html'
-    - name: 'Optimal Export Settings'
-      url: '/players/optimal-export-settings.html'
-- section: 
   name: 'Projects'
   url: '/projects/index.html'
   docs:
@@ -245,8 +237,12 @@
   name: 'General Information'
   url: '/general/index.html'
   docs:
+    - name: 'Brightcove Browser Compatibility'
+      url: '/players/brightcove-browser-compatibility.html'
     - name: 'Mobile Device Support'
       url: '/general/mobile-iphone-ipad-android-support.html'
+    - name: 'Optimal Export Settings'
+      url: '/players/optimal-export-settings.html'
 - section: 
   name: 'Developers'
   url: '/developers/index.html'

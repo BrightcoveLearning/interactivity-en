@@ -635,34 +635,6 @@
       
     
       <url>
-        <loc>https://interactions.support.brightcove.com/players/index.html</loc>
-        <lastmod>2022-07-18</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-      </url>
-      
-        <url>
-          
-            <loc>https://interactions.support.brightcove.com/players/brightcove-browser-compatibility.html</loc>
-          
-            <lastmod>2022-07-18</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactions.support.brightcove.com/players/optimal-export-settings.html</loc>
-          
-            <lastmod>2022-07-18</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-    
-      <url>
         <loc>https://interactions.support.brightcove.com/projects/index.html</loc>
         <lastmod>2022-07-18</lastmod>
         <changefreq>daily</changefreq>
@@ -1053,7 +1025,27 @@
       
         <url>
           
+            <loc>https://interactions.support.brightcove.com/players/brightcove-browser-compatibility.html</loc>
+          
+            <lastmod>2022-07-18</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://interactions.support.brightcove.com/general/mobile-iphone-ipad-android-support.html</loc>
+          
+            <lastmod>2022-07-18</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactions.support.brightcove.com/players/optimal-export-settings.html</loc>
           
             <lastmod>2022-07-18</lastmod>
             <changefreq>daily</changefreq>
