@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactions.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -345,7 +345,77 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/getting-started/",
+      "newURL": "https://interactions.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/references/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/analytics/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/players/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/styling/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/best-practices/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/demos/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/projects/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/troubleshooting/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/custom-annotations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/integrations/",
       "oldURL": "/index"
   },
 
@@ -355,12 +425,32 @@
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/developers/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/examples/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/references/playlist/",
       "oldURL": "/index"
   },
 
   {
+      "newURL": "https://interactions.support.brightcove.com/customize/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactions.support.brightcove.com/references/extension/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactions.support.brightcove.com/getting-started/",
       "oldURL": "/index"
   },
 
@@ -380,97 +470,7 @@
   },
 
   {
-      "newURL": "https://interactions.support.brightcove.com/references/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/players/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/projects/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/troubleshooting/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/integrations/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://interactions.support.brightcove.com/annotations/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/examples/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/styling/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/sharing-and-embedding/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/custom-annotations/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/demos/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/best-practices/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/analytics/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/customize/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/developers/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -772,11 +772,6 @@
   {
       "newURL": "https://interactions.support.brightcove.com/troubleshooting/what-web-browsers-devices-does-hapyak-support.html",
       "oldURL": "/what-web-browsers-devices-does-hapyak-support"
-  },
-
-  {
-      "newURL": "https://interactions.support.brightcove.com/integrations/wistia-integration-browse-media.html",
-      "oldURL": "/wistia-integration-browse-media"
   },
 
   {

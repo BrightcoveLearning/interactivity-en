@@ -139,8 +139,6 @@
       url: '/integrations/lti-lessons-creating-a-branching-video.html'
     - name: 'Salesforce Add-on'
       url: '/integrations/salesforce-add-on.html'
-    - name: 'Wistia Integration - Browse Media'
-      url: '/integrations/wistia-integration-browse-media.html'
 - section: 
   name: 'Mobile'
   url: '/mobile/index.html'
