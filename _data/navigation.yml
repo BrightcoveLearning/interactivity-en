@@ -13,8 +13,6 @@
       url: '/getting-started/interactive-video-types.html'
     - name: 'Introduction to the HapYak Portal'
       url: '/getting-started/introduction-to-the-hapyak-portal.html'
-    - name: 'Manage Users (Group Members)'
-      url: '/getting-started/manage-users-group-members.html'
     - name: 'Templates'
       url: '/getting-started/templates.html'
     - name: 'Terminology'
@@ -239,6 +237,12 @@
       url: '/general/mobile-iphone-ipad-android-support.html'
     - name: 'Optimal Export Settings'
       url: '/general/optimal-export-settings.html'
+- section: 
+  name: 'Administering Accounts'
+  url: '/admin/index.html'
+  docs:
+    - name: 'Managing Group Members'
+      url: '/admin/managing-group-members.html'
 - section: 
   name: 'Developers'
   url: '/developers/index.html'
