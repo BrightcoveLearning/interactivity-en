@@ -36,7 +36,7 @@ port: 5151
 product: Brightcove Interactivity
 color: rgb(51, 51, 51)
 product_color: rgb(186, 206, 19)
-product_icon: "brightcove-black-on-white.svg"
+product_icon: "Interactivity_H_RGB_K.svg"
 search_id: "017969773216783359937:3dokhftl9vz"
 feedbackify_id: "15077"
 defaults:
