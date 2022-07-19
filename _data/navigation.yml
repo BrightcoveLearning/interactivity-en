@@ -13,8 +13,6 @@
       url: '/getting-started/interactive-video-types.html'
     - name: 'Introduction to the HapYak Portal'
       url: '/getting-started/introduction-to-the-hapyak-portal.html'
-    - name: 'Manage Users (Group Members)'
-      url: '/getting-started/manage-users-group-members.html'
     - name: 'Templates'
       url: '/getting-started/templates.html'
     - name: 'Terminology'
@@ -139,8 +137,6 @@
       url: '/integrations/lti-lessons-creating-a-branching-video.html'
     - name: 'Salesforce Add-on'
       url: '/integrations/salesforce-add-on.html'
-    - name: 'Wistia Integration - Browse Media'
-      url: '/integrations/wistia-integration-browse-media.html'
 - section: 
   name: 'Mobile'
   url: '/mobile/index.html'
@@ -149,14 +145,6 @@
       url: '/mobile/mobile-iphone-ipad-android-support.html'
     - name: 'Mobile Support for Wistia'
       url: '/mobile/mobile-support-for-wistia.html'
-- section: 
-  name: 'Players'
-  url: '/players/index.html'
-  docs:
-    - name: 'Brightcove Browser Compatibility'
-      url: '/players/brightcove-browser-compatibility.html'
-    - name: 'Optimal Export Settings'
-      url: '/players/optimal-export-settings.html'
 - section: 
   name: 'Projects'
   url: '/projects/index.html'
@@ -171,12 +159,6 @@
       url: '/projects/deleting-projects.html'
     - name: 'Hosting Videos with HapYak'
       url: '/projects/hosting-videos-with-hapyak.html'
-    - name: 'How do I upload videos?'
-      url: '/projects/how-do-i-upload-videos.html'
-    - name: 'I don''t have a video host'
-      url: '/projects/i-don-t-have-a-video-host-i-only-have-a-video-file-mp4-mov-etc-can-i-still-use-hapyak.html'
-    - name: 'I upload my videos directly into my LMS or CMS and don''t know the video file URL'
-      url: '/projects/i-upload-my-videos-directly-into-my-lms-or-cms-and-don-t-know-the-video-file-url-how-can-i-access-it.html'
 - section: 
   name: 'Sharing & Embedding'
   url: '/sharing-and-embedding/index.html'
@@ -243,6 +225,24 @@
       url: '/analytics/tracking-known-viewers.html'
     - name: 'Video Analytics and Metric APIs'
       url: '/analytics/video-analytics-and-metric-apis.html'
+- section: 
+  name: 'General Information'
+  url: '/general/index.html'
+  docs:
+    - name: 'Brightcove Browser Compatibility'
+      url: '/general/brightcove-browser-compatibility.html'
+    - name: 'Brightcove Interactivity FAQ'
+      url: '/general/interactivity-faq.html'
+    - name: 'Mobile Device Support'
+      url: '/general/mobile-iphone-ipad-android-support.html'
+    - name: 'Optimal Export Settings'
+      url: '/general/optimal-export-settings.html'
+- section: 
+  name: 'Administering Accounts'
+  url: '/admin/index.html'
+  docs:
+    - name: 'Managing Group Members'
+      url: '/admin/managing-group-members.html'
 - section: 
   name: 'Developers'
   url: '/developers/index.html'

@@ -1,0 +1,22 @@
+---
+title: Administering Accounts
+parent: Home
+description: This section contains information on managing accounts.
+---
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+
+  <summary>{{ page.description }}</summary>
+  <section>
+    <h3 id="Topics_in_this_section">Topics in {{ page.title }}</h3>
+    <ul class="bcls-topic-list">
+      {% for item in site.data.navigation %}
+        {% if item.name == page.title %}
+          {% for doc in item.docs %}
+          <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+</article>
