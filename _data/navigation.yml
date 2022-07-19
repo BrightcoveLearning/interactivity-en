@@ -106,20 +106,6 @@
     - name: 'Gated Quiz Demo'
       url: '/demos/gated-quiz-demo.html'
 - section: 
-  name: 'Experiences'
-  url: '/experiences/index.html'
-  docs:
-    - name: 'Branching - Brightcove'
-      url: '/experiences/branching-brightcove.html'
-    - name: 'Branching Experience'
-      url: '/experiences/branching-experience.html'
-    - name: 'Embedding a SlideSync Experience on a Webpage'
-      url: '/experiences/embedding-a-slidesync-experience-on-a-webpage.html'
-    - name: 'Experiences Overview'
-      url: '/experiences/experiences-overview.html'
-    - name: 'Slide Sync Reference Guide'
-      url: '/experiences/slide-sync-reference-guide.html'
-- section: 
   name: 'Integrations'
   url: '/integrations/index.html'
   docs:
@@ -155,6 +141,26 @@
       url: '/projects/creating-and-managing-projects.html'
     - name: 'Hosting Videos with HapYak'
       url: '/projects/hosting-videos-with-hapyak.html'
+- section: 
+  name: 'Templates'
+  url: '/templates/index.html'
+  docs:
+    - name: 'Creating and Managing Templates'
+      url: '/projects/creating-and-managing-templates.html'
+- section: 
+  name: 'Experiences'
+  url: '/experiences/index.html'
+  docs:
+    - name: 'Branching - Brightcove'
+      url: '/experiences/branching-brightcove.html'
+    - name: 'Branching Experience'
+      url: '/experiences/branching-experience.html'
+    - name: 'Embedding a SlideSync Experience on a Webpage'
+      url: '/experiences/embedding-a-slidesync-experience-on-a-webpage.html'
+    - name: 'Experiences Overview'
+      url: '/experiences/experiences-overview.html'
+    - name: 'Slide Sync Reference Guide'
+      url: '/experiences/slide-sync-reference-guide.html'
 - section: 
   name: 'Sharing & Embedding'
   url: '/sharing-and-embedding/index.html'

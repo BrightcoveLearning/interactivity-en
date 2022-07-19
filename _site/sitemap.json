@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -187,6 +187,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/projects/creating-and-managing-projects.html",
       "oldURL": "/creating-and-managing-projects"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/templates/creating-and-managing-templates.html",
+      "oldURL": "/creating-and-managing-templates"
   },
 
   {
@@ -401,6 +406,11 @@
 
   {
       "newURL": "https://interactivity.support.brightcove.com/styling/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/templates/",
       "oldURL": "/index"
   },
 
@@ -687,11 +697,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/troubleshooting/taking-a-console-screenshot-or-screen-recording.html",
       "oldURL": "/taking-a-console-screenshot-or-screen-recording"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/getting-started/templates.html",
-      "oldURL": "/templates"
   },
 
   {
