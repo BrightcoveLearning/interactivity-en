@@ -100,6 +100,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/templates/applying-templates-projects.html",
+      "oldURL": "/applying-templates-projects"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/annotations/auto-load-url.html",
       "oldURL": "/auto-load-url"
   },
