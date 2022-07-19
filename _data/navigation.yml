@@ -146,7 +146,7 @@
   url: '/templates/index.html'
   docs:
     - name: 'Creating and Managing Templates'
-      url: '/projects/creating-and-managing-templates.html'
+      url: '/templates/creating-and-managing-templates.html'
 - section: 
   name: 'Experiences'
   url: '/experiences/index.html'
