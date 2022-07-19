@@ -243,8 +243,12 @@
   name: 'Administering Accounts'
   url: '/admin/index.html'
   docs:
+    - name: 'Managing Account Settings'
+      url: '/admin/managing-account-settings.html'
     - name: 'Managing Group Members'
       url: '/admin/managing-group-members.html'
+    - name: 'Managing Sub-Groups'
+      url: '/admin/managing-sub-groups.html'
 - section: 
   name: 'Developers'
   url: '/developers/index.html'
