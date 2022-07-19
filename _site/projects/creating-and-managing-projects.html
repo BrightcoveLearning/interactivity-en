@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Guide to creating a new Hapyak project.">
+  <meta name="description" content="In this topic you will learn how to create and manage Brightcove Interactivity projects.">
   
-  <title>Creating a new HapYak project</title>
+  <title>Creating and Managing Projects</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -65,7 +65,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/projects/">Projects</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Creating a new HapYak project</li>
+      <li class="breadcrumb-item active" aria-current="page">Creating and Managing Projects</li>
     </ol>
   </nav>
 </header>
@@ -458,15 +458,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/projects/clone-copy-project.html">Clone/Copy Project</a></li>
-                  
-                
-                  
-                    <li><a href="/projects/creating-a-new-hapyak-project.html">Creating a new HapYak project</a></li>
-                  
-                
-                  
-                    <li><a href="/projects/deleting-projects.html">Deleting Projects</a></li>
+                    <li><a href="/projects/creating-and-managing-projects.html">Creating and Managing Projects</a></li>
                   
                 
                   
@@ -775,26 +767,43 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Creating a new HapYak project</h1>
+<h1>Creating and Managing Projects</h1>
 <article class="bcls-article">
-  <summary>Guide to creating a new Hapyak project.</summary>
+  <summary>In this topic you will learn how to create and manage Brightcove Interactivity projects.</summary>
   <section class="bcls-section">
+    <h2 id="create">Creating a new project</h2>
     <ol class="bcls-tasklist-restart">
-      <li>In the HapYak portal, click " <strong>New Project</strong>".</li>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the primary navigation, click either <strong>Create</strong> or <strong>Manage</strong>.</li>
+      <li>Click <span class="button-blue">New Project</span>.</li>
       <li>There are three ways users can upload video content to a project.
         <ul>
-          <li>Copy the <strong>URL or Embed Code</strong>﻿ of your video and paste into HapYak </li>
-          <li><strong>Upload</strong> a video file by dragging it from your desktop, or browsing your computer </li>
-          <li><strong>Browse My Videos</strong> and select previously uploaded video files. </li>
+          <li>Copy the <strong>URL or Embed Code</strong>﻿ of your video and paste into Brightcove Interactivity Studio</li>
+          <li><strong>Upload</strong> a video file by dragging it from your desktop or browsing your computer </li>
+          <li><strong>Browse My Videos</strong> and select previously uploaded video files</li>
         </ul>
+        <figure class="bcls-figure"> <img src="/assets/images/projects/create-projects/choose-video-dialog.png"> </figure>
       </li>
-      <li>Select an Embed type. This is usually the place where the video is hosted. &nbsp;If your URL is directly to a video file (ending in ".mp4" for example) select an open source player (like VideoJS).</li>
-      <li>Enter a title and click <strong>Next</strong>.</li>
+      <li>Select an <strong>Embed type</strong>. This is usually  where the video is hosted. &nbsp;If your URL is directly to a video file (ending in ".mp4" for example) select an open source player (like Video.js).</li>
+      <li>Enter a title and click <span class="button-blue">Next</span>.</li>
     </ol>
-    <p>You should see the project load. If you get an error, click " <strong>New Project</strong>" again. Ensure that the URL, embed code, or file type of the video is a supported format. &nbsp;If you have trouble, or your video player is not listed, send us an email <a href="https://supportportal.brightcove.com">Brightcove Support</a>  and we'll add it to the list. </p>
-    <a target="_blank" href="https://hapyak.wistia.com/medias/soxbcabdvm" rel="nofollow noopener noreferrer">
-    <figure class="bcls-figure"> <img src="/assets/images/projects/create-project-dialog.png"> </figure>
-    </a> </section>
+    <p>You should see the project load. If you get an error, click <span class="button-blue">New Project</span> again. Ensure that the URL, embed code, or file type of the video is a supported format. &nbsp;If you continue to have trouble, or if your video player is not listed, send an email to <a href="https://supportportal.brightcove.com">Brightcove Support</a> and we'll add it to the list.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="copy">Copying projects</h2>
+    <p>On the list of projects, hover over the right side of the project and click the copy icon (<img src="/assets/images/projects/icon-copy.png">). </p>
+    <figure class="bcls-figure"> <img src="/assets/images/projects/create-projects/project-list.png"> </figure>
+    <p>This will create an exact clone of the project including all annotations, tags, and custom CSS, titled "Copy of {project_name}".</p>
+    <p>This is a great way to save time when creating new projects that are similar to ones already created. Simply change the video source of the new cloned project and adjust the annotations as needed.</p>
+    <h3 id="copy-different-group">Copying a project into different group</h3>
+    <p>Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtkSC34ioJyL_mFOEjBvCFcME5gkb7eheAV96rx2IOrMENVQ/viewform" rel="nofollow noopener noreferrer" target="_blank">this Form</a>. Brightcove Support will copy the project in our back end and email you back confirmation when it's complete.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="delete">Deleting projects</h2>
+    <p>To delete a project, find the project on the project list, click the delete icon (
+      <figure class="bcls-figure"> <img src="/assets/images/projects/icon-x.png"> </figure>
+      ), and then confirm the deletion.</p>
+  </section>
 </article>
 
 <!-- complete bootstrap layout -->
@@ -812,7 +821,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 30 Dec 2021
+  Page last updated on 19 Jul 2022
 </div>
 
 

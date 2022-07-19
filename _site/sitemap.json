@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -175,11 +175,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/projects/clone-copy-project.html",
-      "oldURL": "/clone-copy-project"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/annotations/closed-captions.html",
       "oldURL": "/closed-captions"
   },
@@ -190,8 +185,8 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/projects/creating-a-new-hapyak-project.html",
-      "oldURL": "/creating-a-new-hapyak-project"
+      "newURL": "https://interactivity.support.brightcove.com/projects/creating-and-managing-projects.html",
+      "oldURL": "/creating-and-managing-projects"
   },
 
   {
@@ -217,11 +212,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/customize/customizing-the-hapyak-player.html",
       "oldURL": "/customizing-the-hapyak-player"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/projects/deleting-projects.html",
-      "oldURL": "/deleting-projects"
   },
 
   {

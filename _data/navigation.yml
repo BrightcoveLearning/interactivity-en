@@ -151,12 +151,8 @@
   docs:
     - name: 'Branching and Choose Your Own Adventure Video'
       url: '/projects/branching-choose-your-own-adventure-video.html'
-    - name: 'Clone/Copy Project'
-      url: '/projects/clone-copy-project.html'
-    - name: 'Creating a new HapYak project'
-      url: '/projects/creating-a-new-hapyak-project.html'
-    - name: 'Deleting Projects'
-      url: '/projects/deleting-projects.html'
+    - name: 'Creating and Managing Projects'
+      url: '/projects/creating-and-managing-projects.html'
     - name: 'Hosting Videos with HapYak'
       url: '/projects/hosting-videos-with-hapyak.html'
 - section: 
