@@ -147,6 +147,36 @@
       
         <url>
           
+            <loc>https://interactivity.support.brightcove.com/annotations/adding-image-overlay.html</loc>
+          
+            <lastmod>2022-07-20</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/annotations/adding-text-overlay.html</loc>
+          
+            <lastmod>2022-07-20</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/annotations/adding-transparent-overlay.html</loc>
+          
+            <lastmod>2022-07-20</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://interactivity.support.brightcove.com/annotations/annotation-options.html</loc>
           
             <lastmod>2022-07-20</lastmod>
@@ -228,16 +258,6 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/annotations/how-to-loop-back-in-the-video.html</loc>
-          
-            <lastmod>2022-07-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/image-annotation.html</loc>
           
             <lastmod>2022-07-20</lastmod>
             <changefreq>daily</changefreq>

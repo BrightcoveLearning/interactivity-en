@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Add a logo, icon, button, and more.">
+  <meta name="description" content="In this topic you will learn how to add a text overlay to a video.">
   
-  <title>Image Annotation</title>
+  <title>Adding a Text Overlay to a Video</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -65,7 +65,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/annotations/">Annotations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Image Annotation</li>
+      <li class="breadcrumb-item active" aria-current="page">Adding a Text Overlay to a Video</li>
     </ol>
   </nav>
 </header>
@@ -233,6 +233,18 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
+                    <li><a href="/annotations/adding-image-overlay.html">Adding an Image Overlay</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/adding-text-overlay.html">Adding an Text Overlay</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/adding-transparent-overlay.html">Adding an Transparent Overlay</a></li>
+                  
+                
+                  
                     <li><a href="/annotations/annotation-options.html">Annotation Options</a></li>
                   
                 
@@ -266,10 +278,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     <li><a href="/annotations/how-to-loop-back-in-the-video.html">How to loop back in the video?</a></li>
-                  
-                
-                  
-                    <li><a href="/annotations/image-annotation.html">Image Annotation</a></li>
                   
                 
                   
@@ -794,21 +802,54 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Image Annotation</h1>
+<h1>Adding a Text Overlay to a Video</h1>
 <article class="bcls-article">
-  <summary>Add a logo, icon, button, and more.</summary>
+  <summary>In this topic you will learn how to add a text overlay to a video.</summary>
   <section class="bcls-section">
-    <article dir="ltr">
-      <p>Image annotations let you add any image as an annotation on top of your video. You can upload the file directly to HapYak or reference the URL of an image hosted elsewhere (Amazon S3, Wordpress, internal server, etc...)</p>
-      <p>Add an image annotation by clicking this icon.</p>
-      <figure class="bcls-figure"> <img src="/assets/images/annotations/Interative_Video_-_Image_Annotation.png"> </figure>
-      <h2 id="tips">Tips</h2>
-      <p><strong>File size</strong> - Image annotations are loaded dynamically when the viewer reaches a certain point in the video. So it's a good idea (as with all images on the web) to ensure a good balance between high quality and low file size. A good rule of thumb for image annotations are to keep them <strong>below 200 KB</strong>. Like any web based technology, the more images you load up, the longer it will take to load the page.&nbsp; </p>
-      <p><strong>PNG or JPG? -</strong>Most image annotations we see are PNGs as those include a transparency layer that ensures the image seamlessly blends with the video. We especially recommend minimizing the size of PNG files with a service like <a href="https://tinypng.com/" rel="nofollow noopener noreferrer" target="_blank">TinyPNG</a>.&nbsp; </p>
-      <p>JPGs work just as well of course. However they don't have a transparency layer, so take care when using them.</p>
-      <p><strong>Upload File or URL?</strong> - We recommend following your normal workflow. If you usually upload images for your website or other content to a third party system like Amazon S3 or Wordpress, continue doing so as you use HapYak and reference those URLs. </p>
-      <p>If you normally upload directly from your system, then simply use the "Upload File" option.</p>
-    </article>
+    <p>Brightcove Interactivity Studio provides the ability to add different types of interactive overlays to videos. Text and image overlays can be displayed on videos during video playback. For example, overlays can display additional text or a company logo on a video. Overlays can also be clickable and open additional web pages if needed.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure-player">Before you get started</h2>
+    <p>Before you can add  interactivity to a player, you need a HapYak-enabled Brightcove Player and you need to make sure a Brightcove Interactivity project has been created. For information on how to do this, see <a href="/getting-started/getting-started-interactivity.html">Getting Started with Interactivity</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="text-overlay">Adding a text overlay</h2>
+    <p>Text overlays are used to display text on a video during playback. The overlay can also be clickable and open another browser page when clicked. In the following example, the text overlay will appear at the 75% point of the video and display until the end of the video. Clicking the overlay will open a link in a new browser tab and pause the video.</p>
+    <div style="position: relative; display: block; max-width: 960px;">
+      <div style="padding-top: 56.25%;">
+        <iframe src="https://players.brightcove.net/1752604059001/UivhMH9oq_default/index.html?videoId=4817237857001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+    <br/>
+    <p>Follow these steps to add a text overlay to a project:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li> Click on a project to open it.</li>
+      <li>In the bottom toolbar, click on the text overlay button.
+        <figure class="bcls-figure"> <img src="/assets/images/annotations/text-overlay/add-text-overlay.png"> </figure>
+      </li>
+      <li>Click on the <strong>Editor</strong> link in the menu.
+        <figure class="bcls-figure"> <img src="/assets/images/annotations/text-overlay/overlay-editor.png"> </figure>
+      </li>
+      <li>Enter  text for the overlay and click <strong>Submit</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/annotations/text-overlay/overlay-text.png"> </figure>
+      </li>
+      <li>Click and drag the overlay to where you want it to appear on the video.
+        <figure class="bcls-figure"> <img src="/assets/images/annotations/text-overlay/position-overlay.png"> </figure>
+        <aside class="bcls-aside bcls-aside--information">Note: Make sure the overlay isn't placed at the bottom of the player where it may be covered up by the control bar.</aside>
+      </li>
+      <li>Click  the <strong>Start Time</strong> menu.</li>
+      <li>Enter a <strong>Start time</strong> in seconds, as a percentage or in time format. This example sets the start time to the 75% point of the video. Click <strong>SUBMIT</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/annotations/text-overlay/start-time.png"> </figure>
+      </li>
+      <li>Click the clock icon to set the duration of the overlay. Click <strong>SUBMIT</strong>.</li>
+      <li>Click the <strong>Link</strong> menu.</li>
+      <li>Enter a <strong>URL</strong> to direct to when the overlay is clicked.</li>
+      <li>(Optional) Click the <strong>BEHAVIOR</strong> tab and have the video <strong>Pause on video click</strong>. Click <strong>SUBMIT</strong>.</li>
+      <li>Click <strong>Done</strong>.</li>
+    </ol>
+    <p>Publish the video using the Media module and confirm that the overlay appears.</p>
   </section>
 </article>
 
@@ -827,7 +868,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 18 Nov 2021
+  Page last updated on 20 Jul 2022
 </div>
 
 
