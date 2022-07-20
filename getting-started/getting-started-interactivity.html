@@ -1,0 +1,110 @@
+---
+title: Getting Started with Interactivity
+description: 'In this topic you will learn how to get started with Brightcove Interactivity.'
+parent: Getting Started
+---
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p>The HapYak plugin for the Brightcove Player allows the player to take advantage of the features provided by Brightcove Interactivity. When interactions are added to a Brightcove Interactivity project,  they will automatically appear on the corresponding video. This removes the need to copy and publish embed code within  Brightcove Interactivity Studio.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure-player">Before you get started</h2>
+    <p>Before you can started with interactivity, you must have a Brightcove Player configured with the HapYak plugin. Adding the HapYak plugin to a Brightcove Player will allow interactivity to be displayed inside of the player during video playback. The HapYak plugin can coexist with other player plugins. For complete steps on creating a HapYak-enabled player, see <a href="configuring-player-plugin.html">Configuring a Brightcove Player with the HapYak plugin</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="project-creation">Creating a Brightcove Interactivity project</h2>
+    <p>When a video is played inside of a HapYak-enabled Brightcove Player, the following things happen: </p>
+    <ul>
+      <li>The Brightcove video ID, title, tags and custom fields are passed to Brightcove Interactivity</li>
+      <li>Brightcove Interactivity attempts to look up the video ID within your group</li>
+      <li><strong>If no matching record is found</strong>, then Brightcove Interactivity creates a  project with the data that was sent</li>
+      <li>Brightcove Interactivity will also set the project properties to indicate that it was "auto created":
+        <ul>
+          <li> The <code>is_published</code> value will be set to <strong>TRUE</strong></li>
+          <li> A tag with the value <code>live</code> will be added</li>
+        </ul>
+      </li>
+    </ul>
+    <p>The following steps will automatically create a Brightcove Interactivity project:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select a video to publish by checking the box next to the video thumbnail.</li>
+      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web.</strong></li>
+      <li>Select the player with the HapYak plugin.</li>
+      <li>Click the preview link to open a preview in a new browser tab.
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/gs-interactivity/gsi-vc-publish.png"> </figure>
+      </li>
+      <li>Play the preview video (the video only needs to be played for a few seconds). This will auto-create a project in Brightcove Interactivity.
+        <aside class="bcls-aside bcls-aside--information">Note: You must preview the video using the preview link.  Previewing the video with the preview player in the Media module <strong>will not</strong> auto-create a project.</aside>
+      </li>
+      <li>Login to  Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>A list of projects will appear. Confirm the video you just published appears in the project list.
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/gs-interactivity/gsi-hapyak-projects-list.png"> </figure>
+        <aside class="bcls-aside bcls-aside--information">Note: The <strong>Tags</strong> column includes all tags associated with the video.  An additional tag of <strong>live</strong> is added to each project automatically created by the plugin.</aside>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="text-overlay">Adding a text overlay</h2>
+    <p>In this topic a simple text overlay will be added just to validate that the interactivity can be viewed inside of a Brightcove Player.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the Brightcove Interactivity UI, click on the project to open it.</li>
+      <li>In the bottom toolbar, click on the text overlay button.
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/gs-interactivity/gsi-hapyak-add-overlay.png"> </figure>
+      </li>
+      <li>Click on the <strong>Editor</strong> link in the menu.
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/gs-interactivity/gsi-hapyak-overlay-editor.png"> </figure>
+      </li>
+      <li>Enter some sample text for the overlay and click <strong>SUBMIT</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/gs-interactivity/gsi-hapyak-overlay-text-added.png"> </figure>
+      </li>
+      <li>Click <strong>Done</strong>.</li>
+    </ol>
+  For detailed information on adding text and image overlays to videos, see <a href="adding-interactivity-video.html">Adding Interactive Overlays to Videos</a>.</section>
+  <section class="bcls-section">
+    <h2 id="preview-publish">Previewing and generating embed code for a video</h2>
+    <p>Once an interaction has been added to a Brightcove Interactivity project, preview the video to ensure the interactivity is working as expected. When a video is loaded in a HapYak-enabled Brightcove Player, the following things happen:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>The Brightcove video ID, title, tags and custom fields are sent to Brightcove Interactivity.</li>
+      <li>Brightcove Interactivity attempts to look up the video ID within your Brightcove Interactivity group.</li>
+      <li><strong>If a matching record is found</strong>, then Brightcove Interactivity filters to the record that has the <code>is_published</code> value set to <strong>TRUE</strong>. The project with both the matching video ID and the <code>is_published</code> value set to <strong>TRUE</strong> will be displayed.</li>
+      <li><strong>If more than one matching record is found</strong>, then Brightcove Interactivity filters to the most recently modified record that has the <code>is_published</code> value set to <strong>TRUE</strong>. The most recently modified project with both the matching video ID and the <code>is_published</code></li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: The <code>is_published</code> value can be manually changed using the Settings dialog (click  <strong>SETTINGS</strong> at the top of the page).</aside>
+    <p>Follow these steps to preview and generate the embed code for the video:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select the video you used to create the Brightcove Interactivity project and publish it.</li>
+      <li>In the <strong>Select Player</strong> dropdown list, select the HapYak-enabled player. </li>
+      <li>Click the <strong>URL</strong> below the preview player to open it in a new browser tab. Confirm that the interaction appears.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/getting-started/gs-interactivity/gsi-overlay-sample.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: By default, the text overlay is configured to display for 3 seconds.</aside>
+      </li>
+      <li>Copy the embed code and paste it into your web page.</li>
+    </ol>
+    <p>Additionally, in the embed code, you <strong>MUST</strong> add <code>playsinline</code> inside the <code>&lt;video-js&gt;</code> tag. Please reference the examples below:</p>
+    <h3>Standard</h3>
+    <pre><code>
+&lt;div&gt;<br>  style=&quot;position: relative; display: block; max-width: 960px;&quot;&gt;<br>  &lt;div<br>    style=&quot;padding-top: 56.25%;&quot;&gt;<br>    &lt;iframe<br>      src=&quot;//players.brightcove.net/1486906377/dunFq3vI6_default/index.html&quot;  <br>      playsinline<br>      allowfullscreen=&quot;&quot;<br>      allow=&quot;encrypted-media&quot;<br>      style=&quot;position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;
+    </code></pre>
+    <h3>Advanced</h3>
+    <pre><code>
+&lt;div style=&quot;max-width: 960px;&quot;&gt;<br>  &lt;video-js
+    playsinline<br>    data-account=&quot;1486906377&quot;<br>    data-player=&quot;dunFq3vI6&quot;<br>    data-embed=&quot;default&quot;<br>    controls=&quot;&quot;<br>    data-application-id=&quot;&quot;<br>    class=&quot;vjs-fluid&quot;<br>    style=&quot;padding-top: 56.25%;&quot;&gt;<br>  &lt;/video-js&gt;<br>&lt;/div&gt;<br>&lt;script<br>  src=&quot;//players.brightcove.net/1486906377/dunFq3vI6_default/index.min.js&quot;&gt;<br>&lt;/script&gt;
+</code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="notes">Notes</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Annotations added to a project at the project level (meaning not through templates) should appear in approximately 90 seconds. Annotations added via templates can take up to two hours to appear. </li>
+      <li>Do not manually create Brightcove projects in  Brightcove Interactivity Studio. The plugin will do this automatically.</li>
+      <li>Uploading a new video source files in Video Cloud will preserve the video ID and the connection to Brightcove Interactivity.</li>
+      <li>Do not use the EMBED code generated from the Brightcove Interactivity tools when using the plugin. Instead publish your videos per the normal Brightcove workflow.</li>
+      <li>Workflow-generated projects can be deleted using Brightcove Interactivity Studio. Please note that subsequent loads of the corresponding video through the Brightcove Player will not auto-generate a separate project in the portal.</li>
+    </ol>
+  </section>
+</article>

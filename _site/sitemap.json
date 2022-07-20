@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -185,6 +185,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/getting-started/configuring-player-plugin.html",
+      "oldURL": "/configuring-player-plugin"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/support/contact-sales.html",
       "oldURL": "/contact-sales"
   },
@@ -262,6 +267,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/examples/getsmarter.html",
       "oldURL": "/getsmarter"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/getting-started/getting-started-interactivity.html",
+      "oldURL": "/getting-started-interactivity"
   },
 
   {

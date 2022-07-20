@@ -31,7 +31,17 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/getting-started/hapyak-plugin-for-brightcove.html</loc>
+            <loc>https://interactivity.support.brightcove.com/getting-started/configuring-player-plugin.html</loc>
+          
+            <lastmod>2022-07-20</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/getting-started/getting-started-interactivity.html</loc>
           
             <lastmod>2022-07-20</lastmod>
             <changefreq>daily</changefreq>
