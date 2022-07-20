@@ -109,16 +109,6 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/best-practices/edit-videos-in-quicktime.html</loc>
-          
-            <lastmod>2022-07-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
             <loc>https://interactivity.support.brightcove.com/best-practices/how-to-increase-click-through-rate-ctr.html</loc>
           
             <lastmod>2022-07-20</lastmod>
@@ -298,16 +288,6 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/annotations/quiz-pass-fail-threshold.html</loc>
-          
-            <lastmod>2022-07-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/text-annotation.html</loc>
           
             <lastmod>2022-07-20</lastmod>
             <changefreq>daily</changefreq>
@@ -1034,6 +1014,16 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/general/interactivity-faq.html</loc>
+          
+            <lastmod>2022-07-20</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/general/edit-videos-in-quicktime.html</loc>
           
             <lastmod>2022-07-20</lastmod>
             <changefreq>daily</changefreq>
