@@ -6,8 +6,45 @@ parent: Projects
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
+<section class="bcls-section">
+    <h2 id="project-creation">Automatically creating a Brightcove Interactivity project</h2>
+    <p>Video Cloud videos that are played using a <a href="/getting-started/configuring-player-plugin.html">HapYak-enabled</a> player will automatically create Brightcove Interactivity projects. This is the preferred method to create a project. </p>
+    <p>When a video is played inside of a HapYak-enabled Brightcove Player, the following things happen: </p>
+    <ul>
+      <li>The Brightcove video ID, title, tags and custom fields are passed to Brightcove Interactivity</li>
+      <li>Brightcove Interactivity attempts to look up the video ID within your group</li>
+      <li><strong>If no matching record is found</strong>, then Brightcove Interactivity creates a  project with the data that was sent</li>
+      <li>Brightcove Interactivity will also set the project properties to indicate that it was "auto created":
+        <ul>
+          <li> The <code>is_published</code> value will be set to <strong>TRUE</strong></li>
+          <li> A tag with the value <code>live</code> will be added</li>
+        </ul>
+      </li>
+    </ul>
+    <p>The following steps will automatically create a Brightcove Interactivity project. Make sure you have a <a href="/getting-started/configuring-player-plugin.html">HapYak-enabled player</a> before continuing:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select a video to publish by checking the box next to the video thumbnail.</li>
+      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web.</strong></li>
+      <li>Select the player with the HapYak plugin.</li>
+      <li>Click the preview link to open a preview in a new browser tab.
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/gs-interactivity/gsi-vc-publish.png"> </figure>
+      </li>
+      <li>Play the preview video (the video only needs to be played for a few seconds). This will auto-create a project in Brightcove Interactivity.
+        <aside class="bcls-aside bcls-aside--information">Note: You must preview the video using the preview link.  Previewing the video with the preview player in the Media module <strong>will not</strong> auto-create a project.</aside>
+      </li>
+      <li>Login to  Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>A list of projects will appear. Confirm the video you just published appears in the project list.
+        <figure class="bcls-figure"> <img src="/assets/images/getting-started/gs-interactivity/gsi-hapyak-projects-list.png"> </figure>
+        <aside class="bcls-aside bcls-aside--information">Note: The <strong>Tags</strong> column includes all tags associated with the video.  An additional tag of <strong>live</strong> is added to each project automatically created by the plugin.</aside>
+      </li>
+    </ol>
+  </section>
   <section class="bcls-section">
-    <h2 id="create">Creating a new project</h2>
+    <h2 id="create">Manually creating a new project</h2>
+      <p>If needed, you can manually create projects using Brightcove Interactivity Studio. Follow these steps to manually create a project.</p>
     <ol class="bcls-tasklist-restart">
       <li>Login to Brightcove Interactivity Studio.</li>
       <li>In the primary navigation, click <strong>Create</strong> and then <span class="button-blue">NEW PROJECT</span> or click <strong>Manage</strong>, click the <strong>Projects</strong> tab and then click <span class="button-blue">New Project</span>. </li>
