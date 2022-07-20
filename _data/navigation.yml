@@ -145,6 +145,8 @@
   name: 'Templates'
   url: '/templates/index.html'
   docs:
+    - name: 'Applying Templates to Projects'
+      url: '/templates/applying-templates-projects.html'
     - name: 'Creating and Managing Templates'
       url: '/templates/creating-and-managing-templates.html'
 - section: 
