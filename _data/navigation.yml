@@ -99,8 +99,6 @@
       url: '/customize/customizing-the-hapyak-player.html'
     - name: 'Localization'
       url: '/customize/localization-change-the-language-translate-the-language.html'
-    - name: 'Settings Panel'
-      url: '/customize/settings-panel.html'
 - section: 
   name: 'Demos'
   url: '/demos/index.html'
@@ -139,6 +137,8 @@
   docs:
     - name: 'Branching and Choose Your Own Adventure Video'
       url: '/projects/branching-choose-your-own-adventure-video.html'
+    - name: 'Configuring Project Settings'
+      url: '/projects/configuring-project-settings.html'
     - name: 'Creating and Managing Projects'
       url: '/projects/creating-and-managing-projects.html'
     - name: 'Hosting Videos with HapYak'

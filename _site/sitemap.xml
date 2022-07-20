@@ -441,16 +441,6 @@
         </url>
         
       
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/customize/settings-panel.html</loc>
-          
-            <lastmod>2022-07-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
     
       <url>
         <loc>https://interactivity.support.brightcove.com/demos/index.html</loc>
@@ -586,6 +576,16 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/projects/branching-choose-your-own-adventure-video.html</loc>
+          
+            <lastmod>2022-07-20</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/projects/configuring-project-settings.html</loc>
           
             <lastmod>2022-07-20</lastmod>
             <changefreq>daily</changefreq>

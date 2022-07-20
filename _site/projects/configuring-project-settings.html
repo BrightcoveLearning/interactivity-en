@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Settings for Hapyak Projects.">
+  <meta name="description" content="In this topic you will learn about the project settings that can be configured.">
   
-  <title>Settings Panel</title>
+  <title>Configuring Project Settings</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -63,9 +63,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/customize/">Customize</a></li>
+      <li class="breadcrumb-item"><a href="/projects/">Managing Projects</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Settings Panel</li>
+      <li class="breadcrumb-item active" aria-current="page">Configuring Project Settings</li>
     </ol>
   </nav>
 </header>
@@ -358,10 +358,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                     <li><a href="/customize/localization-change-the-language-translate-the-language.html">Localization</a></li>
                   
                 
-                  
-                    <li><a href="/customize/settings-panel.html">Settings Panel</a></li>
-                  
-                
               </ul>
             
           
@@ -432,6 +428,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     <li><a href="/projects/branching-choose-your-own-adventure-video.html">Branching and Choose Your Own Adventure Video</a></li>
+                  
+                
+                  
+                    <li><a href="/projects/configuring-project-settings.html">Configuring Project Settings</a></li>
                   
                 
                   
@@ -798,38 +798,76 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Settings Panel</h1>
+<h1>Configuring Project Settings</h1>
 <article class="bcls-article">
-  <summary>Settings for Hapyak Projects.</summary>
+  <summary>In this topic you will learn about the project settings that can be configured.</summary>
   <section class="bcls-section">
-    <p>When editing a HapYak project, click <b>Settings</b> for the following options:</p>
-    <h3 id="video-source">Video source</h3>
-    <p>You can change the video that is behind the annotations. &nbsp;This is used when you have a new version of the video that you'd like to use. &nbsp;It is also used when you'd like to create a project that is similar to one you've already created. &nbsp;You can copy the original, then simply replace the video source of the copy.</p>
-    <h3 id="tags">Tags</h3>
-    <p>Tags are used for organizing projects into groups. You can more easily search your projects and more easily filter in reports based on tags.</p>
-    <p>Tags are also used in some direct integrations with other systems to automatically add annotations to videos like with Brightcove Plugin)</p>
-    <p>Tags should be <i>all lower case, no spaces. </i>(ex/ csat-question). Separate multiple tags with a comma (ex/ csat-question, onboarding). Make sure to click "Save" and then "Submit" to save the tags.</p>
-    <figure class="bcls-figure"><img src="/assets/images/customize/tags-sample.png"></figure>
-    <h3 id="track-id">Track ID</h3>
-    <p>The track is the set of annotations on a video. &nbsp;This field is for reference.</p>
-    
-    <!-- <h3 id="templates-applied">Templates Applied</h3>
-    <p>This is where you apply <a href="http://kb.hapyak.com/knowledgebase/articles/340210-templates" data-is-internal-link="true">templates</a> to the project.</p> -->
-    
-    <h3 id="show-questions">Show questions</h3>
-    <p>Choose to show <a href="/annotations/quiz-annotation.html" data-is-internal-link="true">quiz questions</a> to the viewer only once on the first view, or every view (including repeated viewings).</p>
-    <h3 id="custom-annotation-css-url-available-with-enterprise-license">Custom Annotation CSS URL (Available with Enterprise License)</h3>
-    <p>Many customers apply a custom CSS to their project - for example to change the colors, fonts or other style of their annotations. &nbsp;You host the CSS file (just as you would for your web pages) and then paste in the URL for that CSS here. HapYak wants your interactive videos to be beautiful and reflect your branding and style. For all Pro customers and up we provide an initial CSS file based on your guidelines. Contact <a href="mailto:success@hapyak.com" rel="nofollow noopener noreferrer" target="_blank">success@hapyak.com</a>.</p>
+    <p>The project settings dialog can be used to configure additional project settings that are not displayed in the Interactivity Editor. Follow these steps to configure the settings for a project:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>Click on a project to open it.</li>
+      <li>Click <span class="button-blue">SETTINGS</span>.</li>
+    </ol>
+    <p>The project settings dialog will open displaying the project settings.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="video">Video settings</h2>
+    <p><strong>Video Source</strong> controls the  video that is behind the annotations. &nbsp;This is used when you have a new version of the video that you'd like to use. &nbsp;It is also used when you'd like to create a project that is similar to one you've already created. &nbsp;You can copy the original, then simply replace the video source of the copy.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/video.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="project">Project settings</h2>
+    <p><strong>Tags</strong> are commonly used for:</p>
+    <ul>
+      <li>Organizing projects into groups. You can more easily search your projects and more easily filter in reports based on tags.</li>
+      <li>Automatically adding annotations to videos, for information see <a href="../templates/applying-templates-projects.html">Applying Templates to Projects</a></li>
+    </ul>
+    <p>Tags should be:</p>
+    <ul>
+      <li>All lower case</li>
+      <li>Contain no spaces</li>
+      <li>Separate multiple tags with a comma</li>
+    </ul>
+    <p>After adding or editing tags, click <span class="button-blue">SAVE</span> and then <span class="button-blue">SUBMIT</span> to save the tags.</p>
+    <p><strong>Templates Applied</strong> is used to apply templates to a project. For information see <a href="../templates/applying-templates-projects.html">Applying Templates to Projects</a>.</p>
+    <p><strong>Track ID</strong> - The track is the set of annotations on a video. &nbsp;This field is for reference. </p>
+    <p><strong>Show questions</strong> - Controls when to show <a href="/annotations/quiz-annotation.html" data-is-internal-link="true">quiz questions</a> to the viewer, only once on the first view or every view (including repeated viewings).</p>
+    <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/project.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="custom-css">Custom CSS</h2>
+    <aside class="bcls-aside bcls-aside--information">Note: These settings are available with an Enterprise License.</aside>
+    <p><strong>Custom Annotation CSS URL</strong> - Many customers apply a custom CSS to their project to change the colors, fonts or other styles of their annotations. &nbsp;You host the CSS file (just as you would for your web pages) and then paste in the URL for the CSS file here. Brightcove wants your interactive videos to be beautiful and reflect your branding and style. For all Pro customers and up we provide an initial CSS file based on your guidelines. Contact <a href="mailto:success@hapyak.com" rel="nofollow noopener noreferrer" target="_blank">success@hapyak.com</a>.</p>
     <h3 id="custom-control-css-url-available-with-enterprise-license">Custom Control CSS URL (Available with Enterprise License)</h3>
     <p>This is rarely used. &nbsp;When it is, it is to completely redesign the style of the HapYak player. For small changes and tweaks to the HapYak player (like removing the annotation markers), we recommend using the Custom Annotation CSS field.</p>
-    <h3 id="string-resource-url">String Resource URL</h3>
-    <p>Used for localizing the buttons and prompts of the video.</p>
-    <p><b>Control Bar Style</b></p>
-    <p>Allows users to Hide or show Skip Buttons, Logo, Timeline, or Annotation Markers.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/custom-css.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="language">Language</h2>
+    <p><strong>String Resource URL</strong> - Used for localizing the buttons and prompts of the video.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/language.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="integrations">Integrations</h2>
+    <p><strong>Published</strong> - </p>
+    <p><strong>Import Cue Points?</strong> - </p>
+    <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/integrations.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="control-bar">Control Bar Style</h2>
+    <p>These settings can be used to hide or show skip buttons, logo, timeline, or annotation markers.</p>
     <p><b>Thumbnail</b></p>
-    <p>Allows users to upload a thumbnail image for the project</p>
-    <p><b>Convert Project To Template</b></p>
-    <p>Allows users to convert any project into a template</p>
+    <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/control-bar.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="images">Images</h2>
+    <p>Can be used to  upload a thumbnail image for the project.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/images.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="convert">Converting a project to a template</h2>
+    <p>Select <strong>Convert project to template</strong> to convert the project into a template.</p>
     <aside class="bcls-aside bcls-aside--information">Note: This option will permanently remove the selected project from the projects folder and turn it into a template. This action <b>CANNOT BE UNDONE</b>. Take note of which projects you convert or make sure to make copies of projects before you convert them.</aside>
   </section>
 </article>
@@ -849,7 +887,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 18 Nov 2021
+  Page last updated on 20 Jul 2022
 </div>
 
 
