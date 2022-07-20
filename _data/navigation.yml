@@ -202,7 +202,7 @@
     - name: 'Project Level CSS'
       url: '/styling/project-level-css.html'
     - name: 'Project Level CSS Via the HapYak Plugin'
-      url: '/styling/project-level-css-hapyak-plugin.html.html'
+      url: '/styling/project-level-css-hapyak-plugin.html'
     - name: 'Simple text transitions'
       url: '/styling/simple-text-transitions.html'
     - name: 'Styling Annotations'
