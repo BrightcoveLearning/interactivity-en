@@ -237,6 +237,16 @@
       
         <url>
           
+            <loc>https://interactivity.support.brightcove.com/annotations/configuring-annotation-links.html</loc>
+          
+            <lastmod>2022-07-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://interactivity.support.brightcove.com/annotations/custom-transitions-with-animate-css-beta.html</loc>
           
             <lastmod>2022-07-21</lastmod>
@@ -248,16 +258,6 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/annotations/how-to-loop-back-in-the-video.html</loc>
-          
-            <lastmod>2022-07-21</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/link-options.html</loc>
           
             <lastmod>2022-07-21</lastmod>
             <changefreq>daily</changefreq>

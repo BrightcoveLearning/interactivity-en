@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="What is a HapYak Experience? What types of Experiences are there?">
+  <meta name="description" content="In this topic you will learn about the different options available when adding a link to an annotation.">
   
-  <title>Experiences Overview</title>
+  <title>Configuring Annotation Links</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -63,9 +63,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/">Experiences</a></li>
+      <li class="breadcrumb-item"><a href="/annotations/">Annotations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Experiences Overview</li>
+      <li class="breadcrumb-item active" aria-current="page">Configuring Annotation Links</li>
     </ol>
   </nav>
 </header>
@@ -798,40 +798,42 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Experiences Overview</h1>
+<h1>Configuring Annotation Links</h1>
 <article class="bcls-article">
-  <summary>What is a HapYak Experience? What types of Experiences are there?</summary>
+  <summary>In this topic you will learn about the different options available when adding a link to an annotation.</summary>
   <section class="bcls-section">
-    <p>A HapYak <b>Experience</b> is a video with other elements (like synced slides or an e-commerce cart) outside the video player that dynamically interact with video player.</p>
-    <p>HapYak experiences allow you to dynamically communicate between the video and the web page itself, opening the door to a new generation of lean-forward interactive realities for your viewers.</p>
+    <p>Links are the most commonly used annotation, and the foundation of all interactions</p>
+    <figure class="bcls-figure"> <img src="/assets/images/annotations/Interactive-Video-Link-Options.gif"></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="experience-types">Experience Types</h2>
-    <h3 id="video-landing-page">Video Landing Page</h3>
-    <p>A <b>Video Landing Page</b> experience is a great way to create a playlist of videos, set up a dedicated landing page link, and quickly add branding to the header and footers to the landing page.&nbsp;</p>
-    <p>Furthermore, there are two options for <b>Video Landing Pages:</b></p>
-    <ul>
-      <li><b>Single Video Landing Pages</b> hide the other videos from the user's view, forcing the user to navigate only via the Branching/CYOA annotations. </li>
-      <li><b>Playlist Landing Pages</b> show all videos included in the experience at the bottom of the screen, allowing users to quickly jump from video to video at will. </li>
-    </ul>
-    <h3 id="slidesync">SlideSync</h3>
-    <p>HapYak <b>SlideSync</b> is a powerful interactive video experience allowing users to present related slide decks or presentation imagery while the video plays.</p>
-    <p>Read more on SlideSync <a href="/experiences/slide-sync-reference-guide.html" data-is-internal-link="true">here</a>.</p>
-    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync.png"></figure>
-    <p><b>Branching</b></p>
-    <p>HapYak<b> Branching</b> experiences allow you to create Choose-Your-Own-Adventure (CYOA) experiences for your viewers.&nbsp;</p>
-    <p>Read more about Branching Experiences <a href="/experiences/branching-experience.html" data-is-internal-link="true">here</a>.&nbsp;</p>
+    <h2 id="load-external-url">Load external URL:</h2>
+    <p>Just like you would add a link in a web page, now you can add it in a video. You can load a web page, pdf, document, another video, email program, etc.... <br>
+      Example: Load a web page - <a href="http://corp.hapyak.com/" rel="nofollow noopener noreferrer" target="_blank">http://corp.hapyak.com/</a> <br>
+      Example: Load a new Email draft - <a href="https://supportportal.brightcove.com">Brightcove Support</a> <br>
+      Example: Load a PDF file - <a href="https://drive.google.com/open?id=0B5xLrWha_BgPZGs4UEstcUpuWUk" rel="nofollow noopener noreferrer" target="_blank">https://drive.google.com/open?id=0B5xLrWha_BgPZGs4UEstcUpuWUk</a> </p>
+    <h3 id="ensuring-external-urls-open-in-the-same-windowtab">Ensuring external URLs open in the same window/tab</h3>
+    <p>You can set <i>all links</i> clicked on your videos to open in the same window/tab rather than a new one. This is analogous to setting target="_self" or "open in same window" in a CMS for example. </p>
+    <p>The limitations are: <br>
+      A) The target domain must be on the same domain that the video is hosted on. <br>
+      B) <i>Every</i> link on every project will load in the same window. <br>
+      C) Must be using Native Player embed code (not the HapYak player which is an iframe embed code). </p>
+    <p>If you would like this set simply email <a href="https://supportportal.brightcove.com">Brightcove Support</a> and ask for <b>localLinks</b> to be provisioned on your group. </p>
   </section>
   <section class="bcls-section">
-    <h2 id="experience-advanced-notes">Experience Advanced Notes</h2>
-    <ul>
-      <li>
-        <p>Experiences use HapYak Player with native controls as the embed type. This is so multi-video experiences have a standard look and feel</p>
-      </li>
-      <li>
-        <p>Viewer Interaction on the standard HapYak annotations is included in <a href="http://www.hapyak.com/portal/reports" rel="nofollow noopener noreferrer" target="_blank">HapYak Reports</a> as normal.</p>
-      </li>
-    </ul>
+    <h2 id="jump-to-annotation--jump-to-time">Jump to Annotation / Jump to Time:</h2>
+    <p>Click "Jump to video time" and select another annotation you would like to link to from the dropdown list...</p>
+    <figure class="bcls-figure"> <img src="/assets/images/annotations/jump-to-annotation.png"></figure>
+    <p>or enter a specific time in the video to link to...</p>
+    <figure class="bcls-figure"> <img src="/assets/images/annotations/jump-to-tiime.png"></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pro-tip-jump-to-chapters">Pro Tip: Jump to Chapters</h2>
+    <p>Because you can link to a specific annotation, <b>adding chapter markers to every video is a great idea</b>. Without also adding a Chapter Menu, they are invisible to the viewer and allow you to quickly select times in the video to jump to via this Link to Annotation feature.&nbsp; </p>
+    <p>Also, if you change the start time of the chapter annotation that you are linked to (because say a new version of the video has been uploaded as the <a href="/customize/changing-the-video-source-of-a-project.html" data-is-internal-link="true">video source</a>), it will automatically adjust. </p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="action-to-take-if-the-viewer-doesnt-click">Action to take if the viewer doesn't click:</h2>
+    <p>The video can continue playing if the viewer doesn't click, or can be looped to the beginning of the annotation to ensure they click.</p>
   </section>
 </article>
 
@@ -850,7 +852,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 18 Nov 2021
+  Page last updated on 21 Jul 2022
 </div>
 
 
