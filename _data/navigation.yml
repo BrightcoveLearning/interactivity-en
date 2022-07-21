@@ -41,8 +41,6 @@
       url: '/annotations/adding-transparent-overlay.html'
     - name: 'Annotation Options'
       url: '/annotations/annotation-options.html'
-    - name: 'The Annotation List'
-      url: '/annotations/annotations-list.html'
     - name: 'Auto-Load URL'
       url: '/annotations/auto-load-url.html'
     - name: 'Automatically Pause Video or Jump to a Time'
@@ -65,6 +63,8 @@
       url: '/annotations/quiz-conditional-gating.html'
     - name: 'Quiz Pass / Fail Threshold'
       url: '/annotations/quiz-pass-fail-threshold.html'
+    - name: 'Reviewing Annotations'
+      url: '/annotations/reviewing-annotations.html'
 - section: 
   name: 'Custom Annotations'
   url: '/custom-annotations/index.html'
