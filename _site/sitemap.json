@@ -380,7 +380,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/",
+      "newURL": "https://interactivity.support.brightcove.com/admin/",
       "oldURL": "/index"
   },
 
@@ -405,12 +405,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/general/",
+      "newURL": "https://interactivity.support.brightcove.com/developers/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/",
+      "newURL": "https://interactivity.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -450,22 +450,17 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/references/embed/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/analytics/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/references/annotation/",
+      "newURL": "https://interactivity.support.brightcove.com/references/embed/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/references/addon/",
+      "newURL": "https://interactivity.support.brightcove.com/references/annotation/",
       "oldURL": "/index"
   },
 
@@ -480,6 +475,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/references/addon/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/references/",
       "oldURL": "/index"
   },
@@ -490,7 +490,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/admin/",
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/",
       "oldURL": "/index"
   },
 
@@ -745,7 +745,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/annotations/text-annotation.html",
+      "newURL": "https://interactivity.support.brightcove.com/delete/text-annotation.html",
       "oldURL": "/text-annotation"
   },
 
