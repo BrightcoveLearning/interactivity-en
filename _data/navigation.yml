@@ -45,7 +45,7 @@
       url: '/annotations/annotation-options.html'
     - name: 'Automatically Pause Video or Jump to a Time'
       url: '/annotations/automatically-pause-the-video-or-jump-to-a-time-in-the-video-aka-skip-to-time.html'
-    - name: 'Bulk Annotation Edit'
+    - name: 'Bulk Editing Annotations'
       url: '/annotations/bulk-annotation-edit.html'
     - name: 'Chapter Menu and Chapters'
       url: '/annotations/chapter-menu-and-chapters.html'
