@@ -37,6 +37,8 @@
       url: '/annotations/adding-image-overlay.html'
     - name: 'Adding an Text Overlay'
       url: '/annotations/adding-text-overlay.html'
+    - name: 'Adding a Time Triggered Action'
+      url: '/annotations/adding-time-triggered-action.html'
     - name: 'Adding an Transparent Overlay'
       url: '/annotations/adding-transparent-overlay.html'
     - name: 'Annotation Options'

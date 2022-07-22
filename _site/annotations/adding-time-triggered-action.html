@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Use the On-Time Annotation to automatically pause the video or jump to a time (without a viewer click).">
+  <meta name="description" content="In this topic you will learn how to use a time triggered action to to automatically pause a video or jump to a time (without a viewer click).">
   
-  <title>Automatically Pause the Video or Jump to a Time in the Video (aka Skip-to-Time)</title>
+  <title>Adding a Time Triggered Action</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -65,7 +65,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/annotations/">Annotations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Automatically Pause the Video or Jump to a Time in the Video (aka Skip-to-Time)</li>
+      <li class="breadcrumb-item active" aria-current="page">Adding a Time Triggered Action</li>
     </ol>
   </nav>
 </header>
@@ -234,6 +234,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     <li><a href="/annotations/adding-text-overlay.html">Adding an Text Overlay</a></li>
+                  
+                
+                  
+                    <li><a href="/annotations/adding-time-triggered-action.html">Adding a Time Triggered Action</a></li>
                   
                 
                   
@@ -794,30 +798,40 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Automatically Pause the Video or Jump to a Time in the Video (aka Skip-to-Time)</h1>
+<h1>Adding a Time Triggered Action</h1>
 <article class="bcls-article">
-  <summary>Use the On-Time Annotation to automatically pause the video or jump to a time (without a viewer click).</summary>
+  <summary>In this topic you will learn how to use a time triggered action to to automatically pause a video or jump to a time (without a viewer click).</summary>
   <section class="bcls-section">
-    <p>The on-time annotation will automatically perform an action when a viewer reaches a point in the video <i>without the need for a click from the viewer.</i> </p>
-    <p>Add an on-time annotation by clicking the stopwatch icon.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/annotations/stop-watch-icon.png"> </figure>
-    <p>Add the event you would like to fire when the viewer reaches that point in the video. Some of the most common events are...</p>
-    <h3 id="pause-the-video">Pause the Video</h3>
-    <p>Insert <i>player.pause()</i> in the JavaScript field. </p>
-    <figure class="bcls-figure"> <img src="/assets/images/annotations/pause-video.png"> </figure>
+    <p>The time triggered action annotation will automatically perform an action when a viewer reaches a point in the video <i>without the need for a click from the viewer.</i></p>
+    <p>Follow these steps to add a time triggered action to a project:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>Click on a project to open it.</li>
+      <li>In the bottom toolbar, click on the time triggered action button.
+        <figure class="bcls-figure"> <img src="/assets/images/annotations/time-trigger/add-time-trigger.png"></figure>
+      </li>
+    </ol>
+    <p>The ON TIME EVENT dialog will open.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/annotations/time-trigger/on-time-event.png"> </figure>
+    <figure class="bcls-figure"></figure>
+    <p>Add the event you would like to fire when the viewer reaches that point in the video. Some of the most common events are listed below.</p>
+    <h3 id="pause-the-video">Pause the video</h3>
+    <p>Insert <code>player.pause()</code> in the JavaScript field. </p>
+    <figure class="bcls-figure"> <img src="/assets/images/annotations/time-trigger/player-pause.png"> </figure>
     <h3 id="play-the-video">Play the Video</h3>
-    <p>Insert <i>player.play()</i> in the JavaScript field. </p>
-    <figure class="bcls-figure"> <img src="/assets/images/annotations/play-video.png"> </figure>
+    <p>Insert <code>player.play()</code> in the JavaScript field. </p>
+    <figure class="bcls-figure"> <img src="/assets/images/annotations/time-trigger/player-play.png"> </figure>
     <p></p>
     <h3 id="jump-to-a-time-in-the-video">Jump to a Time in the Video</h3>
-    <p>In the "Jump to video time" field, select the chapter you'd like to jump to, or enter a Custom time.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/annotations/jump-to-tiime.png"> </figure>
+    <p>In the <strong>Jump to video time field</strong>, select the chapter you'd like to jump to, or enter a <strong>Custom time</strong>.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/annotations/time-trigger/custom-time.png"> </figure>
     <!-- <p>Here are
       <a href="http://kb.hapyak.com/custom-annotations/on-time-annotation-for-slidesync" data-is-internal-link="true">details on advanced uses of the On-Time annotation</a> (like
       <strong>Addon Type</strong> and
       <strong>Command.</strong>
     </p> -->
-    <aside class="bcls-aside bcls-aside--information">Note: By design, the on-time annotation does not perform its intended functionality while in edit mode. This is to avoid disrupting the editing flow. To test, click "show" to switch to view mode. </aside>
+    <aside class="bcls-aside bcls-aside--information">Note: By design, the time triggered annotation does not perform its intended functionality while in edit mode. This is to avoid disrupting the editing flow. To test, click "show" to switch to view mode. </aside>
   </section>
 </article>
 
@@ -836,7 +850,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 18 Nov 2021
+  Page last updated on 22 Jul 2022
 </div>
 
 
