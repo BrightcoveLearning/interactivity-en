@@ -3,20 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Automatically Load a URL From the Video Without a Viewer Click.">
+  <meta name="description" content="In this topic you will learn how to automatically load a URL from a video without a viewer click.">
   
-  <title>Auto-Load URL</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
-  <link rel="manifest" href="/assets/s-site-assets-favicons/site.webmanifest">  
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Autoloading a URL</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/prism.css">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/styles.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/learning-paths/learning-paths.css">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/landing-page.css">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/tabs.css">
   <link rel="stylesheet" href="/assets/css/local.css">
@@ -33,8 +31,9 @@
   gtag('config', 'UA-2728311-17');
 </script>
   <script src="/assets/js/sajari-head.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 
 <body class="body">
 
@@ -65,7 +64,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/annotations/">Annotations</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Auto-Load URL</li>
+      <li class="breadcrumb-item active" aria-current="page">Autoloading a URL</li>
     </ol>
   </nav>
 </header>
@@ -242,10 +241,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     <li><a href="/annotations/annotation-options.html">Annotation Options</a></li>
-                  
-                
-                  
-                    <li><a href="/annotations/auto-load-url.html">Auto-Load URL</a></li>
                   
                 
                   
@@ -798,22 +793,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Auto-Load URL</h1>
+<h1>Autoloading a URL</h1>
 <article class="bcls-article">
-  <summary>Automatically Load a URL From the Video Without a Viewer Click.</summary>
+  <summary>In this topic you will learn how to automatically load a URL from a video without a viewer click.</summary>
   <section class="bcls-section">
-    <p>Automatically loading a URL without a user-initiated action is generally discouraged UX - and technically prohibited by browsers in many cases.</p>
-    <p>HapYak annotations don't have the capability to load a URL without a user action. However, If you're technically inclined, you can do this yourself with our <a href="/references/index.html" rel="nofollow noopener noreferrer" target="_blank">API</a>. You would create a javascript listener for the video-complete event, then perform the desired action. If you decide to take that approach HapYak can provide some code examples to help.</p>
+    <p>Automatically loading a URL without a user-initiated action is generally a discouraged UX practice. In many cases, browsers will  prohibit this.</p>
+    <p>Annotations don't have the capability to load a URL without a user action. However, if you're technically inclined, this can be done using  our <a href="/references/index.html" rel="nofollow noopener noreferrer" target="_blank">APIs</a>. You would create a JavaScript listener for the video-complete event, then perform the desired action. If you decide to take that approach, Brightcove can provide some code examples to help.</p>
     <p>Here's a working example:</p>
-    <br>
     <a href="http://jsbin.com/wilaq/1/edit" rel="nofollow noopener noreferrer" target="_blank">http://jsbin.com/wilaq/1/edit</a>
-    <p>At the end of the video it auto navigates to hapyak.com.  Here are the important lines of code:</p>
+    <p>At the end of the video, it auto navigates to hapyak.com.  Here are the important lines of code:</p>
     <br>
-    <code>onTrackingEvent: function(data) {</code> <br>
-    <code>&nbsp; &nbsp;if (data.event==="Player Action" &amp;&amp; data.properties.Action.indexOf("End")===0) {</code> <br>
-    <code>&nbsp; &nbsp; &nbsp; window.location.href = "http://corp.hapyak.com"}} &nbsp;</code> <br>
-    <aside class="bcls-aside bcls-aside--information">Note: This even works on an iPhone (even when the video is playing in the native QuickTime app).</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
+    <pre><code>onTrackingEvent: function(data) { 
+    &nbsp; &nbsp;if (data.event==="Player Action" &amp;&amp;<br> data.properties.Action.indexOf("End")===0) { 
+    &nbsp; &nbsp; &nbsp; window.location.href = "http://corp.hapyak.com"}} &nbsp;</code></pre>
+    <aside class="bcls-aside bcls-aside--information">Note: This will work on an iPhone (even when the video is playing in the native QuickTime app).</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
   </section>
 </article>
 
