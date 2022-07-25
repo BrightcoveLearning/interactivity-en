@@ -277,10 +277,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/annotations/quiz-pass-fail-threshold.html">Quiz Pass / Fail Threshold</a></li>
-                  
-                
-                  
                     <li><a href="/annotations/reviewing-annotations.html">Reviewing Annotations</a></li>
                   
                 
@@ -848,16 +844,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3 id="passfail-actions">Pass/Fail actions</h3>
     <p>To access the Pass/Fail actions options, click <strong>Pass/Fail actions</strong> on the quiz options menu.</p>
     <figure class="bcls-figure"> <img src="/assets/images/annotations/quiz/pass-fail.png"></figure>
-    <p>Based on whether the viewer passes or fails the  quiz. To "pass" the quiz, the viewer must answer at least 51% of the questions correctly by default. This can be adjusted by clicking <strong>Set custom pass/fail threshold</strong>.</p>
+    <p>There are <strong>On Pass</strong> and <strong>On Fail</strong> tabs that can be configured based on whether the viewer passes or fails the  quiz. By default, to "pass" the quiz, the viewer must answer at least 51% of the questions correctly. This can be adjusted by clicking <strong>Set custom pass/fail threshold</strong>.</p>
     <ul>
       <li><strong>Load URL </strong> - Automatically load any URL (to a web page, another interactive video, another lesson, a PDF, a supplemental learning resource, a landing page, etc.).</li>
       <li><strong>Jump to video time</strong> - Go to any annotation in the video or to a specific custom time.</li>
-      <li><strong>Jump to video</strong> - Go to any video in an experience. If you have a video and a video time selected it will jump to that time in the new video. <i>(Available for</i> <a href="/experiences/experiences-overview.html" data-is-internal-link="true"> <i>experiences</i> </a> <i> only).</i></li>
+      <li><strong>Jump to video</strong> (Available for <a href="../experiences/experiences-overview.html">experiences</a> only) - Go to any video in an experience. If you have a video and a video time selected it will jump to that time in the new video.</li>
       <li><strong>Load track ID# </strong><i></i>- (Advanced) Load an entire new track of annotations. This is a rarely used feature.</li>
       <li><strong>JavaScript</strong> <i>- </i> Set a JavaScript variable. Typically used to update a score in a separate annotation or a separate system like an LMS.</li>
       <li><strong>Alternate message on pass / fail</strong> - Show a different message depending on how the viewer did on the quiz (for example, "That's not quite right, let's try again...").</li>
-      <li><strong>Reset questions</strong> - You can choose whether or not to show the quiz to the viewer again if they reach that point in the video again (for example, if they were branched back to an earlier part of the video to review a specific section and then you wanted them to answer the quiz again).</li>
+      <li><strong>Reset questions</strong> (On Fail tab only) - You can choose whether or not to show the quiz to the viewer again if they reach that point in the video again (for example, if they were branched back to an earlier part of the video to review a specific section and then you wanted them to answer the quiz again).</li>
     </ul>
+    <h4> Setting a custom
+      pass/fail threshold</h4>
+    <p>When quizzes are used for assessment, Brightcove Interactivity records a pass / fail determination for each quiz. Since the quiz annotation supports more than one question, the pass/fail threshold lets you define what percentage of those questions must be answered correctly for the user to "pass."</p>
+    <p>By default, the threshold to pass any quiz is 51%. You can override this percentage to apply your own standards. This is a tricky feature though, here's why. Brightcove Interactivity reports do not currently show "pass/fail" determinations, they only show correct/incorrect at the individual question level. The reason this feature exists is to properly mark the data for customers with a Learning Management System (LMS) integration or who use our APIs directly to access the data.</p>
   </section>
   <section class="bcls-section">
     <h2 id="free-response-question">Creating a free response question</h2>

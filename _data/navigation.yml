@@ -57,8 +57,6 @@
       url: '/annotations/looping-back-in-a-video.html'
     - name: 'Quiz - Conditional Gating'
       url: '/annotations/quiz-conditional-gating.html'
-    - name: 'Quiz Pass / Fail Threshold'
-      url: '/annotations/quiz-pass-fail-threshold.html'
     - name: 'Reviewing Annotations'
       url: '/annotations/reviewing-annotations.html'
     - name: 'Using Custom Transitions with Animate.css'
