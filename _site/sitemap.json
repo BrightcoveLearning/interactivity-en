@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -242,11 +242,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/custom-annotations/custom-form-annotation.html",
       "oldURL": "/custom-form-annotation"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/annotations/custom-transitions-with-animate-css-beta.html",
-      "oldURL": "/custom-transitions-with-animate-css-beta"
   },
 
   {
@@ -772,6 +767,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/custom-annotations/user-sentiment-widget.html",
       "oldURL": "/user-sentiment-widget"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/annotations/using-custom-transitions-with-animate-css.html",
+      "oldURL": "/using-custom-transitions-with-animate-css"
   },
 
   {
