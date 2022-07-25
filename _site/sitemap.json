@@ -75,6 +75,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/annotations/adding-quiz-annotation.html",
+      "oldURL": "/adding-quiz-annotation"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/annotations/adding-text-overlay.html",
       "oldURL": "/adding-text-overlay"
   },
@@ -637,11 +642,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/publishing-to-an-lms.html",
       "oldURL": "/publishing-to-an-lms"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/annotations/quiz-annotation.html",
-      "oldURL": "/quiz-annotation"
   },
 
   {

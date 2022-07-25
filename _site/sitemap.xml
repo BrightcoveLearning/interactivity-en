@@ -137,6 +137,16 @@
       
         <url>
           
+            <loc>https://interactivity.support.brightcove.com/annotations/adding-quiz-annotation.html</loc>
+          
+            <lastmod>2022-07-25</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://interactivity.support.brightcove.com/annotations/adding-image-overlay.html</loc>
           
             <lastmod>2022-07-25</lastmod>
@@ -228,16 +238,6 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/annotations/looping-back-in-a-video.html</loc>
-          
-            <lastmod>2022-07-25</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/quiz-annotation.html</loc>
           
             <lastmod>2022-07-25</lastmod>
             <changefreq>daily</changefreq>

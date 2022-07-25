@@ -33,6 +33,8 @@
   name: 'Annotations'
   url: '/annotations/index.html'
   docs:
+    - name: 'Adding a Quiz Annotation'
+      url: '/annotations/adding-quiz-annotation.html'
     - name: 'Adding an Image Overlay'
       url: '/annotations/adding-image-overlay.html'
     - name: 'Adding an Text Overlay'
@@ -53,8 +55,6 @@
       url: '/annotations/configuring-annotation-links.html'
     - name: 'Looping Back in a Video'
       url: '/annotations/looping-back-in-a-video.html'
-    - name: 'Quiz Annotation'
-      url: '/annotations/quiz-annotation.html'
     - name: 'Quiz - Conditional Gating'
       url: '/annotations/quiz-conditional-gating.html'
     - name: 'Quiz Pass / Fail Threshold'
