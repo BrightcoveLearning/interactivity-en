@@ -340,11 +340,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/annotations/how-to-loop-back-in-the-video.html",
-      "oldURL": "/how-to-loop-back-in-the-video"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/examples/hp.html",
       "oldURL": "/hp"
   },
@@ -557,6 +552,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/customize/localization-change-the-language-translate-the-language.html",
       "oldURL": "/localization-change-the-language-translate-the-language"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/annotations/looping-back-in-a-video.html",
+      "oldURL": "/looping-back-in-a-video"
   },
 
   {
