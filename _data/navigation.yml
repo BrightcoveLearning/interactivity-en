@@ -63,8 +63,6 @@
   name: 'Custom Annotations'
   url: '/custom-annotations/index.html'
   docs:
-    - name: '360 Interactive Video'
-      url: '/custom-annotations/360-interactive-video.html'
     - name: 'Add a MailChimp Form to a Video'
       url: '/custom-annotations/add-a-mailchimp-form-to-a-video.html'
     - name: 'Add a Typeform to a Video'
