@@ -55,8 +55,6 @@
       url: '/annotations/configuring-annotation-links.html'
     - name: 'Looping Back in a Video'
       url: '/annotations/looping-back-in-a-video.html'
-    - name: 'Quiz - Conditional Gating'
-      url: '/annotations/quiz-conditional-gating.html'
     - name: 'Reviewing Annotations'
       url: '/annotations/reviewing-annotations.html'
     - name: 'Using Custom Transitions with Animate.css'

@@ -273,10 +273,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/annotations/quiz-conditional-gating.html">Quiz - Conditional Gating</a></li>
-                  
-                
-                  
                     <li><a href="/annotations/reviewing-annotations.html">Reviewing Annotations</a></li>
                   
                 
@@ -859,6 +855,25 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       pass/fail threshold</h4>
     <p>When quizzes are used for assessment, Brightcove Interactivity records a pass / fail determination for each quiz. Since the quiz annotation supports more than one question, the pass/fail threshold lets you define what percentage of those questions must be answered correctly for the user to "pass."</p>
     <p>By default, the threshold to pass any quiz is 51%. You can override this percentage to apply your own standards. This is a tricky feature though, here's why. Brightcove Interactivity reports do not currently show "pass/fail" determinations, they only show correct/incorrect at the individual question level. The reason this feature exists is to properly mark the data for customers with a Learning Management System (LMS) integration or who use our APIs directly to access the data.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="quiz-gating">Requiring a user pass a quiz before advancing in a video</h2>
+    <p>A common use case is to require that a viewer &quot;pass&quot; a quiz before they can advance forward in the video. This is referred to as &quot;conditional gating&quot; and this is supported by Brightcove Interactivity.</p>
+    <p>Follow these steps when configuring the quiz:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Edit</strong> on the annotation.</li>
+      <li>Click the <strong>Gate</strong> menu to set <strong>Gate:Y</strong>.</li>
+      <li>Click <strong>Options</strong> &gt; <strong>Review screen</strong>.</li>
+      <li>Uncheck<strong> Allow viewer to see correct answer(s)</strong>.</li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+      <li>Click <strong>Options</strong> &gt; <strong>Pass/Fail actions</strong>.</li>
+      <li>Click the <strong>On Fail</strong> tab.</li>
+      <li>Set <strong>Jump to video time</strong> to a <strong>Custom time</strong> of <strong>00:00.000 seconds</strong>.</li>
+      <li>Check <strong>Reset questions</strong>.</li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+      <li>Click <strong>Done</strong>.</li>
+    </ol>
+    <p>A viewer will not be able to proceed in the video until they have correctly answered the question.&nbsp;View an example <a href="/demos/gated-quiz-demo.html" rel="nofollow noopener noreferrer" target="_blank">here</a>. </p>
   </section>
   <section class="bcls-section">
     <h2 id="free-response-question">Creating a free response question</h2>
