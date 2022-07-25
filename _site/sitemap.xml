@@ -305,6 +305,16 @@
       
         <url>
           
+            <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-sentiment-video.html</loc>
+          
+            <lastmod>2022-07-25</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://interactivity.support.brightcove.com/custom-annotations/add-an-olark-widget-to-a-video.html</loc>
           
             <lastmod>2022-07-25</lastmod>
@@ -356,16 +366,6 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/custom-annotations/sign-in-annotation-aka-lead-wall-turnstile-gate.html</loc>
-          
-            <lastmod>2022-07-25</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/user-sentiment-widget.html</loc>
           
             <lastmod>2022-07-25</lastmod>
             <changefreq>daily</changefreq>

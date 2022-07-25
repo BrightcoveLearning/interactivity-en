@@ -69,6 +69,8 @@
       url: '/custom-annotations/add-a-mailchimp-form-to-a-video.html'
     - name: 'Add a Typeform to a Video'
       url: '/custom-annotations/add-a-typeform-to-a-video.html'
+    - name: 'Adding User Sentiment to Videos'
+      url: '/custom-annotations/adding-sentiment-video.html'
     - name: 'Add an Olark Widget to a Video'
       url: '/custom-annotations/add-an-olark-widget-to-a-video.html'
     - name: 'Custom Form Widget'
@@ -81,8 +83,6 @@
       url: '/custom-annotations/poll-widget.html'
     - name: 'Sign In Widget'
       url: '/custom-annotations/sign-in-annotation-aka-lead-wall-turnstile-gate.html'
-    - name: 'User Sentiment Widget'
-      url: '/custom-annotations/user-sentiment-widget.html'
 - section: 
   name: 'Customizations'
   url: '/customize/index.html'
