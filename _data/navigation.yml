@@ -49,8 +49,6 @@
       url: '/annotations/bulk-annotation-edit.html'
     - name: 'Chapter Menu and Chapters'
       url: '/annotations/chapter-menu-and-chapters.html'
-    - name: 'Closed Captions'
-      url: '/annotations/closed-captions.html'
     - name: 'Configuring Annotation Links'
       url: '/annotations/configuring-annotation-links.html'
     - name: 'Custom Transitions with Animate.css (Beta)'
