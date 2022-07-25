@@ -275,7 +275,7 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/add-a-mailchimp-form-to-a-video.html</loc>
+            <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-a-mailchimp-form-to-a-video.html</loc>
           
             <lastmod>2022-07-25</lastmod>
             <changefreq>daily</changefreq>
@@ -285,7 +285,27 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/add-a-typeform-to-a-video.html</loc>
+            <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-a-typeform-to-a-video.html</loc>
+          
+            <lastmod>2022-07-25</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/custom-annotations/display-rule.html</loc>
+          
+            <lastmod>2022-07-25</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-an-olark-widget-to-a-video.html</loc>
           
             <lastmod>2022-07-25</lastmod>
             <changefreq>daily</changefreq>
@@ -296,16 +316,6 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-sentiment-video.html</loc>
-          
-            <lastmod>2022-07-25</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/add-an-olark-widget-to-a-video.html</loc>
           
             <lastmod>2022-07-25</lastmod>
             <changefreq>daily</changefreq>
@@ -326,16 +336,6 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/custom-annotations/custom-widget-library.html</loc>
-          
-            <lastmod>2022-07-25</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/display-rule.html</loc>
           
             <lastmod>2022-07-25</lastmod>
             <changefreq>daily</changefreq>

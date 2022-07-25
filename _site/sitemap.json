@@ -15,33 +15,18 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
       "newURL": "https://interactivity.support.brightcove.com/references/accessing-reporting-endpoints.html",
       "oldURL": "/accessing-reporting-endpoints"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/add-a-mailchimp-form-to-a-video.html",
-      "oldURL": "/add-a-mailchimp-form-to-a-video"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/add-a-typeform-to-a-video.html",
-      "oldURL": "/add-a-typeform-to-a-video"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/add-an-olark-widget-to-a-video.html",
-      "oldURL": "/add-an-olark-widget-to-a-video"
   },
 
   {
@@ -67,6 +52,26 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-a-hapyak-video-to-blackboard.html",
       "oldURL": "/adding-a-hapyak-video-to-blackboard"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/adding-a-mailchimp-form-to-a-video.html",
+      "oldURL": "/adding-a-mailchimp-form-to-a-video"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/adding-a-typeform-to-a-video.html",
+      "oldURL": "/adding-a-typeform-to-a-video"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/adding-an-olark-widget-to-a-video.html",
+      "oldURL": "/adding-an-olark-widget-to-a-video"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/adding-display-rule.html",
+      "oldURL": "/adding-display-rule"
   },
 
   {
@@ -267,11 +272,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/troubleshooting/detecting-browser-version-and-operating-system-version.html",
       "oldURL": "/detecting-browser-version-and-operating-system-version"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/display-rule.html",
-      "oldURL": "/display-rule"
   },
 
   {
@@ -485,12 +485,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/projects/",
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/",
+      "newURL": "https://interactivity.support.brightcove.com/projects/",
       "oldURL": "/index"
   },
 

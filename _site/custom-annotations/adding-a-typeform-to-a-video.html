@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="How to add a display rule to your video.">
+  <meta name="description" content="How to add a Typeform to a Video.">
   
-  <title>Adding a Display Rule to a Video</title>
+  <title>Adding a Typeform to a Video</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -59,13 +59,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
-      <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
       
       
-      
-      <li class="breadcrumb-item"><a href="/custom-annotations/">Custom Annotations</a></li>
-      
-      <li class="breadcrumb-item active" aria-current="page">Adding a Display Rule to a Video</li>
+      <li class="breadcrumb-item active" aria-current="page">Adding a Typeform to a Video</li>
     </ol>
   </nav>
 </header>
@@ -288,19 +284,23 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/custom-annotations/add-a-mailchimp-form-to-a-video.html">Add a MailChimp Form to a Video</a></li>
+                    <li><a href="/custom-annotations/adding-a-mailchimp-form-to-a-video.html">Adding a MailChimp Form to a Video</a></li>
                   
                 
                   
-                    <li><a href="/custom-annotations/add-a-typeform-to-a-video.html">Add a Typeform to a Video</a></li>
+                    <li><a href="/custom-annotations/adding-a-typeform-to-a-video.html">Adding a Typeform to a Video</a></li>
+                  
+                
+                  
+                    <li><a href="/custom-annotations/display-rule.html">Adding a Display Rule to a Video</a></li>
+                  
+                
+                  
+                    <li><a href="/custom-annotations/adding-an-olark-widget-to-a-video.html">Adding an Olark Widget to a Video</a></li>
                   
                 
                   
                     <li><a href="/custom-annotations/adding-sentiment-video.html">Adding User Sentiment to Videos</a></li>
-                  
-                
-                  
-                    <li><a href="/custom-annotations/add-an-olark-widget-to-a-video.html">Add an Olark Widget to a Video</a></li>
                   
                 
                   
@@ -309,10 +309,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     <li><a href="/custom-annotations/custom-widget-library.html">Custom Widget Library</a></li>
-                  
-                
-                  
-                    <li><a href="/custom-annotations/display-rule.html">Adding a Display Rule to a Video</a></li>
                   
                 
                   
@@ -782,38 +778,74 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Adding a Display Rule to a Video</h1>
+<h1>Adding a Typeform to a Video</h1>
 <article class="bcls-article">
-  <summary>How to add a display rule to your video.</summary>
+  <summary>How to add a Typeform to a Video.</summary>
   <section class="bcls-section">
-    <p><i>Friendly Warning: welcome to developer territory.&nbsp;</i></p>
-    <p><i>You will have a lot of fun if you are comfortable with HTML, Javascript and CSS, or have a friend / colleague that is. If not, you may have a bad time.&nbsp;</i></p>
-    <p><i>If you are a real do-it-yourselfer and want to learn yourself, we highly recommend first taking Codeacademy's free </i><a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank"><i>HTML/CSS</i></a><i> and </i><a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank"><i>JavaScript</i></a><i> courses. </i></p>
-    <p>The <b>Display Rule</b> allows you to make an annotation appear only under certain conditions. Common conditions include:</p>
-    <ul>
-      <li>Display when a viewer clicks on a different annotation. </li>
-      <li>Display when the viewer gets a question right or wrong. </li>
-      <li>Display based on a parameter passed in from an external API. </li>
-    </ul>
-    <h3 id="examples">Examples</h3>
-    <p>Here's a basic example. Clicking on one annotation will make another appear.</p>
-    <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/ac7b47a05a639b26b56e6944cdce2f94" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-1.png"></a></div>
-    <p>Here's a more sophisticated example.</p>
-    <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/8b8418334f111ecb6b41e07b9aca6880" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-2.png"></a></div>
-    <h3 id="how-to-do-it">How to do it</h3>
-    <p>The first (or "target") annotation can be a text, image or hotspot annotation.<br>
-      Set the <b>Link</b> / <b>Evaluate</b> expression field to something like: <code>displayTextBox=true</code>.</p>
-    <p>The second (or "destination") annotation can be any type - text, image, hotspot, iframe, even a quiz. On this, set the <b>Display Rule</b> field to something like: <code>displayTextBox==true</code>.</p>
-    <h3 id="optional-configuration">Optional Configuration</h3>
-    <p>The more sophisticated example has the following configuration:</p>
-    <p><b>Target Annotation</b><br>
-      <b>Link</b> / <b>Evaluate</b> expression: <code>player.pause(), displayTextBox=true, displayQuestionBox=false</code><br>
-      <b>Display Rule</b>: <code>displayQuestionBox==true || displayQuestionBox==undefined</code><br>
-      <br>
-      <b>Destination Annotation<br>
-      </b><b>Link</b> / <b>Evaluate</b> expression: <code>player.play(), displayTextBox=false, displayQuestionBox=true</code><br>
-      <b>Display Rule</b>: <code>displayTextBox==true</code><br>
-      <b>Start time and Duration </b>for both the target and destination annotations are identical.</p>
+    <p><a href="http://www.typeform.com/" rel="nofollow noopener noreferrer" target="_blank">Typeform</a> is a free online survey and form builder. You can now add these forms directly on top of a video using HapYak. Here's how:<br>
+    </p>
+    <ol class="bcls-tasklist-restart">
+      <li>In HapYak, add an iframe annotation to your video where you want the form to appear. </li>
+      <li>Click the <b>HTML</b> tab. Replace the default HTML with the HTML TEMPLATE below. </li>
+      <li>Copy the <i>Full Page Embed Code</i> for the form from TypeForm. </li>
+      <li>Paste your TypeForm embed code where it says &lt;!-- ***Paste your Typeform embed code here*** --&gt; </li>
+      <li>Click <b>Submit</b>. </li>
+      <li>Click <b>Done</b>. </li>
+    </ol>
+    <h3 id="tips">Tips</h3>
+    <p>By default the form will be shown for 3 seconds. You have the following options to increase the users ability to engage with it.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Increase the <b>Duration</b> </li>
+      <li>Set <b>Pause: Y</b></li>
+      <li>Set <b>Gate: Y</b> (<i>Note: Set either Pause or Gate, not both</i>)</li>
+    </ol>
+    <h3 id="html-template">HTML TEMPLATE</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+       &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;TypeForm Widget for HapYak&lt;/title&gt;
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://hapyak_demos.s3.amazonaws.com/css/hy_widget_typeform.css&quot;&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;div class=&quot;hy_widget&quot;&gt;
+      &lt;div class=&quot;hy_widget_typeformTop&quot;&gt;Click here when done. &lt;button onclick=&quot;resumeVideo()&quot;&gt;Resume Video&lt;/button&gt;&lt;/div&gt;
+      &lt;!-- [BEGIN Typeform embed code] --&gt;
+                    &lt;!-- ***Paste your Typeform embed code here*** --&gt;
+      
+      
+                      &lt;!-- [END  Typeform embed code] --&gt;
+      &lt;/div&gt;
+      &lt;/body&gt;
+      &lt;script src=&quot;//code.jquery.com/jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;//d2qrdklrsxowl2.cloudfront.net/js/hapyak-iframe.js&quot;&gt;&lt;/script&gt;
+      &lt;script&gt;
+      $(document).ready(function() {
+      //this can be manually changed to your desired height
+      $(&quot;.typeform-widget&quot;).height(&quot;450px&quot;);
+      hapyak.context.addEventListener(&apos;iframeshow&apos;, function () {
+      //dynamically ensure the iframe will fit the typeform
+      hapyak.context.height = document.body.querySelector(&apos;.hy_widget&apos;).offsetHeight;
+      //ensure the widget is visible - probably not needed
+      $(&quot;.hy_widget&quot;).show();
+      //this is needed if the iframe isn&apos;t configured to pause or gate
+      $(&quot;.hy_widget&quot;).hover(function() {
+      hapyak.context.player.pause()
+      });
+      });
+      })
+      function resumeVideo() {
+      //remove the pause-on-hover
+      $(&quot;.hy_widget&quot;).unbind(&apos;mouseenter mouseleave&apos;)
+      //hide the form
+      $(&quot;.hy_widget&quot;).hide();
+      //resume the video
+      hapyak.context.releaseGate();
+      hapyak.context.player.play();
+      }
+      &lt;/script&gt;
+      &lt;/html&gt;</code></pre>
+    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
   </section>
 </article>
 
@@ -832,7 +864,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 21 Jul 2022
+  Page last updated on 25 Jul 2022
 </div>
 
 
