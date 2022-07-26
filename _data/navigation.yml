@@ -71,8 +71,6 @@
       url: '/custom-annotations/adding-an-olark-widget-to-a-video.html'
     - name: 'Adding User Sentiment to Videos'
       url: '/custom-annotations/adding-sentiment-video.html'
-    - name: 'Custom Form Widget'
-      url: '/custom-annotations/custom-form-annotation.html'
     - name: 'Custom Widget Library'
       url: '/custom-annotations/custom-widget-library.html'
     - name: 'Embedding a Form in a Video'
