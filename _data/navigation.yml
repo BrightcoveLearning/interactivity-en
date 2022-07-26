@@ -63,8 +63,6 @@
   name: 'Custom Annotations'
   url: '/custom-annotations/index.html'
   docs:
-    - name: 'Adding a Typeform to a Video'
-      url: '/custom-annotations/adding-a-typeform-to-a-video.html'
     - name: 'Adding a Display Rule to a Video'
       url: '/custom-annotations/display-rule.html'
     - name: 'Adding an Olark Widget to a Video'
