@@ -1,6 +1,6 @@
 [
   {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/360-interactive-video.html",
+      "newURL": "https://interactivity.support.brightcove.com/delete/360-interactive-video.html",
       "oldURL": "/360-interactive-video"
   },
 
@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -55,12 +55,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/adding-a-mailchimp-form-to-a-video.html",
+      "newURL": "https://interactivity.support.brightcove.com/delete/adding-a-mailchimp-form-to-a-video.html",
       "oldURL": "/adding-a-mailchimp-form-to-a-video"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/adding-a-typeform-to-a-video.html",
+      "newURL": "https://interactivity.support.brightcove.com/delete/adding-a-typeform-to-a-video.html",
       "oldURL": "/adding-a-typeform-to-a-video"
   },
 
@@ -77,6 +77,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/annotations/adding-image-overlay.html",
       "oldURL": "/adding-image-overlay"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/adding-poll-video.html",
+      "oldURL": "/adding-poll-video"
   },
 
   {
@@ -365,7 +370,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/experiences/",
+      "newURL": "https://interactivity.support.brightcove.com/styling/",
       "oldURL": "/index"
   },
 
@@ -435,6 +440,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/getting-started/",
       "oldURL": "/index"
   },
@@ -446,11 +456,6 @@
 
   {
       "newURL": "https://interactivity.support.brightcove.com/examples/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/styling/",
       "oldURL": "/index"
   },
 
@@ -622,11 +627,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/general/optimal-export-settings.html",
       "oldURL": "/optimal-export-settings"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/poll-widget.html",
-      "oldURL": "/poll-widget"
   },
 
   {
