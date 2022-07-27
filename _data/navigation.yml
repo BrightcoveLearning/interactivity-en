@@ -65,8 +65,6 @@
   docs:
     - name: 'Adding a Display Rule to a Video'
       url: '/custom-annotations/display-rule.html'
-    - name: 'Adding an Olark Widget to a Video'
-      url: '/custom-annotations/adding-an-olark-widget-to-a-video.html'
     - name: 'Adding User Sentiment to Videos'
       url: '/custom-annotations/adding-sentiment-video.html'
     - name: 'Embedding a Form in a Video'
