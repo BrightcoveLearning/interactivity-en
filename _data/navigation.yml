@@ -67,7 +67,7 @@
       url: '/custom-annotations/display-rule.html'
     - name: 'Adding a Poll to a Video'
       url: '/custom-annotations/adding-poll-video.html'
-    - name: 'Adding a Sign In Form to a video'
+    - name: 'Adding a Sign In Form to a Video'
       url: '/custom-annotations/adding-sign-in-video.html'
     - name: 'Adding User Sentiment to Videos'
       url: '/custom-annotations/adding-sentiment-video.html'
