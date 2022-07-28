@@ -215,7 +215,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/customize/changing-the-video-source-of-a-project.html",
+      "newURL": "https://interactivity.support.brightcove.com/projects/changing-the-video-source-of-a-project.html",
       "oldURL": "/changing-the-video-source-of-a-project"
   },
 
@@ -270,7 +270,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/customize/customizing-the-hapyak-player.html",
+      "newURL": "https://interactivity.support.brightcove.com/general/customizing-the-hapyak-player.html",
       "oldURL": "/customizing-the-hapyak-player"
   },
 
@@ -375,7 +375,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/styling/",
+      "newURL": "https://interactivity.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -455,12 +455,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/support/",
+      "newURL": "https://interactivity.support.brightcove.com/examples/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/",
+      "newURL": "https://interactivity.support.brightcove.com/styling/",
       "oldURL": "/index"
   },
 
@@ -491,11 +491,6 @@
 
   {
       "newURL": "https://interactivity.support.brightcove.com/analytics/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/customize/",
       "oldURL": "/index"
   },
 
@@ -570,7 +565,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/customize/localization-change-the-language-translate-the-language.html",
+      "newURL": "https://interactivity.support.brightcove.com/general/localization-change-the-language-translate-the-language.html",
       "oldURL": "/localization-change-the-language-translate-the-language"
   },
 

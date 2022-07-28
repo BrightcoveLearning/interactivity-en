@@ -333,16 +333,6 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/customize/changing-the-video-source-of-a-project.html</loc>
-          
-            <lastmod>2022-07-28</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
             <loc>https://interactivity.support.brightcove.com/customize/customizing-the-hapyak-player.html</loc>
           
             <lastmod>2022-07-28</lastmod>
@@ -468,6 +458,16 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/projects/branching-choose-your-own-adventure-video.html</loc>
+          
+            <lastmod>2022-07-28</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/projects/changing-the-video-source-of-a-project.html</loc>
           
             <lastmod>2022-07-28</lastmod>
             <changefreq>daily</changefreq>
@@ -915,7 +915,27 @@
       
         <url>
           
+            <loc>https://interactivity.support.brightcove.com/general/customizing-the-hapyak-player.html</loc>
+          
+            <lastmod>2022-07-28</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://interactivity.support.brightcove.com/general/edit-videos-in-quicktime.html</loc>
+          
+            <lastmod>2022-07-28</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/customize/localization-change-the-language-translate-the-language.html</loc>
           
             <lastmod>2022-07-28</lastmod>
             <changefreq>daily</changefreq>
