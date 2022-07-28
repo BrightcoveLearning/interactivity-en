@@ -7,14 +7,50 @@ parent: Custom Annotations
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>Display rules can be used to make an annotation appear only under certain conditions. Common conditions include:</p>
+    <p>Display Rules are JavaScript expressions that test variables for the purpose of conditionally displaying annotations. If the expression evaluates to TRUE, the annotation will be rendered.  If the expression evaluates to FALSE, the annotation will not be rendered. Display Rules can be added to any annotation type. Common use cases include:</p>
     <ul>
       <li>Display an annotation when a viewer clicks on a different annotation</li>
       <li>Display an annotation when the viewer gets a quiz question right or wrong</li>
       <li>Display an annotation based on a parameter passed in from an external API </li>
     </ul>
     <p>Display rules require that  you are comfortable working with HTML, JavaScript and CSS. Codeacademy offers  free <a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank">HTML/CSS</a> and <a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank">JavaScript</a> courses that may be helpful to beginners. </p>
-    <h3 id="examples">Example</h3>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add-rule">Adding a display rule</h2>
+    <p>To add a display rule to an annotation, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>Click on a project to open it.</li>
+      <li>In the list of annotations, locate the annotation and click the edit icon (<img src="/assets/images/custom-annotations/display-rules/icon-edit.png">).</li>
+      <li>In the <strong>Edit</strong> menu, click <strong>More...</strong></li>
+      <li>Click <strong>Display Rule</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/custom-annotations/display-rules/new-display-rule.png"> </figure>
+      </li>
+      <li>Enter the display rule. The expression entered in this dialog will be evaluated prior to rendering the annotation.<br>
+      </li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+      <li>Click <strong>Done</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="syntax">Display rule syntax</h2>
+    <h3>Testing for a set variable</h3>
+    <p>Rule: <code>[variable name]</code> eg. <code>my_var</code></p>
+    <p>This will be true if the resolved variable is defined and it’s value is not false</p>
+    <h3>Testing equality</h3>
+    <p>Rule: <code>[variable name]=='value'</code> eg. <code>my_var=='Kyle'</code> (Note: Single quotes)</p>
+    <p>This will be true only if the resolved variable is exactly equal to the string value between the single quotes</p>
+    <h3>Testing for correct quiz answers</h3>
+    <p>Rule: <code>[quiz variable name]_correct</code> eg. <code>quiz_123_1_correct</code></p>
+    <p>This will be true only if the resolved variable is equal to the correct answer of the quiz question</p>
+    <h3>Testing for incorrect quiz answers</h3>
+    <p>Rule: <code>[quiz variable name] &amp;&amp; ![quiz variable name]_correct</code> eg. <code>quiz_123_1 &amp;&amp;<br>
+      !quiz_123_1_correct</code></p>
+    <p>This will be true only if the resolved variable is NOT equal to the correct answer of the quiz question.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="example">Example</h2>
     <p>Here's a basic example. Clicking on one annotation will make another appear.</p>
     <div style="position: relative; display: block; max-width: 800px;">
       <div style="padding-top: 56.25%;">
