@@ -759,34 +759,32 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>In this topic you will learn how to add a display rule to a video.</summary>
   <section class="bcls-section">
-    <p><i>Friendly Warning: welcome to developer territory.&nbsp;</i></p>
-    <p><i>You will have a lot of fun if you are comfortable with HTML, Javascript and CSS, or have a friend / colleague that is. If not, you may have a bad time.&nbsp;</i></p>
-    <p><i>If you are a real do-it-yourselfer and want to learn yourself, we highly recommend first taking Codeacademy's free </i><a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank"><i>HTML/CSS</i></a><i> and </i><a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank"><i>JavaScript</i></a><i> courses. </i></p>
-    <p>The <b>Display Rule</b> allows you to make an annotation appear only under certain conditions. Common conditions include:</p>
+    <p>Display rules can be used to make an annotation appear only under certain conditions. Common conditions include:</p>
     <ul>
-      <li>Display when a viewer clicks on a different annotation. </li>
-      <li>Display when the viewer gets a question right or wrong. </li>
-      <li>Display based on a parameter passed in from an external API. </li>
+      <li>Display an annotation when a viewer clicks on a different annotation</li>
+      <li>Display an annotation when the viewer gets a quiz question right or wrong</li>
+      <li>Display an annotation based on a parameter passed in from an external API </li>
     </ul>
-    <h3 id="examples">Examples</h3>
+    <p>Display rules require that  you are comfortable working with HTML, JavaScript and CSS. Codeacademy offers  free <a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank">HTML/CSS</a> and <a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank">JavaScript</a> courses that may be helpful to beginners. </p>
+    <h3 id="examples">Example</h3>
     <p>Here's a basic example. Clicking on one annotation will make another appear.</p>
-    <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/ac7b47a05a639b26b56e6944cdce2f94" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-1.png"></a></div>
-    <p>Here's a more sophisticated example.</p>
-    <div class="intercom-container intercom-align-left"><a target="_blank" href="http://www.hapyak.com/portal/viewer/8b8418334f111ecb6b41e07b9aca6880" rel="nofollow noopener noreferrer"><img src="/assets/images/custom-annotations/displayrule-2.png"></a></div>
-    <h3 id="how-to-do-it">How to do it</h3>
-    <p>The first (or "target") annotation can be a text, image or hotspot annotation.<br>
-      Set the <b>Link</b> / <b>Evaluate</b> expression field to something like: <code>displayTextBox=true</code>.</p>
-    <p>The second (or "destination") annotation can be any type - text, image, hotspot, iframe, even a quiz. On this, set the <b>Display Rule</b> field to something like: <code>displayTextBox==true</code>.</p>
-    <h3 id="optional-configuration">Optional Configuration</h3>
-    <p>The more sophisticated example has the following configuration:</p>
-    <p><b>Target Annotation</b><br>
-      <b>Link</b> / <b>Evaluate</b> expression: <code>player.pause(), displayTextBox=true, displayQuestionBox=false</code><br>
-      <b>Display Rule</b>: <code>displayQuestionBox==true || displayQuestionBox==undefined</code><br>
-      <br>
-      <b>Destination Annotation<br>
-      </b><b>Link</b> / <b>Evaluate</b> expression: <code>player.play(), displayTextBox=false, displayQuestionBox=true</code><br>
-      <b>Display Rule</b>: <code>displayTextBox==true</code><br>
-      <b>Start time and Duration </b>for both the target and destination annotations are identical.</p>
+    <div style="position: relative; display: block; max-width: 800px;">
+      <div style="padding-top: 56.25%;">
+        <iframe src="https://players.brightcove.net/1752604059001/UivhMH9oq_default/index.html?videoId=1739617402811689392" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+    <p>In this example, a triggered action is set at the beginning of the video to set a JavaScript variable <code>apple</code> to <code>true</code>.</p>
+    <p>The image and text annotations are configured with the same start and end times.</p>
+    <p>The apple and orange images are both image overlays. They both have display rules set so they only show if their respective JavaScript variable (<code>apple</code> or <code>orange</code>) is set to <code>true</code>. For example, here is the display rule for the orange.</p>
+    <p>
+      <figure class="bcls-figure"> <img src="/assets/images/custom-annotations/display-rules/orange-display-rule.png"></figure>
+    </p>
+    <p>This will cause the orange image overlay to only display when the variable <code>orange = true</code>.</p>
+    <p>The text overlay <strong>Click here to change the image to display an orange</strong> is configured with a display rule to display when <code>apple = true</code>. The <strong>Link</strong> setting is configured to switch the variables when clicked.</p>
+    <p>
+      <figure class="bcls-figure"> <img src="/assets/images/custom-annotations/display-rules/orange-text.png"></figure>
+    </p>
+    <p>So clicking the text will set <code>orange</code> to <code>true</code> which will make the alternate text overlay and orange image both appear.</p>
   </section>
 </article>
 
