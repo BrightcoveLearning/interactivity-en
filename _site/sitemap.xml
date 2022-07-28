@@ -325,34 +325,6 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/customize/index.html</loc>
-        <lastmod>2022-07-28</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-      </url>
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/customize/customizing-the-hapyak-player.html</loc>
-          
-            <lastmod>2022-07-28</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/customize/localization-change-the-language-translate-the-language.html</loc>
-          
-            <lastmod>2022-07-28</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-    
-      <url>
         <loc>https://interactivity.support.brightcove.com/demos/index.html</loc>
         <lastmod>2022-07-28</lastmod>
         <changefreq>daily</changefreq>
