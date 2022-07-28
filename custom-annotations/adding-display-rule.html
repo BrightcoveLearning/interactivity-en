@@ -37,9 +37,9 @@ parent: Custom Annotations
     <h2 id="syntax">Display rule syntax</h2>
     <h3>Testing for a set variable</h3>
     <p>Rule: <code>[variable name]</code> eg. <code>my_var</code></p>
-    <p>This will be true if the resolved variable is defined and it’s value is not false</p>
+    <p>This is the same as writing <code>my_var=true</code>. This will be true if the resolved variable is defined and it’s value is not false</p>
     <h3>Testing equality</h3>
-    <p>Rule: <code>[variable name]=='value'</code> eg. <code>my_var=='Kyle'</code> (Note: Single quotes)</p>
+    <p>Rule: <code>[variable name]==&quot;value&quot;</code> eg. <code>my_var==&quot;Kyle&quot;</code></p>
     <p>This will be true only if the resolved variable is exactly equal to the string value between the single quotes</p>
     <h3>Testing for correct quiz answers</h3>
     <p>Rule: <code>[quiz variable name]_correct</code> eg. <code>quiz_123_1_correct</code></p>
