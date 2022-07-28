@@ -110,14 +110,6 @@
     - name: 'Salesforce Add-on'
       url: '/integrations/salesforce-add-on.html'
 - section: 
-  name: 'Mobile'
-  url: '/mobile/index.html'
-  docs:
-    - name: 'Mobile Support'
-      url: '/mobile/mobile-iphone-ipad-android-support.html'
-    - name: 'Mobile Support for Wistia'
-      url: '/mobile/mobile-support-for-wistia.html'
-- section: 
   name: 'Projects'
   url: '/projects/index.html'
   docs:
