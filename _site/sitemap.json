@@ -95,6 +95,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/adding-sign-in-video.html",
+      "oldURL": "/adding-sign-in-video"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/annotations/adding-text-overlay.html",
       "oldURL": "/adding-text-overlay"
   },
@@ -707,11 +712,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/sharing-on-social-channels-facebook-twitter-linkedin.html",
       "oldURL": "/sharing-on-social-channels-facebook-twitter-linkedin"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/sign-in-annotation-aka-lead-wall-turnstile-gate.html",
-      "oldURL": "/sign-in-annotation-aka-lead-wall-turnstile-gate"
   },
 
   {
