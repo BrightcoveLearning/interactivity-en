@@ -62,7 +62,7 @@
   url: '/custom-annotations/index.html'
   docs:
     - name: 'Adding a Display Rule to a Video'
-      url: '/custom-annotations/display-rule.html'
+      url: '/custom-annotations/adding-display-rule.html'
     - name: 'Adding a Poll to a Video'
       url: '/custom-annotations/adding-poll-video.html'
     - name: 'Adding a Sign In Form to a Video'
