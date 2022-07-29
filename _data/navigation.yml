@@ -121,10 +121,8 @@
   name: 'Experiences'
   url: '/experiences/index.html'
   docs:
-    - name: 'Branching - Brightcove'
-      url: '/experiences/branching-brightcove.html'
-    - name: 'Branching Experience'
-      url: '/experiences/branching-experience.html'
+    - name: 'Creating a Branching Experience'
+      url: '/experiences/creating-branching-experience.html'
     - name: 'Embedding a SlideSync Experience on a Webpage'
       url: '/experiences/embedding-a-slidesync-experience-on-a-webpage.html'
     - name: 'Experiences Overview'

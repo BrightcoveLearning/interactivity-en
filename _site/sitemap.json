@@ -170,18 +170,13 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/experiences/branching-brightcove.html",
+      "newURL": "https://interactivity.support.brightcove.com/delete/branching-brightcove.html",
       "oldURL": "/branching-brightcove"
   },
 
   {
       "newURL": "https://interactivity.support.brightcove.com/projects/branching-choose-your-own-adventure-video.html",
       "oldURL": "/branching-choose-your-own-adventure-video"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/experiences/branching-experience.html",
-      "oldURL": "/branching-experience"
   },
 
   {
@@ -257,6 +252,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/templates/creating-and-managing-templates.html",
       "oldURL": "/creating-and-managing-templates"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/experiences/creating-branching-experience.html",
+      "oldURL": "/creating-branching-experience"
   },
 
   {
