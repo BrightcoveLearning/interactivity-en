@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Search</title>
+  <title>Search Results</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -63,7 +63,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Search</li>
+      <li class="breadcrumb-item active" aria-current="page">Search Results</li>
     </ol>
   </nav>
 </header>
@@ -715,29 +715,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
   <!-- bootstrap layout -->
 
-<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/s-feather-img/menu.svg" alt="Navigation Menu"></p>
-
 <!-- search bar -->
-<div id="nav-search-box" style="margin-top: 1rem;"></div>
-<!-- in-page navigation for narrow screens -->
-<details class="centered-inpage-nav" id="centered_inpage_nav">
-  <summary><h6 class="toc">Page Contents</h6></summary>
-  <nav id="centered_toc"></nav>
-  <ul id="centered_in_page_toc" class="list-none"></ul>
-</details>
+<div id="nav-search-box" style="margin-top: 1rem;display: none;"></div>
+
 <!-- open in new tab/window -->
 <a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/s-feather-img/external-link.svg" alt="open in new tab" style="margin-top:4em;width: 1.5em;"></a>
-
-
-
   
     
 
 
-<script type="text/javascript" 
-    id="bcs_js_snippet"
-    src="https://ui.customsearch.ai/api/ux/rendering-js?customConfig=&market=en-US&version=latest&q=">
-</script>
+<h1>Search Results</h1>
+    <!-- This div is used to host the search box -->
+    <div id="results-search-box"></div>
+    <!-- This div is used to host the search response -->
+    <div id="results-search-response"></div>
+
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
