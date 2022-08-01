@@ -32,7 +32,7 @@
   url: '/annotations/index.html'
   docs:
     - name: 'Adding Interactive Chapters to a Video'
-      url: /annotations/adding-chapters-video.html
+      url: '/annotations/adding-chapters-video.html'
     - name: 'Adding a Quiz Annotation'
       url: '/annotations/adding-quiz-annotation.html'
     - name: 'Adding an Image Overlay'
@@ -165,8 +165,8 @@
       url: '/styling/project-level-css-hapyak-plugin.html'
     - name: 'Configuring Project Level CSS'
       url: '/styling/project-level-css.html'
-    - name: 'Simple text transitions'
-      url: '/styling/simple-text-transitions.html'
+    - name: 'Simple Text Color Styling'
+      url: '/styling/simple-text-color-styling.html'
     - name: 'Styling Annotations'
       url: '/styling/styling-annotations.html'
     - name: 'Using the Built In CSS Classes'
