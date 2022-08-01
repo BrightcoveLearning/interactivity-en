@@ -169,7 +169,7 @@
       url: '/styling/simple-text-color-styling.html'
     - name: 'Styling Annotations'
       url: '/styling/styling-annotations.html'
-    - name: 'Using the Built In CSS Classes'
+    - name: 'Using the Built-In CSS Classes'
       url: '/styling/using-built-in-css-classes.html'
 - section: 
   name: 'Analytics'
