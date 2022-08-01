@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -67,6 +67,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/delete/adding-an-olark-widget-to-a-video.html",
       "oldURL": "/adding-an-olark-widget-to-a-video"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/annotations/adding-chapters-video.html",
+      "oldURL": "/adding-chapters-video"
   },
 
   {
