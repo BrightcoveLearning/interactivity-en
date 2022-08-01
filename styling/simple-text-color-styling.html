@@ -1,17 +1,21 @@
 ---
 title: Simple Text Color Styling using CSS
-description: Add a little CSS to enhance your project.
-parent: Style
+description: In this topic you will learn how to add CSS to a project to change the color of text annotations.
+parent: Styling
 ---
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>A few lines of CSS can give your project a new look and feel. &nbsp;Let's see how changing the color of text can have a big effect.</p>
-    <h2 id="how-to">How To:</h2>
+    <p>A few lines of CSS can give your project a new look and feel. Follow these steps to change the color of text annotations in a project:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Add this style sheet to your current project:<code>//hapyak_demos.s3.amazonaws.com/css/customer/sample_on_hover_text_change.css</code>
-        <p>Or add this css to your current sheet:</p>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li> Click on a project to open it.</li>
+      <li>Click <span class="button-blue">Settings</span>.</li>
+      <li>In the <strong>Custom Annotation CSS (URL)</strong> field, add this style sheet.
+<code>//hapyak_demos.s3.amazonaws.com/css/customer/sample_on_hover_text_change.css</code>
+        <p>Or add this CSS to your current stylesheet:</p>
         <pre><code>.popcorn-pop.hapyak-theme-black.bright-red.active {
   color: #C60C46;
   background: rgba(255, 255, 255, 0);
@@ -25,14 +29,15 @@ parent: Style
 .popcorn-pop.hapyak-theme-black.bright-red.active:hover {
   background: rgba(255, 255, 255, 0);
   color: #f40656;
-}</code></pre>
-      </li>
-      <li>Create a new text annotation.</li>
-      <li>Click, <b>Edit</b>.</li>
-      <li>Click, <b>More</b>.</li>
-      <li>Click, <b>Add Class</b>.</li>
-      <li>Within the text box add a color, ex: <code>bright-red</code>.</li>
-      <li>Click, <b>Submit</b>.</li>
+}</code></pre></li>
+      <li>Locate a  text annotation and click <strong>Edit</strong>.</li>
+      <li>Click <strong>More...</strong>.</li>
+      <li>Click <strong>Add Class</strong>.</li>
+      <li>In the <strong>Classes</strong> textbox, add a color, ex: <code>bright-red</code>.
+        <figure class="bcls-figure"> <img src="/assets/images/styling/css-color-classes-dialog.png"></figure>
+</li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+      <li>Click <strong>Done</strong>.</li>
     </ol>
     <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
   </section>
