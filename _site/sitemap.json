@@ -770,6 +770,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/styling/using-built-in-css-classes.html",
+      "oldURL": "/using-built-in-css-classes"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/annotations/using-custom-transitions-with-animate-css.html",
       "oldURL": "/using-custom-transitions-with-animate-css"
   },
@@ -777,11 +782,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/custom-annotations/using-custom-widget-library.html",
       "oldURL": "/using-custom-widget-library"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/styling/using-hapyak-s-built-in-css-classes.html",
-      "oldURL": "/using-hapyak-s-built-in-css-classes"
   },
 
   {

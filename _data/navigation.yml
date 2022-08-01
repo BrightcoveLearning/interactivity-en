@@ -161,16 +161,16 @@
   docs:
     - name: 'Adjusting images to appear only on hover'
       url: '/styling/adjusting-images-to-appear-only-on-hover.html'
-    - name: 'Project Level CSS'
-      url: '/styling/project-level-css.html'
-    - name: 'Project Level CSS Via the HapYak Plugin'
+    - name: 'Applying Project Level CSS Via the HapYak Plugin'
       url: '/styling/project-level-css-hapyak-plugin.html'
+    - name: 'Configuring Project Level CSS'
+      url: '/styling/project-level-css.html'
     - name: 'Simple text transitions'
       url: '/styling/simple-text-transitions.html'
     - name: 'Styling Annotations'
       url: '/styling/styling-annotations.html'
-    - name: "Using HapYak's Built In CSS Classes"
-      url: '/styling/using-hapyak-s-built-in-css-classes.html'
+    - name: 'Using the Built In CSS Classes'
+      url: '/styling/using-built-in-css-classes.html'
 - section: 
   name: 'Analytics'
   url: '/analytics/index.html'
