@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -510,6 +510,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/integrations/integrating-with-an-lms.html",
+      "oldURL": "/integrating-with-an-lms"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/best-practices/interactive-video-script-template.html",
       "oldURL": "/interactive-video-script-template"
   },
@@ -560,7 +565,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/integrations/lms-integrations.html",
+      "newURL": "https://interactivity.support.brightcove.com/delete/lms-integrations.html",
       "oldURL": "/lms-integrations"
   },
 
@@ -572,11 +577,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/annotations/looping-back-in-a-video.html",
       "oldURL": "/looping-back-in-a-video"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/integrations/lti-integrating-with-your-lms.html",
-      "oldURL": "/lti-integrating-with-your-lms"
   },
 
   {
