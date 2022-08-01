@@ -127,6 +127,16 @@
       
         <url>
           
+            <loc>https://interactivity.support.brightcove.com/annotations/adding-chapters-video.html</loc>
+          
+            <lastmod>2022-08-01</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://interactivity.support.brightcove.com/annotations/adding-quiz-annotation.html</loc>
           
             <lastmod>2022-08-01</lastmod>
@@ -198,16 +208,6 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/annotations/bulk-annotation-edit.html</loc>
-          
-            <lastmod>2022-08-01</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/chapter-menu-and-chapters.html</loc>
           
             <lastmod>2022-08-01</lastmod>
             <changefreq>daily</changefreq>
