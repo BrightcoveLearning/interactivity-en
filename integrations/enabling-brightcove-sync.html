@@ -1,23 +1,44 @@
 ---
 title: Enabling Brightcove Sync
-description: Sync the titles and thumbnail images from your Brightcove account to your HapYak account.
+description: In this topic you will learn how to sync the titles and thumbnail images from your Brightcove account to your Brightcove Interactivity account.
 parent: Integrations
 ---
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <h3 id="title-and-thumbnail-sync">Title and Thumbnail Sync</h3>
-    <p>If you upload large numbers of videos to HapYak using the Brightcove plugin, you may be interested in enabling Brightcove Sync on your account. By default, HapYak Projects autocreated through the Brightcove plugin will have the same title as the Brightcove video title <i>when the project was autocreated</i> and will have no thumbnail image. However, users are able to ensure that the HapYak project title and thumbnail are updated to match either the title or thumbnail image of the video in Brightcove. </p>
-    <p>Syncing your Brightcove and HapYak accounts will add thumbnail images to any Brightcove videos present in your HapYak account that don't already have them. It's a huge time saver, especially when creating playlists in HapYak Experiences.</p>
-    <h3 id="how-to-enable-title-and-thumbnail-sync">How to Enable Title and Thumbnail Sync</h3>
+    <p>By default, projects that are auto-created using a HapYak-enabled Brightcove Player will have the same title as the Brightcove video title when the project was auto-created and will have no thumbnail image. The Brightcove Sync feature can be used to ensure that the Brightcove Interactivity project title and thumbnail are updated to match either the title or thumbnail image of the video in Brightcove. </p>
+    <p>Syncing your Brightcove and Brightcove Interactivity accounts will add thumbnail images to any Brightcove videos present in your Brightcove Interactivity account that don't already have them. Using the Brightcove Sync feature is a huge time saver, especially when creating playlists in Brightcove Interactivity Experiences.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="enable">Enabling Brightcove sync</h2>
+    <p> Follow these steps to enable Brightcove Sync:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Go to the <a href="https://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> tab on the HapYak Nav Bar. On the Brightcove card, switch on <b>Enable</b>. </li>
-      <li>In Brightcove, navigate to <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings" rel="nofollow noopener noreferrer" target="_blank">Admin / API Authentication</a>. Click "Register New Application". Fill out details according to <a href="https://studio.support.brightcove.com/admin/managing-api-authentication-credentials.html" rel="nofollow noopener noreferrer" target="_blank">this Brightcove support document</a>. Ensure that <b>Video Read</b> is checked under "Exposed Brightcove APIs". Click <b>Save</b>. </li>
-      <li>In the HapYak <a href="https://www.hapyak.com/portal/settings/integrations" rel="nofollow noopener noreferrer" target="_blank">Integrations</a> tab, enter your Brightcove API credentials (Client Id, Client Secret, Account Id). &nbsp;Click <b>Save</b>. <i>(</i> <b> <i>Note:</i> </b> <i> The sync button will not appear until you have entered all three credentials. If your credentials are incorrect, sync will fail.)</i> </li>
-      <li>Click <b>Sync Now</b> to start the sync process. When the sync is complete, you will be notified of the number of projects updated in your account. It should only take a few minutes. </li>
+      <li>Login to Video Cloud Studio.</li>
+      <li>In the primary navigation, click <strong>Admin</strong> &gt; <strong>API Authentication</strong>. Note that you must be an account administrator to access to the Admin menu.</li>
+      <li>Click <span class="button-blue">Register New Application</span>.</li>
+      <li> Fill out the fields to register a new application. See this <a href="https://studio.support.brightcove.com/admin/managing-api-authentication-credentials.html" target="_blank">Video Cloud document</a> for complete details. Ensure that in the <strong>CMS</strong> section that <strong>Video Read</strong> is checked. </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+      <li>Copy and save the values for <strong>Client ID</strong> and <strong>Client Secret</strong>.</li>
+      <li>Click <span class="button-blue">Okay, I copied it</span>.</li>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Integrations</strong>.</li>
+      <li>On the Brightcove card, switch on <strong>Enable</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/integrations/brightcove-card.png"></figure>
+      </li>
+      <li>Paste in your <strong>Client Id</strong> and <strong>Client Secret</strong> that you just created in Video Cloud Studio.</li>
+      <li>Paste in your Video Cloud <strong>Account Id</strong>. To get your account ID, in Video Cloud Studio, click the user icon in the top right of the page. The Account ID is located right below the account name.
+        <figure class="bcls-figure"> <img src="/assets/images/integrations/vc-account-id.png"></figure>
+      </li>
+      <li>In the <strong>Sync with Brightcove</strong> section, switch on <strong>Enable</strong>.</li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+      <li>Click <span class="button-blue">Sync Now</span> to start the sync process.
+        <aside class="bcls-aside bcls-aside--information">Note: The sync button will not appear until you have entered all three credentials.</aside>
+      </li>
     </ol>
+    <p>When the sync is complete, you will be notified of the number of projects updated in your account. It should only take a few minutes.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: If your credentials are incorrect, sync will fail.</aside>
     <figure class="bcls-figure"> <img src="/assets/images/integrations/sync-finished.png"> </figure>
-    <p>Repeat step 4 every time you'd like to update the Project titles and Thumbnails. Here is a video tutorial on <a href="https://bcove.video/2rVpDrC" rel="nofollow noopener noreferrer" target="_blank">how to turn on Title Sync</a>. </p>
+    <p>Repeat this process every time you'd like to update the project titles.</p>
   </section>
 </article>
