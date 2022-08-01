@@ -1,24 +1,35 @@
 ---
 title: Using the Built-In CSS Classes
-description: What is available and how to apply.
+description: In this topic you will learn how to use and apply the built-in CSS classes that are available.
 parent: Styling
 ---
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>In your editor, you have access to some CSS classes that are built in to the HapYak Platform. The intention of these classes is to help solve issues commonly faced while authoring content. This Article will cover how to apply classes, followed by a breakdown of each class, what it does, and which annotations it is compatible with.</p>
-    <p>In addition to the classes described below, there are a number of others available to you that add simple animated transitions to your annotations. To read an article about the animation CSS classes, <a href="/annotations/using-custom-transitions-with-animate-css.html" data-is-internal-link="true">click here</a>.</p>
-    <h2 id="apply-class">How to Apply Classes</h2>
-    <p>To Apply a custom class to an annotation, click into the <code>edit</code> tab, and then into <code>add-class</code> . Once you do this, you will see this screen: <br>
-    </p>
-    <figure class="bcls-figure"><img src="/assets/images/styling/apply-custom-class.png"></figure>
-    <p>Add class names to the field exactly as they appear in the list below. Multiple classes can be applied to a single annotation, but must be separated by a space, and should not be preceded by a period.</p>
+    <p>In the Interactivity Editor  you have access to some CSS classes that are built in to the Brightcove Interactivity platform. The intention of these classes is to help solve issues commonly faced while authoring content. This topic will cover how to apply classes, followed by a breakdown of each class, what it does, and which annotations it is compatible with.</p>
+    <p>In addition to the classes described below, there are a number of others available to you that add simple animated transitions to your annotations. For more information, see <a href="/annotations/using-custom-transitions-with-animate-css.html">Using Custom Transitions with Animate.css</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="apply-class">How to apply classes</h2>
+    <p>To apply a custom class to an annotation, follow these steps:</p>
+    <p> Follow these steps to add a Custom Form (this topic uses a Google Form) widget to a project:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li> Click on a project to open it.</li>
+      <li><strong>Edit</strong> an annotation.</li>
+      <li>Click <strong>More...</strong></li>
+      <li>Click <strong>Add Class</strong>.
+        <figure class="bcls-figure"><img src="/assets/images/styling/empty-css-class.png"></figure>
+      </li>
+    </ol>
+    <p>Add class names to the <strong>Classes</strong> field exactly as they appear in the list below. Multiple classes can be applied to a single annotation but must be separated by a space and should not be preceded by a period.</p>
   </section>
   <section class="bcls-section">
     <h2 id="1--hapyak-annotation-full-frame">hapyak-annotation-full-frame</h2>
     <p>This class will modify the selected annotation to snap to fit the entire frame of your video.</p>
-    <p>Compatible Annotations types:</p>
+    <p>Compatible annotation types:</p>
     <ul>
       <li>Transparent Overlay</li>
       <li>Image Overlay</li>
@@ -28,8 +39,8 @@ parent: Styling
   </section>
   <section class="bcls-section">
     <h2 id="2-hapyak-annotation-bring-to-top">hapyak-annotation-bring-to-top</h2>
-    <p>This class will make the selected annotation appear at the "Top" layer on top of your interactive experience. This is useful if you want to make sure an element always appears to be "in front" or "on top" of another element. ie</p>
-    <p>Compatible Annotations types:</p>
+    <p>This class will make the selected annotation appear at the "top" layer on top of your interactive experience. This is useful if you want to make sure an element always appears to be "in front" or "on top" of another element.</p>
+    <p>Compatible annotations types:</p>
     <ul>
       <li>Text Overlay</li>
       <li>Transparent Overlay</li>
@@ -42,8 +53,8 @@ parent: Styling
   </section>
   <section class="bcls-section">
     <h2 id="3-hapyak-annotation-send-to-back">hapyak-annotation-send-to-back</h2>
-    <p>This class is the anti-venom to bring-to-top. It will send your annotation to the back-most layer of your interactive experience. This is useful if you want to make sure a particular element always appears to be "behind" another element.</p>
-    <p>Compatible Annotations types:</p>
+    <p>This class is the opposite of <span class="bcls-aside bcls-aside--information"><code>hapyak-annotation-bring-to-top</code></span>. It will send your annotation to the back-most layer of your interactive experience. This is useful if you want to make sure a particular element always appears to be "behind" another element.</p>
+    <p>Compatible annotations types:</p>
     <ul>
       <li>Text Overlay</li>
       <li>Transparent Overlay</li>
@@ -55,17 +66,17 @@ parent: Styling
       <li>Custom Form Widget</li>
       <li>Drawing Tool</li>
     </ul>
-    <aside class="bcls-aside bcls-aside--information">Note:The Chapter Menu annotation will Always appear as the top most layer of any video UNLESS other annotations have the "hapyak-annotation-bring-to-top" class applied.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: The Chapter Menu annotation will always appear as the top most layer of any video <strong>unless</strong> other annotations have the <code>hapyak-annotation-bring-to-top</code> class applied.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="4-hapyak-annotation-shine">hapyak-annotation-shine</h2>
-    <p>This Class will add a shimmer-effect to the selected annotation. The Shimmer will sweep across the frame of the annotation on mouse-hover.&nbsp;</p>
-    <p>Compatible Annotations types:</p>
+    <p>This class will add a shimmer-effect to the selected annotation. The shimmer will sweep across the frame of the annotation on mouse-hover.&nbsp;</p>
+    <p>Compatible annotations types:</p>
     <ul>
       <li>Transparent Overlay</li>
       <li>User Sentiment Widget</li>
     </ul>
     <aside class="bcls-aside bcls-aside--information">Note: Shine will not work as expected with a transparent overlay in full-frame mode.</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
   </section>
 </article>
