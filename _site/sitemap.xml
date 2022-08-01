@@ -351,16 +351,6 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/integrations/brightcove-sync.html</loc>
-          
-            <lastmod>2022-08-01</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
             <loc>https://interactivity.support.brightcove.com/integrations/custom-css-via-hapyak-plugin-for-brightcove.html</loc>
           
             <lastmod>2022-08-01</lastmod>
@@ -372,6 +362,16 @@
         <url>
           
             <loc>https://interactivity.support.brightcove.com/integrations/eloqua-add-on.html</loc>
+          
+            <lastmod>2022-08-01</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/integrations/enabling-brightcove-sync.html</loc>
           
             <lastmod>2022-08-01</lastmod>
             <changefreq>daily</changefreq>

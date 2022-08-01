@@ -190,11 +190,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/integrations/brightcove-sync.html",
-      "oldURL": "/brightcove-sync"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/troubleshooting/brightcove-videos-are-experiencing-unexpected-behavior-in-ie11-or-other-flash-based-browsers.html",
       "oldURL": "/brightcove-videos-are-experiencing-unexpected-behavior-in-ie11-or-other-flash-based-browsers"
   },
@@ -302,6 +297,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/embedding-responsively-or-fluidly.html",
       "oldURL": "/embedding-responsively-or-fluidly"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/integrations/enabling-brightcove-sync.html",
+      "oldURL": "/enabling-brightcove-sync"
   },
 
   {
