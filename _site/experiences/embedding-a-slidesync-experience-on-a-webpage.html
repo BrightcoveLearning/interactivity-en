@@ -736,17 +736,16 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>In this topic you will learn how to embed a Slide Sync Experience on a web page.</summary>
   <section class="bcls-section">
-    <h2 id="adding-an-embedded-slidesync-experience-to-your-webpage-is-as-simple-as-1-2-3">Adding an embedded SlideSync Experience to your webpage is as simple as 1, 2, 3.</h2>
       <p>To embed a Slide Sync Experience on a web page, you will complete the following steps:</p>
       <ul>
-        <li>Add CSS to the parent web page container</li>
-        <li>Add the embed code container to the web page</li>
-        <li>Configuring the iFrame to display the Slide Sync Experience</li>
+        <li><a href="#add-css">Add CSS to the parent web page container</a></li>
+        <li><a href="#embed-code">Add the embed code container to the web page</a></li>
+        <li><a href="#config-iframe">Configuring the iFrame to display the Slide Sync Experience</a></li>
       </ul>
     </section>
       <section class="bcls-section">
     <h2 id="add-css">Adding CSS to the parent web page container</h2>
-    <p>In order to make Slide Sync display properly on your webpage, you must add a few lines of Custom CSS. Add the following CSS code to the style sheet of the webpage that you are embedding on:</p>
+    <p>In order to make Slide Sync display properly on your webpage, you must add a few lines of custom CSS. Add the following CSS code to the style sheet of the webpage that you are embedding on:</p>
     <pre><code>body {
   overflow: hidden;       
 }   
@@ -769,14 +768,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </section>
   <section class="bcls-section">
     <h2 id="embed-code">Adding the embed code container to the webpage</h2>
-    <p>Next, we're going to add this snippet of HTML to the page we want to embed the Slide Sync Experience on:</p>
+    <p>Next, add this snippet of HTML to the page you want to embed the Slide Sync Experience on:</p>
     <pre><code>&lt;div id=&quot;experienceIframeContainer&quot;&gt;
   &lt;iframe class=&quot;experienceIframe&quot; src=&quot;[ADD SLIDE SYNC LANDING PAGE URL HERE]&quot; allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;</code></pre>
     </section>
       <section class="bcls-section">
-    <h2 id="step-3---configuring-the-iframe-to-display-your-slidesync-experience">Configuring the iFrame to display the Slide Sync Experience</h2>
+    <h2 id="config-iframe">Configuring the iFrame to display the Slide Sync Experience</h2>
     <p>Finally, swap out the text in the iFrame <code>src</code> &nbsp;with the Slide Sync URL landing page. The Slide Sync URL should not have a protocol.</p>
     <h3>Example:</h3>
       <p>Assume the Slide Sync landing page is hosted  here:</p>
@@ -792,8 +791,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       &lt;iframe class=&quot;experienceIframe&quot; src=&quot;//www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634&quot; allowfullscreen&gt;
       &lt;/iframe&gt;
   &lt;/div&gt;</code></pre>
-    <aside class="bcls-aside bcls-aside--information">Note: The URL is protocoless, so no <code>http: or https: </code> just begin with the double slashes, <code>//</code>.</aside>
-    <p>Full Code Example here:</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Do not add a protocol to the URL, just begin with the double slashes, <code>//</code>.</aside>
+    <h3>Full code example</h3>
     <pre><code>&lt;!doctype html&gt;
       &lt;html lang=&quot;en&quot;&gt;
       &lt;head&gt;
@@ -844,7 +843,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 18 Nov 2021
+  Page last updated on 02 Aug 2022
 </div>
 
 
