@@ -1,0 +1,158 @@
+---
+title: Creating a Slide Sync Experience
+description: In this topic you will learn how to create a Slide Sync Experience.
+parent: Experiences
+---
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+      <p>The Slide Sync Experience shows specific pages of a PDF at predetermined times in a video in addition to all video interactivity. As the video plays, the pages in the PDF will change to correspond to what is being presented in the video.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/experiences/slidesync/slide-sync-example.png"></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="creating-new-experience">Creating new experience</h2>
+    <p>Follow these steps to create a new Slide Sync Experience:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>At the top of the page click Experiences.</li>
+      <li>Click <span class="button-blue">New Experience</span>.</li>
+      <li>Enter a name for the experience.</li>
+      <li>In the list of experience types, click <strong>Slide Sync</strong>.</li>
+        <li>Choose a layout.
+<figure class="bcls-figure"> <img src="/assets/images/experiences/slidesync/new-experience.png"> </figure>
+      </li>
+      <li>Click <span class="button-blue">NEXT</span>.</li>
+
+
+      <li></li>
+      <li></li>
+      <li>Select Layout Type (slidesync is auto-selected). </li>
+      <li>Select Template Type (playlist under video or playlist fullscreen). </li>
+      <li>Choose Video Source (3 options).
+        <ul>
+          <li>Add Embed Code</li>
+          <li>Click upload video and select video - video must be an MP4</li>
+          <li>Choose Existing Project</li>
+        </ul>
+      </li>
+      <li>Experience will load with video. </li>
+      <li>Add PDF slides to video by dragging into drop zone or clicking anywhere in drop zone.
+        <ul>
+          <li>Slides must be in PDF format</li>
+          <li>First slide will appear and sync to 0 seconds</li>
+        </ul>
+      </li>
+    </ol>
+    </section>
+      <section class="bcls-section">
+    <h2 id="syncing-slides">Syncing Slides</h2>
+    <ol>
+      <li>
+        <p>Play video, skipping to each section that requires a slide and click the <strong>Sync</strong> button on the slide toolbar</p>
+      </li>
+      <li>
+        <p>Adjust time if necessary with the time adjuster next to the sync button</p>
+      </li>
+      <li>
+        <p>If chapter is present at same time as slide add chapter after syncing slide<br>
+          - Click <strong>Chapter</strong> icon (bookmark) and edit chapter title and click done</p>
+      </li>
+      <li>
+        <p>If you would like to change the size ratio of the video and the slides, add a zoom event using an <strong>On-Time Event</strong> annotation created by clicking the timer icon</p>
+      </li>
+    </ol>
+    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-on-time-event.png"></figure>
+    <ul>
+      <li>Fill in <strong>Addon Type</strong> field with "slider" </li>
+      <li>Fill in <strong>Command</strong> field with "change" </li>
+      <li>Under <strong>Command Data</strong>, click <strong>Add New</strong> </li>
+      <li>Fill in key value pair with "newValue" and the value you would like the slider to be i.e. "42.5" (see conversion scale below for acceptable values)
+        <aside class="bcls-aside bcls-aside--information">Note: HapYak numbers correspond to percentage of the page the video will take up</aside>
+      </li>
+    </ul>
+    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-adjust-value.png"></figure>
+    <ul>
+      <li>
+        <p>Click <strong>Done</strong></p>
+      </li>
+      <li>
+        <p>Repeat steps until all slides are synced for the video</p>
+      </li>
+    </ul>
+    </section>
+      <section class="bcls-section">
+    <h2 id="adding-chapter-menu">Adding Chapter Menu</h2>
+    <p>Click the <strong>Chapter Menu</strong> icon to automatically insert a chapter menu at 0 seconds</p>
+    </section>
+      <section class="bcls-section">
+    <h2 id="adding-other-annotations">Adding Other Annotations</h2>
+    <p>Continue to add annotations as you would with any other interactive video project.</p>
+    </section>
+      <section class="bcls-section">
+    <h2 id="adding-more-videos-and-slides">Adding More Videos and Slides</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>To add another video, click on the <strong>Add Video</strong> button in the playlist beneath the video and slide area. </li>
+      <li>Enter a title for the video. </li>
+      <li>Select video.<br>
+        - Upload New Video (mp4) <em>or<br>
+        - </em>Choose Existing Project </li>
+      <li>Repeat steps until experience is complete. </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configuring-settings-including-adding-custom-header-and-footer">Configuring Settings Including Adding Custom Header and Footer</h2>
+    <p>Click the <strong>Configure</strong> button at the top right of the experience</p>
+    <p>Adjust Settings</p>
+    <ul>
+      <li>Auto Progress will play the next video in the playlist after the previous video finishes. </li>
+      <li>Auto Play will automatically play the video on landing page load. </li>
+      <li>Default Slider Value sets the initial zoom level of the experience on the landing page. </li>
+      <li>Social Sharing buttons toggle which buttons will be shown on the landing page.
+        <aside class="bcls-aside bcls-aside--information">Note: This also has a configurable message that will show up as default text in the share dialogs.</aside>
+      </li>
+    </ul>
+    <h3 id="adding-custom-header-and-footer">Adding Custom Header and Footer</h3>
+    <ul>
+      <li>Also in the configuration settings are the custom header and footer HTML fields that allow for custom branding to be applied. </li>
+    </ul>
+    <p>Sample header tag:&nbsp;</p>
+    <pre><code>&lt;img src="//hapyak_demos.s3.amazonaws.com/demos/hapyak/default-slidesync-header.png" width="100%"/&gt;</code></pre>
+    <ul>
+      <li>
+        <p>Replace the img src with the image for the experience.</p>
+      </li>
+    </ul>
+    <p>Sample footer tag:</p>
+    <pre><code>&lt;div style="width: 100%; padding-left: 30px; padding-right: 30px;"&gt;&lt;div style="min-height: 70px; position: relative; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#3e4459; text-align: left;"&gt;&lt;a href="http://corp.hapyak.com/privacy" target="_blank" style="text-decoration:none;"&gt; Privacy Policy.&lt;/a&gt;&lt;br&gt;Copyright ©2016 HapYak Interactive Video. All rights reserved. Designated trademarks and brands are the property of their respective owners.&lt;/div&gt;&lt;/div&gt;</code></pre>
+    <h3 id="setting-up-registration-redirectaccess-gate-optional">Setting up Registration Redirect/Access Gate (optional)</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Add an Access Gate </li>
+      <li>Add the redirect url for the registration form </li>
+      <li>Ensure your registration form or other validation form redirects the user back to the experience after completing registration/login<br>
+        <em>Note: We recommend using the referrer url</em> </li>
+    </ol>
+    <h3 id="generating-links-to-the-slide-sync-experience-optionalextra">Generating Links to the Slide Sync Experience (optional/extra)</h3>
+    <aside class="bcls-aside bcls-aside--information">Note: Does not come with standard Slide Sync, inquire for availability</aside>
+    <p>Click on the <strong>Link</strong> Button<br>
+      Permalink to the experience is at the top<br>
+      Create a custom link with attributes by filling out these custom fields:</p>
+    <ul>
+      <li> Video to start on (<em>required</em>) </li>
+      <li>Time in video to seek to (<em>optional</em>) </li>
+      <li>Downloadable/Viewable asset URL (<em>optional</em>) </li>
+      <li>Modal Title (<em>optional</em>) </li>
+      <li>Linked Text (<em>optional</em>) </li>
+      <li>Button Text (defaults to “View”) (<em>required</em>) </li>
+      <li>Modal Text (non-linked) (<em>optional</em>) </li>
+    </ul>
+    <p>Click <strong>Generate</strong> to create link with custom parameters.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="review">Review</h2>
+    <p><strong>View</strong> Landing page and review experience.</p>
+    <p>You can view the landing page at anytime by clicking the View button in the top right corner</p>
+    <aside class="bcls-aside bcls-aside--information">Note: This is a Proof of Concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
+  </section>
+</article>
