@@ -776,24 +776,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </section>
       <section class="bcls-section">
     <h2 id="config-iframe">Configuring the iFrame to display the Slide Sync Experience</h2>
-    <p>Finally, swap out the text in the iFrame <code>src</code> &nbsp;with the Slide Sync URL landing page. The Slide Sync URL should not have a protocol.</p>
-    <h3>Example:</h3>
-      <p>Assume the Slide Sync landing page is hosted  here:</p>
-    <p><a href="https://www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634" rel="nofollow noopener noreferrer" target="_blank">https://www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634</a><br>
-    </p>
-    <p>We want to change the embed code from this:</p>
-    <pre><code>&lt;div id=&quot;experienceIframeContainer&quot;&gt;
-  &lt;iframe class=&quot;experienceIframe&quot; src=&quot;[ADD SLIDE SYNC LANDING PAGE URL HERE]&quot; allowfullscreen&gt;
-  &lt;/iframe&gt;
-&lt;/div&gt;</code></pre>
-    <p>to this:</p>
-    <pre><code>&lt;div id=&quot;experienceIframeContainer&quot;&gt;
-      &lt;iframe class=&quot;experienceIframe&quot; src=&quot;//www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634&quot; allowfullscreen&gt;
-      &lt;/iframe&gt;
-  &lt;/div&gt;</code></pre>
-    <aside class="bcls-aside bcls-aside--information">Note: Do not add a protocol to the URL, just begin with the double slashes, <code>//</code>.</aside>
-    <h3>Full code example</h3>
-    <pre><code>&lt;!doctype html&gt;
+    <p>Finally, swap out the text in the iFrame <code>src</code> &nbsp;with the Slide Sync URL landing page. To get the landing page URL for the Slide Sync Experience, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>Click <strong>Experiences</strong> at the top of the page.</li>
+      <li> Click on an experience to open it.</li>
+      <li>Click <span class="button-blue">SHARE</span>.</li>
+      <li>Click <strong>Landing Page</strong>.</li>
+      <li>In the OPTIONS section, set <strong>Use Native Controls?</strong> to <strong>Yes</strong>. When publishing a Brightcove video, this will display the Brightcove Player native controls. If <strong>No</strong> is selected, the player will display the HapYak player native controls.</li>
+        <li>Click <span class="button-blue">COPY</span> to copy the embed code link.</li>
+        <li>Add the embed code URL to the <code>src</code> parameter of the embed code added in the previous section.
+        <aside class="bcls-aside bcls-aside--information">Note: Do not add a protocol to the URL, just begin with the double slashes, <code>//</code>.</aside></li>
+        </ol>
+        <h3>Code example</h3>
+        <pre><code>&lt;!doctype html&gt;
       &lt;html lang=&quot;en&quot;&gt;
       &lt;head&gt;
         &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -820,11 +817,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       &lt;body&gt;
         &lt;div id=&quot;experienceIframeContainer&quot;&gt;
-            &lt;iframe class=&quot;experienceIframe&quot;        src=&quot;//www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634&quot; allowfullscreen &gt;&lt;/iframe&gt;
+            &lt;iframe class=&quot;experienceIframe&quot; src=&quot;//www.hapyak.com/portal/experience/viewer/adccab61bc5f4fea9a78fa1b994c89ab&quot; allowfullscreen &gt;<br>&lt;/iframe&gt;
         &lt;/div&gt;
       &lt;/body&gt;
       &lt;/html&gt;</code></pre>
-    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
+        <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
+      </li>
+    </ol>
   </section>
 </article>
 
