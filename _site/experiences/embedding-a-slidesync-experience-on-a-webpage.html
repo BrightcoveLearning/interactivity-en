@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This article will show you how to embed a SlideSync Experience onto your own webpage.">
+  <meta name="description" content="In this topic you will learn how to embed a Slide Sync Experience on a web page.">
   
-  <title>Embedding a SlideSync Experience on a Webpage</title>
+  <title>Embedding a Slide Sync Experience on a Web Page</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -65,7 +65,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/experiences/">Experiences</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Embedding a SlideSync Experience on a Webpage</li>
+      <li class="breadcrumb-item active" aria-current="page">Embedding a Slide Sync Experience on a Web Page</li>
     </ol>
   </nav>
 </header>
@@ -399,7 +399,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/experiences/embedding-a-slidesync-experience-on-a-webpage.html">Embedding a SlideSync Experience on a Webpage</a></li>
+                    <li><a href="/experiences/embedding-a-slidesync-experience-on-a-webpage.html">Embedding a Slide Sync Experience on a Web Page</a></li>
                   
                 
                   
@@ -732,13 +732,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Embedding a SlideSync Experience on a Webpage</h1>
+<h1>Embedding a Slide Sync Experience on a Web Page</h1>
 <article class="bcls-article">
-  <summary>This article will show you how to embed a SlideSync Experience onto your own webpage.</summary>
+  <summary>In this topic you will learn how to embed a Slide Sync Experience on a web page.</summary>
   <section class="bcls-section">
     <h2 id="adding-an-embedded-slidesync-experience-to-your-webpage-is-as-simple-as-1-2-3">Adding an embedded SlideSync Experience to your webpage is as simple as 1, 2, 3.</h2>
-    <h3 id="step-1---add-css-to-the-parent-your-webpage-container">Step 1 - Add CSS to the PARENT (your webpage) container:</h3>
-    <p>In order to make SlideSync display properly on your webpage, you must add a few lines of Custom CSS. Add the following CSS code to the style sheet of the webpage that you are embedding on:</p>
+      <p>To embed a Slide Sync Experience on a web page, you will complete the following steps:</p>
+      <ul>
+        <li>Add CSS to the parent web page container</li>
+        <li>Add the embed code container to the web page</li>
+        <li>Configuring the iFrame to display the Slide Sync Experience</li>
+      </ul>
+    </section>
+      <section class="bcls-section">
+    <h2 id="add-css">Adding CSS to the parent web page container</h2>
+    <p>In order to make Slide Sync display properly on your webpage, you must add a few lines of Custom CSS. Add the following CSS code to the style sheet of the webpage that you are embedding on:</p>
     <pre><code>body {
   overflow: hidden;       
 }   
@@ -757,18 +765,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   width: 100%;          
   height: 100%;
    }</code></pre>
-    <aside class="bcls-aside bcls-aside--information">Note: If your webpage's CSS already has a body element, add, the line reading <b><em>overflow: hidden;</em></b> to your existing body element.</aside>
-    <h3 id="step-2---add-the-embed-code-container-to-the-webpage">Step 2 - &nbsp;Add the Embed Code Container to the webpage:</h3>
-    <p>Next, we're going to add this snippet of HTML to the page we want to embed the SlideSync Experience on:</p>
+    <aside class="bcls-aside bcls-aside--information">Note: If your web page's CSS already has a <code>body</code> element, add the line reading <code>overflow: hidden;</code> to your existing body element.</aside>
+    </section>
+  <section class="bcls-section">
+    <h2 id="embed-code">Adding the embed code container to the webpage</h2>
+    <p>Next, we're going to add this snippet of HTML to the page we want to embed the Slide Sync Experience on:</p>
     <pre><code>&lt;div id=&quot;experienceIframeContainer&quot;&gt;
   &lt;iframe class=&quot;experienceIframe&quot; src=&quot;[ADD SLIDE SYNC LANDING PAGE URL HERE]&quot; allowfullscreen&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;</code></pre>
-    <h3 id="step-3---configuring-the-iframe-to-display-your-slidesync-experience">Step 3 - Configuring the iFrame to display your SlideSync Experience:</h3>
-    <p>Lastly, swap out the text in the iFrame <code>src</code> &nbsp;with your protocoless SlideSync URL Landing Page&nbsp;</p>
-    <p><b>Example:<br>
-      <br>
-      </b>Let's say our SlideSync landing page is hosted on HapYak here:&nbsp;</p>
+    </section>
+      <section class="bcls-section">
+    <h2 id="step-3---configuring-the-iframe-to-display-your-slidesync-experience">Configuring the iFrame to display the Slide Sync Experience</h2>
+    <p>Finally, swap out the text in the iFrame <code>src</code> &nbsp;with the Slide Sync URL landing page. The Slide Sync URL should not have a protocol.</p>
+    <h3>Example:</h3>
+      <p>Assume the Slide Sync landing page is hosted  here:</p>
     <p><a href="https://www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634" rel="nofollow noopener noreferrer" target="_blank">https://www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634</a><br>
     </p>
     <p>We want to change the embed code from this:</p>
@@ -781,7 +792,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       &lt;iframe class=&quot;experienceIframe&quot; src=&quot;//www.hapyak.com/portal/experience/viewer/399d82fcce654571a8e9e32e3807f634&quot; allowfullscreen&gt;
       &lt;/iframe&gt;
   &lt;/div&gt;</code></pre>
-    <aside class="bcls-aside bcls-aside--information">Note: The URL is Protocoless, so no <code>http: or https: </code> just begin with the double slashes, <code>//</code>.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: The URL is protocoless, so no <code>http: or https: </code> just begin with the double slashes, <code>//</code>.</aside>
     <p>Full Code Example here:</p>
     <pre><code>&lt;!doctype html&gt;
       &lt;html lang=&quot;en&quot;&gt;
@@ -814,7 +825,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         &lt;/div&gt;
       &lt;/body&gt;
       &lt;/html&gt;</code></pre>
-    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the HapYak Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
   </section>
 </article>
 

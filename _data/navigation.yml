@@ -121,7 +121,7 @@
   docs:
     - name: 'Creating a Branching Experience'
       url: '/experiences/creating-branching-experience.html'
-    - name: 'Embedding a SlideSync Experience on a Webpage'
+    - name: 'Embedding a Slide Sync Experience on a Web Page'
       url: '/experiences/embedding-a-slidesync-experience-on-a-webpage.html'
     - name: 'Experiences Overview'
       url: '/experiences/experiences-overview.html'
