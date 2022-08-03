@@ -24,64 +24,57 @@ parent: Experiences
 <figure class="bcls-figure"> <img src="/assets/images/experiences/slidesync/new-experience.png"> </figure>
       </li>
       <li>Click <span class="button-blue">NEXT</span>.</li>
-
-
-      <li></li>
-      <li></li>
-      <li>Select Layout Type (slidesync is auto-selected). </li>
-      <li>Select Template Type (playlist under video or playlist fullscreen). </li>
-      <li>Choose Video Source (3 options).
+      <li>Enter a <strong>Title</strong> for the video.</li>
+      <li>Choose a video, there are 4 options:
         <ul>
-          <li>Add Embed Code</li>
-          <li>Click upload video and select video - video must be an MP4</li>
-          <li>Choose Existing Project</li>
+          <li><strong>Sample Video</strong> - Use a sample video</li>
+          <li><strong>URL or Embed Code</strong> - Enter the embed code or URL for a video</li>
+          <li><strong>Upload</strong> - Drag and drop or select a new video (must be an .mp4 file)</li>
+          <li><strong>Choose existing</strong> - Choose an existing project</li>
         </ul>
       </li>
-      <li>Experience will load with video. </li>
-      <li>Add PDF slides to video by dragging into drop zone or clicking anywhere in drop zone.
+      <li>Click <span class="button-blue">NEXT</span>. The New Experience confirmation dialog will display.
+        <figure class="bcls-figure"> <img src="/assets/images/experiences/slidesync/new-exp-confirmation.png"></figure>
+</li>
+      <li>Click <span class="button-blue">CREATE</span>. The Interactivity Editor will open with the selected video(s) loaded. </li>
+      <li>Add PDF slides to the experience by  dragging a file into the drop zone or by clicking anywhere in drop zone and browsing to select a file.
         <ul>
-          <li>Slides must be in PDF format</li>
-          <li>First slide will appear and sync to 0 seconds</li>
+          <li>The slides must be in PDF format</li>
+          <li>The first page in the PDF will appear and sync to the 0 second point in the video</li>
+            <figure class="bcls-figure"> <img src="/assets/images/experiences/slidesync/slidesync-start.png"></figure>
+
         </ul>
       </li>
     </ol>
     </section>
       <section class="bcls-section">
-    <h2 id="syncing-slides">Syncing Slides</h2>
-    <ol>
-      <li>
-        <p>Play video, skipping to each section that requires a slide and click the <strong>Sync</strong> button on the slide toolbar</p>
-      </li>
-      <li>
-        <p>Adjust time if necessary with the time adjuster next to the sync button</p>
-      </li>
-      <li>
-        <p>If chapter is present at same time as slide add chapter after syncing slide<br>
-          - Click <strong>Chapter</strong> icon (bookmark) and edit chapter title and click done</p>
-      </li>
-      <li>
-        <p>If you would like to change the size ratio of the video and the slides, add a zoom event using an <strong>On-Time Event</strong> annotation created by clicking the timer icon</p>
-      </li>
-    </ol>
-    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-on-time-event.png"></figure>
-    <ul>
+    <h2 id="syncing-slides">Syncing slides</h2>
+    <p>To sync the slides with the video, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Play video to the point where the slide should change.</li>
+      <li>Use the arrow icons below the PDF preview to navigate to the page to display for the corresponding place in the video.</li>
+      <li>Click the <strong>Sync</strong> button below the PDF preview to sync the PDF with the current place in the video. The time adjuster next to the sync button can b used to adjust the time if necessary.</li>
+      <li>(Optional) To add a chapter marker at the same time as the slide change, click the chapter marker icon  after syncing a slide, add the chapter title and then click <strong>Done</strong>.</li>
+        </ol>
+        As the PDF is synced with the video, a list of all syncs will appear at the bottom of the Interactivity Editor.</section>
+  <section class="bcls-section">
+    <h2 id="ratio">Changing the size ratio of the video and slides</h2>
+      <p>To change the size ratio of the video and the slides, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>add a zoom event using an <strong>On-Time Event</strong> annotation created by clicking the timer icon
+    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-on-time-event.png"></figure></li>
       <li>Fill in <strong>Addon Type</strong> field with "slider" </li>
       <li>Fill in <strong>Command</strong> field with "change" </li>
       <li>Under <strong>Command Data</strong>, click <strong>Add New</strong> </li>
       <li>Fill in key value pair with "newValue" and the value you would like the slider to be i.e. "42.5" (see conversion scale below for acceptable values)
         <aside class="bcls-aside bcls-aside--information">Note: HapYak numbers correspond to percentage of the page the video will take up</aside>
+    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-adjust-value.png"></figure></li>
+      <li>Click <strong>Done</strong>
       </li>
-    </ul>
-    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-adjust-value.png"></figure>
-    <ul>
-      <li>
-        <p>Click <strong>Done</strong></p>
+      <li>Repeat steps until all slides are synced for the video
       </li>
-      <li>
-        <p>Repeat steps until all slides are synced for the video</p>
-      </li>
-    </ul>
-    </section>
+    </ol>
+  </section>
       <section class="bcls-section">
     <h2 id="adding-chapter-menu">Adding a chapter menu</h2>
     <p>Click the <strong>Chapter Menu</strong> icon to automatically insert a chapter menu at 0 seconds</p>
