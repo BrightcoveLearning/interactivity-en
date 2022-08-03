@@ -953,7 +953,7 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/developers/apis.html</loc>
+            <loc>https://interactivity.support.brightcove.com/interactivity/embed-api/reference.html</loc>
           
             <lastmod>2022-08-03</lastmod>
             <changefreq>daily</changefreq>
@@ -963,7 +963,37 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/developers/security-and-privacy.html</loc>
+            <loc>https://interactivity.support.brightcove.com/interactivity/annotation-api/reference.html</loc>
+          
+            <lastmod>2022-08-03</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/interactivity/extension-api/reference.html</loc>
+          
+            <lastmod>2022-08-03</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/interactivity/responsive-api/reference.html</loc>
+          
+            <lastmod>2022-08-03</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/interactivity/addon-api/reference.html</loc>
           
             <lastmod>2022-08-03</lastmod>
             <changefreq>daily</changefreq>

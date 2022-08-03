@@ -1,22 +1,20 @@
 ---
-title: Developers
+title: Brightcove Interactivity APIs
+description: 'The Brightcove Interactivity APIs allow you to manage and enhance your interactions, and to create your own custom interactions.'
 parent: Home
-description: Some information for developers. Also see the References section.
 ---
+
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
-
   <summary>{{ page.description }}</summary>
-  <section>
-    <h3 id="Topics_in_this_section">Topics in {{ page.title }}</h3>
-    <ul class="bcls-topic-list">
-      {% for item in site.data.navigation %}
-        {% if item.name == page.title %}
-          {% for doc in item.docs %}
-          <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
+  <section class="bcls-section">
+    <h2 id="api_references">API References</h2>
+    <ul>
+      <li><a href="/interactivity/embed-api/reference.html">Embed API</a></li>
+      <li><a href="/interactivity/annotation-api/reference.html">Annotation CRUD API</a></li>
+      <li><a href="/interactivity/extension-api/reference.html">Extension API</a></li>
+      <li><a href="/interactivity/responsive-api/reference.html">Responsive API</a></li>
+      <li><a href="/interactivity/addon-api/reference.html">Addon API</a></li>
     </ul>
   </section>
 </article>

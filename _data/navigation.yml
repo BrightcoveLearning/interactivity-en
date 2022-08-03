@@ -225,10 +225,16 @@
   name: 'Developers'
   url: '/developers/index.html'
   docs:
-    - name: 'APIs'
-      url: '/developers/apis.html'
-    - name: 'Security and Privacy'
-      url: '/developers/security-and-privacy.html'
+    - name: Embed API
+      url: /interactivity/embed-api/reference.html
+    - name: Annotation CRUD API
+      url: /interactivity/annotation-api/reference.html
+    - name: Extension API
+      url: /interactivity/extension-api/reference.html
+    - name: Responsive API
+      url: /interactivity/responsive-api/reference.html
+    - name: Addon API
+      url: /interactivity/addon-api/reference.html
 - section:
   name: 'References'
   url: /references/index.html
