@@ -55,33 +55,29 @@ parent: Experiences
       <li>Use the arrow icons below the PDF preview to navigate to the page to display for the corresponding place in the video.</li>
       <li>Click the <strong>Sync</strong> button below the PDF preview to sync the PDF with the current place in the video. The time adjuster next to the sync button can b used to adjust the time if necessary.</li>
       <li>(Optional) To add a chapter marker at the same time as the slide change, click the chapter marker icon  after syncing a slide, add the chapter title and then click <strong>Done</strong>.</li>
+      <li>Repeat these steps until all slides are synced for the video.</li>
         </ol>
         As the PDF is synced with the video, a list of all syncs will appear at the bottom of the Interactivity Editor.</section>
   <section class="bcls-section">
     <h2 id="ratio">Changing the size ratio of the video and slides</h2>
       <p>To change the size ratio of the video and the slides, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
-      <li>add a zoom event using an <strong>On-Time Event</strong> annotation created by clicking the timer icon
-    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-on-time-event.png"></figure></li>
-      <li>Fill in <strong>Addon Type</strong> field with "slider" </li>
-      <li>Fill in <strong>Command</strong> field with "change" </li>
-      <li>Under <strong>Command Data</strong>, click <strong>Add New</strong> </li>
-      <li>Fill in key value pair with "newValue" and the value you would like the slider to be i.e. "42.5" (see conversion scale below for acceptable values)
-        <aside class="bcls-aside bcls-aside--information">Note: HapYak numbers correspond to percentage of the page the video will take up</aside>
-    <figure class="bcls-figure"><img src="/assets/images/experiences/slide-sync-adjust-value.png"></figure></li>
-      <li>Click <strong>Done</strong>
-      </li>
-      <li>Repeat steps until all slides are synced for the video
-      </li>
+      <li>Add a time triggered action to the video.
+        <figure class="bcls-figure"> <img src="/assets/images/experiences/slidesync/time-trigger.png"></figure>
+</li>
+      <li>For the <strong>Addon Type</strong>, enter <code>slider</code>.</li>
+      <li>For the <strong>Command</strong>, enter <code>change</code>.</li>
+      <li>Click <strong>ADD NEW</strong> next to <strong>Command Data</strong>.</li>
+      <li>For the <strong>Key</strong>, enter <code>newValue</code> and for the <strong>Value</strong>, enter the percent of the width that the video should consume
+        <aside class="bcls-aside bcls-aside--information">Note: Using a small number (&lt; 15) can make the annotation diffcult to edit.</aside>
+        <figure class="bcls-figure"> <img src="/assets/images/experiences/slidesync/zoom.png"></figure>
+</li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
     </ol>
   </section>
-      <section class="bcls-section">
-    <h2 id="adding-chapter-menu">Adding a chapter menu</h2>
-    <p>Click the <strong>Chapter Menu</strong> icon to automatically insert a chapter menu at 0 seconds</p>
-    </section>
-      <section class="bcls-section">
+  <section class="bcls-section">
     <h2 id="adding-other-annotations">Adding other annotations</h2>
-    <p>Continue to add annotations as you would with any other interactive video project.</p>
+    <p>Other annotations can be added to the video the same way you would add them to any other interactive video project.</p>
     </section>
       <section class="bcls-section">
     <h2 id="adding-more-videos-and-slides">Adding more videos and slides</h2>
