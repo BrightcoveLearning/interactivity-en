@@ -99,12 +99,12 @@
   name: 'Projects'
   url: '/projects/index.html'
   docs:
-    - name: 'Branching and Choose Your Own Adventure Video'
-      url: '/projects/branching-choose-your-own-adventure-video.html'
     - name: 'Changing the Video Source of a Project'
       url: '/projects/changing-the-video-source-of-a-project.html'
     - name: 'Configuring Project Settings'
       url: '/projects/configuring-project-settings.html'
+    - name: 'Creating a Branching Video'
+      url: '/projects/branching-choose-your-own-adventure-video.html'      
     - name: 'Creating and Managing Projects'
       url: '/projects/creating-and-managing-projects.html'
 - section: 
