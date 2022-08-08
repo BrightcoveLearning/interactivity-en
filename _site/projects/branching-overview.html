@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Creating a Branching or Choose Your Own Adventure Video in a Lesson created via the HapYak LTI Integration.">
+  <meta name="description" content="In this topic you will learn about different methods for creating branching videos.">
   
-  <title>LTI Lessons - Creating a Branching Video</title>
+  <title>Branching Overview</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -63,9 +63,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/integrations/">Integrations</a></li>
+      <li class="breadcrumb-item"><a href="/projects/">Managing Projects</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">LTI Lessons - Creating a Branching Video</li>
+      <li class="breadcrumb-item active" aria-current="page">Branching Overview</li>
     </ol>
   </nav>
 </header>
@@ -748,29 +748,27 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>LTI Lessons - Creating a Branching Video</h1>
+<h1>Branching Overview</h1>
 <article class="bcls-article">
-  <summary>Creating a Branching or Choose Your Own Adventure Video in a Lesson created via the HapYak LTI Integration.</summary>
+  <summary>In this topic you will learn about different methods for creating branching videos.</summary>
   <section class="bcls-section">
-    <h2 id="branching-video-overview">Branching Video Overview</h2>
-    <p>Branching or Choose-Your-Own-Adventure is a popular type of interactive video. In a nutshell, it brings a viewer to different parts of a video, or new video entirely, based on how they interact with it. You can read more on the basics of Branching <a href="/projects/branching-overview.html" data-is-internal-link="true">here</a>. </p>
-    <p>If you created a Lesson via HapYak's LTI integration you can do branching in two ways.</p>
+    <p>Brightcove Interactivity offers two techniques for creating branching or &quot;choose your own adventure&quot; (CYOA) content.</p>
+    <ul>
+      <li><strong>Video to video branching</strong> - This technique uses a Branching Experience where multiple videos are strung together. The viewer jumps from video to video using annotations. For information on creating a Branching Experience, see <a href="/experiences/creating-branching-experience.html">Creating a Branching Experience</a>.</li>
+      <li><strong>In-Video branching</strong> - This technique uses a single video. The viewer jumps from poin to point in the <i>same video</i> using annotations. For information on in-video branching, see <a href="/projects/in-video-branching.html">Creating an In-Video Branching Project</a>.</li>
+    </ul>
+    <p>Both work equally well, it's a personal preference based on your production process and how your videos are already produced.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="in-video-branching">In-Video Branching</h2>
-    <p>You do <b>In-Video branching</b> just as you would in a single project in the HapYak portal. Detail <a href="/projects/in-video-branching.html" data-is-internal-link="true">here</a>. </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="video-to-video-branching">Video to Video Branching</h2>
-    <p>You can branch from video to video by following this technique.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Create a lesson. </li>
-      <li>Create a second lesson (the next video where you'd like the viewer to branch to). </li>
-      <li>View the second lesson as a student. Copy the URL of that lesson. </li>
-      <li>Go back to the first lesson. Add an annotation (text, hotspot or image) that the viewer would click to branch to the next video. In <a href="/annotations/link-options.html" data-is-internal-link="true">Link (ON CLICK EVENT)</a> / Load external URL:, paste the URL to the second lesson. Click Submit. Click Done. </li>
-      <li>Test by viewing this first lesson as a student. Clicking on the annotation should load the second lesson. </li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: You can use this same technique in a Quiz annotation by adding the second lesson URL to the <a href="/annotations/adding-quiz-annotation.html" data-is-internal-link="true">Pass/Fail actions</a> field.</aside>
+    <h2 id="best-practices">Branching best practices</h2>
+    <ul>
+      <li>Focus on just 2 or 3 choices at each choice point. Having fewer choices is much easier for viewers to process and results in higher interaction rates.</li>
+      <li>Make sure each choice point lasts for at least 10 seconds.</li>
+      <li>Add bumpers (sections of white or black or motion graphics) between the different choice sections to ease the transition. We recommend about 5 seconds.</li>
+      <li>Always allow the viewer to return to the choice points. You'll be surprised at how many viewers want to watch a branching video over and over again. To do this, simply add a text or image annotation that links back to the choice point.</li>
+      <li>Optional Pro Tip: Continue the audio track underneath the choice points and bumpers. This creates a more seamless experience for the viewer.</li>
+    </ul>
+    <p>We're always happy to advise on your branching interactive video project. Email  <a href="https://supportportal.brightcove.com">Brightcove Support</a> any time for personalized advice.</p>
   </section>
 </article>
 
@@ -789,7 +787,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 25 Jul 2022
+  Page last updated on 08 Aug 2022
 </div>
 
 

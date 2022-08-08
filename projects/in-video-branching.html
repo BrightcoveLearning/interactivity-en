@@ -1,0 +1,27 @@
+---
+title: Creating an In-Video Branching Project
+description: In this topic you will learn how to creating an in-video branching project.
+parent: Managing Projects
+---
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p>Brightcove Interactivity offers two techniques for creating branching or &quot;choose your own adventure&quot; (CYOA) content.</p>
+    <ul>
+      <li><strong>Video to video branching</strong> - This technique uses a <a href="/experiences/creating-branching-experience.html">Branching Experience</a> where multiple videos are strung together. The viewer jumps from video to video using annotations.</li>
+      <li><strong>In-Video branching</strong> - This technique uses a single video. The viewer jumps from poin to point in the <i>same video</i> using annotations.</li>
+    </ul>
+    <p>Both work equally well, it's a personal preference based on your production process and how your videos are already produced.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="in-video-branching">Branching withing a single project</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Create a <strong>New Project</strong> in HapYak.</li>
+      <li><strong>Add Chapters</strong> for each point in the video where a choice begins (don't worry, these are invisible to the viewer).</li>
+      <li>For each <strong>Choice Point</strong>, add <strong>hotspot, text or image</strong> annotations that the viewer will click on to jump to different parts of the videos. Make sure the start time and duration for each of these is identical.</li>
+      <li>On <i>one</i> of the choice annotations. Set "Action to take if the viewer doesn't click" to loop back.</li>
+      <li>On each annotation set <strong>Link / Actions</strong> to <strong>Jump to video time </strong>and select the correct Chapter or enter a custom time.</li>
+    </ol>
+  </section>
+</article>

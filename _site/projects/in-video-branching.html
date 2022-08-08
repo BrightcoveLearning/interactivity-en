@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn about different methods for creating branching videos.">
+  <meta name="description" content="In this topic you will learn how to creating an in-video branching project.">
   
-  <title>Creating Branching or Choose Your Own Adventure Content</title>
+  <title>Creating an In-Video Branching Project</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -65,7 +65,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/projects/">Managing Projects</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Creating Branching or Choose Your Own Adventure Content</li>
+      <li class="breadcrumb-item active" aria-current="page">Creating an In-Video Branching Project</li>
     </ol>
   </nav>
 </header>
@@ -357,6 +357,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
+                    <li><a href="/projects/branching-overview.html">Branching Overview</a></li>
+                  
+                
+                  
                     <li><a href="/projects/changing-the-video-source-of-a-project.html">Changing the Video Source of a Project</a></li>
                   
                 
@@ -365,11 +369,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/projects/creating-and-managing-projects.html">Creating and Managing Projects</a></li>
+                    <li><a href="/projects/in-video-branching.html">Creating an In-Video Branching Project</a></li>
                   
                 
                   
-                    <li><a href="/projects/branching-choose-your-own-adventure-video.html">Creating Branching Content</a></li>
+                    <li><a href="/projects/creating-and-managing-projects.html">Creating and Managing Projects</a></li>
                   
                 
               </ul>
@@ -744,24 +748,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Creating Branching or Choose Your Own Adventure Content</h1>
+<h1>Creating an In-Video Branching Project</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn about different methods for creating branching videos.</summary>
+  <summary>In this topic you will learn how to creating an in-video branching project.</summary>
   <section class="bcls-section">
     <p>Brightcove Interactivity offers two techniques for creating branching or &quot;choose your own adventure&quot; (CYOA) content.</p>
     <ul>
       <li><strong>Video to video branching</strong> - This technique uses a <a href="/experiences/creating-branching-experience.html">Branching Experience</a> where multiple videos are strung together. The viewer jumps from video to video using annotations.</li>
-      <li><strong>In-Video branching</strong> - This technique uses a single video. The viewer jumps from point to point in the <i>same video</i> using annotations. Examples <a href="/examples/nutanix.html" rel="nofollow noopener noreferrer" target="_blank">here</a> and <a href="/examples/room4media.html" rel="nofollow noopener noreferrer" target="_blank">here</a>.</li>
+      <li><strong>In-Video branching</strong> - This technique uses a single video. The viewer jumps from poin to point in the <i>same video</i> using annotations.</li>
     </ul>
     <p>Both work equally well, it's a personal preference based on your production process and how your videos are already produced.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="branching-experience">Creating a video to video Branching Experience</h2>
-    <p>For information on creating a video to video Branching Experience, see <a href="/experiences/creating-branching-experience.html">Creating a Branching Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
     <h2 id="in-video-branching">Branching withing a single project</h2>
-    <figure class="bcls-figure"><img src="/assets/images/projects/Branching-Interactive-Video-Example.gif"></figure>
     <ol class="bcls-tasklist-restart">
       <li>Create a <strong>New Project</strong> in HapYak.</li>
       <li><strong>Add Chapters</strong> for each point in the video where a choice begins (don't worry, these are invisible to the viewer).</li>
@@ -769,20 +768,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>On <i>one</i> of the choice annotations. Set "Action to take if the viewer doesn't click" to loop back.</li>
       <li>On each annotation set <strong>Link / Actions</strong> to <strong>Jump to video time </strong>and select the correct Chapter or enter a custom time.</li>
     </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="best-practices">Branching best practices</h2>
-    <ul>
-      <li>Focus on just 2 or 3 choices at each choice point. Having fewer choices is much easier for viewers to process and results in higher interaction rates.</li>
-      <li>Make sure each choice point lasts for at least 10 seconds.</li>
-      <li>Add bumpers (sections of white or black or motion graphics) between the different choice sections to ease the transition. We recommend about 5 seconds.</li>
-      <li>Always allow the viewer to return to the choice points. You'll be surprised at how many viewers want to watch a branching video over and over again. To do this, simply add a text or image annotation that links back to the choice point.</li>
-      <li>Optional Pro Tip: Continue the audio track underneath the choice points and bumpers. This creates a more seamless experience for the viewer.</li>
-      <li>Super Pro Tip: You can even track how viewers are experiencing the branching video and <a href="/custom-annotations/branching-advanced-customization.html" data-is-internal-link="true">trigger actions based on those paths</a>.</li>
-    </ul>
-    <p>Here is a video that walks you through the best practices for branching and choose your own adventure video.</p>
-      <iframe src="https://players.brightcove.net/2335723960001/E1ryiyLcg_default/index.html?videoId=5232582857001" allowfullscreen="" allow="encrypted-media" width="800" height="450"></iframe>
-    <p>We're always happy to advise on your branching interactive video project. Email  <a href="https://supportportal.brightcove.com">Brightcove Support</a> any time for personalized advice.</p>
   </section>
 </article>
 
