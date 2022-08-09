@@ -45,6 +45,8 @@
       url: '/annotations/adding-transparent-overlay.html'
     - name: 'Annotation Options'
       url: '/annotations/annotation-options.html'
+    - name: 'Autoloading a URL'
+      url: '/annotations/auto-load-url.html' 
     - name: 'Automatically Pause Video or Jump to a Time'
       url: '/annotations/automatically-pause-the-video-or-jump-to-a-time-in-the-video-aka-skip-to-time.html'
     - name: 'Bulk Editing Annotations'
