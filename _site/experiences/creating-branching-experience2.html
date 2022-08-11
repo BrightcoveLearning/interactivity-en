@@ -766,36 +766,44 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <figure class="bcls-figure"> <img src="/assets/images/experiences/branching/new-experience.png"></figure>
     </li>
     <li>Click <span class="button-blue">NEXT</span>.</li>
-    <li>Enter a <strong>Title</strong> for the video.</li>
     <li>Choose a video, there are 4 options:
       <ul>
-        <li><strong>Sample Video</strong> - Use a sample video</li>
-        <li><strong>URL or Embed Code</strong> - Enter the embed code or URL for a video</li>
-        <li><strong>Upload</strong> - Drag and drop or select a new video (must be an .mp4 file)</li>
-        <li><strong>Choose existing</strong> - Choose an existing project</li>
-      </ul>
+        <li><strong>SAMPLE VIDEO </strong> - Use a sample video</li>
+        <li><strong>URL OR EMBED CODE</strong> - Enter the embed code or URL for a video</li>
+        <li><strong>UPLOAD</strong> - Drag and drop or select a new video (must be an .mp4 file)</li>
+        <li><strong>CHOOSE EXISTING</strong> - Choose an existing project</li>
+        </ul>
     </li>
     <li>The New Experience confirmation dialog will display.
       Click <strong>ADD MORE</strong> to add more projects.
 <figure class="bcls-figure"> <img src="/assets/images/experiences/branching/new-exp-confirmation.png"></figure>
     </li>
-    <li>Click <span class="button-blue">CREATE</span>. The Interactivity Editor will open with the selected video(s) loaded. </li>
-    <li>
-      <ul>
-        <figure class="bcls-figure"></figure>
-      </ul>
+    <li>Click <span class="button-blue">CREATE</span>. The Interactivity Editor will open with the first selected video displayed. All videos in the experience will be displayed below the preview player.
+      <figure class="bcls-figure"><img src="/assets/images/experiences/branching/experience-editor.png"></figure>
     </li>
-  </ol>
+        </ol>
+    <p>Click <strong>ADD PROJECT</strong> to add more projects. To change the order of the videos, click and drag a video to a new position. To edit a video, hover over a video and click <strong>Edit</strong>.</p>
+    <p>
+      <figure class="bcls-figure"><img src="/assets/images/experiences/branching/edit-video.png"></figure>
+    </p>
+    <p>To remove any video from the experience, hover over the video and click delete (<img src="/assets/images/experiences/branching/icon-delete.png">).</p>
+    <p>&nbsp;</p>
     </section>
   <section class="bcls-section">
-    <h2 id="edit">Edit</h2>
+    <h2 id="add-annotations">Adding annotations</h2>
+    <p>Typically, text, image or transparent overlays will be added to the &quot;main menu&quot; video that allow the viewer to branch from video to video.</p>
     <ol class="bcls-tasklist-restart">
-      <li>You will now <b>add all the annotations</b> you need, You'll most likely be adding text or hotspot annotations that branch from video to video. To do so, add the annotation, <b>click "link", then Jump to video:</b> and select the video from the list. </li>
-      <li>If you select "Jump to Video" you can then select "<b>Jump to video time</b>" to go to specific point in the destination video.&nbsp; </li>
-      <li>If you just select Jump to video time <i>without</i> a Jump to Video selected it will simply jump to that time in the current video. </li>
-      <li>At the bottom you'll see the full list of videos. Simply drag and drop to re-arrange the order of videos or click Edit to edit a different video. </li>
+      <li>For each &quot;choice point&quot;, add a text, image or transparent overlay annotation. This is what the viewer will click on to jump to the different videos. Make sure the start time and duration for each of these annotations is identical.</li>
+      <li>Click <strong>Link</strong> &gt; <strong>ACTIONS</strong> &gt; <strong>Branch to video</strong> and select the video to link to.
+        <figure class="bcls-figure"><img src="/assets/images/experiences/branching/branch-to-video.png"></figure>
+</li>
+      <li>Enter a <strong>Time</strong> to go to a specific point in the video. If no <strong>Time</strong> is entered, it will jump to the beginning of the destination video.</li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+      <li>On one of the choice annotations, set <strong>Link</strong> &gt; <strong>BEHAVIOR</strong> &gt; <strong>Action to take if the viewer doesn't click</strong> to <strong>Loop back</strong>.
+        <figure class="bcls-figure"> This will cause the video to loop and display the &quot;main menu&quot; part of the video until one of the choices is clicked.<img src="/assets/images/experiences/branching/loop-back.png"></figure>
+      </li>
     </ol>
-    <figure class="bcls-figure"><img src="/assets/images/experiences/Branching-Interactive-Video-Rearrange-Order.gif"></figure>
+    <figure class="bcls-figure"></figure>
   </section>
   <section class="bcls-section">
     <h2 id="share">Share</h2>
@@ -832,7 +840,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 05 Aug 2022
+  Page last updated on 11 Aug 2022
 </div>
 
 
