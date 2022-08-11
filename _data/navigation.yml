@@ -100,8 +100,6 @@
   docs:
     - name: 'Branching Overview'
       url: '/projects/branching-overview.html'
-    - name: 'Changing the Video Source of a Project'
-      url: '/projects/changing-the-video-source-of-a-project.html'
     - name: 'Configuring Project Settings'
       url: '/projects/configuring-project-settings.html'
     - name: 'Creating an In-Video Branching Project'

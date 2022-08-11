@@ -361,10 +361,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/projects/changing-the-video-source-of-a-project.html">Changing the Video Source of a Project</a></li>
-                  
-                
-                  
                     <li><a href="/projects/configuring-project-settings.html">Configuring Project Settings</a></li>
                   
                 
@@ -763,9 +759,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="video">Video settings</h2>
-    <p><strong>Video Source</strong> controls the  video that is behind the annotations. &nbsp;If the project was created automatically using a Brightcove Player with the HapYak plugin, you can change the video source in the Media module using the <a href="https://studio.support.brightcove.com/media/replacing-video-source-file.html">replace source</a> feature. Typically this value is only changed with manually created projects. This is useful when you'd like to manually create a project that is similar to one you've already created. &nbsp;You can copy the original, then simply replace the video source of the copy.</p>
+    <p><strong>Video Source</strong> controls the  video that is behind the annotations. &nbsp;If the project was created automatically using a Brightcove Player with the HapYak plugin, you can change the video source in the Media module using the <a href="https://studio.support.brightcove.com/media/replacing-video-source-file.html">replace source</a> feature. </p>
+    <p>Typically, this value is only changed with manually created projects. This is useful when you'd like to manually create a project that is similar to one you've already created. &nbsp;You can copy the original, then simply replace the video source of the copy.</p>
     <p><strong>Dimensions</strong> can be used to change the video size.</p>
-<figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/video.png"> </figure>
+    <p>
+      <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/video.png"> </figure>
+    </p>
+    <p>To change the <strong>Video Source</strong>, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the current video link next to <strong>Video Source</strong>.</li>
+      <li>Edit the <strong>URL OR EMBED CODE</strong> field.
+        <figure class="bcls-figure"><img src="/assets/images/projects/project-settings/change-video-source.png"></figure>
+      </li>
+      <li>If the player provider is different and an error is thrown, update the <strong>Embed type</strong>.</li>
+      <li>Click <span class="button-blue">NEXT</span>.</li>
+    </ol>
   </section>
   <section class="bcls-section">
     <h2 id="project">Project settings</h2>
@@ -802,7 +810,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="integrations">Integrations</h2>
     <p><strong>Published</strong> - When checked, displays the annotations in the associated video when published using a HapYak-enabled Brightcove player. If unchecked, annotations will not appear in published videos.
- Typically this is used to test interactivity on a video that is already live  without risking an end viewer seeing a "half baked" version.</p>
+      Typically this is used to test interactivity on a video that is already live  without risking an end viewer seeing a "half baked" version.</p>
     <p><strong>Import Cue Points?</strong> - When checked, will import any existing cue points that are configured on a Video Cloud video  and convert them into chapter markers.</p>
     <figure class="bcls-figure"> <img src="/assets/images/projects/project-settings/integrations.png"> </figure>
   </section>
