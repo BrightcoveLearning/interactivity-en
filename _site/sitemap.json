@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
       "oldURL": "/accessibility"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/accessibility.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
 
@@ -232,11 +232,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/experiences/creating-branching-experience.html",
       "oldURL": "/creating-branching-experience"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/experiences/creating-branching-experience2.html",
-      "oldURL": "/creating-branching-experience2"
   },
 
   {
