@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This topic provides details for how to setup, configure and use the Salesforce Module for HapYak.">
+  <meta name="description" content="This topic provides details for how to setup, configure and use the Salesforce Module for Brightcove Interactivity.">
   
   <title>Salesforce Add-on</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
@@ -746,12 +746,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>Salesforce Add-on</h1>
 <article class="bcls-article">
-  <summary>This topic provides details for how to setup, configure and use the Salesforce Module for HapYak.</summary>
+  <summary>This topic provides details for how to setup, configure and use the Salesforce Module for Brightcove Interactivity.</summary>
   <section class="bcls-section">
-    <p>The Salesforce Module enables the HapYak Analytics engine to pass data directly to your Salesforce instance. The module will automatically create Leads, Contacts and Campaign objects, or connect to existing objects. For advanced users, the module can be configured to work with Salesforce Custom Objects.</p>
+    <p>The Salesforce Module enables the Brightcove Interactivity Analytics engine to pass data directly to your Salesforce instance. The module will automatically create leads, contacts and campaign objects, or connect to existing objects. For advanced users, the module can be configured to work with Salesforce custom objects.</p>
     <h3>Reference documents</h3>
     <ul>
-      <li><a href="/analytics/interactive-video-tracking-events.html">HapYak Interactive Video Tracking Events</a></li>
+      <li><a href="/analytics/interactive-video-tracking-events.html">Brightcove Interactivity Video Tracking Events</a></li>
     </ul>
   </section>
   <section class="bcls-section">
@@ -759,7 +759,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3 id="requirements">Requirements</h3>
     <ul>
       <li>You must be an <i>Enterprise</i> Salesforce customer with access to "Integration with Web Service API"</li>
-      <li>You must be an <i>Enterprise</i> HapYak customer and have the Salesforce Add-on added to your account; contact <a href="https://supportportal.brightcove.com">Brightcove Support</a> to get that added</li>
+      <li>You must be an Enterprise Brightcove Interactivity customer and have the Salesforce Add-on added to your account; contact <a href="https://supportportal.brightcove.com">Brightcove Support</a> to get that added</li>
     </ul>
     <h3>Salesforce setup</h3>
     <p>Create a "HapYak API" user record in Salesforce to provide secure access for the module.</p>
@@ -786,10 +786,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </tr>
       </tbody>
     </table>
-    <h3>HapYak setup</h3>
+    <h3>Brightcove Interactivity setup</h3>
     <ol class="bcls-tasklist-restart">
-      <li>Contact HapYak Support to provision the Salesforce module on your account and to configure data mappings if you are using Custom Objects. <a href="https://supportportal.brightcove.com">Brightcove Support</a></li>
-      <li>Once the module is provisioned, log in to your HapYak account and go to the  account settings page to enter your Salesforce credentials. <a href="http://hapyak.com/portal/account">http://hapyak.com/portal/account</a></li>
+      <li>Contact <a href="https://supportportal.brightcove.com">Brightcove Support</a> to provision the Salesforce module on your account and to configure data mappings if you are using Custom Objects.</li>
+      <li>Once the module is provisioned, login to your Brightcove Interactivity account and go to the  account settings page to enter your Salesforce credentials. <a href="http://hapyak.com/portal/account">http://hapyak.com/portal/account</a></li>
       <li>Click "Salesforce: Connect" on the account settings and enter the Salesforce username, password, and security token for the HapYak API Salesforce user that you created.
         <aside class="bcls-aside bcls-aside--information">Note: If you don't know the value of the Salesforce security token, it can be emailed to you by selecting 
           "My Settings" and then "Personal" "Reset My Security Token" in the Salesforce UI.</aside>
@@ -841,7 +841,7 @@ window.hapyakSalesforceUser = {
       </code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="proj-config">HapYak Project configuration</h2>
+    <h2 id="proj-config">Brightcove Interactivity Project configuration</h2>
     <p>Any project can be configured to be part of a specific Salesforce Campaign. To do so follow the instructions below.</p>
     <ol class="bcls-tasklist-restart">
       <li>From the Project page, select "Configure", and then the "Salesforce" tab.</li>

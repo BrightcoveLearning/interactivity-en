@@ -1,28 +1,30 @@
 ---
 title: LTI Lessons - Creating a Branching Video
-description: Creating a Branching or Choose Your Own Adventure Video in a Lesson created via the HapYak LTI Integration.
+description: Creating a branching or "choose your own adventure" video in a lesson created via the Brightcove Interactivity LTI integration.
 parent: Integrations
 ---
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <h2 id="branching-video-overview">Branching Video Overview</h2>
-    <p>Branching or Choose-Your-Own-Adventure is a popular type of interactive video. In a nutshell, it brings a viewer to different parts of a video, or new video entirely, based on how they interact with it. You can read more on the basics of Branching <a href="/projects/branching-overview.html" data-is-internal-link="true">here</a>. </p>
-    <p>If you created a Lesson via HapYak's LTI integration you can do branching in two ways.</p>
+    <h2 id="branching-video-overview">Branching video overview</h2>
+    <p>Branching or &quot;choose your own adventure&quot; is a popular type of interactive video. In a nutshell, it brings a viewer to different parts of a video, or new video entirely, based on how they interact with it. You can read more on the basics of branching <a href="/projects/branching-overview.html" data-is-internal-link="true">here</a>. </p>
+    <p>If you created a lesson using the Brightcove Interactivity LTI integration you can do branching in two ways.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="in-video-branching">In-Video Branching</h2>
-    <p>You do <b>In-Video branching</b> just as you would in a single project in the HapYak portal. Detail <a href="/projects/in-video-branching.html" data-is-internal-link="true">here</a>. </p>
+    <h2 id="in-video-branching">In-video branching</h2>
+    <p>You do In-video branching just as you would in a single project. For information, see <a href="/projects/in-video-branching.html">Creating an In-Video Branching Project</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="video-to-video-branching">Video to Video Branching</h2>
+    <h2 id="video-to-video-branching">Video to video branching</h2>
     <p>You can branch from video to video by following this technique.</p>
     <ol class="bcls-tasklist-restart">
       <li>Create a lesson. </li>
       <li>Create a second lesson (the next video where you'd like the viewer to branch to). </li>
       <li>View the second lesson as a student. Copy the URL of that lesson. </li>
-      <li>Go back to the first lesson. Add an annotation (text, hotspot or image) that the viewer would click to branch to the next video. In <a href="/annotations/link-options.html" data-is-internal-link="true">Link (ON CLICK EVENT)</a> / Load external URL:, paste the URL to the second lesson. Click Submit. Click Done. </li>
+      <li>Go back to the first lesson. Add an annotation (text, hotspot or image) that the viewer would click to branch to the next video.</li>
+      <li> In <a href="/annotations/link-options.html" data-is-internal-link="true">Link (ON CLICK EVENT)</a> / Load external URL:, paste the URL to the second lesson. </li>
+      <li>Click <strong>Submit</strong> and then <strong>Done</strong>. </li>
       <li>Test by viewing this first lesson as a student. Clicking on the annotation should load the second lesson. </li>
     </ol>
     <aside class="bcls-aside bcls-aside--information">Note: You can use this same technique in a Quiz annotation by adding the second lesson URL to the <a href="/annotations/adding-quiz-annotation.html" data-is-internal-link="true">Pass/Fail actions</a> field.</aside>
