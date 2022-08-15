@@ -82,8 +82,6 @@
   name: 'Integrations'
   url: '/integrations/index.html'
   docs:
-    - name: 'Custom CSS via HapYak Plugin for Brightcove'
-      url: '/integrations/custom-css-via-hapyak-plugin-for-brightcove.html'
     - name: 'Eloqua Add-on'
       url: '/integrations/eloqua-add-on.html'
     - name: 'Enabling Brightcove Sync'
@@ -168,6 +166,8 @@
       url: '/styling/simple-text-color-styling.html'
     - name: 'Styling Annotations'
       url: '/styling/styling-annotations.html'
+    - name: 'Using Custom CSS via HapYak Plugin'
+      url: '/integrations/custom-css-via-hapyak-plugin-for-brightcove.html'
     - name: 'Using the Built-In CSS Classes'
       url: '/styling/using-built-in-css-classes.html'
 - section: 
