@@ -7,23 +7,23 @@ parent: Integrations
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>This module provides a JavaScript integration that will track interactive video <i>click</i> events utilizing Eloqua Asynchronous Visitor Tracking Scripts. Once the setup process is complete all videos in your HapYak group will be tracked using the integration.</p>
+    <p>This module provides a JavaScript integration that will track interactive video <i>click</i> events utilizing Eloqua Asynchronous Visitor Tracking Scripts. Once the setup process is complete all videos in your Brightcove Interactivity group will be tracked using the integration.</p>
     <h3 id="requirements">Requirements</h3>
     <ul>
       <li>You must be a current Oracle Eloqua customer</li>
-      <li>You must be an <i>Enterprise</i> HapYak customer and have the Eloqua add-on added to your account; contact <a href="https://supportportal.brightcove.com">Brightcove Support</a> to get that added</li>
+      <li>You must be an Enterprise Brightcove Interactivity customer and have the Eloqua add-on added to your account; contact <a href="https://supportportal.brightcove.com">Brightcove Support</a> to get that added</li>
     </ul>
   </section>
   <section class="bcls-section">
     <h2 id="one-time">One-time setup</h2>
     <ol class="bcls-tasklist-restart">
-      <li>Obtain your base Eloqua tracking script and provide it to your HapYak Account Manager. It should look something like below (your code should have a numerical value in place of ‘xxxxxxxxx’).
+      <li>Obtain your base Eloqua tracking script and provide it to your Brightcove Account Manager. It should look something like below (your code should have a numerical value in place of ‘xxxxxxxxx’).
         <pre><code>
 &lt;script type="text/javascript"&gt;<br>    var _elqQ = _elqQ || [];<br>    _elqQ.push(['elqSetSiteId', 'xxxxxxxxx']);<br>    _elqQ.push(['elqTrackPageView']);<br>    <br>    (function () {<br>        function async_load() {<br>            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;<br>            s.src = '//img.en25.com/i/elqCfg.min.js';<br>            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);<br>        }<br>        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);<br>        else if (window.attachEvent) window.attachEvent('onload', async_load);<br>    })();<br>&lt;/script&gt;
               </code></pre>
       </li>
-      <li>Your HapYak Account Manager will configure your account and provide a test page. The implementation utilizes the <code>_elq.trackEvent(URL)</code> method to post data to Eloqua. HapYak parameters are appended to the end of the URL for the page where the video is served.
-        <p>For Example, if the video is embedded on the page <code>http://www.domain.com/mypage</code>, and someone clicks on a call-to-action at 53 seconds into the video, it will be recorded as <code>_elq.trackEvent("http://www.domain.com/mypage?hy_src=hapyak&hy_action=click&hy_time=53")</code></p>
+      <li>Your Brightcove Account Manager will configure your account and provide a test page. The implementation utilizes the <code>_elq.trackEvent(URL)</code> method to post data to Eloqua. Brightcove Interactivity parameters are appended to the end of the URL for the page where the video is served.
+        <p>For example, if the video is embedded on the page <code>http://www.domain.com/mypage</code>, and someone clicks on a call-to-action at 53 seconds into the video, it will be recorded as <code>_elq.trackEvent("http://www.domain.com/mypage?hy_src=hapyak&hy_action=click&hy_time=53")</code></p>
       </li>
       <li>You will need to verify the data flow from the test page to your Eloqua account. Once the data is verified you will have the opportunity to make requests for customizations to the data format. After any customizations are made and final approval is received from you, the implementation will be considered certified and ready for production use.</li>
     </ol>
