@@ -120,8 +120,6 @@
       url: '/experiences/creating-branching-experience.html'
     - name: 'Creating a Slide Sync Experience'
       url: '/experiences/creating-slide-sync-experience.html'
-    - name: 'Embedding a Slide Sync Experience on a Web Page'
-      url: '/experiences/embedding-a-slidesync-experience-on-a-webpage.html'
     - name: 'Experiences Overview'
       url: '/experiences/experiences-overview.html'
 - section: 
