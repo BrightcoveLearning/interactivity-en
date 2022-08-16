@@ -160,7 +160,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/best-practices/becoming-an-interactive-video-expert.html",
+      "newURL": "https://interactivity.support.brightcove.com/general/becoming-an-interactive-video-expert.html",
       "oldURL": "/becoming-an-interactive-video-expert"
   },
 
@@ -330,7 +330,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/best-practices/how-to-increase-click-through-rate-ctr.html",
+      "newURL": "https://interactivity.support.brightcove.com/general/how-to-increase-click-through-rate-ctr.html",
       "oldURL": "/how-to-increase-click-through-rate-ctr"
   },
 
@@ -350,7 +350,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/experiences/",
+      "newURL": "https://interactivity.support.brightcove.com/admin/",
       "oldURL": "/index"
   },
 
@@ -400,11 +400,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/admin/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/troubleshooting/",
       "oldURL": "/index"
   },
@@ -416,6 +411,11 @@
 
   {
       "newURL": "https://interactivity.support.brightcove.com/annotations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/experiences/",
       "oldURL": "/index"
   },
 
@@ -460,11 +460,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/best-practices/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/analytics/",
       "oldURL": "/index"
   },
@@ -490,7 +485,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/best-practices/interactive-video-script-template.html",
+      "newURL": "https://interactivity.support.brightcove.com/general/interactive-video-script-template.html",
       "oldURL": "/interactive-video-script-template"
   },
 
@@ -620,17 +615,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/annotation-api/reference.html",
-      "oldURL": "/reference"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/developers/addon-api/reference.html",
       "oldURL": "/reference"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/responsive-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/developers/extension-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -640,7 +630,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/extension-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/developers/responsive-api/reference.html",
+      "oldURL": "/reference"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/developers/annotation-api/reference.html",
       "oldURL": "/reference"
   },
 

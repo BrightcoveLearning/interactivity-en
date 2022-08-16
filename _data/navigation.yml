@@ -18,16 +18,6 @@
     - name: 'Terminology'
       url: '/getting-started/terminology.html'
 - section: 
-  name: 'Best Practices'
-  url: '/best-practices/index.html'
-  docs:
-    - name: 'Becoming an Interactive Video Expert'
-      url: '/best-practices/becoming-an-interactive-video-expert.html'
-    - name: 'How to Increase Click Through Rate (CTR)'
-      url: '/best-practices/how-to-increase-click-through-rate-ctr.html'
-    - name: 'Interactive Video Script Template'
-      url: '/best-practices/interactive-video-script-template.html'
-- section: 
   name: 'Annotations'
   url: '/annotations/index.html'
   docs:
@@ -194,6 +184,8 @@
   name: 'General Information'
   url: '/general/index.html'
   docs:
+    - name: 'Becoming an Interactive Video Expert'
+      url: '/general/becoming-an-interactive-video-expert.html'
     - name: 'Brightcove Browser Compatibility'
       url: '/general/brightcove-browser-compatibility.html'
     - name: 'Brightcove Interactivity FAQ'
@@ -202,6 +194,10 @@
       url: '/general/customizing-the-hapyak-player.html'
     - name: 'Editing Videos in QuickTime'
       url: '/general/edit-videos-in-quicktime.html'
+    - name: 'How to Increase Click Through Rate (CTR)'
+      url: '/general/how-to-increase-click-through-rate-ctr.html'
+    - name: 'Interactive Video Script Template'
+      url: '/general/interactive-video-script-template.html'
     - name: 'Localization'
       url: '/customize/localization-change-the-language-translate-the-language.html'
     - name: 'Mobile Device Support'
