@@ -260,12 +260,8 @@
   name: 'Troubleshooting'
   url: '/troubleshooting/index.html'
   docs:
-    - name: 'Brightcove Videos Are Experiencing Unexpected Behavior in IE11'
-      url: '/troubleshooting/brightcove-videos-are-experiencing-unexpected-behavior-in-ie11-or-other-flash-based-browsers.html'
     - name: 'Detecting Browser Version and Operating System Version'
       url: '/troubleshooting/detecting-browser-version-and-operating-system-version.html'
-    - name: 'Save Project / Save Annotation'
-      url: '/troubleshooting/save-project-save-annotation.html'
     - name: 'Taking a Console Screenshot or Screen Recording'
       url: '/troubleshooting/taking-a-console-screenshot-or-screen-recording.html'
     - name: 'What web browsers does HapYak support?'
