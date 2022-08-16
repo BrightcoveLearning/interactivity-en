@@ -258,10 +258,10 @@
   docs:
     - name: 'Detecting Browser Version and Operating System Version'
       url: '/troubleshooting/detecting-browser-version-and-operating-system-version.html'
+    - name: 'Supported Web Browsers and Devices'
+      url: '/troubleshooting/what-web-browsers-devices-does-hapyak-support.html'
     - name: 'Taking a Console Screenshot or Screen Recording'
       url: '/troubleshooting/taking-a-console-screenshot-or-screen-recording.html'
-    - name: 'What web browsers does HapYak support?'
-      url: '/troubleshooting/what-web-browsers-devices-does-hapyak-support.html'
 - section: 
   name: 'Support'
   url: '/support/'
