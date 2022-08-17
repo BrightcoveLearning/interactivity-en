@@ -116,8 +116,6 @@
   name: 'Sharing & Embedding'
   url: '/sharing-and-embedding/index.html'
   docs:
-    - name: 'Accessibility'
-      url: '/sharing-and-embedding/accessibility.html'
     - name: 'Adding a HapYak Interactive Video to Adobe Captivate'
       url: '/sharing-and-embedding/adding-a-hapyak-interactive-video-to-adobe-captivate.html'
     - name: 'Adding a HapYak video to a Squarespace web site'
@@ -126,8 +124,6 @@
       url: '/sharing-and-embedding/adding-a-hapyak-video-to-a-wix-web-site.html'
     - name: 'Adding a HapYak video to Articulate Storyline'
       url: '/sharing-and-embedding/adding-a-hapyak-video-to-articulate-storyline.html'
-    - name: 'Adding a HapYak Video to Blackboard'
-      url: '/sharing-and-embedding/adding-a-hapyak-video-to-blackboard.html'
     - name: 'Autoplay'
       url: '/sharing-and-embedding/autoplay.html'
     - name: 'Can I download or export my HapYak project?'
