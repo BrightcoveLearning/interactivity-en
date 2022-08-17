@@ -180,11 +180,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/can-i-download-or-export-my-hapyak-project.html",
-      "oldURL": "/can-i-download-or-export-my-hapyak-project"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/delete/closed-captions.html",
       "oldURL": "/closed-captions"
   },
@@ -340,7 +335,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/templates/",
+      "newURL": "https://interactivity.support.brightcove.com/experiences/",
       "oldURL": "/index"
   },
 
@@ -430,11 +425,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/getting-started/",
       "oldURL": "/index"
   },
@@ -461,6 +451,11 @@
 
   {
       "newURL": "https://interactivity.support.brightcove.com/styling/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/templates/",
       "oldURL": "/index"
   },
 
@@ -605,7 +600,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/addon-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/developers/responsive-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -620,7 +615,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/responsive-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/developers/addon-api/reference.html",
       "oldURL": "/reference"
   },
 
