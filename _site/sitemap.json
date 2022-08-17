@@ -25,26 +25,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-a-hapyak-interactive-video-to-adobe-captivate.html",
-      "oldURL": "/adding-a-hapyak-interactive-video-to-adobe-captivate"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-a-hapyak-video-to-a-squarespace-web-site.html",
-      "oldURL": "/adding-a-hapyak-video-to-a-squarespace-web-site"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-a-hapyak-video-to-a-wix-web-site.html",
-      "oldURL": "/adding-a-hapyak-video-to-a-wix-web-site"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-a-hapyak-video-to-articulate-storyline.html",
-      "oldURL": "/adding-a-hapyak-video-to-articulate-storyline"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/delete/adding-a-mailchimp-form-to-a-video.html",
       "oldURL": "/adding-a-mailchimp-form-to-a-video"
   },
@@ -72,6 +52,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/annotations/adding-image-overlay.html",
       "oldURL": "/adding-image-overlay"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-interactive-video-to-adobe-captivate.html",
+      "oldURL": "/adding-interactive-video-to-adobe-captivate"
   },
 
   {
@@ -107,6 +92,21 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/annotations/adding-transparent-overlay.html",
       "oldURL": "/adding-transparent-overlay"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-video-to-a-squarespace-website.html",
+      "oldURL": "/adding-video-to-a-squarespace-website"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-video-to-a-wix-website.html",
+      "oldURL": "/adding-video-to-a-wix-website"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/adding-video-to-articulate-storyline.html",
+      "oldURL": "/adding-video-to-articulate-storyline"
   },
 
   {
