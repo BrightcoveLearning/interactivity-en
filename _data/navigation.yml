@@ -113,7 +113,7 @@
     - name: 'Experiences Overview'
       url: '/experiences/experiences-overview.html'
 - section: 
-  name: 'Sharing & Embedding'
+  name: 'Sharing and Embedding'
   url: '/sharing-and-embedding/index.html'
   docs:
     - name: 'Adding a HapYak Interactive Video to Adobe Captivate'
