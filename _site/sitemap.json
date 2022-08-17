@@ -605,7 +605,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/annotation-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/developers/extension-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -615,12 +615,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/addon-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/developers/annotation-api/reference.html",
       "oldURL": "/reference"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/extension-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/developers/addon-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -670,8 +670,8 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/sharing-on-social-channels-facebook-twitter-linkedin.html",
-      "oldURL": "/sharing-on-social-channels-facebook-twitter-linkedin"
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/sharing-on-social-channels.html",
+      "oldURL": "/sharing-on-social-channels"
   },
 
   {

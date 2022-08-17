@@ -133,7 +133,7 @@
     - name: 'Sharing and Embedding'
       url: '/sharing-and-embedding/sharing-and-embedding.html'
     - name: 'Sharing on Social Channels'
-      url: '/sharing-and-embedding/sharing-on-social-channels-facebook-twitter-linkedin.html'
+      url: '/sharing-and-embedding/sharing-on-social-channels.html'
 - section: 
   name: 'Styling'
   url: '/styling/index.html'
