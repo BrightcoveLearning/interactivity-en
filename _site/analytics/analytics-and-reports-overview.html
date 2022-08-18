@@ -719,11 +719,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="heartbeat">Heartbeat</h2>
-    <p>This Heartbeat Report tells you who has been watching your on demand videos over the last few minutes. The information shown includes the project title, URL the video was watched on, operations system, browser, time and the action:</p>
+    <p>This Heartbeat Report tells you who has been watching your on demand videos over the last few minutes. The report includes the following information:</p>
     <ul>
-      <li> Play (<img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-play.png" />)</li>
-      <li>Play End (complete) (<img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-play-end.png" />)</li>
-      <li>Interaction (<img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-interaction.png" />)</li>
+      <li><strong>Action</strong>
+        <ul>
+          <li><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-play.png" /> - Play - The viewer played the video</li>
+          <li><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-play-end.png" /> - Play End - The viewer completed the video</li>
+          <li><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-interaction.png" /> - The viewer interacted with the video</li>
+        </ul>
+      </li>
+      <li><strong>Interaction rate</strong> - Plays with interaction / plays. Track this closely. You want to get to as close to 100% as possible.</li>
+      <li><strong>Plays</strong> - The total number of video plays. A play is counted if a viewer clicks play or if the videos auto plays. If a viewer re-watches a video in a given session, that counts as one play.</li>
+      <li><strong>Plays with interaction</strong> - The total number of plays where a viewer clicked at least one interaction.</li>
+      <li><strong>People</strong> - The total number of individual viewers who watched a video, aka users.</li>
     </ul>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/heartbeat-report.png"></figure>
   </section>

@@ -120,11 +120,6 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/analytics/analytics-and-reports-overview-OLD.html",
-      "oldURL": "/analytics-and-reports-overview-OLD"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/analytics/analytics-and-reports-overview.html",
       "oldURL": "/analytics-and-reports-overview"
   },
@@ -340,7 +335,22 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/projects/",
+      "newURL": "https://interactivity.support.brightcove.com/references/addon/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/references/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/getting-started/",
       "oldURL": "/index"
   },
 
@@ -350,32 +360,17 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/",
+      "newURL": "https://interactivity.support.brightcove.com/references/annotation/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/support/",
+      "newURL": "https://interactivity.support.brightcove.com/references/responsive/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/integrations/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/examples/",
+      "newURL": "https://interactivity.support.brightcove.com/admin/",
       "oldURL": "/index"
   },
 
@@ -395,17 +390,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/references/responsive/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/references/playlist/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/references/extension/",
+      "newURL": "https://interactivity.support.brightcove.com/styling/",
       "oldURL": "/index"
   },
 
@@ -415,37 +400,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/references/embed/",
+      "newURL": "https://interactivity.support.brightcove.com/references/playlist/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/references/annotation/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/styling/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/references/addon/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/references/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/admin/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/templates/",
+      "newURL": "https://interactivity.support.brightcove.com/integrations/",
       "oldURL": "/index"
   },
 
@@ -455,12 +415,47 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/getting-started/",
+      "newURL": "https://interactivity.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/",
+      "newURL": "https://interactivity.support.brightcove.com/projects/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/developers/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/templates/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/references/embed/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/examples/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/references/extension/",
       "oldURL": "/index"
   },
 
@@ -605,6 +600,16 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/developers/embed-api/reference.html",
+      "oldURL": "/reference"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/developers/addon-api/reference.html",
+      "oldURL": "/reference"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/developers/annotation-api/reference.html",
       "oldURL": "/reference"
   },
@@ -616,16 +621,6 @@
 
   {
       "newURL": "https://interactivity.support.brightcove.com/developers/responsive-api/reference.html",
-      "oldURL": "/reference"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/developers/addon-api/reference.html",
-      "oldURL": "/reference"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/developers/embed-api/reference.html",
       "oldURL": "/reference"
   },
 
