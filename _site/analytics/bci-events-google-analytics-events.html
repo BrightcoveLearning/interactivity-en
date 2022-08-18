@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Learn about the various reports Brightcove Interactivity offers.">
+  <meta name="description" content="This topic outlines how Brightcove Interactivity events are mapped to Google Analytics events.">
   
-  <title>Brightcove Interactivity Reports</title>
+  <title>Mapping of Brightcove Interactivity Events to Google Analytics Events</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -65,7 +65,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/analytics/">Analytics</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Brightcove Interactivity Reports</li>
+      <li class="breadcrumb-item active" aria-current="page">Mapping of Brightcove Interactivity Events to Google Analytics Events</li>
     </ol>
   </nav>
 </header>
@@ -481,15 +481,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/analytics/hapyak-reports.html">Brightcove Interactivity Reports</a></li>
-                  
-                
-                  
                     <li><a href="/analytics/interactive-video-tracking-events.html">Interactive Video Tracking Events</a></li>
                   
                 
                   
-                    <li><a href="/analytics/hapyak-events-google-analytics-events.html">Mapping Brightcove Interactivity Events to Google Analytics</a></li>
+                    <li><a href="/analytics/bci-events-google-analytics-events.html">Mapping Brightcove Interactivity Events to Google Analytics</a></li>
                   
                 
                   
@@ -713,40 +709,33 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Brightcove Interactivity Reports</h1>
+<h1>Mapping of Brightcove Interactivity Events to Google Analytics Events</h1>
 <article class="bcls-article">
-  <summary>Learn about the various reports Brightcove Interactivity offers.</summary>
+  <summary>This topic outlines how Brightcove Interactivity events are mapped to Google Analytics events.</summary>
   <section class="bcls-section">
-    <p>Brightcove Interactivity offers a variety of reports to provide users insight into how their video(s) are performing. This article will outline the functionality each report offers and the data it exposes.</p>
-    <p>You can access reports these reports via the rail on the left side of the Brightcove Interactivity studio.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/analytics/accessing-reports.png"></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="heartbeat">Heartbeat</h2>
-    <p>This report tells you who has been watching your on demand videos over the last few minutes. The information shown includes the URL the video was watched on, the browser/device, and the action: play, complete, or interaction.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/analytics/heartbeat-report.png"></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="core-reports">Core Reports</h2>
-    <p>These are Brightcove Interactivity’s standard performance reports. They provide summary information about the Play Rate and Interaction rate of each video.</p>
-    <p>Brightcove Interactivity provides Project, Experience, and User filters for both summary and activity stream reports (Enterprise Licenses). A summary report provides general metrics for a given resource (Project, Experience, User), while an activity stream report provides more contextual metrics to understand how a resource performed in a given session. </p>
-    <figure class="bcls-figure"> <img src="/assets/images/analytics/core-report.png"></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="custom-reports">Custom Reports</h2>
-    <p>These are customer-specific reports that usually contain additional fields based on the customer’s unique video metadata. Contact <a href="https://supportportal.brightcove.com">Brightcove Support</a> for more information about how to setup custom reports. </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="question-report">Question Report</h2>
-    <p>This report is a specialty visualization for multiple-choice questions asked via the “Quiz” annotation. It displays the question asked, and a count of how many responses were received.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/analytics/question-report.png"></figure>
-    <p>Each row in the report is clickable, allowing users to drill-down for more in depth information about how their clients performed for each question.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/analytics/question-report-row.png"></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="gradebook">Gradebook</h2>
-    <p>This report is a specialty visualization for questions asked via the “Quiz” annotation. It displays the final answer submitted to a question, for each individual user who answered.</p>
-    <p>Like the question report, each row is clickable, allowing for further insight into each users responses.</p>
+    <p>For information on the Brightcove Interactivity Tracking Events, see <a href="interactive-video-tracking-events.html">Brightcove Interactivity Video Tracking Events</a>.</p>
+    <h3>G/A Custom Vars</h3>
+    <p>We're setting the following custom vars at the page-scope to be associated with all events.</p>
+    <p>Slot 1 = Video Source (youtube url, or other video source url) </p>
+    <p>Slot 2 = UserId</p>
+    <p> Slot 3 = UserName </p>
+    <h3>G/A Event for QUIZ</h3>
+    <p>We're capturing the <strong>Answer</strong> event.</p>
+    <p>Category = "Brightcove Interactivity - [Project Title]" </p>
+    <p> Action = "Quiz - Correct | Incorrect"</p>
+    <p> Label = "[Question Text]"</p>
+    <p>
+    <h3>G/A Event for LINK</h3>
+    <p>We're defining LINK as anything that trigger sanother webpage to be loaded. This may be a user click, or it may be an automatic page load triggered by a Quiz answer.</p>
+    <p>Category = "Brightcove Interactivity - [Project Title]"</p>
+    <p> Action = "Link"</p>
+    <p> Label = "[url]"</p>
+    <h3>G/A Event for NAVIGATION</h3>
+    <p>We're defining NAVIGATION as anything that triggers a seek in the video (excluding a user click on the timeline). This may be a user click, or it may be an automatic seek triggered by a Quiz answer.</p>
+    <p>Category = "Brightcove Interactivity - [Project Title]" </p>
+    <p> Action = "Navigation"</p>
+    <p> Label = "[seek time] | Chapter: [chapter id]"</p>
+    </p>
   </section>
 </article>
 
@@ -765,7 +754,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 29 Dec 2021
+  Page last updated on 09 May 2022
 </div>
 
 
