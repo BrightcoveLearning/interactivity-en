@@ -712,20 +712,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Brightcove Interactivity tracks how your viewers are interacting with your video in detail. More than just play and pause, we track a whole set of specific events associated with your video that give you deep-level insights into viewer choices, behavior and engagement. </p>
     <p>There are three event<sup>1</sup> types:</p>
     <ol>
-      <li><strong>Player Action</strong> details how a viewer played, paused, and progressed through the video.</li>
-      <li><strong>Annotation View</strong> and <strong>Annotation Ended</strong> details which annotations were seen by the viewer and for how long.</li>
-      <li><strong>Annotation Action</strong> details how the user interacted with the annotation.</li>
+      <li><strong>Player Action</strong> - Details how a viewer played, paused, and progressed through the video.</li>
+      <li><strong>Annotation View</strong> and <strong>Annotation Ended</strong> - Details which annotations were seen by the viewer and for how long.</li>
+      <li><strong>Annotation Action</strong> - Details how the user interacted with the annotation.</li>
     </ol>
     <p>Each event has a set of properties associated with it. For example, the event of a click on an annotation call-to-action could have the following properties:</p>
     <ul>
-      <li>The viewer’s <strong>UserID</strong><sup>2</sup> was “kyle_morton”</li>
+      <li>The viewer’s <strong>UserID</strong><sup>2</sup> was &quot;kyle_smith&quot;</li>
       <li>The annotation’s <strong>duration</strong> was 8.35 seconds</li>
       <li>5 seconds <strong>elapsed</strong> before the viewer clicked the link</li>
       <li>The annotation’s link <strong>target</strong> was <code>http://www.rei.com/product/763713</code></li>
     </ul>
     <p>---------------</p>
     <p><sup>1</sup> Attribute name is &quot;event&quot;</p>
-    <p><sup>2</sup> Available when the viewer user is logged into the Portal</p>
+    <p><sup>2</sup> Available when the viewer user is logged into the portal</p>
   </section>
   <section class="bcls-section">
     <h2 id="common-event">Common event properties</h2>
@@ -748,7 +748,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><strong>Tags</strong> - Author-provided tags associated with the Track or Project objects</li>
     </ul>
     <h3>Optional information</h3>
-    <p>You can pass in optional properties to track like UserIDs and other custom user details that will help you make sense of the data later on. When present, these data will become properties of every event.</p>
+    <p>You can pass in optional properties to track like User IDs and other custom user details that will help you make sense of the data later on. When present, this data will become properties of every event.</p>
     <ul>
       <li><strong>Partner User ID</strong> - hashed userID from an external system</li>
       <li><strong>Partner Username</strong> - human-readable username to be displayed in reports</li>
@@ -756,7 +756,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="annotation-event-generic">Annotation Event Generic Properties</h2>
+    <h2 id="annotation-event-generic">Annotation event generic properties</h2>
     <p>These properties are present on Annotation View, Annotation End and Annotation Action events.</p>
     <h3>Identifiers</h3>
     <ul>
@@ -775,7 +775,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ul>
     <h3>Interaction information</h3>
     <ul>
-      <li><strong>Action</strong> - Present for “Player Action” and "Annotation Action" event types. Refer to the specific annotation type to see a list of possible values.</li>
+      <li><strong>Action</strong> - Present for &quot;Player Action&quot; and "Annotation Action" event types. Refer to the specific annotation type to see a list of possible values.</li>
     </ul>
   </section>
   <section class="bcls-section">
@@ -805,14 +805,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3>Table of Contents annotation</h3>
     <ul>
       <li><strong>Action</strong> - "Click", "Prev", "Next", "Expand", "Collapse"</li>
-      <li><strong>Type</strong> - “contents”</li>
-      <li><strong>Target</strong> - Annotation ID of the clicked Chapter</li>
-      <li><strong>Target Time</strong> - Time offset of the clicked Chapter</li>
+      <li><strong>Type</strong> - &quot;contents&quot;</li>
+      <li><strong>Target</strong> - Annotation ID of the clicked chapter</li>
+      <li><strong>Target Time</strong> - Time offset of the clicked chapter</li>
       <li><strong>Text</strong> - Text (name) of the target chapter</li>
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="player-event-generic">Player Event Generic Properties </h2>
+    <h2 id="player-event-generic">Player event generic properties </h2>
     <p>These properties are present on all Player Action events.</p>
     <h3>Timing information</h3>
     <ul>
@@ -835,7 +835,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="standard-properties">Standard Properties for all Events</h2>
+    <h2 id="standard-properties">Standard properties for all events</h2>
     <p>This is general information about the viewer and environment, similar to most web analytics systems.   These values are not available to client-side analytics.</p>
     <ul>
       <li><code>browser</code></li>
@@ -857,7 +857,7 @@ hapyak.viewer({
 });
 </code>
 </pre>
-    <p>Documentation on the Brightcove Interactivity Viewer Object can be found here: <a href="http://www.hapyak.com/docs/#AdvancedOptions12">http://www.hapyak.com/docs/#AdvancedOptions12</a>.</p>
+    <p>Documentation on the Brightcove Interactivity Viewer Object can be found <a href="https://interactivity.support.brightcove.com/references/embed/embed.html#AdvancedOptions12">here</a>.</p>
   </section>
 </article>
 
