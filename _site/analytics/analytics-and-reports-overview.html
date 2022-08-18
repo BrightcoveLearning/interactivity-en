@@ -711,33 +711,60 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Brightcove Interactivity offers a variety of reports to provide users insight into how their video(s) are performing. This article will outline the functionality each report offers and the data it exposes.</p>
     <p>You can access reports these reports via the rail on the left side of the Brightcove Interactivity studio.</p>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/accessing-reports.png"></figure>
+    <p>Start by using the date control to select a date range for the report.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/date-range.png" /></figure>
+    <p>Click the download button to download the report data.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/download-report-button.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The Heartbeat report will only display information for the past 7 days and the report data cannot be downloaded.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="heartbeat">Heartbeat</h2>
-    <p>This report tells you who has been watching your on demand videos over the last few minutes. The information shown includes the URL the video was watched on, the browser/device, and the action: play, complete, or interaction.</p>
+    <p>This Heartbeat Report tells you who has been watching your on demand videos over the last few minutes. The information shown includes the project title, URL the video was watched on, operations system, browser, time and the action:</p>
+    <ul>
+      <li> Play (<img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-play.png" />)</li>
+      <li>Play End (complete) (<img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-play-end.png" />)</li>
+      <li>Interaction (<img class="bcls-image--no-border" alt="" src="/assets/images/analytics/icon-interaction.png" />)</li>
+    </ul>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/heartbeat-report.png"></figure>
   </section>
   <section class="bcls-section">
     <h2 id="core-reports">Core Reports</h2>
-    <p>These are Brightcove Interactivity’s standard performance reports. They provide summary information about the Play Rate and Interaction rate of each video.</p>
-    <p>Brightcove Interactivity provides Project, Experience, and User filters for both summary and activity stream reports (Enterprise Licenses). A summary report provides general metrics for a given resource (Project, Experience, User), while an activity stream report provides more contextual metrics to understand how a resource performed in a given session. </p>
+    <p>These are the standard performance reports. They provide summary information about the play rate and interaction rate of each video. Summary reports provide general metrics for a given resource (project, experience, user), while an activity stream report provides more contextual metrics to understand how a resource performed in a given session.</p>
+    <p>Some reports provide an Advanced option which can be used to filter the data based upon project ID and/or experience ID.</p>
+    <p>The following reports are available:</p>
+    <ul>
+      <li><strong>Chapter Summary</strong> - Displays a summary of chapter views and clicks</li>
+      <li><strong>Experience Summary</strong> - Displays play rate, interaction rate activity time and audience for each experience</li>
+      <li><strong>Experience Stream</strong> - Displays detailed interaction data for each experience</li>
+      <li><strong>Poll Widget Detail</strong> - Displays all response data captured using the Poll widget</li>
+      <li><strong>Poll Widget Summary</strong> - Displays a summary of response data captured using the Poll widget</li>
+      <li><strong>Project Summary</strong> - Displays which interactive videos viewers are engaging with most</li>
+      <li><strong>Project Activity Stream</strong> - Displays an event-by-event rundown of each action a viewer takes</li>
+      <li><strong>Signin Widget Detail</strong> - Displays all of the signins captured using the Sign In widget</li>
+      <li><strong>Signin Widget Summary</strong> - Displays the number of signins using the Sign In widget</li>
+      <li><strong>User Summary</strong> - Displays which viewers are most engaged</li>
+      <li><strong>User Activity Stream</strong> - Displays en event-by-event rundown of each action a user takes on each video which viewers are most engaged</li>
+      <li><strong>User Sentiment Summary</strong> - Displays user sentiment ratings for each project</li>
+    </ul>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/core-report.png"></figure>
   </section>
   <section class="bcls-section">
     <h2 id="custom-reports">Custom Reports</h2>
-    <p>These are customer-specific reports that usually contain additional fields based on the customer’s unique video metadata. Contact <a href="https://supportportal.brightcove.com">Brightcove Support</a> for more information about how to setup custom reports. </p>
+    <p>These are customer-specific reports that usually contain additional fields based on the customer’s unique video metadata. Contact <a href="https://supportportal.brightcove.com">Brightcove Support</a> for  information about how to setup custom reports.</p>
   </section>
   <section class="bcls-section">
     <h2 id="question-report">Question Report</h2>
-    <p>This report is a specialty visualization for multiple-choice questions asked via the “Quiz” annotation. It displays the question asked, and a count of how many responses were received.</p>
+    <p>This report is a specialty visualization for multiple-choice questions asked via the Quiz annotation.</p>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/question-report.png"></figure>
-    <p>Each row in the report is clickable, allowing users to drill-down for more in depth information about how their clients performed for each question.</p>
+    <p>Each row in the report is clickable, allowing users to drill-down for more in depth information about how their viewers performed for each question.</p>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/question-report-row.png"></figure>
   </section>
   <section class="bcls-section">
     <h2 id="gradebook">Gradebook</h2>
-    <p>This report is a specialty visualization for questions asked via the “Quiz” annotation. It displays the final answer submitted to a question, for each individual user who answered.</p>
+    <p>This report is a specialty visualization for questions asked using the Quiz annotation. It displays the final answer submitted to a question, for each individual user who answered.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/gradebook-report.png" /></figure>
     <p>Like the question report, each row is clickable, allowing for further insight into each users responses.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/gradebook-report-row.png" /></figure>
   </section>
 </article>
 
