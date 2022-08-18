@@ -741,18 +741,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Some reports provide an Advanced option which can be used to filter the data based upon project ID and/or experience ID.</p>
     <p>The following reports are available:</p>
     <ul>
-      <li><strong>Chapter Summary</strong> - Displays a summary of chapter views and clicks</li>
+      <li><strong>Chapter Summary</strong> - Displays the aggregate usage of each chapter annotation, inclusive of both active usage (clicking on a chapter via the menu) and passive usage (chapter annotation starts during playback)</li>
       <li><strong>Experience Summary</strong> - Displays play rate, interaction rate activity time and audience for each experience</li>
       <li><strong>Experience Stream</strong> - Displays detailed interaction data for each experience</li>
-      <li><strong>Poll Widget Detail</strong> - Displays all response data captured using the Poll widget</li>
-      <li><strong>Poll Widget Summary</strong> - Displays a summary of response data captured using the Poll widget</li>
-      <li><strong>Project Summary</strong> - Displays which interactive videos viewers are engaging with most</li>
+      <li><strong>Poll Widget Detail</strong> - Displays individual poll response breakout by user per individual response</li>
+      <li><strong>Poll Widget Summary</strong> - Displays aggregate information around poll responses; each possible answer is given its own row in the report with cumulative response data</li>
+      <li><strong>Project Summary</strong> - Displays the aggregate performance of a project across all user actions; provides insights to overall play &amp; interaction rates, cumulative usage of kinds of interactivity, and audience engagement</li>
       <li><strong>Project Activity Stream</strong> - Displays an event-by-event rundown of each action a viewer takes</li>
       <li><strong>Signin Widget Detail</strong> - Displays all of the signins captured using the Sign In widget</li>
       <li><strong>Signin Widget Summary</strong> - Displays the number of signins using the Sign In widget</li>
-      <li><strong>User Summary</strong> - Displays which viewers are most engaged</li>
-      <li><strong>User Activity Stream</strong> - Displays en event-by-event rundown of each action a user takes on each video which viewers are most engaged</li>
-      <li><strong>User Sentiment Summary</strong> - Displays user sentiment ratings for each project</li>
+      <li><strong>User Summary</strong> - Displays the aggregate behavior of each user across all projects they viewed; cumulative figures on amount of video watched, number of times each kind of annotation used, sessions, plays, etc.</li>
+      <li><strong>User Activity Stream</strong> - Displays an event-by-event rundown of each action a user takes on each video which viewers are most engaged</li>
+      <li><strong>User Sentiment Summary</strong> - Displays the aggregated response rates for the user sentiment widget; written only with binary choice option (thumbs up/down) in <aside class="bcls-aside bcls-aside--information language-editable">Note: There are two other choice options currently, a 1-5 star rating or a happy, medium, sad emoji option. All three icon types are scored on a 1-5 scale from a data perspective.</aside>
+          </li>
     </ul>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/core-report.png"></figure>
   </section>
@@ -762,14 +763,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="question-report">Question Report</h2>
-    <p>This report is a specialty visualization for multiple-choice questions asked via the Quiz annotation.</p>
+    <p>This report is a specialty visualization for multiple-choice questions asked via the Quiz annotation. It collects all responses from all users for each quiz question on a project and is broken  down by project, with a detail page for each project going into each quiz response.</p>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/question-report.png"></figure>
     <p>Each row in the report is clickable, allowing users to drill-down for more in depth information about how their viewers performed for each question.</p>
     <figure class="bcls-figure"> <img src="/assets/images/analytics/question-report-row.png"></figure>
   </section>
   <section class="bcls-section">
     <h2 id="gradebook">Gradebook</h2>
-    <p>This report is a specialty visualization for questions asked using the Quiz annotation. It displays the final answer submitted to a question, for each individual user who answered.</p>
+    <p>This report is a specialty visualization for questions asked using the Quiz annotation. It displays a user-focused breakdown of quiz results. It has a summary page showing each user, leading into a detail page which shows each project, quiz, and answer a user gave across all projects interacted with. The summary page is filerable by project (or all projects).</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/gradebook-report.png" /></figure>
     <p>Like the question report, each row is clickable, allowing for further insight into each users responses.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/gradebook-report-row.png" /></figure>
