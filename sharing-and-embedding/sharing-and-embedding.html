@@ -1,5 +1,5 @@
 ---
-title: Sharing and Embedding
+title: Sharing and Embedding Projects
 description: In this topic you will learn how to share and embed interactivity projects.
 parent: Sharing and Embedding
 ---
@@ -7,9 +7,26 @@ parent: Sharing and Embedding
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>Projects can be shared with viewers by either sharing a link to a landing page or by embedding the project in any external system (web page, CMS, LMS, etc.)</p>
-    <p>Note that if you are using the HapYak plugin and publishing using a <a href="/getting-started/configuring-player-plugin.html" data-is-internal-link="true">Brightcove Player</a>, publishing and sharing should be done using Video Cloud Studio.</p>
-    <p>It is also possible to publish and share from inside the Brightcove Interactivity interface. Edit a project or experience and then click Start by clicking the <span class="button-blue">SHARE</span> button.</p>
+    <p>Sharing a project generates embed code or a URL so it can be seen by viewers. If you are publishing a Brightcove video, publishing and sharing should be done using a <a href="/getting-started/configuring-player-plugin.html">HapYak-enabled Brightcove Player</a> using the Media module in Video Cloud Studio. </p>
+    <p>To share a project or experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>Click on a project or experience to open it.</li>
+      <li>Click <span class="button-blue">SHARE</span>.</li>
+      <li>Select a <strong>Share Type</strong>.
+            The following types are available:
+          <ul>
+              <li>HapYak Wrapper</li>
+              <li>Landing Page</li>
+              <li><a href="#embedly-link">Embed.ly Link</a></li>
+              <li><a href="#brightcove">Brightcove Player</a></li>
+              <li><a href="#scorm">SCORM</a></li>
+              </ul>
+  <figure class="bcls-figure"> 
+      <p><img src="/assets/images/sharing-and-embedding/share-type.png"> </p>
+  </figure>
+    </ol>
   </section>
   <section class="bcls-section">
     <h2 id="sharing-a-landing-page">Sharing a landing page</h2>
@@ -63,6 +80,19 @@ parent: Sharing and Embedding
     <p> <a href="http://Embed.ly" rel="nofollow noopener noreferrer" target="_blank">Embed.ly</a> is a service that lets hundreds of systems and platforms (like Jive, Medium, reddit, Disqus, AOL, Digitas, Acquia, Trello, Udemy, etc...) make it easier for people to embed content (like interactive videos). </p>
     <p>Brightcove Interactivity is an Embedly provider. What this means is if your system supports Embedly, then all you have to do is copy and paste the Embedly link and it will figure out the rest and embed your Brightcove Interactivity project for you. </p>
     <figure class="bcls-figure"> <img src="/assets/images/sharing-and-embedding/embedly-link.png"> </figure>
+  </section>
+<section class="bcls-section">
+    <h2 id="brightcove">Brightcove Player</h2>
+    <p> When publishing to a Brightcove Player, it is recommended that you publish using the Media module in Video Cloud Studio.    </p>
+    <ol class="bcls-tasklist-restart">
+      <li>Make sure you have created a <a href="/getting-started/configuring-player-plugin.html">HapYak-enabled Brightcove Player</a>.</li>
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select a video.</li>
+      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web.</strong></li>
+    </ol>
+    <p>Make sure you select a HapYak-enabled Brightcove Player. For more information, see <a href="https://studio.support.brightcove.com/publish/publishing-videos-and-playlists-media-module.html">Publishing Videos and Playlists with the Media Module</a>.</p>
+    
   </section>
   <section class="bcls-section">
     <h2 id="scorm">SCORM</h2>
