@@ -63,12 +63,6 @@
     - name: 'Using the Custom Widget Library'
       url: '/custom-annotations/using-custom-widget-library.html'
 - section: 
-  name: 'Demos'
-  url: '/demos/index.html'
-  docs:
-    - name: 'Gated Quiz Demo'
-      url: '/demos/gated-quiz-demo.html'
-- section: 
   name: 'Integrations'
   url: '/integrations/index.html'
   docs:
@@ -124,11 +118,11 @@
       url: '/sharing-and-embedding/adding-video-to-a-wix-website.html'
     - name: 'Adding a video to Articulate Storyline'
       url: '/sharing-and-embedding/adding-video-to-articulate-storyline.html'
-    - name: 'Embedding Responsively or Fluidly'
-      url: '/sharing-and-embedding/embedding-responsively-or-fluidly.html'
+    - name: 'Making the HapYak Wrapper Responsive'
+      url: '/sharing-and-embedding/making-hapyak-wrapper-responsive.html'
     - name: 'Publishing to an LMS'
       url: '/sharing-and-embedding/publishing-to-an-lms.html'
-    - name: 'Sharing and Embedding'
+    - name: 'Sharing and Embedding Projects'
       url: '/sharing-and-embedding/sharing-and-embedding.html'
     - name: 'Sharing on Social Channels'
       url: '/sharing-and-embedding/sharing-on-social-channels.html'

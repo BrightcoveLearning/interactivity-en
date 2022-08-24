@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="In this topic you will learn how to share and embed interactivity projects.">
   
-  <title>Sharing and Embedding</title>
+  <title>Sharing and Embedding Projects</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -62,7 +62,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/sharing-and-embedding/">Sharing and Embedding</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Sharing and Embedding</li>
+      <li class="breadcrumb-item active" aria-current="page">Sharing and Embedding Projects</li>
     </ol>
   </nav>
 </header>
@@ -289,17 +289,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
-              <h5 class="submenu-header"><a href="/demos/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Demos</a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/demos/gated-quiz-demo.html">Gated Quiz Demo</a></li>
-                  
-                
-              </ul>
-            
-          
-            
               <h5 class="submenu-header"><a href="/integrations/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Integrations</a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
@@ -404,7 +393,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/sharing-and-embedding/embedding-responsively-or-fluidly.html">Embedding Responsively or Fluidly</a></li>
+                    <li><a href="/sharing-and-embedding/making-hapyak-wrapper-responsive.html">Making the HapYak Wrapper Responsive</a></li>
                   
                 
                   
@@ -412,7 +401,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/sharing-and-embedding/sharing-and-embedding.html">Sharing and Embedding</a></li>
+                    <li><a href="/sharing-and-embedding/sharing-and-embedding.html">Sharing and Embedding Projects</a></li>
                   
                 
                   
@@ -702,23 +691,63 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Sharing and Embedding</h1>
+<h1>Sharing and Embedding Projects</h1>
 <article class="bcls-article">
   <summary>In this topic you will learn how to share and embed interactivity projects.</summary>
   <section class="bcls-section">
-    <p>Projects can be shared with viewers by either sharing a link to a landing page or by embedding the project in any external system (web page, CMS, LMS, etc.)</p>
-    <p>Note that if you are using the HapYak plugin and publishing using a <a href="/getting-started/configuring-player-plugin.html" data-is-internal-link="true">Brightcove Player</a>, publishing and sharing should be done using Video Cloud Studio.</p>
-    <p>It is also possible to publish and share from inside the Brightcove Interactivity interface. Edit a project or experience and then click Start by clicking the <span class="button-blue">SHARE</span> button.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sharing-a-landing-page">Sharing a landing page</h2>
-    <p>Sharing to a landing page will generate a  dedicated, static URL that any viewer can access. This is a quick and easy way to share your project with others, for example to get feedback from collaborators or clients or more broadly in an email, on Slack, or any other channel.</p>
-    <p>To generate a landing page, follow these steps.</p>
+    <p>Sharing a project generates embed code or a URL so it can be seen by viewers. If you are publishing a Brightcove video, publishing and sharing should be done using a <a href="/getting-started/configuring-player-plugin.html">HapYak-enabled Brightcove Player</a> using the Media module in Video Cloud Studio. </p>
+    <p>If you are unable to publish using Video Cloud, follow these steps to publish from within the Brightcove Interactivity Editor.</p>
     <ol class="bcls-tasklist-restart">
       <li>Login to Brightcove Interactivity Studio.</li>
       <li>In the left navigation, click <strong>Manage</strong>.</li>
       <li>Click on a project or experience to open it.</li>
       <li>Click <span class="button-blue">SHARE</span>.</li>
+      <li>Select a <strong>Share Type</strong>.
+        The following types are available:
+        <ul>
+          <li><a href="#hapyak-wrapper">HapYak Wrapper</a></li>
+          <li><a href="#landing-page">Landing Page</a></li>
+          <li><a href="#embedly-link">Embed.ly Link</a></li>
+          <li><a href="#brightcove">Brightcove Player</a></li>
+          <li><a href="#scorm">SCORM</a></li>
+        </ul>
+        <figure class="bcls-figure"><img src="/assets/images/sharing-and-embedding/share-type.png"> </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="brightcove">Brightcove Player</h2>
+    <p> When publishing to a Brightcove Player, it is recommended that you publish using the Media module in Video Cloud Studio. </p>
+    <ol class="bcls-tasklist-restart">
+      <li>Make sure you have created a <a href="/getting-started/configuring-player-plugin.html">HapYak-enabled Brightcove Player</a>.</li>
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select a video.</li>
+      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web.</strong></li>
+    </ol>
+    <p>Make sure you select a HapYak-enabled Brightcove Player. For more information, see <a href="https://studio.support.brightcove.com/publish/publishing-videos-and-playlists-media-module.html">Publishing Videos and Playlists with the Media Module</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="hapyak-wrapper">HapYak wrapper</h2>
+    <p>Sharing using a HapYak Wrapper is useful when you need to embed a project or experience on a website, CMS, or LMS. This option will generate the iframe embed code that can be embedded in other places.</p>
+    <p>To generate a landing page, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>For the <strong>Share Type</strong>, click <strong>HapYak Wrapper</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/sharing-and-embedding/share-landing-page.png"> </figure>
+      </li>
+      <li>Select a <strong>Size</strong>. </li>
+      <ul>
+        <li><strong>Responsive</strong> - Recommended. This option ensures that the embed code will adapt to the height and width of the the parent element in which the video is embedded. This will provide the optimal viewing experience across all devices.</li>
+        <li><strong>Fixed Size</strong> - Enter specific player dimensions. The lock icon locks the aspect ratio when you manually adjust the dimensions. A <b>Fixed Size</b> embed will always remain the same size and may only be partially viewable on some devices or in smaller browser windows.</li>
+      </ul>
+      <li>Copy the embed code to use in your application. You can also click <span class="button-blue">PREVIEW</span> to open a preview of the project in another browser tab.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="landing-page">Landing page</h2>
+    <p>Sharing to a landing page will generate a  dedicated, static URL that any viewer can access. This is a quick and easy way to share your project with others, for example, to get feedback from collaborators or clients or more broadly in an email, on Slack, or any other channel.</p>
+    <p>To generate a landing page, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
       <li>For the <strong>Share Type</strong>, click <strong>Landing Page</strong>.</li>
       <li>Click <span class="button-blue">GENERATE</span> to generate a landing page.</li>
     </ol>
@@ -726,41 +755,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>If you would like to customize the landing page by adding a header, footer or social share icons for example, click <span class="button-blue">EDIT</span>. This will open the Experience Editor for  that video. Click <span class="button-blue">SETTINGS</span> and customize the social sharing and branding settings as needed.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="embedding-a-hapyak-project">Embedding a  project</h2>
-    <p>To embed a project or experience on your Website, CMS, or LMS, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Brightcove Interactivity Studio.</li>
-      <li>In the left navigation, click <strong>Manage</strong>.</li>
-      <li>Click on a project or experience to open it.</li>
-      <li>Click <span class="button-blue">SHARE</span>.</li>
-    </ol>
-    <p>First, click <b>Share</b>, then select HapYak Player or Native Player (Brightcove Player, Wistia Player, Vimeo Player, etc...)</p>
-    <h3 id="hapyak-player-v-native-player">HapYak Player v. Native Player</h3>
-    <p>HapYak Player is most commonly used player option. If you want your viewers to be able to watch the interactive video in <b>full screen</b> or if using an <b>iframe embed code</b> is necessary for embedding in your CMS, then HapYak Player is your best bet.</p>
-    <p>Native player gives you a <b>javascript embed code</b> that allows for advanced integration and communication with the video. If you are a developer using advanced embed techniques or on-page communication with javascript then Native Player is your best bet.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/sharing-and-embedding/embed-code.png"> </figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="options">Options</h2>
-    <h3 id="size">Size</h3>
-    <p>We recommend the <b>Responsive</b> setting. This ensures that the embed will adapt to the height and width of the the parent element in which the video is embedded - the optimal viewing experience across all devices. </p>
-    <p>Or select <b>Fixed Size</b> and enter specific dimensions. The lock icon locks the aspect ratio when you manually adjust the dimensions. A <b>Fixed Size</b> embed will always remain the same size and may only be partially viewable on some devices or in smaller browser windows. </p>
-    <h3 id="controls">Controls</h3>
-    <p>There are two options - HapYak Controls or Native Controls.</p>
-    <p>Under <b>Use Videojs4 Controls</b> in the <b>Controls</b> panel, selecting <b>No</b> will enable use of the HapYak controls, and selecting <b>Yes</b> will activate the Native Controls.&nbsp; </p>
-    <p>The modern and responsive HapYak controls include <b>skip to annotation buttons</b>and <b>annotation markers</b>that enhance the interactive experience for the viewer, and a <b>full screen</b> button that ensures full screen support for the interactive video. </p>
-    <p>An important benefit of HapYak controls is that unlike many player controls, they are persistent and below the video (rather than appearing on the video when the viewer hovers over with the mouse). This ensures that they do not get in the way of any viewer interaction.</p>
-    <p>If you choose native controls, it will simply show the controls from your video player itself (Wistia, Vimeo, Brightcove, YouTube, etc....)</p>
-    <h3 id="double-controls">Double Controls</h3>
-    <p>If you use the HapYak <i>player,</i> you may see the native player <i>controls</i> in addition to the HapYak player controls. </p>
-    <p>If you wish to remove the native player controls, you will want to obtain a " <b>chromeless</b>" version of your video from the <b>video source</b>. Then you can simply <a href="/projects/configuring-project-settings.html" data-is-internal-link="true">replace the video source</a> of the HapYak project. &nbsp; For help with your specific video player, email us at<a href="https://supportportal.brightcove.com"> Brightcove Support</a> . </p>
-    <h3 id="dom-element-native-playervideojs4-player-only">DOM Element (Native Player/VideoJS4 Player Only)</h3>
-    <p>Naming the DOM element is for advanced users. This allows you to apply a custom id to the video element.</p>
-  </section>
-  <section class="bcls-section">
     <h2 id="embedly-link">Embed.ly link</h2>
-    <p> <a href="http://Embed.ly" rel="nofollow noopener noreferrer" target="_blank">Embed.ly</a> is a service that lets hundreds of systems and platforms (like Jive, Medium, reddit, Disqus, AOL, Digitas, Acquia, Trello, Udemy, etc...) make it easier for people to embed content (like interactive videos). </p>
-    <p>Brightcove Interactivity is an Embedly provider. What this means is if your system supports Embedly, then all you have to do is copy and paste the Embedly link and it will figure out the rest and embed your Brightcove Interactivity project for you. </p>
+    <p> <a href="http://Embed.ly" rel="nofollow noopener noreferrer" target="_blank">Embed.ly</a> is a service that lets hundreds of systems and platforms (like Jive, Medium, reddit, Disqus, AOL, Digitas, Acquia, Trello, Udemy, etc.) make it easier for people to embed content (like interactive videos).</p>
+    <p>Brightcove Interactivity is an Embedly provider. What this means is if your system supports Embedly, then all you have to do is copy and paste the Embedly link and it will figure out the rest and embed your Brightcove Interactivity project for you.</p>
     <figure class="bcls-figure"> <img src="/assets/images/sharing-and-embedding/embedly-link.png"> </figure>
   </section>
   <section class="bcls-section">
@@ -784,7 +781,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 17 Aug 2022
+  Page last updated on 24 Aug 2022
 </div>
 
 

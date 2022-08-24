@@ -1,0 +1,38 @@
+---
+title: Making the HapYak Wrapper Responsive
+description: In this topic you will learn how you can share a responsive HapYak Wrapper.
+parent: Sharing and Embedding
+---
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <aside class="bcls-aside bcls-aside--information">Note: This topic only applies when publishing using a HapYak Wrapper.  If you are publishing using a Brightcove Player, it is responsive by default and no extra steps are needed.</aside>
+    <p>To ensure your  project is responsive:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>After selecting a <b>Share Type</b> of <strong>HapYak Wrapper</strong>, check <b>Responsive</b> in the embed dialogue (read more about <b>Options / Size</b> <a href="http://kb.hapyak.com/sharing-and-embedding/sharing-and-embedding" data-is-internal-link="true">here</a>).</li>
+      <li>Place the embed code inside a <b>container on the destination that is itself responsive</b>.</li>
+    </ol>
+    <p>This second step is occasionally the tricky part. Most modern CMSs automatically ensure this.&nbsp;If yours does not or you have a custom coded website or CMS then here are a few resources that should help...</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Review the general principles of fluid and responsive video <a href="http://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php" rel="nofollow noopener noreferrer" target="_blank">here</a>.</li>
+      <li>Copy the HapYak player embed code, go to <a href="http://embedresponsively.com/" rel="nofollow noopener noreferrer" target="_blank">embedresponsively.com</a> (Generic iFrame tab) and paste it there. It does step 2 for you by adding the container directly to the HTML.</li>
+      <li>Alternatively you can create classes in CSS for the responsive container. Here's an example: </li>
+    </ol>
+    <pre><code>
+.responsive-container { position: relative; padding-bottom: 56.25%; padding-top: 40px; height: 0; overflow: hidden; }
+</code></pre>
+    <pre><code>
+.responsive-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</code></pre>
+    <p>and reference those classes in the div into which the video is embedded:</p>
+    <pre><code>
+&lt;div class="responsive-container"&gt;
+        <br>
+&lt;iframe class="hapyak-embed" marginwidth="0" marginheight="0" frameborder="no" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="//www.hapyak.com/embed?key=9d2be3d5dfde4a849490&amp;amp;project=6876" width="100%" height="100%"&gt;
+<br>
+&lt;/div&gt;
+      </code></pre>
+    <p>You can see a sample page with this all applied <a href="http://jsbin.com/vahuhowopo/1/edit?html,css,output" rel="nofollow noopener noreferrer" target="_blank">here</a>. </p>
+    <aside class="bcls-aside bcls-aside--information">Note: this is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
+  </section>
+</article>
