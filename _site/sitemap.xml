@@ -287,24 +287,6 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/demos/index.html</loc>
-        <lastmod>2022-08-24</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-      </url>
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/demos/gated-quiz-demo.html</loc>
-          
-            <lastmod>2022-08-24</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-    
-      <url>
         <loc>https://interactivity.support.brightcove.com/integrations/index.html</loc>
         <lastmod>2022-08-24</lastmod>
         <changefreq>daily</changefreq>
