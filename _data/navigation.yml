@@ -212,30 +212,6 @@
       url: /developers/responsive-api/reference.html
     - name: Addon API
       url: /developers/addon-api/reference.html
-- section:
-  name: 'References'
-  url: /references/index.html
-  docs:
-    - name: Accessing Reporting Endpoints
-      url: /references/accessing-reporting-endpoints.html
-    - name: Addon API
-      url: /references/addon/addon.html
-    - name: Annotation API
-      url: /references/annotation/annotation.html
-    - name: Embed API
-      url: /references/embed/embed.html
-    - name: Extension API
-      url: /references/extension/extension.html
-    - name: HapYak CDN Configuration
-      url: /references/hapyak-cdn-config.html
-    - name: 'Known Issues'
-      url: '/support/known-issues.html'
-    - name: Playlist API
-      url: /references/playlist/playlist.html
-    - name: Release Notes
-      url: /references/product-updates.html
-    - name: Responsive API
-      url: /references/responsive/responsive.html
 - section: 
   name: 'Troubleshooting'
   url: '/troubleshooting/index.html'
