@@ -1,6 +1,6 @@
 - section: 
   name: 'Home'
-  url: '/'
+  url: '/index.html'
 - section: 
   name: 'Getting Started'
   url: '/getting-started/index.html'
@@ -224,7 +224,7 @@
       url: '/troubleshooting/taking-a-console-screenshot-or-screen-recording.html'
 - section: 
   name: 'Support'
-  url: '/support/'
+  url: '/support/index.html'
   docs:
     - name: 'Viewing the Brightcove System Status Page'
       url: '/support/viewing-brightcove-system-status-page.html'
