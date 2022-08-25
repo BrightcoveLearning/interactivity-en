@@ -1,6 +1,21 @@
 ---
-title: Using Annotations
+title: Annotations
 parent: Home
 description: This section contains information on annotations.
 ---
-{% include s-brightcove-interactivity/annotations/index.html%}
+<h1>Using Annotations</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <br>
+  <section id="page_wrapper">
+    {% for item in site.data.navigation %}
+    {% if item.name == page.title %}
+    <ul>
+      {% for entry in item.docs %}
+          <li><a href="{{ entry.url }}">{{ entry.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% endfor %}
+  </section>
+</article>
