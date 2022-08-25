@@ -1,6 +1,6 @@
 - section: 
   name: 'Home'
-  url: '/'
+  url: '/index.html'
 - section: 
   name: 'Getting Started'
   url: '/getting-started/index.html'
@@ -23,10 +23,10 @@
   docs:
     - name: 'Adding Interactive Chapters to a Video'
       url: '/annotations/adding-chapters-video.html'
-    - name: 'Adding a Quiz Annotation'
-      url: '/annotations/adding-quiz-annotation.html'
     - name: 'Adding an Image Overlay'
       url: '/annotations/adding-image-overlay.html'
+    - name: 'Adding a Quiz Annotation'
+      url: '/annotations/adding-quiz-annotation.html'
     - name: 'Adding an Text Overlay'
       url: '/annotations/adding-text-overlay.html'
     - name: 'Adding a Time Triggered Action'
@@ -34,8 +34,7 @@
     - name: 'Adding an Transparent Overlay'
       url: '/annotations/adding-transparent-overlay.html'
     - name: 'Annotation Options'
-    - name: 'Automatically Pause Video or Jump to a Time'
-      url: '/annotations/automatically-pause-the-video-or-jump-to-a-time-in-the-video-aka-skip-to-time.html'
+      url: '/annotations/annotation-options.html'
     - name: 'Bulk Editing Annotations'
       url: '/annotations/bulk-annotation-edit.html'
     - name: 'Configuring Annotation Links'
@@ -224,7 +223,7 @@
       url: '/troubleshooting/taking-a-console-screenshot-or-screen-recording.html'
 - section: 
   name: 'Support'
-  url: '/support/'
+  url: '/support/index.html'
   docs:
     - name: 'Viewing the Brightcove System Status Page'
       url: '/support/viewing-brightcove-system-status-page.html'
