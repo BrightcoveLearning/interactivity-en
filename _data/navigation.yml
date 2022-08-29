@@ -140,7 +140,7 @@
     - name: 'Styling Annotations'
       url: '/styling/styling-annotations.html'
     - name: 'Using Custom CSS via HapYak Plugin'
-      url: '/integrations/custom-css-via-hapyak-plugin-for-brightcove.html'
+      url: '/styling/custom-css-via-hapyak-plugin-for-brightcove.html'
     - name: 'Using the Built-In CSS Classes'
       url: '/styling/using-built-in-css-classes.html'
 - section: 
