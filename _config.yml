@@ -32,6 +32,9 @@ language: "en-US"
 # local server (for "jekyll serve") will be localhost:{PORT number below}
 port: 5151
 
+# site prefixes
+interactivity_prefix: '/'
+
 # everything below may be different per site
 product: Brightcove Interactivity
 color: rgb(51, 51, 51)
