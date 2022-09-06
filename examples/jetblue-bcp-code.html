@@ -28,6 +28,46 @@ parent: Examples
     display: table;
     clear: both;
   }
+   .button {
+   background: #3D94F6;
+   background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   height: 0;
+   line-height: 0;
+   color: #FFFFFF;
+   font-family: Arial;
+   width: 86px;
+   font-size: 12px;
+   font-weight: 100;
+   padding: 15px;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.button:hover {
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+
+}
 </style>
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
@@ -50,12 +90,6 @@ parent: Examples
             <script src="https://players.brightcove.net/1752604059001/tTstQb2r7E_default/index.min.js"></script>
           </div>
         </div>
-
-        <!--         <div style="position: relative; display: block; max-width: 960px;">
-          <div style="padding-top: 56.25%;">
-            <iframe src="https://players.brightcove.net/1752604059001/tTstQb2r7E_default/index.html?videoId=1742506883797698902" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
-          </div>
-        </div> -->
       </div>
       <div class="column right"> <img src="/assets/images/examples/jetblue-logo.png">
         <p><br />
@@ -64,8 +98,8 @@ parent: Examples
         <p><strong>Featured Annotations:</strong></p>
         <!--         <p><span class="button-blue-text-bordered"> <i data-feather="help-circle"></i> QUESTIONS</span></p>
         <p><span class="button-blue-text-bordered"> <i data-feather="link"></i> LINKS</span></p> -->
-        <p><button onclick="questions()">Questions</button></p>
-        <p><button onclick="hyperlinks()">Links</button></p>
+        <p><button type="button" class="button" onclick="myPlayer.currentTime(29);">Questions</button></p>
+        <p><button type="button" class="button" onclick="myPlayer.currentTime(183);">Links</button></p>
       </div>
     </div>
   </section>
@@ -76,16 +110,5 @@ parent: Examples
   videojs('myPlayerID').ready(function () {
     myPlayer = this;
   });
-
-  function questions() {
-    console.log('questions button');
-    myPlayer.currentTime(29);
-  }
-
-  function hyperlinks() {
-    console.log('links button');
-    myPlayer.currentTime(183);
-
-  }
 
 </script>
