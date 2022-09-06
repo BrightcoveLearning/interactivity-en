@@ -41,8 +41,15 @@ parent: Examples
         <p><br/>
           <strong>Categories:</strong> Training & Education</p>
         <p><strong>Featured Annotations:</strong></p>
-        <p><button type="button" class="button" onclick="myPlayer.currentTime(1);">Chapters</button></p>
+        <p><button type="button" class="bcls-button" onclick="myPlayer.currentTime(1);">Chapters</button></p>
       </div>
     </div>
   </section>
 </article>
+<script>
+  var myPlayer;
+  videojs('myPlayerID').ready(function () {
+    myPlayer = this;
+  });
+
+</script>
