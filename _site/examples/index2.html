@@ -662,13 +662,13 @@ body { padding: 1rem; }
   <h1>Interactive Examples Gallery</h1>
   <summary>This topic contains a gallery of interactive examples.</summary>
   <section class="bcls-section">
-      <link href="/assets/js/code-samples/index-thumb/samples.css" rel="stylesheet" />
+<link href="/assets/js/code-samples/index-thumb/samples.css" rel="stylesheet" />
   <!-- if there are no groups, the following tag should be commented out, though it won't break anything if it's there -->
   <section class="buttons-wrapper" id="buttons_wrapper">&nbsp;</section>
   <!-- wrapper for all sample blocks -->
   
   <section class="samples-wrapper" id="samples_wrapper"><!-- wrapper for a sample block -->
-    <section class="samples-section add-to-cart">
+    <section class="samples-section add_to_cart">
       <div class="samples-div"><a class="nturl" style="text-decoration:none" href="/examples/under-armour.html"><img alt="" src="/assets/images/examples/underarmour-thumbnail.png" /> </a>
         <h2 class="sample-title"><a class="nturl" style="text-decoration:none" href="/examples/under-armour.html">Under Armour</a></h2>
         <a class="nturl" style="text-decoration:none" href="/examples/under-armour.html"> </a>
@@ -735,14 +735,15 @@ body { padding: 1rem; }
 <script src="/assets/js/code-samples/index-thumb/samples.js"></script><script translate="no">
   // if the sample_groups array is empty, all samples will be shown
   var group_names = [
-        'popular',
         'all',
-        'advertising',
-        'playback_behavior',
-        'player_functionality',
-        'customize_ui',
-        'player_styling',
-        'playlists_and_groups'
+        'add_to_cart',
+        'branching',
+        'call_to_action',
+        'chapters',
+        'form',
+        'links',
+        'personalization',
+        'quiz'
       ];
   if (group_names.length > 0) {
     BCLS_player_samples(group_names);
