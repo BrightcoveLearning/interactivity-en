@@ -83,9 +83,9 @@ console.log('group_names', group_names);
       txt = group_names[i].replace(/_/g, ' ');
       btn.textContent = txt;
       frag.appendChild(btn);
-      if (group_names[i] === 'all') {
+/*      if (group_names[i] === 'all') {
         frag.appendChild(br);
-      }
+      }*/
     }
     buttons_wrapper.appendChild(frag);
     buttons = document.querySelectorAll('.group-button');
