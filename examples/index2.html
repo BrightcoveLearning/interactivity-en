@@ -1,0 +1,112 @@
+---
+title: Interactive Examples Gallery
+description: This topic contains a gallery of interactive examples.
+parent: Home
+---
+<style>
+body { padding: 1rem; }
+
+.card {
+  background-color: lightblue;
+  color: white;
+  padding: 1rem;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+</style>
+<article>
+  <h1>{{ page.title }}</h1>
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+      <link href="/assets/js/code-samples/index-thumb/samples.css" rel="stylesheet" />
+  <!-- if there are no groups, the following tag should be commented out, though it won't break anything if it's there -->
+  <section class="buttons-wrapper" id="buttons_wrapper">&nbsp;</section>
+  <!-- wrapper for all sample blocks -->
+  
+  <section class="samples-wrapper" id="samples_wrapper"><!-- wrapper for a sample block -->
+    <section class="samples-section add-to-cart">
+      <div class="samples-div"><a class="nturl" style="text-decoration:none" href="/examples/under-armour.html"><img alt="" src="/assets/images/examples/underarmour-thumbnail.png" /> </a>
+        <h2 class="sample-title"><a class="nturl" style="text-decoration:none" href="/examples/under-armour.html">Under Armour</a></h2>
+        <a class="nturl" style="text-decoration:none" href="/examples/under-armour.html"> </a>
+        <p class="sample-description"><a class="nturl" style="text-decoration:none" href="/examples/under-armour.html">Under Armour</a></p>
+        <a class="nturl" style="text-decoration:none" href="/examples/under-armour.html"> </a></div>
+    </section>
+  </section>
+
+    <div class="cards">
+<!--      <div class="card"><a href="accessibility.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/accessibility-image.jpg"> </figure>
+        Accessibility</a></div>-->
+      <div class="card"><a href="aig.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/aig-thumbnail.png"> </figure>
+        AIG</a></div>
+      <div class="card"><a href="tableau.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/tableau-thumbnail.png"> </figure>
+        Tableau</a></div>
+      <div class="card"><a href="under-armour.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/underarmour-thumbnail.png"> </figure>
+        Under Armour</a></div>
+<!--      <div class="card"><a href="verizon.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/verizon-thumbnail.png"> </figure>
+        Verizon</a></div>-->
+<!--      <div class="card"><a href="west-ham-united.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/westhamunited-thumbnail.png"> </figure>
+        West Ham United</a></div>-->
+      <div class="card"><a href="konica-minolta.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/konica-thumbnail.png"> </figure>
+        Konica Minolta</a></div>
+<!--      <div class="card"><a href="mit.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/mit-thumbnail.png"> </figure>
+        MIT</a></div>-->
+      <div class="card"><a href="xero.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/xero-thumbnail.png"> </figure>
+        Xero</a></div>
+      <div class="card"><a href="room4media.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/room4-thumbnail.png"> </figure>
+        Room4 Media</a></div>
+      <div class="card"><a href="rentokil.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/rentokill-thumbnail.png"> </figure>
+        Rentokil Initial</a></div>
+      <div class="card"><a href="nutanix.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/nutanix-thumbnail.png"> </figure>
+        Nutanix</a></div>
+      <div class="card"><a href="getsmarter.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/getsmarter-thumbnail.png"> </figure>
+        Getsmarter</a></div>
+<!--      <div class="card"><a href="hp.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/hp-thumbnail.png"> </figure>
+        HP</a></div>-->
+      <div class="card"><a href="healthstream.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/healthstream-thumbnail.png"> </figure>
+        Healthstream</a></div>
+      <div class="card"><a href="jetblue.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/jetblue-thumbnail.png"> </figure>
+        jetBlue</a></div>
+      <div class="card"><a href="sph.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/sph-thumbnail.png"> </figure>
+        SPH</a></div>
+    </div>
+  </section>
+</article>
+<script src="/assets/js/code-samples/index-thumb/samples.js"></script><script translate="no">
+  // if the sample_groups array is empty, all samples will be shown
+  var group_names = [
+        'popular',
+        'all',
+        'advertising',
+        'playback_behavior',
+        'player_functionality',
+        'customize_ui',
+        'player_styling',
+        'playlists_and_groups'
+      ];
+  if (group_names.length > 0) {
+    BCLS_player_samples(group_names);
+  }
+</script> 

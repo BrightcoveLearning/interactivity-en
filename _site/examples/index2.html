@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to configure custom fields to allow for custom CSS on a per video level when using the HapYak plugin.">
+  <meta name="description" content="This topic contains a gallery of interactive examples.">
   
-  <title>Using Custom CSS via HapYak Plugin</title>
+  <title>Interactive Examples Gallery</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -59,9 +59,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/styling/">Styling</a></li>
-      
-      <li class="breadcrumb-item active" aria-current="page">Using Custom CSS via HapYak Plugin</li>
+      <li class="breadcrumb-item active" aria-current="page">Interactive Examples Gallery</li>
     </ol>
   </nav>
 </header>
@@ -643,26 +641,113 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Using Custom CSS via HapYak Plugin</h1>
-<article class="bcls-article">
-  <summary>In this topic you will learn how to configure custom fields to allow for custom CSS on a per video level when using the HapYak plugin.</summary>
+<style>
+body { padding: 1rem; }
+
+.card {
+  background-color: lightblue;
+  color: white;
+  padding: 1rem;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+</style>
+<article>
+  <h1>Interactive Examples Gallery</h1>
+  <summary>This topic contains a gallery of interactive examples.</summary>
   <section class="bcls-section">
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li>In the <strong>Players</strong> module, configure a player with the HapYak plugin. For information on how to do this, see <a href="/getting-started/configuring-player-plugin.html" data-is-internal-link="true">Configuring a Brightcove Player with the HapYak Plugin</a>.</li>
-      <li>Open the <strong>Admin</strong> module and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the Admin menu.</li>
-      <li>Create a new custom metadata field with an <strong>Internal Name</strong> of <code>custom_css</code> (syntax important!). The <strong>Display Name</strong> can be anything you would like. We recommend <strong>HapYak Custom CSS</strong>. For information on creating custom metadata fields, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</li>
-      <li>Open the <strong>Media</strong> module.</li>
-      <li>Select the video associated with the Brightcove Interactivity project with project level CSS.</li>
-      <li>Edit the video properties and locate the <strong>Custom fields</strong> section.</li>
-      <li>Edit the HapYak custom field to add the link to the project level CSS. Please remember to remove the protocols.</li>
-      <li>Save the changes.</li>
-      <li>Publish the video and select the player that you configured with the HapYak plugin.</li>
-      <li>Preview the video. The video should now have the custom CSS for that  project. Note that caching may cause a delay in any changes to CSS.</li>
-    </ol>
+      <link href="/assets/js/code-samples/index-thumb/samples.css" rel="stylesheet" />
+  <!-- if there are no groups, the following tag should be commented out, though it won't break anything if it's there -->
+  <section class="buttons-wrapper" id="buttons_wrapper">&nbsp;</section>
+  <!-- wrapper for all sample blocks -->
+  
+  <section class="samples-wrapper" id="samples_wrapper"><!-- wrapper for a sample block -->
+    <section class="samples-section add-to-cart">
+      <div class="samples-div"><a class="nturl" style="text-decoration:none" href="/examples/under-armour.html"><img alt="" src="/assets/images/examples/underarmour-thumbnail.png" /> </a>
+        <h2 class="sample-title"><a class="nturl" style="text-decoration:none" href="/examples/under-armour.html">Under Armour</a></h2>
+        <a class="nturl" style="text-decoration:none" href="/examples/under-armour.html"> </a>
+        <p class="sample-description"><a class="nturl" style="text-decoration:none" href="/examples/under-armour.html">Under Armour</a></p>
+        <a class="nturl" style="text-decoration:none" href="/examples/under-armour.html"> </a></div>
+    </section>
+  </section>
+
+    <div class="cards">
+<!--      <div class="card"><a href="accessibility.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/accessibility-image.jpg"> </figure>
+        Accessibility</a></div>-->
+      <div class="card"><a href="aig.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/aig-thumbnail.png"> </figure>
+        AIG</a></div>
+      <div class="card"><a href="tableau.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/tableau-thumbnail.png"> </figure>
+        Tableau</a></div>
+      <div class="card"><a href="under-armour.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/underarmour-thumbnail.png"> </figure>
+        Under Armour</a></div>
+<!--      <div class="card"><a href="verizon.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/verizon-thumbnail.png"> </figure>
+        Verizon</a></div>-->
+<!--      <div class="card"><a href="west-ham-united.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/westhamunited-thumbnail.png"> </figure>
+        West Ham United</a></div>-->
+      <div class="card"><a href="konica-minolta.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/konica-thumbnail.png"> </figure>
+        Konica Minolta</a></div>
+<!--      <div class="card"><a href="mit.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/mit-thumbnail.png"> </figure>
+        MIT</a></div>-->
+      <div class="card"><a href="xero.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/xero-thumbnail.png"> </figure>
+        Xero</a></div>
+      <div class="card"><a href="room4media.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/room4-thumbnail.png"> </figure>
+        Room4 Media</a></div>
+      <div class="card"><a href="rentokil.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/rentokill-thumbnail.png"> </figure>
+        Rentokil Initial</a></div>
+      <div class="card"><a href="nutanix.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/nutanix-thumbnail.png"> </figure>
+        Nutanix</a></div>
+      <div class="card"><a href="getsmarter.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/getsmarter-thumbnail.png"> </figure>
+        Getsmarter</a></div>
+<!--      <div class="card"><a href="hp.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/hp-thumbnail.png"> </figure>
+        HP</a></div>-->
+      <div class="card"><a href="healthstream.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/healthstream-thumbnail.png"> </figure>
+        Healthstream</a></div>
+      <div class="card"><a href="jetblue.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/jetblue-thumbnail.png"> </figure>
+        jetBlue</a></div>
+      <div class="card"><a href="sph.html">
+        <figure class="bcls-figure"> <img src="/assets/images/examples/sph-thumbnail.png"> </figure>
+        SPH</a></div>
+    </div>
   </section>
 </article>
-
+<script src="/assets/js/code-samples/index-thumb/samples.js"></script><script translate="no">
+  // if the sample_groups array is empty, all samples will be shown
+  var group_names = [
+        'popular',
+        'all',
+        'advertising',
+        'playback_behavior',
+        'player_functionality',
+        'customize_ui',
+        'player_styling',
+        'playlists_and_groups'
+      ];
+  if (group_names.length > 0) {
+    BCLS_player_samples(group_names);
+  }
+</script> 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
