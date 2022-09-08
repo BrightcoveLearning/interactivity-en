@@ -123,7 +123,7 @@ console.log('group_names', group_names);
       inject_buttons();
       create_sample_groups();
       if (param === null) {
-        set_group('popular');
+        set_group('all');
       } else {
         set_group(param);
       }
