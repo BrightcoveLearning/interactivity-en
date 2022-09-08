@@ -7,7 +7,7 @@
   docs:
     - name: '8 Most Common Annotations'
       url: '/getting-started/8-most-common-annotations.html'
-    - name: 'Configuring a Player with the HapYak plugin'
+    - name: 'Configuring a Player with the HapYak Plugin'
       url: '/getting-started/configuring-player-plugin.html'
     - name: 'Getting Started with Interactivity'
       url: '/getting-started/getting-started-interactivity.html'
