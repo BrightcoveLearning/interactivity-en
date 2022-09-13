@@ -320,12 +320,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/experiences/",
+      "newURL": "https://interactivity.support.brightcove.com/admin/",
       "oldURL": "/index"
   },
 
@@ -335,7 +330,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/getting-started/",
+      "newURL": "https://interactivity.support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -345,12 +340,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/",
+      "newURL": "https://interactivity.support.brightcove.com/experiences/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/support/",
+      "newURL": "https://interactivity.support.brightcove.com/getting-started/",
       "oldURL": "/index"
   },
 
@@ -365,32 +360,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/",
+      "newURL": "https://interactivity.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/projects/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/admin/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/templates/",
+      "newURL": "https://interactivity.support.brightcove.com/analytics/",
       "oldURL": "/index"
   },
 
@@ -400,12 +375,37 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/styling/",
+      "newURL": "https://interactivity.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/analytics/",
+      "newURL": "https://interactivity.support.brightcove.com/templates/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/examples/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/custom-annotations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/sharing-and-embedding/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/projects/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/styling/",
       "oldURL": "/index"
   },
 
@@ -545,17 +545,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/developers/responsive-api/reference.html",
-      "oldURL": "/reference"
-  },
-
-  {
       "newURL": "https://interactivity.support.brightcove.com/developers/addon-api/reference.html",
-      "oldURL": "/reference"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/developers/embed-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -565,7 +555,17 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/developers/embed-api/reference.html",
+      "oldURL": "/reference"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/developers/extension-api/reference.html",
+      "oldURL": "/reference"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/developers/responsive-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -697,11 +697,6 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/support/viewing-brightcove-system-status-page.html",
       "oldURL": "/viewing-brightcove-system-status-page"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/examples/west-ham-united.html",
-      "oldURL": "/west-ham-united"
   },
 
   {
