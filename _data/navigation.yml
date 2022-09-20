@@ -3,10 +3,10 @@
   url: '/index.html'
 - section: 
   name: 'Getting Started'
-  url: '/getting-started/index.html'
+  url: '/platform/getting-started/index.html'
   docs:
     - name: '8 Most Common Annotations'
-      url: '/getting-started/8-most-common-annotations.html'
+      url: '/platform/getting-started/8-most-common-annotations.html'
     - name: 'Configuring a Player with the HapYak Plugin'
       url: '/getting-started/configuring-player-plugin.html'
     - name: 'Getting Started with Interactivity'
