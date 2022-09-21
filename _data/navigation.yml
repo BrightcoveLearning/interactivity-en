@@ -225,13 +225,13 @@
       url: '/platform/troubleshooting/taking-a-console-screenshot-or-screen-recording.html'
 - section: 
   name: 'Support'
-  url: '/platform/support/index.html'
+  url: '/support/index.html'
   docs:
     - name: 'Viewing the Brightcove System Status Page'
-      url: '/platform/support/viewing-brightcove-system-status-page.html'
+      url: '/support/viewing-brightcove-system-status-page.html'
     - name: 'Opening a Support Case'
-      url: '/platform/support/opening-case-with-brightcove-support.html'
+      url: '/support/opening-case-with-brightcove-support.html'
     - name: 'Reset Your Support Portal Password'
-      url: '/platform/support/reset-support-portal-password.html'
+      url: '/support/reset-support-portal-password.html'
     - name: 'Contact Sales'
-      url: '/platform/support/contact-sales.html'
+      url: '/support/contact-sales.html'
