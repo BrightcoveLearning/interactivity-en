@@ -6,24 +6,24 @@
     
       <url>
         <loc>https://interactivity.support.brightcove.com/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/getting-started/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/getting-started/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/getting-started/8-most-common-annotations.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/getting-started/8-most-common-annotations.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -31,9 +31,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/getting-started/configuring-player-plugin.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/getting-started/configuring-player-plugin.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -41,9 +41,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/getting-started/getting-started-interactivity.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/getting-started/getting-started-interactivity.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -51,9 +51,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/examples/index.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/examples/index.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -61,9 +61,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/getting-started/interactive-video-types.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/getting-started/interactive-video-types.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -71,9 +71,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/getting-started/introduction-to-the-hapyak-portal.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/getting-started/introduction-to-the-hapyak-portal.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -81,137 +81,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/getting-started/terminology.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/getting-started/terminology.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-    
-      <url>
-        <loc>https://interactivity.support.brightcove.com/annotations/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-      </url>
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/adding-chapters-video.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/adding-image-overlay.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/adding-quiz-annotation.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/adding-text-overlay.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/adding-time-triggered-action.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/adding-transparent-overlay.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/annotation-options.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/bulk-annotation-edit.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/configuring-annotation-links.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/looping-back-in-a-video.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/reviewing-annotations.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/annotations/using-custom-transitions-with-animate-css.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -219,17 +91,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/custom-annotations/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/annotations/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-display-rule.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/adding-chapters-video.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -237,9 +109,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-poll-video.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/adding-image-overlay.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -247,9 +119,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-sign-in-video.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/adding-quiz-annotation.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -257,9 +129,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/adding-sentiment-video.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/adding-text-overlay.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -267,9 +139,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/embedding-form-video.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/adding-time-triggered-action.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -277,9 +149,69 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/custom-annotations/using-custom-widget-library.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/adding-transparent-overlay.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/annotation-options.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/bulk-annotation-edit.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/configuring-annotation-links.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/looping-back-in-a-video.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/reviewing-annotations.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/annotations/using-custom-transitions-with-animate-css.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -287,17 +219,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/integrations/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/custom-annotations/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/integrations/eloqua-add-on.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/custom-annotations/adding-display-rule.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -305,9 +237,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/integrations/enabling-brightcove-sync.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/custom-annotations/adding-poll-video.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -315,9 +247,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/integrations/integrating-with-an-lms.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/custom-annotations/adding-sign-in-video.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -325,9 +257,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/integrations/lti-lessons-creating-a-branching-video.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/custom-annotations/adding-sentiment-video.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -335,9 +267,19 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/integrations/salesforce-add-on.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/custom-annotations/embedding-form-video.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/custom-annotations/using-custom-widget-library.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -345,17 +287,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/projects/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/integrations/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/projects/branching-overview.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/integrations/eloqua-add-on.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -363,9 +305,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/projects/configuring-project-settings.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/integrations/enabling-brightcove-sync.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -373,9 +315,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/projects/in-video-branching.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/integrations/integrating-with-an-lms.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -383,9 +325,19 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/projects/creating-and-managing-projects.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/integrations/lti-lessons-creating-a-branching-video.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/integrations/salesforce-add-on.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -393,17 +345,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/templates/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/projects/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/templates/applying-templates-projects.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/projects/branching-overview.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -411,9 +363,29 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/templates/creating-and-managing-templates.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/projects/configuring-project-settings.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/projects/in-video-branching.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/projects/creating-and-managing-projects.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -421,17 +393,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/experiences/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/templates/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/experiences/creating-branching-experience.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/templates/applying-templates-projects.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -439,19 +411,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/experiences/creating-slide-sync-experience.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/templates/creating-and-managing-templates.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/experiences/experiences-overview.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -459,17 +421,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/experiences/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/adding-interactive-video-to-adobe-captivate.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/experiences/creating-branching-experience.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -477,9 +439,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/adding-video-to-a-squarespace-website.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/experiences/creating-slide-sync-experience.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -487,59 +449,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/adding-video-to-a-wix-website.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/experiences/experiences-overview.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/adding-video-to-articulate-storyline.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/making-hapyak-wrapper-responsive.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/publishing-to-an-lms.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/sharing-and-embedding.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/sharing-and-embedding/sharing-on-social-channels.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -547,17 +459,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/styling/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/styling/adjusting-images-to-appear-only-on-hover.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/adding-interactive-video-to-adobe-captivate.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -565,9 +477,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/styling/project-level-css-hapyak-plugin.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/adding-video-to-a-squarespace-website.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -575,9 +487,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/styling/project-level-css.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/adding-video-to-a-wix-website.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -585,9 +497,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/styling/simple-text-color-styling.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/adding-video-to-articulate-storyline.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -595,9 +507,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/styling/styling-annotations.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/making-hapyak-wrapper-responsive.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -605,9 +517,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/styling/custom-css-via-hapyak-plugin-for-brightcove.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/publishing-to-an-lms.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -615,9 +527,19 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/styling/using-built-in-css-classes.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/sharing-and-embedding.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/sharing-and-embedding/sharing-on-social-channels.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -625,17 +547,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/analytics/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/styling/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/analytics/analytics-and-reports-overview.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/styling/adjusting-images-to-appear-only-on-hover.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -643,9 +565,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/analytics/brightcove-campaign-hapyak-integration-module.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/styling/project-level-css-hapyak-plugin.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -653,9 +575,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/analytics/google-analytics.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/styling/project-level-css.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -663,9 +585,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/analytics/interactive-video-tracking-events.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/styling/simple-text-color-styling.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -673,9 +595,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/analytics/bci-events-google-analytics-events.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/styling/styling-annotations.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -683,9 +605,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/analytics/tracking-known-viewers-with-mailchimp.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/styling/custom-css-via-hapyak-plugin-for-brightcove.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -693,19 +615,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/analytics/tracking-known-viewers.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/styling/using-built-in-css-classes.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/analytics/video-analytics-and-metric-apis.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -713,17 +625,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/general/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/analytics/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/general/becoming-an-interactive-video-expert.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/analytics/analytics-and-reports-overview.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -731,9 +643,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/general/brightcove-browser-compatibility.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/analytics/brightcove-campaign-hapyak-integration-module.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -741,9 +653,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/general/interactivity-faq.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/analytics/google-analytics.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -751,9 +663,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/general/customizing-the-hapyak-player.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/analytics/interactive-video-tracking-events.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -761,9 +673,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/general/edit-videos-in-quicktime.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/analytics/bci-events-google-analytics-events.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -771,9 +683,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/general/how-to-increase-click-through-rate-ctr.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/analytics/tracking-known-viewers-with-mailchimp.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -781,9 +693,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/general/interactive-video-script-template.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/analytics/tracking-known-viewers.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -791,29 +703,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/customize/localization-change-the-language-translate-the-language.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/analytics/video-analytics-and-metric-apis.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/general/mobile-iphone-ipad-android-support.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://interactivity.support.brightcove.com/general/optimal-export-settings.html</loc>
-          
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -821,17 +713,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/admin/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/general/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/admin/managing-account-settings.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/general/becoming-an-interactive-video-expert.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -839,9 +731,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/admin/managing-group-members.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/general/brightcove-browser-compatibility.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -849,9 +741,79 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/admin/managing-sub-groups.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/general/interactivity-faq.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/general/customizing-the-hapyak-player.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/general/edit-videos-in-quicktime.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/general/how-to-increase-click-through-rate-ctr.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/general/interactive-video-script-template.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/customize/localization-change-the-language-translate-the-language.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/general/mobile-iphone-ipad-android-support.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/general/optimal-export-settings.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -859,8 +821,46 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/developers/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/admin/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/admin/managing-account-settings.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/admin/managing-group-members.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://interactivity.support.brightcove.com/platform/admin/managing-sub-groups.html</loc>
+          
+            <lastmod>2022-09-21</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
+        <loc>https://interactivity.support.brightcove.com/platform/developers/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
@@ -869,7 +869,7 @@
           
             <loc>https://interactivity.support.brightcove.com/developers/embed-api/reference.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -879,7 +879,7 @@
           
             <loc>https://interactivity.support.brightcove.com/developers/annotation-api/reference.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -889,7 +889,7 @@
           
             <loc>https://interactivity.support.brightcove.com/developers/extension-api/reference.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -899,7 +899,7 @@
           
             <loc>https://interactivity.support.brightcove.com/developers/responsive-api/reference.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -909,7 +909,7 @@
           
             <loc>https://interactivity.support.brightcove.com/developers/addon-api/reference.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -917,17 +917,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/troubleshooting/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/troubleshooting/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/troubleshooting/detecting-browser-version-and-operating-system-version.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/troubleshooting/detecting-browser-version-and-operating-system-version.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -935,9 +935,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/troubleshooting/what-web-browsers-devices-does-hapyak-support.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/troubleshooting/what-web-browsers-devices-does-hapyak-support.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -945,9 +945,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/troubleshooting/taking-a-console-screenshot-or-screen-recording.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/troubleshooting/taking-a-console-screenshot-or-screen-recording.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -955,17 +955,17 @@
       
     
       <url>
-        <loc>https://interactivity.support.brightcove.com/support/index.html</loc>
-        <lastmod>2022-09-20</lastmod>
+        <loc>https://interactivity.support.brightcove.com/platform/support/index.html</loc>
+        <lastmod>2022-09-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
       </url>
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/support/viewing-brightcove-system-status-page.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -973,9 +973,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/support/opening-case-with-brightcove-support.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -983,9 +983,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/support/reset-support-portal-password.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/support/reset-support-portal-password.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
@@ -993,9 +993,9 @@
       
         <url>
           
-            <loc>https://interactivity.support.brightcove.com/support/contact-sales.html</loc>
+            <loc>https://interactivity.support.brightcove.com/platform/support/contact-sales.html</loc>
           
-            <lastmod>2022-09-20</lastmod>
+            <lastmod>2022-09-21</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
         </url>
