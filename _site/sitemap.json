@@ -15,6 +15,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/accessibility.html",
+      "oldURL": "/accessibility"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/examples/accessibility.html",
       "oldURL": "/accessibility"
   },
@@ -111,6 +116,11 @@
 
   {
       "newURL": "https://interactivity.support.brightcove.com/examples/aig.html",
+      "oldURL": "/aig"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/aig.html",
       "oldURL": "/aig"
   },
 
@@ -270,6 +280,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/getsmarter.html",
+      "oldURL": "/getsmarter"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/examples/getsmarter.html",
       "oldURL": "/getsmarter"
   },
@@ -290,6 +305,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/healthstream.html",
+      "oldURL": "/healthstream"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/examples/healthstream.html",
       "oldURL": "/healthstream"
   },
@@ -302,6 +322,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/platform/general/how-to-increase-click-through-rate-ctr.html",
       "oldURL": "/how-to-increase-click-through-rate-ctr"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/hp.html",
+      "oldURL": "/hp"
   },
 
   {
@@ -320,7 +345,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/support/",
+      "newURL": "https://interactivity.support.brightcove.com/platform/developers/",
       "oldURL": "/index"
   },
 
@@ -365,6 +390,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/platform/styling/",
       "oldURL": "/index"
   },
@@ -385,12 +415,17 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/demos/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/platform/analytics/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/developers/",
+      "newURL": "https://interactivity.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -445,6 +480,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/jetblue.html",
+      "oldURL": "/jetblue"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/examples/jetblue.html",
       "oldURL": "/jetblue"
   },
@@ -456,6 +496,11 @@
 
   {
       "newURL": "https://interactivity.support.brightcove.com/examples/konica-minolta.html",
+      "oldURL": "/konica-minolta"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/konica-minolta.html",
       "oldURL": "/konica-minolta"
   },
 
@@ -500,6 +545,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/mit.html",
+      "oldURL": "/mit"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/examples/mit.html",
       "oldURL": "/mit"
   },
@@ -507,6 +557,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/platform/general/mobile-iphone-ipad-android-support.html",
       "oldURL": "/mobile-iphone-ipad-android-support"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/nutanix.html",
+      "oldURL": "/nutanix"
   },
 
   {
@@ -545,7 +600,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/developers/extension-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/developers/annotation-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -555,12 +610,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/developers/annotation-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/developers/embed-api/reference.html",
       "oldURL": "/reference"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/developers/embed-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/developers/extension-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -575,6 +630,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/rentokil.html",
+      "oldURL": "/rentokil"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/support/reset-support-portal-password.html",
       "oldURL": "/reset-support-portal-password"
   },
@@ -582,6 +642,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/platform/annotations/reviewing-annotations.html",
       "oldURL": "/reviewing-annotations"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/room4media.html",
+      "oldURL": "/room4media"
   },
 
   {
@@ -630,6 +695,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/sph.html",
+      "oldURL": "/sph"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/examples/sph.html",
       "oldURL": "/sph"
   },
@@ -637,6 +707,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/platform/styling/styling-annotations.html",
       "oldURL": "/styling-annotations"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/tableau.html",
+      "oldURL": "/tableau"
   },
 
   {
@@ -670,6 +745,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/under-armour.html",
+      "oldURL": "/under-armour"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/platform/styling/using-built-in-css-classes.html",
       "oldURL": "/using-built-in-css-classes"
   },
@@ -690,6 +770,11 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/verizon.html",
+      "oldURL": "/verizon"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/platform/analytics/video-analytics-and-metric-apis.html",
       "oldURL": "/video-analytics-and-metric-apis"
   },
@@ -702,6 +787,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/platform/troubleshooting/what-web-browsers-devices-does-hapyak-support.html",
       "oldURL": "/what-web-browsers-devices-does-hapyak-support"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/xero.html",
+      "oldURL": "/xero"
   },
 
   {
