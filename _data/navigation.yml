@@ -204,15 +204,15 @@
   url: '/platform/developers/index.html'
   docs:
     - name: Embed API
-      url: /developers/embed-api/reference.html
+      url: /platform/developers/embed-api/reference.html
     - name: Annotation CRUD API
-      url: /developers/annotation-api/reference.html
+      url: /platform/developers/annotation-api/reference.html
     - name: Extension API
-      url: /developers/extension-api/reference.html
+      url: /platform/developers/extension-api/reference.html
     - name: Responsive API
-      url: /developers/responsive-api/reference.html
+      url: /platform/developers/responsive-api/reference.html
     - name: Addon API
-      url: /developers/addon-api/reference.html
+      url: /platform/developers/addon-api/reference.html
 - section: 
   name: 'Troubleshooting'
   url: '/platform/troubleshooting/index.html'
