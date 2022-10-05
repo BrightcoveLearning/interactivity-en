@@ -203,6 +203,8 @@
   name: 'Developers'
   url: '/platform/developers/index.html'
   docs:
+    - name: Accessing Reporting Endpoints
+      url: /platform/developers/accessing-reporting-endpoints.html
     - name: Embed API
       url: /platform/developers/embed-api/reference.html
     - name: Annotation CRUD API
