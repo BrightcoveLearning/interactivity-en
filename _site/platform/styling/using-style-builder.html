@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to add CSS to a project to change the color of text annotations.">
+  <meta name="description" content="In this topic you will learn how to use the Style Builder.">
   
-  <title>Simple Text Color Styling using CSS</title>
+  <title>Using the Style Builder</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -167,7 +167,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Simple Text Color Styling using CSS</li>
+        <li class="breadcrumb-item active" aria-current="page">Using the Style Builder</li>
       
     
   </nav>
@@ -553,7 +553,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     
-                    <li><a href="/platform/styling/simple-text-color-styling.html" aria-current="page">Simple Text Color Styling</a></li>
+                    <li><a href="/platform/styling/simple-text-color-styling.html">Simple Text Color Styling</a></li>
                     
                   
                 
@@ -847,43 +847,22 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Simple Text Color Styling using CSS</h1>
+<h1>Using the Style Builder</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to add CSS to a project to change the color of text annotations.</summary>
+  <summary>In this topic you will learn how to use the Style Builder.</summary>
   <section class="bcls-section">
-    <p>A few lines of CSS can give your project a new look and feel. Follow these steps to change the color of text annotations in a project:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Brightcove Interactivity Studio.</li>
-      <li>In the left navigation, click <strong>Manage</strong>.</li>
-      <li> Click on a project to open it.</li>
-      <li>Click <span class="button-blue">Settings</span>.</li>
-      <li>In the <strong>Custom Annotation CSS (URL)</strong> field, add this style sheet.
-<code>//hapyak_demos.s3.amazonaws.com/css/customer/sample_on_hover_text_change.css</code>
-        <p>Or add this CSS to your current style sheet:</p>
-        <pre><code>.popcorn-pop.hapyak-theme-black.bright-red.active {
-  color: #C60C46;
-  background: rgba(255, 255, 255, 0);
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -ms-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
-}
-
-.popcorn-pop.hapyak-theme-black.bright-red.active:hover {
-  background: rgba(255, 255, 255, 0);
-  color: #f40656;
-}</code></pre></li>
-      <li>Locate a  text annotation and click <strong>Edit</strong>.</li>
-      <li>Click <strong>More...</strong>.</li>
-      <li>Click <strong>Add Class</strong>.</li>
-      <li>In the <strong>Classes</strong> textbox, add a color, ex: <code>bright-red</code>.
-        <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/css-color-classes-dialog.png"></figure>
-</li>
-      <li>Click <span class="button-blue">SUBMIT</span>.</li>
-      <li>Click <strong>Done</strong>.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity  Platform and should not be taken as an offer to create, edit or maintain custom integration or development.</aside>
+    <p>The Style Builder can be used to   easily create CSS that can be used to style annotations.</p>
+    <p>In addition to the classes described below, there are a number of others available to you that add simple animated transitions to your annotations. For more information, see <a href="/platform/annotations/using-custom-transitions-with-animate-css.html">Using Custom Transitions with Animate.css</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="apply-class">How to apply classes</h2>
+    <p>To apply a custom class to an annotation, follow these steps:</p>
+    <p>&nbsp;</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="4-hapyak-annotation-shine">hap</h2>
+    <aside class="bcls-aside bcls-aside--information">Note: Shine will not work as expected with a transparent overlay in full-frame mode.</aside>
+    <aside class="bcls-aside bcls-aside--information"></aside>
   </section>
 </article>
 
