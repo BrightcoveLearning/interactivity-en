@@ -3,23 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="In this topic you will learn how to use the Style Builder.">
   
   <title>Using the Style Builder</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
-  <link rel="manifest" href="/assets/s-site-assets-favicons/site.webmanifest">  
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/prism.css">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/styles.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/learning-paths/learning-paths.css">
+  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/landing-page.css">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/tabs.css">
   <link rel="stylesheet" href="/assets/css/local.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   
 <!-- Google tag (gtag.js) -->
@@ -32,8 +31,9 @@
   gtag('config', 'G-XBJC11HF8Z');
 </script>
   <script src="/assets/s-site-assets-scripts/sajari-head.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 
 <body class="body">
 
@@ -851,18 +851,72 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>In this topic you will learn how to use the Style Builder.</summary>
   <section class="bcls-section">
-    <p>The Style Builder can be used to   easily create CSS that can be used to style annotations.</p>
-    <p>In addition to the classes described below, there are a number of others available to you that add simple animated transitions to your annotations. For more information, see <a href="/platform/annotations/using-custom-transitions-with-animate-css.html">Using Custom Transitions with Animate.css</a>.</p>
+    <p>The Style Builder provides an easy to use interface that can be used to style annotations:</p>
+    <ul>
+      <li>Chapter menus</li>
+      <li>Overlays</li>
+      <li>Hotspots</li>
+      <li>Quizzes</li>
+    </ul>
+    <p>After the styling is complete, the changes can be published so that the styling is applied to all annotations in the account.</p>
+    <p>To access the Style Builder:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity.</li>
+      <li>In the primary navigation, click <strong>Style</strong>. The Group CSS page will display.</li>
+      <li> Click <span class="button-blue">USE STYLE BUILDER</span>.</li>
+    </ol>
+    <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/style-builder/chapter-menu.png"></figure>
+    <p>By default, when the style editor opens, the chapter menu styling options are displayed. Click an icon below the preview player to access the styling options for the other annotation types.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/style-builder/icon-bar.png">
+      <p>After styling changes for an annotation are complete, click <span class="button-blue">SAVE / NEXT</span> to save the changes and move on to styling the next annotation. Click <strong>RESET</strong> to revert the changes. </p>
+    </figure>
   </section>
   <section class="bcls-section">
-    <h2 id="apply-class">How to apply classes</h2>
-    <p>To apply a custom class to an annotation, follow these steps:</p>
-    <p>&nbsp;</p>
+    <h2 id="chapter-menu">Styling chapter menus</h2>
+    <p>To style chapter menus, click the <strong>CHAPTER MENU</strong> icon below the preview player. The following styling options are available:</p>
+    <ul>
+      <li>Background and font colors for the chapter menu</li>
+      <li><strong>Initial Menu State</strong> - Controls if the chapter menu displayed <strong>expanded</strong> or <strong>collapsed</strong></li>
+      <li><strong>Chapter Menu</strong> - Controls the layout of the chapter menu
+        <ul>
+          <li>Column - Chapter menu will appear as a column on left side of player</li>
+          <li>Full Screen - Chapter menu will open in center of player</li>
+        </ul>
+      </li>
+    </ul>
+    <p>As styling changes are made, they will be reflected in the Live Preview player on the page.</p>
+    <p>
+      <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/style-builder/chapter-menu-preview.png"> </figure>
+    </p>
   </section>
   <section class="bcls-section">
-    <h2 id="4-hapyak-annotation-shine">hap</h2>
-    <aside class="bcls-aside bcls-aside--information">Note: Shine will not work as expected with a transparent overlay in full-frame mode.</aside>
-    <aside class="bcls-aside bcls-aside--information"></aside>
+    <h2 id="overlay">Styling overlays</h2>
+    <p>To style overlays, click the <strong>OVERLAY</strong> icon below the Live Preview player. The following styling options are available:</p>
+    <ul>
+      <li>Background and font colors for overlays</li>
+    </ul>
+    <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/style-builder/overlay-options.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="hotspot">Styling hotspots</h2>
+    <p>To style hotspots, click the <strong>HotSpot</strong> icon below the Live Preview player. The following styling options are available:</p>
+    <ul>
+      <li>Opacity and background color for hotspots</li>
+    </ul>
+    <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/style-builder/hotspot-options.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="quiz">Styling quizzes</h2>
+    <p>To style quizzes, click the <strong>QUIZ</strong> icon below the Live Preview player. The following styling options are available:</p>
+    <ul>
+      <li>Background, font and button colors for quizzes</li>
+    </ul>
+    <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/style-builder/quiz-options.png"></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="publish">Publishing changes</h2>
+    <p>When all styling changes are complete, click <span class="button-blue">Preview &amp; Publish</span>. Click <strong>PUBLISH</strong> to apply all styling changes to existing projects.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/style-builder/publish.png"> </figure>
   </section>
 </article>
 
