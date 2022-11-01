@@ -7,15 +7,20 @@ parent: Styling
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>A few lines of CSS can give your project a new look and feel. Follow these steps to change the color of text annotations in a project:</p>
+    <p>A few lines of CSS can give your project a new look and feel. Start by updating the Hapyak-enabled Brightcove Player to point to a CSS file:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Brightcove Interactivity Studio.</li>
-      <li>In the left navigation, click <strong>Manage</strong>.</li>
-      <li> Click on a project to open it.</li>
-      <li>Click <span class="button-blue">Settings</span>.</li>
-      <li>In the <strong>Custom Annotation CSS (URL)</strong> field, add this style sheet.
-<code>//hapyak_demos.s3.amazonaws.com/css/customer/sample_on_hover_text_change.css</code>
-        <p>Or add this CSS to your current style sheet:</p>
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the Players module<strong></strong>.</li>
+      <li> Locate the HapYak-enabled Brightcove Player and click on it to open the player properties.</li>
+      <li>Click <strong>Plugins</strong> in the left navigation.</li>
+      <li>Click the <strong>hapyak</strong> plugin to edit the plugin properties.</li>
+      <li>Edit the <strong>Options(JSON)</strong> to point to the following CSS file.
+        <pre><code>//hapyak_demos.s3.amazonaws.com/css/customer/sample_on_hover_text_change.css</code></pre>
+        <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/plugin-color-css.png"></figure>
+      </li>
+      <li>Save the changes and publish the changes to the player.</li>
+    </ol>
+<p>Another option is to add this CSS to your current style sheet:</p>
         <pre><code>.popcorn-pop.hapyak-theme-black.bright-red.active {
   color: #C60C46;
   background: rgba(255, 255, 255, 0);
@@ -29,7 +34,13 @@ parent: Styling
 .popcorn-pop.hapyak-theme-black.bright-red.active:hover {
   background: rgba(255, 255, 255, 0);
   color: #f40656;
-}</code></pre></li>
+}</code></pre>
+      
+    <p>Follow these steps to change the color of text annotations in a project:</p>
+    <ol class="bcls-tasklist-restart">  
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li> Click on a project to open it.</li>
       <li>Locate a  text annotation and click <strong>Edit</strong>.</li>
       <li>Click <strong>More...</strong>.</li>
       <li>Click <strong>Add Class</strong>.</li>

@@ -145,6 +145,8 @@
       url: '/platform/styling/custom-css-via-hapyak-plugin-for-brightcove.html'
     - name: 'Using the Built-In CSS Classes'
       url: '/platform/styling/using-built-in-css-classes.html'
+    - name: 'Using the Style Builder'
+      url: '/platform/styling/using-style-builder.html'
 - section: 
   name: 'Analytics'
   url: '/platform/analytics/index.html'
