@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to set a custom style for annotations.">
+  <meta name="description" content="In this topic you will learn how to use a custom CSS file to style annotations.">
   
   <title>Styling Annotations</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
@@ -855,17 +855,28 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>Styling Annotations</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to set a custom style for annotations.</summary>
+  <summary>In this topic you will learn how to use a custom CSS file to style annotations.</summary>
   <section class="bcls-section">
-    <h2 id="create">Creating a custom annotation style</h2>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: All CSS URLs need to be formatted with no uppercase letters to ensure proper functionality.</aside>
-    <p>The Brightcove Interactivity <a href="https://www.hapyak.com/portal/settings/style">Style Builder</a> can be used to easily create CSS that can be used to style annotations. For more information on the Style Builder, see <a href="using-style-builder.html">Using the Style Builder</a>.</p>
+    <p>Brightcove Interactivity uses a group CSS file to control styling of annotations. The Group CSS is accessible from all projects, templates, and experiences and controls the styling for all annotations.</p>
+    <p>Follow these steps to access the group CSS file.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity.</li>
+      <li>In the primary navigation, click <strong>Style</strong>. The Group CSS page will display.
+        <figure class="bcls-figure"> <img src="/assets/images/platform/s-brightcove-interactivity-img/styling/group-css.png"> </figure>
+      </li>
+    </ol>
+    <p>Click <span class="button-blue">DOWNLOAD</span> to open the Current Group CSS in a new browser tab.</p>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: All CSS URLs need to be formatted with no uppercase letters to ensure proper functionality.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="modify">Modifying the custom style with CSS</h2>
+    <h2 id="create">Creating custom annotation styles</h2>
+    <p>Click <span class="button-blue">USE STYLE BUILDER</span> to open the Style Builder. The Style Builder provides an easy to use interface for styling annotations. For more information on the Style Builder, see <a href="using-style-builder.html">Using the Style Builder</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="modify">Modifying the custom style</h2>
     <p>You can further style your annotations (for example adding the same font or font style you use on your web site) by following these steps.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Complete the <a href="using-style-builder.html">Style Builder</a> and click <strong>Publish</strong>.
+      <li>Use  the <a href="using-style-builder.html">Style Builder</a> to style annoations as desired. Make sure the styling changes are published.
         <aside class="bcls-aside bcls-aside--information">Note:  Once you confirm and publish your new styles, these styles will be active across all projects.</aside>
       </li>
       <li>Click <strong>Exit</strong> to exit the Style Builder.</li>
@@ -879,7 +890,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="create-scratch">Creating a custom annotation CSS from scratch</h2>
-    <p>You can also create a custom annotation CSS file from scratch. Download the <a href="https://hapyak_demos.s3.amazonaws.com/css/customer/skeleton_style_builder.css" rel="nofollow noopener noreferrer" target="_blank">code for HapYak's skeleton css</a>, or <a href="https://hapyak_demos.s3.amazonaws.com/css/light-styles.css" rel="nofollow noopener noreferrer" target="_blank">code for HapYak's default css</a>. Choose the file you need, then follow steps 4-8 above. </p>
+    <p>You can also create a custom annotation CSS file from scratch. Download the <a href="https://hapyak_demos.s3.amazonaws.com/css/customer/skeleton_style_builder.css" rel="nofollow noopener noreferrer" target="_blank">code for HapYak's skeleton css</a>, or <a href="https://hapyak_demos.s3.amazonaws.com/css/light-styles.css" rel="nofollow noopener noreferrer" target="_blank">code for HapYak's default css</a>. Choose the file you need, then follow the steps above. </p>
   </section>
 </article>
 
@@ -898,7 +909,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 20 Sep 2022
+  Page last updated on 01 Nov 2022
 </div>
 
 
