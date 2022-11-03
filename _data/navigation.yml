@@ -1,209 +1,209 @@
 - section: 
-  name: 'Home'
-  url: '/index.html'
+  name: "Home"
+  url: "/index.html"
 - section: 
-  name: 'Getting Started'
-  url: '/platform/getting-started/index.html'
+  name: "Getting Started"
+  url: "/platform/getting-started/index.html"
   docs:
-    - name: '8 Most Common Annotations'
-      url: '/platform/getting-started/8-most-common-annotations.html'
-    - name: 'Configuring a Player with the HapYak Plugin'
-      url: '/platform/getting-started/configuring-player-plugin.html'
-    - name: 'Getting Started with Interactivity'
-      url: '/platform/getting-started/getting-started-interactivity.html'
-    - name: 'Interactive Examples Gallery'
-      url: '/platform/examples/index.html'
-    - name: 'Interactive Video Types'
-      url: '/platform/getting-started/interactive-video-types.html'
-    - name: 'Introduction to the HapYak Portal'
-      url: '/platform/getting-started/introduction-to-the-hapyak-portal.html'
-    - name: 'Terminology'
-      url: '/platform/getting-started/terminology.html'
+    - name: "8 Most Common Annotations"
+      url: "/platform/getting-started/8-most-common-annotations.html"
+    - name: "Configuring a Player with the HapYak Plugin"
+      url: "/platform/getting-started/configuring-player-plugin.html"
+    - name: "Getting Started with Interactivity"
+      url: "/platform/getting-started/getting-started-interactivity.html"
+    - name: "Interactive Examples Gallery"
+      url: "/platform/examples/index.html"
+    - name: "Interactive Video Types"
+      url: "/platform/getting-started/interactive-video-types.html"
+    - name: "Introduction to the HapYak Portal"
+      url: "/platform/getting-started/introduction-to-the-hapyak-portal.html"
+    - name: "Terminology"
+      url: "/platform/getting-started/terminology.html"
 - section: 
-  name: 'Annotations'
-  url: '/platform/annotations/index.html'
+  name: "Annotations"
+  url: "/platform/annotations/index.html"
   docs:
-    - name: 'Adding Interactive Chapters to a Video'
-      url: '/platform/annotations/adding-chapters-video.html'
-    - name: 'Adding an Image Overlay'
-      url: '/platform/annotations/adding-image-overlay.html'
-    - name: 'Adding a Quiz Annotation'
-      url: '/platform/annotations/adding-quiz-annotation.html'
-    - name: 'Adding an Text Overlay'
-      url: '/platform/annotations/adding-text-overlay.html'
-    - name: 'Adding a Time Triggered Action'
-      url: '/platform/annotations/adding-time-triggered-action.html'
-    - name: 'Adding an Transparent Overlay'
-      url: '/platform/annotations/adding-transparent-overlay.html'
-    - name: 'Annotation Options'
-      url: '/platform/annotations/annotation-options.html'
-    - name: 'Bulk Editing Annotations'
-      url: '/platform/annotations/bulk-annotation-edit.html'
-    - name: 'Configuring Annotation Links'
-      url: '/platform/annotations/configuring-annotation-links.html'
-    - name: 'Looping Back in a Video'
-      url: '/platform/annotations/looping-back-in-a-video.html'
-    - name: 'Reviewing Annotations'
-      url: '/platform/annotations/reviewing-annotations.html'
-    - name: 'Using Custom Transitions with Animate.css'
-      url: '/platform/annotations/using-custom-transitions-with-animate-css.html'
+    - name: "Adding Interactive Chapters to a Video"
+      url: "/platform/annotations/adding-chapters-video.html"
+    - name: "Adding an Image Overlay"
+      url: "/platform/annotations/adding-image-overlay.html"
+    - name: "Adding a Quiz Annotation"
+      url: "/platform/annotations/adding-quiz-annotation.html"
+    - name: "Adding an Text Overlay"
+      url: "/platform/annotations/adding-text-overlay.html"
+    - name: "Adding a Time Triggered Action"
+      url: "/platform/annotations/adding-time-triggered-action.html"
+    - name: "Adding an Transparent Overlay"
+      url: "/platform/annotations/adding-transparent-overlay.html"
+    - name: "Annotation Options"
+      url: "/platform/annotations/annotation-options.html"
+    - name: "Bulk Editing Annotations"
+      url: "/platform/annotations/bulk-annotation-edit.html"
+    - name: "Configuring Annotation Links"
+      url: "/platform/annotations/configuring-annotation-links.html"
+    - name: "Looping Back in a Video"
+      url: "/platform/annotations/looping-back-in-a-video.html"
+    - name: "Reviewing Annotations"
+      url: "/platform/annotations/reviewing-annotations.html"
+    - name: "Using Custom Transitions with Animate.css"
+      url: "/platform/annotations/using-custom-transitions-with-animate-css.html"
 - section: 
-  name: 'Custom Annotations'
-  url: '/platform/custom-annotations/index.html'
+  name: "Custom Annotations"
+  url: "/platform/custom-annotations/index.html"
   docs:
-    - name: 'Adding a Display Rule to a Video'
-      url: '/platform/custom-annotations/adding-display-rule.html'
-    - name: 'Adding a Poll to a Video'
-      url: '/platform/custom-annotations/adding-poll-video.html'
-    - name: 'Adding a Sign In Form to a Video'
-      url: '/platform/custom-annotations/adding-sign-in-video.html'
-    - name: 'Adding User Sentiment to Videos'
-      url: '/platform/custom-annotations/adding-sentiment-video.html'
-    - name: 'Embedding a Form in a Video'
-      url: '/platform/custom-annotations/embedding-form-video.html'
-    - name: 'Using the Custom Widget Library'
-      url: '/platform/custom-annotations/using-custom-widget-library.html'
+    - name: "Adding a Display Rule to a Video"
+      url: "/platform/custom-annotations/adding-display-rule.html"
+    - name: "Adding a Poll to a Video"
+      url: "/platform/custom-annotations/adding-poll-video.html"
+    - name: "Adding a Sign In Form to a Video"
+      url: "/platform/custom-annotations/adding-sign-in-video.html"
+    - name: "Adding User Sentiment to Videos"
+      url: "/platform/custom-annotations/adding-sentiment-video.html"
+    - name: "Embedding a Form in a Video"
+      url: "/platform/custom-annotations/embedding-form-video.html"
+    - name: "Using the Custom Widget Library"
+      url: "/platform/custom-annotations/using-custom-widget-library.html"
 - section: 
-  name: 'Integrations'
-  url: '/platform/integrations/index.html'
+  name: "Integrations"
+  url: "/platform/integrations/index.html"
   docs:
-    - name: 'Eloqua Add-on'
-      url: '/platform/integrations/eloqua-add-on.html'
-    - name: 'Enabling Brightcove Sync'
-      url: '/platform/integrations/enabling-brightcove-sync.html'
-    - name: 'Integrating with an LMS'
-      url: '/platform/integrations/integrating-with-an-lms.html'
-    - name: 'LTI Lessons - Creating a Branching Video'
-      url: '/platform/integrations/lti-lessons-creating-a-branching-video.html'
-    - name: 'Salesforce Add-on'
-      url: '/platform/integrations/salesforce-add-on.html'
+    - name: "Eloqua Add-on"
+      url: "/platform/integrations/eloqua-add-on.html"
+    - name: "Enabling Brightcove Sync"
+      url: "/platform/integrations/enabling-brightcove-sync.html"
+    - name: "Integrating with an LMS"
+      url: "/platform/integrations/integrating-with-an-lms.html"
+    - name: "LTI Lessons - Creating a Branching Video"
+      url: "/platform/integrations/lti-lessons-creating-a-branching-video.html"
+    - name: "Salesforce Add-on"
+      url: "/platform/integrations/salesforce-add-on.html"
 - section: 
-  name: 'Projects'
-  url: '/platform/projects/index.html'
+  name: "Projects"
+  url: "/platform/projects/index.html"
   docs:
-    - name: 'Branching Overview'
-      url: '/platform/projects/branching-overview.html'
-    - name: 'Configuring Project Settings'
-      url: '/platform/projects/configuring-project-settings.html'
-    - name: 'Creating an In-Video Branching Project'
-      url: '/platform/projects/in-video-branching.html' 
-    - name: 'Creating and Managing Projects'
-      url: '/platform/projects/creating-and-managing-projects.html'
+    - name: "Branching Overview"
+      url: "/platform/projects/branching-overview.html"
+    - name: "Configuring Project Settings"
+      url: "/platform/projects/configuring-project-settings.html"
+    - name: "Creating an In-Video Branching Project"
+      url: "/platform/projects/in-video-branching.html" 
+    - name: "Creating and Managing Projects"
+      url: "/platform/projects/creating-and-managing-projects.html"
 - section: 
-  name: 'Templates'
-  url: '/platform/templates/index.html'
+  name: "Templates"
+  url: "/platform/templates/index.html"
   docs:
-    - name: 'Applying Templates to Projects'
-      url: '/platform/templates/applying-templates-projects.html'
-    - name: 'Creating and Managing Templates'
-      url: '/platform/templates/creating-and-managing-templates.html'
+    - name: "Applying Templates to Projects"
+      url: "/platform/templates/applying-templates-projects.html"
+    - name: "Creating and Managing Templates"
+      url: "/platform/templates/creating-and-managing-templates.html"
 - section: 
-  name: 'Experiences'
-  url: '/platform/experiences/index.html'
+  name: "Experiences"
+  url: "/platform/experiences/index.html"
   docs:
-    - name: 'Creating a Branching Experience'
-      url: '/platform/experiences/creating-branching-experience.html'
-    - name: 'Creating a Slide Sync Experience'
-      url: '/platform/experiences/creating-slide-sync-experience.html'
-    - name: 'Experiences Overview'
-      url: '/platform/experiences/experiences-overview.html'
+    - name: "Creating a Branching Experience"
+      url: "/platform/experiences/creating-branching-experience.html"
+    - name: "Creating a Slide Sync Experience"
+      url: "/platform/experiences/creating-slide-sync-experience.html"
+    - name: "Experiences Overview"
+      url: "/platform/experiences/experiences-overview.html"
 - section: 
-  name: 'Sharing and Embedding'
-  url: '/platform/sharing-and-embedding/index.html'
+  name: "Sharing and Embedding"
+  url: "/platform/sharing-and-embedding/index.html"
   docs:
-    - name: 'Adding an Interactive Video to Adobe Captivate'
-      url: '/platform/sharing-and-embedding/adding-interactive-video-to-adobe-captivate.html'
-    - name: 'Adding a video to a Squarespace Website'
-      url: '/platform/sharing-and-embedding/adding-video-to-a-squarespace-website.html'
-    - name: 'Adding a video to a Wix Website'
-      url: '/platform/sharing-and-embedding/adding-video-to-a-wix-website.html'
-    - name: 'Adding a video to Articulate Storyline'
-      url: '/platform/sharing-and-embedding/adding-video-to-articulate-storyline.html'
-    - name: 'Making the HapYak Wrapper Responsive'
-      url: '/platform/sharing-and-embedding/making-hapyak-wrapper-responsive.html'
-    - name: 'Publishing to an LMS'
-      url: '/platform/sharing-and-embedding/publishing-to-an-lms.html'
-    - name: 'Sharing and Embedding Projects'
-      url: '/platform/sharing-and-embedding/sharing-and-embedding.html'
-    - name: 'Sharing on Social Channels'
-      url: '/platform/sharing-and-embedding/sharing-on-social-channels.html'
+    - name: "Adding an Interactive Video to Adobe Captivate"
+      url: "/platform/sharing-and-embedding/adding-interactive-video-to-adobe-captivate.html"
+    - name: "Adding a video to a Squarespace Website"
+      url: "/platform/sharing-and-embedding/adding-video-to-a-squarespace-website.html"
+    - name: "Adding a video to a Wix Website"
+      url: "/platform/sharing-and-embedding/adding-video-to-a-wix-website.html"
+    - name: "Adding a video to Articulate Storyline"
+      url: "/platform/sharing-and-embedding/adding-video-to-articulate-storyline.html"
+    - name: "Making the HapYak Wrapper Responsive"
+      url: "/platform/sharing-and-embedding/making-hapyak-wrapper-responsive.html"
+    - name: "Publishing to an LMS"
+      url: "/platform/sharing-and-embedding/publishing-to-an-lms.html"
+    - name: "Sharing and Embedding Projects"
+      url: "/platform/sharing-and-embedding/sharing-and-embedding.html"
+    - name: "Sharing on Social Channels"
+      url: "/platform/sharing-and-embedding/sharing-on-social-channels.html"
 - section: 
-  name: 'Styling'
-  url: '/platform/styling/index.html'
+  name: "Styling"
+  url: "/platform/styling/index.html"
   docs:
-    - name: 'Adjusting images to appear only on hover'
-      url: '/platform/styling/adjusting-images-to-appear-only-on-hover.html'
-    - name: 'Applying Project Level CSS Via the HapYak Plugin'
-      url: '/platform/styling/project-level-css-hapyak-plugin.html'
-    - name: 'Configuring Project Level CSS'
-      url: '/platform/styling/project-level-css.html'
-    - name: 'Simple Text Color Styling'
-      url: '/platform/styling/simple-text-color-styling.html'
-    - name: 'Styling Annotations'
-      url: '/platform/styling/styling-annotations.html'
-    - name: 'Using Custom CSS via HapYak Plugin'
-      url: '/platform/styling/custom-css-via-hapyak-plugin-for-brightcove.html'
-    - name: 'Using the Built-In CSS Classes'
-      url: '/platform/styling/using-built-in-css-classes.html'
-    - name: 'Using the Style Builder'
-      url: '/platform/styling/using-style-builder.html'
+    - name: "Adjusting images to appear only on hover"
+      url: "/platform/styling/adjusting-images-to-appear-only-on-hover.html"
+    - name: "Applying Project Level CSS Via the HapYak Plugin"
+      url: "/platform/styling/project-level-css-hapyak-plugin.html"
+    - name: "Configuring Project Level CSS"
+      url: "/platform/styling/project-level-css.html"
+    - name: "Simple Text Color Styling"
+      url: "/platform/styling/simple-text-color-styling.html"
+    - name: "Styling Annotations"
+      url: "/platform/styling/styling-annotations.html"
+    - name: "Using Custom CSS via HapYak Plugin"
+      url: "/platform/styling/custom-css-via-hapyak-plugin-for-brightcove.html"
+    - name: "Using the Built-In CSS Classes"
+      url: "/platform/styling/using-built-in-css-classes.html"
+    - name: "Using the Style Builder"
+      url: "/platform/styling/using-style-builder.html"
 - section: 
-  name: 'Analytics'
-  url: '/platform/analytics/index.html'
+  name: "Analytics"
+  url: "/platform/analytics/index.html"
   docs:
-    - name: 'Analytics and Reports Overview'
-      url: '/platform/analytics/analytics-and-reports-overview.html'
-    - name: 'Brightcove Campaign - Integration Module'
-      url: '/platform/analytics/brightcove-campaign-hapyak-integration-module.html'
-    - name: 'Google Analytics Integration Module'
-      url: '/platform/analytics/google-analytics.html'
-    - name: 'Interactive Video Tracking Events'
-      url: '/platform/analytics/interactive-video-tracking-events.html'
-    - name: 'Mapping Interactivity Events to Google Analytics'
-      url: '/platform/analytics/bci-events-google-analytics-events.html'
-    - name: 'Tracking Known Viewers with Mailchimp'
-      url: '/platform/analytics/tracking-known-viewers-with-mailchimp.html'
-    - name: 'Tracking Known Viewers'
-      url: '/platform/analytics/tracking-known-viewers.html'
-    - name: 'Video Analytics and Metric APIs'
-      url: '/platform/analytics/video-analytics-and-metric-apis.html'
+    - name: "Analytics and Reports Overview"
+      url: "/platform/analytics/analytics-and-reports-overview.html"
+    - name: "Brightcove Campaign - Integration Module"
+      url: "/platform/analytics/brightcove-campaign-hapyak-integration-module.html"
+    - name: "Google Analytics Integration Module"
+      url: "/platform/analytics/google-analytics.html"
+    - name: "Interactive Video Tracking Events"
+      url: "/platform/analytics/interactive-video-tracking-events.html"
+    - name: "Mapping Interactivity Events to Google Analytics"
+      url: "/platform/analytics/bci-events-google-analytics-events.html"
+    - name: "Tracking Known Viewers with Mailchimp"
+      url: "/platform/analytics/tracking-known-viewers-with-mailchimp.html"
+    - name: "Tracking Known Viewers"
+      url: "/platform/analytics/tracking-known-viewers.html"
+    - name: "Video Analytics and Metric APIs"
+      url: "/platform/analytics/video-analytics-and-metric-apis.html"
 - section: 
-  name: 'General Information'
-  url: '/platform/general/index.html'
+  name: "General Information"
+  url: "/platform/general/index.html"
   docs:
-    - name: 'Becoming an Interactive Video Expert'
-      url: '/platform/general/becoming-an-interactive-video-expert.html'
-    - name: 'Brightcove Browser Compatibility'
-      url: '/platform/general/brightcove-browser-compatibility.html'
-    - name: 'Brightcove Interactivity FAQ'
-      url: '/platform/general/interactivity-faq.html'
-    - name: 'Customizing the HapYak Player'
-      url: '/platform/general/customizing-the-hapyak-player.html'
-    - name: 'Editing Videos in QuickTime'
-      url: '/platform/general/edit-videos-in-quicktime.html'
-    - name: 'How to Increase Click Through Rate (CTR)'
-      url: '/platform/general/how-to-increase-click-through-rate-ctr.html'
-    - name: 'Interactive Video Script Template'
-      url: '/platform/general/interactive-video-script-template.html'
-    - name: 'Localization'
-      url: '/platform/customize/localization-change-the-language-translate-the-language.html'
-    - name: 'Mobile Device Support'
-      url: '/platform/general/mobile-iphone-ipad-android-support.html'
-    - name: 'Optimal Export Settings'
-      url: '/platform/general/optimal-export-settings.html'
+    - name: "Becoming an Interactive Video Expert"
+      url: "/platform/general/becoming-an-interactive-video-expert.html"
+    - name: "Brightcove Browser Compatibility"
+      url: "/platform/general/brightcove-browser-compatibility.html"
+    - name: "Brightcove Interactivity FAQ"
+      url: "/platform/general/interactivity-faq.html"
+    - name: "Customizing the HapYak Player"
+      url: "/platform/general/customizing-the-hapyak-player.html"
+    - name: "Editing Videos in QuickTime"
+      url: "/platform/general/edit-videos-in-quicktime.html"
+    - name: "How to Increase Click Through Rate (CTR)"
+      url: "/platform/general/how-to-increase-click-through-rate-ctr.html"
+    - name: "Interactive Video Script Template"
+      url: "/platform/general/interactive-video-script-template.html"
+    - name: "Localization"
+      url: "/platform/customize/localization-change-the-language-translate-the-language.html"
+    - name: "Mobile Device Support"
+      url: "/platform/general/mobile-iphone-ipad-android-support.html"
+    - name: "Optimal Export Settings"
+      url: "/platform/general/optimal-export-settings.html"
 - section: 
-  name: 'Administering Accounts'
-  url: '/platform/admin/index.html'
+  name: "Administering Accounts"
+  url: "/platform/admin/index.html"
   docs:
-    - name: 'Managing Account Settings'
-      url: '/platform/admin/managing-account-settings.html'
-    - name: 'Managing Group Members'
-      url: '/platform/admin/managing-group-members.html'
-    - name: 'Managing Sub-Groups'
-      url: '/platform/admin/managing-sub-groups.html'
+    - name: "Managing Account Settings"
+      url: "/platform/admin/managing-account-settings.html"
+    - name: "Managing Group Members"
+      url: "/platform/admin/managing-group-members.html"
+    - name: "Managing Sub-Groups"
+      url: "/platform/admin/managing-sub-groups.html"
 - section: 
-  name: 'Developers'
-  url: '/platform/developers/index.html'
+  name: "Developers"
+  url: "/platform/developers/index.html"
   docs:
     - name: Accessing Reporting Endpoints
       url: /platform/developers/accessing-reporting-endpoints.html
@@ -218,24 +218,24 @@
     - name: Addon API
       url: /platform/developers/addon-api/reference.html
 - section: 
-  name: 'Troubleshooting'
-  url: '/platform/troubleshooting/index.html'
+  name: "Troubleshooting"
+  url: "/platform/troubleshooting/index.html"
   docs:
-    - name: 'Detecting Browser Version and Operating System Version'
-      url: '/platform/troubleshooting/detecting-browser-version-and-operating-system-version.html'
-    - name: 'Supported Web Browsers and Devices'
-      url: '/platform/troubleshooting/what-web-browsers-devices-does-hapyak-support.html'
-    - name: 'Taking a Console Screenshot or Screen Recording'
-      url: '/platform/troubleshooting/taking-a-console-screenshot-or-screen-recording.html'
+    - name: "Detecting Browser Version and Operating System Version"
+      url: "/platform/troubleshooting/detecting-browser-version-and-operating-system-version.html"
+    - name: "Supported Web Browsers and Devices"
+      url: "/platform/troubleshooting/what-web-browsers-devices-does-hapyak-support.html"
+    - name: "Taking a Console Screenshot or Screen Recording"
+      url: "/platform/troubleshooting/taking-a-console-screenshot-or-screen-recording.html"
 - section: 
-  name: 'Support'
-  url: '/support/index.html'
+  name: "Support"
+  url: "/support/index.html"
   docs:
-    - name: 'Viewing the Brightcove System Status Page'
-      url: '/support/viewing-brightcove-system-status-page.html'
-    - name: 'Opening a Support Case'
-      url: '/support/opening-case-with-brightcove-support.html'
-    - name: 'Reset Your Support Portal Password'
-      url: '/support/reset-support-portal-password.html'
-    - name: 'Contact Sales'
-      url: '/support/contact-sales.html'
+    - name: "Viewing the Brightcove System Status Page"
+      url: "/support/viewing-brightcove-system-status-page.html"
+    - name: "Opening a Support Case"
+      url: "/support/opening-case-with-brightcove-support.html"
+    - name: "Reset Your Support Portal Password"
+      url: "/support/reset-support-portal-password.html"
+    - name: "Contact Sales"
+      url: "/support/contact-sales.html"
