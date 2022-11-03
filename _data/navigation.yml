@@ -186,7 +186,7 @@
     - name: "Interactive Video Script Template"
       url: "/platform/general/interactive-video-script-template.html"
     - name: "Localization"
-      url: "/platform/customize/localization-change-the-language-translate-the-language.html"
+      url: "/platform/general/localization-change-the-language-translate-the-language.html"
     - name: "Mobile Device Support"
       url: "/platform/general/mobile-iphone-ipad-android-support.html"
     - name: "Optimal Export Settings"
