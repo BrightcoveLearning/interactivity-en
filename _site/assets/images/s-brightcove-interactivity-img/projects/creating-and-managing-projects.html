@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to manage users in a Brightcove Interactivity group.">
+  <meta name="description" content="In this topic you will learn how to create and manage Brightcove Interactivity projects.">
   
-  <title>Managing Group Members</title>
+  <title>Creating and Managing Projects</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -160,15 +160,23 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/platform/">Platform</a></li>
+        <li class="breadcrumb-item"><a href="/assets/">Assets</a></li>
       
     
       
-        <li class="breadcrumb-item"><a href="/platform/admin/">Admin</a></li>
+        <li class="breadcrumb-item"><a href="/assets/images/">Images</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Managing Group Members</li>
+        <li class="breadcrumb-item"><a href="/assets/images/s-brightcove-interactivity-img/">S brightcove interactivity img</a></li>
+      
+    
+      
+        <li class="breadcrumb-item"><a href="/assets/images/s-brightcove-interactivity-img/projects/">Projects</a></li>
+      
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Creating and Managing Projects</li>
       
     
   </nav>
@@ -719,7 +727,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     
-                    <li><a href="/platform/admin/managing-group-members.html" aria-current="page">Managing Group Members</a></li>
+                    <li><a href="/platform/admin/managing-group-members.html">Managing Group Members</a></li>
                     
                   
                 
@@ -854,57 +862,80 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Managing Group Members</h1>
+<h1>Creating and Managing Projects</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to manage users in a Brightcove Interactivity group.</summary>
+  <summary>In this topic you will learn how to create and manage Brightcove Interactivity projects.</summary>
   <section class="bcls-section">
-    <p>You can invite colleagues and collaborators to your Brightcove Interactivity group. These users are called <b>Group Members</b> and they will have access to all of the projects, templates, experiences and and reports in the group.</p>
-    <p>To access the Group Members page:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Brightcove Interactivity.</li>
-      <li>In the primary navigation, click <strong>Admin</strong> and then <strong>MANAGE MEMBERS</strong>.
-        <figure class="bcls-figure"> <img src="/assets/images/platform/admin/group-members/group-members.png"> </figure>
-      </li>
-    </ol>
-    <p>The Manage Users dialog will display:</p>
+    <h2 id="project-creation">Automatically creating a Brightcove Interactivity project</h2>
+    <p>Video Cloud videos that are played using a <a href="/platform/getting-started/configuring-player-plugin.html">HapYak-enabled</a> player will automatically create Brightcove Interactivity projects. This is the preferred method to create a project. </p>
+    <p>When a video is played inside of a HapYak-enabled Brightcove Player, the following things happen: </p>
     <ul>
-      <li>Username</li>
-      <li>First Name</li>
-      <li>Last Name</li>
-      <li>Role</li>
-      <li>Date Added</li>
-    </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/platform/admin/group-members/user-list.png"> </figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="add">Adding new group members</h2>
-    <p>To add a new group member:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In the <strong>Invites</strong> section, enter the email address of the user.</li>
-      <li>Assign a <strong>Role</strong> to the user:
+      <li>The Brightcove video ID, title, tags and custom fields are passed to Brightcove Interactivity</li>
+      <li>Brightcove Interactivity attempts to look up the video ID within your group</li>
+      <li><strong>If no matching record is found</strong>, then Brightcove Interactivity creates a project with the data that was sent</li>
+      <li>Brightcove Interactivity will also set the project properties to indicate that it was "auto created":
         <ul>
-          <li><b>Admin</b> - Access to all functionality, including configuring styles and add-ons for projects, viewing reports, creating sub-groups, and inviting new users</li>
-          <li><b>Editor</b> - Can create, edit, and share projects and can view and download reports; Cannot view or adjust group level settings</li>
-          <li><b>Reporter</b> - Can only view and download reports</li>
+          <li> The <code>is_published</code> value will be set to <strong>TRUE</strong></li>
+          <li> A tag with the value <code>live</code> will be added</li>
         </ul>
       </li>
-      <li>Click <strong>Invite</strong>.</li>
+    </ul>
+    <p>The following steps will automatically create a Brightcove Interactivity project. Make sure you have a <a href="/platform/getting-started/configuring-player-plugin.html">HapYak-enabled player</a> before continuing:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select a video to publish by checking the box next to the video thumbnail.</li>
+      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web.</strong></li>
+      <li>Select the player with the HapYak plugin.</li>
+      <li>Click the preview link to open a preview in a new browser tab.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/getting-started/gs-interactivity/gsi-vc-publish.png"> </figure>
+      </li>
+      <li>Play the preview video (the video only needs to be played for a few seconds). This will auto-create a project in Brightcove Interactivity.
+        <aside class="bcls-aside bcls-aside--information">Note: You must preview the video using the preview link. Previewing the video with the preview player in the Media module <strong>will not</strong> auto-create a project.</aside>
+      </li>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>A list of projects will appear. Confirm the video you just published appears in the project list.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/getting-started/gs-interactivity/gsi-hapyak-projects-list.png"> </figure>
+        <aside class="bcls-aside bcls-aside--information">Note: The <strong>Tags</strong> column includes all tags associated with the video. An additional tag of <strong>live</strong> is added to each project automatically created by the plugin.</aside>
+      </li>
     </ol>
-    <p>The user will receive an email message stating that they have been invited to join the group. The recipient should click on the link and then follow the instructions to complete the process. If the email added is already associated with a group member record in another group, the user will automatically be added to the list of members and will see the group added to their group selector (at the top of the page) the next time they refresh the page.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="remove">Removing group members</h2>
-    <figure class="bcls-figure"></figure>
-    <p>To remove a group member, click the delete icon (x) associated with the group member you would like to remove.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/platform/admin/group-members/delete-user.png"> </figure>
+    <h2 id="create">Manually creating a new project</h2>
+    <p>If needed, you can manually create projects using Brightcove Interactivity Studio. Follow these steps to manually create a project.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the primary navigation, click <strong>Create</strong> and then <span class="button-blue">NEW PROJECT</span> or click <strong>Manage</strong>, click the <strong>Projects</strong> tab and then click <span class="button-blue">New Project</span>. </li>
+      <li>There are three ways users can upload video content to a project.
+        <ul>
+          <li>Copy the <strong>URL or Embed Code</strong>﻿ of your video and paste into Brightcove Interactivity Studio</li>
+          <li><strong>Upload</strong> a video file by dragging it from your desktop or browsing your computer </li>
+          <li><strong>Browse My Videos</strong> and select previously uploaded video files</li>
+        </ul>
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/projects/create-projects/choose-video-dialog.png"> </figure>
+      </li>
+      <li>Select an <strong>Embed type</strong>. This is usually where the video is hosted. &nbsp;If your URL is directly to a video file (ending in ".mp4" for example) select an open source player (like Video.js).</li>
+      <li>Enter a title and click <span class="button-blue">Next</span>.</li>
+    </ol>
+    <p>You should see the project load. If you get an error, click <span class="button-blue">New Project</span> again. Ensure that the URL, embed code, or file type of the video is a supported format. &nbsp;If you continue to have trouble, or if your video player is not listed, send an email to <a href="https://supportportal.brightcove.com">Brightcove Support</a> and we'll add it to the list.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="change">Changing a group member's role</h2>
-    <p>To change a group member's role, select a new role using the <strong>Role</strong> dropdown list.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/platform/admin/group-members/change-role.png"> </figure>
+    <h2 id="copy">Copying projects</h2>
+    <p>On the list of projects, hover over the right side of the project and click the copy icon (<img src="/assets/images/s-brightcove-interactivity-img/platform/projects/icon-copy.png">). </p>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/projects/create-projects/project-list.png"> </figure>
+    <p>This will create an exact clone of the project including all annotations, tags, and custom CSS, titled "Copy of {project_name}".</p>
+    <p>This is a great way to save time when creating new projects that are similar to ones already created. Simply change the video source of the new cloned project and adjust the annotations as needed.</p>
+    <h3 id="copy-different-group">Copying a project into different group</h3>
+    <p>Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtkSC34ioJyL_mFOEjBvCFcME5gkb7eheAV96rx2IOrMENVQ/viewform" rel="nofollow noopener noreferrer" target="_blank">this form</a>. Brightcove Support will copy the project in our back end and email you back confirmation when it's complete.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="delete">Deleting projects</h2>
+    <p>To delete a project, find the project on the project list, click the delete icon (
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/projects/icon-x.png"> </figure>
+    ), and then confirm the deletion.</p>
   </section>
 </article>
-
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -920,7 +951,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 20 Sep 2022
+  Page last updated on 21 Nov 2022
 </div>
 
 

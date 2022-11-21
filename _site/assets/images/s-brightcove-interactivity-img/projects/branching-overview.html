@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to manage users in a Brightcove Interactivity group.">
+  <meta name="description" content="In this topic you will learn about different methods for creating branching videos.">
   
-  <title>Managing Group Members</title>
+  <title>Branching Overview</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -160,15 +160,23 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/platform/">Platform</a></li>
+        <li class="breadcrumb-item"><a href="/assets/">Assets</a></li>
       
     
       
-        <li class="breadcrumb-item"><a href="/platform/admin/">Admin</a></li>
+        <li class="breadcrumb-item"><a href="/assets/images/">Images</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Managing Group Members</li>
+        <li class="breadcrumb-item"><a href="/assets/images/s-brightcove-interactivity-img/">S brightcove interactivity img</a></li>
+      
+    
+      
+        <li class="breadcrumb-item"><a href="/assets/images/s-brightcove-interactivity-img/projects/">Projects</a></li>
+      
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Branching Overview</li>
       
     
   </nav>
@@ -719,7 +727,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     
-                    <li><a href="/platform/admin/managing-group-members.html" aria-current="page">Managing Group Members</a></li>
+                    <li><a href="/platform/admin/managing-group-members.html">Managing Group Members</a></li>
                     
                   
                 
@@ -854,54 +862,27 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Managing Group Members</h1>
+<h1>Branching Overview</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to manage users in a Brightcove Interactivity group.</summary>
+  <summary>In this topic you will learn about different methods for creating branching videos.</summary>
   <section class="bcls-section">
-    <p>You can invite colleagues and collaborators to your Brightcove Interactivity group. These users are called <b>Group Members</b> and they will have access to all of the projects, templates, experiences and and reports in the group.</p>
-    <p>To access the Group Members page:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Brightcove Interactivity.</li>
-      <li>In the primary navigation, click <strong>Admin</strong> and then <strong>MANAGE MEMBERS</strong>.
-        <figure class="bcls-figure"> <img src="/assets/images/platform/admin/group-members/group-members.png"> </figure>
-      </li>
-    </ol>
-    <p>The Manage Users dialog will display:</p>
+    <p>Brightcove Interactivity offers two techniques for creating branching or &quot;choose your own adventure&quot; (CYOA) content.</p>
     <ul>
-      <li>Username</li>
-      <li>First Name</li>
-      <li>Last Name</li>
-      <li>Role</li>
-      <li>Date Added</li>
+      <li><strong>In-Video branching</strong> - This technique uses a single video. The viewer jumps from poin to point in the <i>same video</i> using annotations. These experiences can be published using Video Cloud Studio or the Brightcove Interactivity UI. For information on in-video branching, see <a href="/platform/projects/in-video-branching.html">Creating an In-Video Branching Project</a>.</li>
+      <li><strong>Video to video branching</strong> - This technique uses a Branching Experience where multiple videos are strung together. The viewer jumps from video to video using annotations. These experiences must be published using the Brightcove Interactivity UI. For information on creating a Branching Experience, see <a href="/platform/experiences/creating-branching-experience.html">Creating a Branching Experience</a>.</li>
     </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/platform/admin/group-members/user-list.png"> </figure>
+    <p>Both work equally well, it's a personal preference based on your production process and how your videos are already produced.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="add">Adding new group members</h2>
-    <p>To add a new group member:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In the <strong>Invites</strong> section, enter the email address of the user.</li>
-      <li>Assign a <strong>Role</strong> to the user:
-        <ul>
-          <li><b>Admin</b> - Access to all functionality, including configuring styles and add-ons for projects, viewing reports, creating sub-groups, and inviting new users</li>
-          <li><b>Editor</b> - Can create, edit, and share projects and can view and download reports; Cannot view or adjust group level settings</li>
-          <li><b>Reporter</b> - Can only view and download reports</li>
-        </ul>
-      </li>
-      <li>Click <strong>Invite</strong>.</li>
-    </ol>
-    <p>The user will receive an email message stating that they have been invited to join the group. The recipient should click on the link and then follow the instructions to complete the process. If the email added is already associated with a group member record in another group, the user will automatically be added to the list of members and will see the group added to their group selector (at the top of the page) the next time they refresh the page.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="remove">Removing group members</h2>
-    <figure class="bcls-figure"></figure>
-    <p>To remove a group member, click the delete icon (x) associated with the group member you would like to remove.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/platform/admin/group-members/delete-user.png"> </figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="change">Changing a group member's role</h2>
-    <p>To change a group member's role, select a new role using the <strong>Role</strong> dropdown list.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/platform/admin/group-members/change-role.png"> </figure>
+    <h2 id="best-practices">Branching best practices</h2>
+    <ul>
+      <li>Focus on just 2 or 3 choices at each choice point. Having fewer choices is much easier for viewers to process and results in higher interaction rates.</li>
+      <li>Make sure each choice point lasts for at least 10 seconds.</li>
+      <li>Add bumpers (sections of white or black or motion graphics) between the different choice sections to ease the transition. We recommend about 5 seconds.</li>
+      <li>Always allow the viewer to return to the choice points. You'll be surprised at how many viewers want to watch a branching video over and over again. To do this, simply add a text or image annotation that links back to the choice point.</li>
+      <li>Optional Pro Tip: Continue the audio track underneath the choice points and bumpers. This creates a more seamless experience for the viewer.</li>
+    </ul>
+    <p>We're always happy to advise on your branching interactive video project. Email  <a href="https://supportportal.brightcove.com">Brightcove Support</a> any time for personalized advice.</p>
   </section>
 </article>
 
@@ -920,7 +901,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 20 Sep 2022
+  Page last updated on 21 Nov 2022
 </div>
 
 
