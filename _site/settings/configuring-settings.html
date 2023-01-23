@@ -862,70 +862,50 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>In this topic you will learn how to configure Interactivity settings.</summary>
   <section class="bcls-section">
-    <p>To configure the Interactivity settings, open the Interactivity module and click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/icon-settings.png" />) at the top of the page. The following settings can be configured:</p>
-    <ul>
-      <li><a href="#players">Players</a></li>
-      <li><a href="#youtube">YouTube</a></li>
-      <li><a href="#domains">Custom Domains &amp; SSL</a></li>
-      <li><a href="#access">Access Control Profiles</a></li>
-      <li><a href="#html">Custom HTML</a></li>
-    </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="gallery settings page" src="/assets/images/settings/node13547-settings-home.png" /></figure>
+    <p>The Interactivity settings can be used to style annotations using CSS, style annotations using the style editor and configure other annotation styling properties.</p>
+    <p>To configure the Interactivity settings, open the Interactivity module and click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/icon-settings.png" />) at the top of the page.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/settings/settings-menu.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="players">Selecting a default Video Cloud player</h2>
-    <p>Gallery should be configured with an account wide default video player that will be used on your Gallery sites. Players for individual Gallery sites can also be configured as part of the VIDEO AND PLAYBACK settings providing the ability to override the account wide default player. For more information, see <a href="/experiences/portal/customizing/customizing-player-and-lead-form-settings-portal-experience.html">Customizing the Player and Lead Form Settings for a Portal Experience</a>.</p>
-    <p>As a best practice, we recommend you create and style dedicated players for your Gallery sites. If you haven't created a dedicated player for your Gallery site, you should start by doing so. For information on creating players, see <a href="https://studio.support.brightcove.com/players/getting-started-players-module.html">Getting Started with the Players Module</a>.</p>
-    <p>To configure Gallery with a default video player, follow these steps.</p>
+    <h2 id="css">Configuring Interactivity CSS</h2>
+    <p>The interactivity CSS file is the CSS file that will be used to style all annotations in projects, templates and experiences. You can use your own CSS file or the Style Editor can be used to create a CSS file. The URL of the CSS file being used will be displayed in the body of the page.</p>
+    <figure class="bcls-figure">
+      <p><img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/settings/interactivity-css.png" /></p>
+      <h4>Uploading a CSS file</h4>
+      <p>To upload a new CSS file, click <span class="button-blue"> <i data-feather="upload"></i> Upload Custom CSS</span> and then browse and select a CSS file to use.</p>
+      <h4>Downloading the default CSS file</h4>
+      <p>To download the default CSS file, click <span class="button-blue"> <i data-feather="download"></i> Download Default  CSS</span>. After downloading the CSS, you can edit it as needed and then upload it.</p>
+      <h4>Restoring the default CSS file</h4>
+      <p>To restore the default CSS file, click <span class="button-blue"> <i data-feather="refresh-ccw"></i> Restore</span></p>
+      <p>&nbsp;</p>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="youtube">Using the Style Editor</h2>
+    <p>The Style Editor provides an easy to use interface that can be used to style annotations. After the styling is complete, the changes can be published so that the styling is applied to all annotations in the account.</p>
+    <p> For information on using the style editor, see <a href="/settings/using-style-editor.html">Using the Style Editor</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="config">Configuring annotation styling defaults</h2>
+    <p>To configure styling defaults for annotations, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Click <strong>Players</strong> in the left navigation.</li>
-      <li>Select your account wide default player from the list of players and then click <span class="button-blue">Save</span>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="players" src="/assets/images/settings/node13547-players.png" /></figure>
-      </li>
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>Click the settings (<img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/icon-settings.png" />) icon.</li>
+      <li>In the left navigation click <strong>Config</strong>.</li>
     </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: A default player must be selected or Portal Experiences will fail to publish.</aside>
-    <p>Campaign-enabled players are indicated with the Campaign icon (<img alt="" src="/assets/images/settings/node13547-audience-icon.png" />). These players are configured with the Campaign plugin and can track video engagement data. Hovering over the icon will display the Campaign connection information.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node13547-audience-icon-hover.png" /></figure>
-    <p>For information on creating Camapign-enabled players, see <a href="https://studio.support.brightcove.com/campaign/general/creating-campaign-enabled-player.html#existingplayer">Creating a Camapign-enabled Player</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="youtube">Configuring YouTube settings</h2>
-    <p>Gallery sites can contain videos from your Video Cloud account or from a YouTube account. Before YouTube videos can be added to a Gallery site, the YouTube settings must be configured. For information on these settings, see <a href="/settings/configuring-youtube-settings.html">Configuring YouTube Settings</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="domains">Configuring custom domains and SSL</h2>
-    <p>When you first create a Gallery site, it is assigned a random domain with the format of <code translate="No">&lt;site-slug&gt;.bcovp0rtal.com</code>. Gallery provides the ability to publish Gallery sites at a Brightcove provided domain or using your own custom domain. Sites can also be secured using SSL. For information on configuring custom domains and SSL, see <a href="/settings/configuring-custom-domains-and-ssl.html">Configuring Custom Domains and SSL</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="access">Configuring Access Control Profiles</h2>
-    <p>Access Control Profiles can be created to control access to Gallery sites. Access to a site can be limited by:</p>
+    <p>The following settings can be configured.</p>
+    <h4>Initial Menu State</h4>
+    <p>The initial menu state controls if the chapter menu displayed <strong>Expanded</strong> or <strong>Collapsed</strong></p>
+    <h4>Chapter Menu</h4>
+    <p>Configure how the chapter menu appears.</p>
     <ul>
-      <li><strong>IP address</strong> - Access is limited based upon the IP address of the viewer</li>
-      <li><strong>SSO credentials</strong> - A user name a password are required for access</li>
-      <li><strong>Access Code </strong>- User is required to enter an access code before the site will display (useful when creating and testing a site)</li>
+      <li> <strong>Column</strong> - Chapter menu will appear as a column on left side of player</li>
+      <li><strong>Full Screen</strong> - Chapter menu will open in center of player</li>
     </ul>
-    <p>For information on creating Access Control Profiles, see <a href="/experiences/portal/publishing/controlling-access-portal-experience.html">Controlling Access to a Portal Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="html">Using custom header/footer HTML</h2>
-    <p>Gallery provides the option of using a custom header and/or footer for all of your sites. This provides the ability to customize your Gallery sites so they more closely match the look and feel of your corporate sites. A custom header/footer can also be configured for an individual site. For information on configuring a custom header/footer for a site, see <a href="/experiences/portal/customizing/customizing-appearance-and-behavior-portal-experience.html">Customizing the Appearance and Behavior of a Portal Experience</a>.</p>
-    <p>To configure Gallery to use a custom header or footer, start by designing the header/footer to use for your sites. The header/footer can contain any valid HTML, JavaScript or CSS code. When done, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <strong>Custom HTML</strong> in the left navigation.</li>
-      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
-      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
-      <li>Click <span class="button-blue">Save</span> to save the changes.</li>
-    </ol>
-    <div class="BCL-subsection">
-      <h3>Notes on using custom headers and footers</h3>
-      <ul>
-        <li>Gallery does not validate the HTML that is supplied for the header/footer</li>
-        <li>There is no explicit character limit on the header and footer HTML</li>
-        <li>External CSS and JavaScript files are supported</li>
-        <li>The custom HTML should follow responsive design principles so it will scale properly across devices</li>
-        <li>Brightcove has seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
-      </ul>
-    </div>
+    <h4>Quiz Language</h4>
+    <p>The Quiz Language setting controls the language that will be used by quizzes.</p>
+    <h4>Interactivity Experience Player</h4>
+    <p>The Interactivity Experience Player dropdown is used to select the default interactive player to use.</p>
   </section>
 </article>
 
