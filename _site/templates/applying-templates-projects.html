@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This topic provides an overview of the Interactivity module which is used to add interactivity to video players.">
+  <meta name="description" content="In this topic you will learn how to apply templates to projects.">
   
-  <title>Getting Started with the Interactivity Module</title>
+  <title>Applying Templates to Projects</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -168,11 +168,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/get-started/">Get started</a></li>
+        <li class="breadcrumb-item"><a href="/templates/">Templates</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Getting Started with the Interactivity Module</li>
+        <li class="breadcrumb-item active" aria-current="page">Applying Templates to Projects</li>
       
     
   </nav>
@@ -858,58 +858,66 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
+<h1>Applying Templates to Projects</h1>
 <article class="bcls-article">
-  <h1>Getting Started with the Interactivity Module</h1>
-  <summary>This topic provides an overview of the Interactivity module which is used to add interactivity to video players.</summary>
+  <summary>In this topic you will learn how to apply templates to projects.</summary>
   <section class="bcls-section">
-    <h2 id="using">Accessing the Interactivity module</h2>
-    <p>To access the Interactivity module, login to Studio and click <strong>Interactivity</strong> in the primary navigation.</p>
-    <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/getting-started/interactivity-module.png" /> </figure>
-    <p>By default the <strong>Project</strong> listing will display. The body of the page will display:</p>
-    <ul>
-      <li>Title - Title of the project</li>
-      <li>Tags - Tags associated with the project</li>
-      <li>Video Status - Status of the video used in the project</li>
-      <li>Annotations - Number of annotations in the project</li>
-      <li>Update Date - Date last updated </li>
-    </ul>
-    <p>Using the Interactivity module, you can:</p>
-    <ul>
-      <li><a href="#projects">Create  projects</a></li>
-      <li><a href="#templates">Create templates </a></li>
-      <li><a href="#experiences">Create experiences</a></li>
-      <li><a href="#search">Search for projects, templates and experiences</a></li>
-      <li><a href="#folders">Create folders</a></li>
-      <li><a href="#settings">Configure Interactivity settings</a></li>
-    </ul>
+    <p>A template is a track (or group) of annotations that can be applied to multiple projects. Templates can be used to quickly apply identical annotations to multiple videos with one click.</p>
+    <p>Multiple template tracks can be added to a project. If the template track is updated, Brightcove Interactivity will automatically update all projects using the template.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="projects">Creating a new project</h2>
-    <p>A <strong>Project</strong> is a single video with annotations. For information on creating a new project, see <a href="/projects/creating-and-managing-projects.html">Creating and Managing Projects</a>.</p>
+    <h2 id="tags">Applying templates using tags</h2>
+    <p>Tags can be added to templates as a way to quickly add annotations to videos that are published using a HapYak-enabled player. If a published video has the same tag that was assigned to the template, the template annotations will be applied. This is a quick and easy way to add the same annotations to dozens or hundreds of videos.</p>
+    <p>Follow these steps to use a tag to apply a template to a published video.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the primary navigation, click <strong>Manage</strong>.</li>
+      <li>At the top of the page, click <strong>Templates</strong>.</li>
+      <li>Click on a template to open it.</li>
+      <li>At the top of the page, click<strong> Configure</strong>.</li>
+      <li>Locate the <strong>Tags</strong> field and click it.</li>
+      <li>Add one or more <strong>Tags</strong> to the template and click <span class="button-blue">SAVE</span>.
+        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/platform/templates/applying-templates/template-tags.png"></figure>
+      </li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+    </ol>
+    <p>By adding the tag <code>company_logo</code> to the template, any video that is tagged <code>company_logo</code> and published using a HapYak-enabled player will have the template annotations applied. Follow these steps to tag and publish a sample Video Cloud video.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Click on a video <strong>Name</strong> to open the video properties page.</li>
+      <li>In the Video Information panel, click <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>.</li>
+      <li>Add the same tag that was used to tag the template.
+        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/platform/templates/applying-templates/video-tagged.png"></figure>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+      <li>Publish the video using a HapYak-enabled player.
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: For information on creating a HapYak-enabled player, see <a href="/platform/getting-started/configuring-player-plugin.html">Configuring a Brightcove Player with the HapYak plugin</a>.</aside>
+      </li>
+      <li>Play the video and confirm that the annotation(s) appear.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="templates">Creating a new template</h2>
-    <p>A <strong>Template</strong> is a set of saved annotations designed to be added many projects. For example, you could create a template that displays a company logo during the last 30 seconds of a video. Templates make it easy to add one or more annotations to multiple projects. For information on creating a new project, see <a href="/templates/creating-and-managing-templates.html">Creating and Managing Templates</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="experiences">Creating a new experience</h2>
-    <p>An <strong>Experience</strong> is a video with other elements (like synced slides or an e-commerce cart) outside the video player that dynamically interact with video player. Experiences allow you to dynamically communicate between the video and the web page itself, opening the door to a new generation of lean-forward interactive realities for your viewers. For information on creating a new experience, see <a href="/experiences/experiences-overview.html">Overview of Experiences</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="search">Searching</h2>
-    <p>The Search field at the top of the page can be used to search projects, templates and experiences. The search context will change based upon what is being displayed in the Interactivity home page. The left navigation can be used to display either projects, templates and experiences. When searching, the following fields are searched:</p>
-    <ul>
-      <li>Player name</li>
-      <li>Player ID</li>
-      <li>Short description</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="settings">Configuring Interactivity settings</h2>
-    <p>The Interactivity settings can be used to style annotations using CSS, style annotations using the style editor and configure other annotation styling properties. To access the settings, click the settings icon (<img src="/assets/images/s-brightcove-interactivity-img/icon-settings.png">) at the top of the page. For information on creating a new experience, see <a href="/experiences/experiences-overview.html">Overview of Experiences</a>.</p>
+    <h2 id="manual">Manually applying a template to a project</h2>
+    <p>It is also possible to manually apply one or more templates to a project using Brightcove Interactivity Studio. To manually apply a template to a project, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the primary navigation click <strong>Manage</strong>.</li>
+      <li>Click on a project title to open it.</li>
+      <li>Click <span class="button-blue">SETTINGS</span>.</li>
+      <li>In the <strong>PROJECT</strong> section, locate the <strong>Templates Applied</strong> setting.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/templates/applying-templates/project-settings.png"> </figure>
+      </li>
+      <li>Click the edit icon to open the <strong>Configure project templates</strong> dialog.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/templates/applying-templates/configure-project-templates-dialog.png"> </figure>
+      </li>
+      <li>Click on one or more templates to apply them to the project. Selected templates will appear at the top of the dialog.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/templates/applying-templates/project-templates-selected.png"> </figure>
+      </li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+    </ol>
   </section>
 </article>
-
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -925,7 +933,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 23 Jan 2023
+  Page last updated on 20 Sep 2022
 </div>
 
 
