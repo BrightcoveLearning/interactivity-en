@@ -872,35 +872,64 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="create">Creating a new template</h2>
+    <p>Follow these steps to  create a new template.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Brightcove Interactivity Studio.</li>
-      <li>In the primary navigation, click <strong>Create</strong> and then <span class="button-blue-text-bordered">NEW TEMPLATE</span> or click <strong>Manage</strong>, click the <strong>Templates</strong> tab and then click <span class="button-blue">New Template</span>. </li>
-      <li>Enter a <strong>Title</strong> for the template.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/templates/creating-templates/new-template-dialog.png"> </figure>
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>In the left navigation, click <strong>Templates</strong> &gt; <strong>All templates</strong>.</li>
+      <li>Click <span class="button-blue">New Template</span>.</li>
+      <li>Enter a <strong>Template Title</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/templates/create-templates/create-new-template.png"> </figure>
       </li>
-      <li>Click <span class="button-blue">NEXT</span>.</li>
-      <li>Brightcove Interactivity automatically loads a sample video source. You can change this video by clicking <strong>Configure</strong> and by entering a new URL in the <strong> Video Source</strong> field.</li>
-      <li>Add the appropriate annotations.
-        <aside class="bcls-aside bcls-aside--tip language-editable">Tip: If you set the start time to -20, the annotation will appear 20 seconds before the end of the video. This means it will dynamically adjust for every project the template is applied to. Likewise, 25% will set the start time to 25% of the way into the video, no matter the length.</aside>
-      </li>
+      <li>Click <span class="button-blue">Create</span>.</li>
     </ol>
+    <p>Brightcove Interactivity automatically loads a sample video source. You can change this video by clicking <span class="button-blue">Replace Video</span> and by selecting a new video.</p>
+  </section>
+<section class="bcls-section">
+    <h2 id="settings">Configuring template settings</h2>
+    <p>&nbsp;</p>
   </section>
   <section class="bcls-section">
     <h2 id="apply">Applying a template to a project</h2>
     <p>Templates can be applied to a project through the use of tags or by manually assigning one or more templates to a project using Brightcove Interactivity Studio. For information, see <a href="/platform/templates/applying-templates-projects.html">Applying Templates to Projects</a>.</p>
   </section>
+<section class="bcls-section">
+    <h2 id="replace">Replacing the template video</h2>
+    <p>&nbsp;</p>
+  </section>
   <section class="bcls-section">
-    <h2 id="copy">Copying templates</h2>
-    <p>On the list of templates, hover over the right side of the template and click the copy icon (<img src="/assets/images/s-brightcove-interactivity-img/platform/templates/icon-copy.png">). </p>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/templates/creating-templates/templates-list.png"> </figure>
+    <h2 id="edit">Editing a template</h2>
+    <p>Follow these steps to edit a template.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>Click on a template Title or click the action menu (...) associated with the template and click <strong>View</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="folder">Moving a template to a folder</h2>
+    <p>Folders can be created and used to organize templates. You must have <a href="/general/working-with-folders.html">created folders</a> before you can move a template to a folder. Follow these steps to move a template to a folder.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>Click the action menu (...) associated with the template and click <strong>Move to Folder</strong>.</li>
+    </ol>
+    For more information on folders, see <a href="/general/working-with-folders.html">Working with Folders</a>.</section>
+  <section class="bcls-section">
+    <h2 id="duplicate">Duplicating a template</h2>
+    <p>Duplicating a template  is a great way to save time when creating new templates that are similar to ones already created. Simply adjust the annotations as needed. </p>
+    <p>Follow these steps to duplicate a template.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>Click the action menu (...) associated with the template and click <strong>Duplicate</strong>.</li>
+      <li>Click <span class="button-blue">Duplicate</span>.</li>
+    </ol>
     <p>This will create an exact clone of the template including all annotations, tags, and custom CSS, titled "Copy of {template_name}".</p>
-    <p>This is a great way to save time when creating new templates that are similar to ones already created. Simply adjust the annotations as needed. </p>
   </section>
   <section class="bcls-section">
     <h2 id="delete">Deleting templates</h2>
-    <p>To delete a template, find the template on the template list, click the delete icon (<img src="/assets/images/s-brightcove-interactivity-img/platform/templates/icon-x.png">), and then confirm the deletion.</p>
+    <p>To delete a template, find the template on the project list, click the action menu (...) associated with the template and then click <strong>Delete</strong>.</p>
   </section>
 </article>
+
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -916,7 +945,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 20 Sep 2022
+  Page last updated on 23 Jan 2023
 </div>
 
 
