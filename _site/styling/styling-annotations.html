@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to use the Style Editor.">
+  <meta name="description" content="In this topic you will learn how to use a custom CSS file to style annotations.">
   
-  <title>Using the Style Editor</title>
+  <title>Styling Annotations</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -168,11 +168,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/settings/">Settings</a></li>
+        <li class="breadcrumb-item"><a href="/styling/">Styling</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Using the Style Editor</li>
+        <li class="breadcrumb-item active" aria-current="page">Styling Annotations</li>
       
     
   </nav>
@@ -858,77 +858,45 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Using the Style Editor</h1>
+<h1>Styling Annotations</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to use the Style Editor.</summary>
+  <summary>In this topic you will learn how to use a custom CSS file to style annotations.</summary>
   <section class="bcls-section">
-    <p>The Style Editor provides an easy to use interface that can be used to style annotations:</p>
-    <ul>
-      <li>Chapter menus</li>
-      <li>Overlays</li>
-      <li>Hotspots</li>
-      <li>Quizzes</li>
-    </ul>
-    <p>After the styling is complete, the changes can be published so that the styling is applied to all annotations in the account.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: For information on styling annotations, see <a href="/styling/styling-annotations.html">Styling Annotations</a>.</aside>
-    <p>To access the Style Builder, follow these steps:</p>
+    <p>Brightcove Interactivity uses a group CSS file to control styling of annotations. The Group CSS is accessible from all projects, templates, and experiences and controls the styling for all annotations.</p>
+    <p>Follow these steps to access the group CSS file.</p>
     <ol class="bcls-tasklist-restart">
       <li>Login to Brightcove Interactivity.</li>
-      <li>In the primary navigation, click <strong>Style</strong>. The Group CSS page will display.</li>
-      <li> Click <span class="button-blue">USE STYLE BUILDER</span>.</li>
-    </ol>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/chapter-menu.png"></figure>
-    <p>By default, when the style editor opens, the chapter menu styling options are displayed. Click an icon below the preview player to access the styling options for the other annotation types.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/icon-bar.png">
-      <p>After styling changes for an annotation are complete, click <span class="button-blue">SAVE / NEXT</span> to save the changes and move on to styling the next annotation. Click <strong>RESET</strong> to revert the changes. </p>
-    </figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="chapter-menu">Styling chapter menus</h2>
-    <p>To style chapter menus, click the <strong>CHAPTER MENU</strong> icon below the preview player. The following styling options are available:</p>
-    <ul>
-      <li>Background and font colors for the chapter menu</li>
-      <li><strong>Initial Menu State</strong> - Controls if the chapter menu displayed <strong>expanded</strong> or <strong>collapsed</strong></li>
-      <li><strong>Chapter Menu</strong> - Controls the layout of the chapter menu
-        <ul>
-          <li>Column - Chapter menu will appear as a column on left side of player</li>
-          <li>Full Screen - Chapter menu will open in center of player</li>
-        </ul>
+      <li>In the primary navigation, click <strong>Style</strong>. The Group CSS page will display.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/group-css.png"> </figure>
       </li>
-    </ul>
-    <p>As styling changes are made, they will be reflected in the Live Preview player on the page.</p>
-    <p>
-      <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/chapter-menu-preview.png"> </figure>
-    </p>
+    </ol>
+    <p>Click <span class="button-blue">DOWNLOAD</span> to open the current group CSS in a new browser tab.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: All CSS URLs need to be formatted with no uppercase letters to ensure proper functionality.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="overlay">Styling overlays</h2>
-    <p>To style overlays, click the <strong>OVERLAY</strong> icon below the Live Preview player. The following styling options are available:</p>
-    <ul>
-      <li>Background and font colors for overlays</li>
-    </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/overlay-options.png"> </figure>
+    <h2 id="create">Creating custom annotation styles</h2>
+    <p>The Style Builder provides an easy to use interface for styling annotations. Click <span class="button-blue">USE STYLE BUILDER</span> to open the Style Builder.  For more information on the Style Builder, see <a href="using-style-builder.html">Using the Style Builder</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="hotspot">Styling hotspots</h2>
-    <p>To style hotspots, click the <strong>HotSpot</strong> icon below the Live Preview player. The following styling options are available:</p>
-    <ul>
-      <li>Opacity and background color for hotspots</li>
-    </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/hotspot-options.png"> </figure>
+    <h2 id="modify">Modifying the custom style</h2>
+    <p>You can further style  annotations (for example adding the same font or font style you use on your web site) by following these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Use  the <a href="using-style-builder.html">Style Builder</a> to style annotations as desired. Make sure the styling changes are published.
+        <aside class="bcls-aside bcls-aside--information">Note:  Once you confirm and publish your new styles, these styles will be active across all projects.</aside>
+      </li>
+      <li>Close the Style Builder.</li>
+      <li>Click <span class="button-blue">DOWNLOAD</span> to download the custom CSS file.</li>
+      <li>Edit the CSS file using a text editor. (You can inspect elements using tools provided by your web browser to see which selectors and classes to modify. For a simple guide on all the selectors and classes, click <a href="https://hapyak_demos.s3.amazonaws.com/css/customer/skeleton_style_builder.css" rel="nofollow noopener noreferrer" target="_blank">here</a>.)</li>
+      <li>Upload and host the file on your server and retrieve the URL.</li>
+      <li>Click <span class="button-blue">USE CSS FILE</span>.</li>
+      <li>Paste the URL to the hosted CSS file into the text box under. Remember to remove the protocol (http: or https:).</li>
+      <li>Click <span class="button-blue">UPDATE</span>.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: To update the CSS file for a project, follow <a href="project-level-css-hapyak-plugin.html">these steps</a>.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="quiz">Styling quizzes</h2>
-    <p>To style quizzes, click the <strong>QUIZ</strong> icon below the Live Preview player. The following styling options are available:</p>
-    <ul>
-      <li>Background, font and button colors for quizzes</li>
-    </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/quiz-options.png"></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="publish">Publishing changes</h2>
-    <p>When all styling changes are complete, click <span class="button-blue">Preview &amp; Publish</span>. Click <strong>PUBLISH</strong> to apply all styling changes to existing projects.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/publish.png"> </figure>
+    <h2 id="create-scratch">Creating a custom annotation CSS file from scratch</h2>
+    <p>You can also create a custom annotation CSS file from scratch. Download the <a href="https://hapyak_demos.s3.amazonaws.com/css/customer/skeleton_style_builder.css" rel="nofollow noopener noreferrer" target="_blank">code for the Brightcove Interactivity skeleton css</a> and edit as needed. The skeleton css file can also be used to &quot;reset&quot; the current styles back to a &quot;default&quot; state. </p>
   </section>
 </article>
 
@@ -947,7 +915,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 23 Jan 2023
+  Page last updated on 20 Sep 2022
 </div>
 
 
