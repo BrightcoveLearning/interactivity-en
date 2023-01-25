@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This topic provides an overview of the Interactivity module which is used to add interactivity to video players.">
+  <meta name="description" content="In this topic you will learn how to configure a Brightcove Player with the Interactivity Plugin.">
   
-  <title>Getting Started with the Interactivity Module</title>
+  <title>Configuring a Brightcove Player with the Interactivity Plugin</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -168,11 +168,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/get-started/">Get started</a></li>
+        <li class="breadcrumb-item"><a href="/getting-started/">Getting started</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Getting Started with the Interactivity Module</li>
+        <li class="breadcrumb-item active" aria-current="page">Configuring a Brightcove Player with the Interactivity Plugin</li>
       
     
   </nav>
@@ -858,50 +858,103 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
+<h1>Configuring a Brightcove Player with the Interactivity Plugin</h1>
 <article class="bcls-article">
-  <h1>Getting Started with the Interactivity Module</h1>
-  <summary>This topic provides an overview of the Interactivity module which is used to add interactivity to video players.</summary>
+  <summary>In this topic you will learn how to configure a Brightcove Player with the Interactivity Plugin.</summary>
   <section class="bcls-section">
-    <h2 id="using">Accessing the Interactivity module</h2>
-    <p>To access the Interactivity module, login to Studio and click <strong>Interactivity</strong> in the primary navigation.</p>
-    <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/getting-started/interactivity-module.png" /> </figure>
-    <p>By default the <strong>Project</strong> listing will display. The body of the page will display:</p>
+    <p>The Interactivity plugin for the Brightcove Player allows the player to take advantage of the features provided by Brightcove Interactivity. Using the plugin has the following benefits:</p>
     <ul>
-      <li>Title - Title of the project</li>
-      <li>Tags - Tags associated with the project</li>
-      <li>Video Status - Status of the video used in the project</li>
-      <li>Annotations - Number of annotations in the project</li>
-      <li>Update Date - Date last updated </li>
+      <li>Automatic  Interactivity project creation for each video viewed in the configured player</li>
+      <li>Programmatic access to video metadata from the Interactivity APIs</li>
+      <li>Dynamic loading of Brightcove Interactivity templates</li>
+      <li>Automatic syncing of project titles with video titles</li>
     </ul>
-    <p>Using the Interactivity module, you can:</p>
-    <ul>
-      <li><a href="#projects">Create  projects</a></li>
-      <li><a href="#templates">Create templates </a></li>
-      <li><a href="#experiences">Create experiences</a></li>
-      <li><a href="#search">Search for projects, templates and experiences</a></li>
-      <li><a href="#folders">Create folders</a></li>
-      <li><a href="#settings">Configure Interactivity settings</a></li>
-    </ul>
+    <p>When interactions are added to an  Interactivity project, they will automatically appear on the corresponding video as long as the video is published using an Interactivity-enabled Brightcove Player.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="projects">Creating a new project</h2>
-    <p>A <strong>Project</strong> is a single video with annotations. For information on creating a new project, see <a href="/projects/creating-and-managing-projects.html">Creating and Managing Projects</a>.</p>
+    <h2 id="configure-player">Configuring a player with the Interactivity plugin</h2>
+    <p>Adding the Interactivity plugin to a Brightcove Player will allow interactivity to be displayed inside of the player during video playback. The Interactivity plugin can coexist with other player plugins.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The Interactivity plugin requires Brightcove Player version 6.66 or newer.</aside>
+    <p>To add the Interactivity plugin to a Brightcove Player, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Players</strong> module.</li>
+      <li>Click on a player <strong>Name</strong> to open the player properties.</li>
+      <li>In the left navigation menu, click <strong>Additional Features</strong> &gt; <strong>Interactivity</strong>.</li>
+      <li>Check the <strong>Enable Interactivity</strong> checkbox to enable the Interactivity plugin.</li>
+      <li>(Optional) Checking <strong>Enable Mobile FullScreen</strong> will override the default fullscreen behavior on iOS devices. Some mobile devices will strip interactive elements when videos are opened in device-native players such as the QuickTime player on iOS devices. Brightcove has created a solution that overrides the default behavior of video on iOS and Android devices. By &quot;mocking full screen&quot;, videos can play full screen and retain any interactive features.</li>
+        <li>Configure the <strong>Options(JSON)</strong> as needed. See the <a href="#options">section below</a> for details.
+<figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/getting-started/plugin-config.png"> </figure>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+      <li>To publish the player, click <span class="button-blue">Publish &amp; Embed</span> and then <span class="button-blue">Publish Changes</span>.</li>
+    </ol>
+    <p>The Interactivity-enabled player is now ready to use. </p>
+    <p>&nbsp;</p>
   </section>
   <section class="bcls-section">
-    <h2 id="templates">Creating a new template</h2>
-    <p>A <strong>Template</strong> is a set of saved annotations designed to be added many projects. For example, you could create a template that displays a company logo during the last 30 seconds of a video. Templates make it easy to add one or more annotations to multiple projects. For information on creating a new project, see <a href="/templates/creating-and-managing-templates.html">Creating and Managing Templates</a>.</p>
+    <h2 id="options">Configuring the Options(JSON)</h2>
+    <p>Parameters can be added to the <strong>Options(JSON)</strong> to customize the behavior of the Interactivity plugin.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>If you wish to configure a &quot;read-only&quot; player which will display interactivity on existing Brightcove Interactivity projects but will <strong>NOT</strong> publish any new projects, add the following parameter to the <strong>Options(JSON)</strong>:
+        <pre><code>
+&quot;readOnly&quot;: true
+</code></pre>
+      </li>
+      <li>To ensure that the video appears in the middle of the device display in portrait mode (mimics default behavior of all mobile devices), add the following to the <strong>Options(JSON)</strong>.
+                <pre><code>
+&quot;position&quot;: &quot;middle&quot;
+</code></pre></li>
+      <li>A custom JavaScript method can be provided to capture tracking events as they occur. To do so simply add the location of your JavaScript file in the <strong>Options(JSON)</strong>.
+        <pre><code>
+{
+  "customTracking": "https://dmhl2y7t4r72w.cloudfront.net/brightcove/bcovTrackingHandler.js"
+}
+</code></pre>
+      </li>
+      <li> The Interactivity plugin loads its own copy of jQuery by default. If you embed the Brightcove Player with the Interactivity plugin enabled, the plugin will override an existing copy of jQuery already on the page when it loads. To prevent this behavior and preserve an existing copy of jQuery, you must pass the <code><strong>preserveJQuery</strong></code> option in the <strong>Options(JSON)</strong> when setting up the plugin. For example, specifying the following will prevent the Interactivity plugin from loading its own jQuery as long as there is already one on the page.
+        <pre><code>
+{
+  "preserveJQuery": true
+}
+</code></pre>
+        <table class="bcls-table">
+          <caption class="bcls-caption--table">
+          Summary of jQuery Loading Behavior
+          </caption>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td></td>
+              <td>preserveJQuery: true</td>
+              <td>preserveJQuery: false</td>
+            </tr>
+            <tr>
+              <td>jQuery present on page</td>
+              <td>Do not load jQuery</td>
+              <td>Load jQuery</td>
+            </tr>
+            <tr>
+              <td>jQuery absent from page</td>
+              <td>Load jQuery</td>
+              <td>Load jQuery</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="experiences">Creating a new experience</h2>
-    <p>An <strong>Experience</strong> is a video with other elements (like synced slides or an e-commerce cart) outside the video player that dynamically interact with video player. Experiences allow you to dynamically communicate between the video and the web page itself, opening the door to a new generation of lean-forward interactive realities for your viewers. For information on creating a new experience, see <a href="/experiences/experiences-overview.html">Overview of Experiences</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="search">Searching</h2>
-    <p>The Search field at the top of the page can be used to search projects, templates and experiences. The search context will change based upon what is being displayed in the Interactivity home page. The left navigation can be used to display either projects, templates and experiences. When searching, the <strong>title</strong> field is searched.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="settings">Configuring Interactivity settings</h2>
-    <p>The Interactivity settings can be used to style annotations using CSS, style annotations using the style editor and configure other annotation styling properties. To access the settings, click the settings icon (<img src="/assets/images/s-brightcove-interactivity-img/icon-settings.png">) at the top of the page. For information on creating a new experience, see <a href="/experiences/experiences-overview.html">Overview of Experiences</a>.</p>
+    <h2 id="advanced">Advanced notes</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>The Interactivity plugin emits a custom event on the Brightcove Player instance that notifies when the interactivity viewer instance is ready. This event is <code>hyViewerLoaded</code> which can be listened for using the following code:
+        <pre><code>
+bcPlayerInstance.on(‘hyViewerLoaded’, function () {
+   console.log(player.hapyakViewer);
+});
+</code></pre>
+        <p>As seen above, you can access the interactivity viewer instance off of the player instance as a property called <code>hapyakViewer</code>.</p>
+      </li>
+    </ol>
   </section>
 </article>
 
@@ -920,7 +973,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 23 Jan 2023
+  Page last updated on 20 Sep 2022
 </div>
 
 
