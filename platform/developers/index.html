@@ -1,6 +1,7 @@
 ---
 title: Brightcove Interactivity APIs
-description: 'The Brightcove Interactivity APIs allow you to manage and enhance your interactions, and to create your own custom interactions.'
+description: 'The Brightcove Interactivity APIs allow you to manage and enhance
+your interactions, and to create your own custom interactions.'
 parent: Home
 ---
 
@@ -9,12 +10,30 @@ parent: Home
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <h2 id="api_references">API References</h2>
-    <ul>
-      <li><a href="/platform/developers/embed-api/reference.html">Embed API</a></li>
-      <li><a href="/platform/developers/annotation-api/reference.html">Annotation CRUD API</a></li>
-      <li><a href="/platform/developers/extension-api/reference.html">Extension API</a></li>
-      <li><a href="/platform/developers/responsive-api/reference.html">Responsive API</a></li>
-      <li><a href="/platform/developers/addon-api/reference.html">Addon API</a></li>
-    </ul>
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white"
+        onclick="window.location.href= '{{ item.url }}'">
+        <div class="card-body">
+          <section class="flex-container">
+            <div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="/platform/developers/embed-api/reference.html" style="text-decoration: none;">Embed
+                    API</a></li>
+                <li class="list-group-item"><a
+                    href="/platform/developers/annotation-api/reference.html" style="text-decoration: none;">Annotation
+                    CRUD API</a></li>
+                <li class="list-group-item"><a href="/platform/developers/extension-api/reference.html" style="text-decoration: none;">Extension
+                    API</a></li>
+                <li class="list-group-item"><a
+                    href="/platform/developers/responsive-api/reference.html" style="text-decoration: none;">Responsive
+                    API</a></li>
+                <li class="list-group-item"><a href="/platform/developers/addon-api/reference.html" style="text-decoration: none;">Addon
+                    API</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   </section>
 </article>

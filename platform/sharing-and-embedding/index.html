@@ -5,9 +5,28 @@ description: This section contains information related to embedding Hapyak-enabl
 ---
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
-
   <summary>{{ page.description }}</summary>
-  <section>
+  <h3 id="Topics_in_this_section">Topics in {{ page.title }}</h3>
+  {% for item in site.data.navigation %}
+{% if item.name == page.title %}
+  <div class="col-12 col-lg-4 py-3">
+    <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ item.url }}'">
+      <div class="card-body">
+        <section class="flex-container">
+          <div>
+            <ul class="list-group list-group-flush">
+              {% for entry in item.docs %}
+              <li class="list-group-item"><a href="{{ entry.url }}" style="text-decoration: none;">{{ entry.name }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% endfor %}
+  <!-- <section>
     <h3 id="Topics_in_this_section">Topics in {{ page.title }}</h3>
     <ul class="bcls-topic-list">
       {% for item in site.data.navigation %}
@@ -18,5 +37,5 @@ description: This section contains information related to embedding Hapyak-enabl
         {% endif %}
       {% endfor %}
     </ul>
-  </section>
+  </section> -->
 </article>

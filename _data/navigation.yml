@@ -4,6 +4,8 @@
 - section: 
   name: "Getting Started"
   url: "/platform/getting-started/index.html"
+  description: "This section contains information on getting started with Brightcove Interactivity."
+  icon: fa-regular fa-map-pin
   docs:
     - name: "8 Most Common Annotations"
       url: "/platform/getting-started/8-most-common-annotations.html"
@@ -22,6 +24,8 @@
 - section: 
   name: "Annotations"
   url: "/platform/annotations/index.html"
+  description: This section contains information on annotations.
+  icon: fa-regular fa-asterisk
   docs:
     - name: "Adding Interactive Chapters to a Video"
       url: "/platform/annotations/adding-chapters-video.html"
@@ -50,6 +54,8 @@
 - section: 
   name: "Custom Annotations"
   url: "/platform/custom-annotations/index.html"
+  description: This section contains information on custom annotations.
+  icon: fa-regular fa-asterisk
   docs:
     - name: "Adding a Display Rule to a Video"
       url: "/platform/custom-annotations/adding-display-rule.html"
@@ -66,6 +72,8 @@
 - section: 
   name: "Integrations"
   url: "/platform/integrations/index.html"
+  description: This section contains information on integrations.
+  icon: fa-light fa-puzzle-piece
   docs:
     - name: "Eloqua Add-on"
       url: "/platform/integrations/eloqua-add-on.html"
@@ -80,6 +88,8 @@
 - section: 
   name: "Projects"
   url: "/platform/projects/index.html"
+  description: This section contains information on working with projects.
+  icon: fa-regular fa-rectangle-vertical-history
   docs:
     - name: "Branching Overview"
       url: "/platform/projects/branching-overview.html"
@@ -92,7 +102,9 @@
 - section: 
   name: "Templates"
   url: "/platform/templates/index.html"
-  docs:
+  description: This section contains information on working with templates.
+  icon: fa-regular fa-layer-group
+  docs: 
     - name: "Applying Templates to Projects"
       url: "/platform/templates/applying-templates-projects.html"
     - name: "Creating and Managing Templates"
@@ -100,6 +112,8 @@
 - section: 
   name: "Experiences"
   url: "/platform/experiences/index.html"
+  description: This section contains information on working with experiences.
+  icon: fa-regular fa-browsers
   docs:
     - name: "Creating a Branching Experience"
       url: "/platform/experiences/creating-branching-experience.html"
@@ -110,6 +124,8 @@
 - section: 
   name: "Sharing and Embedding"
   url: "/platform/sharing-and-embedding/index.html"
+  description: This section contains information related to embedding Hapyak-enabled Brightcove Players.
+  icon: fa-regular fa-square-share-nodes
   docs:
     - name: "Adding an Interactive Video to Adobe Captivate"
       url: "/platform/sharing-and-embedding/adding-interactive-video-to-adobe-captivate.html"
@@ -130,6 +146,8 @@
 - section: 
   name: "Styling"
   url: "/platform/styling/index.html"
+  description: This section contains information on styling.
+  icon: fa-regular fa-brush
   docs:
     - name: "Adjusting images to appear only on hover"
       url: "/platform/styling/adjusting-images-to-appear-only-on-hover.html"
@@ -150,6 +168,8 @@
 - section: 
   name: "Analytics"
   url: "/platform/analytics/index.html"
+  description: This section contains information on analytics for interactivity.
+  icon: fa-regular fa-gear
   docs:
     - name: "Analytics and Reports Overview"
       url: "/platform/analytics/analytics-and-reports-overview.html"
@@ -169,6 +189,8 @@
       url: "/platform/analytics/video-analytics-and-metric-apis.html"
 - section: 
   name: "General Information"
+  description: This section contains general information on Brightcove Interactivity.
+  icon: fa-regular fa-circle-info
   url: "/platform/general/index.html"
   docs:
     - name: "Becoming an Interactive Video Expert"
@@ -194,6 +216,8 @@
 - section: 
   name: "Administering Accounts"
   url: "/platform/admin/index.html"
+  description: This section contains information on managing accounts.
+  icon: fa-regular fa-gear
   docs:
     - name: "Managing Account Settings"
       url: "/platform/admin/managing-account-settings.html"
@@ -204,7 +228,9 @@
 - section: 
   name: "Developers"
   url: "/platform/developers/index.html"
-  docs:
+  description: The Brightcove Interactivity APIs allow you to manage and enhance your interactions, and to create your own custom interactions.
+  icon: fa-regular fa-code
+  docs: 
     - name: "Accessing Reporting Endpoints"
       url: "/platform/developers/accessing-reporting-endpoints.html"
     - name: "Embed API"
@@ -220,6 +246,8 @@
 - section: 
   name: "Troubleshooting"
   url: "/platform/troubleshooting/index.html"
+  description: Some information on troubleshooting problems.
+  icon: fa-regular fa-bug
   docs:
     - name: "Detecting Browser Version and Operating System Version"
       url: "/platform/troubleshooting/detecting-browser-version-and-operating-system-version.html"
@@ -230,6 +258,8 @@
 - section: 
   name: "Support"
   url: "/support/index.html"
+  description: Learn how to get help from Brightcove Support.
+  icon: fa-regular fa-comments-question-check
   docs:
     - name: "Viewing the Brightcove System Status Page"
       url: "/support/viewing-brightcove-system-status-page.html"
