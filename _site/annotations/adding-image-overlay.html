@@ -858,12 +858,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>In this topic you will learn how to add an image overlay to a video.</summary>
   <section class="bcls-section">
-    <p>Brightcove Interactivity Studio provides the ability to add different types of interactive overlays to videos. Text and image overlays can be displayed on videos during video playback. For example, overlays can display additional text or a company logo on a video. Overlays can also be clickable and open additional web pages if needed.</p>
+    <p>The Interactivity module provides the ability to add different types of interactive overlays to videos. Text and image overlays can be displayed on videos during video playback. For example, overlays can display additional text or a company logo on a video. Overlays can also be clickable and open additional web pages if needed.</p>
   </section>
   <section class="bcls-section">
     <h2 id="configure-player">Before you get started</h2>
   </section>
-  <p>Before you can add interactivity to a player, you need a HapYak-enabled Brightcove Player and you need to make sure a Brightcove Interactivity project has been created. For information on how to do this, see <a href="/platform/getting-started/getting-started-interactivity.html">Getting Started with Interactivity</a>.</p>
+  <p>Before you can add interactivity to a player, you need an Interactivity-enabled Brightcove Player and you need to make sure an  Interactivity project has been created. For information on how to do this, see <a href="/getting-started/getting-started-interactivity.html">Getting Started with Interactivity</a>.</p>
   <section class="bcls-section">
     <h2 id="image-overlay">Adding an image overlay</h2>
     <p>Image overlays are used to display an image on a video during playback. The overlay can also be clickable and open another browser page when clicked. In the following example, the image overlay will appear at the 75% point of the video and display until the end of the video. Clicking the overlay will open a link in a new browser tab and pause the video.</p>
@@ -875,30 +875,30 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <br />
     <p>Follow these steps to add an image overlay to a project:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Brightcove Interactivity Studio (<a href="https://www.hapyak.com/login">https://www.hapyak.com/login</a>).</li>
-      <li>In the left navigation, click <strong>Manage</strong>.</li>
-      <li>Click on a project to open it.</li>
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li> Click on a project <strong>Title</strong> to open it.</li>
       <li>In the bottom toolbar, click on the image overlay button.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/annotations/image-overlay/add-image-overlay.png"> </figure>
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/image-overlay/add-image-overlay.png"> </figure>
       </li>
       <li>Click <strong>Choose File</strong> and browse and select an image or click the <strong>URL</strong> tab and enter the URL to an image file.
         <aside class="bcls-aside bcls-aside--information">Note: Brightcove recommends using https image URLs. Http images will not load in HapYak Studio, however, they will appear when the video is published.</aside>
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/annotations/image-overlay/image-url.png"> </figure>
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/image-overlay/image-url.png"> </figure>
       </li>
       <li>Click <strong>Show</strong>.</li>
-      <li>The image will display on the <strong>Preview</strong> tab. Click <strong>SUBMIT</strong>.</li>
+      <li>The image will display on the <strong>Preview</strong> tab. Click <strong>Submit</strong>.</li>
       <li>Click and drag the overlay to where you want it to appear on the video.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/annotations/image-overlay/position-image-overlay.png"> </figure>
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/image-overlay/position-image-overlay.png"> </figure>
         <aside class="bcls-aside bcls-aside--information">Note: Make sure the overlay isn't placed at the bottom of the player where it may be covered up by the control bar.</aside>
       </li>
       <li>Click the <strong>Start Time</strong> menu.</li>
-      <li>Enter a <strong>Start time</strong> in seconds, as a percentage or in time format. This example sets the start time to the 75% point of the video. Click <strong>SUBMIT</strong>.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/annotations/image-overlay/start-time.png"> </figure>
+      <li>Enter a <strong>Start time</strong> in seconds, as a percentage or in time format. This example sets the start time to the 75% point of the video. Click <strong>Submit</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/image-overlay/start-time.png"> </figure>
       </li>
-      <li>Click the clock icon to set the duration of the overlay. Click <strong>SUBMIT</strong>.</li>
+      <li>Click the clock icon to set the duration of the overlay. Click <strong>Submit</strong>.</li>
       <li>Click the <strong>Link</strong> menu.</li>
       <li>Enter a <strong>URL</strong> to direct to when the overlay is clicked.</li>
-      <li>(Optional) Click the <strong>BEHAVIOR</strong> tab and have the video <strong>Pause on video click</strong>. Click <strong>SUBMIT</strong>.</li>
+      <li>(Optional) Click the <strong>BEHAVIOR</strong> tab and have the video <strong>Pause on video click</strong>. Click <strong>Submit</strong>.</li>
       <li>Click <strong>Done</strong>.</li>
     </ol>
     <p>Publish the video using the Media module and confirm that the overlay appears.</p>
@@ -906,12 +906,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="tips">Tips</h2>
     <h3>File size</h3>
-    <p>Image annotations are loaded dynamically when the viewer reaches a certain point in the video. So it's a good idea (as with all images on the web) to ensure a good balance between high quality and low file size. A good rule of thumb for image annotations are to keep them <strong>below 200 KB</strong>. Like any web based technology, the more images you load up, the longer it will take to load the page.</p>
+    <p>Image annotations are loaded dynamically when the viewer reaches a certain point in the video. So it's a good idea (as with all images on the web) to ensure a good balance between high quality and low file size. A good rule of thumb for image annotations is to keep them <strong>below 200 KB</strong>. Like any web based technology, the more images you load up, the longer it will take to load the page.</p>
     <h3>PNG or JPG?</h3>
-    <p>Most image annotations we see are PNGs as those include a transparency layer that ensures the image seamlessly blends with the video. We especially recommend minimizing the size of PNG files with a service like <a href="https://tinypng.com/" rel="nofollow noopener noreferrer" target="_blank">TinyPNG</a>.&nbsp; </p>
-    <p>JPGs work just as well of course. However, they don't have a transparency layer, so take care when using them.</p>
+    <p>PNG is the most popular image type as they include a transparency layer that ensures the image seamlessly blends with the video. Brightcove recommends minimizing the size of PNG files with a service like <a href="https://tinypng.com/" rel="nofollow noopener noreferrer" target="_blank">TinyPNG</a>.&nbsp; </p>
+    <p>JPGs can also be used, they don't have a transparency layer, so take care when using them.</p>
     <h3>Upload File or URL?</h3>
-    <p>We recommend following your normal workflow. If you usually upload images for your website or other content to a third-party system like Amazon S3 or Wordpress, continue doing that. If you normally upload directly from your system, then simply use the "Upload File" option.</p>
+    <p>Brightcove recommends following your normal workflow. If you usually upload images for your website or other content to a third-party system like Amazon S3 or Wordpress, continue doing that. If you normally upload directly from your system, then simply use the <strong>Upload File</strong> option.</p>
   </section>
 </article>
 <!-- complete bootstrap layout -->
