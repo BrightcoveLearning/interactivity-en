@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic, you will learn how to add chapters using Brightcove Interactivity.">
+  <meta name="description" content="In this topic, you will learn about the options that are available when editing an annotation.">
   
-  <title>Adding Interactive Chapters to a Video</title>
+  <title>Annotation Options</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -168,7 +168,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Adding Interactive Chapters to a Video</li>
+        <li class="breadcrumb-item active" aria-current="page">Annotation Options</li>
       
     
   </nav>
@@ -854,79 +854,59 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Adding Interactive Chapters to a Video</h1>
+<h1>Annotation Options</h1>
 <article class="bcls-article">
-  <summary>In this topic, you will learn how to add chapters using Brightcove Interactivity.</summary>
+  <summary>In this topic, you will learn about the options that are available when editing an annotation.</summary>
   <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>The Interactivity module provides the ability to add chapters to videos. Chapters make it easier for viewers to go to a specific point in a video. This is especially helpful for longer form videos. Rather than scrubbing through the video, the chapter menu can be used to jump to a specific point in the video.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="workingSample">Working Sample</h2>
-    <div style="position: relative; display: block; max-width: 960px;">
-      <div style="padding-top: 56.25%;">
-        <iframe src="https://players.brightcove.net/1752604059001/UivhMH9oq_default/index.html?videoId=4457254747001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
-      </div>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="configure-player">Before you get started</h2>
-    <p>Before you can add interactivity to a player, you need an Interactivity-enabled Brightcove Player and you need to make sure an  Interactivity project has been created. For information on how to do this, see <a href="/getting-started/getting-started-interactivity.html">Getting Started with Interactivity</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Chapter_menu">Adding a Chapter Menu</h2>
-    <p>To add a chapter menu, follow these steps:</p>
-    <ol class="bcls-tasklist">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li> Click on a project <strong>Title</strong> to open it.</li>
-      <li>In the bottom toolbar, click on the chapter menu button.
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/add-chapter-menu.png" /></figure>
-      </li>
-      <li>To change the title of the <strong>Chapter Menu</strong>, click on it. To only show a chapter menu icon, delete the chapter title.
-        <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/chapter-menu.png" /></figure>
-      </li>
-      <li><strong>Chapters</strong> have several edit options to use:
-        <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/platform/annotations/adding-chapters-video/editing-options.png" /></figure>
-        <ol type="a">
-          <li><strong>Start time - </strong>Is the point in the video at which the Chapter Menu will first appear.</li>
-          <li><strong>Duration(10s) - </strong>Is the total time the chapter menu will stay expanded. The default is 10s.</li>
-          <li><strong>Display Rule - </strong>Is an advanced option for more details,<a href="/platform/annotations/annotation-options.html"> click here</a>.</li>
-          <li><strong>Add Rule - </strong>Is an advanced option for more details,<a href="/platform/annotations/annotation-options.html"> click here</a>.</li>
-          <li><strong>Styles</strong>- Select a Styles option for the chapter menu. There are two options:
-            <ul>
-              <li><strong>One column:</strong> It shows one column with the list of the Chapters.</li>
-              <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/platform/annotations/adding-chapters-video/styles-onecolumn.png" /></figure>
-              <li><strong>Adaptive:</strong> It fills the screen with the list of Chapters.</li>
-              <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/platform/annotations/adding-chapters-video/styles-adaptive.png" /></figure>
-            </ul>
-          </li>
-          <li><strong>Initial State- </strong> It is set if you want the Chapter Menu to start expanded to collapsed when it first appears.</li>
-          <li><strong>Position</strong>- You can select the cardinal corner of the Chapters menu. </li>
-          <aside class="bcls-aside bcls-aside--information language-editable"><strong>Note:</strong> Brightcove recommends choosing either <strong>top-left</strong> or <strong>top-right</strong> options to navigate easily into the control bar.</aside>
-        </ol>
-      </li>
-      <li>Click <strong>Done</strong>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Addingchapters">Adding Chapters</h2>
-    <p>To add a new chapters, follow these steps: </p>
+    <p>Annotations have a set of options that can be configured to customize the behavior and appearance of the annotation. Follow these steps to access the annotation settings:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Play or scrub through the video. When you get to the point where a chapter needs to be added, click <strong>Add a chapter marker</strong>.</li>
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/platform/annotations/adding-chapters-video/add-chapter-maker.png" /></figure>
-      <li>Enter a short descriptive name for the chapter. The name will be shown to the viewer in the chapter menu.</li>
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/platform/annotations/adding-chapters-video/chapter-name.png" /></figure>
-      <aside class="bcls-aside bcls-aside--information language-editable">Note: The chapter label will only be displayed in the chapter menu, it will not be displayed during video playback.</aside>
-      <li>Continue playing the video and <strong>add a chapter </strong>at each major topic or section of the video.</li>
-      <li>Confirm that all chapters appear in the <strong>Chapter Menu.</strong></li>
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/platform/annotations/adding-chapters-video/all-chapters.png" /></figure>
-      <li>Publish the video using the <strong>Media module</strong> and confirm that when the video plays, the chapter menu is visible.</li>
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/platform/annotations/adding-chapters-video/video-with-chapters.png" /></figure>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>Click on a project to open it.</li>
+      <li>Hover over an annotation and click <strong>Edit</strong>.</li>
     </ol>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/annotations/annotation-options.png"> </figure>
+    <h3 id="start-time">Start Time</h3>
+    <p>The Start Time controls when the annotation begins. You can set the start time ahead one second by clicking on the right arrow and back, by clicking on the left arrow.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/annotations/start-time-left-right.png"> </figure>
+    <p>Click <strong>Start Time</strong> to fine-tune it down to the thousands of a second or a specific percentage in the video. The <strong>Start Time</strong> field is flexible and accepts the following inputs:</p>
+    <ul>
+      <li>20 (20 seconds)</li>
+      <li>00:20.000 (20 seconds)</li>
+      <li>1:37 (1 minute and 37 seconds)</li>
+      <li>97 (1 minute and 37 seconds)</li>
+      <li>15% (15% of the way into the video.)</li>
+      <li>-15 (15 seconds before the end of the video)</li>
+      <li>-10% (10% before the end of the video) </li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--tip language-editable">Tip: % based and negative start times are particularly useful for <a href="/platform/templates/creating-and-managing-templates.html">templates</a>.</aside>
+    <h3 id="duration">Duration</h3>
+    <p>The duration of time that the annotation remains on screen. If <strong>Pause</strong> is set to Y, the duration of the annotation is the duration it is paused.</p>
+    <h3 id="link">Link</h3>
+    <p>The Link can be used to control what happens when a viewer clicks on the annotation. For more information on links, see <a href="/platform/annotations/configuring-annotation-links.html" data-is-internal-link="true">Configuring Annotation Links</a>.</p>
+    <h3 id="pause">Pause</h3>
+    <p>Set <strong>Pause</strong> to <strong>Y</strong> to pause the video when it reaches this annotation. &nbsp;Set <strong>Pause</strong> to <strong>N</strong> to not pause the video.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: When you set <strong>Pause</strong> to Y<strong>,</strong> the duration of the annotation is the duration it is paused.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: When <strong>Pause</strong> is set to <strong>Y</strong>, ensure <strong>Gate</strong> is set to <strong>N</strong>.</aside>
+    <h3 id="gate">Gate</h3>
+    <p>A gate is a point in the video that a viewer can not pass unless they interact with that annotation. This is used most often to ensure that someone takes a quiz or submits an email before continuing on in the video.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: When Gate is set to Y, ensure Pause is set to N.</aside>
+    <h3 id="display-rule-available-to-enterprise-licenses">Display Rule</h3>
+    <aside class="bcls-aside bcls-aside--information">Note: This option is only available to Enterprise licenses.</aside>
+    <p>Display Rules are used to display an annotation only under certain conditions (for example only for new viewers). You set the JavaScript Expression under which you'd like the annotation to display (for example, <code>viewer=='new'</code>). You can pass in these JavaScript expressions from an external system using the <a href="https://apis.support.brightcove.com/interactivity/index.html" rel="nofollow noopener noreferrer" target="_blank">HapYak APIs</a> or set it when a viewer clicks on another annotation in the <strong>Link</strong> option (for example, <code>viewer="new"</code>). For more information on display rules, see <a href="/platform/custom-annotations/adding-display-rule.html">Adding a Display Rule to a Video</a>.</p>
+    <h3 id="add-class-available-to-enterprise-licenses">Add Class</h3>
+    <aside class="bcls-aside bcls-aside--information">Note: This option is only available to Enterprise licenses.</aside>
+    <p>The <strong>Add Class</strong> option allows you to add a specific CSS class to the project. This is typically used to custom style-specific annotations. Note that you will need to include this CSS class in a custom stylesheet at your <a href="/platform/styling/styling-annotations.html" data-is-internal-link="true">group-level CSS</a> or <a href="/platform/styling/project-level-css.html" data-is-internal-link="true">project-level CSS</a>.</p>
+    <h3 id="styles-">Styles</h3>
+    <p>The Style setting can be used to change the background color and opacity. This will override any <a href="/platform/styling/styling-annotations.html" data-is-internal-link="true">group-level</a> or <a href="/platform/styling/project-level-css.html" data-is-internal-link="true">project-level</a> style you have set.
+    </p>
+    <h3 id="themes">Theme</h3>
+    <p>The Theme setting provides a set of &quot;canned&quot; styles for the annotation. &nbsp;This is typically used to change the text color from white to black or vice versa (select <strong>Dark</strong> or <strong>Light</strong>).
+    </p>
+    <h3 id="transitions">Transitions</h3>
+    <p>The <strong>Transitions</strong> setting controls how the annotation appears and disappears from the screen.</p>
   </section>
 </article>
-
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -942,7 +922,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 30 Jan 2023
+  Page last updated on 20 Sep 2022
 </div>
 
 
