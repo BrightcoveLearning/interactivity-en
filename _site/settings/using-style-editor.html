@@ -872,7 +872,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Open the <strong>Interactivity</strong> module.</li>
       <li>Click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/icon-settings.png" />) at the top of the page.</li>
       <li>In the primary navigation, click <strong>Style Editor</strong>.
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/style-editor-home.png"></figure></li>
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/style-editor-home.png"></figure>
+      </li>
     </ol>
     <p>By default, when the style editor opens, the chapter menu styling options are displayed. Use the left navigation to access the styling options for all of the  annotation types.</p>
     <ul>
@@ -881,54 +882,63 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Hotspot</li>
       <li>Quiz</li>
     </ul>
-      <p>After styling changes for an annotation are complete, click <span class="button-blue">Publish</span> to save the changes. Click <span class="button-blue-text-bordered">Restore</span> to revert back to the default styling settings.</p>
+    <p>After styling changes  are complete, click <span class="button-blue">Publish</span> to save the changes. Click <span class="button-blue-text-bordered">Restore</span> to revert back to the default styling settings.</p>
   </section>
   <section class="bcls-section">
     <h2 id="chapter-menu">Styling chapter menus</h2>
     <p>To style chapter menus, expand the <strong>Chapter Menu</strong> option in the left navigation. The following styling options are available:</p>
     <ul>
-      <li>Background and font colors for the chapter menu</li>
-      <li><strong>Initial Menu State</strong> - Controls if the chapter menu displayed <strong>expanded</strong> or <strong>collapsed</strong></li>
-      <li><strong>Chapter Menu</strong> - Controls the layout of the chapter menu
-        <ul>
-          <li>Column - Chapter menu will appear as a column on left side of player</li>
-          <li>Full Screen - Chapter menu will open in center of player</li>
-        </ul>
-      </li>
+      <li><strong>Title Background Color</strong> - Chapter menu title background color</li>
+      <li><strong>Title Font Color</strong> - Chapter menu title font color</li>
+      <li><strong>Body Font Color</strong> - Chapter listing font color</li>
+      <li><strong>Body Hover Font Color</strong> - Chapter listing font color on hover</li>
     </ul>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Additional chapter menu settings are available as part of the <a href="/settings/configuring-settings.html#defaults">Config settings</a>.</aside>
+    <p>To select a color value, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on the color circle to open the color picker.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/color-picker.png"></figure>
+      </li>
+      <li>Use the color slider to set a color range.</li>
+      <li>Use the opacity slider to set the opacity for the color.</li>
+      <li>Click in the color square to select a color.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/color-selected.png"></figure>
+      </li>
+      <li>Click the <strong>X</strong> to close the color picker.</li>
+    </ol>
     <p>As styling changes are made, they will be reflected in the Live Preview player on the page.</p>
     <p>
-      <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/chapter-menu-preview.png"> </figure>
+      <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/chapter-preview.png"> </figure>
     </p>
   </section>
   <section class="bcls-section">
     <h2 id="overlay">Styling overlays</h2>
-    <p>To style overlays, click the <strong>OVERLAY</strong> icon below the Live Preview player. The following styling options are available:</p>
+    <p>To style chapter menus, expand the <strong>Overlay</strong> option in the left navigation. The following styling options are available:</p>
     <ul>
-      <li>Background and font colors for overlays</li>
+      <li>Background colors, font colors and border thickness for overlays</li>
     </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/overlay-options.png"> </figure>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/overlay-options.png"> </figure>
   </section>
   <section class="bcls-section">
     <h2 id="hotspot">Styling hotspots</h2>
-    <p>To style hotspots, click the <strong>HotSpot</strong> icon below the Live Preview player. The following styling options are available:</p>
+    <p>To style hotspots, expand the <strong>Hotspot</strong> option in the left navigation. The following styling options are available:</p>
     <ul>
-      <li>Opacity and background color for hotspots</li>
+      <li>Background color for hotspots</li>
     </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/hotspot-options.png"> </figure>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/hotspot-options.png"> </figure>
   </section>
   <section class="bcls-section">
     <h2 id="quiz">Styling quizzes</h2>
-    <p>To style quizzes, click the <strong>QUIZ</strong> icon below the Live Preview player. The following styling options are available:</p>
+    <p>To style quizzes, expand the <strong>Quiz</strong> option in the left navigation. The following styling options are available:</p>
     <ul>
       <li>Background, font and button colors for quizzes</li>
     </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/quiz-options.png"></figure>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/quiz-options.png"></figure>
   </section>
   <section class="bcls-section">
     <h2 id="publish">Publishing changes</h2>
-    <p>When all styling changes are complete, click <span class="button-blue">Preview &amp; Publish</span>. Click <strong>PUBLISH</strong> to apply all styling changes to existing projects.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/styling/style-builder/publish.png"> </figure>
+    <p>After styling changes  are complete, click <span class="button-blue">Publish</span> to save the changes. Click <span class="button-blue-text-bordered">Restore</span> to revert back to the default styling settings.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/settings/style-editor/publish.png"> </figure>
   </section>
 </article>
 
