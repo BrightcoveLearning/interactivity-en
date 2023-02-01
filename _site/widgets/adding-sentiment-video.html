@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to add a text overlay to a video.">
+  <meta name="description" content="In this topic you will learn how to add user sentiment to a video.">
   
-  <title>Adding a Text Overlay to a Video</title>
+  <title>Adding User Sentiment to a Video</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -164,11 +164,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/annotations/">Annotations</a></li>
+        <li class="breadcrumb-item"><a href="/widgets/">Widgets</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Adding a Text Overlay to a Video</li>
+        <li class="breadcrumb-item active" aria-current="page">Adding User Sentiment to a Video</li>
       
     
   </nav>
@@ -854,69 +854,90 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Adding a Text Overlay to a Video</h1>
+<h1>Adding User Sentiment to a Video</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to add a text overlay to a video.</summary>
+  <summary>In this topic you will learn how to add user sentiment to a video.</summary>
   <section class="bcls-section">
-    <p>The Interactivity module provides the ability to add different types of interactive overlays to videos. Text and image overlays can be displayed on videos during video playback. For example, overlays can display additional text or a company logo on a video. Overlays can also be clickable and open additional web pages if needed.</p>
+    <p>The User Sentiment widget can be used to gather video feedback by letting viewers rate their experience. During video playback, a rating widget will appear over the video. Different display options are available:</p>
+    <ul>
+      <li> Thumbs Up/Thumbs Down
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/thumbs.png"> </figure>
+      </li>
+      <li>Star Rating (out of 5)
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/stars.png"> </figure>
+      </li>
+      <li>Emoticons
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/emoticons.png"> </figure>
+      </li>
+    </ul>
+    <p>The text above the rating can be easily changed and the widget can be positioned anywhere on the player (default is upper right corner). When the icon is clicked, it stays in the clicked/selected state for the remainder of the video. A User Sentiment report is available to provide the aggregate feedback about the ratings.</p>
+    <h3>User like counts</h3>
+    <p>When using the Thumbs Up/Down icon type, you can optionally display the count for the number of likes and dislikes. </p>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/user-like-count.png"></figure>
+    <p>The two counts can be activated separately from the configure modal. A threshold can be set for each count which will prevent the count from displaying until a certain number of likes/dislikes have been recorded.</p>
+    <p>The like and dislike counts do not have to be displayed. Brightcove Interactivity will still continue to collect the data in case you decide to display them at a later date.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="configure-player">Before you get started</h2>
-    <p>Before you can add interactivity to a player, you need an Interactivity-enabled Brightcove Player and you need to make sure an  Interactivity project has been created. For information on how to do this, see <a href="/getting-started/getting-started-interactivity.html">Getting Started with Interactivity</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="text-overlay">Adding a text overlay</h2>
-    <p>Text overlays are used to display text on a video during playback. The overlay can also be clickable and open another browser page when clicked. In the following example, the text overlay will appear at the 75% point of the video and display until the end of the video. Clicking the overlay will open a link in a new browser tab and pause the video.</p>
-    <div style="position: relative; display: block; max-width: 960px;">
-      <div style="padding-top: 56.25%;">
-        <iframe src="https://players.brightcove.net/1752604059001/UivhMH9oq_default/index.html?videoId=4817237857001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
-      </div>
-    </div>
-    <br />
-    <p>Follow these steps to add a text overlay to a project:</p>
+    <h2 id="add">Adding a user sentiment widget</h2>
+    <p>Typically, the User Sentiment widget is added to a <a href="/platform/templates/creating-and-managing-templates.html">template</a> so that it can be easily added to multiple videos easily. Follow these steps to add a user sentiment widget to a template:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li> Click on a project <strong>Title</strong> to open it.</li>
-      <li>In the bottom toolbar, click on the text overlay icon.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/text-overlay/add-text-overlay.png"> </figure>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>Click <strong>NEW TEMPLATE</strong>.</li>
+      <li>Enter a <strong>Title</strong> and click <strong>NEXT</strong>.
+        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/new-template.png"></figure>
       </li>
-      <li>Click on the <strong>Editor</strong> link in the menu.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/text-overlay/overlay-editor.png"> </figure>
+      <li>Confirm that the template is created. A sample video is automatically loaded into the template. To change the video, click <strong>Configure</strong> and enter a new <strong>Video Source</strong>.</li>
+      <li>Click the widget icon in the bottom toolbar.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/add-widget.png"> </figure>
       </li>
-      <li>Enter text for the overlay and click <strong>Submit</strong>.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/text-overlay/overlay-text.png"> </figure>
+      <li>Click the <strong>User Sentiment</strong> widget.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/user-sentiment-widget.png"> </figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: Your group must be provisioned to have access to the User Sentiment widget.</aside>
       </li>
-      <li>Click and drag the overlay to where you want it to appear on the video.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/text-overlay/position-overlay.png"> </figure>
-        <aside class="bcls-aside bcls-aside--information">Note: Make sure the overlay isn't placed at the bottom of the player where it may be covered up by the control bar.</aside>
+      <li>Click <strong>ADD</strong>. The widget is added on top of a sample video.</li>
+      <li>Hover over the widget and click <strong>CONFIGURE</strong>.</li>
+      <li>Enter a <strong>USER PROMPT</strong>. This is the text that will appear at the top of the widget.</li>
+      <li>Select a <strong>TYPE</strong> of widget.</li>
+      <li>Choose to display the <strong>COUNT SETTINGS</strong> (displayed only for Thumbs type). A threshold can be set for each count which will prevent the count from displaying until a certain number of likes/dislikes have been recorded.</li>
+      <li>Set the icon, font and color settings as needed.</li>
+      <li>The <strong>DISPLAY SETTINGS</strong> control how the widget appears during video playback.
+        <ul>
+          <li><strong>Beginning</strong> - Controls how the widget will appear when the video starts playing</li>
+          <li><strong>Middle</strong> - Controls how the widget will appear as the video is playing</li>
+          <li><strong>End</strong> - Controls how the widget will appear at the end of the video</li>
+        </ul>
+        <p>The following example would display the sentiment widget for 5 seconds when the video starts playing, then it would minimize and then expand for the last 5 seconds of the video.</p>
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/display-settings.png"> </figure>
       </li>
-      <li>Click the <strong>Start Time</strong> menu.</li>
-      <li>Enter a <strong>Start time</strong> in seconds, as a percentage or in time format. This example sets the start time to the 75% point of the video. Click <strong>Submit</strong>.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/text-overlay/start-time.png"> </figure>
-      </li>
-      <li>Click the clock icon to set the duration of the overlay. Click <strong>Submit</strong>.</li>
-      <li>Click the <strong>Link</strong> menu.</li>
-      <li>Enter a <strong>URL</strong> to direct to when the overlay is clicked.</li>
-      <li>(Optional) Click the <strong>BEHAVIOR</strong> tab and have the video <strong>Pause on video click</strong>. Click <strong>Submit</strong>.</li>
-      <li>Click <strong>Done</strong>.</li>
+      <li>Click <strong>SAVE</strong>.</li>
     </ol>
-    <p>Publish the video using the Media module and confirm that the overlay appears.</p>
+    <p>A tag can be added to templates as a way to quickly add the User Sentiment widget to Video Cloud videos that are published using a HapYak-enabled player. If a published video has the same tag that was assigned to the template, the User Sentiment widget will be displayed during video playback.</p>
+    <p>Follow these steps to add a tag to the template.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>At the top of the page, click<strong> Configure</strong>.</li>
+      <li>Locate the <strong>Tags</strong> field and click it.</li>
+      <li>Add one or more <strong>Tags</strong>.
+        This example is using a tag of <code>sentiment</code>.
+        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/sentiment-tag.png"></figure>
+      </li>
+      <li>Click <strong>SAVE </strong> and then <strong>SUBMIT</strong>.</li>
+    </ol>
+    <p>By adding the tag <code>sentiment</code> to the template, any Video Cloud video that is tagged <code>sentiment</code> and published using a HapYak-enabled player will have the User Sentiment widget displayed during video playback.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: There may be a delay of up to one hour before the User Sentiment widget will appear in published Video Cloud videos.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="tips">Tips</h2>
-    <p>By default, the text is center aligned and the size of the box around it adjusts responsively as you type.&nbsp;It is possible to left or right align the text as well. Follow these steps:</p>
+    <h2 id="reports">Reviewing sentiment reports</h2>
+    <p>The User Sentiment widget will collect a &quot;rating&quot; when the viewer clicks on their satisfaction emoji. Since there are three types of emojis which have been implemented (thumbs, stars and a smilies), each has its own rating map which is then normalized into a score from 1-5.</p>
+    <p>The User Sentiment Summary report provides information on all projects with the User Sentiment widget. To access the report, follow these steps: </p>
     <ol class="bcls-tasklist-restart">
-      <li>Copy the URL to this CSS file:<br />
-        <code>https://interactivity.support.brightcove.com/assets/css/hapyak-css-text-align.css</code>
-      </li>
-      <li>Edit the project and click <span class="button-blue">SETTINGS</span>.</li>
-      <li>Paste the URL into the <strong>Custom Annotation CSS (URL)</strong> field.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/annotations/text-overlay/custom-css.png"> </figure>
-      </li>
-      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Core Reports</strong>.</li>
+      <li>Select a <strong>Date Range</strong> for the report.</li>
+      <li>At the top of the page use the report selector to select the <strong>User Sentiment Summary</strong> report.</li>
+      <li>Click <span class="button-blue">RUN</span>.</li>
     </ol>
-    <p>This will set the default alignment to left. &nbsp;To set a specific annotation to right or center alignment, on the annotation, click <strong>Edit</strong> &gt; <strong>More...</strong> &gt; <strong>Add Class</strong> and then type <code>text-right</code> or <code>text-center</code>&nbsp; in the <strong>Classes</strong> field.</p>
+    <p>The report will display all projects with the User Sentiment widget.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/sentiment/report.png"> </figure>
   </section>
 </article>
 <!-- complete bootstrap layout -->
@@ -934,7 +955,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 30 Jan 2023
+  Page last updated on 01 Feb 2023
 </div>
 
 
