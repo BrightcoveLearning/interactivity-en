@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic, you will learn how to add chapters using Brightcove Interactivity.">
+  <meta name="description" content="In this topic you will learn how to get started with adding interactivity to videos.">
   
-  <title>Adding Interactive Chapters to a Video</title>
+  <title>Getting Started with Video Interactivity</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -164,11 +164,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/annotations/">Annotations</a></li>
+        <li class="breadcrumb-item"><a href="/getting-started/">Getting started</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Adding Interactive Chapters to a Video</li>
+        <li class="breadcrumb-item active" aria-current="page">Getting Started with Video Interactivity</li>
       
     
   </nav>
@@ -854,82 +854,118 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Adding Interactive Chapters to a Video</h1>
+<h1>Getting Started with Video Interactivity</h1>
 <article class="bcls-article">
-  <summary>In this topic, you will learn how to add chapters using Brightcove Interactivity.</summary>
+  <summary>In this topic you will learn how to get started with adding interactivity to videos.</summary>
   <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>The Interactivity module provides the ability to add chapters to videos. Chapters make it easier for viewers to go to a specific point in a video. This is especially helpful for longer form videos. Rather than scrubbing through the video, the chapter menu can be used to jump to a specific point in the video.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="workingSample">Working Sample</h2>
-    <div style="position: relative; display: block; max-width: 960px;">
-      <div style="padding-top: 56.25%;">
-        <iframe src="https://players.brightcove.net/1752604059001/UivhMH9oq_default/index.html?videoId=4457254747001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
-      </div>
-    </div>
+    <p>The HapYak plugin for the Brightcove Player allows the player to take advantage of the features provided by Brightcove Interactivity. When interactions are added to a Brightcove Interactivity project, they will automatically appear on the corresponding video. This removes the need to copy and publish embed code within Brightcove Interactivity Studio.</p>
   </section>
   <section class="bcls-section">
     <h2 id="configure-player">Before you get started</h2>
-    <p>Before you can add interactivity to a player, you need an Interactivity-enabled Brightcove Player and you need to make sure an  Interactivity project has been created. For information on how to do this, see <a href="/getting-started/getting-started-video-interactivity.html">Getting Started with Video Interactivity</a>.</p>
+    <p>Before you can started with interactivity, you must have a Brightcove Player configured with the HapYak plugin. Adding the HapYak plugin to a Brightcove Player will allow interactivity to be displayed inside of the player during video playback. The HapYak plugin can coexist with other player plugins. For complete steps on creating a HapYak-enabled player, see <a href="configuring-player-plugin.html">Configuring a Brightcove Player with the HapYak plugin</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="Chapter_menu">Adding a chapter menu</h2>
-    <p>To add a chapter menu, follow these steps:</p>
-    <ol class="bcls-tasklist">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li> Click on a project <strong>Title</strong> to open it.</li>
-      <li>In the bottom toolbar, click on the chapter menu icon.
-        <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/add-chapter-menu.png" /></figure>
+    <h2 id="project-creation">Creating a Brightcove Interactivity project</h2>
+    <p>When a video is played inside of a HapYak-enabled Brightcove Player, the following things happen: </p>
+    <ul>
+      <li>The Brightcove video ID, title, tags and custom fields are passed to Brightcove Interactivity</li>
+      <li>Brightcove Interactivity attempts to look up the video ID within your group</li>
+      <li><strong>If no matching record is found</strong>, then Brightcove Interactivity creates a project with the data that was sent</li>
+      <li>Brightcove Interactivity will also set the project properties to indicate that it was "auto created":
+        <ul>
+          <li> The <code>is_published</code> value will be set to <strong>TRUE</strong></li>
+          <li> A tag with the value <code>live</code> will be added</li>
+        </ul>
       </li>
-      <li>To change the title of the <strong>Chapter Menu</strong>, click on it. To only show a chapter menu icon, delete the chapter title.
-        <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/chapter-menu.png" /></figure>
+    </ul>
+    <p>The following steps will automatically create a Brightcove Interactivity project:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select a video to publish by checking the box next to the video thumbnail.</li>
+      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web.</strong></li>
+      <li>Select the player with the HapYak plugin.</li>
+      <li>Click the preview link to open a preview in a new browser tab.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/getting-started/gs-interactivity/gsi-vc-publish.png"> </figure>
+      </li>
+      <li>Play the preview video (the video only needs to be played for a few seconds). This will auto-create a project in Brightcove Interactivity.
+        <aside class="bcls-aside bcls-aside--information">Note: You must preview the video using the preview link. Previewing the video with the preview player in the Media module <strong>will not</strong> auto-create a project.</aside>
+      </li>
+      <li>Login to Brightcove Interactivity Studio (<a href="https://www.hapyak.com/login">https://www.hapyak.com/login</a>).
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: For new accounts, login credentials can be provided by Brightcove onboarding or technical support. For existing accounts, anyone with admin level access to Brightcove Interactivity Studio can login and invite additional users from the admin panel.</aside></li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>A list of projects will appear. Confirm the video you just published appears in the project list.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/getting-started/gs-interactivity/gsi-hapyak-projects-list.png"> </figure>
+        <aside class="bcls-aside bcls-aside--information">Note: The <strong>Tags</strong> column includes all tags associated with the video. An additional tag of <strong>live</strong> is added to each project automatically created by the plugin.</aside>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="text-overlay">Adding a text overlay</h2>
+    <p>In this topic a simple text overlay will be added just to validate that the interactivity can be viewed inside of a Brightcove Player.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the Brightcove Interactivity UI, click on the project to open it.</li>
+      <li>In the bottom toolbar, click on the text overlay button.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/getting-started/gs-interactivity/gsi-hapyak-add-overlay.png"> </figure>
+      </li>
+      <li>Click on the <strong>Editor</strong> link in the menu.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/getting-started/gs-interactivity/gsi-hapyak-overlay-editor.png"> </figure>
+      </li>
+      <li>Enter some sample text for the overlay and click <strong>SUBMIT</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/getting-started/gs-interactivity/gsi-hapyak-overlay-text-added.png"> </figure>
       </li>
       <li>Click <strong>Done</strong>.</li>
     </ol>
-    <p>Chapters have several  options that can be configured. Click <strong>More...</strong> to expand the menu:</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/editing-options.png" /></figure>
-    <ol type="a">
-      <li><strong>Start time</strong> - The point in the video when the chapter menu will first appear</li>
-      <li><strong>Duration(10s) </strong>- The total time the chapter menu will stay expanded (default is 10s)</li>
-      <li><strong>Display Rule</strong> - Is an advanced option, for  details<a href="/annotations/annotation-options.html"> click here</a></li>
-      <li><strong>Add Rule</strong> - Is an advanced option, for  details<a href="/annotations/annotation-options.html"> click here</a></li>
-      <li><strong>Styles</strong> - Select a <strong>Styles</strong> option for the chapter menu:
-        <ul>
-          <li><strong>One column</strong> - Displays the chapters in a single column
-            <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/styles-onecolumn.png" /></figure>
-          </li>
-          <li><strong>Adaptive</strong> - The list of chapters will fill the video player
-            <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/styles-adaptive.png" /></figure>
-          </li>
-        </ul>
-      </li>
-      <li><strong>Initial State</strong> - Controls how the chapter menu displays when it first appears</li>
-      <li><strong>Position</strong> - You can select the cardinal corner of the chapters menu
-        <aside class="bcls-aside bcls-aside--information language-editable"><strong>Note:</strong> Brightcove recommends choosing either <strong>top-left</strong> or <strong>top-right</strong> in order to be able to easily navigate  into the control bar.</aside>
-      </li>
-    </ol>
+    <p>For detailed information on adding text and image overlays to videos, see: </p>
+    <ul>
+      <li><a href="/platform/annotations/adding-text-overlay.html">Adding a Text Overlay to a Video</a></li>
+      <li><a href="/platform/annotations/adding-image-overlay.html">Adding an Image Overlay to a Video</a></li>
+      <li><a href="/platform/annotations/adding-transparent-overlay.html">Adding a Transparent Overlay to a Video</a></li>
+    </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="Addingchapters">Adding chapters</h2>
-    <p>To add a new chapters, follow these steps: </p>
+    <h2 id="preview-publish">Previewing and generating embed code for a video</h2>
+    <p>Once an interaction has been added to a Brightcove Interactivity project, preview the video to ensure the interactivity is working as expected. When a video is loaded in a HapYak-enabled Brightcove Player, the following things happen:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Play or scrub through the video. When you get to the point where a chapter needs to be added, click the chapter marker icon.</li>
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/add-chapter-marker.png" /></figure>
-      <li>Enter a short descriptive name for the chapter. The name will be shown to the viewer in the chapter menu.</li>
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/chapter-name.png" /></figure>
-      <aside class="bcls-aside bcls-aside--information language-editable">Note: The chapter label will only be displayed in the chapter menu, it will not be displayed during video playback.</aside>
-      <li>Continue playing the video and add  chapters at each major topic or section of the video.</li>
-      <li>Confirm that all chapters appear in the chapter menu.</li>
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/all-chapters.png" /></figure>
-      <li>Publish the video using the <strong>Media </strong>module and confirm that when the video plays, the chapter menu is visible.</li>
-      <figure class="bcls-figure"><img class="bcls-image" alt="chapters" src="/assets/images/s-brightcove-interactivity-img/annotations/chapters/video-with-chapters.png" /></figure>
+      <li>The Brightcove video ID, title, tags and custom fields are sent to Brightcove Interactivity.</li>
+      <li>Brightcove Interactivity attempts to look up the video ID within your Brightcove Interactivity group.</li>
+      <li><strong>If a matching record is found</strong>, then Brightcove Interactivity filters to the record that has the <code>is_published</code> value set to <strong>TRUE</strong>. The project with both the matching video ID and the <code>is_published</code> value set to <strong>TRUE</strong> will be displayed.</li>
+      <li><strong>If more than one matching record is found</strong>, then Brightcove Interactivity filters to the most recently modified record that has the <code>is_published</code> value set to <strong>TRUE</strong>. The most recently modified project with both the matching video ID and the <code>is_published</code></li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: The <code>is_published</code> value can be manually changed using the Settings dialog (click <strong>SETTINGS</strong> at the top of the page).</aside>
+    <p>Follow these steps to preview and generate the embed code for the video:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Select the video you used to create the Brightcove Interactivity project and publish it.</li>
+      <li>In the <strong>Select Player</strong> dropdown list, select the HapYak-enabled player. </li>
+      <li>Click the <strong>URL</strong> below the preview player to open it in a new browser tab. Confirm that the interaction appears.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/platform/getting-started/gs-interactivity/gsi-overlay-sample.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: By default, the text overlay is configured to display for 3 seconds.</aside>
+      </li>
+      <li>Copy the embed code and paste it into your web page.</li>
+    </ol>
+    <p>Additionally, in the embed code, you <strong>MUST</strong> add <code>playsinline</code> inside the <code>&lt;video-js&gt;</code> tag. Please reference the examples below:</p>
+    <h3>Standard</h3>
+    <pre><code>
+&lt;div&gt;<br>  style=&quot;position: relative; display: block; max-width: 960px;&quot;&gt;<br>  &lt;div<br>    style=&quot;padding-top: 56.25%;&quot;&gt;<br>    &lt;iframe<br>      src=&quot;//players.brightcove.net/1486906377/dunFq3vI6_default/index.html&quot;  <br>      playsinline<br>      allowfullscreen=&quot;&quot;<br>      allow=&quot;encrypted-media&quot;<br>      style=&quot;position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;
+    </code></pre>
+    <h3>Advanced</h3>
+    <pre><code>
+&lt;div style=&quot;max-width: 960px;&quot;&gt;<br>  &lt;video-js
+    playsinline<br>    data-account=&quot;1486906377&quot;<br>    data-player=&quot;dunFq3vI6&quot;<br>    data-embed=&quot;default&quot;<br>    controls=&quot;&quot;<br>    data-application-id=&quot;&quot;<br>    class=&quot;vjs-fluid&quot;<br>    style=&quot;padding-top: 56.25%;&quot;&gt;<br>  &lt;/video-js&gt;<br>&lt;/div&gt;<br>&lt;script<br>  src=&quot;//players.brightcove.net/1486906377/dunFq3vI6_default/index.min.js&quot;&gt;<br>&lt;/script&gt;
+</code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="notes">Notes</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Annotations added to a project at the project level (meaning not through templates) should appear in approximately 90 seconds. Annotations added via templates can take up to two hours to appear. </li>
+      <li>Do not manually create Brightcove projects in Brightcove Interactivity Studio. The plugin will do this automatically.</li>
+      <li>Uploading a new video source files in Video Cloud will preserve the video ID and the connection to Brightcove Interactivity.</li>
+      <li>Do not use the EMBED code generated from the Brightcove Interactivity tools when using the plugin. Instead publish your videos per the normal Brightcove workflow.</li>
+      <li>Workflow-generated projects can be deleted using Brightcove Interactivity Studio. Please note that subsequent loads of the corresponding video through the Brightcove Player will auto-generate a separate project based on the same video source in the portal.</li>
     </ol>
   </section>
 </article>
-
-
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -945,7 +981,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 30 Jan 2023
+  Page last updated on 02 Feb 2023
 </div>
 
 
