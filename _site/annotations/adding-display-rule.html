@@ -864,7 +864,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Display an annotation when the viewer gets a quiz question right or wrong</li>
       <li>Display an annotation based on a parameter passed in from an external API </li>
     </ul>
-    <p>Display rules require that you are comfortable working with HTML, JavaScript and CSS. Codeacademy offers free <a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank">HTML/CSS</a> and <a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank">JavaScript</a> courses that may be helpful to beginners. </p>
+    <p>Display rules require that you are comfortable working with HTML, JavaScript and CSS. Codeacademy offers free <a href="https://www.codecademy.com/en/tracks/web" rel="nofollow noopener noreferrer" target="_blank">HTML/CSS</a> and <a href="https://www.codecademy.com/en/tracks/javascript" rel="nofollow noopener noreferrer" target="_blank">JavaScript</a> courses that may be helpful to beginners.</p>
   </section>
   <section class="bcls-section">
     <h2 id="add-rule">Adding a display rule</h2>
@@ -876,11 +876,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>In the list of annotations, locate the annotation and click the edit icon (<img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/display-rules/icon-edit.png">).</li>
       <li>In the <strong>Edit</strong> menu, click <strong>More...</strong></li>
       <li>Click <strong>Display Rule</strong>.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/display-rules/new-display-rule.png"> </figure>
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/display-rules/new-display-rule.png"> </figure>
       </li>
       <li>Enter the display rule. The expression entered in this dialog will be evaluated prior to rendering the annotation.<br>
       </li>
-      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+      <li>Click <span class="button-blue"><strong>Submit</strong></span>.</li>
       <li>Click <strong>Done</strong>.</li>
     </ol>
   </section>
@@ -888,13 +888,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="syntax">Display rule syntax</h2>
     <h3>Testing for a set variable</h3>
     <p>Rule: <code>[variable name]</code> eg. <code>my_var</code></p>
-    <p>This is the same as writing <code>my_var=true</code>. This will be true if the resolved variable is defined and it’s value is not false</p>
+    <p>This is the same as writing <code>my_var=true</code>. This will be true if the resolved variable is defined and it’s value is not false.</p>
     <h3>Testing equality</h3>
     <p>Rule: <code>[variable name]==&quot;value&quot;</code> eg. <code>my_var==&quot;Kyle&quot;</code></p>
-    <p>This will be true only if the resolved variable is exactly equal to the string value between the single quotes</p>
+    <p>This will be true only if the resolved variable is exactly equal to the string value between the single quotes.</p>
     <h3>Testing for correct quiz answers</h3>
     <p>Rule: <code>[quiz variable name]_correct</code> eg. <code>quiz_123_1_correct</code></p>
-    <p>This will be true only if the resolved variable is equal to the correct answer of the quiz question</p>
+    <p>This will be true only if the resolved variable is equal to the correct answer of the quiz question.</p>
     <h3>Testing for incorrect quiz answers</h3>
     <p>Rule: <code>[quiz variable name] &amp;&amp; ![quiz variable name]_correct</code> eg. <code>quiz_123_1 &amp;&amp;<br>
       !quiz_123_1_correct</code></p>
@@ -912,12 +912,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>The image and text annotations are configured with the same start and end times.</p>
     <p>The apple and orange images are both image overlays. They both have display rules set so they only show if their respective JavaScript variable (<code>apple</code> or <code>orange</code>) is set to <code>true</code>. For example, here is the display rule for the orange.</p>
     <p>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/display-rules/orange-display-rule.png"></figure>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/display-rules/orange-display-rule.png"></figure>
     </p>
     <p>This will cause the orange image overlay to only display when the variable <code>orange = true</code>.</p>
     <p>The text overlay <strong>Click here to change the image to display an orange</strong> is configured with a display rule to display when <code>apple = true</code>. The <strong>Link</strong> setting is configured to switch the variables when clicked.</p>
     <p>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/custom-annotations/display-rules/orange-text.png"></figure>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/display-rules/orange-text.png"></figure>
     </p>
     <p>So clicking the text will set <code>orange</code> to <code>true</code> which will make the alternate text overlay and orange image both appear.</p>
   </section>
