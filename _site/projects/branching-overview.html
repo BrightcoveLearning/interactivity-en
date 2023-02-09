@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to make overlay images appear only when the viewer hovers over a video.">
+  <meta name="description" content="In this topic you will learn about different methods for creating branching videos.">
   
-  <title>Adjusting Images to Appear Only on Hover</title>
+  <title>Branching Overview</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -164,11 +164,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/styling/">Styling</a></li>
+        <li class="breadcrumb-item"><a href="/projects/">Projects</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Adjusting Images to Appear Only on Hover</li>
+        <li class="breadcrumb-item active" aria-current="page">Branching Overview</li>
       
     
   </nav>
@@ -854,49 +854,26 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Adjusting Images to Appear Only on Hover</h1>
+<h1>Branching Overview</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to make overlay images appear only when the viewer hovers over a video.</summary>
+  <summary>In this topic you will learn about different methods for creating branching videos.</summary>
   <section class="bcls-section">
-    <p>CSS can be used to have image annotations appear only when the viewer hovers over a video. In this example, hovering over the area below the text will display the Brightcove logo. Both the text and image annotations are configured to display until the end of the video.</p>
-    <div style="position: relative; display: block; max-width: 800px;">
-      <div style="padding-top: 56.25%;">
-        <iframe src="https://players.brightcove.net/1752604059001/Rx1jHQB5h_default/index.html?videoId=1739973059808272482" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
-      </div>
-    </div>
-    <p>Showing a graphic only on hover can easily be accomplished through a CSS class. Update the Interactivity-enabled Brightcove Player to point to a CSS file:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Players</strong> module.</li>
-      <li> Locate the Interactivity-enabled Brightcove Player and click on it to open the player properties.</li>
-      <li>In the left navigation menu, click <strong>Additional Features</strong> &gt; <strong>Interactivity</strong>.</li>
-      <li>Confirm that the <strong>Enable Interactivity</strong> checkbox is checked.</li>
-      <li>Edit the <strong>Options(JSON)</strong> to point to the following CSS file.
-        <pre><code>
-//interactivity.support.brightcove.com/assets/css/style/on_hover_img.css
-</code></pre>
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/styling/image-hover/css-plugin.png"> </figure>
-      </li>
-      <li>Save the changes and publish the changes to the player.</li>
-    </ol>
-    <p>Another option is to add this CSS to your current style sheet:</p>
-<pre><code>
-.popcorn-image:not(.hapyak-editing-image) img {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.popcorn-image:not(.hapyak-editing-image).popcorn-image:hover img {
-  opacity: 1;
-}
-</code>
-</pre>
-    <p>Images will now fade in on mouse hover. To change how fast images fades in, simply change 0.5s to any number you wish.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integrations or development.</aside>
+    <p>Brightcove Interactivity offers two techniques for creating branching or &quot;choose your own adventure&quot; (CYOA) content.</p>
+    <ul>
+      <li><strong>In-Video branching</strong> - This technique uses a single video. The viewer jumps from point to point in the <strong>same video</strong> using annotations.  For information on in-video branching, see <a href="/projects/in-video-branching.html">Creating an In-Video Branching Project</a>.</li>
+      <li><strong>Video to video branching</strong> - This technique uses a Branching Experience where multiple videos are strung together. The viewer jumps from video to video using annotations. For information on creating a Branching Experience, see <a href="/experiences/creating-branching-experience.html">Creating a Branching Experience</a>.</li>
+    </ul>
+    <p>Both work equally well, it's a personal preference based on your production process and how your videos are  produced.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="best-practices">Branching best practices</h2>
+    <ul>
+      <li>Focus on just 2 or 3 choices at each choice point. Having fewer choices is much easier for viewers to process and results in higher interaction rates.</li>
+      <li>Make sure each choice point lasts for at least 10 seconds.</li>
+      <li>Add bumpers (sections of white or black or motion graphics) between the different choice sections to ease the transition. We recommend about 5 seconds.</li>
+      <li>Always allow the viewer to return to the choice points. You'll be surprised at how many viewers want to watch a branching video over and over again. To do this, simply add a text or image annotation that links back to the choice point.</li>
+      <li>Continue the audio track underneath the choice points and bumpers. This creates a more seamless experience for the viewer.</li>
+    </ul>
   </section>
 </article>
 
@@ -915,7 +892,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 09 Feb 2023
+  Page last updated on 20 Sep 2022
 </div>
 
 

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to make overlay images appear only when the viewer hovers over a video.">
+  <meta name="description" content="In this topic you will learn how to creating an in-video branching project.">
   
-  <title>Adjusting Images to Appear Only on Hover</title>
+  <title>Creating an In-Video Branching Project</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -164,11 +164,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/styling/">Styling</a></li>
+        <li class="breadcrumb-item"><a href="/projects/">Projects</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Adjusting Images to Appear Only on Hover</li>
+        <li class="breadcrumb-item active" aria-current="page">Creating an In-Video Branching Project</li>
       
     
   </nav>
@@ -854,52 +854,48 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Adjusting Images to Appear Only on Hover</h1>
+<h1>Creating an In-Video Branching Project</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to make overlay images appear only when the viewer hovers over a video.</summary>
+  <summary>In this topic you will learn how to creating an in-video branching project.</summary>
   <section class="bcls-section">
-    <p>CSS can be used to have image annotations appear only when the viewer hovers over a video. In this example, hovering over the area below the text will display the Brightcove logo. Both the text and image annotations are configured to display until the end of the video.</p>
-    <div style="position: relative; display: block; max-width: 800px;">
+    <p>Brightcove Interactivity offers two techniques for creating branching or &quot;choose your own adventure&quot; (CYOA) content.</p>
+    <ul>
+      <li><strong>In-Video branching</strong> - This technique uses a single video. The viewer jumps from point to point in the <i>same video</i> using annotations. These experiences can be published using Video Cloud Studio or the Brightcove Interactivity UI.</li>
+      <li><strong>Video to video branching</strong> - This technique uses a <a href="/platform/experiences/creating-branching-experience.html">Branching Experience</a> where multiple videos are strung together. The viewer jumps from video to video using annotations. These experiences must be published using the Brightcove Interactivity UI.</li>
+    </ul>
+    <p>Both work equally well, it's a personal preference based on your production process and how your videos are already produced.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sample">Working sample</h2>
+    <p>The following video is an example of in-video branching. The &quot;main menu&quot; part of the video will loop until an image is clicked. Clicking an image will jump to that part of the video. When that part of the video is complete, a time triggered action will send the video back to the &quot;main menu&quot; part of the video. The &quot;Main Menu&quot; text that appears in parts of the video is a transparent overlay that will jump to the main menu part of the video when clicked.</p>
+    <div style="position: relative; display: block; max-width: 960px;">
       <div style="padding-top: 56.25%;">
-        <iframe src="https://players.brightcove.net/1752604059001/Rx1jHQB5h_default/index.html?videoId=1739973059808272482" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://players.brightcove.net/1752604059001/tTstQb2r7E_default/index.html?videoId=1740625459453837148" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
       </div>
     </div>
-    <p>Showing a graphic only on hover can easily be accomplished through a CSS class. Update the Interactivity-enabled Brightcove Player to point to a CSS file:</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="in-video-branching">Branching within a single project</h2>
+    <p>Follow these steps to add branching to a project:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Players</strong> module.</li>
-      <li> Locate the Interactivity-enabled Brightcove Player and click on it to open the player properties.</li>
-      <li>In the left navigation menu, click <strong>Additional Features</strong> &gt; <strong>Interactivity</strong>.</li>
-      <li>Confirm that the <strong>Enable Interactivity</strong> checkbox is checked.</li>
-      <li>Edit the <strong>Options(JSON)</strong> to point to the following CSS file.
-        <pre><code>
-//interactivity.support.brightcove.com/assets/css/style/on_hover_img.css
-</code></pre>
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/styling/image-hover/css-plugin.png"> </figure>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>Click on a project to open it.</li>
+      <li>Add a chapter marker at each point in the video where a choice begins (the beginning of a branch). The chapter markers will be invisible to viewers.</li>
+      <li>For each &quot;choice point&quot;, add a text, image or transparent overlay annotation. This is what the viewer will click on to jump to different parts of the video. Make sure the start time and duration for each of these annotations is identical.</li>
+      <li>On each annotation, set <strong>Link</strong> &gt; <strong>ACTIONS</strong> to <strong>Jump to video time </strong>and select the correct chapter or enter a custom time. In this example, a transparent overlay is configured to jump to a chapter marker when clicked.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/projects/in-video-branching/jump-to-video-time.png"></figure>
       </li>
-      <li>Save the changes and publish the changes to the player.</li>
+      <li>On one of the choice annotations, set <strong>Link</strong> &gt; <strong>BEHAVIOR</strong> &gt; <strong>Action to take if the viewer doesn't click</strong> to <strong>Loop back</strong>.
+        <figure class="bcls-figure"> This will cause the video to loop and display the &quot;main menu&quot; part of the video until one of the transparent overlays is clicked.<img src="/assets/images/s-brightcove-interactivity-img/platform/projects/in-video-branching/annotation-loop-back.png"> </figure>
+      </li>
+      <li>At the end of each branch, add a time triggered action and set the <strong>Jump to video time</strong> to jump the video back to the &quot;main menu&quot; part of the video so the viewer can make another choice.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/platform/projects/in-video-branching/time-trigger.png"> </figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: When using a time triggered action, Brightcove recommends that the Start/End Time is configured to last at least one second. Using a shorter time may cause the browser to not execute the time triggered action.</aside>
+      </li>
     </ol>
-    <p>Another option is to add this CSS to your current style sheet:</p>
-<pre><code>
-.popcorn-image:not(.hapyak-editing-image) img {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.popcorn-image:not(.hapyak-editing-image).popcorn-image:hover img {
-  opacity: 1;
-}
-</code>
-</pre>
-    <p>Images will now fade in on mouse hover. To change how fast images fades in, simply change 0.5s to any number you wish.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integrations or development.</aside>
   </section>
 </article>
-
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -915,7 +911,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 09 Feb 2023
+  Page last updated on 20 Sep 2022
 </div>
 
 
