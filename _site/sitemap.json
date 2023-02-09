@@ -605,12 +605,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/jetblue.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/jetblue.html",
       "oldURL": "/jetblue"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/jetblue.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/jetblue.html",
       "oldURL": "/jetblue"
   },
 
@@ -620,12 +620,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/konica-minolta.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/konica-minolta.html",
       "oldURL": "/konica-minolta"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/konica-minolta.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/konica-minolta.html",
       "oldURL": "/konica-minolta"
   },
 
@@ -730,12 +730,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/developers/addon-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/developers/annotation-api/reference.html",
       "oldURL": "/reference"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/developers/annotation-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/developers/extension-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -745,7 +745,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/developers/extension-api/reference.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/developers/addon-api/reference.html",
       "oldURL": "/reference"
   },
 
@@ -770,12 +770,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/annotations/reviewing-annotations.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/annotations/reviewing-annotations.html",
       "oldURL": "/reviewing-annotations"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/annotations/reviewing-annotations.html",
+      "newURL": "https://interactivity.support.brightcove.com/annotations/reviewing-annotations.html",
       "oldURL": "/reviewing-annotations"
   },
 
@@ -830,12 +830,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/sph.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/sph.html",
       "oldURL": "/sph"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/sph.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/sph.html",
       "oldURL": "/sph"
   },
 
@@ -850,12 +850,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/tableau.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/tableau.html",
       "oldURL": "/tableau"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/tableau.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/tableau.html",
       "oldURL": "/tableau"
   },
 
@@ -865,12 +865,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/getting-started/terminology.html",
+      "newURL": "https://interactivity.support.brightcove.com/getting-started/terminology.html",
       "oldURL": "/terminology"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/getting-started/terminology.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/getting-started/terminology.html",
       "oldURL": "/terminology"
   },
 
@@ -885,18 +885,23 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/under-armour.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/under-armour.html",
       "oldURL": "/under-armour"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/under-armour.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/under-armour.html",
       "oldURL": "/under-armour"
   },
 
   {
       "newURL": "https://interactivity.support.brightcove.com/platform/styling/using-built-in-css-classes.html",
       "oldURL": "/using-built-in-css-classes"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/annotations/using-custom-transitions-with-animate-css.html",
+      "oldURL": "/using-custom-transitions-with-animate-css"
   },
 
   {
@@ -925,12 +930,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/verizon.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/verizon.html",
       "oldURL": "/verizon"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/verizon.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/verizon.html",
       "oldURL": "/verizon"
   },
 
@@ -955,12 +960,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/xero.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/xero.html",
       "oldURL": "/xero"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/xero.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/xero.html",
       "oldURL": "/xero"
   },
 ]
