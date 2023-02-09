@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to use a custom CSS file to style annotations.">
+  <meta name="description" content="In this topic you will learn how to make overlay images appear only when the viewer hovers over a video.">
   
-  <title>Styling Annotations</title>
+  <title>Adjusting Images to Appear Only on Hover</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -168,7 +168,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Styling Annotations</li>
+        <li class="breadcrumb-item active" aria-current="page">Adjusting Images to Appear Only on Hover</li>
       
     
   </nav>
@@ -854,52 +854,49 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Styling Annotations</h1>
+<h1>Adjusting Images to Appear Only on Hover</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to use a custom CSS file to style annotations.</summary>
+  <summary>In this topic you will learn how to make overlay images appear only when the viewer hovers over a video.</summary>
   <section class="bcls-section">
-    <p>Brightcove Interactivity uses an account-level, Interactivity CSS file to style all annotations in projects, templates and experiences. You can use your own CSS file or use the Style Editor  to create a CSS file.</p>
-    <p>Follow these steps to access the account-level, Interactivity CSS file.</p>
-    <ol class="bcls-tasklist">
+    <p>CSS can be used to have image annotations appear only when the viewer hovers over a video. In this example, hovering over the area below the text will display the Brightcove logo. Both the text and image annotations are configured to display until the end of the video.</p>
+    <div style="position: relative; display: block; max-width: 800px;">
+      <div style="padding-top: 56.25%;">
+        <iframe src="https://players.brightcove.net/1752604059001/Rx1jHQB5h_default/index.html?videoId=1739973059808272482" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+    <p>Showing a graphic only on hover can easily be accomplished through a CSS class. Update the Interactivity-enabled Brightcove Player to point to a CSS file:</p>
+    <ol class="bcls-tasklist-restart">
       <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/icon-settings.png" />) at the top of the page.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/styling/styling-annotations/interactivity-css.png"> </figure>
+      <li>Open the <strong>Players</strong> module.</li>
+      <li> Locate the Interactivity-enabled Brightcove Player and click on it to open the player properties.</li>
+      <li>In the left navigation menu, click <strong>Additional Features</strong> &gt; <strong>Interactivity</strong>.</li>
+      <li>Confirm that the <strong>Enable Interactivity</strong> checkbox is checked.</li>
+      <li>Edit the <strong>Options(JSON)</strong> to point to the following CSS file.
+        <pre><code>
+//interactivity.support.brightcove.com/assets/css/style/on_hover_img.css
+</code></pre>
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/styling/image-hover/css-plugin.png"> </figure>
       </li>
+      <li>Save the changes and publish the changes to the player.</li>
     </ol>
-    <h4>Uploading a CSS file</h4>
-    <p>To upload a new CSS file, click <span class="button-blue"> <i data-feather="upload"></i> Upload Custom CSS</span> and then browse and select a CSS file to use.</p>
-    <h4>Downloading the default CSS file</h4>
-    <p>To download the default CSS file, click <span class="button-blue"> <i data-feather="download"></i> Download Default  CSS</span>. After downloading the CSS, you can edit it as needed and then upload it.</p>
-    <h4>Restoring the default CSS file</h4>
-    <p>To restore the default CSS file, click <span class="button-blue"> <i data-feather="refresh-ccw"></i> Restore</span>.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: All CSS URLs need to be formatted with no uppercase letters to ensure proper functionality.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="create">Creating custom annotation styles</h2>
-    <p>The Style Editor can be used to create your own custom annotation styles. The Style Editor provides an easy to use interface for styling annotations. For more information on the Style Editor, see <a href="/settings/using-style-editor.html">Using the Style Editor</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="modify">Modifying the custom style</h2>
-    <p>You can further style  annotations (for example, adding the same font or font style you use on your web site) by following these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Use  the <a href="/settings/using-style-editor.html">Style Editor</a> to style annotations as desired. Make sure the styling changes are published. </li>
-      <li>Close the Style Editor.</li>
-      <li>Click <span class="button-blue"> <i data-feather="download"></i> Download Default  CSS</span> to download the custom CSS file.</li>
-      <li>Edit the CSS file using a text editor. You can inspect elements using tools provided by your web browser to see which selectors and classes to modify.</li>
-      <li>Save your CSS file.</li>
-      <li>Click <span class="button-blue"> <i data-feather="upload"></i> Upload Custom CSS</span> and then browse and select the new CSS file to use.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="create-scratch">Creating a custom annotation CSS file from scratch</h2>
-    <p>You can also create a custom annotation CSS file from scratch. Follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <span class="button-blue"> <i data-feather="download"></i> Download Default  CSS</span> to download the default CSS file.</li>
-      <li>Make any needed changes/additions.</li>
-      <li>Click <span class="button-blue"> <i data-feather="upload"></i> Upload Custom CSS</span> and then browse and select the new CSS file to use. </li>
-    </ol>
-    <p>To restore the default CSS file, click <span class="button-blue"> <i data-feather="refresh-ccw"></i> Restore</span>.</p>
+    <p>Another option is to add this CSS to your current style sheet:</p>
+<pre><code>
+.popcorn-image:not(.hapyak-editing-image) img {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.popcorn-image:not(.hapyak-editing-image).popcorn-image:hover img {
+  opacity: 1;
+}
+</code>
+</pre>
+    <p>Images will now fade in on mouse hover. To change how fast images fades in, simply change 0.5s to any number you wish.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integrations or development.</aside>
   </section>
 </article>
 
@@ -918,7 +915,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 09 Feb 2023
+  Page last updated on 20 Sep 2022
 </div>
 
 
