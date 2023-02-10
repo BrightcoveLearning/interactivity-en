@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to create and manage  Interactivity Projects.">
+  <meta name="description" content="In this topic you will learn how to create and manage Interactivity Experiences.">
   
-  <title>Creating and Managing Projects</title>
+  <title>Creating and Managing Experiences</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -164,11 +164,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/projects/">Projects</a></li>
+        <li class="breadcrumb-item"><a href="/experiences/">Experiences</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Creating and Managing Projects</li>
+        <li class="breadcrumb-item active" aria-current="page">Creating and Managing Experiences</li>
       
     
   </nav>
@@ -854,118 +854,107 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Creating and Managing Projects</h1>
+<h1>Creating and Managing Experiences</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to create and manage  Interactivity Projects.</summary>
+  <summary>In this topic you will learn how to create and manage Interactivity Experiences.</summary>
   <section class="bcls-section">
-    <p>A <strong>Project</strong> is a single video with annotations. Annotations may include links, images, hotpots, quizzes, etc. that appear during video playback.</p>
+    <p>An  Experience is a video with other elements (like synced slides or an e-commerce cart) outside the video player that dynamically interact with video player. Experiences allow you to dynamically communicate between a video and the web page itself, opening the door to a new generation of lean-forward interactive realities for your viewers.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="auto-create">Automatically creating a project</h2>
-    <p>Video Cloud videos that are played using an <a href="/platform/getting-started/configuring-player-plugin.html">Interactivity-enabled</a> player will automatically create Interactivity projects. This is the preferred method to create a project.</p>
-    <p>When a video is played inside of an Interactivity-enabled Brightcove Player, the following things happen: </p>
+    <h2 id="create">Creating a new experience</h2>
+    <p>Follow these steps to  create a new experience.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>In the left navigation, click <strong>Experiences</strong> &gt; <strong>All experiences</strong>.</li>
+      <li>Click <span class="button-blue">New Experience</span>.</li>
+      <li>Enter an <strong>Experience Name</strong>.</li>
+        <li>Choose an experience type.
+          <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/create-manage/create-new-experience.png"> </figure>
+      </li>
+      <li>Click <span class="button-blue">Next <i data-feather="arrow-right"></i></span>.</li>
+      <li>Select one or more projects to add to the experience.</li>
+      <li>Click <span class="button-blue">Next <i data-feather="arrow-right"></i></span>.</li>
+      <li>Confirm the experience settings and then click <span class="button-blue">Create</span>.</li>
+    </ol>
+    <p>For information on creating the different types of experiences, see the related topic:</p>
     <ul>
-      <li>The Brightcove video ID, title, tags and custom fields are passed to Brightcove Interactivity</li>
-      <li>Brightcove Interactivity attempts to look up the video ID within your group</li>
-      <li>If no matching record is found, then Brightcove Interactivity creates a project with the data that was sent</li>
+      <li><a href="/experiences/creating-branching-experience.html">Branching</a></li>
+      <li><a href="/experiences/creating-lesson-experience.html">Lesson</a></li>
+      <li><a href="/experiences/creating-slide-sync-experience.html">Slide Sync</a></li>
+      <li><a href="/experiences/creating-chapters-menu-experience.html">Off-Video Chapters Menu</a></li>
     </ul>
-    <p>The following steps will automatically create an  Interactivity project. Make sure you have an <a href="/platform/getting-started/configuring-player-plugin.html">Interactivity-enabled player</a> before continuing:</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="settings">Configuring experience settings</h2>
+    <p>The experience settings can be used to change the sample video that is used and to change the template title and tags. Follow these steps to configure the template settings.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Media</strong> module.</li>
-      <li>Select a video to publish by checking the box next to the video thumbnail.</li>
-      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web.</strong></li>
-      <li>Select a player with the Interactivity plugin.</li>
-      <li>Click the preview link to open a preview in a new browser tab.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/projects/create-projects/publish-vc.png"> </figure>
-      </li>
-      <li>Play the preview video (the video only needs to be played for a few seconds). This will auto-create a project in Brightcove Interactivity.
-        <aside class="bcls-aside bcls-aside--information">Note: You must preview the video using the preview link. Previewing the video with the preview player in the Media module <strong>will not</strong> auto-create a project.</aside>
-      </li>
-      <li>Open the <strong>Interactivity</strong> module. A list of projects will appear.</li>
-      <li>Confirm the video you just published appears in the project list.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/projects/create-projects/project-list.png"> </figure>
-      </li>
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>In the left navigation, click <strong>Templates</strong> &gt; <strong>All templates</strong>.</li>
+      <li>Click a template <strong>Title</strong> or click the action menu (...) associated with the template and click <strong>View</strong>.</li>
+      <li>Click <span class="button-blue-text-bordered">Settings</span>.</li>
+      <li>Edit the settings as needed. When done click <span class="button-blue">Save</span>.</li>
+    </ol>
+    <p>
+      <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/create-manage/experience-settings.png"> </figure>
+    </p>
+    <h4>Video setting</h4>
+    <p>The <strong>Video </strong> setting controls the video that is behind the annotations. &nbsp;A default video for the template is provided but you can change the video that is used. Follow these steps to change the video. </p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <span class="button-blue-text-bordered"><i data-feather="edit-3"></i> Replace video</span>.</li>
+      <li>Select a new video to use.</li>
+      <li>Click <span class="button-blue">Replace</span>.</li>
+    </ol>
+    <h4>Template settings </h4>
+    <p><strong>Title</strong> - Title of the template</p>
+    <p><strong>Tags</strong> - Tags can be used to quickly apply templates to projects. For example, by adding the tag <code>company_logo</code> to the template, any video that is tagged <code>company_logo</code> and published using an Interactivity-enabled player will have the template annotations applied.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="apply">Applying a template to a project</h2>
+    <p>Templates can be applied to a project through the use of tags or by manually assigning one or more templates to a project as part of the project properties. For information, see <a href="/platform/templates/applying-templates-projects.html">Applying Templates to Projects</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="replace">Replacing the template video</h2>
+    <p>A default video for the template is provided but you can change the video that is used. Follow these steps to change the video. </p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the left navigation, click <strong>Templates</strong> &gt; <strong>All templates</strong>.</li>
+      <li>Click a template <strong>Title</strong> or click the action menu (...) associated with the template and click <strong>View</strong>.</li>
+      <li>Click <span class="button-blue-text-bordered"><i data-feather="edit-3"></i> Replace Video</span>.</li>
+      <li>Select a new video to use.</li>
+      <li>Click <span class="button-blue">Replace</span>.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The source video can also be changed as part of the template settings.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit">Editing a template</h2>
+    <p>Follow these steps to edit a template.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>Click on a template Title or click the action menu (...) associated with the template and click <strong>View</strong>.</li>
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="manually-create">Manually creating a project</h2>
-    <p>If needed, you can manually create projects using the <strong>Interactivity</strong> module. Follow these steps to manually create a project.</p>
+    <h2 id="folder">Moving a template to a folder</h2>
+    <p>Folders can be created and used to organize templates. You must have <a href="/general/working-with-folders.html">created folders</a> before you can move a template to a folder. Follow these steps to move a template to a folder.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
       <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click <span class="button-blue">New Project</span>.</li>
-      <li>Enter a <strong>Project Title</strong>.</li>
-      <li>Select a video to use in the project.
-        <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/projects/create-projects/create-new-project.png"> </figure>
-      </li>
-      <li>Click <span class="button-blue">Create</span>. The project will appear in the Projects listing.</li>
+      <li>Click the action menu (...) associated with the template and click <strong>Move to Folder</strong>.</li>
     </ol>
-  </section>
+    For more information on folders, see <a href="/general/working-with-folders.html">Working with Folders</a>.</section>
   <section class="bcls-section">
-    <h2 id="edit">Editing a project</h2>
-    <p>Follow these steps to edit a project.</p>
+    <h2 id="duplicate">Duplicating a template</h2>
+    <p>Duplicating a template  is a great way to save time when creating new templates that are similar to ones already created. Simply adjust the annotations as needed. </p>
+    <p>Follow these steps to duplicate a template.</p>
     <ol class="bcls-tasklist-restart">
       <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click on a project Title or click the action menu (...) associated with the project and click <strong>View</strong>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="folder">Moving a project to a folder</h2>
-    <p>Folders can be created and used to organize projects. You must have <a href="/general/working-with-folders.html">created folders</a> before you can move a project to a folder. Follow these steps to move a project to a folder.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click the action menu (...) associated with the project and click <strong>Move to Folder</strong>.</li>
-    </ol>
-    For more information on folders, see <a href="/general/working-with-folders.html">Working with Folders</a>. </section>
-  <section class="bcls-section">
-    <h2 id="duplicate">Duplicating a project</h2>
-    <p>Duplicating a project  is a great way to save time when creating new projects that are similar to ones already created. Simply change the video source of the new, cloned project and adjust the annotations as needed. </p>
-    <p>Follow these steps to duplicate a project.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click the action menu (...) associated with the project and click <strong>Duplicate</strong>.</li>
+      <li>Click the action menu (...) associated with the template and click <strong>Duplicate</strong>.</li>
       <li>Click <span class="button-blue">Duplicate</span>.</li>
     </ol>
-    <p>This will create an exact clone of the project including all annotations, tags, and custom CSS, titled "Copy of {project_name}". </p>
+    <p>This will create an exact clone of the template including all annotations, tags, and custom CSS, titled "Copy of {template_name}".</p>
   </section>
   <section class="bcls-section">
-    <h2 id="delete">Deleting projects</h2>
-    <p>To delete a project, find the project on the project list, click the action menu (...) associated with the project and then click <strong>Delete</strong>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="convert">Converting a project to a template</h2>
-    <aside class="bcls-aside bcls-aside--information">Note: This option will permanently remove the selected project from the projects section and turn it into a template. This action <b>cannot be undone</b>. Take note of which projects you convert or make sure to make copies of projects before you convert them.</aside>
-    <p>Follow these steps to convert a project to a template.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click a project <strong>Title</strong> or click the action menu (...) associated with the project and click <strong>View</strong>.</li>
-      <li>Click <span class="button-blue-text-bordered">Convert to template</span>.</li>
-      <li>Click <span class="button-blue">Confirm</span>.</li>
-    </ol>
-    <p>After the project is converted it will appear in the <strong>Templates</strong> section.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="settings">Configuring project settings</h2>
-    <p>The project settings can be used to edit the project title, add tags, add templates, assign a custom CSS file and replace the video associated with a project. </p>
-    <p>Follow these steps to access the project settings.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click a project <strong>Title</strong> or click the action menu (...) associated with the project and click <strong>View</strong>.</li>
-      <li>Click <span class="button-blue-text-bordered">Settings</span>.</li>
-    </ol>
-    <p>For more information, see <a href="configuring-project-settings.html">Configuring Project Settings</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="embed">Embedding a project</h2>
-    <p>Embedding a project generates the embed code needed to embed the project on a website.</p>
-    <p>Follow these steps to generate the embed code.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click a project <strong>Title</strong> or click the action menu (...) associated with the project and click <strong>View</strong>.</li>
-      <li>Click <span class="button-blue">Embed</span>.</li>
-    </ol>
-    <p>For more information, see <a href="generating-embed-code.html">Generating Embed Code</a>.</p>
+    <h2 id="delete">Deleting templates</h2>
+    <p>To delete a template, find the template on the project list, click the action menu (...) associated with the template and then click <strong>Delete</strong>.</p>
   </section>
 </article>
 
@@ -984,7 +973,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 23 Jan 2023
+  Page last updated on 10 Feb 2023
 </div>
 
 
