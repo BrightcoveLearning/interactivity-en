@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to make overlay images appear only when the viewer hovers over a video.">
+  <meta name="description" content="In this topic you will learn how to create a Branching Experience.">
   
-  <title>Adjusting Images to Appear Only on Hover</title>
+  <title>Creating a Branching Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -164,11 +164,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item"><a href="/styling/">Styling</a></li>
+        <li class="breadcrumb-item"><a href="/experiences/">Experiences</a></li>
       
     
       
-        <li class="breadcrumb-item active" aria-current="page">Adjusting Images to Appear Only on Hover</li>
+        <li class="breadcrumb-item active" aria-current="page">Creating a Branching Experience</li>
       
     
   </nav>
@@ -854,52 +854,116 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Adjusting Images to Appear Only on Hover</h1>
+<h1>Creating a Branching Experience</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to make overlay images appear only when the viewer hovers over a video.</summary>
+  <summary>In this topic you will learn how to create a Branching Experience.</summary>
   <section class="bcls-section">
-    <p>CSS can be used to have image annotations appear only when the viewer hovers over a video. In this example, hovering over the area below the text will display the Brightcove logo. Both the text and image annotations are configured to display until the end of the video.</p>
-    <div style="position: relative; display: block; max-width: 800px;">
-      <div style="padding-top: 56.25%;">
-        <iframe src="https://players.brightcove.net/1752604059001/Rx1jHQB5h_default/index.html?videoId=1739973059808272482" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
+    <p>The <b>Branching Experience</b> allows you to quickly string together multiple videos and add annotations that let the viewer jump from video to video. This creates a "choose your own adventure" type experience for your viewers.</p>
+    <p>The Branching Experience editor dramatically streamlines the editing process, cutting work time from hours to minutes and is available out-of-the-box to all plans.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: In-video branching with a project is also supported. For information, see <a href="/projects/in-video-branching.html">Creating an In-Video Branching Project</a>.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: If you have used the Brightcove Playlists method to author branching experiences in the past, that is now replaced by this simplified, more streamlined authoring method.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sample">Working sample</h2>
+    <p>The following video is an example of a Branching Experience. The first video (the &quot;main menu&quot;) will loop until a choice is clicked. Clicking on text will branch to that video. When the video is complete, a time triggered action will jump back to the 6 second point of the first, &quot;main menu&quot; video.</p>
+    <div style="position: relative; display: block; max-width: 100%;">
+      <div id="hapyak_embedded_experience_15330" style="padding-top: 56.25%;">
+        <iframe src="https://www.hapyak.com/portal/experience/viewer/b46ef92cf7cf4434aaabd698844a37ee?embed_experience=true"
+                frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen
+                style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%;"></iframe>
       </div>
     </div>
-    <p>Showing a graphic only on hover can easily be accomplished through a CSS class. Update the Interactivity-enabled Brightcove Player to point to a CSS file:</p>
+    <script type="application/javascript" src="https://d2qrdklrsxowl2.cloudfront.net/js/api/embedded_experience.js?v=20220713190115"></script>
+  </section>
+  <section class="bcls-section">
+    <h2 id="creating-new-experience">Creating a new experience</h2>
+    <p>Follow these steps to create a new Branching Experience:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Players</strong> module.</li>
-      <li> Locate the Interactivity-enabled Brightcove Player and click on it to open the player properties.</li>
-      <li>In the left navigation menu, click <strong>Additional Features</strong> &gt; <strong>Interactivity</strong>.</li>
-      <li>Confirm that the <strong>Enable Interactivity</strong> checkbox is checked.</li>
-      <li>Edit the <strong>Options(JSON)</strong> to point to the following CSS file.
-        <pre><code>
-//interactivity.support.brightcove.com/assets/css/style/on_hover_img.css
-</code></pre>
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/styling/image-hover/css-plugin.png"> </figure>
+      <li>Login to Brightcove Interactivity Studio.</li>
+      <li>In the left navigation, click <strong>Manage</strong>.</li>
+      <li>At the top of the page click <strong>Experiences</strong>.</li>
+      <li>Click <span class="button-blue">New Experience</span>.</li>
+      <li>Enter a name for the experience.</li>
+      <li>In the list of experience types, click<strong> Branching</strong>.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/new-experience.png"></figure>
       </li>
-      <li>Save the changes and publish the changes to the player.</li>
+      <li>Click <span class="button-blue">NEXT</span>.</li>
+      <li>Choose a video, there are 4 options:
+        <ul>
+          <li><strong>SAMPLE VIDEO </strong> - Use a sample video</li>
+          <li><strong>URL OR EMBED CODE</strong> - Enter the embed code or URL for a video</li>
+          <li><strong>UPLOAD</strong> - Drag and drop or select a new video (must be an .mp4 file)</li>
+          <li><strong>CHOOSE EXISTING</strong> - Choose an existing project
+            <aside class="bcls-aside bcls-aside--information language-editable">Note: Before you use a project in an experience, open it in the experience editor first. If you create a new project and immediately add it to an experience, you may get an error when you try to edit the project inside the experience.</aside>
+          </li>
+        </ul>
+      </li>
+      <li>The New Experience confirmation dialog will display.
+        Click <strong>ADD MORE</strong> to add more projects.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/new-exp-confirmation.png"></figure>
+      </li>
+      <li>Click <span class="button-blue">CREATE</span>. The Interactivity Editor will open with the first selected video displayed. All videos in the experience will be displayed below the preview player.
+        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/experience-editor.png"></figure>
+      </li>
     </ol>
-    <p>Another option is to add this CSS to your current style sheet:</p>
-<pre><code>
-.popcorn-image:not(.hapyak-editing-image) img {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.popcorn-image:not(.hapyak-editing-image).popcorn-image:hover img {
-  opacity: 1;
-}
-</code>
-</pre>
-    <p>Images will now fade in on mouse hover. To change how fast images fades in, simply change 0.5s to any number you wish.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: This is a proof of concept only provided to show the possibilities of the Brightcove Interactivity Platform and should not be taken as an offer to create, edit or maintain custom integrations or development.</aside>
+    <p>Click <strong>ADD PROJECT</strong> to add more projects. To change the order of the videos, click and drag a video to a new position. To edit a video, hover over a video and click <strong>Edit</strong>.</p>
+    <p>
+    <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/edit-video.png"></figure>
+    </p>
+    <p>To remove any video from the experience, hover over the video and click delete (<img src="/assets/images/s-brightcove-interactivity-img/platform/experiences/branching/icon-delete.png">).</p>
+    <p>&nbsp;</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add-annotations">Adding annotations</h2>
+    <p>Typically, text, image or transparent overlays will be added to the &quot;main menu&quot; video that allow the viewer to branch from video to video.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>For each &quot;choice point&quot;, add a text, image or transparent overlay annotation. This is what the viewer will click on to jump to the different videos. Make sure the start time and duration for each of these annotations is identical.</li>
+      <li>Click <strong>Link</strong> &gt; <strong>ACTIONS</strong> &gt; <strong>Branch to video</strong> and select the video to link to.
+        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/branch-to-video.png"></figure>
+      </li>
+      <li>Enter a <strong>Time</strong> to go to a specific point in the video. If no <strong>Time</strong> is entered, it will jump to the beginning of the destination video.</li>
+      <li>Click <span class="button-blue">SUBMIT</span>.</li>
+      <li>On one of the choice annotations, set <strong>Link</strong> &gt; <strong>BEHAVIOR</strong> &gt; <strong>Action to take if the viewer doesn't click</strong> to <strong>Loop back</strong>.
+        <figure class="bcls-figure"> This will cause the video to loop and display the &quot;main menu&quot; part of the video until one of the choices is clicked.<img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/loop-back.png"></figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: A time triggered action can also be used to have the first video loop until a selection is made.</aside>
+      </li>
+      <li>At the end of each branch, add a time triggered action and set the <strong>Branch to video time</strong> to jump to the appropriate place. In this example, the event is set to branch back to the &quot;intro&quot; video at the 6 second point.
+        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/on-time-event.png"></figure>
+      </li>
+    </ol>
+    <figure class="bcls-figure"></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="share">Sharing an experience</h2>
+    <p>Sharing an experience will create embed code or a preview URL for the experience. To share an experience, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <span class="button-blue">SHARE</span> at the top right of the page.</li>
+      <li>Select a <strong>Share Type</strong>.
+        <ul>
+          <li><strong>Embed Only</strong> - Generate embed code to place in an existing web page</li>
+          <li><strong>Landing Page</strong> - Create a landing page to host the experience</li>
+        </ul>
+      </li>
+      <li>Select the option to <strong>Use Native Controls?</strong> Selecting <strong>No</strong> will display the HapYak controls in the player. Selecting <strong>Yes</strong> will display the native controls based upon the type of video that is being published. For example, if you are using Brightcove videos, the player will display Brightcove Player native controls (the player will look like a regular Brightcove Player).</li>
+      <li>Select <span class="button-blue">COPY</span> to copy the embed code or link or click <span class="button-blue">VIEW</span> to open a preview of the experience in another browser tab.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="settings">Configuring experience settings</h2>
+    <p>To configure the experience settings, Click <span class="button-blue">SETTINGS</span> at the top right of the page. The following settings are available.</p>
+    <ul>
+      <li><b>Auto Progress</b> - Automatically progresses to the next video in the playlist when the previous video ends. </li>
+      <li><b>Auto Play</b> - Automatically plays each video in the playlist when a viewer clicks to it or when they progress to it automatically. </li>
+      <li><b>Custom CSS (URL)</b> - Used to apply custom styling to the entire experience. For information, see <a href="/platform/styling/styling-annotations.html">Styling Annotations</a>.
+        <ul>
+          <li>If you would like to hide the project titles from the viewer, add this to the <strong>Custom CSS (URL)</strong> field: <code>//hapyak_demos.s3.amazonaws.com/css/hideExperienceTitles.css</code> </li>
+        </ul>
+      </li>
+      <li><b>Social Sharing</b> - Social sharing icons are displayed at the top of the page. Select the social icons to display and add an optional message.</li>
+      <li><b>Branding</b> - Add a header or footer to the landing page. Include HTML code directly here.</li>
+    </ul>
   </section>
 </article>
-
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -915,7 +979,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 09 Feb 2023
+  Page last updated on 20 Sep 2022
 </div>
 
 
