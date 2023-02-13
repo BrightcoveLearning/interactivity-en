@@ -886,6 +886,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ul>
   </section>
   <section class="bcls-section">
+    <h2 id="edit">Editing an experience</h2>
+    <p>Follow these steps to edit an experience.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>In the left navigation, click <strong>Experiences</strong> &gt; <strong>All experiences</strong>.</li>
+      <li>Click on an experience <strong>Title</strong> or click the action menu (...) associated with the experience and click <strong>View</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
     <h2 id="settings">Configuring experience settings</h2>
     <p>The experience settings can be used to change the experience title, tags and some other settings. Follow these steps to configure the experience settings.</p>
     <ol class="bcls-tasklist-restart">
@@ -898,24 +907,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>
       <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/create-manage/experience-settings.png"> </figure>
     </p>
-    <h4>Video setting</h4>
-    <p>The <strong>Video </strong> setting controls the video that is behind the annotations. &nbsp;A default video for the template is provided but you can change the video that is used. Follow these steps to change the video. </p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <span class="button-blue-text-bordered"><i data-feather="edit-3"></i> Replace video</span>.</li>
-      <li>Select a new video to use.</li>
-      <li>Click <span class="button-blue">Replace</span>.</li>
-    </ol>
-    <h4>Template settings </h4>
-    <p><strong>Title</strong> - Title of the template</p>
-    <p><strong>Tags</strong> - Tags can be used to quickly apply templates to projects. For example, by adding the tag <code>company_logo</code> to the template, any video that is tagged <code>company_logo</code> and published using an Interactivity-enabled player will have the template annotations applied.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="edit">Editing an experience</h2>
-    <p>Follow these steps to edit a template.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click on a template Title or click the action menu (...) associated with the template and click <strong>View</strong>.</li>
-    </ol>
+    <h4>Experience settings</h4>
+    <ul>
+      <li><strong>Auto Progress</strong> - Will play the next video in the playlist after the previous project finishes</li>
+      <li><strong>Auto Play</strong> - Will auto-play on landing page load</li>
+      <li><strong>Interactive Experience CSS (URL)</strong> - URL to a custom CSS file used to style the experience</li>
+      <li><strong>Tags</strong> - Tags for the experience, tags facilitate searching experiences</li>
+    </ul>
+    <h4>Branding settings</h4>
+    <p>Experiences can be shared with viewers either by embedding the project in a web page or by sharing a landing page. A landing page is a single page that a viewer can access at a static URL. The branding settings can be used to style the appearance of the landing page.</p>
+    <ul>
+      <li><strong>Landing Page Header HTML</strong> - HTML that will be displayed on the landing page header</li>
+      <li><strong>Landing Page Footer HTML</strong> - HTML that will be displayed on the landing page footer</li>
+      <li><strong>Background Image</strong> - Background image for the landing page</li>
+    </ul>
   </section>
   <section class="bcls-section">
     <h2 id="add-projects">Adding projects to the experience</h2>
@@ -944,19 +949,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Folders can be created and used to organize experiences. You must have <a href="/general/working-with-folders.html">created folders</a> before you can move an experience to a folder. Follow these steps to move an experience to a folder.</p>
     <ol class="bcls-tasklist-restart">
       <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>In the left navigation, click <strong>Experiences</strong> &gt; <strong>All experiences</strong>.</li>
       <li>Click the action menu (...) associated with the experience and click <strong>Move to Folder</strong>.</li>
     </ol>
     For more information on folders, see <a href="/general/working-with-folders.html">Working with Folders</a>.</section>
   <section class="bcls-section">
     <h2 id="duplicate">Duplicating an experience</h2>
-    <p>Duplicating an experience  is a great way to save time when creating new experiences that are similar to ones already created. Simply add/remove projects  as needed. </p>
+    <p>Duplicating an experience  is a great way to save time when creating new experiences that are similar to ones already created. Simply add/remove projects  and edit the experience settings as needed.</p>
     <p>Follow these steps to duplicate an experience.</p>
     <ol class="bcls-tasklist-restart">
       <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>In the left navigation, click <strong>Experiences</strong> &gt; <strong>All experiences</strong>.</li>
       <li>Click the action menu (...) associated with the experience and click <strong>Duplicate</strong>.</li>
       <li>Click <span class="button-blue">Duplicate</span>.</li>
     </ol>
-    <p>This will create an exact clone of the experience including all projects, tags, and custom CSS, titled "Copy of {experience_name}".</p>
+    <p>This will create an exact clone of the experience including all projects, tags, and custom CSS, titled &quot;{experience_name} - Copy".</p>
   </section>
   <section class="bcls-section">
     <h2 id="delete">Deleting experiences</h2>
