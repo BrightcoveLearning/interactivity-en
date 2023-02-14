@@ -890,25 +890,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="add-annotations">Adding annotations</h2>
-    <p>Typically, text, image or transparent overlays will be added to the &quot;main menu&quot; video that allow the viewer to branch from video to video.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>For each &quot;choice point&quot;, add a text, image or transparent overlay annotation. This is what the viewer will click on to jump to the different videos. Make sure the start time and duration for each of these annotations is identical.</li>
-      <li>Click <strong>Link</strong> &gt; <strong>ACTIONS</strong> &gt; <strong>Branch to video</strong> and select the video to link to.
-        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/branch-to-video.png"></figure>
-      </li>
-      <li>Enter a <strong>Time</strong> to go to a specific point in the video. If no <strong>Time</strong> is entered, it will jump to the beginning of the destination video.</li>
-      <li>Click <span class="button-blue">SUBMIT</span>.</li>
-      <li>On one of the choice annotations, set <strong>Link</strong> &gt; <strong>BEHAVIOR</strong> &gt; <strong>Action to take if the viewer doesn't click</strong> to <strong>Loop back</strong>.
-        <figure class="bcls-figure"> This will cause the video to loop and display the &quot;main menu&quot; part of the video until one of the choices is clicked.<img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/loop-back.png"></figure>
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: A time triggered action can also be used to have the first video loop until a selection is made.</aside>
-      </li>
-      <li>At the end of each branch, add a time triggered action and set the <strong>Branch to video time</strong> to jump to the appropriate place. In this example, the event is set to branch back to the &quot;intro&quot; video at the 6 second point.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/on-time-event.png"></figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
     <h2 id="embed">Embedding and previewing an experience</h2>
     <p>In order to display an experience inside of a web page or application, embed code must be generated. You can also share a preview link or generate a dedicated landing page for an experience. For information, see <a href="/experiences/generating-embed-code.html">Generating Embed Code for an Experience</a>.</p>
   </section>
