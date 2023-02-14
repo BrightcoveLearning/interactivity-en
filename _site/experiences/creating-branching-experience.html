@@ -859,7 +859,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <summary>In this topic you will learn how to create a Branching Experience.</summary>
   <section class="bcls-section">
     <p>The <b>Branching Experience</b> allows you to quickly string together multiple videos and add annotations that let the viewer jump from video to video. This creates a "choose your own adventure" type experience for your viewers.</p>
-      <aside class="bcls-aside bcls-aside--information language-editable">Note: In-video branching with a project is also supported. For information, see <a href="/projects/in-video-branching.html">Creating an In-Video Branching Project</a>.</aside>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: In-video branching with a project is also supported. For information, see <a href="/projects/in-video-branching.html">Creating an In-Video Branching Project</a>.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="sample">Working sample</h2>
@@ -871,7 +871,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%;"></iframe>
       </div>
     </div>
-    <script type="application/javascript" src="https://d2qrdklrsxowl2.cloudfront.net/js/api/embedded_experience.js?v=20220713190115"></script>
+    <script type="application/javascript" src="https://d2qrdklrsxowl2.cloudfront.net/js/api/embedded_experience.js?v=20220713190115"></script> 
   </section>
   <section class="bcls-section">
     <h2 id="creating-new-experience">Creating a new experience</h2>
@@ -891,8 +891,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Confirm the experience settings and then click <span class="button-blue">Create</span>.
         <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/new-exp-confirmation.png"></figure>
       </li>
-      <li>Confirm the new experience appears in the list of experiences.</li>
-      <li>Click on the experience <strong>Title</strong> or click the action menu (...) associated with the experience and click <strong>View</strong>.</li>
       <li>Confirm that the Interactivity Editor  opens with the first selected video displayed. All videos in the experience will be displayed below the preview player.
         <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/experience-editor.png"></figure>
       </li>
@@ -921,36 +919,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <figure class="bcls-figure"></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="share">Sharing an experience</h2>
-    <p>Sharing an experience will create embed code or a preview URL for the experience. To share an experience, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <span class="button-blue">SHARE</span> at the top right of the page.</li>
-      <li>Select a <strong>Share Type</strong>.
-        <ul>
-          <li><strong>Embed Only</strong> - Generate embed code to place in an existing web page</li>
-          <li><strong>Landing Page</strong> - Create a landing page to host the experience</li>
-        </ul>
-      </li>
-      <li>Select the option to <strong>Use Native Controls?</strong> Selecting <strong>No</strong> will display the HapYak controls in the player. Selecting <strong>Yes</strong> will display the native controls based upon the type of video that is being published. For example, if you are using Brightcove videos, the player will display Brightcove Player native controls (the player will look like a regular Brightcove Player).</li>
-      <li>Select <span class="button-blue">COPY</span> to copy the embed code or link or click <span class="button-blue">VIEW</span> to open a preview of the experience in another browser tab.</li>
-    </ol>
+    <h2 id="embed">Embedding and previewing an experience</h2>
+    <p>In order to display an experience inside of a web page or application, embed code must be generated. You can also share a preview link or generate a dedicated landing page for an experience. For information, see <a href="/experiences/generating-embed-code.html">Generating Embed Code for an Experience</a>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="settings">Configuring experience settings</h2>
-    <p>To configure the experience settings, Click <span class="button-blue">SETTINGS</span> at the top right of the page. The following settings are available.</p>
-    <ul>
-      <li><b>Auto Progress</b> - Automatically progresses to the next video in the playlist when the previous video ends. </li>
-      <li><b>Auto Play</b> - Automatically plays each video in the playlist when a viewer clicks to it or when they progress to it automatically. </li>
-      <li><b>Custom CSS (URL)</b> - Used to apply custom styling to the entire experience. For information, see <a href="/platform/styling/styling-annotations.html">Styling Annotations</a>.
-        <ul>
-          <li>If you would like to hide the project titles from the viewer, add this to the <strong>Custom CSS (URL)</strong> field: <code>//hapyak_demos.s3.amazonaws.com/css/hideExperienceTitles.css</code> </li>
-        </ul>
-      </li>
-      <li><b>Social Sharing</b> - Social sharing icons are displayed at the top of the page. Select the social icons to display and add an optional message.</li>
-      <li><b>Branding</b> - Add a header or footer to the landing page. Include HTML code directly here.</li>
-    </ul>
+    <p>The experience settings can be used to change the experience title, tags and to control the behavior of the experience. For information, see <a href="/experiences/creating-and-managing-experiences.html#settings">Creating and Managing Experiences</a>.</p>
   </section>
 </article>
+
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">

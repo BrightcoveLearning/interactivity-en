@@ -896,7 +896,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="settings">Configuring experience settings</h2>
-    <p>The experience settings can be used to change the experience title, tags and some other settings. Follow these steps to configure the experience settings.</p>
+    <p>The experience settings can be used to change the experience title, tags and to control the behavior of the experience. Note that the settings that are available will vary based upon the experience type.</p>
+    <p>Follow these steps to configure the experience settings.</p>
     <ol class="bcls-tasklist-restart">
       <li>Open the <strong>Interactivity</strong> module.</li>
       <li>In the left navigation, click <strong>Experiences</strong> &gt; <strong>All experiences</strong>.</li>
@@ -904,10 +905,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Click <span class="button-blue-text-bordered">Settings</span>.</li>
       <li>Edit the settings as needed. When done click <span class="button-blue">Save</span>.</li>
     </ol>
-    <p>
-      <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/create-manage/experience-settings.png"> </figure>
-    </p>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/create-manage/experience-settings.png"> </figure>
     <h4>Experience settings</h4>
+    <p>The <strong>EXPERIENCE</strong> settings are available for all experience types.</p>
     <ul>
       <li><strong>Auto Progress</strong> - Will play the next video in the playlist after the previous project finishes</li>
       <li><strong>Auto Play</strong> - Will auto-play on landing page load</li>
@@ -915,11 +915,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><strong>Tags</strong> - Tags for the experience, tags facilitate searching experiences</li>
     </ul>
     <h4>Branding settings</h4>
+    <p>The <strong>BRANDING</strong> settings are available for  Lessons.</p>
     <p>Experiences can be shared with viewers either by embedding the project in a web page or by sharing a landing page. A landing page is a single page that a viewer can access at a static URL. The branding settings can be used to style the appearance of the landing page.</p>
     <ul>
       <li><strong>Landing Page Header HTML</strong> - HTML that will be displayed on the landing page header</li>
       <li><strong>Landing Page Footer HTML</strong> - HTML that will be displayed on the landing page footer</li>
       <li><strong>Background Image</strong> - Background image for the landing page</li>
+    </ul>
+    <h4>Scoring settings</h4>
+    <p>The <strong>SCORING</strong> settings are available for  Lessons.</p>
+    <ul>
+      <li><strong>Select Grading Algorithm</strong></li>
+      <li><strong>Pass/Fail Grading</strong> - When enabled, student will receive 100% for watching at least the <strong>Completion Percent Threshold</strong> and 0% for anything less</li>
+      <li><strong>Completion Percent Threshold (%)</strong> - Percentage of video (0-100) a student must watch to receive a grade of 100%</li>
     </ul>
   </section>
   <section class="bcls-section">
