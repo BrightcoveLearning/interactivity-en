@@ -913,9 +913,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><strong>Auto Play</strong> - Will auto-play on landing page load</li>
       <li><strong>Interactive Experience CSS (URL)</strong> - URL to a custom CSS file used to style the experience</li>
       <li><strong>Tags</strong> - Tags for the experience, tags facilitate searching experiences</li>
+      <li><strong>Default Zoom</strong> - Sets the default zoom level of the experience (Slide Sync only)</li>
     </ul>
     <h4>Branding settings</h4>
-    <p>The <strong>BRANDING</strong> settings are available for  Lessons.</p>
+    <p>The <strong>BRANDING</strong> settings are available for  Branching, Slide Sync and Lessons.</p>
     <p>Experiences can be shared with viewers either by embedding the project in a web page or by sharing a landing page. A landing page is a single page that a viewer can access at a static URL. The branding settings can be used to style the appearance of the landing page.</p>
     <ul>
       <li><strong>Landing Page Header HTML</strong> - HTML that will be displayed on the landing page header</li>
@@ -925,7 +926,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h4>Scoring settings</h4>
     <p>The <strong>SCORING</strong> settings are available for  Lessons.</p>
     <ul>
-      <li><strong>Select Grading Algorithm</strong></li>
+      <li><strong>Select Grading Algorithm</strong>
+        <ul>
+          <li><strong>Quiz Results</strong> - Score is number of correct questions  divided by  total number of questions</li>
+          <li><strong>Gate Until Watched</strong> - Score is 100% if user watches more than <strong>Completion Percent Threshold</strong>; user <strong>cannot</strong> submit until they watch to the threshold</li>
+          <li><strong>Percent Watched</strong> - Uses Pass/Fail grading</li>
+        </ul>
+      </li>
       <li><strong>Pass/Fail Grading</strong> - When enabled, student will receive 100% for watching at least the <strong>Completion Percent Threshold</strong> and 0% for anything less</li>
       <li><strong>Completion Percent Threshold (%)</strong> - Percentage of video (0-100) a student must watch to receive a grade of 100%</li>
     </ul>
