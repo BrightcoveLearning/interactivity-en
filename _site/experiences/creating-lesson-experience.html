@@ -923,18 +923,6 @@
     <p>Lesson Experiences allow you to create entire learning experiences through interactive video by setting grading criteria to a video.  Lessons are constructed to allow you to easily pass data to an LMS like Moodle, Canvas, Blackboard, and many others through either LTI or SCORM.  Using Lessons can streamline the lesson creation process using SCORM 1.2 or 2004 delivery standards. Available grading criteria include percent watched, threshold, and quiz score.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="sample">Working sample</h2>
-    <p>The following video is an example of a Branching Experience. The first video (the &quot;main menu&quot;) will loop until a choice is clicked. Clicking on text will branch to that video. When the video is complete, a time triggered action will jump back to the 6 second point of the first, &quot;main menu&quot; video.</p>
-    <div style="position: relative; display: block; max-width: 100%;">
-      <div id="hapyak_embedded_experience_15330" style="padding-top: 56.25%;">
-        <iframe src="https://www.hapyak.com/portal/experience/viewer/b46ef92cf7cf4434aaabd698844a37ee?embed_experience=true"
-                frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen
-                style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%;"></iframe>
-      </div>
-    </div>
-    <script type="application/javascript" src="https://d2qrdklrsxowl2.cloudfront.net/js/api/embedded_experience.js?v=20220713190115"></script>
-  </section>
-  <section class="bcls-section">
     <h2 id="creating-new-experience">Creating a new experience</h2>
     <p>Follow these steps to create a new Lesson Experience:</p>
     <ol class="bcls-tasklist-restart">
@@ -957,29 +945,13 @@
       </li>
     </ol>
     <p>Click <span class="button-blue"><i data-feather="plus-square"></i> Add project</span> to add more projects. To change the order of the videos, click <span class="button-blue-text-bordered"><i data-feather="list"></i> Change play order</span> and drag a video to a new position. To edit a video, click on a video thumbnail. To remove any video from the experience, hover over the video and click delete (<img src="/assets/images/s-brightcove-interactivity-img/experiences/icon-delete.png">).</p>
+    <p>Lesson experiences have settings that control how the lesson will be scored. For information, see <a href="/experiences/creating-and-managing-experiences.html#settings">configuring experience settings</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="add-annotations">Adding annotations</h2>
-    <p>Typically, text, image or transparent overlays will be added to the &quot;main menu&quot; video that allow the viewer to branch from video to video.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>For each &quot;choice point&quot;, add a text, image or transparent overlay annotation. This is what the viewer will click on to jump to the different videos. Make sure the start time and duration for each of these annotations is identical.</li>
-      <li>Click <strong>Link</strong> &gt; <strong>ACTIONS</strong> &gt; <strong>Branch to video</strong> and select the video to link to.
-        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/branch-to-video.png"></figure>
-      </li>
-      <li>Enter a <strong>Time</strong> to go to a specific point in the video. If no <strong>Time</strong> is entered, it will jump to the beginning of the destination video.</li>
-      <li>Click <span class="button-blue">SUBMIT</span>.</li>
-      <li>On one of the choice annotations, set <strong>Link</strong> &gt; <strong>BEHAVIOR</strong> &gt; <strong>Action to take if the viewer doesn't click</strong> to <strong>Loop back</strong>.
-        <figure class="bcls-figure"> This will cause the video to loop and display the &quot;main menu&quot; part of the video until one of the choices is clicked.<img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/loop-back.png"></figure>
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: A time triggered action can also be used to have the first video loop until a selection is made.</aside>
-      </li>
-      <li>At the end of each branch, add a time triggered action and set the <strong>Branch to video time</strong> to jump to the appropriate place. In this example, the event is set to branch back to the &quot;intro&quot; video at the 6 second point.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/experiences/branching/on-time-event.png"></figure>
-      </li>
-    </ol>
-  </section>
-<section class="bcls-section">
     <h2 id="embed">Embedding and previewing an experience</h2>
-    <p>In order to display an experience inside of a web page or application, embed code must be generated. You can also share a preview link or generate a dedicated landing page for an experience. For information, see <a href="/experiences/generating-embed-code.html">Generating Embed Code for an Experience</a>.</p>
+    <p>In order to display an experience inside of a web page or application, embed code must be generated. You can also share a preview link or generate a dedicated landing page for an experience. Lessons  offer the ability to download a ZIP package that can be imported into a SCORM compliant LMS.</p>
+        <figure class="bcls-figure"><img src="/assets/images/s-brightcove-interactivity-img/experiences/lesson/embed-scorm.png"></figure>
+    <p>For more information, see <a href="/experiences/generating-embed-code.html">Generating Embed Code for an Experience</a>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="settings">Configuring experience settings</h2>
