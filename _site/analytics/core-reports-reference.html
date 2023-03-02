@@ -933,8 +933,9 @@
     <p>Use the date selector to specify the time period for the report, you can select a fixed date range or select a custom date range.
       <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="date selector" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/date-range.png" /></figure>
     </p>
-    <p>Click <span class="button-blue">Run</span> to run the report. Click <strong>Advanced</strong> to filter the report results by Project or Experience ID. All of the reports offer the ability to download the report data by clicking  download  <img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/download-button.png" />
-.</p>
+    <p>Click <span class="button-blue">Run</span> to run the report. Click <strong>Advanced</strong> to filter the report results by Project or Experience ID. A single ID or a comma separated list is supported.</p>
+    <p>All of the reports offer the ability to download the report data by clicking  download <img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/download-button.png" />
+      .</p>
     <p>A summary of each of these reports is described in the following sections.</p>
   </section>
   <section class="bcls-section">
@@ -1006,13 +1007,28 @@
   </section>
   <section class="bcls-section">
     <h2 id="user-summary">User Summary</h2>
-    <p>The User Summary report display one row per user. The report will display:</p>
+    <p>The User Summary report is an aggregate summary of the overall behavior of each user across each project that they viewed. The report will display:</p>
     <ul>
-      <li><strong>User</strong> - User token</li>
-      <li><strong>Time Watched</strong> - Total time watched</li>
+      <li><strong>User</strong> - Anonymized user ID assigned by Brightcove Interactivity. The ID is assigned the first time user accesses interactive content. Token is valid for 1 year.
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: The <a href="https://apis.support.brightcove.com/interactivity/embed-api/reference.html#viewer_api">Viewer API</a> can be used to optionally pass in user ID and/or username values to overwrite the anonymous ID value.</aside>
+      </li>
+      <li><strong>Time Watched</strong> - Total time watched across all videos</li>
       <li><strong>Last Session</strong> - Last session date and time</li>
-      <li><strong>User Details</strong> - Number of videos watched</li>
-      <li><strong>Play Details</strong> - Number of video plays and sessions</li>
+      <li><strong>User Details</strong> - Number of times each kind of functionality was used
+        <ul>
+          <li><strong>Links</strong> - Text, image and transparent overlays</li>
+          <li><strong>Navigation</strong> - Chapters or overlays with jump to time functionality</li>
+          <li><strong>Responses</strong> - Quizzes</li>
+          <li><strong>Widgets</strong> - Standard widgets</li>
+          <li><strong>Videos</strong> - Number of unique videos played</li>
+        </ul>
+      </li>
+      <li><strong>Play Details</strong>
+        <ul>
+          <li><strong>Plays</strong> - Number of video plays</li>
+          <li><strong>Sessions</strong> - Number of times a video was loaded and ready for playback (not necessarily played)</li>
+        </ul>
+      </li>
     </ul>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/user-summary.png" /></figure>
   </section>
