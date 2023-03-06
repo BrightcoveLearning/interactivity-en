@@ -934,8 +934,8 @@
       <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="date selector" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/date-range.png" /></figure>
     </p>
     <p>Click <span class="button-blue">Run</span> to run the report. Click <strong>Advanced</strong> to filter the report results by Project or Experience ID. A single ID or a comma separated list is supported.</p>
-    <p>All of the reports offer the ability to download the report data by clicking  download <img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/download-button.png" />
-      .</p>
+    <p>All of the reports offer the ability to download the report data by clicking  download <img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/download-button.png" /> .</p>
+    <aside class="bcls-aside bcls-aside--tip language-editable">Note: All of the Core reports are limited to returning 50,000 rows of output.</aside>
     <p>A summary of each of these reports is described in the following sections.</p>
   </section>
   <section class="bcls-section">
@@ -956,7 +956,7 @@
     <p>The Experience Summary report displays one row per experience and shows the viewer engagement with videos. The report will display:</p>
     <ul>
       <li><strong>Experience name</strong> - Name of the experience</li>
-      <li><strong>Play Rate</strong> - Number of times the experience was loaded and ready for playback divided by the number of plays</li>
+      <li><strong>Play Rate</strong> - Number of plays divided by the number of times the experience was loaded and ready for playback</li>
       <li><strong>Interaction Rate</strong> - </li>
       <li><strong>Total View Time</strong> - </li>
       <li><strong>Audience</strong> - </li>
@@ -968,12 +968,12 @@
     <p>The Experience Stream report displays one row per action. The report includes views of bookmarks, user interactions with player controls, annotations and widgets. Progress events are excluded. The report will display:</p>
     <ul>
       <li><strong>Session</strong> - Session ID</li>
-      <li><strong>Experience</strong> - Experience name</li>
-      <li><strong>When</strong> - </li>
-      <li><strong>Action</strong> - </li>
-      <li><strong>Details</strong> - </li>
+      <li><strong>Experience</strong> - Experience title</li>
+      <li><strong>When</strong> - When the action occurred</li>
+      <li><strong>Action</strong> - Action that occurred</li>
+      <li><strong>Details</strong> - Project or annotation that was interacted with</li>
     </ul>
-<figure class="bcls-figure"><img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/experience-stream.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/experience-stream.png" /></figure>
   </section>
   <section class="bcls-section">
     <h2 id="poll-widget-detail">Poll Widget Detail</h2>
@@ -982,20 +982,20 @@
       <li><strong>Session Start Time</strong> - </li>
       <li><strong>Play Session</strong> - </li>
       <li><strong>User</strong> - </li>
-      <li><strong>Annotation ID</strong> - </li>
-      <li><strong>Project ID</strong> - </li>
+      <li><strong>Annotation ID</strong> - Annotation ID</li>
+      <li><strong>Project ID</strong> - Project ID</li>
       <li><strong>Poll Type</strong> - </li>
       <li><strong>Prompt</strong> - </li>
     </ul>
-<figure class="bcls-figure"><img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/poll-widget-detail.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/poll-widget-detail.png" /></figure>
   </section>
   <section class="bcls-section">
     <h2 id="poll-widget-summary">Poll Widget Summary</h2>
     <p>The Poll Widget Summary report will display one row per Poll widget instance, per response value with count of response values. Project IDs will contain a list of all projects where the poll appeared and was submitted. This is included to support templates where the same poll widget will appear with multiple projects. The Project IDs list is not de-duped. The report will display:</p>
     <ul>
-      <li><strong>Annotation ID</strong> - </li>
-      <li><strong>Project ID</strong> - </li>
-      <li><strong>Poll Type</strong> - </li>
+      <li><strong>Annotation ID</strong> - Annotation ID</li>
+      <li><strong>Project ID</strong> - Project ID</li>
+      <li><strong>Poll Type</strong> - Type of poll</li>
       <li><strong>Prompt</strong> - </li>
       <li><strong>Response</strong> - </li>
       <li><strong>Answers Receive</strong> - </li>
@@ -1067,7 +1067,7 @@
   </section>
   <section class="bcls-section">
     <h2 id="user-sentiment-summary">User Sentiment Summary</h2>
-    <p>The User Sentiment Summary report  . The report will display:</p>
+    <p>The User Sentiment Summary report  shows the results of the user summary widgets. The report will display:</p>
     <ul>
       <li><strong>Project</strong> - Project name</li>
       <li><strong>Project ID</strong> - Project ID</li>
