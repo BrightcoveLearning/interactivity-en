@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Configuring Annotation Links</title>
+        <title>Understanding SCORM Integration</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta name="robots" content="noindex,nofollow"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn about the different options available when adding a link to an annotation.">
+        <meta name="description" content="This is a technical document intended for customers seeking to better understand how the Brightcove Interactivity SCORM integration works, how to use it, and what end users can expect from the experience.">
         
         <!-- Google Font -->
         <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
@@ -891,11 +891,11 @@
             <li class="breadcrumb-item"><a class="theme-link" href="/">Home</a></li>
             
             
-            <li class="breadcrumb-item"><a class="theme-link" href="/annotations/">Annotations</a></li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/general/">General</a></li>
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Configuring Annotation Links</li>
+            <li class="breadcrumb-item active" aria-current="page">Understanding SCORM Integration</li>
             
             
           </ol>
@@ -916,53 +916,190 @@
       <br>
       
       
-<h1>Configuring Annotation Links</h1>
+<h1>Understanding SCORM Integration</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn about the different options available when adding a link to an annotation.</summary>
+  <summary>This is a technical document intended for customers seeking to better understand how the Brightcove Interactivity SCORM integration works, how to use it, and what end users can expect from the experience.</summary>
   <section class="bcls-section">
-    <p>Links are the most commonly used annotation and the foundation of all interactions. Follow these steps to configure a link for an annotation:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li> Click on a project <strong>Title</strong> to open it.</li>
-      <li>Hover over an annotation and click <strong>Edit</strong>.</li>
-      <li>Click <strong>Link</strong>.</li>
-    </ol>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/annotation-links/link-options.png"></figure>
+    <p>This document assumes a basic knowledge of Brightcove Interactivity features as well as Learning Management System (LMS) terminology.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="actions">Configuring actions</h2>
-    <p>To configure the actions settings, click <strong>ACTIONS</strong>.</p>
-    <p>Just like you would add a link in a web page, you can now add links in a video. You can load a web page, PDF, document, another video, email program, etc. Enter the URL to open in the <strong>URL</strong> field.</p>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/annotation-links/actions-tab.png"> </figure>
-    <p><strong>Jump to video time</strong> can be used to select another annotation you would like to jump to. Use the dropdown list to select another annotation or select <strong>Custom time</strong> and then enter a time to jump to.
-    <p>
-      <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/annotation-links/actions-jump.png"> </figure>
-    </p>
-    <h3 id="pro-tip-jump-to-chapters2">Pro Tip: Jump to Chapters</h3>
-    <p>Consider adding chapter markers to your videos. Without also adding a chapter menu, chapters are invisible to the viewer and allow you to easily jump parts of a video using this annotation link feature. If you change the start time of a chapter annotation that you are linked to (maybe because the source video has been changed), it will automatically adjust.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="behavior">Configuring behavior settings</h2>
-    <p>To configure the behavior settings, click <strong>BEHAVIOR</strong>. The following settings are available:</p>
+    <h2 id="overview">Overview</h2>
+    <p>The Brightcove Interactivity SCORM Integration Module allows Brightcove Interactivity users to export an interactive video lesson into an LMS. Learners can access the interactive video lesson and have their interactions recorded in the LMS gradebook for the assignment.</p>
+    <h3>Versions</h3>
+    <p>Brightcove Interactivity supports both SCORM 1.2 and SCORM 2004. See the <a href="#how-grading-works">How Grading Works</a> section for major differences.</p>
+    <h3>Key Features and Benefits</h3>
     <ul>
-      <li><strong>Pause on video click</strong> - When checked, will pause the video when the link is clicked</li>
-      <li><strong>Release gate on click</strong> - When checked, will release the gate when clicked</li>
-      <li><strong>Action to take if the viewer doesn't click</strong> - The video can continue playing if the viewer doesn't click or can be looped to the beginning of the annotation to ensure they click (useful for branching video menus)</li>
+      <li>Integration with supporting LMSs</li>
+      <li>Data captured in LMS gradebook</li>
+      <li>Lessons are still editable after embedding in LMS</li>
     </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/annotation-links/behavior-tab.png"> </figure>
   </section>
   <section class="bcls-section">
-    <h2 id="action-to-take-if-the-viewer-doesnt-click">Configuring advanced settings</h2>
-    <p>To configure the advanced settings, click <strong>ADVANCED</strong>. The following settings are available:</p>
+    <h2 id="prerequisites">Prerequisites</h2>
     <ul>
-      <li><strong>Add CSS class</strong> - Used to add a class name and it will activate it if you click/interact with the annotation</li>
-      <li><strong>JavaScript</strong> - Used to enter a new JavaScript variable name or variable assignment code; when the annotation is clicked by a viewer, the variable assignment code that was entered will be executed (typically used to change back end variables for dynamic annotations)</li>
-      <li><strong>Addon Type</strong> - Allows you to use the <a href="https://apis.support.brightcove.com/interactivity/addon-api/reference.html">Addon API</a></li>
-      <li><strong>Command</strong> - Allows you to use the <a href="https://apis.support.brightcove.com/interactivity/addon-api/reference.html">Addon API</a></li>
-      <li><strong>Command Data</strong> - Allows you to pass data to the <a href="https://apis.support.brightcove.com/interactivity/addon-api/reference.html">Addon API</a></li>
+      <li>You must have a Learning Management System that supports the SCORM Specification (either SCORM 1.2 or SCORM 2004)</li>
+      <li>You must have a valid Brightcove Interactivity  license</li>
+      <li>You must have the Brightcove Interactivity SCORM module enabled on your Brightcove Interactivity account</li>
+      <li>Web browsers utilizing the solution must be HTML5 compatible</li>
+      <li>All connections to the solution must utilize HTTPS protocol
+        <ul>
+          <li>If you are using video resources hosted by a 3rd party (such as YouTube), you must ensure they are accessible over an HTTPS connection</li>
+        </ul>
+      </li>
+      <li>Firewalls in place on the networks from which the solution is accessed must whitelist: "*.hapyak.com"</li>
     </ul>
-    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/annotation-links/advanced-tab.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setup">Setup</h2>
+    <p>Contact your Brightcove  Account Representative to enable the SCORM Integration module on your account.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="specs">Technical Specifications</h2>
+    <h3>SCORM Package</h3>
+    <p>The downloaded zip package containing files necessary for your LMS to communicate with Brightcove Interactivity via the SCORM standard.</p>
+    <p>The SCORM package is not a static snapshot of your lesson. Changes made to your lesson after download will be published immediately. For this reason, you should be careful when editing lessons after they have been released on your LMS.</p>
+    <h3>Object Model</h3>
+    <ul>
+      <li>SCORM enabled Group
+        <ul>
+          <li>Brightcove Interactivity Editor</li>
+          <li>Brightcove Interactivity Experience
+            <ul>
+              <li>Brightcove Interactivity Layout of type "Lesson"
+                <ul>
+                  <li>Scoring Module (specified by Experience configuration)</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h3 id="how-grading-works">How Grading Works</h3>
+    <p>Brightcove Interactivity implements scoring algorithms that analyses viewing metrics or answered questions in order to derive the score value.</p>
+    <h4>Grading Algorithms</h4>
+    <ul>
+      <li><strong>Percent watched</strong>
+        <ul>
+          <li>Pass/Fail
+            <ul>
+              <li><strong>ON</strong> - Score is 100% if user watches more than "completion percent threshold" (default is 70% of video), otherwise score is 0%</li>
+              <li><strong>OFF</strong> - Score is equal to the percentage of the video watched</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Gate until watched</strong> - Score is 100% if user watches more than "completion percent threshold" (default is 70% of video); user CANNOT submit until they watch to the threshold</li>
+      <li><strong>Quiz Results</strong> - Score is number of questions correct over total questions</li>
+    </ul>
+    <p>The score is calculated at the completion of the video when the learner presses the "Submit Score" button. Once a score has been submitted to the LMS Gradebook it cannot be resubmitted.</p>
+    <h4>Differences in SCORM Versions:</h4>
+    <p>Data is sent to the LMS</p>
+    <ul>
+      <li>SCORM 1.2
+        <ul>
+          <li>All algorithms:
+            <ul>
+              <li>cmi.core.lesson_status</li>
+              <li>cmi.core.score.raw (total)<br>
+                <br>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>SCORM 2004
+        <ul>
+          <li>Time based algorithms:
+            <ul>
+              <li>cmi.completion_status</li>
+              <li>cmi.score.raw (total)</li>
+              <li>cmi.success_status</li>
+              <li>cmi.objectives.&lt;N&gt;.completion_status</li>
+              <li>cmi.objectives.&lt;N&gt;.description</li>
+              <li>cmi.objectives.&lt;N&gt;.id</li>
+              <li>cmi.objectives.&lt;N&gt;.score.max</li>
+              <li>cmi.objectives.&lt;N&gt;.score.raw</li>
+            </ul>
+          </li>
+          <li>Quiz results:
+            <ul>
+              <li>All of the above</li>
+              <li>For each quiz question we also send:
+                <ul>
+                  <li>the question text content as cmi.interactions.&lt;N&gt;.description</li>
+                  <li>the answer text content as cmi.interactions.&lt;N&gt;.learner_response AND cmi.interactions.&lt;N&gt;.id because some LMSs do not have full SCORM 2004 support</li>
+                  <li>The question objective as cmi.interactions.&lt;N&gt;.objectives.&lt;M&gt;.id</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p><strong>What this means...</strong></p>
+    <ul>
+      <li>No scores will be recorded in the LMS Gradebook unless the learner presses the submit button at the end of the video</li>
+      <li>A learner must complete any scoring requirements in one viewing. For example:
+        <ul>
+          <li>If a video contains 4 questions the learner is not allowed to answer 2 questions, leave, then come back later to answer the final 2 questions and submit their score. They must answer all 4 questions and submit their score in the same viewing.</li>
+          <li>If a score is awarded by watching 90% of the video, a learner must watch 90% of the video and submit their score during the same viewing.</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>End-to-End System Certifications</h3>
+    <p>While all LMSs which support the SCORM 1.2 and SCORM 2004 standards are expected to be fully compliant, the Brightcove Interactivity team has fully tested and certified the following major Learning Management Systems.</p>
+    <ul>
+      <li>Moodle v.X</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--tip language-editable">Note: If you require end-to-end system certification for your LMS, please contact your Brightcove Account Representative. Additional fees apply.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="user-experience">User Experience Narratives</h2>
+    <p>The workflow for any learning management system is slightly different. The narratives below are here to conceptually describe the user experience and how it impacts the underlying system.</p>
+    <h3>ROLE: Lesson Author</h3>
+    <ul>
+      <li>Login to Brightcove Interactivity</li>
+      <li>Create a Project or Experience
+        <ul>
+          <li>Add a video</li>
+          <li>Optionally add interactions like quizzes and chapters</li>
+          <li>If in an Experience. multiple Projects can be added</li>
+          <li>If in a Project, you can always access the underlying Lesson experience through the Share dialog</li>
+        </ul>
+      </li>
+      <li>When finished authoring:
+        <ul>
+          <li>Click &ldquo;Share&rdquo; then &ldquo;SCORM&rdquo; (if in a new Project, click &ldquo;Generate&rdquo;)</li>
+          <li>Choose a SCORM version then click <strong>Download</strong></li>
+          <li>Upload the downloaded zip file into your LMS as an assignment
+            <ul>
+              <li>Due to the variety of LMSs available, we cannot add further detail on this point</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h3>ROLE: Learner</h3>
+    <ul>
+      <li>Log in to the LMS</li>
+      <li>Access an assignment containing a Brightcove Interactivity Lesson</li>
+      <li>Watch the video and answer any in-video questions</li>
+      <li>Click the <strong>Submit</strong> button
+        <ul>
+          <li>Warning message alerts learner that they are turning in their assignment for credit; Learner must click <strong>Submit</strong> again to confirm submission.</li>
+        </ul>
+      </li>
+      <li>At this point their numeric grade is calculated based on the implemented algorithm and sent to the LMS Gradebook</li>
+      <li>Assignment resubmission is controlled by the LMS. An LMS can allow multiple attempts per lesson but Brightcove Interactivity will only allow one score per attempt</li>
+      <li>The Learner can review their score in the LMS gradebook</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="lms">Learning Management Systems known to support SCORM</h2>
+    <ul>
+      <li>Moodle (SCORM 1.2 and SCORM 2004)</li>
+    </ul>
   </section>
 </article>
 
