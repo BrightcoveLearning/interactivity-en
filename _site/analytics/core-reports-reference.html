@@ -979,26 +979,29 @@
     <h2 id="poll-widget-detail">Poll Widget Detail</h2>
     <p>The Poll Widget Detail report will display one row per poll submit event. The report will display:</p>
     <ul>
-      <li><strong>Session Start Time</strong> - </li>
-      <li><strong>Play Session</strong> - </li>
-      <li><strong>User</strong> - </li>
+      <li><strong>Session Start Time</strong> - Session date and time</li>
+      <li><strong>Play Session</strong> - Play session</li>
+      <li><strong>User</strong> - Anonymized user ID assigned by Brightcove Interactivity. The ID is assigned the first time user accesses interactive content. Token is valid for 1 year.
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: The <a href="https://apis.support.brightcove.com/interactivity/embed-api/reference.html#viewer_api">Viewer API</a> can be used to optionally pass in user ID and/or username values to overwrite the anonymous ID value.</aside>
+      </li>
       <li><strong>Annotation ID</strong> - Annotation ID</li>
       <li><strong>Project ID</strong> - Project ID</li>
-      <li><strong>Poll Type</strong> - </li>
-      <li><strong>Prompt</strong> - </li>
+      <li><strong>Poll Type</strong> - Type of poll</li>
+      <li><strong>Prompt</strong> - Poll question asked</li>
+      <li><strong>Response</strong> - Response to the poll</li>
     </ul>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/poll-widget-detail.png" /></figure>
   </section>
   <section class="bcls-section">
     <h2 id="poll-widget-summary">Poll Widget Summary</h2>
-    <p>The Poll Widget Summary report will display one row per Poll widget instance, per response value with count of response values. Project IDs will contain a list of all projects where the poll appeared and was submitted. This is included to support templates where the same poll widget will appear with multiple projects. The Project IDs list is not de-duped. The report will display:</p>
+    <p>The Poll Widget Summary report will display one row per Poll widget response value with a count of the responses. The Project ID column will contain a list of all projects where the poll appeared and was submitted. This is included to support templates where the same poll widget will appear with multiple projects. The Project IDs list is not de-duped. The report will display:</p>
     <ul>
       <li><strong>Annotation ID</strong> - Annotation ID</li>
       <li><strong>Project ID</strong> - Project ID</li>
       <li><strong>Poll Type</strong> - Type of poll</li>
-      <li><strong>Prompt</strong> - </li>
-      <li><strong>Response</strong> - </li>
-      <li><strong>Answers Receive</strong> - </li>
+      <li><strong>Prompt</strong> - Poll question asked</li>
+      <li><strong>Response</strong> - Response to the poll</li>
+      <li><strong>Answers Receive</strong> - Number of users who selected the response</li>
     </ul>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Performance Report" src="/assets/images/s-brightcove-interactivity-img/analytics/core-reports/poll-widget-summary.png" /></figure>
   </section>
