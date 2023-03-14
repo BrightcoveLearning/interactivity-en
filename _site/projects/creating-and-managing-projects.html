@@ -920,16 +920,34 @@
 <article class="bcls-article">
   <summary>In this topic you will learn how to create and manage  Interactivity Projects.</summary>
   <section class="bcls-section">
-    <p>A <strong>Project</strong> is a single video with annotations. Annotations may include links, images, hotpots, quizzes, etc. that appear during video playback.</p>
+    <p>A <strong>Project</strong> is a single video with annotations. Annotations may include links, images, hotpots, quizzes, etc. that appear during video playback. There are two ways to create a project:</p>
+    <ul>
+      <li><strong>Manual method</strong> - Projects are created using the Interactivity module. This is the most common way to create a project.</li>
+      <li><strong>Automatic method</strong> - Projects are created automatically when a video is played inside of an Interactivity-enabled Brightcove Player. The automatic method is typically used in conjunction with templates.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="manually-create">Manually creating a project</h2>
+    <p>Projects can be manually created  using the <strong>Interactivity</strong> module. Follow these steps to manually create a project.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>Click <span class="button-blue">New Project</span>.</li>
+      <li>Enter a <strong>Project Title</strong>.</li>
+      <li>Select a video to use in the project.
+        <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/projects/create-projects/create-new-project.png"> </figure>
+      </li>
+      <li>Click <span class="button-blue">Create</span>. The project will appear in the Projects listing.</li>
+    </ol>
   </section>
   <section class="bcls-section">
     <h2 id="auto-create">Automatically creating a project</h2>
     <p>The Interactivity plugin can be configured with an <a href="/getting-started/configuring-player-plugin.html#options">option</a> so that Brightcove videos that are played using an <a href="/getting-started/configuring-player-plugin.html">Interactivity-enabled</a> player will automatically create Interactivity projects.</p>
-    <aside class="bcls-aside bcls-aside--tip language-editable">Note: If the plugin options are not configured, projects will not be auto-created.</aside>
+    <aside class="bcls-aside bcls-aside--tip language-editable">Note: If the plugin is not configured with the <code>create</code> option, projects will not be auto-created.</aside>
     <p>When a video is played inside of an Interactivity-enabled Brightcove Player, the following things happen: </p>
     <ul>
-      <li>The Brightcove video ID, title, tags and custom fields are passed to Brightcove Interactivity</li>
-      <li>Brightcove Interactivity attempts to look up the video ID within your group</li>
+      <li>The Brightcove video ID, title and tags are passed to Brightcove Interactivity</li>
+      <li>Brightcove Interactivity attempts to look up the video ID within any existing projects</li>
       <li>If no matching record is found, then Brightcove Interactivity creates a project with the data that was sent</li>
     </ul>
     <p>The following steps will automatically create an  Interactivity project. Make sure you have an <a href="/platform/getting-started/configuring-player-plugin.html">Interactivity-enabled player</a> before continuing:</p>
@@ -949,20 +967,6 @@
       <li>Confirm the video you just published appears in the project list.
         <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/projects/create-projects/project-list.png"> </figure>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="manually-create">Manually creating a project</h2>
-    <p>Projects can be manually created  using the <strong>Interactivity</strong> module. Follow these steps to manually create a project.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Interactivity</strong> module.</li>
-      <li>Click <span class="button-blue">New Project</span>.</li>
-      <li>Enter a <strong>Project Title</strong>.</li>
-      <li>Select a video to use in the project.
-        <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/projects/create-projects/create-new-project.png"> </figure>
-      </li>
-      <li>Click <span class="button-blue">Create</span>. The project will appear in the Projects listing.</li>
     </ol>
   </section>
   <section class="bcls-section">
