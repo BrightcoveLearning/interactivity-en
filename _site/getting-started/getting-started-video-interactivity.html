@@ -928,29 +928,16 @@
   </section>
   <section class="bcls-section">
     <h2 id="project-creation">Creating an  Interactivity project</h2>
-    <p>When a video is played inside of an Interactivity-enabled Brightcove Player, the following things happen: </p>
-    <ul>
-      <li>The Brightcove video ID, title and tags are passed to Brightcove Interactivity</li>
-      <li>Brightcove Interactivity attempts to look up the video ID within any existing projects</li>
-      <li>If no matching record is found, then Brightcove Interactivity creates a project with the data that was sent</li>
-    </ul>
-    <p>The following steps will automatically create an  Interactivity project:</p>
+    <p>Follow these steps to create a   project.</p>
     <ol class="bcls-tasklist-restart">
       <li>Login to Video Cloud Studio.</li>
-      <li>Open the <strong>Media</strong> module.</li>
-      <li>Select a video to publish by checking the box next to the video thumbnail.</li>
-      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web.</strong></li>
-      <li>Select an Interactivity-enabled player.</li>
-      <li>Click the preview link to open a preview in a new browser tab.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/getting-started/gs-interactivity/publish-vc.png"> </figure>
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>Click <span class="button-blue">New Project</span>.</li>
+      <li>Enter a <strong>Project Title</strong>.</li>
+      <li>Select a video to use in the project.
+        <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/getting-started/gs-interactivity/create-new-project.png"> </figure>
       </li>
-      <li>Play the preview video (the video only needs to be played for a few seconds). This will auto-create an Interactivity project.
-        <aside class="bcls-aside bcls-aside--information">Note: You must preview the video using the preview link. Previewing the video with the preview player in the Media module <strong>will not</strong> auto-create a project.</aside>
-      </li>
-      <li>Open the <strong>Interactivity</strong> module. A list of projects will appear.</li>
-      <li>Confirm the video you just published appears in the project list.
-        <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/getting-started/gs-interactivity/project-list.png"> </figure>
-      </li>
+      <li>Click <span class="button-blue">Create</span>. The project will appear in the Projects listing.</li>
     </ol>
   </section>
   <section class="bcls-section">
@@ -969,7 +956,7 @@
       </li>
       <li>Click <strong>Done</strong>.</li>
     </ol>
-    <p>For  information on adding text and image overlays to videos, see one of the following: </p>
+    <p>For  information on adding text and image overlay annotations to a video, see one of the following:</p>
     <ul>
       <li><a href="/annotations/adding-text-overlay.html">Adding a Text Overlay to a Video</a></li>
       <li><a href="/annotations/adding-image-overlay.html">Adding an Image Overlay to a Video</a></li>
@@ -978,30 +965,18 @@
   </section>
   <section class="bcls-section">
     <h2 id="preview-publish">Previewing and generating embed code for a video</h2>
-    <p>Once an interaction has been added to a project, preview the video to ensure the interactivity is working as expected. When previewing and generating the embed code in the <strong>Interactivity</strong> module, the project will use the Interactivity-enabled player that is configured as part of the <a href="/settings/configuring-settings.html#defaults">account defaults</a>. The project can also be <a href="#preview-publish-media">previewed and published</a> inside of the <strong>Media</strong> module. </p>
+    <p>Once an interaction has been added to a project, preview the video to ensure the interactivity is working as expected. When previewing and generating the embed code in the <strong>Interactivity</strong> module, the project will use the Interactivity-enabled player that is configured as part of the <a href="/settings/configuring-settings.html#defaults">account defaults</a>.</p>
     <p>Follow these steps to preview and generate the embed code for the project:</p>
     <ol class="bcls-tasklist-restart">
+      <li>Click on a project title to open it.</li>
       <li>Click <span class="button-blue">Embed</span>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/getting-started/gs-interactivity/embed-dialog.png" /></figure>
       </li>
+      <li>Select a <strong>Player</strong>. The dropdown list contains all players that have the <a href="/getting-started/configuring-player-plugin.html">Interactivity plugin</a> installed.</li>
       <li>Click <strong>Preview</strong> to preview the project in another browser tab.</li>
       <li>Confirm that the interaction appears.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/getting-started/gs-interactivity/video.png" /></figure>
         <aside class="bcls-aside bcls-aside--information">Note: By default, the text overlay is configured to display for 3 seconds.</aside>
-      </li>
-      <li>Copy the embed code and paste it into your web page.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="preview-publish-media">Previewing and generating embed code using the Media module</h2>
-    <p>Projects can also be previewed and published using the <strong>Media</strong> module. Follow these steps to preview and generate the embed code using the Media module:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In the primary navigation, open the <strong>Media</strong> module.</li>
-      <li>Select the video that the interactivity was added to by clicking the checkbox next to the video thumbnail.</li>
-      <li>Click <span class="button-blue">Publish and embed... ˇ</span> &gt; <strong>Publish to web</strong>.</li>
-      <li>Select an Interactivity-enabled Brightcove Player. </li>
-      <li>Click the preview link to preview the video.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-brightcove-interactivity-img/getting-started/gs-interactivity/publish-vc.png" /></figure>
       </li>
       <li>Copy the embed code and paste it into your web page.</li>
     </ol>
