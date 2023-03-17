@@ -520,7 +520,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/troubleshooting/",
+      "newURL": "https://interactivity.support.brightcove.com/platform/admin/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/integrations/",
       "oldURL": "/index"
   },
 
@@ -530,7 +535,37 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/annotations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/getting-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/examples/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/platform/styling/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/",
       "oldURL": "/index"
   },
 
@@ -545,7 +580,22 @@
   },
 
   {
+      "newURL": "https://interactivity.support.brightcove.com/platform/developers/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/platform/sharing-and-embedding/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://interactivity.support.brightcove.com/platform/demos/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -565,57 +615,7 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/sharing-and-embedding/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/developers/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/examples/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/getting-started/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/annotations/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/integrations/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://interactivity.support.brightcove.com/platform/admin/",
+      "newURL": "https://interactivity.support.brightcove.com/platform/troubleshooting/",
       "oldURL": "/index"
   },
 
@@ -635,12 +635,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/analytics/interactive-video-tracking-events.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/analytics/interactive-video-tracking-events.html",
       "oldURL": "/interactive-video-tracking-events"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/analytics/interactive-video-tracking-events.html",
+      "newURL": "https://interactivity.support.brightcove.com/analytics/interactive-video-tracking-events.html",
       "oldURL": "/interactive-video-tracking-events"
   },
 
@@ -662,6 +662,11 @@
   {
       "newURL": "https://interactivity.support.brightcove.com/analytics/interactivity-reports-reference.html",
       "oldURL": "/interactivity-reports-reference"
+  },
+
+  {
+      "newURL": "https://interactivity.support.brightcove.com/getting-started/interactivity-training-videos.html",
+      "oldURL": "/interactivity-training-videos"
   },
 
   {
@@ -740,12 +745,12 @@
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/examples/mit.html",
+      "newURL": "https://interactivity.support.brightcove.com/platform/examples/mit.html",
       "oldURL": "/mit"
   },
 
   {
-      "newURL": "https://interactivity.support.brightcove.com/platform/examples/mit.html",
+      "newURL": "https://interactivity.support.brightcove.com/examples/mit.html",
       "oldURL": "/mit"
   },
 
