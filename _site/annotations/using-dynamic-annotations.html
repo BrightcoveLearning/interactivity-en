@@ -992,17 +992,20 @@
     </ol>
     <p>The automatically created variables are named <code>quiz_[annotation-id]_[question index]</code>, for example <code>quiz_123_1</code> would be the answer to the first question in the quiz with id 123. The variable defining if the correct answer was provided will be named <code>quiz_[annotation-id]_[question index]_correct</code>.</p>
     <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/dynamic-annotations/variables-list.png"> </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="environment-variables">Environment variables</h2>
+    <p>Developers using the  <a href="https://apis.support.brightcove.com/interactivity/embed-api/reference.html">Embed API</a> have the ability to directly provide a JSON object when the player is instantiated that defines variables to be used by annotations.</p>
+    <pre>hapyak.viewer({<br>player: ytPlayer,<br>playerType: &quot;youtube&quot;,<br>css: &quot;http://modernizr.com/i/css/modernizr-2.1.1.css?v=1&quot;,<br>width: 640,<br>height: 360,<br>trackId: 640,<br>autoplay: true,<br>variables: {“my_name”:&quot;Kyle&quot;,&quot;my_company&quot;:&quot;Brightcove&quot;}<br>});</pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="displaying-variables">Displaying  variables</h2>
+    <p>Once variables have been defined they can be used to display dynamic content or to <a href="#overview">create rules</a> which can be used to show or hide  annotations. When a variable is selected from the <strong>Variables</strong> dropdown, an expression will be added to the text overlay that will resolve to the variable when<br>
+      viewed. The resolved variable will equal the answer that the viewer provided to the question.</p>
+    <figure class="bcls-figure"> <img src="/assets/images/s-brightcove-interactivity-img/annotations/dynamic-annotations/selected-answer.png"></figure>
+    <p>Variables are identified in the text as anything occurring between &quot;&quot;. If you are using quiz variables, the variable expression will be automatically added via the Variables dropdown. Otherwise, you will need to enter the variable name that was defined. For example, &quot;My name is: <code></code>&quot;</p>
     <aside class="bcls-aside bcls-aside--tip language-editable">Note: You do not need to remember the Quiz variable naming scheme. The Quiz variables are automatically available in the UI through the Variables drop down in the edit menu of a text overlay annotation.</aside>
   </section>
-<section class="bcls-section">
-    <h2 id="environment-variables">Environment variables</h2>
-    <p>Developers using the HapYak Embed API have the ability to directly provide a JSON object when the player is instantiated that defines variables to be used by annotations.</p>
-    <pre>hapyak.viewer({<br>player: ytPlayer,<br>playerType: &quot;youtube&quot;,<br>css: &quot;http://modernizr.com/i/css/modernizr-2.1.1.css?v=1&quot;,<br>width: 640,<br>height: 360,<br>trackId: 640,<br>autoplay: true,<br>variables: {“my_name”:”Kyle”,”my_company”:”HapYak”}<br>});</pre>
-    </section>
-<section class="bcls-section">
-    <h2 id="displaying-variables">Displaying variables</h2>
-    <p>Once variables have been defined they can be used to display dynamic content or to <a href="#overview">create rules</a> which will show or hide another annotation.</p>
-    </section>
   <section class="bcls-section">
     <h2 id="overview">Overview of display rules</h2>
     <p>Display Rules are JavaScript expressions that test variables for the purpose of conditionally displaying annotations. If the expression evaluates to TRUE, the annotation will be rendered. If the expression evaluates to FALSE, the annotation will not be rendered. Display Rules can be added to any annotation type. Common use cases include:</p>
