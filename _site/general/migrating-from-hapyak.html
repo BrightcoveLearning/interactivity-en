@@ -920,53 +920,38 @@
 <article class="bcls-article">
   <summary>In this topic you will learn how to migrate from HapYak to Brightcove Interactivity.</summary>
   <section class="bcls-section">
-    <p>Folders can be created inside of the <strong>Interactivity</strong> module and can be used to organize projects, templates and experiences. Folders are displayed in the side navigation panel. The number of projects/templates/experiences in each folder is displayed next to the folder name.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: Nested folders are not supported</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="create">Creating folders</h2>
-    <p>To create a new folder, follow these steps:</p>
+    <h2 id="bc-publish">Content published through the Brightcove/HapYak plugin</h2>
+    <p>If your HapYak projects were generated using the HapYak/Brightcove plugin and your content is currently deployed as  Brightcove embed code/URL, the process to transition  customer-facing interactive elements from the HapYak instance to the Brightcove Interactivity version is simple. Once the HapYak content migration occurs, follow these steps to update your customer-facing content to the new Brightcove versions.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the  <strong>Interactivity</strong> module.</li>
-      <li>In the side navigation panel, expand the <strong>Projects</strong>, <strong>Templates</strong>, or <strong>Experiences</strong> section.</li>
-      <li>Click <strong>Create folder</strong> in the appropriate section.</li>
-      <li>Enter a name for the folder using the following guidelines. Press enter.
+      <li>Enable Brightcove Interactivity on any players you are currently using to serve HapYak-enabled interactivity.
         <ul>
-          <li>Folder name is limited to 100 characters</li>
-          <li>Folder names must be unique</li>
+          <li> Open the Players module</li>
+          <li>Select the player</li>
+          <li>In <strong>Additional Features</strong> &gt; <strong>Interactivity</strong>, check the <strong>Enable Interactivity</strong> option</li>
         </ul>
+        <p>The checkbox to <strong>Enable Interactivity</strong> will replace the need for entering any API key data. 
       </li>
+      <li>If any custom tracking scripts were being used, enable the <strong>Options (JSON)</strong> checkbox and enter the script.</li>
+      <li><strong>(Optional)</strong> If you would like to have projects auto-created when they are played with an Interactivity-enabled Brightcove Player (similar to functionality from the HapYak/Brightcove plugin), you will need to enable project auto-creation on your player. To do this, add the following to the <strong>Options(JSON)</strong>.
+        <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/general/migrate/auto-create.png"> </figure>
+      </li>
+      <li>Delete the existing <strong>hapyak</strong> plugin on the player (click <strong>Plugins</strong> in the navigation).</li>
+      <li>Save the changes and publish  the player.</li>
     </ol>
+    <p>After caching clears, the Brightcove Interactivity versions of the interactive content should automatically replace the HapYak versions. Customer-facing experiences should continue functioning seamlessly on the new platform.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="add">Adding items to folders</h2>
-    <p>There are a couple of ways to add projects/templates/experiences to a folder. You can:</p>
-    <ul>
-      <li><a href="#singleadd">Add a single asset to a folder</a></li>
-      <li><a href="#multipleadd">Adding multiple assets a folder</a></li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information">Note: There is no limit to the number of projects/templates/experiences that can be in a folder.</aside>
-    <div class="BCL-subsection" id="singleadd">
-      <h3>Adding a  project/template/experience to a folder</h3>
-      <p>Following these steps to add a project/template/experience to a folder.</p>
-      <ol class="bcls-tasklist-restart">
-        <li>Open the <strong>Interactivity</strong> module.</li>
-        <li>Click the action button (...) next to the project/template/experience and then click <strong>Move to Folder</strong>.</li>
-        <li>Select a folder and click <span class="button-blue"> Move</span>.
-        </li>
-      </ol>
-    </div>
-    <div class="BCL-subsection" id="multipleadd">
-      <h3>Adding multiple projects/templates/experiences to a folder</h3>
-      <p>Multiple projects/templates/experiences can be added to a folder by following these steps.</p>
-      <ol class="bcls-tasklist-restart">
-        <li>Open the  <strong>Interactivity</strong> module.</li>
-        <li>Click the checkboxes next to the projects/templates/experiences to move. The action bar will appear at the bottom of the page.
-        </li>
-        <li>Click <strong>Move to Folder</strong>.</li>
-        <li>Select a folder and click <span class="button-blue">Move</span>.</li>
-      </ol>
-    </div>
+    <h2 id="non-bc">Non-Brightcove plugin published projects</h2>
+    <aside class="bcls-aside bcls-aside--information">Note: To facilitate a smooth update process, we recommend that you upload versions of any non-Brightcove videos used as source files for HapYak content into Video Cloud before starting this process.</aside>
+    <p>If your interactive content was not published using a Brightcove embed code via the HapYak plugin (typical examples include direct publishing from HapYak embed code and non-Brightcove based projects) you will still have a path to easily update your content. During the HapYak content migration, Brightcove Interactivity versions of all your interactive content will be generated. In cases where a non-Brightcove video was used as the video source file, the migration will create a &quot;headless&quot; project retaining all of your interactive content. You will be required you to update the project settings and select a valid Brightcove video source file (that exists in the Media module).</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Interactivity module.</li>
+      <li>Click on a project title.</li>
+      <li>Click <span class="button-blue-text-bordered">Settings</span>.</li>
+      <li>Click <span class="button-blue-text-bordered"><i data-feather="edit-3"></i> Replace Video</span>.</li>
+      <li>Select a  video and click <span class="button-blue-text-bordered">Replace</span>.</li>
+      <li>Verify the timing and functionality of any interactive elements in the annotation editor or by previewing the project.</li>
+    </ol>
   </section>
 </article>
 
