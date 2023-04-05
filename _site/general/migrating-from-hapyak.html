@@ -920,38 +920,69 @@
 <article class="bcls-article">
   <summary>In this topic you will learn how to migrate from HapYak to Brightcove Interactivity.</summary>
   <section class="bcls-section">
-    <h2 id="bc-publish">Content published through the Brightcove/HapYak plugin</h2>
+    <p>This topic provides an overview on how to migrate from using HapYak to using Brightcove Interactivity.  If you are just getting started with Brightcove Interactivity, check out <a href="/interactivity/getting-started/getting-started-interactivity-module.html">Getting Started with the Interactivity Module</a>. </p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="bc-publish">Migrating content published through the Brightcove/HapYak plugin</h2>
     <p>If your HapYak projects were generated using the HapYak/Brightcove plugin and your content is currently deployed as  Brightcove embed code/URL, the process to transition  customer-facing interactive elements from the HapYak instance to the Brightcove Interactivity version is simple. Once the HapYak content migration occurs, follow these steps to update your customer-facing content to the new Brightcove versions.</p>
     <ol class="bcls-tasklist-restart">
       <li>Enable Brightcove Interactivity on any players you are currently using to serve HapYak-enabled interactivity.
         <ul>
-          <li> Open the Players module</li>
-          <li>Select the player</li>
-          <li>In <strong>Additional Features</strong> &gt; <strong>Interactivity</strong>, check the <strong>Enable Interactivity</strong> option</li>
+          <li> Open the <strong>Players</strong> module</li>
+          <li>Click on a <strong>Name</strong></li>
+          <li>In <strong>Additional Features</strong> &gt; <strong>Interactivity</strong>, check the <strong>Enable Interactivity</strong> option
+            <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/getting-started/plugin-config.png"> </figure>
+          </li>
         </ul>
-        <p>The checkbox to <strong>Enable Interactivity</strong> will replace the need for entering any API key data. 
+        <aside class="bcls-aside bcls-aside--tip language-editable">Note: For more information, see <a href="/interactivity/getting-started/configuring-player-plugin.html">Configuring a Brightcove Player with the Interactivity Plugin</a>.</aside>
+        <p>The checkbox to <strong>Enable Interactivity</strong> will replace the need for entering any API key data.</p>
       </li>
       <li>If any custom tracking scripts were being used, enable the <strong>Options (JSON)</strong> checkbox and enter the script.</li>
       <li><strong>(Optional)</strong> If you would like to have projects auto-created when they are played with an Interactivity-enabled Brightcove Player (similar to functionality from the HapYak/Brightcove plugin), you will need to enable project auto-creation on your player. To do this, add the following to the <strong>Options(JSON)</strong>.
         <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/general/migrate/auto-create.png"> </figure>
       </li>
-      <li>Delete the existing <strong>hapyak</strong> plugin on the player (click <strong>Plugins</strong> in the navigation).</li>
+      <li>Delete the existing <strong>hapyak</strong> plugin on the player (click <strong>Plugins</strong> in the navigation).
+        <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/general/migrate/delete-plugin.png"> </figure>
+      </li>
       <li>Save the changes and publish  the player.</li>
     </ol>
     <p>After caching clears, the Brightcove Interactivity versions of the interactive content should automatically replace the HapYak versions. Customer-facing experiences should continue functioning seamlessly on the new platform.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="non-bc">Non-Brightcove plugin published projects</h2>
+    <h2 id="non-bc">Migrating non-Brightcove plugin published projects</h2>
     <aside class="bcls-aside bcls-aside--information">Note: To facilitate a smooth update process, we recommend that you upload versions of any non-Brightcove videos used as source files for HapYak content into Video Cloud before starting this process.</aside>
     <p>If your interactive content was not published using a Brightcove embed code via the HapYak plugin (typical examples include direct publishing from HapYak embed code and non-Brightcove based projects) you will still have a path to easily update your content. During the HapYak content migration, Brightcove Interactivity versions of all your interactive content will be generated. In cases where a non-Brightcove video was used as the video source file, the migration will create a &quot;headless&quot; project retaining all of your interactive content. You will be required you to update the project settings and select a valid Brightcove video source file (that exists in the Media module).</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the Interactivity module.</li>
-      <li>Click on a project title.</li>
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>Click on a project <strong>Title</strong>. Projects with a missing video will display a warning icon as the video thumbnail.
+        <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/general/migrate/missing-video.png"> </figure>
+      </li>
       <li>Click <span class="button-blue-text-bordered">Settings</span>.</li>
-      <li>Click <span class="button-blue-text-bordered"><i data-feather="edit-3"></i> Replace Video</span>.</li>
-      <li>Select a  video and click <span class="button-blue-text-bordered">Replace</span>.</li>
+      <li>Click <span class="button-blue-text-bordered"><i data-feather="refresh-ccw"></i> Replace Video</span>.</li>
+      <li>Select a  video and click <span class="button-blue-text-bordered">Replace</span>.
+        <figure class="bcls-figure"> <img alt="" src="/assets/images/s-brightcove-interactivity-img/general/migrate/select-video.png"> </figure>
+        <aside class="bcls-aside bcls-aside--tip language-editable">Note: For more information on project settings, see <a href="/interactivity/projects/configuring-project-settings.html">Configuring Project Settings</a>.</aside>
+      </li>
       <li>Verify the timing and functionality of any interactive elements in the annotation editor or by previewing the project.</li>
+      <li>Copy the embed code for the project.</li>
+      <li>Replace the existing HapYak embed code with the new Brightcove Interactivity embed code on your site.</li>
     </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="experiences">Migrating HapYak experiences</h2>
+    <p>Brightcove Interactivity supports interactive experiences natively. As part of the HapYak content migration, versions of your experiences will be created and be available within the Interactivity module. Each experience will have its own unique embed code. You will need to replace any existing HapYak experience embed code with the Brightcove Interactivity embed code on your sites.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Interactivity</strong> module.</li>
+      <li>In the left navigation, click <strong>Experiences</strong>.</li>
+      <li>Find the experience using  search  or by scrolling through the list of experiences.</li>
+      <li>Verify that the experience functionality works as expected and that the appropriate settings are configured.</li>
+      <li>Click <span class="button-blue">Embed</span>.</li>
+      <li> Copy the embed code for the experience.</li>
+      <li>Replace the existing HapYak embed code with the new Brightcove Interactivity embed code on your site.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--tip language-editable">Note: If you have any HapYak experiences with videos originating across multiple Brightcove accounts, any videos whose video source file is not present in the account that was migrated to will be in a &quot;headless&quot; project state. Projects without videos will display a warning icon for the video thumbnail. These projects will need to have the source video replaced with a video from that account.</aside>
+    <aside class="bcls-aside bcls-aside--tip language-editable">Note: Due to the greater suite of capabilities available within Brightcove Interactivity, any  landing page experiences should be embedded from the individual project level. Open the project, click <span class="button-blue">Embed</span> and then click <strong>Get URL</strong> to generate a direct page for the content.</aside>
+    <aside class="bcls-aside bcls-aside--tip language-editable">Note: Any SCORM packages will need to be re-downloaded and redeployed to your LMS. Open the experience, click <span class="button-blue">Embed</span>, click the <strong>SCORM</strong> tab, select the SCORM version and then click <strong>Download</strong>.</aside>
   </section>
 </article>
 
