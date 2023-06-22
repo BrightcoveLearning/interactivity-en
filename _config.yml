@@ -48,7 +48,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "doc_pages"
+      layout: "staging"
   -
     scope:
       path: "*/index.html"
