@@ -1,4 +1,12 @@
 ---
+layout: nolayout
+search: exclude
+---
+<!-- this is a redirect page - don't edit -->
+<meta name="robots" content="noindex,nofollow"> 
+<meta http-equiv="refresh" content="0; URL=https://studio.support.brightcove.com/interactivity/index.html">
+
+<!-- ---
 title: Brightcove Interactivity Documentation
 parent: null
 layout: landing_page
@@ -19,44 +27,18 @@ layout: landing_page
               <h5 class="card-title mb-3">
                 <span class="span-icon card-icon-holder icon-theme me-2">
                   <i class="{{ section.icon }}"></i>
-                </span><!--//card-icon-holder-->
+                </span>
                 <span class="card-title-text">{{ section.name }}</span>
               </h5>
               <div class="card-text">
                 {{ section.description }}
               </div>
               <a class="card-link-mask" href="{{ section.url }}"></a>
-            </div><!--//card-body-->
-          </div><!--//card-->
-        </div><!--//col-->
+            </div>
+          </div>
+        </div>
         {% endfor %}
-      </div><!--//row-->
-    </div><!--//container-->
-  </div><!--//container-->
-</div><!--//page-content-->
-<!-- <article class="landing-page-wrapper">
-  <section class="landing-page-header" id="landing_page_header">
-    <h1>{{ site.title }}</h1>
-<aside class="bcls-aside bcls-aside--warning language-editable">This site contains documentation for the deprecated HapYak plugin. Please go to the <a href="https://studio.support.brightcove.com/interactivity/index.html">current Brightcove Interactivity documentation</a>.</aside>
-
-
-    <p>{{ site.description }}</p>
-  </section>
-  <section class="card-wrapper">
-    {% for section in site.data.navigation offset:1 %}
-    <section class="bcls-card-small" onclick="window.location.href='{{ section.url }}'">
-
-
-      <div class="card-content">
-        <h2>{{ section.name }}</h2>
-        <ul>
-          {% for doc in section.docs limit:4 %}
-          <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
-          {% endfor %}
-        </ul>
-        <p style="font-size:small;"><a href="{{ section.url }}">View all...</a></p>
       </div>
-    </section>
-    {% endfor %}
-  </section>
-</article> -->
+    </div>
+  </div>
+</div> -->
